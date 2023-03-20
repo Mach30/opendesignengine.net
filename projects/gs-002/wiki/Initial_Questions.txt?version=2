@@ -1,0 +1,51 @@
+h1. Initial Questions
+
+The discussion that led to this set of initial questions can be found "here":https://opendesignengine.net/boards/18/topics/287
+
+*Q1. Why are we making this?*
+
+Tracking, communication, and command & control of spacecraft are essential capabilities for a spacefaring civilization. Ground stations are the principle links between the spacecraft and Earth used to facilitate these capabilities. The series of ground station related projects will develop the necessary open source hardware to perform these functions.  Version 1.0 was a good (good enough) proof of concept, but identified several weaknesses in the basic design which, while it was functional, it became clear that two versions were required: one low cost and simple to build for those just curious, and one powerful enough for limited professional use and extensible by changing modular components.  The latter design is the 2.0 design of the ground station.  It should be noted that this version will coexist with the 1.1 version, not supplant it.
+
+*Q2. Who is this for?*
+
+Mach 30 volunteers, Makerspaces and their members, Amateur (Ham) radio operators, CubeSat designers and operators (including universities). With some minor modifications, most of them software, radio astronomers could be added to the list of users as well.  
+
+*Q3. How will this be used?*
+
+Early ground stations will be used to facilitate voice communications with orbiting satellites (including the ISS, HAM satellites, and CubeSats).  Note, not all satellites will support voice communications, in which case the early ground stations will simply provide a means of listening to the satellites' other radio signals. Data capabilities can be added easily to the system, either by demodulating the audio stream (as in a computer modem), or by using an Software Defined Receiver (SDR) such as the AMSAT Funcube Dongle or USRP and running the demodulation through a software module (GNU radio) using a PC or Laptop.
+
+*Q4. What features does it need to have (now)?*
+
+Ability to predict opportunities for contact, aim an antenna array, and send and receive voice traffic.
+
+*Q5. What features does it need to have (later)?*
+
+a. In the future, our ground stations should be able to support sending and receiving command and control data from orbiting spacecraft. 
+b. Lock to precision timebase such as GPS or other external source.
+c. Multiple ground stations should be able to be linked together to provide larger, contiguous coverage area. 
+d. A central server architecture would allow access to the global network from multiple clients (commercialization opportunity?).
+d. Tracking of signals of unknown origin (subject to ITAR XIIa, XIII, and MTCR 121.16 item 12d2 and 12d3 restrictions).
+
+*Q6. What are the legacy requirements?*
+
+Transmitting will require HAM radio licenses (technician level or greater) in the US. Other countries may have other requirements.
+
+*Q7. Who's going to build this?*
+
+Since the current 2013 Mach 30 Annual Plan does not yet have hardware expenses budgeted for this project, but it will be part of an academic endeavor of a Mach 30 volunteer, the volunteer will construct this project with privately acquired funding.  
+
+*Q8. How many do we want to make?*
+
+One for the academic credit, but some effort will be made to enable kits to be built from the mechanical and electronic modules.  This kitification represents another commercial opportunity to purchase in bulk and ship complete kits for modest markup and postage to individuals, makerspaces, universities, etc.
+
+*Q9. What is the budget?*
+
+The build budget for the PC controlled Azimuth - Elevation mount and the antenna is $500.00.  A dual band (VHF/UHF) ham radio transceiver and computer are all that are required to complete the ground station and should be acquired by the user. 
+
+*Q10. What is the timeline?*
+
+To meet the academic credit requirements, this project must be complete by August 25th, 8 weeks after the start of the independent study class on July the 1st.
+
+*Q11. What waste products will be produced by the manufacture and/or operation of this?*
+
+It is likely that the first ground station will be used until a larger one is built, where the original will be kept as a backup. Any components that wear out, fail, or are damaged must be disposed of according to all federal, state and local guidelines in the US, or as regulations require in other parts of the world.  Once no longer needed, the original ground station will be archived.  It is also possible the university may wish to have the original for their display and/or use.  Kits and copies will be made out of parts which allow the reuse of the materials for other projects, keeping them from being improperly disposed of. 

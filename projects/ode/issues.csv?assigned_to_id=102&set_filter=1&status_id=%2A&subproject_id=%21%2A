@@ -1,0 +1,12 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+251,Closed,Open Design Engine,Bug,Normal,Not selecting a license results in a 500 error,Jeremy Wright,"",v0.2.1 - Public Beta Enhancements,Christopher Sigman,07/10/2014,"",0,"",217,07/10/2014 09:51 pm,09/02/2014 10:25 am,"When creating a new project, if you don't select a license the response from ODE is an HTTP 500 error. The error in the logs is 
+<pre>
+NoMethodError (undefined method `add_to_base' for #<ActiveModel::Errors:0xb5bcda94>):
+  app/controllers/projects_controller.rb:83:in `create'
+</pre>"
+249,Closed,Open Design Engine,Bug,Normal,Receive 403 Error After Creating New Project,Jeremy Wright,"",v0.2.1 - Public Beta Enhancements,Jeremy Wright,07/09/2014,"",0,"",217,07/09/2014 01:30 pm,09/02/2014 10:25 am,"OS: Linux (Ubuntu 14.04)
+Browser: Chrome 35.0.1916.153
+
+After clicking the ""Create"" button on a new project, I see a 403 (not authorized) message (see attached image).
+
+!RC_1_1_403_Error_Linux_Chrome.png!"

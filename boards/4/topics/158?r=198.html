@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Shepard Test Stand - v1.0 - SEP Step 4 - Preliminary Design - Mechanical - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../favicon.ico%3F1359925685.html' />
+<link href="../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+  <link href="../../../stylesheets/scm.css%3F1359925542.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-messages action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../index.html" class="home">Home</a></li>
+<li><a href="../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="../../../search/index/shepard-ts.html" method="get">
+        <input name="messages" type="hidden" value="1" />
+        <a href="../../../search/index/shepard-ts.html" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Shepard Test Stand</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../projects/shepard-ts.html" class="overview">Overview</a></li>
+<li><a href="../../../projects/shepard-ts/activity.html" class="activity">Activity</a></li>
+<li><a href="../../../projects/shepard-ts/roadmap.html" class="roadmap">Roadmap</a></li>
+<li><a href="../../../projects/shepard-ts/issues.1.html" class="issues">Issues</a></li>
+<li><a href="../../../projects/shepard-ts/issues/gantt.html" class="gantt">Gantt</a></li>
+<li><a href="../../../projects/shepard-ts/news.html" class="news">News</a></li>
+<li><a href="../../../dmsf/shepard-ts.html" class="dmsf">DMSF</a></li>
+<li><a href="../../../projects/shepard-ts/wiki.html" class="wiki">Wiki</a></li>
+<li><a href="../../../projects/shepard-ts/boards.html" class="boards selected">Forums</a></li>
+<li><a href="https://opendesignengine.net/projects/shepard-ts/repository" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <p class="breadcrumb"><a href="../../../projects/shepard-ts/boards.html">Forums</a> » <a href="https://opendesignengine.net/projects/shepard-ts/boards/4">Discussion</a> » </p>
+
+<div class="contextual">
+    <span class="message-158-watcher"></span>
+    
+    
+    
+</div>
+
+<h2>v1.0 - SEP Step 4 - Preliminary Design - Mechanical</h2>
+
+<div class="message">
+<p><span class="author">Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2012-05-30.html" title="05/30/2012 03:17 am">over 10 years</a> ago</span></p>
+<div class="wiki">
+<p>The block diagram is one day away from being gelled, and today is the deadline to start this step. The block diagram is separated into two main parts - mechanical and Data Acquisition (DAQ), so I thought I'd get preliminary design discussions rolling on each of them.</p>
+
+
+	<p>Two questions that come to mind on the mechanical side of things are:</p>
+
+
+	<ol>
+	<li>Do we want to build Shepard in a vertical orientation, horizontal orientation, or in such a way that it can be switched?</li>
+		<li>What materials do we want to evaluate for this design?</li>
+	</ol>
+
+
+	<p>When going through this I think it would be good to review the <a href="1.html" class="external">Resources discussion</a></p>
+
+
+	<p>There is a little bit of mechanical discussion starting with Ben's first comment <a href="49.html" class="external">here</a></p>
+
+
+	<p>And of course we always need to keep the <a href="https://opendesignengine.net/projects/shepard-ts/wiki/Requirements_Document_v1_0" class="external">requirements doc</a> in mind.</p>
+
+
+	<p>If I've missed any other discussions that contain mechanical items, please post them here.</p>
+</div>
+
+</div>
+<br />
+
+
+<h3 class="comments">Replies (25)</h3>
+
+  <div class="message reply" id="message-161">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="158%3Fr=161.html#message-161">RE: v1.0 - SEP Step 4 - Preliminary Design - Mechanical</a>
+    -
+    Added by <a href="../../../users/3.html" class="icon icon-contributor-license">J. Simmons</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2012-05-30.html" title="05/30/2012 11:19 pm">over 10 years</a> ago
+  </h4>
+  <div class="wiki"><p>I'm on vacation this week, but I do want to say I feel very strongly that we should use a horizontal orientation for Shepard.  Vertical test stands for motors have to account for the change in mass of the motor during the burn when calculating the performance because the thrust and the weight are in the same axis.  A horizontal test stand will eliminate this complication.  Plus, I believe we have seen some photos in the resources section that show s mall horizontal test stands, leaving me encouraged about the level of difficulty involved in building a horizontal test stand.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-162">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="158%3Fr=162.html#message-162">RE: v1.0 - SEP Step 4 - Preliminary Design - Mechanical</a>
+    -
+    Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2012-05-31.html" title="05/31/2012 03:30 am">over 10 years</a> ago
+  </h4>
+  <div class="wiki"><p>That's where I thought we were headed but I don't think we've ever documented it. I agree that a horizontal design is the way to go.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-165">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="158%3Fr=165.html#message-165">RE: v1.0 - SEP Step 4 - Preliminary Design - Mechanical</a>
+    -
+    Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2012-06-02.html" title="06/02/2012 03:49 am">over 10 years</a> ago
+  </h4>
+  <div class="wiki"><p>The first page of the <a href="http://www.nar.org/SandT/docs/ST-MotorTestingManual.pdf" class="external">NAR motor testing manual</a> shows several pictures, including some of their test stand in use. In two of the pictures, it looks like the test stand is most of the width of a cinder block, and is 1-1/2 cinder blocks in length. I measured a cinder block that I had and it was 15.5 inches long by 7.5 inches wide.</p>
+
+
+	<p>One possible design that came to mind is the following.</p>
+
+
+	<ol>
+	<li>An L-shaped frame made of <a href="http://www.mcmaster.com/#standard-aluminum-sheets/=hsnip9" class="external">aluminum bar</a> . If the bar was purchased in enough length, it would be possible to cut triangular pieces for angle brackets as well. Buying from McMaster-Carr, a 1/4" thick bar that's 6" wide by 3 ft long would be approximately $41.51. You could put counter-sunk clearance holes in the bottom plate so that the stand could be mounted to a heavier object to keep it stationary.</li>
+		<li>A <a href="http://www.mcmaster.com/#sleeve-bearing-carriages/=hsnneg" class="external">linear guide rail with nylon cage</a> . Gives a low friction slide to mount the motor adapter to. Approximately $21.34. A simpler/cheaper alternative to this would be to have the motor adapters (see next item) be held in place inside a nylon (delrin, etc) mount that's drilled to have a slip fit with the rod. This might require some sort of safety catch so that the motor could never eject itself backwards away from the load cell and thus slip out of the mounts.</li>
+		<li><a href="http://www.mcmaster.com/#standard-aluminum-rods/=hsno29" class="external">Aluminum rod</a> to use as the motor adapters. I was thinking that if we used large enough rod to accommodate the largest motor's diameter, then we could use the same size rod for all motors. We would make several motor adapters, simply boring the correct size hole in each adapter for the motor. That way the center line of contact between the adapter and the load cell never moves no matter what size motor we're testing. That would also allow the motor mount to be standard for all motor sizes. A 1-1/2" diameter bar 1 ft in length would run $12.78.</li>
+	</ol>
+
+
+	<p>That's a total for mechanical (with the linear slide) of roughly $76, not including fasteners and other incidentals. If we went with the slip fit nylon motor mounts, that would probably knock about $15 off. There's a lot of room for discussion including materials and less expensive sources.</p>
+
+
+	<p>Any thoughts on this preliminary design idea? My thought was to keep it as simple as possible while allowing us to test multiple motors without having to do much reconfiguration of the stand. Using the slip fit mount would allow extremely quick changes of motor sizes.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-166">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="158%3Fr=166.html#message-166">RE: v1.0 - SEP Step 4 - Preliminary Design - Mechanical</a>
+    -
+    Added by <a href="../../../users/4.html" class="icon icon-contributor-license">Greg Moran</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2012-06-08.html" title="06/08/2012 03:16 am">over 10 years</a> ago
+  </h4>
+  <div class="wiki"><p>Test post from my phone... With a photo too.</p></div>
+  <div class="attachments">
+
+<p><a href="../../../attachments/71/2012-06-04_15.09.06.jpg" class="icon icon-attachment">2012-06-04_15.09.06.jpg</a>
+  <span class="size">(1.5 MB)</span>
+  
+  
+  </p>
+
+</div>
+
+  </div>
+
+  <div class="message reply" id="message-167">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="158%3Fr=167.html#message-167">RE: v1.0 - SEP Step 4 - Preliminary Design - Mechanical</a>
+    -
+    Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2012-06-08.html" title="06/08/2012 04:21 am">over 10 years</a> ago
+  </h4>
+  <div class="wiki"><p>Great! For anyone who wasn't in the Google+ Hangout tonight, we were discussing ways to incorporate things like hand drawn sketches into these forum posts. It looks like Greg's phone handled the ODE interface without any trouble. The idea being that you could take a picture of a napkin sketch in a restaurant and post it here for the rest of us.</p>
+
+
+	<p>Don't laugh, the SR-71 Blackbird was first sketched on a napkin. Or so the story goes...</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-175">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="158%3Fr=175.html#message-175">RE: v1.0 - SEP Step 4 - Preliminary Design - Mechanical</a>
+    -
+    Added by <a href="../../../users/5.html" class="icon icon-contributor-license">Ben Barnett</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2012-06-16.html" title="06/16/2012 03:57 am">over 10 years</a> ago
+  </h4>
+  <div class="wiki"><p>Sorry I missed the "hangout".  I don't know how to access Google+ and have been very busy lately dealing with my Mother-in-law's medical issues.  It doesn't help that she lives up in Greenville, which is about 50 miles from our home.</p>
+
+
+	<p>Cheryl and I are supposed to be down in Tennessee next week, after which I might be able to devote some time to this project.</p>
+
+
+	<p>Among the many aluminum extrusions that are available are large angle sections with unequal sides.  I will see if I can find anything big enough for the main frame.  Also among aluminum extrusions is "hollow rod" which is another way of describing tubing with a wall thickness that is a major portion of the total radius.  Starting with a hole through the center of the "rod" saves a drilling step and also reduces material cost.</p>
+
+
+	<p>I hope that I will get time to think seriously about ways to reduce the cost of force measurement.  But "there is no such thing as a free lunch" in the sense that reducing material cost will significantly increase assembly and calibration time, and probably increase the complexity of signal conditioning.  Among the low-cost, high-complexity force measurement methods is, for example, measuring the inductance of a coil spring (as the spring is compressed the inductance will increase.  This will decrease the resonant frequency with a fixed capacitor, and frequency is a relatively easy measurement.  It would be sort of like running a freq' counter in "period-average" mode.</p>
+
+
+	<p>Ben</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-182">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="158%3Fr=182.html#message-182">RE: v1.0 - SEP Step 4 - Preliminary Design - Mechanical</a>
+    -
+    Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2012-07-01.html" title="07/01/2012 10:22 pm">over 10 years</a> ago
+  </h4>
+  <div class="wiki"><p>Thanks for the input Ben. We have had a few hangouts about the preliminary design, and I've started to dump the decisions into the <a href="https://opendesignengine.net/projects/shepard-ts/wiki/Preliminary_Design_v1_0" class="external">wiki</a> . I'm stalled out on the mechanical part of the design right now though because we need to discuss a concern that Greg has about using balsa wood and cardboard in the motor mount. Until I get all of the notes cleanly integrated into the wiki doc you can read the hangout meeting minutes via the links at the top.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-183">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="158%3Fr=183.html#message-183">RE: v1.0 - SEP Step 4 - Preliminary Design - Mechanical</a>
+    -
+    Added by <a href="../../../users/4.html" class="icon icon-contributor-license">Greg Moran</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2012-07-03.html" title="07/03/2012 01:25 am">over 10 years</a> ago
+  </h4>
+  <div class="wiki"><p>After reading through the preliminary mechanical design (<a class="external" href="https://opendesignengine.net/projects/shepard-ts/wiki/Preliminary_Design_v1_0">https://opendesignengine.net/projects/shepard-ts/wiki/Preliminary_Design_v1_0</a>)  I'm kinda lost.  I couldn't tell if there was agreeme

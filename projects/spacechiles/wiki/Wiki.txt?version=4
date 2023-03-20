@@ -1,0 +1,26 @@
+h1. Space Chile management
+
+<page description>
+
+h2. Table of contents:
+
+* Balloon Design
+* Payload Design
+# GPS module
+# RF beacon hardware details
+ --APRS 144.39MHz ("2m band" amateur radio)
+# Camera details
+# Audible beacon
+# Altimeter
+ --Pressure sensor capable of reading 100kPa to 500Pa
+# Thermometers
+ --Internal and external temperature sensors capable of -60C to +30C
+# New Mexico Green Chile seed packets
+
+* Ground Equipment Design
+# test 1
+# test 2
+
+* RF Beacon software
+
+* [[Operating Manual v1_0|Operating Manual]]

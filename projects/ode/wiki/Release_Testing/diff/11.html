@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Open Design Engine - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../../../favicon.ico%3F1359925685.html' />
+<link href="../../../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+</head>
+<body class="controller-wiki action-diff">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../../../index.html" class="home">Home</a></li>
+<li><a href="../../../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="https://opendesignengine.net/search/index/ode" method="get">
+        <input name="wiki_pages" type="hidden" value="1" />
+        <a href="https://opendesignengine.net/search/index/ode" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Open Design Engine</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../../ode.1.html" class="overview">Overview</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/activity" class="activity">Activity</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/roadmap" class="roadmap">Roadmap</a></li>
+<li><a href="../../../issues.html" class="issues">Issues</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/issues/gantt" class="gantt">Gantt</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/news" class="news">News</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/wiki" class="wiki selected">Wiki</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/boards" class="boards">Forums</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/files" class="files">Files</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/repository" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <div class="contextual">
+<a href="https://opendesignengine.net/projects/ode/wiki/Release_Testing/history" class="icon icon-history">History</a>
+</div>
+
+
+
+<h2>Release Testing</h2>
+
+<p>
+Version <a href="../../Release_Testing%3Fversion=10.html">10</a>
+<em>(J. Simmons, 02/25/2014 03:47 pm)</em>
+&#8594;
+Version <a href="../../Release_Testing%3Fversion=11.html">11</a>/22
+<em>(J. Simmons, 02/25/2014 03:50 pm)</em>
+</p>
+
+<div class="text-diff">
+h1. Release Testing <br /><br /> {{toc}} <br /><br /> h2. Introduction <br /><br /> The following test plan should be performed on any release candidate prior to scheduling an upgrade of the *ODE* server.    It should again be performed on the live site once the upgrade is in place to ensure the upgrade was successful. <br /><br /> h2. Required Browsers <br /><br /> All tests should be run from the following browser/OS combinations to ensure ODE works for a wide audience. <br /><br /> |*Browser*|*Windows*|*OS X*|*Linux*| 
+<br /> |Chrome     |      X             |    X       |     X        | 
+<br /> |Firefox      |      X             |    X       |     X        | 
+<br /> |Safari        |                   |    X       |             | 
+<br /> |IE              |      X             |           |             | <br /><br /> h2. Features to Test <br /><br /> *ODE* features come in three categories.    First is features which are built-in to *Redmine* core.    Second is features from community developed plugins such as &quot;DMSF&quot;:http://www.redmine.org/plugins/dmsf.    And the third is features which were added using custom plugins from *ODE* development. <br /><br /> h3. Built-In Features <br /><br /> * Projects 
+<br /> ** Creation (test with several new projects, each with different features turned on and ensure the correct tabs are visible and appear to be functional) 
+<br /> ** Create a subproject with *New subproject&quot; button on *Overview* tab  
+<br /> ** Attach a project as a subproject of another project from the *Settings* tab 
+<br /> * Wiki 
+<br /> ** Creating wiki pages 
+<br /> ** Editing wiki pages 
+<br /> ** Reverting changes 
+<br /> ** Adding and referencing attachments on wiki pages 
+<br /> ** Viewing wiki pages 
+<br /> * Issues 
+<br /> ** Creating issues 
+<br /> ** Updating issues 
+<br /> ** Assigning issues 
+<br /> ** Closing issues 
+<br /> * News 
+<br /> ** Posting News items 
+<br /> ** Viewing News items from project *Overview* tab and from *ODE* homepage (all projects should feed here, so post news items from multiple projects and make sure they show up on home page and only on correct project page) 
+<br /> * Forums 
+<br /> ** Creating forums 
+<br /> ** Creating forum posts 
+<br /> ** Replying to forum posts 
+<br /> ** Viewing forum threads <br /><br /> h3. Community Plugins <br /><br /> * &quot;DMSF&quot;:http://www.redmine.org/plugins/dmsf 
+<br /> ** Create directories 
+<br /> ** Upload files to root directory 
+<br /> ** Upload files to sub-directory 
+<br /> ** Upload new version of files 
+<br /> ** Download files 
+<br /> ** Try and upload files without correct project membership (TODO - J needs to confirm the required membership) 
+<br /> ** Delete files? 
+<br /> * Redmine_SCM / &quot;Redmine Checkout&quot;:http://www.redmine.org/boards/3/topics/10093?r=13178 (SVN CRUD) 
+<br /> ** Create a project with SVN support enabled and confirm the repository shows up in the *Repository* tab 
+<br /> ** Run the SVN tests from the bottom of the [[Installation Instructions]] 
+<br /> ** Repeat tests with a user who does not have sufficient privileges to commit and ensure read works and write fails (TODO - J needs to confirm the required membership) 
+<br /> * &quot;Redmine Hide Emails by Default&quot;:http://www.redmine.org/plugins/hide-emails 
+<br /> ** Create new user and then browse to new user from a different account; verify new user&#x27;s email address is not visible 
+<br /> * &quot;Redmine Wiki Issue Details&quot;:http://www.redmine.org/projects/redmine/wiki/PluginWikiIssueDetails 
+<br /> ** @{ {issue_details(35)} }@ (without spaces) =&gt; {{issue_details(35)}} <br /><br /> h3. Custom ODE Plugins <br /><br /> * Redmine Funding 
+<br /> <span class="diff_in">** Visit [[Features]] and ensure the following examples render 
+<br /> *** Chipin 
+<br /> *** Pledgie 
+<br /> *** Kickstarter 
+<br /> *** Paypal 
+<br /></span> * Redmine Video (extends a community plugin) <span class="diff_in">
+<br /> ** Visit [[Features]] and ensure the following examples render 
+<br /> *** Youtube 
+<br /> *** Vimeo</span> 
+<br /> * Redmine Legal 
+<br /> * Redmine Licensing 
+<br /> * Allow Private Projects
+</div>
+
+        
+				<div style="clear:both;"></div>
+    </div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+	
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://www.redmine.org/">Redmine</a> &copy; 2006-2011 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25732509-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> <div id="footer">
+  <div class="bgl"><div class="bgr">
+    <a href="https://opendesignengine.net/terms_of_services/Release_Testing">Terms Of Service</a>
+  </div></div>
+</div>
+<div id="footer">
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+h1. Ground Sphere Initial Questions v0.2
+
+{{toc}}
+
+h2. Project Background Questions
+
+h3. BQ1. Why are we making this?
+
+*BA1*. _The *Ground Sphere CubeSat Ground Station* is being built specifically to receive ""tweets from space" which will be broadcast by the "SkyCube":http://www.southernstars.com/skycube/ CubeSat.  A side effect of having such a low cost and easy to use ground station is the educational opportunities in areas including satellite orbits, radio technology, telecommunications, and programming._
+
+h3. BQ2. Who is this for?
+
+*BA2.* _The *Ground Sphere CubeSat Ground Station* is for "SkyCube backers":http://www.kickstarter.com/projects/880837561/skycube-the-first-satellite-launched-by-you/backers, students, teachers, scouting troupes, space enthusiasts, and anyone who wants to directly experience satellite communications and participate in the SkyCube mission._
+
+h3. BQ3. How will this be used?
+
+*BA3*. _Ground station operators will use the ground station and its accompanying software to:_
+
+# _Predict when the SkyCube (and other satellites) will be flyover the ground station site_
+# _Use the Software Defined Radio (SDR) to receive the radio transmissions from SkyCube (and other satellites operating on the nearby frequencies)_
+# _Decode the data packets from the SkyCube to read the "tweets" from space_
+
+h3. BQ4. Who's going to build this?
+
+*BA4.*  _The designs will be open so that anyone, without necessarily a technical education in amateur radio or satellite operations, would be able to build and operate a *Ground Sphere CubeSate Ground Station*.  Note, the first kits will be built by SkyCube KickStarter backers._
+
+h2. Technical Requirement Questions
+
+h3. TQ1a. What features does it need to have (now)?
+
+*TA1a.* _The project needs to:_
+
+* _Predict when the SkyCube satellite will flyover the ground station and be within signal reception range_
+* _Receive radio signals on 915 MHz_
+* _Decode BPSK-modulated, unencrypted AX.25 data packets sent at 9600 baud_
+* _Be easy to assemble from kit components and only require simple tools (screw drivers, pliers, wrenches, etc) for assembly_
+* _Have low shipping costs for the packaged kit_
+* _All software required to operate the ground station must run on a Windows PC_
+* _The ground station radio must connect to the ground station computer through a commonly available port (for example: USB)_
+* _The ground station hardware should minimize the opportunity for mechanical failures (from things such as broken connectors or a lack of strain relief)_
+* _The ground station needs to account for Doppler shift during satellite flyovers_
+
+h3. TQ1b. What features does it need to have (later)?
+
+*TA1b.* _In the future, the project (or related projects) may need to:_
+
+* _Predict when other satellites will fly over the ground station and be within signal reception range_
+* _Decode other data formats commonly used by CubeSats_
+* _Share radio signal with other users over Internet connections, so users can listen to satellite signals remotely_
+* _All software required to operate the ground station must run on Windows, OS X, and Linux_
+
+h3. TQ2. What are the legacy requirements?
+
+*TA2.* _To maintain compatibility with other projects, the system should:_
+
+* _N/A_
+
+h2. Project Requirement Questions
+
+h3. PQ1. How many do we want to make?
+
+*PA1.* _As an open source hardware kit, the long term objective is to promote and sell as many ground station kits to as large of an audience (schools, scouting troupes, makerspaces, space enthusiasts, etc) as possible.  However, the narrow focus on supporting SkyCube operations with the *Ground Sphere* may limit the number of kits which will be sold for this specific ground station, especially since the SkyCube is going to be on orbit for a very limited period of time.  The sales lifetime of this specific kit (and in turn the number of kits we will want to sell) will depend on how many other satellites there are to observe in the same frequency range as the SkyCube.  Note, there are approximately 2700 backers of the SkyCube KickStarter, of which Southern Stars is committed to delivering ground stations to between 20 and 30 backers.  This gives a minimum number of ground stations to be built of 30 +/- 5, which would cover the minimum backers and a handful for Mach 30's use._
+
+_The timing of the project may also limit the scale of the initial run Mach 30 can produce.  This decision will be revisited later in the development process (after the second prototype) to allow the development team to address the manufacturing logistics._
+
+h3. PQ2. What is the budget?
+
+*PA2.* _The materials cost should be kept under $100 to limit the retail cost of the kit.  There are currently three prototypes planned.  The project budget should cover all three prototypes plus overage.  To that end, the threshold project budget (max) is $500 and the objective is $400._
+
+h3. PQ3. What is the timeline?
+
+*PA3.* _The timeline for this project is dictated by the SkyCube launch and deployment timeline.  SkyCube is currently scheduled to be launched in December 2013, with deployment from the ISS in Q1 or Q2 of 2014.  Southern Stars has stated they would be comfortable with a February 2014 delivery date for the kits.  This gives a kit completion date of early January 2014 to give enough time to spool up manufacturing and shipping for the February due date._
+
+h3. PQ4. What waste products will be produced by the manufacture and/or operation of this?
+
+*PA4.* _TBD_

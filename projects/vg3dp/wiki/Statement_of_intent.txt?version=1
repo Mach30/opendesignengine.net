@@ -1,0 +1,16 @@
+This is supposed to be a general guide. 
+* focus on the math, science and engineering that is common in all cases
+* avoid diving into the specific ways each individual tool handles things
+* make as few assumptions as possible and clearly document them
+
+Focusing on the general topic will increase value in the following ways:
+* open source developers tend to start from scratch in at least one area; this will help them solve their unique problems
+* open source users are often left to puzzle through incomplete documentation; this will help them fill in the holes
+* everyone who uses 3D printing will benefit from a common core; this will help them leverage 3D printing's strengths while avoiding its weaknesses
+
+Explain things visually
+* a proper illustration needs little (or no) explanation
+* pictures avoid using different words for the same thing
+* diagrams usually don't require any translation
+* it's easier to compare what you see on the screen to what you hold in your hand
+* pictures can be shared and "groked":http://www.merriam-webster.com/dictionary/grok more easily

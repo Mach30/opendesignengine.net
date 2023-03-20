@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/13.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2011-05-13T18:40:18+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=23</id>
+    <updated>2011-05-13T18:40:18+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Looking into how we could do this.  And one idea would be a new wiki macro for donation drive sites like &lt;a href="http://pledgie.com/" class="external"&gt;pledgie&lt;/a&gt; and &lt;a href="http://www.chipin.com/" class="external"&gt;chip-in&lt;/a&gt;.  Could be modeled after wiki macro plugins like this &lt;a href="http://projects.plural.cc/projects/redmine-youtube" class="external"&gt;one for youtube&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;One quick question then is do the wiki macros work everywhere there is formatted text (like the project and main site homepages or in forums and issues).  If so, then you could even do drives for individual features and put drives on the project page... Or in news stories.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=27</id>
+    <updated>2011-05-16T23:02:10+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Blog post series on writing Redmine Plugins:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;a href="http://sergeyenin.com/redmine-plugin-development-part1-generation-enumerations-hooks" class="external"&gt;Part 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://sergeyenin.com/redmine-plugin-development-part2-journal-customization-of-redmine-menu-and-core" class="external"&gt;Part 2&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=44</id>
+    <updated>2011-10-12T12:09:41+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;First draft of full list of types of payments to accept.&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;a href="http://pledgie.com/" class="external"&gt;Pledgie&lt;/a&gt; - specifically embed the Pledgie Badge&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://www.chipin.com/" class="external"&gt;ChipIn&lt;/a&gt; - specifically embed the ChipIn Widget&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://www.kickstarter.com/" class="external"&gt;KickStarter&lt;/a&gt; - specifically embed the KickStarter widget&lt;/li&gt;
+		&lt;li&gt;&lt;a href="https://www.paypal.com" class="external"&gt;PayPal&lt;/a&gt; - specifically embed &lt;a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_singleitem-intro-outside" class="external"&gt;PayPal buttons&lt;/a&gt;
+	&lt;ul&gt;
+	&lt;li&gt;Buy now&lt;/li&gt;
+		&lt;li&gt;Add to Cart&lt;/li&gt;
+		&lt;li&gt;Donate&lt;/li&gt;
+	&lt;/ul&gt;&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=67</id>
+    <updated>2012-03-14T19:43:42+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;% Done&lt;/strong&gt; changed from &lt;i&gt;0&lt;/i&gt; to &lt;i&gt;70&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Pledgie and ChipIn support are up and working (&lt;a class="external" href="https://opendesignengine.net/projects/ode/wiki/Features#Embed-Chipin-Badge"&gt;https://opendesignengine.net/projects/ode/wiki/Features#Embed-Chipin-Badge&lt;/a&gt;).  Probably need an hour or two to wrap the other two up.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=71</id>
+    <updated>2012-03-14T19:45:51+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; changed from &lt;i&gt;New&lt;/i&gt; to &lt;i&gt;In Progress&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=121</id>
+    <updated>2012-11-04T18:47:25+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Target version&lt;/strong&gt; changed from &lt;i&gt;v0.2 - Public Beta&lt;/i&gt; to &lt;i&gt;v0.2.1 - Public Beta Enhancements&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Moving to v0.2.1 for the other two donation drive services to facilitate the launch of the public beta.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=134</id>
+    <updated>2012-11-20T20:17:16+00:00</updated>
+    <author>
+      <name>Kevin Bouwkamp</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;% Done&lt;/strong&gt; changed from &lt;i&gt;70&lt;/i&gt; to &lt;i&gt;90&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fixed the Chipin badge, and got the Kickstart one working. Below is my wiki-formatting code I was testing with.&lt;/p&gt;
+
+
+&lt;pre&gt;
+h2. Embed Kickstarter Badge
+
+@{ {kickstarter(*account name*,*project name or url path*)} }@ (without the spaces) =&amp;gt;
+
+_examples:_
+
+@{ {kickstarter(fallmedia,Alphabet Apparel)} }@
+@{ {kickstarter(fallmedia,alphabet-apparel)} }@
+
+      &lt;div class="kickstarter-widget"&gt;
+        &lt;iframe frameborder="0" 
+                height="380" 
+                width="220"
+                src="http://www.kickstarter.com/projects/fallmedia/alphabet-apparel/widget/card.html"&gt;
+        &lt;/iframe&gt;
+      &lt;/div&gt;
+
+&lt;/pre&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=135</id>
+    <updated>2012-11-20T21:05:12+00:00</updated>
+    <author>
+      <name>Kevin Bouwkamp</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;The PayPal one is a little bit different since there isn't really a concept of projects or funds that pre-exist. I created a button on their generator and this is how it comes out:&lt;/p&gt;
+
+
+&lt;pre&gt;
+&lt;code class="html syntaxhl"&gt;&lt;span class="CodeRay"&gt;&lt;span class="no"&gt;1&lt;/span&gt; &lt;span class="ta"&gt;&amp;lt;form&lt;/span&gt; &lt;span class="an"&gt;action&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;https://www.paypal.com/cgi-bin/webscr&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="an"&gt;method&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;post&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span class="ta"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="no"&gt;2&lt;/span&gt;   &lt;span class="ta"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="an"&gt;type&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="an"&gt;name&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;cmd&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="an"&gt;value&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;_s-xclick&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span class="ta"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="no"&gt;3&lt;/span&gt;   &lt;span class="ta"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="an"&gt;type&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;hidden&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="an"&gt;name&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;hosted_button_id&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="an"&gt;value&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;6P7UX7ZAUBD9J&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span class="ta"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="no"&gt;4&lt;/span&gt;   &lt;span class="ta"&gt;&amp;lt;input&lt;/span&gt; &lt;span class="an"&gt;type&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;image&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="an"&gt;src&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="an"&gt;border&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;0&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="an"&gt;name&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;submit&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="an"&gt;alt&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;PayPal - The safer, easier way to pay online!&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span class="ta"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="no"&gt;5&lt;/span&gt;   &lt;span class="ta"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="an"&gt;alt&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="an"&gt;border&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;0&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="an"&gt;src&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;https://www.paypalobjects.com/en_US/i/scr/pixel.gif&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="an"&gt;width&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;1&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="an"&gt;height&lt;/span&gt;=&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;1&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span class="ta"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="no"&gt;6&lt;/span&gt; &lt;span class="ta"&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;br /&gt;&lt;/pre&gt;
+
+	&lt;p&gt;The only thing that really matters here is the hosted_button_id hidden input's value, in this case '6P7UX7ZAUBD9J'. Seems to be something PayPal creates on their end because there is a lot of pre-defined information built into these future transactions.&lt;/p&gt;
+
+
+&lt;strong&gt;&lt;ins&gt;Options&lt;/ins&gt;&lt;/strong&gt;
+	&lt;ol&gt;
+	&lt;li&gt;Obtain a business account in order to gain API access. They have a button manager part of their API. Not sure if this would work for our arbitrary intentions, or if we could create buttons for other business accounts besides ours&lt;/li&gt;
+		&lt;li&gt;Let the user be able to just paste the HTML they have generated into the page. Letting any ol' user paste any HTML into the page has it's obvious drawbacks.&lt;/li&gt;
+	&lt;/ol&gt;
+
+
+	&lt;p&gt;I'll stew on it a bit&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=136</id>
+    <updated>2012-11-21T09:07:57+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;As long as the hosted_button_id field is sufficient to identify the button for paypal, I would be fine with the macro being something like { {paypal(6P7UX7ZAUBD9J)} } (obviously without the spaces).  We should also check and see if the "donate" vs "buy" buttons use different html in their rendering.  Let me know if you want to get on a hangout sometime to chat about this one from a requirements standpoint, since it is more tricky than the others.&lt;/p&gt;
+
+
+	&lt;p&gt;Thanks for all the work on this.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=137</id>
+    <updated>2012-11-25T14:29:49+00:00</updated>
+    <author>
+      <name>Kevin Bouwkamp</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;OK so I went ahead and made the PayPal ones. Here is the wiki-formatting code I was playing with:&lt;/p&gt;
+
+
+&lt;pre&gt;
+h2. Embed Paypal Badge
+
+h3. PayPal Button Types
+
+@{ {paypal_donate(*button id*)} }@ (without the spaces) =&amp;gt;
+
+        &lt;div class='paypal-widget'&gt;
+          &lt;form action="https://www.paypal.com/cgi-bin/webscr" method="post"&gt;
+            &lt;input type="hidden" name="cmd" value="_s-xclick"&gt;
+            &lt;input type="hidden" name="hosted_button_id" value="D39Q5TE3RQUX2"&gt;
+            &lt;input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"&gt;
+            &lt;img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+
+
+*OR*
+
+@{ {paypal_buynow(*button id*)} }@ (without the spaces) =&amp;gt;
+
+        &lt;div class='paypal-widget'&gt;
+          &lt;form action="https://www.paypal.com/cgi-bin/webscr" method="post"&gt;
+            &lt;input type="hidden" name="cmd" value="_s-xclick"&gt;
+            &lt;input type="hidden" name="hosted_button_id" value="D39Q5TE3RQUX2"&gt;
+            &lt;input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"&gt;
+            &lt;img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+
+
+*button id* is generated from "PayPal":https://www.paypal.com/us/cgi-bin/webscr?cmd=_singleitem-intro-outside
+_example where *7T7Z7DHEDQA6L* becomes our button id_
+&amp;lt;pre&amp;gt;
+&amp;lt;form&amp;gt;
+  ...
+  &amp;lt;input type="hidden" name="hosted_button_id" value="7T7Z7DHEDQA6L"&amp;gt;
+  ...
+&amp;lt;/form&amp;gt;
+&amp;lt;/pre&amp;gt;
+&lt;/pre&gt;
+
+	&lt;p&gt;It was either do it with individual macros, or make a macro: paypal(id,type). So I did both, but this wiki code only uses the former.&lt;/p&gt;
+
+
+	&lt;p&gt;Just realized I forgot to do the add to cart button. Let me throw it in quick&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=138</id>
+    <updated>2012-11-25T14:36:22+00:00</updated>
+    <author>
+      <name>Kevin Bouwkamp</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;K here's some code for the PayPal add to cart button:&lt;/p&gt;
+
+
+&lt;pre&gt;
+@{ {paypal_cart(*button id*)} }@ (without the spaces) =&amp;gt;
+
+        &lt;div class='paypal-widget'&gt;
+          &lt;form action="https://www.paypal.com/cgi-bin/webscr" method="post"&gt;
+            &lt;input type="hidden" name="cmd" value="_s-xclick"&gt;
+            &lt;input type="hidden" name="hosted_button_id" value="D39Q5TE3RQUX2"&gt;
+            &lt;input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"&gt;
+            &lt;img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+
+&lt;/pre&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=140</id>
+    <updated>2012-11-25T15:40:41+00:00</updated>
+    <author>
+      <name>Kevin Bouwkamp</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;% Done&lt;/strong&gt; changed from &lt;i&gt;90&lt;/i&gt; to &lt;i&gt;100&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=141</id>
+    <updated>2012-11-27T08:27:25+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;This is great news.  I will get these on my test server this week and take a look.  With any luck we could see them on the live server over the weekend.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=144</id>
+    <updated>2012-12-02T13:58:25+00:00</updated>
+    <author>
+      <name>Admin Administrator</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; changed from &lt;i&gt;In Progress&lt;/i&gt; to &lt;i&gt;Resolved&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Tested, and published to the live server.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #13: Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13?journal_id=549</id>
+    <updated>2020-06-05T08:20:55+00:00</updated>
+    <author>
+      <name>Ida wallace</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Thanks for sharing with us this kind of useful post. I appreciate an efforts for sharing this posts.&lt;br /&gt;Ida, Assignment writer. &lt;a class="external" href="http://www.secureassignmenthelp.com/psychology-assignment-help/"&gt;http://www.secureassignmenthelp.com/psychology-assignment-help/&lt;/a&gt;&lt;/p&gt;    </content>
+  </entry>
+</feed>

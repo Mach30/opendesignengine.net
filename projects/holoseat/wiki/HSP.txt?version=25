@@ -1,0 +1,53 @@
+h1. Holoseat Serial Protocol
+
+{{>toc}}
+
+h2. Introduction
+
+_*Note*: Beginning with version 0.4.0, this document supersedes the material covered in [[Software Source Code|Project Software]].
+_
+The HoloSeat firmware has a serial protocol, the Holoseat Serial Protocol (HSP), to enable the desktop configuration app to modify all key parameters and to determine the current configuration of the Holoseat at runtime.  It is laid out to mirror the REST API presented to Holoseat clients by the desktop application.
+
+h2. Serial Port Configuration
+
+|*Field*|*Value*|
+|Baud Rate|115200|
+|Data Bits|8|
+|Parity|None|
+|Stop Bit|1|
+
+h2. Command Structure
+
+Commands are sent as JSON strings with a message ID (may be an empty string, but must be present), a URI, an HTTP verb, and possibly arguments.  
+
+Note, the Holoseat Python serial library will insert a message ID if none is included.  But users interacting directly with the serial port must include at least an empty message ID.  This means that the message ID is optional from the app serial monitor and from the app libraries, but not the Arduino serial monitor.  
+
+*TODO* (fill this in more)
+
+h2. Low Level Commands
+
+The low level commands are intended development use.  These commands will not be reproduced in the Holoseat REST API.  
+
+|*Command Name*|*URI*|*Verb*|
+
+
+h2. Public Commands
+
+The following commands mirror the REST API to implement the features of the REST API.
+
+|*Command Name*|*URI*|*Verb*|
+|Get Device Name|/main/devicename|GET|
+||\2. @{"messageId":"ee764e45b0de469d9c949dc1c43beb1a","uri":"/main/devicename","verb":"GET"}@|
+||\2. @{messageId":"ee764e45b0de469d9c949dc1c43beb1a","deviceName":"Holoseat Alpha"}@|
+|\3. |
+|Get Version|/main/version|GET|
+||\2. @{"messageId":"ee764e45b0de469d9c949dc1c43beb1a","uri":"/main/version","verb":"GET"}@|
+||\2. @{"messageId":"ee764e45b0de469d9c949dc1c43beb1a","hwVer":"v0.4","fwVer":"v0.4.0","hspVer":"v0.4.0"}@|
+|Get Enabled State|/main/enabled|GET|
+||\2. @{"messageId":"ee764e45b0de469d9c949dc1c43beb1a","uri":"/main/enabled","verb":"GET"}@|
+||\2. @{messageId":"ee764e45b0de469d9c949dc1c43beb1a","enabled":1}@|
+|\3. |
+|Set Enabled State|/main/enabled|PUT|
+||\2. @{"messageId":"ee764e45b0de469d9c949dc1c43beb1a","uri":"/main/enabled","verb":"PUT", "args":{"enabled":0}}@|
+||\2. @{messageId":"ee764e45b0de469d9c949dc1c43beb1a","enabled":0}@|
+|\3. |

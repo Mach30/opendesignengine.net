@@ -1,0 +1,23 @@
+h1. General Overview
+
+{{toc}}
+
+h3. Welcome
+
+Welcome to the *Power/Temp Monitor and Control System (EPS/ECLSS)* project Wiki. This wiki contains documentation covering the design, development, fabrication, and use of the Power/Temp Monitor and Control System (EPS/ECLSS), a board designed to monitor power consumption and ambient temperature within an electronics enclosure and report it via Ethernet. The forums would be a good place to start if you have questions about the thought process behind an item. In most cases, links to the appropriate forum discussions will be included in the wiki pages.
+
+h3. Philosophy
+
+The idea behind the *Power/Temp Monitor and Control System (EPS/ECLSS)* project is to start small and simple while meeting the existing need, and then build on what is learned when moving to more capable and complex systems later on. This is in line with Mach 30's philosophy of starting (literally) from the ground up to build the infrastructure required to facilitate safe, routine, reliable, and sustained access to space. 
+
+h3. Getting Involved
+
+If you're interested in getting involved a good place to start would be the "Initial Questions":https://opendesignengine.net/projects/eps-001/wiki/Initial_Questions page. There you will find the foundational questions that will guide the rest of the *Power/Temp Monitor and Control System (EPS/ECLSS)* design process. There is also the navigation bar at the right to help you find a specific section of the documentation quickly.
+
+h3. History
+
+I was notified by a friend whom the client, a general manager for a Wireless Internet Service Provider (WISP), approached for a project which he wasn't sure could be done for a reasonable price.  The challenge is to build a method of monitoring voltage, current, and temperature of a battery bank and the charge circuit.  The reason this is a challenge is that it must be performed remotely at wireless repeater sites on remote mountaintops with the data being carried by the backhaul link back to a server.  This was the start of the *Power/Temp Monitor and Control System (EPS/ECLSS)* project.  
+
+h3. Other Uses
+
+Other WISPs have similar needs, and the least expensive solution is around $2000.00 according to the client who recently attended an industry conference and conferred with his peers. The *Power/Temp Monitor and Control System (EPS/ECLSS)* project also has some substantial aerospace applications which will be addressed in the modular version 2.0 and beyond.  This monitoring and control system may also be used to monitor power and temperature on High Altitude Balloons (HAB) and satellite payloads.  This is the reason for the terms in the title enclosed in parentheses; EPS referrs to the Electrical Power Subsystem of a spacecraft, and ECLSS to the Environmental Control and Life Support Subsystem.

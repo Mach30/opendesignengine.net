@@ -1,0 +1,44 @@
+h1. Sensor Assembly
+
+{{>toc}}
+
+h2. Tools
+
+* Holoseat Test Stand with computer to operate it
+* Soldering iron with stand
+* Helping hands
+* Exhaust fan
+* Sensor assembly jig (3D printed tool - provide link)
+* Flush snips
+* Safety glasses
+
+h2. Materials
+
+* Instant/super glue (prefer Loctite Super Glue Ultragel Control)
+* Solder
+* (1) WSSM-01: TRRS Audio Connector on PCB
+* (1) WSSM-02: TLE4966L Infineon Technologies High Precsn Hall / Board Mount Hall Effect/Magnetic Sensors
+* (1) WSSM-03: Sensor Housing Lower Half
+* (1) WSSM-04: Sensor Housing Upper Half
+* (1) WSSM-05: 3M 9472LE Tape 1/2" x 1" piece
+
+h2. Safety Issues
+
+* Care must be taken when using the soldering iron, the tip is very hot
+* Always wear safety glasses while working with soldering irons
+* Avoid breathing in the soldering fumes, use a vent or hood if needed to provide adequate ventilation
+
+h2. Product
+
+HS-04: Wheel Speed Sensor Module
+
+h2. Procedure
+
+h3. 1. Place sensor on board (need specific name)
+
+h3. 2. Solder sensor to board
+
+h3. 3. Verify sensor
+
+h3. 4. Finish assembly
+

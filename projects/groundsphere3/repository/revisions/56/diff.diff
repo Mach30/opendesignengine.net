@@ -1,0 +1,128 @@
+Index: trunk/tests/link_budget_calculator.py
+===================================================================
+--- trunk/tests/link_budget_calculator.py	(revision 55)
++++ trunk/tests/link_budget_calculator.py	(revision 56)
+@@ -1,8 +1,8 @@
+ import pint
++import math
+ 
+ class LinkBudgetCalculator():
+-	"""Calculator for link budgets
+-	"""
++	"""Calculator for link budgets	"""
+ 
+ 	def __init__(self, ureg):
+ 		"""Constructor
+@@ -24,6 +24,7 @@
+ 		self._transmit_pointing_loss =  0.0                   # dB
+ 		self._polarization_losses =     0.0                   # dB
+ 		self._atmospheric_loss =        0.0                   # dB
++		self._receive_antenna_gain =   0.0                   # dB
+ 		self._receiver_gain =           0.0                   # dB
+ 		self._receiving_pointing_loss = 0.0                   # dB 
+ 		self._system_noise_figure =     0.0                   # dB
+@@ -40,6 +41,10 @@
+ 		self._minimum_detectable_signal = 0.0                 # dBm
+ 		self._energy_noise_ratio =        0.0                 # dB
+ 		self._link_margin =               0.0                 # dB
++		# constants
++		c = 2.9979*pow(10,8) * ureg.meter / ureg.second	# Speed of Light
++		Re = 6371 * ureg.kilometers	# Average Earth Radius
++		pi = math.pi # pi
+ 	
+ 	@property
+ 	def altitude_ground_station(self):
+@@ -57,6 +62,62 @@
+ 		self._altitude_ground_station = value
+ 		
+ 	# TODO -- add all methods for each variable
++	
++	def run(self):
++		"""Calculate Link Budget
++	`	"""
++		# Downlink Wavelength m
++		_downlink_wavelength = (c/_downlink_frequency).to('m')
++		
++		# Link Distance m 
++		_orbit_elevation_angle_rad = math.radians(_orbit_elevation_angle)
++		beta = _orbit_elevation_angle_rad+(pi/2)
++		alpha = math.asin((_altitude_satellite/(_altitude_satellite+Re))*math.sin(beta))
++		theta = (pi/2)-alpha-beta
++		_link_distance = math.sin(theta)*(_altitude_satellite+Re)/math.sin(beta)
++		
++		# Transmit Power dBm
++		_transmit_power_dBm = power_to_dBm(ureg, _transmit_power)
++		
++		# Transmit EIRP dBm
++		_transmit_eirp = add_dBm_power(ureg, _transmit_power_dBm, _transmit_losses + _transmit_antenna_gain + _transmit_pointing_loss)
++	
++		# Downlink Path Loss dB
++		_downlink_path_loss = -20*math.log10(4*pi*_link_distance/_downlink_wavelength)
++		
++		# Required En/N0 dB)
++		_required_ebno = _target_energy_noise_ratio + _implementation_loss
++		
++		# Recieved Power dBm
++		_received_power = add_dBm_power(ureg, _transmit_eirp, _transmit_antenna_gain + _downlink_path_loss + _polarization_losses + _atmospheric_loss +_receive_antenna_gain + _receiving_pointing_loss)
++		
++		# MDS dBm
++		_minimum_detectable_signal = dBm_to_string(-174+10*math.log10(_noise_bandwidth)+_system_noise_figure)
++		
++		# Eb/N0 Receieved dB
++		_energy_noise_ratio = add_dBm_power(ureg, _received_power, -_minimum_detectable_signal)
++	
++		# Link Margin dB
++		_link_margin = add_dBm_power(ureg, dBm_to_string(_required_ebno), - _energy_noise_ratio)
++	
++	
++		
++	
++	
++	
++	
++	
++	
++	
++	
++	
++	
++	
++	
++	
++	
++	
++	
+ 
+ 
+ 
+Index: trunk/docs/Link Budget Documentation.ipynb
+===================================================================
+--- trunk/docs/Link Budget Documentation.ipynb	(revision 55)
++++ trunk/docs/Link Budget Documentation.ipynb	(revision 56)
+@@ -93,7 +93,7 @@
+     "\n",
+     "$$ P_{TrC} [dBm] = 10log_{10}(P_{Tr}[W]*1000) $$\n",
+     "\n",
+-    "$$ EIRP[dB] = P_{TrC}[dB] + L_{Tr}[dB] + G_{Tr}[dB] + L_{TrP}[dB] $$"
++    "$$ EIRP[dB] = P_{TrC}[dBm] + L_{Tr}[dB] + G_{Tr}[dB] + L_{TrP}[dB] $$"
+    ]
+   },
+   {
+@@ -212,7 +212,7 @@
+     "#### Radio Propagation Factors Beyond the Scope of the Design Problem\n",
+     "\n",
+     "##### Multipath Fading\n",
+-    "Inherent to all wireless radio communication channels is multipath propagation. When radio waves are transmitted from an antenna, different portions of the wave-front travelling away will usually interact with different obstacles. The sum of a fraction of these waves will reach the receiver, along with the direct line-of-sight component if it exists. These interactions are primarily reflection, refraction, diffraction, and scattering. In land based communication systems, radio wave can interact with objects of all sizes including terrain, buildings, cars, and people. How detrimental multipath propagation is to a receiver is location dependent. Amazingly, the atmosphere can refract and scatter radio waves as they travel from space to Earth’s surface. This can be attributed to changing refractive indices associated with different air pressures and temperatures at different altitudes as well as clouds between the satellite and ground station. The “richness” for a multipath propagation channel is related to the inter-symbol interference experienced by the desired receiver. Inter-symbol interference occurs when a previously transmitted symbol interferes with the consecutive transmitted symbol due to delayed components of the previous signal. This type of interference can severely affect receiver performance in high multipath environments. \n",
++    "Inherent to all wireless radio communication channels is multipath propagation. When radio waves are transmitted from an antenna, different portions of the wave-front travelling away will usually interact with different obstacles. The sum of a fraction of these waves will reach the receiver, along with the direct line-of-sight component if it exists. These interactions are primarily reflection, refraction, diffraction, and scattering. In land based communication systems, radio wave can interact with objects of all sizes including terrain, buildings, cars, and people. How detrimental multipath propagation is to a receiver is location dependent. Amazingly, the atmosphere can refract and scatter radio waves as they travel from space to Earth’s surface. This can be attributed to changing refractive indices associated with different air pressures and temperatures at different altitudes as well as clouds between the satellite and ground station. The total electron content (TEC) is a common metric used to determine propagation delay due to the ionosphere. The “richness” for a multipath propagation channel is related to the inter-symbol interference experienced by the desired receiver. Inter-symbol interference occurs when a previously transmitted symbol interferes with the consecutive transmitted symbol due to delayed components of the previous signal. This type of interference can severely affect receiver performance in high multipath environments. \n",
+     "\n",
+     "###### Multipath Propagation Compensation\n",
+     "•\tSlower data rate\n",
+@@ -718,7 +718,7 @@
+    "name": "python",
+    "nbconvert_exporter": "python",
+    "pygments_lexer": "ipython3",
+-   "version": "3.6.1"
++   "version": "3.6.2"
+   }
+  },
+  "nbformat": 4,

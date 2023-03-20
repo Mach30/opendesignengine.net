@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link href="http://opendesignengine.net/projects/ode/issues.atom?fixed_version_id=5&amp;amp;per_page=50&amp;amp;set_filter=1&amp;amp;status_id=c" rel="self"/>
+  <link href="http://opendesignengine.net/projects/ode/issues?fixed_version_id=5&amp;amp;per_page=50&amp;amp;set_filter=1&amp;amp;status_id=c" rel="alternate"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2011-04-08T02:57:26+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Feature #9 (Closed): Improve Wiki PDF export</title>
+    <link href="http://opendesignengine.net/issues/9" rel="alternate"/>
+    <id>http://opendesignengine.net/issues/9</id>
+    <updated>2011-04-08T02:57:26+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Install this &lt;a href="http://www.redmine.org/plugins/redmine_doc_pu" class="external"&gt;plugin&lt;/a&gt;.  Remember to store in svn for inclusion in the distribution.  Be sure to consider the need for supporting software and how this impacts the distribution of ODE.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #6 (Closed): Add wiki external format plugin as basis for wiki enhancements</title>
+    <link href="http://opendesignengine.net/issues/6" rel="alternate"/>
+    <id>http://opendesignengine.net/issues/6</id>
+    <updated>2011-04-08T02:51:27+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Evaluate this &lt;a href="http://www.redmine.org/boards/3/topics/10649" class="external"&gt;plugin&lt;/a&gt; for use in wiki.  Possible features it would support include:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;LaTeX style equations&lt;/li&gt;
+		&lt;li&gt;UML diagrams&lt;/li&gt;
+		&lt;li&gt;Embedded graphs&lt;/li&gt;
+		&lt;li&gt;Videos(?) - see comments&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;Need to look at how the underlying programs relate to the ODE distro and what will need to be placed in SVN to distribute this feature.&lt;/p&gt;    </content>
+  </entry>
+</feed>

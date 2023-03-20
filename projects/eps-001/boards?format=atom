@@ -1,0 +1,1896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Power/Temp Monitor and Control System (EPS/ECLSS): General</title>
+  <link href="http://opendesignengine.net/projects/eps-001/boards?format=atom" rel="self"/>
+  <link href="http://opendesignengine.net/projects/eps-001/boards" rel="alternate"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-02-08T19:07:20+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>General: RE: SEP Step 5: Detailed Design - Engineering Change</title>
+    <link href="http://opendesignengine.net/boards/20/topics/418?r=423#message-423" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/418?r=423#message-423</id>
+    <updated>2013-02-08T19:07:20+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;a name="PowerTemp-Monitor-and-Control-System-EPSECLSS-Detailed-Design"&gt;&lt;/a&gt;
+&lt;h1 &gt;Power/Temp Monitor and Control System (EPS/ECLSS) Detailed Design&lt;a href="#PowerTemp-Monitor-and-Control-System-EPSECLSS-Detailed-Design" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+
+
+	&lt;ul class="toc"&gt;&lt;li&gt;&lt;a href="#PowerTemp-Monitor-and-Control-System-EPSECLSS-Detailed-Design"&gt;Power/Temp Monitor and Control System (EPS/ECLSS) Detailed Design&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="#Introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Design-Criteria-Review"&gt;Design Criteria Review&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Block-Diagram"&gt;Block Diagram&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Schematic"&gt;Schematic&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Bill-Of-Materials"&gt;Bill Of Materials&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Preliminary-Budget"&gt;Preliminary Budget&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+
+
+	&lt;a name="Introduction"&gt;&lt;/a&gt;
+&lt;h3 &gt;Introduction&lt;a href="#Introduction" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;This is a temperature and power monitoring system for the radio/battery cabinets on wireless internet service providers (WISP) repeaters. Other uses of this project are satellite and HAB payloads. Attention will be paid to make the project multi-role, but not at the expense of the primary stakeholders (WISPs).  The PCB design needs to be completed before assembly can begin.  This will be completed while parts are on order, as some have a 2-3 week lead time in the quantities required.&lt;/p&gt;
+
+
+	&lt;a name="Design-Criteria-Review"&gt;&lt;/a&gt;
+&lt;h3 &gt;Design Criteria Review&lt;a href="#Design-Criteria-Review" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 1.1&lt;/strong&gt; The EPS board uses a Texas Instruments MSP430 microcontroller to measure and store the sensor data &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 1.2&lt;/strong&gt; the EPS board is made from components which are rated beyond the specification as listed, and the system will operate without direct intervention by an operator.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 2.1&lt;/strong&gt; The EPS board is designed in such a way that it may be installed by any person with solar power or electrical wiring experience.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 2.2&lt;/strong&gt; The EPS board will have screw holes to mount the board using &lt;a href="http://opendesignengine.net/issues/10" class="issue status-1 priority-2 parent" title="Modernize ODE theme (New)"&gt;#10&lt;/a&gt; screws.  Alternatively, a DIN rail clip may be used.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 2.3&lt;/strong&gt; The EPS board can draw it's power from any 6-30VDC source.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 3.1&lt;/strong&gt; The EPS board shall measure predefined parameters.
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 3.1.1&lt;/strong&gt; The EPS board measures the ambient temperature in the enclosure using a sensor on the board.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.1.2&lt;/strong&gt; The EPS board measures voltages of two separate circuits directly with a chip that has built in isolation.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.1.3&lt;/strong&gt; The EPS board limits the input voltage to the sensor to safe levels using a zener and current limiter.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.1.4&lt;/strong&gt; The EPS board measures the current of two separate circuits using a directly with a chip that has built in isolation.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.2&lt;/strong&gt; The EPS board transmits measurement data or fault conditions to the server using a MAC chip with full TCP/IP stack.
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 3.2.1&lt;/strong&gt; The EPS board will transmit measurement data on demand (web page request).&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.2.2&lt;/strong&gt; The EPS board will be capable of transmitting measurement data on a schedule (FTP or email).&lt;/li&gt;
+	&lt;/ul&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 4.1&lt;/strong&gt; The EPS board consumes minimal power. Design maximum is 24mW.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.2&lt;/strong&gt; See &lt;strong&gt;EPSRR 2.3&lt;/strong&gt;.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.3&lt;/strong&gt; The EPS board meets all criteria in this area, having a tolerance for massive overvoltage and 12 bit accuracy.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.4&lt;/strong&gt; The EPS board measures temperature within from -20 to 85C with 12 bit accuracy.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.5&lt;/strong&gt; The EPS board meets all criteria in this area, having a tolerance for massive overcurrent and 12 bit accuracy.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.6&lt;/strong&gt; The EPS board meets all criteria in this area, having a MAC controller IC with a fully functional TCP/IP stack and Ethernet Jack with Magnetics.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 6.1&lt;/strong&gt; The EPS board is read using standard web protocols which are standardized across all platforms.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 6.2&lt;/strong&gt; The EPS board uses standardized connections including Screw terminals and Ethernet.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 8.1&lt;/strong&gt; The EPS board is optimized for ease of production. &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 8.2&lt;/strong&gt; See ESPRR 8.1.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 9.2&lt;/strong&gt; The production units appear to cost around $85.00 in parts.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 11.4&lt;/strong&gt; Attention has been paid into the durability of the design to keep waste to an absolute minimum.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;a name="Block-Diagram"&gt;&lt;/a&gt;
+&lt;h3 &gt;Block Diagram&lt;a href="#Block-Diagram" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;img src="http://opendesignengine.net/attachments/download/311" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;a name="Schematic"&gt;&lt;/a&gt;
+&lt;h3 &gt;Schematic&lt;a href="#Schematic" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;img src="http://opendesignengine.net/attachments/download/312" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;a name="Bill-Of-Materials"&gt;&lt;/a&gt;
+&lt;h3 &gt;Bill Of Materials&lt;a href="#Bill-Of-Materials" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;strong&gt;Control Board&lt;/strong&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic&lt;/th&gt;
+			&lt;th&gt;Description&lt;/th&gt;
+			&lt;th&gt;Package &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; C1&lt;/td&gt;
+			&lt;td&gt;68uF Capacitor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; C2&lt;/td&gt;
+			&lt;td&gt;120uF Capacitor&lt;/td&gt;
+			&lt;td&gt;Axial &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; D1&lt;/td&gt;
+			&lt;td&gt;1N5817 Schottky diode&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; L1&lt;/td&gt;
+			&lt;td&gt;100uH Inductor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rb1&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rb2&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U1&lt;/td&gt;
+			&lt;td&gt;LM2594M-3.3/NOPB Voltage regulator&lt;/td&gt;
+			&lt;td&gt;SSOP-8 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN1&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN2&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN3&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN4&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN5&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; J1&lt;/td&gt;
+			&lt;td&gt;5mm barrel jack, 2.1mm center pole&lt;/td&gt;
+			&lt;td&gt;Std &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;EPS Board (MSP430 MCU and MAC IC)&lt;/td&gt;
+			&lt;td&gt;Board &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+&lt;strong&gt;Current Sensor Board&lt;/strong&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic&lt;/th&gt;
+			&lt;th&gt;Description&lt;/th&gt;
+			&lt;th&gt;Package &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN1&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;Thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Cf1&lt;/td&gt;
+			&lt;td&gt;1uF capacitor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;2 position screw terminals&lt;/td&gt;
+			&lt;td&gt;Std &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf1&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf2&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; RL1&lt;/td&gt;
+			&lt;td&gt;220 Ohm .5W resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rs&lt;/td&gt;
+			&lt;td&gt;3.9 mOhm 5W resistor&lt;/td&gt;
+			&lt;td&gt;Axial &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Ra1&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Ra2&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; S1,2&lt;/td&gt;
+			&lt;td&gt;2 pos DIP switch &lt;/td&gt;
+			&lt;td&gt;Thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U3&lt;/td&gt;
+			&lt;td&gt;INA226 Current and voltage sensor&lt;/td&gt;
+			&lt;td&gt;SSOP-10 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Current Sensor PC Board &lt;/td&gt;
+			&lt;td&gt;Board &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;Cable &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;Cable &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Alpha Wire 1174c SL005 4cond 22ga&lt;/td&gt;
+			&lt;td&gt;Cable &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+&lt;strong&gt;Temperature Sensor Board&lt;/strong&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic&lt;/th&gt;
+			&lt;th&gt;Description&lt;/th&gt;
+			&lt;th&gt;Package &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN1&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;Thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U2&lt;/td&gt;
+			&lt;td&gt;TMP102 Temp sensor (I2C)&lt;/td&gt;
+			&lt;td&gt;SSOP-6 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Temperature Sensor PC Board &lt;/td&gt;
+			&lt;td&gt;Board &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;Cable &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;Cable &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Alpha Wire 1174c SL005 4cond 22ga&lt;/td&gt;
+			&lt;td&gt;Cable &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+	&lt;a name="Preliminary-Budget"&gt;&lt;/a&gt;
+&lt;h3 &gt;Preliminary Budget&lt;a href="#Preliminary-Budget" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;strong&gt;Control Board&lt;/strong&gt;                
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic &lt;/th&gt;
+			&lt;th&gt;Description &lt;/th&gt;
+			&lt;th&gt;Prototype Cost &lt;/th&gt;
+			&lt;th&gt;Production Cost &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; C1&lt;/td&gt;
+			&lt;td&gt;68uF Capacitor&lt;/td&gt;
+			&lt;td&gt;$0.49&lt;/td&gt;
+			&lt;td&gt;$1.15 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; C2&lt;/td&gt;
+			&lt;td&gt;120uF Capacitor&lt;/td&gt;
+			&lt;td&gt;$0.62&lt;/td&gt;
+			&lt;td&gt;$0.62 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; D1&lt;/td&gt;
+			&lt;td&gt;1N5817 Schottky diode&lt;/td&gt;
+			&lt;td&gt;$0.27&lt;/td&gt;
+			&lt;td&gt;$0.19 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; L1&lt;/td&gt;
+			&lt;td&gt;100uH Inductor&lt;/td&gt;
+			&lt;td&gt;$0.18&lt;/td&gt;
+			&lt;td&gt;$0.09 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rb1&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rb2&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U1&lt;/td&gt;
+			&lt;td&gt;LM2594M-3.3/NOPB Voltage regulator&lt;/td&gt;
+			&lt;td&gt;$2.70&lt;/td&gt;
+			&lt;td&gt;$2.70 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN1&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN2&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;$0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN3&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;$0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN4&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;$0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN5&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;$0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; J1&lt;/td&gt;
+			&lt;td&gt;5mm barrel jack, 2.1mm center pole&lt;/td&gt;
+			&lt;td&gt;$4.95&lt;/td&gt;
+			&lt;td&gt;$1.12 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;EPS Board (MSP430 MCU and MAC IC)&lt;/td&gt;
+			&lt;td&gt;$0.00&lt;/td&gt;
+			&lt;td&gt;$12.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Populated Ethernet Booster Pack (MSP430 MCU)&lt;/td&gt;
+			&lt;td&gt;$25.00&lt;/td&gt;
+			&lt;td&gt;$25.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Labor&lt;/td&gt;
+			&lt;td&gt;$1,362.50&lt;/td&gt;
+			&lt;td&gt;$120.12 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;SUBTOTAL&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$1,402.30&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$167.85&lt;/strong&gt; &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+&lt;strong&gt;Current Sensor Board&lt;/strong&gt;                
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic&lt;/th&gt;
+			&lt;th&gt;Description&lt;/th&gt;
+			&lt;th&gt;Prototype Cost&lt;/th&gt;
+			&lt;th&gt;Production Cost &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN1&lt;/td&gt;
+			&lt;td&gt;    Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;$0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Cf1&lt;/td&gt;
+			&lt;td&gt;    1uF capacitor&lt;/td&gt;
+			&lt;td&gt;$0.14&lt;/td&gt;
+			&lt;td&gt;$1.15 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt; Phoenix Contact 1714971 two position screw terminals&lt;/td&gt;
+			&lt;td&gt;$1.34&lt;/td&gt;
+			&lt;td&gt;$1.31 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Phoenix Contact 1714971 two position screw terminals&lt;/td&gt;
+			&lt;td&gt;$1.34&lt;/td&gt;
+			&lt;td&gt;$1.31 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf1&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf2&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; RL1&lt;/td&gt;
+			&lt;td&gt;220 Ohm .5W resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rs&lt;/td&gt;
+			&lt;td&gt;4 mOhm 4W resistor Ohmite 14AFR004E&lt;/td&gt;
+			&lt;td&gt;$1.98&lt;/td&gt;
+			&lt;td&gt;$1.23 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Ra1&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Ra2&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; S1,2&lt;/td&gt;
+			&lt;td&gt;2 pos DIP switch&lt;/td&gt;
+			&lt;td&gt;$0.53&lt;/td&gt;
+			&lt;td&gt;$0.49 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U3&lt;/td&gt;
+			&lt;td&gt;INA226 Current and voltage sensor&lt;/td&gt;
+			&lt;td&gt;$6.33&lt;/td&gt;
+			&lt;td&gt;$3.38 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Current Sensor PC Board&lt;/td&gt;
+			&lt;td&gt;$0.00&lt;/td&gt;
+			&lt;td&gt;$4.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;$0.68&lt;/td&gt;
+			&lt;td&gt;$0.37 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;$0.68&lt;/td&gt;
+			&lt;td&gt;$0.37 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Alpha Wire 1174c SL005 4cond 22ga&lt;/td&gt;
+			&lt;td&gt;$1.00&lt;/td&gt;
+			&lt;td&gt;$1.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Labor&lt;/td&gt;
+			&lt;td&gt;$225.00&lt;/td&gt;
+			&lt;td&gt;$62.09 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;SUBTOTAL&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$241.84&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$77.81&lt;/strong&gt; &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+&lt;strong&gt;Temperature Sensor Board&lt;/strong&gt;                
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic&lt;/th&gt;
+			&lt;th&gt;Description&lt;/th&gt;
+			&lt;th&gt;Prototype Cost&lt;/th&gt;
+			&lt;th&gt;Production Cost &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN1&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;$0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U2&lt;/td&gt;
+			&lt;td&gt;TMP102 Temp sensor (I2C)&lt;/td&gt;
+			&lt;td&gt;$5.95 &lt;/td&gt;
+			&lt;td&gt;$1.69 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Temperature Sensor PC Board&lt;/td&gt;
+			&lt;td&gt;$0.00&lt;/td&gt;
+			&lt;td&gt;$2.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;$0.68&lt;/td&gt;
+			&lt;td&gt;$0.37 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;$0.68&lt;/td&gt;
+			&lt;td&gt;$0.37 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Alpha Wire 1174c SL005 4cond 22ga&lt;/td&gt;
+			&lt;td&gt;$1.00&lt;/td&gt;
+			&lt;td&gt;$1.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Labor&lt;/td&gt;
+			&lt;td&gt;$75.00&lt;/td&gt;
+			&lt;td&gt;$29.21 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;SUBTOTAL&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$84.28&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$35.60&lt;/strong&gt; &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+&lt;strong&gt;Completed Assembly as Specified&lt;/strong&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Board&lt;/th&gt;
+			&lt;th&gt;Prototype Cost&lt;/th&gt;
+			&lt;th&gt;Production Cost &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Control Board&lt;/td&gt;
+			&lt;td&gt;$1,402.30&lt;/td&gt;
+			&lt;td&gt;$167.85 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Current Sensor Board&lt;/td&gt;
+			&lt;td&gt;$241.84&lt;/td&gt;
+			&lt;td&gt;$77.81 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Current Sensor Board&lt;/td&gt;
+			&lt;td&gt;$241.84&lt;/td&gt;
+			&lt;td&gt;$77.81 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Temperature Sensor Board&lt;/td&gt;
+			&lt;td&gt; $84.28&lt;/td&gt;
+			&lt;td&gt;$35.60 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;strong&gt;TOTAL COST&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt; $1969.96&lt;/td&gt;
+			&lt;td&gt; $359.07 &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: Engineering change</title>
+    <link href="http://opendesignengine.net/boards/20/topics/388?r=422#message-422" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/388?r=422#message-422</id>
+    <updated>2013-02-07T14:56:39+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;The current range has been increased to 0-20 amps with survival to 30.  This change happened in conversation with the client yesterday afternoon.&lt;/p&gt;
+
+
+	&lt;p&gt;The basic design is good to far beyond that point (150 amps), but good engineering practice dictates that we should redesign the current sensors to be external boards to keep EMI to a minimum.  This means that rather than the large shunt resistors being on the main board, they occupy the majority of the real estate on the sensor boards, which allows us greater space on the controller board.  I am considering placing five small cable connectors on the controller board to connect to a total of four current sensors and one temperature sensor in addition to the one on the controller board.  This is the maximum of the components I2C addressing, and would represent the most utility and flexibility in design.  It also means that destructive events should be isolated to the specific sensor board with the rest of the system remaining not only unharmed, but also running.&lt;/p&gt;
+
+
+	&lt;p&gt;Specific changes that will need to be made and values checked include changing the resistance and power capacity of the shunt resistor, checking the series limiting resistor on the zener diode (over-voltage protection), adding 2 resistors and a 2 position dip switch for address selection of the current sensor, creating a simple temp measurement circuit, moving components which are specific to current sensing to their own board, and specifying the module connector and cable system.  It sounds difficult but will be done in a few hours.  Also, by moving the sensors to an outboard PC board, we lose a few capabilities.  The first is the ability to draw from power parasitically, and the second is the fault condition interrupts.&lt;/p&gt;
+
+
+	&lt;p&gt;The ability to draw controller power parasitically though the monitored circuits is a convenience feature which was not specifically requested by the client.  This feature may be manually achieved by connecting the power directly to the monitored circuit which may be anywhere from 6-30VDC.  The reason this can't be used is that the remote sensor modules will all send their power through the thin control circuit cable to the controller, but only the selected input will power it.  This means that the controller will be powered by a 24-28ga wire, and while this is possible, it would be better from an isolation standpoint to draw power from only one source selected at the time of installation.&lt;/p&gt;
+
+
+	&lt;p&gt;The fault condition interrupts would require an additional connection, making the number of conductors five.  Five pin wires are fairly easy to find, but submini 5 pin connectors are not.  This would disproportionally raise the cost of the project well beyond what benefit it would bring.  The control board may be programmed to identify a fault condition, and it could even be made adjustable by the user.  Doing so in software is only a couple of clock cycles slower than the interrupt method, and according to calculations, the difference would be about 187.5nS which is significantly faster than the refresh cycle of the web information query at 250mS.  The bottom line is that it would make no real difference in the readings, problem identification, or resolution.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: RE: SEP Step 5: Detailed Design</title>
+    <link href="http://opendesignengine.net/boards/20/topics/418?r=421#message-421" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/418?r=421#message-421</id>
+    <updated>2013-02-03T00:07:45+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I did... but that's because of the specific situation.  As you may have guessed, I skipped a lot of the prelim work, moving straight into production for the most part.  Also, the mechanicals of the design are also much simpler than Shepard, since the project is purely electronic.  At this point I need go/no go from the client to proceed to ordering and assembly, so this is as good as a point to do it as any.&lt;/p&gt;
+
+
+	&lt;p&gt;This abbreviated process probably shouldn't be followed in a large multi-discipline project.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: RE: SEP Step 5: Detailed Design</title>
+    <link href="http://opendesignengine.net/boards/20/topics/418?r=420#message-420" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/418?r=420#message-420</id>
+    <updated>2013-02-02T23:34:33+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;You've done this differently than we did on Shepard, and I think it's something that we should talk about during the next Shepard documentation meeting.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: SEP Step 6: Design Review</title>
+    <link href="http://opendesignengine.net/boards/20/topics/419" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/419</id>
+    <updated>2013-02-02T22:45:23+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;After the design is reviewed by the client and peers, issues will be posted here.  Once these issues have been addressed, all tasks have been completed, and the parts have arrived, construction will begin.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: SEP Step 5: Detailed Design</title>
+    <link href="http://opendesignengine.net/boards/20/topics/418" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/418</id>
+    <updated>2013-02-02T22:38:18+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;a name="EPS-Detailed-Design"&gt;&lt;/a&gt;
+&lt;h1 &gt;EPS Detailed Design&lt;a href="#EPS-Detailed-Design" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+
+
+	&lt;ul class="toc"&gt;&lt;li&gt;&lt;a href="#EPS-Detailed-Design"&gt;EPS Detailed Design&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="#Introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Design-Criteria-Review"&gt;Design Criteria Review&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Block-Diagram"&gt;Block Diagram&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Schematic"&gt;Schematic&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Bill-Of-Materials"&gt;Bill Of Materials&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Budget"&gt;Budget&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+
+
+	&lt;a name="Introduction"&gt;&lt;/a&gt;
+&lt;h3 &gt;Introduction&lt;a href="#Introduction" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;While the preliminary design is nearly a complete detailed design, the PCB design needs to be completed before assembly can begin.  This will be completed while parts are on order, as some have a 2-3 week lead time in the quantities required.&lt;/p&gt;
+
+
+	&lt;a name="Design-Criteria-Review"&gt;&lt;/a&gt;
+&lt;h3 &gt;Design Criteria Review&lt;a href="#Design-Criteria-Review" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 1.1&lt;/strong&gt; The EPS board uses a Texas Instruments MSP430 microcontroller to measure and store the sensor data &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 1.2&lt;/strong&gt; the EPS board is made from components which are rated beyond the specification as listed, and the system will operate without direct intervention by an operator.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 2.1&lt;/strong&gt; The EPS board is designed in such a way that it may be installed by any person with solar power or electrical wiring experience.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 2.2&lt;/strong&gt; The EPS board will have screw holes to mount the board using &lt;a href="http://opendesignengine.net/issues/10" class="issue status-1 priority-2 parent" title="Modernize ODE theme (New)"&gt;#10&lt;/a&gt; screws.  Alternatively, a DIN rail clip may be used.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 2.3&lt;/strong&gt; The EPS board can draw it's power from either monitored load or from another 6-30VDC source.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 3.1&lt;/strong&gt; The EPS board shall measure predefined parameters.
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 3.1.1&lt;/strong&gt; The EPS board measures the ambient temperature in the enclosure using a sensor on the board.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.1.2&lt;/strong&gt; The EPS board measures voltages of two separate circuits directly with a chip that has built in isolation.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.1.3&lt;/strong&gt; The EPS board limits the input voltage to the sensor to safe levels using a zener and current limiter.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.1.4&lt;/strong&gt; The EPS board measures the current of two separate circuits using a directly with a chip that has built in isolation.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.2&lt;/strong&gt; The EPS board transmits measurement data or fault conditions to the server using a MAC chip with full TCP/IP stack.
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 3.2.1&lt;/strong&gt; The EPS board will transmit measurement data on demand (web page request).&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.2.2&lt;/strong&gt; The EPS board will be capable of transmitting measurement data on a schedule (FTP or email).&lt;/li&gt;
+	&lt;/ul&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 4.1&lt;/strong&gt; The EPS board consumes minimal power. Design maximum is 24mW.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.2&lt;/strong&gt; See &lt;strong&gt;EPSRR 2.3&lt;/strong&gt;.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.3&lt;/strong&gt; The EPS board meets all criteria in this area, having a tolerance for massive overvoltage and 12 bit accuracy.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.4&lt;/strong&gt; The EPS board measures temperature within from -20 to 85C with 12 bit accuracy.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.5&lt;/strong&gt; The EPS board meets all criteria in this area, having a tolerance for massive overcurrent and 12 bit accuracy.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.6&lt;/strong&gt; The EPS board meets all criteria in this area, having a MAC controller IC with a fully functional TCP/IP stack and Ethernet Jack with Magnetics.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 6.1&lt;/strong&gt; The EPS board is read using standard web protocols which are standardized across all platforms.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 6.2&lt;/strong&gt; The EPS board uses standardized connections including Screw terminals and Ethernet.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 8.1&lt;/strong&gt; The EPS board is optimized for ease of production. &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 8.2&lt;/strong&gt; See ESPRR 8.1.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 9.2&lt;/strong&gt; The production units appear to cost around $60.00 in parts.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 11.4&lt;/strong&gt; Attention has been paid into the durability of the design to keep waste to an absolute minimum.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;a name="Block-Diagram"&gt;&lt;/a&gt;
+&lt;h3 &gt;Block Diagram&lt;a href="#Block-Diagram" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;img src="http://opendesignengine.net/attachments/download/281" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;a name="Schematic"&gt;&lt;/a&gt;
+&lt;h3 &gt;Schematic&lt;a href="#Schematic" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;img src="http://opendesignengine.net/attachments/download/280" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;a name="Bill-Of-Materials"&gt;&lt;/a&gt;
+&lt;h3 &gt;Bill Of Materials&lt;a href="#Bill-Of-Materials" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic&lt;/th&gt;
+			&lt;th&gt;Description&lt;/th&gt;
+			&lt;th&gt;Package &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; C1&lt;/td&gt;
+			&lt;td&gt;68uF Capacitor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; C2&lt;/td&gt;
+			&lt;td&gt;120uF Capacitor&lt;/td&gt;
+			&lt;td&gt;Axial &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Cf1&lt;/td&gt;
+			&lt;td&gt;1uF capacitor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Cf2&lt;/td&gt;
+			&lt;td&gt;1uF capacitor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; D1&lt;/td&gt;
+			&lt;td&gt;1N5817 Schottky diode&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; L1&lt;/td&gt;
+			&lt;td&gt;100uH Inductor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Ra1&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rb1&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rb2&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf1&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf2&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf3&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf4&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; RL1&lt;/td&gt;
+			&lt;td&gt;180 Ohm .5W resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; RL2&lt;/td&gt;
+			&lt;td&gt;180 Ohm .5W resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rs1&lt;/td&gt;
+			&lt;td&gt;068 Ohm 10W resistor&lt;/td&gt;
+			&lt;td&gt;Axial &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rs2&lt;/td&gt;
+			&lt;td&gt;068 Ohm 10W resistor&lt;/td&gt;
+			&lt;td&gt;Axial &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U1&lt;/td&gt;
+			&lt;td&gt;LM2594M-3.3/NOPB Voltage regulator&lt;/td&gt;
+			&lt;td&gt;SSOP-8 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U2&lt;/td&gt;
+			&lt;td&gt;TMP102 Temp sensor (I2C)&lt;/td&gt;
+			&lt;td&gt;SSOP-6 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U3&lt;/td&gt;
+			&lt;td&gt;INA226 Current and voltage sensor&lt;/td&gt;
+			&lt;td&gt;SSOP-10 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U4&lt;/td&gt;
+			&lt;td&gt;INA226 Current and voltage sensor&lt;/td&gt;
+			&lt;td&gt;SSOP-10 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;3 position jumper block&lt;/td&gt;
+			&lt;td&gt;Std &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;5mm barrel jack, 2.1mm center pole&lt;/td&gt;
+			&lt;td&gt;Std &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;8 position screw terminals&lt;/td&gt;
+			&lt;td&gt;Std &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Populated Ethernet Booster Pack (MSP430 MCU)&lt;/td&gt;
+			&lt;td&gt;Board &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;EPS PC board&lt;/td&gt;
+			&lt;td&gt;Board &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+	&lt;a name="Budget"&gt;&lt;/a&gt;
+&lt;h3 &gt;Budget&lt;a href="#Budget" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic&lt;/th&gt;
+			&lt;th&gt;Description&lt;/th&gt;
+			&lt;th&gt;Prototype Cost&lt;/th&gt;
+			&lt;th&gt;Production Cost &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; C1&lt;/td&gt;
+			&lt;td&gt;68uF Capacitor&lt;/td&gt;
+			&lt;td&gt;$.49&lt;/td&gt;
+			&lt;td&gt;$1.15 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; C2&lt;/td&gt;
+			&lt;td&gt;120uF Capacitor&lt;/td&gt;
+			&lt;td&gt;$0.62&lt;/td&gt;
+			&lt;td&gt;$0.62 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Cf1&lt;/td&gt;
+			&lt;td&gt;1uF capacitor&lt;/td&gt;
+			&lt;td&gt;$0.14&lt;/td&gt;
+			&lt;td&gt;$1.15 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Cf2&lt;/td&gt;
+			&lt;td&gt;1uF capacitor&lt;/td&gt;
+			&lt;td&gt;$0.14&lt;/td&gt;
+			&lt;td&gt;$1.15 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; D1&lt;/td&gt;
+			&lt;td&gt;1N5817 Schottky diode&lt;/td&gt;
+			&lt;td&gt;$0.27&lt;/td&gt;
+			&lt;td&gt;$0.19 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; L1&lt;/td&gt;
+			&lt;td&gt;100uH Inductor&lt;/td&gt;
+			&lt;td&gt;$0.18&lt;/td&gt;
+			&lt;td&gt;$0.09 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Ra1&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rb1&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rb2&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf1&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf2&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf3&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf4&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; RL1&lt;/td&gt;
+			&lt;td&gt;180 Ohm .5W resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; RL2&lt;/td&gt;
+			&lt;td&gt;180 Ohm .5W resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rs1&lt;/td&gt;
+			&lt;td&gt;068 Ohm 10W resistor&lt;/td&gt;
+			&lt;td&gt;$2.14&lt;/td&gt;
+			&lt;td&gt;$2.14 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rs2&lt;/td&gt;
+			&lt;td&gt;068 Ohm 10W resistor&lt;/td&gt;
+			&lt;td&gt;$2.14&lt;/td&gt;
+			&lt;td&gt;$2.14 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U1&lt;/td&gt;
+			&lt;td&gt;LM2594M-3.3/NOPB Voltage regulator&lt;/td&gt;
+			&lt;td&gt;$2.70&lt;/td&gt;
+			&lt;td&gt;$2.70 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U2&lt;/td&gt;
+			&lt;td&gt;TMP102 Temp sensor (I2C)&lt;/td&gt;
+			&lt;td&gt;$5.95&lt;/td&gt;
+			&lt;td&gt;$1.69 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U3&lt;/td&gt;
+			&lt;td&gt;INA226 Current and voltage sensor&lt;/td&gt;
+			&lt;td&gt;$6.33&lt;/td&gt;
+			&lt;td&gt;$3.38 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U4&lt;/td&gt;
+			&lt;td&gt;INA226 Current and voltage sensor&lt;/td&gt;
+			&lt;td&gt;$6.33&lt;/td&gt;
+			&lt;td&gt;$3.38 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;3 position jumper block&lt;/td&gt;
+			&lt;td&gt;$.22&lt;/td&gt;
+			&lt;td&gt;$.13 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;5mm barrel jack, 2.1mm center pole&lt;/td&gt;
+			&lt;td&gt;$4.95&lt;/td&gt;
+			&lt;td&gt;$1.12 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;8 position screw terminals&lt;/td&gt;
+			&lt;td&gt;$2.45&lt;/td&gt;
+			&lt;td&gt;$2.45 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Populated Ethernet Booster Pack (MSP430 MCU)&lt;/td&gt;
+			&lt;td&gt;$25.00&lt;/td&gt;
+			&lt;td&gt;$25.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;EPS PC board (in qty. 10)&lt;/td&gt;
+			&lt;td&gt;$0.00&lt;/td&gt;
+			&lt;td&gt;$12.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Subtotal&lt;/td&gt;
+			&lt;td&gt;$58.21&lt;/td&gt;
+			&lt;td&gt;$60.75 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Labor&lt;/td&gt;
+			&lt;td&gt;$1762.50&lt;/td&gt;
+			&lt;td&gt;$135.52 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;TOTAL&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$1820.71&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$196.27&lt;/strong&gt; &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+	&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; this budget reflects 8 hours of PCB layout which will be complete by 25 FEB 2013&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: RE: SEP Step 3: Block Diagram</title>
+    <link href="http://opendesignengine.net/boards/20/topics/397?r=417#message-417" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/397?r=417#message-417</id>
+    <updated>2013-02-02T15:23:01+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Rob, the gentleman who created the Ethernet enabled MSP430 board, has sent me the files I requested as well as all other MSP430 projects in related areas.  The Eagle PCB and Schematic files of the version I was going to use are attached, but I am evaluating some of the others as well.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: RE: SEP Step 3: Block Diagram</title>
+    <link href="http://opendesignengine.net/boards/20/topics/397?r=416#message-416" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/397?r=416#message-416</id>
+    <updated>2013-02-02T13:26:59+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;In other news, the gentleman who made the Ethernet enabled MSP430 board has contacted me and will send me all the files.  These, while open, were not published.  I will be asking him for permission to post the design on ODE as well.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: RE: SEP Step 3: Block Diagram</title>
+    <link href="http://opendesignengine.net/boards/20/topics/397?r=415#message-415" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/397?r=415#message-415</id>
+    <updated>2013-02-02T13:24:43+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Not a big deal about the block diagram...  I was on my way to full blown schematic when I posted the above diagram.  Here is the new block diagram that tends to be a little more high level.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="http://opendesignengine.net/attachments/download/273" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: RE: Any thoughts or general concerns?</title>
+    <link href="http://opendesignengine.net/boards/20/topics/388?r=414#message-414" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/388?r=414#message-414</id>
+    <updated>2013-02-02T13:21:38+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;We are back on track.  Bill of materials and preliminary budget will be complete by tonight.  The circuit board layout should be completed by Monday, along with the detailed design portion.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: SEP Step 4: Preliminary Design</title>
+    <link href="http://opendesignengine.net/boards/20/topics/413" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/413</id>
+    <updated>2013-02-01T15:54:21+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;a name="EPS-Preliminary-Design"&gt;&lt;/a&gt;
+&lt;h1 &gt;EPS Preliminary Design&lt;a href="#EPS-Preliminary-Design" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+
+
+	&lt;ul class="toc"&gt;&lt;li&gt;&lt;a href="#EPS-Preliminary-Design"&gt;EPS Preliminary Design&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="#Introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Preliminary-Design-Criteria-Review"&gt;Preliminary Design Criteria Review&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Preliminary-Schematic"&gt;Preliminary Schematic&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Preliminary-Bill-Of-Materials"&gt;Preliminary Bill Of Materials&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Preliminary-Budget"&gt;Preliminary Budget&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+
+
+	&lt;a name="Introduction"&gt;&lt;/a&gt;
+&lt;h3 &gt;Introduction&lt;a href="#Introduction" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;This design document is broken down in to multiple sections: the Preliminary Design Criteria Review, the Preliminary Schematic, the Preliminary Bill of Materials, and finally the Preliminary Budget.  Each of these sections has information which is preliminary in nature, yet attempts have been made to make these as accurate as possible.&lt;/p&gt;
+
+
+	&lt;a name="Preliminary-Design-Criteria-Review"&gt;&lt;/a&gt;
+&lt;h3 &gt;Preliminary Design Criteria Review&lt;a href="#Preliminary-Design-Criteria-Review" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 1.1&lt;/strong&gt; The EPS board uses a Texas Instruments MSP430 microcontroller to measure and store the sensor data &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 1.2&lt;/strong&gt; the EPS board is made from components which are rated beyond the specification as listed, and the system will operate without direct intervention by an operator.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 2.1&lt;/strong&gt; The EPS board is designed in such a way that it may be installed by any person with solar power or electrical wiring experience.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 2.2&lt;/strong&gt; The EPS board will have screw holes to mount the board using &lt;a href="http://opendesignengine.net/issues/10" class="issue status-1 priority-2 parent" title="Modernize ODE theme (New)"&gt;#10&lt;/a&gt; screws.  Alternatively, a DIN rail clip may be used.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 2.3&lt;/strong&gt; The EPS board can draw it's power from any 6-30VDC source.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 3.1&lt;/strong&gt; The EPS board shall measure predefined parameters.
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 3.1.1&lt;/strong&gt; The EPS board measures the ambient temperature in the enclosure using a sensor on the board.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.1.2&lt;/strong&gt; The EPS board measures voltages of two separate circuits directly with a chip that has built in isolation.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.1.3&lt;/strong&gt; The EPS board limits the input voltage to the sensor to safe levels using a zener and current limiter.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.1.4&lt;/strong&gt; The EPS board measures the current of two separate circuits using a directly with a chip that has built in isolation.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.2&lt;/strong&gt; The EPS board transmits measurement data or fault conditions to the server using a MAC chip with full TCP/IP stack.
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 3.2.1&lt;/strong&gt; The EPS board will transmit measurement data on demand (web page request).&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 3.2.2&lt;/strong&gt; The EPS board will be capable of transmitting measurement data on a schedule (FTP or email).&lt;/li&gt;
+	&lt;/ul&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 4.1&lt;/strong&gt; The EPS board consumes minimal power. Design maximum is 24mW.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.2&lt;/strong&gt; See &lt;strong&gt;EPSRR 2.3&lt;/strong&gt;.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.3&lt;/strong&gt; The EPS board meets all criteria in this area, having a tolerance for massive overvoltage and 12 bit accuracy.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.4&lt;/strong&gt; The EPS board measures temperature within from -20 to 85C with 12 bit accuracy.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.5&lt;/strong&gt; The EPS board meets all criteria in this area, having a tolerance for massive overcurrent and 12 bit accuracy.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 4.6&lt;/strong&gt; The EPS board meets all criteria in this area, having a MAC controller IC with a fully functional TCP/IP stack and Ethernet Jack with Magnetics.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 6.1&lt;/strong&gt; The EPS board is read using standard web protocols which are standardized across all platforms.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 6.2&lt;/strong&gt; The EPS board uses standardized connections including Screw terminals and Ethernet.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 8.1&lt;/strong&gt; The EPS board is optimized for ease of production. &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;EPSRR 8.2&lt;/strong&gt; See ESPRR 8.1.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 9.2&lt;/strong&gt; The production units appear to cost around $85.00 in parts.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;EPSRR 11.4&lt;/strong&gt; Attention has been paid into the durability of the design to keep waste to an absolute minimum.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;a name="Preliminary-Schematic"&gt;&lt;/a&gt;
+&lt;h3 &gt;Preliminary Schematic&lt;a href="#Preliminary-Schematic" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;img src="http://opendesignengine.net/attachments/download/307" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;a name="Preliminary-Bill-Of-Materials"&gt;&lt;/a&gt;
+&lt;h3 &gt;Preliminary Bill Of Materials&lt;a href="#Preliminary-Bill-Of-Materials" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;strong&gt;Control Board&lt;/strong&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic&lt;/th&gt;
+			&lt;th&gt;Description&lt;/th&gt;
+			&lt;th&gt;Package &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; C1&lt;/td&gt;
+			&lt;td&gt;68uF Capacitor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; C2&lt;/td&gt;
+			&lt;td&gt;120uF Capacitor&lt;/td&gt;
+			&lt;td&gt;Axial &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; D1&lt;/td&gt;
+			&lt;td&gt;1N5817 Schottky diode&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; L1&lt;/td&gt;
+			&lt;td&gt;100uH Inductor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rb1&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rb2&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U1&lt;/td&gt;
+			&lt;td&gt;LM2594M-3.3/NOPB Voltage regulator&lt;/td&gt;
+			&lt;td&gt;SSOP-8 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN1&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN2&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN3&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN4&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN5&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; J1&lt;/td&gt;
+			&lt;td&gt;5mm barrel jack, 2.1mm center pole&lt;/td&gt;
+			&lt;td&gt;Std &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;EPS Board (MSP430 MCU and MAC IC)&lt;/td&gt;
+			&lt;td&gt;Board &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+&lt;strong&gt;Current Sensor Board&lt;/strong&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic&lt;/th&gt;
+			&lt;th&gt;Description&lt;/th&gt;
+			&lt;th&gt;Package &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN1&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;Thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Cf1&lt;/td&gt;
+			&lt;td&gt;1uF capacitor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;2 position screw terminals&lt;/td&gt;
+			&lt;td&gt;Std &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf1&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf2&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; RL1&lt;/td&gt;
+			&lt;td&gt;220 Ohm .5W resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rs&lt;/td&gt;
+			&lt;td&gt;3.9 mOhm 5W resistor&lt;/td&gt;
+			&lt;td&gt;Axial &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Ra1&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Ra2&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;SMD &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; S1,2&lt;/td&gt;
+			&lt;td&gt;2 pos DIP switch &lt;/td&gt;
+			&lt;td&gt;Thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U3&lt;/td&gt;
+			&lt;td&gt;INA226 Current and voltage sensor&lt;/td&gt;
+			&lt;td&gt;SSOP-10 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Current Sensor PC Board &lt;/td&gt;
+			&lt;td&gt;Board &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;Cable &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;Cable &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Alpha Wire 1174c SL005 4cond 22ga&lt;/td&gt;
+			&lt;td&gt;Cable &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+&lt;strong&gt;Temperature Sensor Board&lt;/strong&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic&lt;/th&gt;
+			&lt;th&gt;Description&lt;/th&gt;
+			&lt;th&gt;Package &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN1&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;Thru hole &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U2&lt;/td&gt;
+			&lt;td&gt;TMP102 Temp sensor (I2C)&lt;/td&gt;
+			&lt;td&gt;SSOP-6 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Temperature Sensor PC Board &lt;/td&gt;
+			&lt;td&gt;Board &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;Cable &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;Cable &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Alpha Wire 1174c SL005 4cond 22ga&lt;/td&gt;
+			&lt;td&gt;Cable &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+	&lt;a name="Preliminary-Budget"&gt;&lt;/a&gt;
+&lt;h3 &gt;Preliminary Budget&lt;a href="#Preliminary-Budget" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;strong&gt;Control Board&lt;/strong&gt;                
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic &lt;/th&gt;
+			&lt;th&gt;Description &lt;/th&gt;
+			&lt;th&gt;Prototype Cost &lt;/th&gt;
+			&lt;th&gt;Production Cost &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; C1&lt;/td&gt;
+			&lt;td&gt;68uF Capacitor&lt;/td&gt;
+			&lt;td&gt;$0.49&lt;/td&gt;
+			&lt;td&gt;$1.15 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; C2&lt;/td&gt;
+			&lt;td&gt;120uF Capacitor&lt;/td&gt;
+			&lt;td&gt;$0.62&lt;/td&gt;
+			&lt;td&gt;$0.62 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; D1&lt;/td&gt;
+			&lt;td&gt;1N5817 Schottky diode&lt;/td&gt;
+			&lt;td&gt;$0.27&lt;/td&gt;
+			&lt;td&gt;$0.19 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; L1&lt;/td&gt;
+			&lt;td&gt;100uH Inductor&lt;/td&gt;
+			&lt;td&gt;$0.18&lt;/td&gt;
+			&lt;td&gt;$0.09 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rb1&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rb2&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U1&lt;/td&gt;
+			&lt;td&gt;LM2594M-3.3/NOPB Voltage regulator&lt;/td&gt;
+			&lt;td&gt;$2.70&lt;/td&gt;
+			&lt;td&gt;$2.70 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN1&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN2&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;$0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN3&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;$0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN4&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;$0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN5&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;$0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; J1&lt;/td&gt;
+			&lt;td&gt;5mm barrel jack, 2.1mm center pole&lt;/td&gt;
+			&lt;td&gt;$4.95&lt;/td&gt;
+			&lt;td&gt;$1.12 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;EPS Board (MSP430 MCU and MAC IC)&lt;/td&gt;
+			&lt;td&gt;$0.00&lt;/td&gt;
+			&lt;td&gt;$12.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Populated Ethernet Booster Pack (MSP430 MCU)&lt;/td&gt;
+			&lt;td&gt;$25.00&lt;/td&gt;
+			&lt;td&gt;$25.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Labor&lt;/td&gt;
+			&lt;td&gt;$1,362.50&lt;/td&gt;
+			&lt;td&gt;$120.12 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;SUBTOTAL&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$1,402.30&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$167.85&lt;/strong&gt; &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+&lt;strong&gt;Current Sensor Board&lt;/strong&gt;                
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic&lt;/th&gt;
+			&lt;th&gt;Description&lt;/th&gt;
+			&lt;th&gt;Prototype Cost&lt;/th&gt;
+			&lt;th&gt;Production Cost &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN1&lt;/td&gt;
+			&lt;td&gt;    Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;$0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Cf1&lt;/td&gt;
+			&lt;td&gt;    1uF capacitor&lt;/td&gt;
+			&lt;td&gt;$0.14&lt;/td&gt;
+			&lt;td&gt;$1.15 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt; Phoenix Contact 1714971 two position screw terminals&lt;/td&gt;
+			&lt;td&gt;$1.34&lt;/td&gt;
+			&lt;td&gt;$1.31 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Phoenix Contact 1714971 two position screw terminals&lt;/td&gt;
+			&lt;td&gt;$1.34&lt;/td&gt;
+			&lt;td&gt;$1.31 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf1&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rf2&lt;/td&gt;
+			&lt;td&gt;4.7 Ohm .25W resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; RL1&lt;/td&gt;
+			&lt;td&gt;220 Ohm .5W resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Rs&lt;/td&gt;
+			&lt;td&gt;4 mOhm 4W resistor Ohmite 14AFR004E&lt;/td&gt;
+			&lt;td&gt;$1.98&lt;/td&gt;
+			&lt;td&gt;$1.23 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Ra1&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Ra2&lt;/td&gt;
+			&lt;td&gt;47k Ohm .25W Resistor&lt;/td&gt;
+			&lt;td&gt;$0.37&lt;/td&gt;
+			&lt;td&gt;$0.03 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; S1,2&lt;/td&gt;
+			&lt;td&gt;2 pos DIP switch&lt;/td&gt;
+			&lt;td&gt;$0.53&lt;/td&gt;
+			&lt;td&gt;$0.49 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U3&lt;/td&gt;
+			&lt;td&gt;INA226 Current and voltage sensor&lt;/td&gt;
+			&lt;td&gt;$6.33&lt;/td&gt;
+			&lt;td&gt;$3.38 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Current Sensor PC Board&lt;/td&gt;
+			&lt;td&gt;$0.00&lt;/td&gt;
+			&lt;td&gt;$4.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;$0.68&lt;/td&gt;
+			&lt;td&gt;$0.37 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;$0.68&lt;/td&gt;
+			&lt;td&gt;$0.37 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Alpha Wire 1174c SL005 4cond 22ga&lt;/td&gt;
+			&lt;td&gt;$1.00&lt;/td&gt;
+			&lt;td&gt;$1.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Labor&lt;/td&gt;
+			&lt;td&gt;$225.00&lt;/td&gt;
+			&lt;td&gt;$62.09 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;SUBTOTAL&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$241.84&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$77.81&lt;/strong&gt; &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+&lt;strong&gt;Temperature Sensor Board&lt;/strong&gt;                
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Schematic&lt;/th&gt;
+			&lt;th&gt;Description&lt;/th&gt;
+			&lt;th&gt;Prototype Cost&lt;/th&gt;
+			&lt;th&gt;Production Cost &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; CN1&lt;/td&gt;
+			&lt;td&gt;Molex70555-0038 Locking connector&lt;/td&gt;
+			&lt;td&gt;$0.97&lt;/td&gt;
+			&lt;td&gt;$0.96 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; U2&lt;/td&gt;
+			&lt;td&gt;TMP102 Temp sensor (I2C)&lt;/td&gt;
+			&lt;td&gt;$5.95 &lt;/td&gt;
+			&lt;td&gt;$1.69 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Temperature Sensor PC Board&lt;/td&gt;
+			&lt;td&gt;$0.00&lt;/td&gt;
+			&lt;td&gt;$2.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;$0.68&lt;/td&gt;
+			&lt;td&gt;$0.37 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Molex 50-57-9404 (mating connector for cable)&lt;/td&gt;
+			&lt;td&gt;$0.68&lt;/td&gt;
+			&lt;td&gt;$0.37 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Alpha Wire 1174c SL005 4cond 22ga&lt;/td&gt;
+			&lt;td&gt;$1.00&lt;/td&gt;
+			&lt;td&gt;$1.00 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;Labor&lt;/td&gt;
+			&lt;td&gt;$75.00&lt;/td&gt;
+			&lt;td&gt;$29.21 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;SUBTOTAL&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$84.28&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt;&lt;strong&gt;$35.60&lt;/strong&gt; &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+
+
+
+
+&lt;strong&gt;Completed Assembly as Specified&lt;/strong&gt;
+	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Board&lt;/th&gt;
+			&lt;th&gt;Prototype Cost&lt;/th&gt;
+			&lt;th&gt;Production Cost &lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Control Board&lt;/td&gt;
+			&lt;td&gt;$1,402.30&lt;/td&gt;
+			&lt;td&gt;$167.85 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Current Sensor Board&lt;/td&gt;
+			&lt;td&gt;$241.84&lt;/td&gt;
+			&lt;td&gt;$77.81 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Current Sensor Board&lt;/td&gt;
+			&lt;td&gt;$241.84&lt;/td&gt;
+			&lt;td&gt;$77.81 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; Temperature Sensor Board&lt;/td&gt;
+			&lt;td&gt; $84.28&lt;/td&gt;
+			&lt;td&gt;$35.60 &lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt; &lt;strong&gt;TOTAL COST&lt;/strong&gt;&lt;/td&gt;
+			&lt;td&gt; $1969.96&lt;/td&gt;
+			&lt;td&gt; $359.07 &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: RE: Any thoughts or general concerns?</title>
+    <link href="http://opendesignengine.net/boards/20/topics/388?r=412#message-412" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/388?r=412#message-412</id>
+    <updated>2013-01-31T22:06:59+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Due to unforeseen issues (our local school district's network is having seizures), the project will be delayed.  The block diagram will be updated and schematic posted on Monday, and this will complete everything necessary to generate the documentation necessary for a design review by peers and the client.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: RE: SEP Step 3: Block Diagram</title>
+    <link href="http://opendesignengine.net/boards/20/topics/397?r=411#message-411" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/397?r=411#message-411</id>
+    <updated>2013-01-31T13:03:46+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;One thing that I just noticed is that we did the block diagram for the &lt;a href="https://opendesignengine.net/projects/shepard-ts/wiki/Block_Diagram" class="external"&gt;Shepard Test Stand&lt;/a&gt; at a much higher level. It wasn't until the preliminary design that we started specifying part numbers. I'm not sure that this block diagram really needs to change, just wanted to point that out for discussion.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: RE: SEP Step 3: Block Diagram</title>
+    <link href="http://opendesignengine.net/boards/20/topics/397?r=409#message-409" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/397?r=409#message-409</id>
+    <updated>2013-01-30T22:12:09+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;And that's one of the many reasons why content should be posted as open source as you do a project. That way you can't become the bottleneck if somebody needs 40 to 50 units all of a sudden. They can build it themselves, or have someone else build them, but they need the documentation to be shared openly first.&lt;/p&gt;
+
+
+	&lt;p&gt;Sigh...&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General: RE: SEP Step 3: Block Diagram</title>
+    <link href="http://opendesignengine.net/boards/20/topics/397?r=408#message-408" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/20/topics/397?r=408#message-408</id>
+    <updated>2013-01-30T20:52:04+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Rev.1.1 block diagram with populated Ethernet Booster Pack and INA226 current sensors on a shared I2C bus with the TMP102 temperature sensor.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="http://opendesignengine.net/attachments/download/256" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+</feed>

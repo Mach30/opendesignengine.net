@@ -1,0 +1,68 @@
+h1. Development Setup
+
+The following instructions are meant to help get the ODE application up and running on your local workstation.  Note, these instructions assume you are setting up a development environment on Linux/OS X.
+
+h1. Prerequisites
+
+* SVN
+* MySQL
+* Ruby 1.8.7 (with Development Tools)
+* Bundler (may need to update gem to 1.4+) <pre>gem install bundler</pre>
+
+h1.  Code checkout
+
+To get started, create a local repository with svn checkout:
+
+<pre>
+svn checkout https://opendesignengine.net/svn/ode/trunk
+</pre>
+
+h1. Create Development Database
+
+You will need to setup a local development MySQL database and call 'ode_development'.  Next we need to create a new database.yml so the application knows how to connect to the database.  To accomplish this, simple copy the database.yml.exampe file:
+
+<pre>
+cd trunk
+cp config/database.yml.example config/database.yml
+</pre>
+
+Under the production: section of the the config fill, fill in the database name, username, and password.  Be sure to create the database in MySQL afterwards.
+
+h1. Bundler
+
+To install the required third-party gems to run the ODE application, we run the following Bundler command:
+
+<pre>
+bundle install
+</pre>
+
+Note: you will need to install Bundler first (gem install bundler)
+
+h1. Database Preparation
+
+To prepare the database, we first need to run migrations:
+
+<pre>
+RAILS_ENV=production rake db:migrate
+</pre>
+
+We now need some seed data to get started:
+
+<pre>
+RAILS_ENV=production rake db:seed
+</pre>
+
+h1. Running the Application
+
+Now we should be ready to run the application locally:
+
+<pre>
+RAILS_ENV=production script/server
+</pre>
+
+If all goes well, you should be able to open the application at http://localhost:3000
+
+
+
+
+

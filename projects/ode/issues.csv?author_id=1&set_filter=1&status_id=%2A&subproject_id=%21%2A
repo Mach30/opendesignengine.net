@@ -1,0 +1,6 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+44,Resolved,Open Design Engine,Bug,Normal,The Legal plugin is blocking admins from creating new accounts,Matthew Sears,"",v0.2 - Public Beta,Admin Administrator,12/18/2011,"",0,"","",12/18/2011 10:51 pm,12/21/2011 03:44 pm,"I went to add a new user tonight (while logged in as Admin) and received the following error:
+
+""You must accept the terms of service to continue""
+
+I would expect this message if I was someone registering their own account through the sign up page, but not as the Admin user creating an account for someone else.  In this case, I think the system should create the user and make them agree to the ToS at their first login.  Oh, and the administrative page for creating users does not appear to have a way of accepting the ToS so we currently cannot create new users."

@@ -1,0 +1,13 @@
+h1. XTest1
+
+h2. Device Description
+
+XText1 is a simple test board intended to demonstrate the some of the basic parts of the AttenuatorX project, and allow measurement of signal changes over a variety of frequencies and power levels.
+
+XTest1 makes has two main RF paths:
+* The main switching and active attenuation path. This path has two inputs (one for lower power, and one for higher power, immediately attenuated by 20dB), and a single output.
+* An insertion loss path used to measure the insertion loss of the switch and active attenuator
+
+The RF Switch and the active attenuator are controlled by an AVR ATMega48PA/88PA/168PA microcontroller.
+
+h2. BOM

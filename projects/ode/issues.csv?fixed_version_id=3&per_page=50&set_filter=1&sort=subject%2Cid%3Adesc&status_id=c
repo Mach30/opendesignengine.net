@@ -1,0 +1,3 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+47,Closed,Open Design Engine,Feature,Normal,Add ability to request to join a project,"","",Under consideration,J. Simmons,02/10/2012,"",0,"","",02/10/2012 05:14 am,03/22/2013 02:24 pm,There is a plugin for this - https://github.com/splendeo/redmine_simple_join_project
+107,Closed,Open Design Engine,Feature,Normal,Add Rails and Ruby versions to output on admin/info page,Kevin Bouwkamp,"",Under consideration,J. Simmons,01/16/2013,"",100,"","",01/16/2013 07:07 pm,02/03/2013 03:10 pm,It would be very helpful to have an easy way to tell what version of ruby and rails the site is running on.

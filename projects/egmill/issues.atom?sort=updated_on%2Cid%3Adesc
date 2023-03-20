@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Epoxy Granite CNC Mill: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/egmill/issues.atom?sort=updated_on%2Cid%3Adesc"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/egmill/issues?sort=updated_on%2Cid%3Adesc"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2022-12-09T12:42:54+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+</feed>

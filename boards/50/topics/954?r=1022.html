@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Yavin Thruster - Accurately Modelling the Nozzle&amp;#x27;s Curves in CadQuery - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../favicon.ico%3F1359925685.html' />
+<link href="../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+  <link href="../../../stylesheets/scm.css%3F1359925542.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-messages action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../index.html" class="home">Home</a></li>
+<li><a href="../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="../../../search/index/yavin-thruster.html" method="get">
+        <input name="messages" type="hidden" value="1" />
+        <a href="../../../search/index/yavin-thruster.html" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Yavin Thruster</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../projects/yavin-thruster.html" class="overview">Overview</a></li>
+<li><a href="../../../projects/yavin-thruster/activity.html" class="activity">Activity</a></li>
+<li><a href="../../../projects/yavin-thruster/issues.html" class="issues">Issues</a></li>
+<li><a href="../../../projects/yavin-thruster/news.html" class="news">News</a></li>
+<li><a href="../../../dmsf/yavin-thruster.html" class="dmsf">DMSF</a></li>
+<li><a href="../../../projects/yavin-thruster/wiki.1.html" class="wiki">Wiki</a></li>
+<li><a href="../../../projects/yavin-thruster/boards.html" class="boards selected">Forums</a></li>
+<li><a href="../../../projects/yavin-thruster/repository.html" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <p class="breadcrumb"><a href="../../../projects/yavin-thruster/boards.html">Forums</a> » <a href="../../../projects/yavin-thruster/boards/50.html">Discussion</a> » </p>
+
+<div class="contextual">
+    <span class="message-954-watcher"></span>
+    
+    
+    
+</div>
+
+<h2>Accurately Modelling the Nozzle&#x27;s Curves in CadQuery</h2>
+
+<div class="message">
+<p><span class="author">Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/yavin-thruster/activity%3Ffrom=2015-04-03.html" title="04/03/2015 10:12 am">over 7 years</a> ago</span></p>
+<div class="wiki">
+<p>I started a <a href="https://github.com/dcowden/cadquery/issues/80" class="external">feature request</a> on CQ's GitHub issue tracker for this. A conversation we had in last week's #EngineerSpeak Hangout got me thinking, and I finally got some time to do an experiment this morning. It's a mongrel of FreeCAD and CQ code, but shows that it is possible to create a clean curve (based on a bunch of points) that's pretty close to what you get with a polyline. The curve in the screenshot is from the Dean aerospike CQ example I did a few months ago. The left-most point is the tip of the spike, and the right-most is where the curve stops at the outside of the top of the chamber (or at least what I think of as the chamber).</p>
+</div>
+
+</div>
+<br />
+
+
+<h3 class="comments">Replies (23)</h3>
+
+  <div class="message reply" id="message-955">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="954%3Fr=955.html#message-955">RE: Accurately Modelling the Nozzle&amp;#x27;s Curves in CadQuery</a>
+    -
+    Added by <a href="../../../users/3.html" class="icon icon-contributor-license">J. Simmons</a> <a href="../../../projects/yavin-thruster/activity%3Ffrom=2015-04-03.html" title="04/03/2015 10:43 am">over 7 years</a> ago
+  </h4>
+  <div class="wiki"><p>Wow, that is very impressive.  I need to go dig out my math text books and find a measurable test for how good the fit is, but judging from the image it is clearly very close.</p>
+
+
+	<p>Here's the image Jeremy was talking about:</p>
+
+
+	<p><img src="https://cloud.githubusercontent.com/assets/1015439/6982600/c70f4952-d9e1-11e4-8e75-75dd380dfd6c.png" alt="" /></p>
+
+
+	<p>Note, as Jeremy points out, this is a rendering of both the polyline from the original points and the fitted curve.  Like I said, impressive.</p>
+
+
+	<p>Oh, and Jeremy, this looks like you are looking at just the aerospike nozzle.  The tip is at the left hand side of the image and the part of the throat defined by the nozzle is on the right.  The throat would be fully defined by adding in the geometry for the chamber so that we can define the outer radius of the throat.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-956">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="954%3Fr=956.html#message-956">RE: Accurately Modelling the Nozzle&amp;#x27;s Curves in CadQuery</a>
+    -
+    Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/yavin-thruster/activity%3Ffrom=2015-04-03.html" title="04/03/2015 12:12 pm">over 7 years</a> ago
+  </h4>
+  <div class="wiki"><p>I was pleased, and a little surprised, by the results. I thought I'd have to do a lot more coding to get that to work.</p>
+
+
+	<p>Here's a shot that's zoomed in a little bit. The line on the bottom includes 2 segments of the polyline, and the line on the top is the first segment of the curve.</p>
+
+
+	<p><img src="../../../attachments/download/544" alt="" /></p>
+
+
+<blockquote>
+
+	<p>The throat would be fully defined by adding in the geometry for the chamber so that we can define the outer radius of the throat.</p>
+
+
+</blockquote>
+
+	<p>Ok, that makes sense. I started with just the curve on the spike because it's a very recognizable part of the geometry, and it's also the part I thought would give us the most trouble in CadQuery. I hope to check with the FreeCAD devs on where the 26 point limitation comes from, and then to add the code to CQ for this operation soon-ish. Then I'll be able to redo the entire nozzle outline and revolve it. As we were talking about last night, if we can do this nozzle, we can do the cold gas thruster nozzle.</p>
+
+
+<blockquote>
+
+	

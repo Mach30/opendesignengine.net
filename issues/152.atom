@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/152.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-07-24T18:21:17+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Open Design Engine - Feature #152: Add "Create new page" button to wiki system</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/152"/>
+    <id>http://opendesignengine.net/issues/152?journal_id=220</id>
+    <updated>2013-07-24T18:21:17+00:00</updated>
+    <author>
+      <name>Christopher Sigman</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;I believe the reason it's done this way is to try and reduce orphan pages, i.e. pages that aren't linked to by another page within the Wiki.&lt;/p&gt;
+
+
+	&lt;p&gt;If it's decided to implement this, it will also require the addition of a way to set the title of the page (as a note to remember later)&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #152: Add "Create new page" button to wiki system</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/152"/>
+    <id>http://opendesignengine.net/issues/152?journal_id=396</id>
+    <updated>2013-11-07T16:01:19+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Estimated time&lt;/strong&gt; set to &lt;i&gt;6.00&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;Comments
+	&lt;ul&gt;
+	&lt;li&gt;J - if we implement this, we should also add an auto index page so users can find orphaned pages&lt;/li&gt;
+		&lt;li&gt;Chris - index (vs list of orphaned pages) would not be too hard&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+</feed>

@@ -1,0 +1,38 @@
+should already be done
+XYZ steps/mm set to calculated values "calculator":http://prusaprinters.org/calculator/
+if that doesn't work "config axes":http://reprap.org/wiki/Builders/Config/Config_Axes
+and http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#Prerequisites
+
+things to keep in mind
+plastic shrinks as it cools down. this should be compensated for by the model, not by the printer
+belts and fasteners loosen over time. make sure they're tight and check again if backlash appears later
+stepper motors can miss steps if they are commanded to move faster than the power supplied to them allows. when you start printing at faster speeds watch out for missed steps
+the shape of the infill can show through on thin perimeters. just increase the number of perimeters to hide it
+changing temperatures affects results. watch out for breezes in the area your printer sits
+
+before printing
+
+motor current (correct stepper motor current)
+axes (all axes parallel/perpendicular)
+bed surface (ensure proper plastic adhesion)
+bed level (extruder the same height at all points on bed)
+Z home http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#Z_height
+gross extruder temperature
+gross E steps/mm "commissioning":http://reprap.org/wiki/Commissioning http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#E_steps
+
+now you can print
+
+? 3 known values of height/width ?
+layer height (adjust by .01 till beautiful)
+extrusion width 
+precise extruder temperature http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#Nozzle_Temperature
+precise bed temperature http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#Bed_Temperature
+precise E steps/mm http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#E_Steps_Fine_Tuning
+infill (1.0 solid cube)
+perimeter width (nesting blocks)
+ooze control
+bridging
+overhang
+
+references
+* http://reprap.org/wiki/Calibration

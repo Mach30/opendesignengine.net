@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>AttenuatorX: News</title>
+  <link href="http://opendesignengine.net/projects/attenuatorx/news.atom" rel="self"/>
+  <link href="http://opendesignengine.net/projects/attenuatorx/news" rel="alternate"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2012-12-23T20:30:18+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>XTest1 Schematic nearly complete</title>
+    <link href="http://opendesignengine.net/news/28" rel="alternate"/>
+    <id>http://opendesignengine.net/news/28</id>
+    <updated>2012-12-23T20:30:18+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;XTest1 is the first of two test stages, prior to completing the design of AttenuatorX. The initial schematic has just been completed and annotated. The project is being developed using KiCad.&lt;/p&gt;    </content>
+  </entry>
+</feed>

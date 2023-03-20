@@ -1,0 +1,20 @@
+h1. Resources
+
+* Antenna Design
+** "The 'Eggbeater' Antenna Web Page":http://on6wg.pagesperso-orange.fr/Page%201.html
+* Software Defined Radio Links
+** "How to Make a $19 Police Scanner":https://sites.google.com/site/policescannerhowto/
+** "Open Source Ground Station Software":http://sourceforge.net/projects/groundstation/
+** "RTL-SDR + SDR Radio + Funcube Sat = Fun!":http://www.n4jtc.com/?p=579
+* Satellites Operating at/near SkyCube's frequency (915MHz)
+** "List of CubeSate":http://www.klofas.com/comm-table/ - some of which also operate on 915MHz
+** "NPS-SCAT":http://space.skyrocket.de/doc_sdat/nps-scat.htm (uses the exact same radio as SkyCube)
+* Publicity Resources
+** http://www.tested.com/
+* Analysis Resources
+** "Calculating a link Budget":http://www.uwaverf.altervista.org/index.php?option=com_content&view=article&id=55&Itemid=62
+** "Loop Antenna Dimensions":http://mysite.verizon.net/ka1fsb/loopcalc.html
+** "RADIO LINK ANALYSIS AND CHARACTERIZATION OF PAST AND FUTURE CAL POLY CUBESATS":http://polysat.calpoly.edu/download/btubb_srproject.pdf
+* Extending Ground Sphere's Concept
+** "Using the Raspberry Pi as an RTL-SDR streaming server":http://eliaselectronics.com/using-the-raspberry-pi-as-an-rtl-sdr-streaming-server/
+** "SatNOGS - Global Network of Ground Stations":http://hackaday.io/project/1340-satnogs-global-network-of-ground-stations

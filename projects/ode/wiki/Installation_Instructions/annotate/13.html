@@ -1,0 +1,1234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Open Design Engine - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../../../favicon.ico%3F1359925685.html' />
+<link href="../../../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+<link href="../../../../../stylesheets/scm.css%3F1359925542.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-wiki action-annotate">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../../../index.html" class="home">Home</a></li>
+<li><a href="../../../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="https://opendesignengine.net/search/index/ode" method="get">
+        <input name="wiki_pages" type="hidden" value="1" />
+        <a href="https://opendesignengine.net/search/index/ode" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Open Design Engine</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../../ode.1.html" class="overview">Overview</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/activity" class="activity">Activity</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/roadmap" class="roadmap">Roadmap</a></li>
+<li><a href="../../../issues.html" class="issues">Issues</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/issues/gantt" class="gantt">Gantt</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/news" class="news">News</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/wiki" class="wiki selected">Wiki</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/boards" class="boards">Forums</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/files" class="files">Files</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/repository" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <div class="contextual">
+<a href="../edit.html" class="icon icon-edit">Edit</a>
+<a href="https://opendesignengine.net/projects/ode/wiki/Installation_Instructions/history" class="icon icon-history">History</a>
+</div>
+
+
+
+<h2>Installation Instructions</h2>
+
+<p>
+Version <a href="https://opendesignengine.net/wiki/show/Installation_Instructions?version=13">13</a>
+<em>(J. Simmons, 05/08/2011 03:34 pm)</em>
+</p>
+
+
+
+<table class="filecontent annotate">
+<tbody>
+
+<tr class="bloc-0">
+    <th class="line-num">1</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=1.html">1</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>h1. Installation Instructions</pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">2</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=1.html">1</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">3</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=2.html">2</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>Open Design Engine (ODE) is based on &quot;Redmine&quot;:http://redmine.org.  The official installation method is to install the &quot;Bitnami Redmine Stack&quot;:http://bitnami.org/stack/redmine, apply some custom configuration to the stack, and then upgrade the installed Redmine instance to the ODE source code.  Support for other stacks (or bootstrapped installations) will come with future releases.  With luck, one or more of the stack providers will add ODE to their list of supported stacks.  </pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">4</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=2.html">2</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">5</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=7.html">7</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>Note, these instructions assume you are running the Ubuntu VM image of the Bitnami Redmine Stack and are *running all commands under* @sudo@.  They were tested with &quot;version 1.1.3&quot;:http://bitnami.org/files/stacks/redmine/1.1.3-0/bitnami-redmine-1.1.3-0-ubuntu-10.10.zip in &quot;VMWare Player&quot;:http://www.vmware.com/products/player/. </pre></td>
+</tr>
+
+<tr class="bloc-3">
+    <th class="line-num">6</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=3.html">3</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-3">
+    <th class="line-num">7</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=3.html">3</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>Useful Paths</pre></td>
+</tr>
+
+<tr class="bloc-4">
+    <th class="line-num">8</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=4.html">4</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>* @(bitnami_base) = /opt/bitnami@ in VM images</pre></td>
+</tr>
+
+<tr class="bloc-3">
+    <th class="line-num">9</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=3.html">3</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-3">
+    <th class="line-num">10</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=3.html">3</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>Steps to install ODE</pre></td>
+</tr>
+
+<tr class="bloc-3">
+    <th class="line-num">11</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=3.html">3</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>* Import the Bitnami Redmine Stack into VMWare (the free VMWare Player is supported)</pre></td>
+</tr>
+
+<tr class="bloc-3">
+    <th class="line-num">12</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=3.html">3</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>* Configure Redmine to run at http://hostname/ instead of http://hostname/redmine</pre></td>
+</tr>
+
+<tr class="bloc-4">
+    <th class="line-num">13</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=4.html">4</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>** Edit @(bitnami_base)/apache2/conf/httpd.conf@ and comment out the line:</pre></td>
+</tr>
+
+<tr class="bloc-3">
+    <th class="line-num">14</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=3.html">3</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">15</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>DocumentRoot &quot;/opt/bitnami/apache2/htdocs&quot;</pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">16</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=1.html">1</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">17</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>** Edit @(bitnami_base)/apps/redmine/conf/redmine.conf@ to match the following (the key areas are the addition of the virtual host section and changing all references of @/redmine@ to @/@):</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">18</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">19</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;VirtualHost *:80&gt;</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">20</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  ServerAdmin haha.huhu.com</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">21</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  ServerName server.our.lan</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">22</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  ServerAlias server</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">23</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  ErrorLog &quot;logs/error.log&quot; </pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">24</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  CustomLog &quot;logs/access.log&quot; combined</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">25</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre> # this not only blocks access to .svn directories, but makes it                </pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">26</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre> # appear as though they aren&#x27;t even there, not just that they are              </pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">27</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre> # forbidden                                                                    </pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">28</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre> &lt;DirectoryMatch &quot;^/.*/\.svn/&quot;&gt;</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">29</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>    ErrorDocument 403 /404.html</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">30</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>    Order allow,deny</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">31</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>    Deny from all</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">32</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>    Satisfy All</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">33</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  &lt;/DirectoryMatch&gt;</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">34</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  # This passes through remote_user to mongrel                                  </pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">35</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  RewriteEngine On</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">36</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  # Redirect non-static requests to cluster                                     </pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">37</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_FILENAME} !-f</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">38</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  RewriteRule ^/(.*)$ balancer://redminecluster%{REQUEST_URI} [P,QSA,L]</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">39</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/VirtualHost&gt;</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">40</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">41</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>#ProxyPass / balancer://redminecluster</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">42</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>#ProxyPassReverse / balancer://redminecluster</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">43</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">44</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;Proxy balancer://redminecluster&gt;</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">45</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  BalancerMember http://127.0.0.1:3001</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">46</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  BalancerMember http://127.0.0.1:3002</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">47</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  # The number of balancer members depends on the number of mongrels running</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">48</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  # We use only one mongrel on port 3001 by default for the BitNami Cloud Hosting</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">49</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  # Please remove the others like 3002 above in such a case.</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">50</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/Proxy&gt;</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">51</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-6">
+    <th class="line-num">52</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=6.html">6</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>** Edit @(bitnami_base)/apps/redmine/config/mongrel_cluster.yml@ and change references to @prefix: /redmine@ to @prefix: @</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">53</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>** Restart Redmine by running:</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">54</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">55</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>(bitnami_base)/ctlscript stop</pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">56</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=1.html">1</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>(bitnami_base)/ctlscript start</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">57</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=7.html">7</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">58</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=13.html">13</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>* Configure apache to host svn repositories using Redmine for user authentication</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">59</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=7.html">7</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>** Install dependencies</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">60</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=7.html">7</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">61</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=7.html">7</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>apt-get update</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">62</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=7.html">7</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>apt-get install build-essential</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">63</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=7.html">7</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>apt-get install zlib1g-dev</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">64</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=7.html">7</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>(bitnami_base)/perl/bin/cpan  # accept defaults and choose CPAN servers</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">65</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=7.html">7</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>cpan&gt; install Test::Simple</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">66</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=7.html">7</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>cpan&gt; install DBI</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">67</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=7.html">7</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>cpan&gt; install DBD::mysql</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">68</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=7.html">7</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>cpan&gt; quit</pre></td>
+</tr>
+
+<tr class="bloc-8">
+    <th class="line-num">69</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=8.html">8</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>apt-get install libapache2-svn libapache-dbi-perl libapache2-mod-perl2 libdbd-mysql-perl libdigest-sha1-perl libauthen-simple-ldap-perl</pre></td>
+</tr>
+
+<tr class="bloc-8">
+    <th class="line-num">70</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=8.html">8</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-8">
+    <th class="line-num">71</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=8.html">8</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>** Enable newly installed apache modules by editing @(bitnami_base)/apache/conf/httpd.conf@</pre></td>
+</tr>
+
+<tr class="bloc-8">
+    <th class="line-num">72</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=8.html">8</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** Uncomment approximately line 108:</pre></td>
+</tr>
+
+<tr class="bloc-8">
+    <th class="line-num">73</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=8.html">8</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-8">
+    <th class="line-num">74</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=8.html">8</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>LoadModule dav_svn_module modules/mod_dav_svn.so</pre></td>
+</tr>
+
+<tr class="bloc-8">
+    <th class="line-num">75</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=8.html">8</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-8">
+    <th class="line-num">76</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=8.html">8</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** Add a line at the end of the load modules list for mod_perl:</pre></td>
+</tr>
+
+<tr class="bloc-8">
+    <th class="line-num">77</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=8.html">8</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-8">
+    <th class="line-num">78</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=8.html">8</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>LoadModule perl_module modules/mod_perl.so</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">79</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=5.html">5</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">80</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>** Copy Redmine.pm into the perl library</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">81</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">82</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>cp (bitnami_base)/apps/redmine/extra/svn/Redmine.pm (bitnami_base)/perl/lib/site_perl/5.8.8/i686-linux/Apache/</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">83</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/pre&gt; </pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">84</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>** Create the directory structure for the svn repositories (_Note, ODE is setup to store all project related content in the @(bitnami_base)@ directory, so it uses a non-traditional location to store the svn repositories._)</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">85</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">86</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>cd (bitnami_base)</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">87</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>mkdir repos</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">88</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>chown root:daemon repos</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">89</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>chmod 0755 repos</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">90</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>cd repos</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">91</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>mkdir svn</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">92</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>chown root:daemon svn</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">93</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>chmod 0750 svn</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">94</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-10">
+    <th class="line-num">95</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=10.html">10</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>** Document the following production values in @(bitnami_base)/apps/redmine/config/database.yml@:</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">96</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** username</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">97</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** password</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">98</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** socket</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">99</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** database</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">100</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=9.html">9</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** host</pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">101</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=1.html">1</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>** Edit @(bitnami_base)/apps/redmine/conf/redmine.conf@ to configure apache to host the svn repositories</pre></td>
+</tr>
+
+<tr class="bloc-10">
+    <th class="line-num">102</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=10.html">10</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** Add the following line between @RewriteEngine On@ and the first @RewriteCond@ to prevent calls to svn from being forwarded to Redmine:</pre></td>
+</tr>
+
+<tr class="bloc-10">
+    <th class="line-num">103</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=10.html">10</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-10">
+    <th class="line-num">104</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=10.html">10</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>RewriteCond %{REQUEST_URI} !/svn(/|$)</pre></td>
+</tr>
+
+<tr class="bloc-10">
+    <th class="line-num">105</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=10.html">10</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">106</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** Add the following directives to the end of @redmine.conf@ to enable svn over http (note the various fields that need to be updated with values for your installation, including the values you noted earlier from @database.yml@):</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">107</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">108</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre># /svn location for users</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">109</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>PerlLoadModule Apache::Redmine</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">110</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;Location /svn&gt;</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">111</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  DAV svn</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">112</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  SVNParentPath &quot;(bitnami_base)/repos/svn&quot;</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">113</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  Order deny,allow</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">114</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  Deny from all</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">115</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  Satisfy any</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">116</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">117</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  PerlAccessHandler Apache::Authn::Redmine::access_handler</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">118</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  PerlAuthenHandler Apache::Authn::Redmine::authen_handler</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">119</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  AuthType Basic</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">120</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  AuthName &quot;Redmine SVN Repository&quot;</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">121</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">122</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  #read-only access   </pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">123</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  &lt;Limit GET PROPFIND OPTIONS REPORT&gt;</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">124</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>     Require valid-user</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">125</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>     Allow from localhost</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">126</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>     # Allow from another-ip</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">127</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>     Satisfy any</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">128</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  &lt;/Limit&gt;</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">129</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  # write access</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">130</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  &lt;LimitExcept GET PROPFIND OPTIONS REPORT&gt;</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">131</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>    Require valid-user</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">132</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  &lt;/LimitExcept&gt;</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">133</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">134</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  ## for mysql</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">135</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  RedmineDSN &quot;DBI:mysql:database=(database);host=(host);mysql_socket=(socket)&quot;</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">136</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">137</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  RedmineDbUser &quot;(username)&quot;</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">138</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>  RedmineDbPass &quot;(password)&quot;</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">139</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/Location&gt;</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">140</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=11.html">11</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">141</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=12.html">12</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>** Restart Redmine by running:</pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">142</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=12.html">12</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">143</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=12.html">12</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>(bitnami_base)/ctlscript stop</pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">144</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=12.html">12</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>(bitnami_base)/ctlscript start</pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">145</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=12.html">12</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">146</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=1.html">1</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>* Configure Redmine to automatically create svn repositories</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">147</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=13.html">13</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>** Activate SVN in Redmine</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">148</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=13.html">13</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** Login to Redmine with an administrator account</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">149</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=13.html">13</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** Goto Admin/Settings and select the Repositories tab</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">150</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=13.html">13</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** Check &quot;*Enable WS for repository management*&quot;</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">151</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=13.html">13</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** Click the &quot;Generate a key&quot; link and note the new API key for use below</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">152</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=13.html">13</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*** Make sure SVN is the only enabled SCM</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">153</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=13.html">13</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>** Add the following to cron by calling @crontab -e@</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">154</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=13.html">13</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;pre&gt;</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">155</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=13.html">13</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>*/2 * * * * ruby (bitnami_base)/apps/redmine/extra/svn/reposman.rb --redmine localhost --svn-dir (bitnami_base)/repos/svn --owner root --group daemon --command=&quot;svnadmin create --pre-1.6-compatible --fs-type fsfs&quot; --url http://(servers_public_fqdn)/svn --key=(API_Key) --verbose &gt;&gt; /var/log/reposman.log </pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">156</th>
+    <td class="revision"><a href="../../Installation_Instructions%3Fversion=13.html">13</a></td>
+    <td class="author">J. Simmons</td>
+    <td class="line-code"><pre>&lt;/pre&gt;</pre></td>
+</tr>
+
+</tbody>
+</table>
+
+
+
+        
+				<div style="clear:both;"></div>
+    </div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+	
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://www.redmine.org/">Redmine</a> &copy; 2006-2011 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25732509-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> <div id="footer">
+  <div class="bgl"><div class="bgr">
+    <a href="https://opendesignengine.net/terms_of_services/Installation_Instructions">Terms Of Service</a>
+  </div></div>
+</div>
+<div id="footer">
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Ground Station - Version 1.1/1.2 - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../favicon.ico%3F1359925685.html' />
+<link href="../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+  <link href="../../../stylesheets/scm.css%3F1359925542.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-messages action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../index.html" class="home">Home</a></li>
+<li><a href="../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="../../../search/index/gs-001.html" method="get">
+        <input name="messages" type="hidden" value="1" />
+        <a href="../../../search/index/gs-001.html" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Ground Station</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../projects/gs-001.html" class="overview">Overview</a></li>
+<li><a href="../../../projects/gs-001/activity.html" class="activity">Activity</a></li>
+<li><a href="../../../projects/gs-001/issues.1.html" class="issues">Issues</a></li>
+<li><a href="../../../projects/gs-001/issues/gantt.html" class="gantt">Gantt</a></li>
+<li><a href="../../../projects/gs-001/news.html" class="news">News</a></li>
+<li><a href="../../../dmsf/gs-001.html" class="dmsf">DMSF</a></li>
+<li><a href="../../../projects/gs-001/wiki.html" class="wiki">Wiki</a></li>
+<li><a href="../../../projects/gs-001/boards.html" class="boards selected">Forums</a></li>
+<li><a href="../../../projects/gs-001/repository.html" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <p class="breadcrumb"><a href="../../../projects/gs-001/boards.html">Forums</a> » <a href="../../../projects/gs-001/boards/18.html">General</a> » </p>
+
+<div class="contextual">
+    <span class="message-568-watcher"></span>
+    
+    
+    
+</div>
+
+<h2>Version 1.1/1.2</h2>
+
+<div class="message">
+<p><span class="author">Added by <a href="../../../users/125.html" class="icon icon-contributor-license">Aaron Harper</a> <a href="../../../projects/gs-001/activity%3Ffrom=2013-08-03.html" title="08/03/2013 04:25 pm">over 9 years</a> ago</span></p>
+<div class="wiki">
+<p>This post is long overdue.  Version 1.0 had some shortcomings, and not all of them were in performance.  The construction left a lot to be desired.  It was difficult and balky requiring soldering copper to silver to aluminum.  Much of this has already been covered in the <a href="447.html" class="external">Version 1.0 close out</a> post.  Once assembled, manipulating the aerials moved these connections and the failure of the 1.0 prototype just before Yuri's night was traced to a broken wire which I only found after disassembling the 1.0 prototype to build the 1.1 version for the show at New Space.  The issues of build difficulty as well as durability were solved by using ground lugs to connect the aerials and using crimp connectors on all the connections in the antenna itself... but this created new problems.</p>
+
+
+	<p>The crimp connectors and hardware used to bolt these to the ground lugs, then the ground lugs connecting to the aerial, while fairly direct by our eyes, represents quite a number of transitions between various metals, each diminishing the signal by a bit.  Once I got the 1.1 groundstation back from New Space, I discovered that not only was the antenna horribly out of tune (peaked at 385-405 MHz instead of 460), it also had a signal loss of -2db in the between the jack and the aerials.  This doesn't sound that bad until you consider that the second arial was also less than it should be, at -1.8db from the main loop.  This seriously affected the tuning as well as the phase of the signal, and brought down the overall gain of a circularly polarized satellite signal from +8db or better (calculated based on received signal quality, as I did not lab test 1.0 sufficiently), down to +3.2db as tested today.</p>
+
+
+	<p>Much of this can be compensated for.  The tuning issue is caused by failing to account for the lead length inside the antenna.  As far as the electrons were concerned, the actual aerial continues past the loop, into the ground lug, through the body of the antenna on the mounting bolt, through the crimp connector, and along the lead until it enters into the coaxial cable for either the antenna line or the tuning loop.  Now that we know, we can make the lead length consistent and reduce the circumference of the loops by the required amount.  This will tune the antenna to a 460MHz center frequency and raise the gain, but I doubt that it will be sufficient.</p>
+
+
+	<p>To pick the signal out of the noise floor for most people's build would require a good bit of tweaking it until it works, but this solves no problems and would lead to frustrated kit builders.  We simply need more gain.  A +20db preamplifier mounted directly to the main aerial line and phasing loop would minimize cable loss and give the preamp a solid signal to amplify.  The SDR dongle could be connected directly to the output of the preamp.  The ground station would have somewhere in the neighborhood of +26db to +28db of gain, though this would be strictly in the UHF band.  It will bring the signal right up out of the noise floor and yield a solid 15db signal to noise ratio.</p>
+
+
+	<p>The preamp is powered, requiring +12 to +15VDC, and this should not come from a wall wart power supply due to the amount of noise they introduce unless some extreme filtering is used.  I am recommending a rechargeable battery pack, which may be charged from a wall wart or car lighter plug. Since battery power will be available in the enclosure, and this power is "clean" DC, it would make some sense to power the SDR dongle from this supply as well, just stepped down to the 5VDC it expects.  The data lines from the SDR's USB connection may be brought out of the ground station's enclosure on a USB bulkhead connector.  The power from the computer on the USB connector will not be used except to signal 

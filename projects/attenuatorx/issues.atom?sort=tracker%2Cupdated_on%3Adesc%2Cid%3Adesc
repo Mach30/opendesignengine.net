@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>AttenuatorX: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/attenuatorx/issues.atom?sort=tracker%2Cupdated_on%3Adesc%2Cid%3Adesc"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/attenuatorx/issues?sort=tracker%2Cupdated_on%3Adesc%2Cid%3Adesc"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-02-12T21:14:58+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #121 (Closed): R20, R21, and R22, which are the SPI series resistors, should be 33 ohms vice ...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/121"/>
+    <id>http://opendesignengine.net/issues/121</id>
+    <updated>2013-02-12T21:14:58+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Change the values for these resistors in the schematics and add qty: (3) 33 ohm resistors to the BOM&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #120 (New): Something in my design seems to cause failures on pin PC1 when the Brown-out dete...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/120"/>
+    <id>http://opendesignengine.net/issues/120</id>
+    <updated>2013-02-11T20:29:16+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Identify whether this is specific to my design or to the ATMega48PA. I experienced this with two different ATMega48PA microcontrollers on two separate XTest1 boards.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #119 (New): No strain relief was provided for the battery connection.</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/119"/>
+    <id>http://opendesignengine.net/issues/119</id>
+    <updated>2013-02-11T20:27:42+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Identify and implement a good way of providing relief.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #118 (New): The LEDs displaying attenuation level are in opposite order. MSB should be on the...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/118"/>
+    <id>http://opendesignengine.net/issues/118</id>
+    <updated>2013-02-11T20:27:16+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Reverse the LED order.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #117 (New): The pad I designed for the on-off switch isn&#8217;t wide enough. With enough solder, i...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/117"/>
+    <id>http://opendesignengine.net/issues/117</id>
+    <updated>2013-02-11T20:26:40+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Correct this in a future version&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #116 (Closed): At some point in the past I accidentally swapped the Slave Select (SS or LE) w...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/116"/>
+    <id>http://opendesignengine.net/issues/116</id>
+    <updated>2013-02-11T20:26:25+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I'll have to make a quick fix on the prototype PCB to correct this. I&#8217;ll pillar the associated serial resistors upright, and use fine wire to jumper across to the correct pads.&lt;/p&gt;
+
+
+	&lt;p&gt;This issue has already been corrected on the schematic, but needs correction on the PCB.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #115 (New): The header should be SMT (as I already determined in the BOM), not through-hole (...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/115"/>
+    <id>http://opendesignengine.net/issues/115</id>
+    <updated>2013-02-11T20:25:40+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;For now I&#8217;m just making do with through-hole headers.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #114 (Closed): The 0.1uF capacitors were 0508, but the pads I placed are 0805</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/114"/>
+    <id>http://opendesignengine.net/issues/114</id>
+    <updated>2013-02-11T20:25:22+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;For now I&#8217;m using some 0805 caps I had on hand, but If I re-build and re-order this board, I&#8217;ll need to change the pads. The circuit is designed to use 0508, since they slightly shorten the path to ground for decoupling.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Milestone #101 (Closed): Order XTest1 PCB</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/101"/>
+    <id>http://opendesignengine.net/issues/101</id>
+    <updated>2012-12-21T21:57:30+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Place the board on order, so firmware development and device testing can be planned.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Milestone #100 (Closed): Design PCB for XTest1</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/100"/>
+    <id>http://opendesignengine.net/issues/100</id>
+    <updated>2012-12-21T21:56:19+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Design the PCB for XTest1, ensuring correct layout procedures are followed for RF designs up to 3GHz.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Milestone #99 (Closed): Complete schematic for XTest1</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/99"/>
+    <id>http://opendesignengine.net/issues/99</id>
+    <updated>2012-12-21T21:54:22+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Design the schematic for XTest1. The following parts will be required, at a minimum:&lt;br /&gt;- BNC Jacks (PC Edge Mount)&lt;br /&gt;- Chip attenuator&lt;br /&gt;- Digital attenuator chip&lt;br /&gt;- AVR ATTiny microcontroller&lt;br /&gt;- Associated resistors, caps, etc&lt;/p&gt;    </content>
+  </entry>
+</feed>

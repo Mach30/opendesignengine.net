@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Discussion</title>
+  <link href="http://opendesignengine.net/projects/ode/boards/3.atom" rel="self"/>
+  <link href="http://opendesignengine.net/projects/ode/boards/3" rel="alternate"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2014-07-26T11:30:54+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Discussion: RE: Project Discoverability</title>
+    <link href="http://opendesignengine.net/boards/3/topics/790?r=804#message-804" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/790?r=804#message-804</id>
+    <updated>2014-07-26T11:30:54+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;cite&gt;In this discussion, that would imply that ODE makes itself a node on the Thing Tracker Network (or whatever), allowing its content to be indexed as well as indexing external content.&lt;/cite&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Seems like this should be added as a feature request for consideration by the Dev team later.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: RE: Project Discoverability</title>
+    <link href="http://opendesignengine.net/boards/3/topics/790?r=794#message-794" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/790?r=794#message-794</id>
+    <updated>2014-07-16T21:19:59+00:00</updated>
+    <author>
+      <name>Matt Maier</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I think the Thing Tracker Network is the right idea &lt;a class="external" href="http://thingtracker.net/"&gt;http://thingtracker.net/&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The first step in making something discoverable is putting it in a place the searcher is going to look. That's why Google's front page is so valuable; nobody ever makes it to the second page. A big point of open source is allowing people to do whatever they want, but that makes it hard to find things. We can keep the good and reduce the bad if the wide variety of portals are all connected behind the scenes. Then it doesn't matter where someone enters, they can get to anywhere else "through" that place, without "leaving" to try another place.&lt;/p&gt;
+
+
+	&lt;p&gt;In this discussion, that would imply that ODE makes itself a node on the Thing Tracker Network (or whatever), allowing its content to be indexed as well as indexing external content.&lt;/p&gt;
+
+
+	&lt;p&gt;Aside from that, it's important for people to understand the things they find. I'm not sure how practical it is to try to get project owners to title their projects in a predictable, consistent way...probably not practical at all. Instead, I think it would make sense to put together a sort of thesaurus-assistant for searchers. If you don't know what the thing you're looking for is called, you can't search for it, and by extension if you search for the wrong keyword you probably won't find it either. But a lot of keywords are pretty direct synonyms. Like "wire cutters" and "dykes." Some keywords are just local spellings. Like "color" and "colour." And some are just different languages. Like "one" and "uno." Finally, some words and phrases are closely related. Like "automobile" and "horseless carriage." Where words/phrases are direct, or nearly direct, replacements we should be able to help the searcher by maintaining and updating an enhanced search tool that knows to search for a wider variety of words than just the one the searcher thought to enter. It could be improved by tracking which keywords turned up the best results.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: Project Discoverability</title>
+    <link href="http://opendesignengine.net/boards/3/topics/790" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/790</id>
+    <updated>2014-07-15T22:32:06+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;As I've been testing the development version of ODE, I've been thinking about some things Matt said at Apogee about project discoverability. I want to keep this topic on our radars as we work to push ODE forward. It needs to be easy to find projects on ODE, and it sounded like Matt is already working on methods to address this challenge. I personally would like to keep a continuous conversation going so we can integrate what Matt is learning and developing into ODE, where it makes sense.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: RE: Promoting ODE</title>
+    <link href="http://opendesignengine.net/boards/3/topics/661?r=664#message-664" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/661?r=664#message-664</id>
+    <updated>2013-10-13T16:32:29+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Sorry, linked the wrong FAQ.  There is an OSHWA FAQ (which I linked to before) and an OSHWA hosted &lt;a href="http://www.oshwa.org/faq/" class="external"&gt;OSHW FAQ&lt;/a&gt; which is what I meant to link to.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: RE: Promoting ODE</title>
+    <link href="http://opendesignengine.net/boards/3/topics/661?r=663#message-663" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/661?r=663#message-663</id>
+    <updated>2013-10-12T08:41:56+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I'm not seeing that question on their FAQ. Are you trying to get the question added, or are am I just missing it?&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: RE: Promoting ODE</title>
+    <link href="http://opendesignengine.net/boards/3/topics/661?r=662#message-662" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/661?r=662#message-662</id>
+    <updated>2013-10-11T08:36:51+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;First place I have found to discuss is the &lt;a href="http://www.oshwa.org/sharing-best-practices/" class="external"&gt;OSHWA Best Practices Page&lt;/a&gt; and the &lt;a href="http://www.oshwa.org/about/aboutfaq/" class="external"&gt;OSHWA FAQ&lt;/a&gt; (I figure if we can get on one, we can get on the other).&lt;/p&gt;
+
+
+	&lt;p&gt;I sent an email to the FAQ maintainer saying:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;cite&gt;Thanks for posting the question about regulations on the OSHWA FAQ.  If it is in bounds to ask, I would like to see if you would add a reference to Open Design Engine (&lt;a class="external" href="https://opendesignengine.net/"&gt;https://opendesignengine.net/&lt;/a&gt;) to the answer for the "When and how should I share my design files?" question.&lt;/cite&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;cite&gt;Mach 30 launched Open Design Engine last year specifically to address the need for a more hardware oriented project hosting portal.  It is still in development, but already a number of users have reported how essential it is to their OSHW projects (including ones that were at the 2013 Open Hardware Summit).&lt;/cite&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;I have not heard any response (I sent the email on Oct 6).  Thoughts?&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: Promoting ODE</title>
+    <link href="http://opendesignengine.net/boards/3/topics/661" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/661</id>
+    <updated>2013-10-11T08:32:56+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;One of our objectives to support continued growth of ODE is to spread the word so more makers and OSHW developers know it is an option for project hosting.  To that end, I am starting this thread to get the ball rolling on thinking about where and how to promote ODE.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: Start Here Section for ODE</title>
+    <link href="http://opendesignengine.net/boards/3/topics/613" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/613</id>
+    <updated>2013-09-18T13:46:09+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I would suggest that we add a "Start Here" section to ODE to help people who are coming to the site with no prior knowledge about it. It could be as simple as a link on the landing page.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: RE: Ideas for revenue generation</title>
+    <link href="http://opendesignengine.net/boards/3/topics/25?r=597#message-597" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/25?r=597#message-597</id>
+    <updated>2013-09-10T15:40:47+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;More details on Reddit Gold (recent improvements, philosophy, etc). - &lt;a class="external" href="http://blog.reddit.com/2013/09/a-few-more-gold-benefits.html"&gt;http://blog.reddit.com/2013/09/a-few-more-gold-benefits.html&lt;/a&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: RE: Ideas for revenue generation</title>
+    <link href="http://opendesignengine.net/boards/3/topics/25?r=517#message-517" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/25?r=517#message-517</id>
+    <updated>2013-06-26T09:00:13+00:00</updated>
+    <author>
+      <name>Balazs Imri</name>
+    </author>
+    <content type="html">
+&lt;p&gt;This is only vaguely relevant here.&lt;/p&gt;
+
+
+	&lt;p&gt;I have started working on a "space crowd surey". At this stage I am suing a google document to collect quesetions from people who wanted to know more about the "crowd" of people who are interested in space.&lt;/p&gt;
+
+
+	&lt;p&gt;I thought this would be useful for all projects aimed at "crowd" doing space related stuff. It's here: [[&lt;a class="external" href="https://docs.google.com/document/d/1ORa7yHqHiMZaWIPTiDpzIH4tZ8YP-nHZNIlp5Go1A8I/edit"&gt;https://docs.google.com/document/d/1ORa7yHqHiMZaWIPTiDpzIH4tZ8YP-nHZNIlp5Go1A8I/edit&lt;/a&gt;]]&lt;/p&gt;
+
+
+	&lt;p&gt;I think if we want to develop apps, or games aimed at this audience it is crucial to actually have data on interests and demographics of all kinds. This is why I posted this here. If anyone here has questions or inputs just go there and write it in. /assuming you are not afraid to share/&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: Simultaneous Editing</title>
+    <link href="http://opendesignengine.net/boards/3/topics/369" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/369</id>
+    <updated>2013-01-17T23:10:29+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I was wondering if ODE will let you know if you begin editing a document (as in the wiki) that someone else is already editing. What happens if two people are working on the same doc at the same time and try to save?&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: RE: Ideas for revenue generation</title>
+    <link href="http://opendesignengine.net/boards/3/topics/25?r=261#message-261" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/25?r=261#message-261</id>
+    <updated>2012-09-25T19:22:15+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Sorry it has taken me so long to reply to this thread.  The last few weeks have been very crazy.&lt;/p&gt;
+
+
+	&lt;p&gt;I really like the idea of working with the community to fund ODE is some way.  You know, all of this reminded me of &lt;a href="http://www.reddit.com/help/gold/" class="external"&gt;Reddit Gold&lt;/a&gt;.  It is a program where users pay a small fee to support the operation of the site, and get a few small bonus features and get a badge on their profile showing they are gold members.&lt;/p&gt;
+
+
+	&lt;p&gt;I had not thought about having a mobile app before.  I think mobile access to ODE would be very cool (or perhaps the ability to cache project data so you had it offline).  If/when we started a project for this, I would want to look at some of the existing apps in the space arena (like NASA's) and see what lessons we can learn from them because I have not always found them to be all that "sticky".&lt;/p&gt;
+
+
+	&lt;p&gt;I think we are coming up with some good ideas.  I look forward to starting the next round of development so we can implement some of them.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: RE: Ideas for revenue generation</title>
+    <link href="http://opendesignengine.net/boards/3/topics/25?r=236#message-236" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/25?r=236#message-236</id>
+    <updated>2012-09-13T11:52:12+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Good thoughts Balazs.&lt;/p&gt;
+
+
+	&lt;p&gt;Along the lines of mobile apps, I've wondered several times what a Mach 30 app might look like:&lt;/p&gt;
+
+
+	&lt;p&gt;1. Searchable newsletter and blog archives in-app.&lt;br /&gt;2. Access to data acquired from hardware like the Shepard Test Stand and Arduino Sats, and a means to visualize the data.&lt;br /&gt;3. Live video feed from the "Mach 30 labs".&lt;br /&gt;4. Instant access to a storefront for project kits, Mach 30 swag, etc.&lt;br /&gt;5. Mobile access to ODE.&lt;br /&gt;6. Alerts for upcoming spaceflight related events (Mach 30 and otherwise).&lt;br /&gt;7. Courses (i.e. Rockets 101 formatted as an interactive mobile app).&lt;br /&gt;8. Mobile access to the Openeering Wiki.&lt;br /&gt;9. Interactive makerspaces map that's location aware.&lt;/p&gt;
+
+
+	&lt;p&gt;As far as games, what about a game where you establish a colony on the Moon or Mars (like a simple version of the Civilization series of games)? Maybe it could even be based on the work &lt;a href="http://pictorproject.wordpress.com/" class="external"&gt;Pictor Project&lt;/a&gt; has done on establishing a colony on Europa.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: RE: Ideas for revenue generation</title>
+    <link href="http://opendesignengine.net/boards/3/topics/25?r=235#message-235" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/25?r=235#message-235</id>
+    <updated>2012-09-13T06:41:15+00:00</updated>
+    <author>
+      <name>Balazs Imri</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Here is an idea: community projects like maybe simple apps written together, but sold by the community and all the revenue goes towards ODE. &lt;br /&gt;So its an open design project, but it's purpose is to be sold by ODE to get money to support the activities of ODE. People chip in with helping to finish the project, or buying the end product. These apps could be ODE related, or just games to spread the message about Mach30 or just the open design movement.&lt;/p&gt;
+
+
+	&lt;p&gt;Also how about "educational" projects with private paid involvement. So people pay to get access to the project to learn somethin cool while actually being involved in a project and doing work for the project. Well in this case the design would only become open at the end of the project, or at some regular but infrequent intervals.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Discussion: RE: Ideas for revenue generation</title>
+    <link href="http://opendesignengine.net/boards/3/topics/25?r=202#message-202" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/3/topics/25?r=202#message-202</id>
+    <updated>2012-08-10T05:18:50+00:00</updated>
+    <author>
+      <name>Balazs Imri</name>
+    </author>
+    <content type="html">
+&lt;p&gt;A game. An optional subscription to a game of sharing. All the participants sign up with monthly set amount of donation. Then they get to chose projects to send a portion of the money towards. Another portion of the money is used as rewards for participating in fun contests or just simple lotteries, and the winner gets to decide which project or projects gets that sum of money. The idea is that if you play the game well you get to send more money towards your favourite projects. ODE keeps a fraction of the monthly donations for itself, OR it simply relies on the common sense of people and simply keeps the community updated on what it needs money for and how much is needed. I am pretty sure there are a whole heap of different games people interested in open source hardware would play for a chance to get more money for their teams.&lt;/p&gt;
+
+
+	&lt;p&gt;Sorry but I don't have more specifics.&lt;/p&gt;    </content>
+  </entry>
+</feed>

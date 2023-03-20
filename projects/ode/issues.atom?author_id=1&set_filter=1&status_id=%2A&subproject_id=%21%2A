@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/ode/issues.atom?author_id=1&amp;amp;set_filter=1&amp;amp;status_id=%2A&amp;amp;subproject_id=%21%2A"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/ode/issues?author_id=1&amp;amp;set_filter=1&amp;amp;status_id=%2A&amp;amp;subproject_id=%21%2A"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2011-12-18T22:51:38+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #44 (Resolved): The Legal plugin is blocking admins from creating new accounts</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/44"/>
+    <id>http://opendesignengine.net/issues/44</id>
+    <updated>2011-12-18T22:51:38+00:00</updated>
+    <author>
+      <name>Admin Administrator</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I went to add a new user tonight (while logged in as Admin) and received the following error:&lt;/p&gt;
+
+
+	&lt;p&gt;"You must accept the terms of service to continue"&lt;/p&gt;
+
+
+	&lt;p&gt;I would expect this message if I was someone registering their own account through the sign up page, but not as the Admin user creating an account for someone else.  In this case, I think the system should create the user and make them agree to the ToS at their first login.  Oh, and the administrative page for creating users does not appear to have a way of accepting the ToS so we currently cannot create new users.&lt;/p&gt;    </content>
+  </entry>
+</feed>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Far Horizons Project: Build Discussions</title>
+  <link rel="self" href="http://opendesignengine.net/projects/far-horizons-project/boards/10.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/far-horizons-project/boards/10"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2012-07-04T07:29:16+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Build Discussions: RE: Current build status, 2012-07-03</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/10/topics/187?r=189#message-189"/>
+    <id>http://opendesignengine.net/boards/10/topics/187?r=189#message-189</id>
+    <updated>2012-07-04T07:29:16+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Greg - Will the beacon be available in time for your target launch date(s)? If not, will any of these plans work for you?&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a class="external" href="http://www.jbgizmo.com/index.html"&gt;http://www.jbgizmo.com/index.html&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;I'm not sure what kind of range the low power version of these has, but it might be worth checking into.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a class="external" href="http://www.com-spec.com/rcplane/index.html"&gt;http://www.com-spec.com/rcplane/index.html&lt;/a&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Build Discussions: MOVED TO SPACE CHILES PROJECT - Current build status, 2012-07-03</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/10/topics/187"/>
+    <id>http://opendesignengine.net/boards/10/topics/187</id>
+    <updated>2012-07-03T23:52:37+00:00</updated>
+    <author>
+      <name>Greg Moran</name>
+    </author>
+    <content type="html">
+&lt;p&gt;This discussion has been moved to the &lt;a href="https://opendesignengine.net/boards/12/topics/250" class="external"&gt;Space Chiles High Altitude Balloon project&lt;/a&gt; .&lt;/p&gt;
+
+
+	&lt;p&gt;Sourcing materials and components from Lowe's, Home Depot, and scrounging from friends.&lt;/p&gt;
+
+
+	&lt;p&gt;The component that has given us the most trouble is the RF Beacon Transmitter.  The supplier that was specified had the part on backorder.  We have most everything else now.  &lt;br /&gt;Nylon material for covering the styrofoam payload case: &lt;img src="https://lh4.googleusercontent.com/-UZb4w-fmHE4/T_O97GEHdnI/AAAAAAAABrM/QmEQIi6K9uM/s711/12+-+2" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Recovery Parachute: &lt;img src="https://lh5.googleusercontent.com/-4Eqr9SZNwJ8/T_PRBBwIvhI/AAAAAAAABrg/zyrqxnyYwQs/s711/2012-07-01+20.18.17.jpg" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Styrofoam Payload Case: &lt;img src="https://lh4.googleusercontent.com/-dM1RI_Stcts/T_PRAy5M94I/AAAAAAAABrc/1Ipr-zbO6os/s711/2012-07-01+20.18.00.jpg" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;some of the payload components (New Mexico Green Chili Seeds, and Sonic Beacon): &lt;img src="https://lh3.googleusercontent.com/-Ct_LHsbprFI/T_PS5LsbMhI/AAAAAAAABsA/Oc9IjNtbbj4/s721/2012-07-03+23.20.25.jpg" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Tracking receivers: &lt;img src="https://lh5.googleusercontent.com/-ymVCoVfExTg/T-E-cldc-FI/AAAAAAAABgQ/1UUNAH-CgdY/s711/12+-+1" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The weather balloon is enroute.  Delivery is scheduled for Friday.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Build Discussions: RE: Quelab Space Balloon design discussion</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/10/topics/180?r=181#message-181"/>
+    <id>http://opendesignengine.net/boards/10/topics/180?r=181#message-181</id>
+    <updated>2012-06-23T23:10:09+00:00</updated>
+    <author>
+      <name>Greg Moran</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;Project Themes:&lt;/strong&gt;&lt;br /&gt; - Quelab logo flight - capture a pic of the Quelab logo with the curvature of the Earth in the background&lt;br /&gt; - Space Green Chilis - launch seeds of the New Mexican (Hatch?) Green chilis into space... makes it a truely New Mexican project.  May get sponsorships from local companies.  QUESTION:  What to do with the seeds afterwards?  (Grow them, sell them, study them?)&lt;br /&gt; - Bulk paper airplane launch, from altitude&lt;br /&gt; - In-flight video&lt;br /&gt; - Launch a Team photo&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Build Discussions: MOVED TO SPACE CHILES PROJECT - Quelab Space Balloon design discussion</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/10/topics/180"/>
+    <id>http://opendesignengine.net/boards/10/topics/180</id>
+    <updated>2012-06-23T23:04:49+00:00</updated>
+    <author>
+      <name>Greg Moran</name>
+    </author>
+    <content type="html">
+&lt;p&gt;This discussion has been moved to the &lt;a href="https://opendesignengine.net/boards/12/topics/251" class="external"&gt;Space Chiles High Altitude Balloon Project&lt;/a&gt; .&lt;/p&gt;
+
+
+	&lt;p&gt;Here's a first post with some intro pics of the Quelab space balloon, based on the Adler Far Horizon's balloon project.  Subjects:&lt;/p&gt;
+
+
+	&lt;p&gt;- Team Photo&lt;br /&gt;- Project "theme" brainstorming&lt;br /&gt;- initial discussion of the differences between the Quelab Space Balloon and the Adler Far Horizon Balloon&lt;br /&gt;- First build project: Yagi antenna for tracking beacon&lt;/p&gt;    </content>
+  </entry>
+</feed>

@@ -1,0 +1,46 @@
+h3. [[Sidebar|Navigation]]
+
+h3. Ground Sphere CubeSat Ground Station
+
+* [[Wiki|Start Here]]
+* [[Versions]]
+
+h4. User Manuals
+
+End user manuals, including how to assemble from kit and operating instructions for predicting flyovers and receiving "space tweets".
+
+* [[Kit Assembly Instructions]]
+* [[Software Installation]]
+* [[Operating Manual]]
+* [[Safety Procedures]]
+
+h4. Documentation
+
+Full OSHW project documentation - covers component acquisition and assembly, packaging of kits, and other project level documentation needed to replicate the Ground Sphere from source.
+
+* [[BoM|Bill of Materials]]
+* [[Schematics and PCB Files]]
+* [[Software Source Code]]
+* [[Assembly Instructions]]
+* [[Software/Firmware Summary]]
+* [[Errata]]
+
+h4. Systems Engineering Process
+
+Full OSHW project design documentation - covers design from concept through final design.
+
+# [[Initial Questions]]
+# [[Requirements Document]]
+# [[Block Diagram]]
+# [[Budget]]
+# [[Timeline]]
+# [[Preliminary Design]]
+# [[Detailed Design]]
+# [[Design Review]]
+# [[Procurement]]
+# [[Manufacture]]
+# [[Integration]]
+# [[Testing]]
+# [[Disposal]]
+# [[Meeting Minutes|Meeting Minutes/Notes]]
+# [[Resources|Resources/Links]]

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>High Altitude Rocket Project (HARP): Design Alternatives</title>
+  <link rel="self" href="http://opendesignengine.net/projects/harp/boards/47.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/harp/boards/47"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2014-10-04T09:20:27+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Design Alternatives: Premature Thread at this point - Need to start at the beginning with require...</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/47/topics/873"/>
+    <id>http://opendesignengine.net/boards/47/topics/873</id>
+    <updated>2014-10-04T09:20:27+00:00</updated>
+    <author>
+      <name>Greg Moran</name>
+    </author>
+    <content type="html">
+&lt;p&gt;The engineering process starts way before any hardware discussions take place.  You cannot reasonably discuss the implementation details before you know the actual bounds of the project.  Starting this thread puts the cart before the horse.&lt;/p&gt;    </content>
+  </entry>
+</feed>

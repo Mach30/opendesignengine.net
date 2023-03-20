@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>AttenuatorX: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/attenuatorx/issues.atom?set_filter=1&amp;amp;sort=updated_on%2Cid%3Adesc&amp;amp;tracker_id=1"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/attenuatorx/issues?set_filter=1&amp;amp;sort=updated_on%2Cid%3Adesc&amp;amp;tracker_id=1"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-02-11T20:29:16+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #120 (New): Something in my design seems to cause failures on pin PC1 when the Brown-out dete...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/120"/>
+    <id>http://opendesignengine.net/issues/120</id>
+    <updated>2013-02-11T20:29:16+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Identify whether this is specific to my design or to the ATMega48PA. I experienced this with two different ATMega48PA microcontrollers on two separate XTest1 boards.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #119 (New): No strain relief was provided for the battery connection.</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/119"/>
+    <id>http://opendesignengine.net/issues/119</id>
+    <updated>2013-02-11T20:27:42+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Identify and implement a good way of providing relief.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #118 (New): The LEDs displaying attenuation level are in opposite order. MSB should be on the...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/118"/>
+    <id>http://opendesignengine.net/issues/118</id>
+    <updated>2013-02-11T20:27:16+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Reverse the LED order.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #117 (New): The pad I designed for the on-off switch isn&#8217;t wide enough. With enough solder, i...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/117"/>
+    <id>http://opendesignengine.net/issues/117</id>
+    <updated>2013-02-11T20:26:40+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Correct this in a future version&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #115 (New): The header should be SMT (as I already determined in the BOM), not through-hole (...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/115"/>
+    <id>http://opendesignengine.net/issues/115</id>
+    <updated>2013-02-11T20:25:40+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;For now I&#8217;m just making do with through-hole headers.&lt;/p&gt;    </content>
+  </entry>
+</feed>

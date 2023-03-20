@@ -1,0 +1,19 @@
+h1. Demo of ODE wiki extensions
+
+# *"Issue Details Wiki Macro":http://www.redmine.org/projects/redmine/wiki/PluginWikiIssueDetails*
+@{ {issue_details(35} }@ (without the spaces) => 
+{{issue_details(35)}}
+# *"YouTube Video Macro":http://projects.plural.cc/projects/redmine-youtube* - @{ {youtube(fciwFk0IfF8)} }@ (without the spaces) =>
+{{youtube(fciwFk0IfF8)}}
+# *Vimeo support* - @{ {vimeo(33510073)} }@ (without the spaces) =>
+{{vimeo(33510073)}}
+# *Chipin Badge* - @{ {chipin(629674dab8396747)} }@ (without the spaces) =>
+{{chipin(629674dab8396747)}}
+# *Pledgie Badge* - @{ {pledgie(9822)} }@ (without the spaces) =>
+{{pledgie(9822)}}
+
+[[Test Page]]
+
+[[Shepard Wiki Test Page]]
+
+!Shepard_v1.0_DAQ.png!

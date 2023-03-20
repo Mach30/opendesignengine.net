@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Holoseat - Assembly Instructions - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../favicon.ico%3F1359925685.html' />
+<link href="../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+  <link href="../../../stylesheets/scm.css%3F1359925542.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-wiki action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../index.html" class="home">Home</a></li>
+<li><a href="../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="../../../search/index/holoseat.html" method="get">
+        <input name="wiki_pages" type="hidden" value="1" />
+        <a href="../../../search/index/holoseat.html" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Holoseat</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../holoseat.html" class="overview">Overview</a></li>
+<li><a href="../activity.html" class="activity">Activity</a></li>
+<li><a href="../issues.html" class="issues">Issues</a></li>
+<li><a href="../news.html" class="news">News</a></li>
+<li><a href="../../../dmsf/holoseat.html" class="dmsf">DMSF</a></li>
+<li><a href="../wiki.html" class="wiki selected">Wiki</a></li>
+<li><a href="../boards.1.html" class="boards">Forums</a></li>
+<li><a href="../repository.html" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="" id="main">
+    <div id="sidebar">
+        
+    <a name="Holoseat"></a>
+<h2 >Holoseat<a href="Assembly_Instructions%3Fversion=12.html#Holoseat" class="wiki-anchor">&para;</a></h2>
+
+
+	<ul>
+	<li><a href="https://opendesignengine.net/projects/holoseat/repository/entry/trunk/LICENSE.txt" class="external">LICENSE.txt</a></li>
+		<li><a href="Wiki.1.html" class="wiki-page">Home</a></li>
+		<li><a href="https://opendesignengine.net/projects/holoseat/wiki/Versions" class="wiki-page">Versions</a>
+	<ul>
+	<li><a href="Versioning_Scheme.html" class="wiki-page">Versioning Scheme</a></li>
+	</ul>
+	</li>
+		<li><ins>Agile Process Docs</ins><br /><em>See <strong><a href="../news.html" class="external">News</a></strong> feed for weekly status reports</em>
+	<ul>
+	<li><strong><ins>PY 2018</ins></strong><br /> <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTl0RNiYJmxP5eL6KDfSXJdLTjkFSILai4lXUGI_pRj_Zqnyw4rECqy6tOgdSK0xk6MSBKs40aGkKhC/pubhtml" class="external">Sprints</a><br /> <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRCZuJwnYll_TmSo-xetofzjQEt3Z7iNpluPzayWbqm2HfYWLipouTmh1opgfWy-x-3OGeM2Cf1irWh/pubhtml" class="external">Alpha Test Program Prep User Stories</a><br /> <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRlnq6BIMuJN-t3uKjflf_q9u3dXzvch0zEVz9O3335_fPiGyPcJxaRJ8IHz4ErCTIw7QrtPh5d_b50/pubhtml" class="external">Run Alpha Test User Stories</a><br /> <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRyBqnWyXACEEoG5dThw5szRkVltrdHNvFpyaPqF1sNXHrS_fG1w1g861yqTjjyoL1b9xP2xUtNsFz3/pubhtml" class="external">Finalize v1.0 Design User Stories</a><br /> <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-DTjsHW_DTbR0hbIvS1Gl_9ItytNimWamw5wmEJ-8K44NpYyw0eQ4GM91nVI-ZRs2-BbQr-S9EA6Z/pubhtml" class="external">Social Media Engagement User Stories</a><br /> <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAt6mXMp1lwvffT9mNiNCXENC3wI47ofl_sATVjadmkgGnJroKbMCChzkZctD-wlNnsREUa0c0YqA-/pubhtml" class="external">Prep Initial Crowdsource Campaign User Stories</a><br /> <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQWsqkwJTsFScDjahnQ6AhIpC5Qk-BMsfurWkfxy7SmtSotXtgSvEgCC6uB2d_Hch9PUc41MRd4cwm2/pubhtml" class="external">SyndCon 2018 Prep User Stories</a></li>
+		<li><strong><ins>2017</ins></strong><br /><a href="https://docs.google.com/spreadsheets/d/1jqOwehWnSD8kbHw8bYQPMaTnqAzL6WM20qazQUJKRWQ/pubhtml" class="external">Sprints</a><br /><a href="https://docs.google.com/spreadsheets/d/1j_eza96PgV3tMuTy_fypZ4SuCLWP2jLKIEG1HgXg5LA/pubhtml" class="external">Development User Stories</a><br /><a href="https://docs.google.com/spreadsheets/d/1Q1mnwN-Um-nn47k3GF9SzAEblP1sw7Lwtpq4snxCEXk/pubhtml" class="external">SyndCon User Stories</a><br /><a href="https://docs.google.com/spreadsheets/d/1GGMKfctxfgl5Ath5ld7SL3lvXx7fN759DRMKXVEJSR4/pubhtml" class="external">Biz User Stories</a><br /><a href="https://docs.google.com/spreadsheets/d/1UKTSqLvZyH9EIJBt7YSVZoF8krdZYmHjoK1yx6pesQs/pubhtml" class="external">Crowd Source User Stories</a></li>
+		<li><strong><ins>2016</ins></strong> <br /><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTnBFoFpZA4rAainOlzv4E7-PW3-BwjTg9SP0iXHz1XZUCjVF_4WYIWttJyHtO5EhO24pYazn8sL7Jh/pubhtml" class="external">Sprints</a><br /><a href="https://docs.google.com/document/d/e/2PACX-1vSVLmaORZab4QV0ZSy5OUl6lSPx2lNc3gud5nB6WSxNrrxkMu7Kz5zObKeKnP8pw7eghYJY3h_xs99L/pub" class="external">User Stories</a></li>
+	</ul></li>
+	</ul>
+
+
+	<a name="Instructions"></a>
+<h4 >Instructions<a href="Assembly_Instructions%3Fversion=12.html#Instructions" class="wiki-anchor">&para;</a></h4>
+
+
+	<ul>
+	<li><a href="User's_Guide.html" class="wiki-page">User&#x27;s Guide</a>
+	<ul>
+	<li><a href="First_Time_Setup.html" class="wiki-page">First Time Setup</a></li>
+		<li><a href="Operating_Instructions.html" class="wiki-page">Operating Instructions</a></li>
+		<li><a href="Alpha_Patches.html" class="wiki-page">Alpha Patches</a></li>
+	</ul>
+	</li>
+		<li><ins>Assembly Information</ins>
+	<ul>
+	<li><a href="BOM.html" class="wiki-page">Bill of Materials</a></li>
+		<li><a href="Assembly_Instructions.html" class="wiki-page">Assembly Instructions</a>
+	<ul>
+	<li><a href="Controller_Assembly.html" class="wiki-page">Controller Assembly</a></li>
+		<li><a href="Sensor_Assembly.html" class="wiki-page">Sensor Assembly</a></li>
+		<li><a href="Snap_Fit_Tone_Ring_Assembly.html" class="wiki-page">Tone Ring Half Assembly</a><br /><a href="Tone_Ring_Assembly.html" class="wiki-page">Tone Ring Assembly</a> (deprecated)</li>
+		<li><a href="Final_Assembly.html" class="wiki-page">Final Assembly</a></li>
+	</ul>
+	</li>
+		<li><a href="Software_Set_Up.html" class="wiki-page">Software Set Up</a></li>
+	</ul></li>
+	</ul>
+
+
+	<a name="Design-Data"></a>
+<h4 >Design Da

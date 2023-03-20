@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>DMX Gizmo: News</title>
+  <link href="http://opendesignengine.net/projects/dmxgizmo/news.atom" rel="self"/>
+  <link href="http://opendesignengine.net/projects/dmxgizmo/news" rel="alternate"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-05-26T17:21:16+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Current BOM</title>
+    <link href="http://opendesignengine.net/news/37" rel="alternate"/>
+    <id>http://opendesignengine.net/news/37</id>
+    <updated>2013-05-26T17:21:16+00:00</updated>
+    <author>
+      <name>Derek Bever</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I'm currently using an &lt;a href="http://www.amazon.com/Arduino-UNO-board-DIP-ATmega328P/dp/B006H06TVG/ref=sr_1_1?ie=UTF8&amp;#38;qid=1369605440&amp;#38;sr=8-1&amp;#38;keywords=arduino+uno" class="external"&gt;Arduino Uno&lt;/a&gt; for development. This will probably run on later versions, but don't take my word for it.&lt;/p&gt;
+
+
+	&lt;p&gt;The other major component is the &lt;a href="http://www.tinkerkit.com/dmx-master-shield/" class="external"&gt;Tinkerkits DMX Master Shield&lt;/a&gt;. I purchased mine at Radio Shack, it's available for purchase online in the Arduino store. It isn't, unfortunately, available on Amazon just yet.&lt;/p&gt;
+
+
+	&lt;p&gt;Some kind of &lt;a href="http://www.amazon.com/Universial-Switch-Keypad-Keyboard-Arduino/dp/B008A30NW4/ref=sr_1_2?ie=UTF8&amp;#38;qid=1369605129&amp;#38;sr=8-2&amp;#38;keywords=keypad" class="external"&gt;4x4 keypad&lt;/a&gt;. I like this one on Amazon because it's cheap, it's a sticker, and requires (in my experience) no debouncing whatsoever.&lt;/p&gt;
+
+
+	&lt;p&gt;I'm currently using this &lt;a href="https://www.sparkfun.com/products/9393" class="external"&gt;16x2 serial LCD&lt;/a&gt; from Sparkfun. I will likely be changing this before too long, though I will definitely continue to provide a version of the firmware that supports this screen, because these small serial LCDs are ubiquitous. I just think the size is a little large.&lt;/p&gt;
+
+
+	&lt;p&gt;You'll also need, for the current firmware, four momentary pushbutton switches (though I currently have five hooked up), some hookup wire, and some pullup resistors (the value here isn't super important, I think I'm using 20kOhm).&lt;/p&gt;
+
+
+	&lt;p&gt;To assemble the gizmo as it stands, you'll connect the four row pins of the keypad to arduino pins 6, 13, 12 and 11; connect the column lines to pins 10, 9, 8, and 7. This can easily change if you want, just remember to re-assign the pins in the code.&lt;/p&gt;
+
+
+	&lt;p&gt;I arranged my pushbuttons onto a convenient piece of masonite for now, and tied one of the pins of each of them together. This common terminal goes to ground, and each of the other terminals is connected to Vcc via a pullup resistor, and pins A0-A4 on the arduino. The firmware currently implements software debouncing, so this is all that's needed (though you may or may not need to tweak settings for your specific switches, it's currently set at a very generous 250ms).&lt;/p&gt;
+
+
+	&lt;p&gt;Connect the LCD to +5v and GND as marked on its PCB, and the data line goes to arduino pin A5.&lt;/p&gt;
+
+
+	&lt;p&gt;You'll need to download the &lt;a href="http://arduino.cc/en/Main/Software" class="external"&gt;Arduino IDE&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;You will need the following libraries:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a href="http://www.tinkerkit.com/dmxmaster-library/" class="external"&gt;DMXMaster&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a href="http://playground.arduino.cc/Code/SerLCD" class="external"&gt;SerLCD&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a href="http://playground.arduino.cc/code/Keypad" class="external"&gt;Keypad&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;There's instructions on how to install these on those webpages.&lt;/p&gt;
+
+
+	&lt;p&gt;You'll then need the &lt;a href="http://pastie.org/7968466" class="external"&gt;Sketch&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;If this isn't enough to get you started, please ask questions and I'll do it better.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Project is in progress.</title>
+    <link href="http://opendesignengine.net/news/35" rel="alternate"/>
+    <id>http://opendesignengine.net/news/35</id>
+    <updated>2013-05-21T06:29:13+00:00</updated>
+    <author>
+      <name>Derek Bever</name>
+    </author>
+    <content type="html">
+&lt;p&gt;The project is currently at version 0.1 and running well. Currently the device has direct control over a full universe of DMX, allowing active modification of a single channel's value at a time. The interface is basic, allowing an arbitrary level to be set, for the active channel to be directly set to full or zero, or allowing all channels to be released. There's also a clear button in the event of incorrect values, and input sanitation to prevent impossible values from being entered.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="http://i.imgur.com/C5sGtXw.jpg" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a class="external" href="https://www.youtube.com/watch?v=8oGVmMjnNsI"&gt;https://www.youtube.com/watch?v=8oGVmMjnNsI&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a class="external" href="https://www.youtube.com/watch?v=x4itowiFaRY"&gt;https://www.youtube.com/watch?v=x4itowiFaRY&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The hardware currently consists of an Arduino, an off-the-shelf DMX shield from Tinkerkits, a 4x4 keypad and a 16x2 serial LCD.&lt;/p&gt;
+
+
+	&lt;p&gt;The current state of the project is pretty far from where I hope to end up, but it's going to be a journey. Ultimately the device will likely be running on a Raspberry Pi or similar ARM-based single-core computer, with a user interface written in Python or Processing, but until I actually hit the limits of the Arduino I'd like to see how far I can get.&lt;/p&gt;
+
+
+	&lt;p&gt;Next steps, currently, are interface design. There are a few more basic features (next/last channel, 5% up/down buttons, some way to view active channels) that need to be implemented. I'll need to locate a graphical LCD (I'm thinking about perhaps trying one of those 1.8" LCDs) that's suitable, and figure out how to design a UI.&lt;/p&gt;
+
+
+	&lt;p&gt;Thanks for reading,&lt;br /&gt;Derek&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Semi-Hold</title>
+    <link href="http://opendesignengine.net/news/5" rel="alternate"/>
+    <id>http://opendesignengine.net/news/5</id>
+    <updated>2011-11-14T23:25:36+00:00</updated>
+    <author>
+      <name>Derek Bever</name>
+    </author>
+    <content type="html">
+&lt;p&gt;So while I (Derek) am on the road, until mid-December at the least, probably very little will be happening. My other primary collaborator on this project is still settling in with a new job, so he probably won't be doing a lot for a while anyway. I'll try and get our various discussions and writings transferred over here at some point.&lt;/p&gt;
+
+
+	&lt;p&gt;Right now the project isn't much of anything but ideas, but we're all really excited to carry it forward.&lt;/p&gt;    </content>
+  </entry>
+</feed>

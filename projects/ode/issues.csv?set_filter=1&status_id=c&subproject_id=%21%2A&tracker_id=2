@@ -1,0 +1,34 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+13,Resolved,Open Design Engine,Feature,Normal,Create a donation drive module,"","",v0.2.1 - Public Beta Enhancements,J. Simmons,04/08/2011,"",100,"","",04/08/2011 03:17 am,06/05/2020 08:20 am,"This should be a plugin and work similar to ""Pledgie"":http://pledgie.com/ or similar offerings.  May just create it as a Pledgie plugin."
+12,Closed,Open Design Engine,Feature,Normal,Require all projects to have Open Source licenses,"","",v0.2 - Public Beta,J. Simmons,04/08/2011,"",100,"","",04/08/2011 03:14 am,07/16/2019 06:02 am,"Write plugin to require projects list an approve license (OSI for software, OSHW for hardware)."
+6,Closed,Open Design Engine,Feature,Normal,Add wiki external format plugin as basis for wiki enhancements,"","",v0.4 - Wiki Enhancements,J. Simmons,04/08/2011,"",0,"","",04/08/2011 02:51 am,04/30/2014 12:55 pm,"Evaluate this ""plugin"":http://www.redmine.org/boards/3/topics/10649 for use in wiki.  Possible features it would support include:
+
+* LaTeX style equations
+* UML diagrams
+* Embedded graphs
+* Videos(?) - see comments
+
+Need to look at how the underlying programs relate to the ODE distro and what will need to be placed in SVN to distribute this feature."
+9,Closed,Open Design Engine,Feature,Normal,Improve Wiki PDF export,"","",v0.4 - Wiki Enhancements,J. Simmons,04/08/2011,"",0,"","",04/08/2011 02:57 am,04/30/2014 12:54 pm,"Install this ""plugin"":http://www.redmine.org/plugins/redmine_doc_pu.  Remember to store in svn for inclusion in the distribution.  Be sure to consider the need for supporting software and how this impacts the distribution of ODE."
+47,Closed,Open Design Engine,Feature,Normal,Add ability to request to join a project,"","",Under consideration,J. Simmons,02/10/2012,"",0,"","",02/10/2012 05:14 am,03/22/2013 02:24 pm,There is a plugin for this - https://github.com/splendeo/redmine_simple_join_project
+107,Closed,Open Design Engine,Feature,Normal,Add Rails and Ruby versions to output on admin/info page,Kevin Bouwkamp,"",Under consideration,J. Simmons,01/16/2013,"",100,"","",01/16/2013 07:07 pm,02/03/2013 03:10 pm,It would be very helpful to have an easy way to tell what version of ruby and rails the site is running on.
+11,Resolved,Open Design Engine,Feature,Normal,Add Terms of Service and Privacy Policy to account creation,"","",v0.2 - Public Beta,J. Simmons,04/08/2011,"",100,"","",04/08/2011 03:13 am,03/27/2012 03:29 pm,"Need to write a new plugin for this.  Should work like ""Drupal Legal Plugin"":http://drupal.org/project/legal."
+17,Closed,Open Design Engine,Feature,Normal,Need a logo for ODE,"","",v0.3 - Sustainability Enhancements,J. Simmons,04/08/2011,"",0,"","",04/08/2011 06:44 pm,02/10/2012 05:20 am,"I'd like to develop a logo for ODE to include as part of Issue #10.  It would be cool if we could incorporate the new OSHW logo, see below (note we should be sure to check with them about copyright issues).
+
+!http://www.openhardwaresummit.org/forum/download/file.php?mode=view&id=17!"
+8,Resolved,Open Design Engine,Feature,Normal,Add support for enhanced document management,"","",v0.2 - Public Beta,J. Simmons,04/08/2011,"",100,"","",04/08/2011 02:56 am,09/24/2011 03:46 am,"The idea is to allow users to have an easy and familiar way to control non-source code files.  It should be versioned when needed and work similar to file management.  Meta-data is a plus.
+
+First implementation concept is using webdav module for easier sharing of engineering documents.  Look at this ""plugin"":http://www.redmine.org/projects/redmine/wiki/PluginWebDav.  Need to research what can be done to add version control support to this feature.  Also look at integrating svn access through this connection.
+
+Should also evaluate moving live ODE site from http to https before implementing this feature."
+4,Resolved,Open Design Engine,Feature,Normal,Display SVN checkout or export link on repository page,"","",v0.1 - Private Alpha,J. Simmons,04/08/2011,"",0,"","",04/08/2011 02:43 am,09/23/2011 09:55 pm,"Install this ""plugin"":http://dev.holgerjust.de/projects/redmine-checkout/wiki (note need to decide if default behavior is checkout or export).  Remember to store in svn for inclusion in the distribution."
+2,Resolved,Open Design Engine,Feature,Normal,Install available Bot filters,"","",v0.1 - Private Alpha,J. Simmons,04/08/2011,"",0,"","",04/08/2011 02:39 am,09/23/2011 09:54 pm,"Use this ""plugin"":http://www.redmine.org/projects/redmine/wiki/PluginBotsFilter.  Remember to store in svn for inclusion in the distribution."
+3,Resolved,Open Design Engine,Feature,Normal,Configure ODE to hide emails by default,"","",v0.1 - Private Alpha,J. Simmons,04/08/2011,"",0,"","",04/08/2011 02:40 am,09/23/2011 09:53 pm,"Install this ""plugin"":https://github.com/splendeo/redmine_hide_emails_by_default/.  Remember to store in svn for inclusion in the distribution."
+7,Resolved,Open Design Engine,Feature,Normal,Add Wiki macro to link to issues,"","",v0.1 - Private Alpha,J. Simmons,04/08/2011,"",0,"","",04/08/2011 02:52 am,09/22/2011 04:43 pm,"Install this ""plugin"":http://www.redmine.org/projects/redmine/wiki/PluginWikiIssueDetails.  Remember to store in svn for inclusion in the distribution."
+5,Resolved,Open Design Engine,Feature,Normal,Add Google Analytics to ODE,"","",v0.1 - Private Alpha,J. Simmons,04/08/2011,"",0,"","",04/08/2011 02:46 am,09/22/2011 04:31 pm,"Steps:
+
+# Create Analytics account and get key
+# Install (and on live ODE site, configure) this ""plugin"":http://www.redmine.org/projects/redmine/wiki/PluginGoogleAnalytics
+
+Remember to store in svn for inclusion in the distribution."
+1,Closed,Open Design Engine,Feature,Normal,Automatically create SVN Repositories when Repository module is turned on,J. Simmons,"",v0.1 - Private Alpha,J. Simmons,"","",50,"","",04/08/2011 02:37 am,05/15/2011 10:31 pm,See http://www.redmine.org/projects/redmine/wiki/HowTo_Automate_repository_creation for instructions.  It would be best if the configuration could be packaged with the distribution (at least for installation in Bitnami hosts).

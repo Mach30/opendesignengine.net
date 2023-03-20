@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Release Testing</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body { font:80% Verdana,Tahoma,Arial,sans-serif; }
+h1, h2, h3, h4 {  font-family: "Trebuchet MS",Georgia,"Times New Roman",serif; }
+ul.toc { padding: 4px; margin-left: 0; }
+ul.toc li { list-style-type:none; }
+ul.toc li.heading2 { margin-left: 1em; }
+ul.toc li.heading3 { margin-left: 2em; }
+a.wiki-anchor { display: none; margin-left: 6px; text-decoration: none; }
+a.wiki-anchor:hover { color: #aaa !important; text-decoration: none; }
+h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor { display: inline; color: #ddd; }
+</style>
+</head>
+<body>
+<a name="Release-Testing"></a>
+<h1 >Release Testing<a href="Release_Testing.html%3Fversion=13.html#Release-Testing" class="wiki-anchor">&para;</a></h1>
+
+
+	<ul class="toc"><li><a href="Release_Testing.html%3Fversion=13.html#Release-Testing">Release Testing</a><ul><li><a href="Release_Testing.html%3Fversion=13.html#Introduction">Introduction</a></li><li><a href="Release_Testing.html%3Fversion=13.html#Required-Browsers">Required Browsers</a></li><li><a href="Release_Testing.html%3Fversion=13.html#Features-to-Test">Features to Test</a><ul><li><a href="Release_Testing.html%3Fversion=13.html#Built-In-Features">Built-In Features</a></li><li><a href="Release_Testing.html%3Fversion=13.html#Community-Plugins">Community Plugins</a></li><li><a href="Release_Testing.html%3Fversion=13.html#Custom-ODE-Plugins">Custom ODE Plugins</a></li></ul></li></ul></li></ul>
+
+
+	<a name="Introduction"></a>
+<h2 >Introduction<a href="Release_Testing.html%3Fversion=13.html#Introduction" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>The following test plan should be performed on any release candidate prior to scheduling an upgrade of the <strong>ODE</strong> server.  It should again be performed on the live site once the upgrade is in place to ensure the upgrade was successful.</p>
+
+
+	<a name="Required-Browsers"></a>
+<h2 >Required Browsers<a href="Release_Testing.html%3Fversion=13.html#Required-Browsers" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>All tests should be run from the following browser/OS combinations to ensure ODE works for a wide audience.</p>
+
+
+	<table>
+		<tr>
+			<td><strong>Browser</strong></td>
+			<td><strong>Windows</strong></td>
+			<td><strong>OS X</strong></td>
+			<td><strong>Linux</strong></td>
+		</tr>
+		<tr>
+			<td>Chrome   </td>
+			<td>    X           </td>
+			<td>  X     </td>
+			<td>   X      </td>
+		</tr>
+		<tr>
+			<td>Firefox    </td>
+			<td>    X           </td>
+			<td>  X     </td>
+			<td>   X      </td>
+		</tr>
+		<tr>
+			<td>Safari      </td>
+			<td>                 </td>
+			<td>  X     </td>
+			<td>           </td>
+		</tr>
+		<tr>
+			<td>IE            </td>
+			<td>    X           </td>
+			<td>         </td>
+			<td>           </td>
+		</tr>
+	</table>
+
+
+
+
+	<a name="Features-to-Test"></a>
+<h2 >Features to Test<a href="Release_Testing.html%3Fversion=13.html#Features-to-Test" class="wiki-anchor">&para;</a></h2>
+
+
+	<p><strong>ODE</strong> features come in three categories.  First is features which are built-in to <strong>Redmine</strong> core.  Second is features from community developed plugins such as <a href="http://www.redmine.org/plugins/dmsf" class="external">DMSF</a>.  And the third is features which were added using custom plugins from <strong>ODE</strong> development.</p>
+
+
+	<a name="Built-In-Features"></a>
+<h3 >Built-In Features<a href="Release_Testing.html%3Fversion=13.html#Built-In-Features" class="wiki-anchor">&para;</a></h3>
+
+
+	<ul>
+	<li>Projects
+	<ul>
+	<li>Creation (test with several new projects, each with different features turned on and ensure the correct tabs are visible and appear to be functional)</li>
+		<li>Create a subproject with <strong>New subproject" button on *Overview</strong> tab </li>
+		<li>Attach a project as a subproject of another project from the <strong>Settings</strong> tab</li>
+	</ul>
+	</li>
+		<li>Wiki
+	<ul>
+	<li>Creating wiki pages</li>
+		<li>Editing wiki pages</li>
+		<li>Reverting changes</li>
+		<li>Adding and referencing attachments on wiki pages</li>
+		<li>Viewing wiki pages</li>
+	</ul>
+	</li>
+		<li>Issues
+	<ul>
+	<li>Creating issues</li>
+		<li>Updating issues</li>
+		<li>Assigning issues</li>
+		<li>Closing issues</li>
+	</ul>
+	</li>
+		<li>News
+	<ul>
+	<li>Posting News items</li>
+		<li>Viewing News items from project <strong>Overview</strong> tab and from <strong>ODE</strong> homepage (all projects should feed here, so post news items from multiple projects and make sure they show up on home page and only on correct project page)</li>
+	</ul>
+	</li>
+		<li>Forums
+	<ul>
+	<li>Creating forums</li>
+		<li>Creating forum posts</li>
+		<li>Replying to forum posts</li>
+		<li>Viewing forum threads</li>
+	</ul></li>
+	</ul>
+
+
+	<a name="Community-Plugins"></a>
+<h3 >Community Plugins<a href="Release_Testing.html%3Fversion=13.html#Community-Plugins" class="wiki-anchor">&para;</a></h3>
+
+
+	<ul>
+	<li><a href="http://www.redmine.org/plugins/dmsf" class="external">DMSF</a>
+	<ul>
+	<li>Create directories</li>
+		<li>Upload files to root directory</li>
+		<li>Upload files to sub-directory</li>
+		<li>Upload new version of files</li>
+		<li>Download files</li>
+		<li>Try and upload files without correct project membership (TODO - J needs to confirm the required membership)</li>
+		<li>Delete files?</li>
+	</ul>
+	</li>
+		<li>Redmine_SCM / <a href="http://www.redmine.org/boards/3/topics/10093?r=13178" class="external">Redmine Checkout</a> (SVN CRUD)
+	<ul>
+	<li>Create a project with SVN support enabled and confirm the repository shows up in the <strong>Repository</strong> tab</li>
+		<li>Run the SVN tests from the bottom of the <a href="https://opendesignengine.net/projects/ode/wiki/.html" class="wiki-page">Installation Instructions</a></li>
+		<li>Repeat tests with a user who does not have sufficient privileges to commit and ensure read works and write fails (TODO - J needs to confirm the required membership)</li>
+	</ul>
+	</li>
+		<li><a href="http://www.redmine.org/plugins/hide-emails" class="external">Redmine Hide Emails by Default</a>
+	<ul>
+	<li>Create new user and then browse to new user from a different account; verify new user's email address is not visible</li>
+	</ul>
+	</li>
+		<li><a href="http://www.redmine.org/projects/redmine/wiki/PluginWikiIssueDetails" class="external">Redmine Wiki Issue Details</a>
+	<ul>
+	<li><code>{ {issue_details(35)} }</code> (without spaces) => <a href="../../sandbox.html">Sandbox</a> - <a href="https://opendesignengine.net/issues/35" class="issue status-1 priority-2">Support <a href="https://opendesignengine.net/issues/35" class="issue status-1 priority-2" title="This is a test issue for the sandbox (New)">#35</a></a>: This is a test issue for the sandbox - <strong>Needs estimate</strong> (New)</li>
+	</ul></li>
+	</ul>
+
+
+	<a name="Custom-ODE-Plugins"></a>
+<h3 >Custom ODE Plugins<a href="Release_Testing.html%3Fversion=13.html#Custom-ODE-Plugins" class="wiki-anchor">&para;</a></h3>
+
+
+	<ul>
+	<li>Redmine Funding
+	<ul>
+	<li>Visit <a href="https://opendesignengine.net/projects/ode/wiki/.html" class="wiki-page">Features</a> and ensure the following examples render
+	<ul>
+	<li>Chipin</li>
+		<li>Pledgie</li>
+		<li>Kickstarter</li>
+		<li>Paypal</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+		<li>Redmine Video (extends a community plugin)
+	<ul>
+	<li>Visit <a href="https://opendesignengine.net/projects/ode/wiki/.html" class="wiki-page">Features</a> and ensure the following examples render
+	<ul>
+	<li>Youtube</li>
+		<li>Vimeo</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+		<li>Redmine Legal
+	<ul>
+	<li>Create a new user account and ensure you must agree to the terms of service to complete account creation</li>
+		<li>Update the terms of service (there is a settings section under Admin to do this) and then login with an existing account and ensure you must agree to the updated terms of service to continue logging in</li>
+		<li>Ensure the Terms of Service link in the footer works</li>
+		<li>Ensure the Terms of Service page renders correctly for both the static display (when you click the link in the footer) and during account creation/login on updates</li>
+	</ul>
+	</li>
+		<li>Redmine Licensing
+	<ul>
+	<li>Add new license to license list in Admin section and ensure it shows up on project <strong>Settings</strong> tab</li>
+		<li>Update a license in the license list in the Admin section</li>
+		<li>Ensure new projects must select at least one license</li>
+		<li>Ensure a project's selected licenses render on the <strong>Overview</strong> tab</li>
+	</ul>
+	</li>
+		<li>Allow Private Projects</li>
+	</ul>
+</body>
+</html>

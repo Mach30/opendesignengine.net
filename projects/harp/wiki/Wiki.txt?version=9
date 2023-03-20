@@ -1,0 +1,22 @@
++Project organization:+
+Requirements Discussion
+Preliminary Design Discussion
+Detailed Design Discussions
+Manufacturing Discussions
+Flight Operational Considerations
+Travel and Logistics
+Disposal/ End of Life
+
+[[Sidebar]]
+==============================
+
+
+A video of the launches of 3D printed rockets is at http://www.youtube.com/watch?v=zEExVNv5rWI or you can see it below:
+
+{{youtube(zEExVNv5rWI)}}
+
+HARP 1 is the yellow rocket with black stripes.  HARP 3 is the rocket with the long orange wings.  The wings were designed to stabilize the rocket before snapping off and flight continuing on the smaller fins.
+
++*Testing the Electronics*+
+
+I found this Instructable from 2008 here: http://www.instructables.com/id/Thermal-test-chamber-for-edge-of-space-testing.-D/.  This Instructable details a test rig to put the electronics through its paces to see the effects of cold and potentially vacuum.  We do know paper capacitors don't work and traditional batteries don't work for us.  So this rig can verify that our gear won't get a few thousand feet up before dying altogether.

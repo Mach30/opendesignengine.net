@@ -1,0 +1,27 @@
+Index: trunk/HoloseatConfigurationApp_Win/HoloseatConfig.cs
+===================================================================
+--- trunk/HoloseatConfigurationApp_Win/HoloseatConfig.cs	(revision 51)
++++ trunk/HoloseatConfigurationApp_Win/HoloseatConfig.cs	(revision 52)
+@@ -163,6 +163,22 @@
+             {
+                 using (StreamWriter ConfigFile = new StreamWriter(ConstantsFile))
+                 {
++                    ConfigFile.WriteLine("// Copyright Model B, LLC 2016.");
++                    ConfigFile.WriteLine("// Author: J. Simmons ");
++                    ConfigFile.WriteLine("// https://opendesignengine.net/projects/holoseat/");
++                    ConfigFile.WriteLine("// ");
++                    ConfigFile.WriteLine("// This file is part of the Holoseat software suite (firmware, control software, etc).");
++                    ConfigFile.WriteLine("//");
++                    ConfigFile.WriteLine("// The Holoseat software suite is free software: you can redistribute it and/or modify ");
++                    ConfigFile.WriteLine("// it under the terms of the GNU General Public License as published by the Free Software ");
++                    ConfigFile.WriteLine("// Foundation, either version 3 of the License, or (at your option) any later version.");
++                    ConfigFile.WriteLine("//");
++                    ConfigFile.WriteLine("// Holoseat software suite is distributed in the hope that it will be useful, but ");
++                    ConfigFile.WriteLine("// WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or ");
++                    ConfigFile.WriteLine("// FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.");
++                    ConfigFile.WriteLine("//");
++                    ConfigFile.WriteLine("// You should have received a copy of the GNU General Public License along with Holoseat ");
++                    ConfigFile.WriteLine("// software suite.  If not, see <http://www.gnu.org/licenses/>.");
+                     ConfigFile.WriteLine("#ifndef holoseat_constants_h");
+                     ConfigFile.WriteLine("#define holoseat_constants_h");
+                     ConfigFile.WriteLine("");

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Space Chiles v1.0: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/spacechiles/issues.atom?set_filter=1&amp;amp;sort=id%3Adesc%2Cupdated_on%3Adesc"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/spacechiles/issues?set_filter=1&amp;amp;sort=id%3Adesc%2Cupdated_on%3Adesc"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-04-28T21:05:22+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #127 (New): Inability to run flight prediction more than 7.5d before launch</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/127"/>
+    <id>http://opendesignengine.net/issues/127</id>
+    <updated>2013-04-28T21:05:22+00:00</updated>
+    <author>
+      <name>Tenzin Beck</name>
+    </author>
+    <content type="html">
+&lt;p&gt;The most comprehensive flight tracker I've found, &lt;a class="external" href="http://habhub.org/predict/"&gt;http://habhub.org/predict/&lt;/a&gt;, is unable to run predictions for launches scheduled more than 180h in the future. In my testing of multiple scenarios, flight path and ground track distance is extremely variable from day to day.&lt;/p&gt;
+
+
+	&lt;p&gt;This means that we won't be able to schedule launches more than a week in advance, which may make coordinating a large team difficult.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #72 (New): Helium supply is not reliable/readily availble</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/72"/>
+    <id>http://opendesignengine.net/issues/72</id>
+    <updated>2012-09-05T11:54:00+00:00</updated>
+    <author>
+      <name>Greg Moran</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+</feed>

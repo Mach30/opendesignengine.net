@@ -1,0 +1,139 @@
+Index: HoloseatConfig.cs
+===================================================================
+--- HoloseatConfig.cs	(revision 50)
++++ HoloseatConfig.cs	(revision 51)
+@@ -17,14 +17,14 @@
+ 
+ using System;
+ using System.IO;
+-//using System.IO.Ports;
+-using RJCP.IO.Ports;
++using RJCP.IO.Ports; //From https://github.com/jcurl/serialportstream Replacement serial library to resolve problems with built in serial libraries
+ 
+ namespace HoloSeatConfig
+ {
+     class HoloseatConfigurationFile
+     {
+-        //Publically accessible variables for the number of steps constant and the walk command constant
++        //Publically accessible variables for the number of steps constant and the walk command constant  Publicly declared to be referenced by UI
++        //instead of needing a get function.
+         public double TriggerStepsPerMin;
+         public char WalkForwardCommandChar;
+         public char WalkBackwardCommandChar;
+@@ -32,27 +32,33 @@
+         public string HardwareType; //Valid types as of this version are "feather" for the Adafruit feather boards or "leo" for the Arduino Leonardo board
+         public string SerialLog;
+         public Boolean HoloSeatOn;
++        public string ArduinoPath;
+ 
+         //Location of the configuration file
+         private const string ConstantsFile = @".\holoseat_firmware\holoseat_constants.h";
+-        private const string HoloseatFirmware= @".\holoseat_firmware\holoseat_firmware.ino";
+-        private string Arguments = " --board arduino:avr:leonardo --port ";
+-        private const string ArduinoInstallLocation = @".\Arduino\arduino.exe";
++        private const string HoloseatFirmware= @".\holoseat_firmware\holoseat_firmware.ino";      
++
+         private const int DebugEnable = 0;
+         private const int DebugRate = 10;
+-
+         private const Boolean NoArduino = false;
+ 
++        //Internal variables
++        private string Arguments = " --board arduino:avr:leonardo --port ";
++
+         //Contructor for the class.  Searches the holoseat_firmware directory under where the program is stored to get the current settings
+         //If the settings are found it sets them into the variables.  If they're missing it instead sets them to defaults of 75 steps per minute
+         //and W.
+         public HoloseatConfigurationFile()
+         {           
++            //Setting default values
+             TriggerStepsPerMin = 75;
+             WalkForwardCommandChar = 'W';
+             WalkBackwardCommandChar = 'S';
+             SerialPort = "COM0";
+             HardwareType = "feather";
++            ArduinoPath = @"C:\Program Files (x86)\Arduino\arduino.exe";
++
++            //Reading the configuration file and parsing it into the settings
+             using (StreamReader FileLine = new StreamReader(ConstantsFile))
+                 while (FileLine.Peek() >= 0)
+                 {
+@@ -86,6 +92,11 @@
+                                     HardwareType = Convert.ToString(CurrentLine.Split('=')[1].Replace(';', ' ').Trim());
+                                     break;
+                                 }
++                            case "//Arduino Path ":
++                                {
++                                    ArduinoPath = Convert.ToString(CurrentLine.Split('=')[1].Replace(';', ' ').Trim());
++                                    break;
++                                }
+ 
+                         }
+                 }
+@@ -140,7 +151,8 @@
+                 return 0;
+             }
+         }
+-        //Update the configuration file specified in the constant above based on the current contents of TriggerStepsPerMin and WalkCommandchar.
++
++        //Update the configuration file specified in the constant above based on the current configuration contents of the object.
+         public string WriteConfiguration()
+         {
+             if (File.Exists(ConstantsFile))
+@@ -171,6 +183,7 @@
+                     ConfigFile.WriteLine("//Holoseat Configurator Variables");
+                     ConfigFile.WriteLine("//Hardware Type = " + HardwareType + ";");
+                     ConfigFile.WriteLine("//Serial Port = " + SerialPort + ";");
++                    ConfigFile.WriteLine("//Arduino Path = " + ArduinoPath + ";");
+                     ConfigFile.WriteLine("");
+                     ConfigFile.WriteLine("// other boot parameters");
+                     ConfigFile.WriteLine("const unsigned int SerialBaudRate = 57600;");
+@@ -183,12 +196,13 @@
+                 return e.ToString();
+             }
+         }
++
++// This command opens the serial communication using SerialPortStream library and sends a configuration string following the Holoseat Serial config protocol
+         private Boolean SendCommandToSerial(string CommandString)
+         {
+             string ReturnLine;
+             string PortID = SerialPort;
+             Boolean Result = true;
+-//            System.IO.Ports.SerialPort MyPort = new System.IO.Ports.SerialPort(PortID);
+             SerialPortStream MyPort = new SerialPortStream();
+             MyPort.PortName = PortID;
+             MyPort.BaudRate = 9600;
+@@ -200,7 +214,6 @@
+             MyPort.WriteTimeout = 5000;
+             SerialLog = "Opening Port " + PortID + System.Environment.NewLine;
+             MyPort.Open();
+-            //System.Threading.Thread.Sleep(1000);
+             if (MyPort.IsOpen == true)
+             {
+                 SerialLog = SerialLog + ("COM Port open" + System.Environment.NewLine);
+@@ -214,7 +227,6 @@
+                     if (ReturnLine.Substring(1, 1) != "R")
+                     {
+                         Result = false;
+-
+                     }
+                     SerialLog = SerialLog + ("Sending selected output" + System.Environment.NewLine);
+                     MyPort.WriteLine(CommandString);
+@@ -236,14 +248,14 @@
+             }
+         }
+ 
+-        //Pushes the configuration file to the Lenoardo so the settings are updated.
++        //Pushes the configuration file to the Arduino so the settings are updated.
+         public int UpdateHoloseat()
+         {
+             SetArguments();
+             WriteConfiguration();
+             System.Diagnostics.Process ArduinoUpload = new System.Diagnostics.Process();
+-            ArduinoUpload.StartInfo.FileName = ArduinoInstallLocation;
+-            if (NoArduino==true)
++            ArduinoUpload.StartInfo.FileName = ArduinoPath;
++            if (NoArduino==true) //Used in testing to confirm the firmware is good if the holoseat is not connected.
+             {
+                 ArduinoUpload.StartInfo.Arguments = "--verify ." + HoloseatFirmware;
+             }

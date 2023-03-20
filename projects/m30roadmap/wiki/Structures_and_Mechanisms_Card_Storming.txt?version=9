@@ -1,0 +1,75 @@
+back [[Technology_Evaluation]]
+
+h1. Structures and Mechanisms Card Storming
+
+h2. Unsorted list of ideas
+
+* DIGITAL FABRICATION OF COMPONENTS AND MECHANISMS
+** could be a problem if it's used to make something that is itself controlled
+* AN OPEN PLATFORM OF STANDARDS (Like LEGOS)
+** vague, but shouldn't be a problem
+* PAYLOAD MOUNT FOR ARDUINOS
+** I have a hard time seeing how this would be a problem; nobody's using an arduino on an actual launch vehicle
+* UPGRADED ELECTRONICS PAYLOAD STRUCTURES - LIKE FOR FIN-FACING CAMERAS
+** payload adapters for launch vehicles are controlled
+** "...including the articles identified in section 1516 of Public Law 105–261: satellite fuel, ground support equipment, test equipment, payload adapter or interface hardware..."
+* FABRICATION IN MAKERSPACES WITH LOCAL TOOLS
+** fine as long as nothing needs to be controlled
+** or we invent a new way to build an ad-hoc network of people who obey export controls
+* EXPERIMENT WITH DIFFERENT MATERIALS AND MANUFACTURING TECHNIQUES
+** The rules do specify that model/HP rockets need to have a minimum of metal components
+** any advanced materials or techniques will inevitably run into USML or CCL rules
+* SOFTWARE TOOLS - CODECAD AND OPENSOURCECAD (CADQUERY)
+** already open source tools will be fine
+** we might run into trouble if we create new software for modeling actual launch vehicles
+* COLLAPSIBLE AND EXPANDABLE MECHANISMS (“ORAGAMI ROCKET”)
+** fine as long as it's model/HP sized
+* THE “BLACK BOX” FOR MODEL ROCKET (CHEAP, DURABLE, RECOVERABLE, LIKE www.carbonorigins.com)
+** shouldn't be a problem; no intention of going to space; no active controls; model/HP sized
+* HARDWARE TOOLS AND JIGS
+** fine
+* SCALABLE PARTS, AND THE ASSOCIATED STANDARDS FOR USING THEM
+** too vague
+* SOFTWARE - STRUCTURAL ANALYSIS TOOLS (LIKE FEA, NASTRAN, etc.)
+** I couldn't find a mention, but I feel like something is probably on the CCL
+** http://www.avantinternational.com/searchableccl/2011-02-10_The_Searchable_CCL.pdf
+* (linked to propulsion as well) PROPULSION TEST STAND STRUCTURE
+** fine if it's model/HP sized
+* (stretching outside the box a bit) SCALE MODEL OF A SIMULATED LAUNCH COMPLEX.  FULL GROUND OPS SIMULATION
+** fine
+* (linked in to aerodynamics as well) FIN DESIGN BASED ON J’S MASTERS THESIS (OPTIMIZING SUPERSONIC STRUCTURES TO PREVENT FLUTTER)
+** this information is probably fine if it's already gone public domain due to being academic
+** But anything going supersonic will probably be not-fine
+* STRUCTURAL TESTING (DESTRUCTIVE OR OTHERWISE)
+** probably fine, unless it's like for advanced composite structures
+* STRUCTURAL DESIGN BEST PRACTICES FOR MANUFACTURING, AND OPERATIONS, (AKA LIFECYCLE CONSIDERATION)
+** fine
+* STRUCTURAL INTERACTIONS WITH THE GROUND SUPPORT EQUIPMENT
+** vague, but probably fine
+* MATERIALS TESTING FORM AN ENVIRONMENTAL PERSPECTIVE (UV, THERMAL, (eventually) VACUUM
+** this probably crosses the line somewhere, but I'm not sure what to search for specifically
+* STRUCTURAL INCORPORATION OF A “MISSION OBJECTIVE” (like rube goldburg, or scientific experiment)
+** fine
+* (linked to electrical/power)  HOW TO INCORPORATE POWER STORAGE INTO STRUCTURAL COMPONENTS
+** probably fine unless one or more of the specific technologies is too advanced; not sure what to search for
+* ADDRESSING REUSABILITY CONCERNS WITH RESPECT TO STRUCTURAL COMPONENTS
+** fine
+* HIGH-RELIABILITY RECOVERY SYSTEM (MECHANISMS)
+** too vague
+* (building on Legos idea) Modular model rocket kit (1 kit, several rockets; maybe based around "NARTREK":http://www.nar.org/model-rocket-info/nartek-skills-program/ missions)
+** fine since it's model/HP sized
+* Structural Analysis software for both dynamic and static analysis
+** probably crosses a line when it gets advanced; not sure what to search for
+* Launch Pad design/structures
+** the MTCR lists this stuff as controlled, but I think it's only for rockets that can go 300km
+* Go extermely small size (Just how small can I get it?)
+** fine since it's too small to sell or use in the military
+** sharing files, etc
+** educational/entertainment
+** very open source
+* Evaluation/research of tools and machines required to build rockets at scale we are looking at -> Toolset analysis
+** might actually be fine as long as it's not actually used to build a launch vehicle
+* Make sure the materials research covers non-obvious choices (to us at least) like composites, etc
+* Unconventional rockets, like rocket/jet-powered rotors
+** might skirt the regulations
+** would probably be caught under a more general categorization no matter what

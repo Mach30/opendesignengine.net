@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>AttenuatorX: Revisions</title>
+  <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions.atom" rel="self"/>
+  <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions" rel="alternate"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-05-12T03:19:34+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Revision 45: Including new Datasheets</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/45" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/45</id>
+    <updated>2013-05-12T03:19:34+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 44: Continued updating BOM and Schematic</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/44" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/44</id>
+    <updated>2013-05-12T03:19:00+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 43: Updated with new beginning schematic for AttenuatorX</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/43" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/43</id>
+    <updated>2013-05-11T22:16:39+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 42: Updated AttenuatorX</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/42" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/42</id>
+    <updated>2013-05-11T22:14:44+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 41: Added a few reference files</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/41" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/41</id>
+    <updated>2013-05-11T22:05:40+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 40: Previously forgot to upload the quick-and-dirty test firmware.</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/40" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/40</id>
+    <updated>2013-05-11T22:04:53+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 39: Removed XLE</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/39" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/39</id>
+    <updated>2013-05-11T22:03:31+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 38: Updated the BOM and Schematic IOT resolve Issues 114, 116, and 121</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/38" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/38</id>
+    <updated>2013-05-11T20:28:33+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 37: Copied XTest1 KiCad Schematic files to AttenuatorX to simplify the process of design...</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/37" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/37</id>
+    <updated>2013-04-01T22:16:46+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 36: Added Creative Commons Attribution-ShareAlike 3.0 Unported License to Project Notes.</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/36" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/36</id>
+    <updated>2013-04-01T22:07:13+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 35: Started initial documentation for XTest1</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/35" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/35</id>
+    <updated>2013-02-11T20:35:53+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 34: Preparing file structure for Firmware</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/34" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/34</id>
+    <updated>2013-02-11T20:08:08+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 33: No significant changes</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/33" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/33</id>
+    <updated>2013-02-11T20:06:59+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 32: Corrected Serial (MOSI) and Slave Select (SS) SPI connections to the Attenuator</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/32" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/32</id>
+    <updated>2013-02-11T20:05:30+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Revision 31</title>
+    <link href="http://opendesignengine.net/projects/attenuatorx/repository/revisions/31" rel="alternate"/>
+    <id>http://opendesignengine.net/projects/attenuatorx/repository/revisions/31</id>
+    <updated>2013-01-09T11:12:51+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+</feed>

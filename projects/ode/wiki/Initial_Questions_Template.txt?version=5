@@ -1,0 +1,59 @@
+h1. <Project Name> Initial Questions vX.x
+
+{{toc}}
+
+h2. Project Background Questions
+
+h3. BQ1. Why are we making this?
+
+*BA1*. _..._
+
+h3. BQ2. Who is this for?
+
+*BA2.* _..._
+
+h3. BQ3. How will this be used?
+
+*BA3*. _...._
+
+h3. BQ4. Who's going to build this?
+
+*BA4.*  _..._
+
+h2. Technical Requirement Questions
+
+h3. TQ1a. What features does it need to have (now)?
+
+*TA1a.* _The project needs to:_
+
+* _...._
+
+h3. TQ1b. What features does it need to have (later)?
+
+*TA1b.* _In the future, the project (or related projects) may need to:_
+
+* _..._
+
+h3. TQ2. What are the legacy requirements?
+
+*TA2.* _To maintain compatibility with other projects, the system should:_
+
+* _..._
+
+h2. Project Requirement Questions
+
+h3. PQ1. How many do we want to make?
+
+*PA1.* _..._
+
+h3. PQ2. What is the budget?
+
+*PA2.* _..._
+
+h3. PQ3. What is the timeline?
+
+*PA3.* _..._
+
+h3. PQ4. What waste products will be produced by the manufacture and/or operation of this?
+
+*PA4.* _..._

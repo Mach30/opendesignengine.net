@@ -1,0 +1,25 @@
+h1. AttenuatorX Wiki
+
+h2. Project background
+
+This project grew out of dissatisfaction for adjustable attenuator products currently on the market. These devices are often used to protect the inputs to test equipment and other sensitive RF devices. As part of my job as a Radar Technician, I needed an attenuator that could handle up to around 40 dBm, provide a variety of attenuation levels, and operate over a large frequency spectrum. The only devices I found that met these needs cost over $2000, and are adjusted over 1 dB increments by physically flipping switches or turning dials. I thought I could do better, so I started working on doing just that.
+
+I have experience as a Radar Technician, and as a licensed amateur radio technician (KI6NVY), but while I've worked extensively with RF, this is my first time engineering with RF. I welcome any recommendations, corrections, and other correspondence.
+
+
+h2. Milestones
+
+This project encompasses a smaller project in addition to the final product. We will start by designing a test board to progressively test the components used in the final board. The primary device will also include details on the selected enclosure, Bill of Materials (BOM), firmware, and other information for building you own device.
+
+*[[XTest1]]* is a very basic test board with two attenuation paths, an RF switch, chip attenuators, a digital attenuator, and an AVR ATMega48 microcontroller to handle switching.
+
+*[[AttenuatorX]]* is a relatively Low-cost Wide-Band, Wide Attenuation, High Power, Digitally adjustable RF attenuator which will offer the following features:
+    0 to 3 GHz Operation
+    Up to 34 dBm (2.5W) Input Power with 10 to 85.5 dB Attenuation in 0.5 dB Steps
+    Up to 50 dBm (100W) Input Power with 30 to 105.5 dB Attenuation in 0.5 dB Steps
+    Atmel ATMega164PA/324PA/644PA Microcontroller
+    8k-bit EEPROM
+    LCD Display
+    Programming via LCD Display, or via SPI or Parallel inputs
+    Input Power Sensing
+

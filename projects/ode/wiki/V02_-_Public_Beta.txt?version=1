@@ -1,0 +1,5 @@
+h1. v0.2 - Public Beta
+
+This will be the first release to include significant new code from Mach 30 and ODE volunteers. The code will primarily come in the form of new plugins or contributions to existing plugins that did not make it into the Private Alpha and are deemed necessary for core functionality. New plugins will include an "OSHW":http://www.openhardwaresummit.org/oshw-definition-v1-0/ licensing plugin so hosted can be required to select an OSHW license for hardware projects or an "OSI":http://opensource.org license for software projects (similar to http://sourceforge.net), and work on presentation. The exact set of features to be implemented is still being determined.
+
+At the release of the Public Beta, all users will be allowed to create their own projects.

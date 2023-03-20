@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Open Design Engine - Activity - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../favicon.ico%3F1359925685' />
+<link href="http://opendesignengine.net/stylesheets/application.css?1359925542" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../javascripts/prototype.js%3F1359925542" type="text/javascript"></script>
+<script src="../../javascripts/effects.js%3F1359925542" type="text/javascript"></script>
+<script src="../../javascripts/dragdrop.js%3F1359925542" type="text/javascript"></script>
+<script src="../../javascripts/controls.js%3F1359925542" type="text/javascript"></script>
+<script src="../../javascripts/application.js%3F1359925542" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="http://opendesignengine.net/plugin_assets/redmine_legal/stylesheets/terms-of-service.css?1359925705" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+<link href="http://opendesignengine.net/projects/ode/activity.atom" rel="alternate" title="ATOM" type="application/atom+xml" />
+</head>
+<body class="controller-activities action-index">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="http://opendesignengine.net/login" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../account/register.html" class="home">Home</a></li>
+<li><a href="../../projects.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="../../search/index/ode.html" method="get">
+        
+        <a href="../../search/index/ode.html" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Open Design Engine</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../ode%3Fjump=overview.html" class="overview">Overview</a></li>
+<li><a href="../ode%3Fjump=activity.html" class="activity selected">Activity</a></li>
+<li><a href="roadmap.html" class="roadmap">Roadmap</a></li>
+<li><a href="../ode%3Fjump=issues.html" class="issues">Issues</a></li>
+<li><a href="issues/gantt.html" class="gantt">Gantt</a></li>
+<li><a href="../ode%3Fjump=news.html" class="news">News</a></li>
+<li><a href="wiki.1.html" class="wiki">Wiki</a></li>
+<li><a href="boards.html" class="boards">Forums</a></li>
+<li><a href="../ode%3Fjump=files.html" class="files">Files</a></li>
+<li><a href="http://opendesignengine.net/projects/ode/repository" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="" id="main">
+    <div id="sidebar">
+        
+<form action="../ode%3Fjump=activity.html" method="get">
+<h3>Activity</h3>
+<p>
+<input checked="checked" id="show_issues" name="show_issues" type="checkbox" value="1" />
+<a href="activity%3Fshow_issues=1.html">Issues</a>
+<br />
+
+<input checked="checked" id="show_changesets" name="show_changesets" type="checkbox" value="1" />
+<a href="activity%3Fshow_changesets=1.html">Changesets</a>
+<br />
+
+<input checked="checked" id="show_news" name="show_news" type="checkbox" value="1" />
+<a href="activity%3Fshow_news=1.html">News</a>
+<br />
+
+<input checked="checked" id="show_files" name="show_files" type="checkbox" value="1" />
+<a href="activity%3Fshow_files=1.html">Files</a>
+<br />
+
+<input id="show_wiki_edits" name="show_wiki_edits" type="checkbox" value="1" />
+<a href="activity%3Fshow_wiki_edits=1.html">Wiki edits</a>
+<br />
+
+<input id="show_messages" name="show_messages" type="checkbox" value="1" />
+<a href="activity%3Fshow_messages=1.html">Messages</a>
+<br />
+</p>
+
+	  <input id="with_subprojects" name="with_subprojects" type="hidden" value="0" />
+    <p><label><input checked="checked" id="with_subprojects" name="with_subprojects" type="checkbox" value="1" /> Subprojects</label></p>
+
+
+<p><input class="button-small" type="submit" value="Apply" /></p>
+</form>
+
+        
+    </div>
+
+    <div id="content">
+				
+        <h2>Activity</h2>
+<p class="subtitle">From 10/11/2013 to 11/09/2013</p>
+
+<div id="activity">
+
+<h3>11/07/2013</h3>
+<dl>
+  <dt class="issue-note  ">
+	
+  <span class="time">04:16 pm</span>
+  
+  <a href="../../issues/180.html#change-401">Feature #180: Add 3D rendering support to wiki syntax and DMSF file details</a></dt>
+  <dd><span class="description">See Feature #184 for better renderer (and more powerful features)</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">04:13 pm</span>
+  
+  <a href="../../issues/180.html#change-398">Feature #180: Add 3D rendering support to wiki syntax and DMSF file details</a></dt>
+  <dd><span class="description">Estimate just covers researching and testing.</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">04:08 pm</span>
+  
+  <a href="../../issues/179.html#change-397">Feature #179: Dozuki Integration</a></dt>
+  <dd><span class="description">Estimate is just for a module which embeds Dozuki content in ODE site (like a module level version of YouTube plugin)</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">04:01 pm</span>
+  
+  <a href="../../issues/152.html#change-396">Feature #152: Add &quot;Create new page&quot; button to wiki system</a></dt>
+  <dd><span class="description">Comments<br />* J - if we implement this, we should also add an auto index page so users can find orphaned pages<br />* Chris...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:55 pm</span>
+  
+  <a href="../../issues/150.html#change-395">Feature #150: Install and begin usage of Redmine CMS Plugin</a></dt>
+  <dd><span class="description">Estimating for first pass at this work.</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:55 pm</span>
+  
+  <a href="../../issues/129.html#change-394">Feature #129: Add support for formal PLM process</a></dt>
+  <dd><span class="description">Needs more requirements work, large project</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:53 pm</span>
+  
+  <a href="../../issues/128.html#change-393">Feature #128: Add oEmbed wiki macro</a></dt>
+  <dd><span class="description">Comments<br />* Chris - sees how this could be useful, worried about potential security issues it brings up; feels the ex...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:50 pm</span>
+  
+  <a href="../../issues/128.html#change-392">Feature #128: Add oEmbed wiki macro</a></dt>
+  <dd><span class="description">#OSHWDocJam</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:49 pm</span>
+  
+  <a href="../../issues/113.html#change-391">Feature #113: Repository Zip Download</a></dt>
+  <dd><span class="description">Comments<br />* Chris - concerned the implementation of this could slow down the server when it gets run, especially if t...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:47 pm</span>
+  
+  <a href="../../issues/49.html#change-389">Feature #49: Save filter settings on Activity tab</a></dt>
+  <dd><span class="description">Comments<br />* J - this sounds related to the desire to overhaul the activity (and really &quot;My Page&quot;) pages, should be pa...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:44 pm</span>
+  
+  <a href="../../issues/45.html#change-388">Feature #45: Add license usage stats to a public page </a></dt>
+  <dd><span class="description">Not terribly difficult, more useful as the site grows in popularity.</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:43 pm</span>
+  
+  <a href="../../issues/37.html#change-387">Feature #37: Visual diffs for graphical file formats</a></dt>
+  <dd><span class="description">Comments<br />* Chris - if we stick to image file formats (png, pdf, jpeg, etc) this could be very straight forward, mayb...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:36 pm</span>
+  
+  <a href="../../issues/33.html#change-386">Feature #33: Allow users to request membership in projects</a></dt>
+  <dd><span class="description">Plugin is too old to simply use, would likely have to reimplement the plugin or find a replacement.  Unlikely to be l...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:34 pm</span>
+  
+  <a href="../../issues/29.html#change-385">Feature #29: Add embedded project IRC support</a></dt>
+  <dd><span class="description">Not low hanging fruit.</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:34 pm</span>
+  
+  <a href="../../issues/28.html#change-384">Feature #28: Add real-time wiki editing</a></dt>
+  <dd><span class="description">Big project, might get most of the way using Etherpad, but lots of research and testing to do first.</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:31 pm</span>
+  
+  <a href="../../issues/26.html#change-383">Feature #26: Native support for Bills of Materials</a></dt>
+  <dd><span class="description">This is a whole new major feature.  40-60 hours depending on requirements.</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:30 pm</span>
+  
+  <a href="../../issues/25.html#change-382">Feature #25: Add tagging support to projects and their modules</a></dt>
+  <dd><span class="description">There are Redmine plugins which might help<br />* &quot;Issue Tagging&quot;:https://github.com/ixti/redmine_tags<br />* &quot;Issue &amp; Wiki P...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:26 pm</span>
+  
+  <a href="../../issues/24.html#change-381">Feature #24: Social networking sites support</a></dt>
+  <dd><span class="description">Thingyverse has something like this under &quot;share&quot; on individual thing pages.  There is a facebook &quot;like plugin&quot;:http:...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:21 pm</span>
+  
+  <a href="../../issues/23.html#change-380">Feature #23: Add a &quot;fans&quot; page to projects</a></dt>
+  <dd><span class="description">Probably original development, but should double check existing plugins.</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:21 pm</span>
+  
+  <a href="../../issues/21.html#change-379">Feature #21: Project assistance Bounty System</a></dt>
+  <dd><span class="description">Comments<br />* Chris - sees this as also a little like stack overflow<br />* J - two pieces: ability to mark anything on the...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:14 pm</span>
+  
+  <a href="../../issues/20.html#change-378">Feature #20: Add support for shared &quot;engineering&quot; workflows</a></dt>
+  <dd><span class="description">Comments from Chris - not sure this is a considerable investment of time/energy (can&#x27;t even begin to estimate it with...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:12 pm</span>
+  
+  <a href="../../issues/18.html#change-377">Feature #18: Configure installer to use ODE.net&amp;#x27;s settings for defaults</a></dt>
+  <dd><span class="description">Shouldn&#x27;t take too long, but not quite ready to make this a priority.</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:09 pm</span>
+  
+  <a href="../../issues/124.html#change-376">Bug #124: Enhanced wiki formatting</a></dt>
+  <dd><span class="description">Notes from discussion with Chris<br />* Chris would like to add a WYSIWIG editor (for example CKEditor), but would prefer...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+</dl>
+
+<h3>10/31/2013</h3>
+<dl>
+  <dt class="issue-closed  ">
+	
+  <span class="time">10:57 pm</span>
+  
+  <a href="../../issues/219.html#change-366">Bug #219 (Resolved): YouTube plugin renders as plain-text instead of HTML</a></dt>
+  <dd><span class="description">Fixed in revision 80</span>
+  <span class="author"><a href="http://opendesignengine.net/users/130" class="icon icon-contributor-license">Christopher Sigman</a></span></dd>
+  <dt class="changeset  ">
+	
+  <span class="time">10:51 pm</span>
+  
+  <a href="repository/revisions/80.html">Revision 80: Fixed issue with redmine-video plugin (bug #220)</a></dt>
+  <dd><span class="description"></span>
+  <span class="author"><a href="http://opendesignengine.net/users/130" class="icon icon-contributor-license">Christopher Sigman</a></span></dd>
+  <dt class="issue closed  ">
+	
+  <span class="time">10:38 pm</span>
+  
+  <a href="../../issues/220.html">Bug #220 (Closed): For Pay Private Projects</a></dt>
+  <dd><span class="description">* Integration with payment processing (as another feature)<br />* Turning private projects into a “sellable feature” (aka...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/130" class="icon icon-contributor-license">Christopher Sigman</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">10:30 pm</span>
+  
+  <a href="../../issues/123.html#change-365">Bug #123: Address inconsistent use of http and https in fundraising plugin</a></dt>
+  <dd><span class="description">Is there a way to get the Redmine protocol setting from the Redmine Plugin API?  If so, the plugins should use that f...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue closed  ">
+	
+  <span class="time">09:56 pm</span>
+  
+  <a href="../../issues/219.html">Bug #219 (Resolved): YouTube plugin renders as plain-text instead of HTML</a></dt>
+  <dd><span class="description">The content rendered by the YouTube plugin is currently displayed as text in the page because Rails is making the con...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/130" class="icon icon-contributor-license">Christopher Sigman</a></span></dd>
+  <dt class="issue closed  ">
+	
+  <span class="time">09:43 pm</span>
+  
+  <a href="../../issues/218.html">Bug #218 (Resolved): Footer is not styled correctly</a></dt>
+  <dd><span class="description">HR between &quot;Powered by Redmine&quot; and the TOS link is missing, TOS link is left justified instead of centered, and TOS ...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+  <dt class="issue  ">
+	
+  <span class="time">09:42 pm</span>
+  
+  <a href="../../issues/217.html">Milestone #217 (New): Migrate ODE source code to match current version of Redmine</a></dt>
+  <dd><span class="description">It has been too long since we did this migration.  Be sure to document process in the ODE wiki so we can keep current...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+</dl>
+</div>
+
+
+
+<div style="float:left;">
+<a href="activity%3Ffrom=2013-10-10.html" title="From 09/11/2013 to 10/10/2013">« Previous</a>
+</div>
+<div style="float:right;">
+<a href="http://opendesignengine.net/projects/ode/activity?from=2013-12-09" title="From 11/10/2013 to 12/09/2013">Next »</a>
+</div>
+&nbsp;
+<p class="other-formats">Also available in:
+	<span><a href="http://opendesignengine.net/projects/ode/activity.atom" class="atom" rel="nofollow">Atom</a></span>
+</p>
+
+
+
+
+
+
+        
+				<div style="clear:both;"></div>
+    </div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+	
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://www.redmine.org/">Redmine</a> &copy; 2006-2011 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25732509-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> <div id="footer">
+  <div class="bgl"><div class="bgr">
+    <a href="http://opendesignengine.net/terms_of_services/ode">Terms Of Service</a>
+  </div></div>
+</div>
+<div id="footer">
+</div>
+</body>
+</html>

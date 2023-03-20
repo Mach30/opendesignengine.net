@@ -1,0 +1,32 @@
+h1. Release Testing
+
+{{toc}}
+
+h2. Introduction
+The following test plan should be performed on any release candidate prior to scheduling an upgrade of the *ODE* server.  It should again be performed on the live site once the upgrade is in place to ensure the upgrade was successful.
+
+h2. Required Browsers
+
+All tests should be run from the following browser/OS combinations to ensure ODE works for a wide audience.
+
+|*Browser*|*Windows*|*OS X*|*Linux*|
+|Chrome   |    X           |  X     |   X      |
+|Firefox    |    X           |  X     |   X      |
+|Safari      |                 |  X     |           |
+|IE            |    X           |         |           |
+
+h2. Features to Test
+
+*ODE* features come in three categories.  First is features which are built-in to *Redmine* core.  Second is features from community developed plugins such as "DMSF":http://www.redmine.org/plugins/dmsf.  And the third is features which were added using custom plugins from *ODE* development.
+
+h3. Built-In Features
+
+...
+
+h3. Community Plugins
+
+...
+
+h3. Custom Plugins
+
+....

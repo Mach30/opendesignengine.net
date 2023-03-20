@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Requirements Document</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body { font:80% Verdana,Tahoma,Arial,sans-serif; }
+h1, h2, h3, h4 {  font-family: "Trebuchet MS",Georgia,"Times New Roman",serif; }
+ul.toc { padding: 4px; margin-left: 0; }
+ul.toc li { list-style-type:none; }
+ul.toc li.heading2 { margin-left: 1em; }
+ul.toc li.heading3 { margin-left: 2em; }
+a.wiki-anchor { display: none; margin-left: 6px; text-decoration: none; }
+a.wiki-anchor:hover { color: #aaa !important; text-decoration: none; }
+h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor { display: inline; color: #ddd; }
+</style>
+</head>
+<body>
+<a name="Requirements-Document-for-Ground-Station-v20"></a>
+<h1 >Requirements Document for Ground Station v2.0<a href="Requirements_Document.html%3Fversion=3.html#Requirements-Document-for-Ground-Station-v20" class="wiki-anchor">&para;</a></h1>
+
+
+	<ul class="toc"><li><a href="Requirements_Document.html%3Fversion=3.html#Requirements-Document-for-Ground-Station-v20">Requirements Document for Ground Station v2.0</a><ul><li><ul><li><a href="Requirements_Document.html%3Fversion=3.html#Introduction">Introduction</a></li><li><a href="Requirements_Document.html%3Fversion=3.html#Technical-Requirements">Technical Requirements</a></li><li><a href="Requirements_Document.html%3Fversion=3.html#Project-Requirements">Project Requirements</a></li><li><a href="Requirements_Document.html%3Fversion=3.html#Future-Requirements">Future Requirements</a></li><li><a href="Requirements_Document.html%3Fversion=3.html#Glossary">Glossary</a></li></ul></li></ul></li></ul>
+
+
+	<a name="Introduction"></a>
+<h3 >Introduction<a href="Requirements_Document.html%3Fversion=3.html#Introduction" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>The requirements list matches up to the Initial Questions in step one of the Systems Engineering process as shown below. Each requirement is labeled with GS2R (Ground Station 2.0 Requirement), followed by the number of the <a href="Initial_Questions.html" class="external">initial question</a> that the requirement corresponds to, followed by a dot and then the ID number of the requirement.</p>
+
+
+	<ul>
+	<li><strong>GS2R 1.x</strong> - Why are we making this?</li>
+		<li><strong>GS2R 2.x</strong> - Who is this for?</li>
+		<li><strong>GS2R 3.x</strong> - How will this be used?</li>
+		<li><strong>GS2R 4.x</strong> - What features does it need to have (now)?</li>
+		<li><strong>GS2R 5.x</strong> - What features does it need to have (later)?</li>
+		<li><strong>GS2R 6.x</strong> - What are the legacy requirements?</li>
+		<li><strong>GS2R 7.x</strong> - Who's going to build this?</li>
+		<li><strong>GS2R 8.x</strong> - How many do we want to make?</li>
+		<li><strong>GS2R 9.x</strong> - What is the budget?</li>
+		<li><strong>GS2R 10.x</strong> - What is the timeline?</li>
+		<li><strong>GS2R 11.x</strong> - What waste products will be produced by the manufacture and/or operation of this?</li>
+	</ul>
+
+
+	<a name="Technical-Requirements"></a>
+<h3 >Technical Requirements<a href="Requirements_Document.html%3Fversion=3.html#Technical-Requirements" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>Technical requirements are those requirements which include measurable performance values.  Each technical requirement should be verified through testing to ensure the design meets the requirement.</p>
+
+
+	<ul>
+	<li><strong>GS2R 1.1</strong> The ground station must be able to receive satellite signals within the designated amateur radio bands.</li>
+		<li><strong>GS2R 1.2</strong> The ground station must be able to transmit and be received by satellites in orbit.</li>
+		<li><strong>GS2R 1.3</strong> The ground station must be portable to enable live demonstrations as part of educational and outreach activities including remote field use.
+	<ul>
+	<li><strong>GS2R 1.3.1</strong> The total weight of Ground Station 2.0 shall be less than 35kg and be able to break down into components which do not exceed 150cm on any axis to ensure portability.</li>
+		<li><strong>GS2R 1.3.2</strong> The ground station must be transportable by a single person in a compact car.</li>
+	</ul>
+	</li>
+		<li><strong>GS2R 1.4</strong> The external components of the ground station must be able to handle rain, dust, winds up to 80km/h, as well as cold (-20C) and hot (60C) temperatures.</li>
+		<li><strong>GS2R 1.5</strong> The external components of the ground station must be able to be mounted securely to a structure or vehicle.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>GS2R 2.1</strong> The ground station must be designed so that the components may be quickly and easily set up and torn down by minimally qualified personnel and with common tools.</li>
+		<li><strong>GS2R 2.3</strong> All components must either be commercially available or available in “kitified” form.</li>
+		<li><strong>GS2R 2.4</strong> Clear and simple instructions on the use of the ground station's major components as well as instructions on the use of the ground station as a whole must be publicly available.  </li>
+		<li><strong>GS2R 2.5</strong> A safety guide must be included with the kit, the above instruction manual, and be made publicly available on the internet.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>GS2R 3.1</strong> The user constructing the ground station will be expected to provide their own equipment as follows:
+	<ul>
+	<li><strong>GS2R 3.1.1</strong> A laptop or other portable computer.</li>
+		<li><strong>GS2R 3.1.2</strong> A dual band (UHF/VHF) amateur band handheld transceiver (HT) with at least 5W output transmit power.</li>
+		<li><strong>GS2R 3.1.3</strong> Additional modules or equipment necessary for meeting additional user requirements.</li>
+	</ul>
+	</li>
+		<li><strong>GS2R 3.2</strong> The ground station will be used in a manner consistent with relevant laws.
+	<ul>
+	<li><strong>GS2R 3.2.1</strong> The design, construction and operation of the ground station and components will comply with <a href="http://www.ecfr.gov/cgi-bin/text-idx?c=ecfr&#38;SID=273eb7d322bf9d317063be6dc8908e9c&#38;rgn=div5&#38;view=text&#38;node=47:5.0.1.1.6&#38;idno=47" class="external">FCC regulation under CFR Title 47 part 97</a></li>
+		<li><strong>GS2R 3.2.2</strong> Users in other countries are expected to comply with regulations specific to their country and region in the construction, operation, and use of the ground station and components.</li>
+	</ul>
+	</li>
+		<li><strong>GS2R 3.3</strong> The ground station software will be able to perform the following tasks:
+	<ul>
+	<li><strong>GS2R 3.3.1</strong> Predict the time and bearing of satellite acquisition of signal (AOS) and loss of signal (LOS) with respect to receiver location (it may not take into account local obstructions like buildings or mountains).</li>
+		<li><strong>GS2R 3.3.2</strong> Display a record of known satellites, their transponder, and transceiver frequencies. </li>
+		<li><strong>GS2R 3.3.3</strong> Identify the expected uplink and downlink doppler shift.</li>
+		<li><strong>GS2R 3.3.4</strong> The software must work with Microsoft Windows, Mac OSX, and Linux operating systems.</li>
+	</ul>
+	</li>
+		<li><strong>GS2R 3.4</strong> The operator of the ground station will be able to perform the following tasks:
+	<ul>
+	<li><strong>GS2R 3.4.1</strong> Contact the satellite for verification of signal and telemetry (not possible with all satellites).</li>
+		<li><strong>GS2R 3.4.2</strong> Contact ground personnel beyond the visual or radio horizon through the satellite (possible only with amateur communication satellites supporting a repeater mode).</li>
+		<li><strong>GS2R 3.4.3</strong> Contact manned spacecraft which are able to transmit and receive on amateur frequencies such as ISS.</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><strong>GS2R 4.1</strong> Mobile Ground Station operations
+	<ul>
+	<li><strong>GS2R 4.1.1</strong> See GS2R 2.1</li>
+		<li><strong>GS2R 4.1.2</strong> Mobile ground station build out and set up time should be less than 1 hr.</li>
+		<li><strong>GS2R 4.1.3</str

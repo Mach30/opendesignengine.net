@@ -1,0 +1,40 @@
+h1. Ground Sphere Budget v0.2
+
+h3. Overview
+
+The materials cost should be kept under $100 to limit the retail cost of the kit. There are currently three prototypes planned. The project budget should cover all three prototypes plus overage. To that end, the threshold project budget (max) is $500 and the objective is $400.
+
+h3. Antenna Cost Estimates
+
+|_.Item |_.Cost (Minus Shipping) |_.Link |
+| Antenna Body | $0.92 |  |
+| Coupling Sections | $0.20 |  |
+| Base Adapter | $6.61 |  |
+| Base | $2.50 |  |
+| Coupler | $2.50 |  |
+| End Cap | $1.51 |  |
+| Aerial Terminals | $7.96 |  |
+| Aerial Terminal Retaining Screws | $0.28 |  |
+| Aerial Terminal Retaining Nuts | $0.16 |  |
+| Ring Terminals | $0.36 |  |
+| Ring Terminal | $0.12 |  |
+| Ring Terminals | $0.24 |  |
+| Aerials | $0.20 |  |
+| Antenna Line RP-SMA Female Bulkhead to Pigtail | $1.75 |  |
+| Antenna to Preamp Line RP-SMA Male to Male  | $3.50 |  |
+| Preamp to SDR Line RP-SMA Male to MMCX Male  | $3.50 |  |
+| Phasing Loop  | $5.00 |  |
+| Ground Plane Fabric  | $1.25 | "Link":http://www.lessemf.com/1213.pdf  |
+| Ground Plane Backing  | $0.99 | "Link":http://www.joann.com/quickshape-plastic-canvas-shapes-7-mesh-clear-3-pkg-9in-round/12212734.html  |
+| Conductive Thread  | $1.00 | "Link":http://www.lessemf.com/fabric.html  |
+| Rubber Feet  | $0.99 |  |
+| *Total* | $41.54 | |
+
+h3. Radio Cost Estimates
+
+|_.Item |_.Cost (Minus Shipping) |_.Link |
+| RTL2832U Software Defined Radio (SDR) Dongle  | $9.75 | "Link":http://www.amazon.com/gp/product/B00C37AZXK/  |
+| ATF54143 Pre-Amplifier  | $35.00 | "Link":http://www.g0mrf.com/432LNA.htm  |
+| 2.1mm DC Power Jack  | $3.49 | |
+| Small Heat Shrink Tubing for Power Connection  | $0.05 | |
+| *Total* | $48.29 | |

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/issues.atom?set_filter=1&amp;amp;sort=tracker%2Cassigned_to%2Cid%3Adesc"/>
+  <link rel="alternate" href="http://opendesignengine.net/issues?set_filter=1&amp;amp;sort=tracker%2Cassigned_to%2Cid%3Adesc"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2014-08-19T11:05:50+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Open Design Engine - Bug #264 (New): New Project Creation Does Not Require Selection of Software ...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/264"/>
+    <id>http://opendesignengine.net/issues/264</id>
+    <updated>2014-08-19T11:05:50+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;If you select the hardware license, but not other licenses, the project is still created. I think it should at least stop you if you haven't selected a documentation license.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Sandbox - Bug #215 (New): test</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/215"/>
+    <id>http://opendesignengine.net/issues/215</id>
+    <updated>2013-10-21T20:30:44+00:00</updated>
+    <author>
+      <name>joe abraham</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #195 (New): Inconsistent visual layout between project tabs</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/195"/>
+    <id>http://opendesignengine.net/issues/195</id>
+    <updated>2013-09-23T16:02:38+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;So, I have been thinking about the UI for &lt;strong&gt;ODE&lt;/strong&gt;, especially the theme.  And I just noticed something that I think is part of what makes the site just a little bit clunky.  Different tabs in projects either have or do not have the right hand side navigation bar.  Go check out the Overview tab, the Activity tab, the News tab, and the Wiki tab for examples.  You will go back and forth between having a right hand side navigation bar and not having one.  This inconsistency creates a jerkiness.  If every tab had a navigation bar, it would cut down on dramatic changes in rendering (smoothing out the user experience) and create a consistent location for users to look for navigation and additional controls.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #149 (New): Investigate usage of Redmine's To-Do List plugin</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/149"/>
+    <id>http://opendesignengine.net/issues/149</id>
+    <updated>2013-07-20T13:55:02+00:00</updated>
+    <author>
+      <name>Christopher Sigman</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a class="external" href="http://www.redmine.org/plugins/to-do-list"&gt;http://www.redmine.org/plugins/to-do-list&lt;/a&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Space Chiles v1.0 - Bug #127 (New): Inability to run flight prediction more than 7.5d before launch</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/127"/>
+    <id>http://opendesignengine.net/issues/127</id>
+    <updated>2013-04-28T21:05:22+00:00</updated>
+    <author>
+      <name>Tenzin Beck</name>
+    </author>
+    <content type="html">
+&lt;p&gt;The most comprehensive flight tracker I've found, &lt;a class="external" href="http://habhub.org/predict/"&gt;http://habhub.org/predict/&lt;/a&gt;, is unable to run predictions for launches scheduled more than 180h in the future. In my testing of multiple scenarios, flight path and ground track distance is extremely variable from day to day.&lt;/p&gt;
+
+
+	&lt;p&gt;This means that we won't be able to schedule launches more than a week in advance, which may make coordinating a large team difficult.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #124 (New): Enhanced wiki formatting</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/124"/>
+    <id>http://opendesignengine.net/issues/124</id>
+    <updated>2013-03-22T14:39:30+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Would like to be able to change font foreground and background colors (for highliting, etc).&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #122 (New): Remove unused and outdated .gem files from vendor/cache</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/122"/>
+    <id>http://opendesignengine.net/issues/122</id>
+    <updated>2013-02-20T21:46:25+00:00</updated>
+    <author>
+      <name>Kevin Bouwkamp</name>
+    </author>
+    <content type="html">
+&lt;p&gt;While going through a standard ODE development setup, this is printed out at the end of a successful `bundle`:&lt;/p&gt;
+
+
+	&lt;p&gt;Removing outdated .gem files from vendor/cache
+  * rails-2.3.11.gem
+  * actionpack-2.3.11.gem
+  * rack-1.1.2.gem
+  * activerecord-2.3.11.gem
+  * actionmailer-2.3.11.gem
+  * actionmailer-2.3.15.gem
+  * activesupport-2.3.15.gem
+  * activeresource-2.3.15.gem
+  * actionpack-2.3.15.gem
+  * rails-2.3.15.gem
+  * activeresource-2.3.11.gem
+  * activesupport-2.3.11.gem
+  * rack-1.1.4.gem
+  * activerecord-2.3.15.gem&lt;/p&gt;
+
+
+	&lt;p&gt;This is due to the recent updates to rails and friends. We should remove these files from the repository, just to keep things squeaky clean.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>AttenuatorX - Bug #120 (New): Something in my design seems to cause failures on pin PC1 when the ...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/120"/>
+    <id>http://opendesignengine.net/issues/120</id>
+    <updated>2013-02-11T20:29:16+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Identify whether this is specific to my design or to the ATMega48PA. I experienced this with two different ATMega48PA microcontrollers on two separate XTest1 boards.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>AttenuatorX - Bug #119 (New): No strain relief was provided for the battery connection.</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/119"/>
+    <id>http://opendesignengine.net/issues/119</id>
+    <updated>2013-02-11T20:27:42+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Identify and implement a good way of providing relief.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>AttenuatorX - Bug #118 (New): The LEDs displaying attenuation level are in opposite order. MSB sh...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/118"/>
+    <id>http://opendesignengine.net/issues/118</id>
+    <updated>2013-02-11T20:27:16+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Reverse the LED order.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>AttenuatorX - Bug #117 (New): The pad I designed for the on-off switch isn&#8217;t wide enough. With en...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/117"/>
+    <id>http://opendesignengine.net/issues/117</id>
+    <updated>2013-02-11T20:26:40+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Correct this in a future version&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>AttenuatorX - Bug #115 (New): The header should be SMT (as I already determined in the BOM), not ...</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/115"/>
+    <id>http://opendesignengine.net/issues/115</id>
+    <updated>2013-02-11T20:25:40+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;For now I&#8217;m just making do with through-hole headers.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #92 (New): Clean up capistrano deploy script</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/92"/>
+    <id>http://opendesignengine.net/issues/92</id>
+    <updated>2012-11-18T18:32:36+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;During the release over v0.2.0, we noticed that the deploy script has a few bugs in it such as&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;not removing old releases&lt;/li&gt;
+		&lt;li&gt;sub-optimal handling of config files&lt;/li&gt;
+		&lt;li&gt;error with migration logging&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;We should address these issues and just in general tighten up the deployment script.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Space Chiles v1.0 - Bug #72 (New): Helium supply is not reliable/readily availble</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/72"/>
+    <id>http://opendesignengine.net/issues/72</id>
+    <updated>2012-09-05T11:54:00+00:00</updated>
+    <author>
+      <name>Greg Moran</name>
+    </author>
+    <content type="html">
+    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #51 (New): Git hosting is not working</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/51"/>
+    <id>http://opendesignengine.net/issues/51</id>
+    <updated>2012-02-13T15:58:33+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Git repositories can be created, but not accessed.  Need to figure out how to host the git repositories over https like we have done for svn.  Next step is to consult with Bitnami docs and forums about a solutions.&lt;/p&gt;    </content>
+  </entry>
+</feed>

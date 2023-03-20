@@ -1,0 +1,13 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+68,New,Epoxy Granite CNC Mill,Feature,Normal,Finish v1 design of mill,Brandin Watson,"","",Brandin Watson,07/13/2012,07/21/2012,0,10.0,"",07/13/2012 08:43 pm,07/13/2012 08:43 pm,"We have designed the base, now we need to do at least a preliminary design of the gantry system.
+
+We also need to determine the best system to use as rails for the gantry to move on."
+69,New,Epoxy Granite CNC Mill,Feature,Normal,Make Mold,Brandin Watson,"","",Brandin Watson,07/13/2012,07/22/2012,0,"","",07/13/2012 08:48 pm,07/13/2012 08:48 pm,"We have the design files for the mold. Now we need to find some melamine and at time that we can get together with Tux-Lab to get the components routed out.
+
+Need to design and attach a super-structure and internal support system.
+
+I also need to get Tux-Lab measurements for the files."
+70,New,Epoxy Granite CNC Mill,Milestone,Normal,Pour Base,Brandin Watson,"","",Brandin Watson,07/13/2012,08/11/2012,0,"","",07/13/2012 08:51 pm,07/13/2012 08:51 pm,"Get everything together; finished mold, rebar, inserts, attachment bolts, vacuuming system, vibrating table, EG components, and pour the mold for the base."
+67,New,Epoxy Granite CNC Mill,Feature,Normal,Vacuum,Trenton Wilson,"","",Brandin Watson,07/13/2012,08/11/2012,0,"","",07/13/2012 08:40 pm,07/13/2012 08:40 pm,"We need to create a vacuuming system to mitigate air bubbles in the epoxy granite. It needs to be able to fit around the assembled mold. 
+
+The cured EG may work perfectly for our purposes even with some bubbles but it is better safe than sorry."

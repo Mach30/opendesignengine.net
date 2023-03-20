@@ -1,0 +1,5 @@
+h1. v0.1 - Private Alpha
+
+Those features that can be implemented with existing, stable plugins will form the feature set for the Private Alpha Release (see the following "blog post":http://www.mach30.org/blogs/jrs/2010-05-21-minutes-from-opendesignenginenet-requirements-meeting for a possible list of these plugins). Once these features can be packaged for release and installed on the live ODE site, visitors will be allowed to create accounts. 
+
+While all visitors may create accounts during this phase, project creation will be limited to system admins and invited users who will be added to the Testers role. This role will continue to be used to deploy new features to trusted community members for testing before deployment to the larger ODE community.

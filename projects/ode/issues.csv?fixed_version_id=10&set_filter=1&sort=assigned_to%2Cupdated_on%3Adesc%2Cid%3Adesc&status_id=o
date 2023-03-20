@@ -1,0 +1,29 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+92,New,Open Design Engine,Bug,Normal,Clean up capistrano deploy script,"","",v0.2.1 - Public Beta Enhancements,J. Simmons,11/18/2012,"",0,"","",11/18/2012 06:32 pm,12/11/2012 07:45 pm,"During the release over v0.2.0, we noticed that the deploy script has a few bugs in it such as
+
+* not removing old releases
+* sub-optimal handling of config files
+* error with migration logging
+
+We should address these issues and just in general tighten up the deployment script."
+122,New,Open Design Engine,Bug,Low,Remove unused and outdated .gem files from vendor/cache,Kevin Bouwkamp,"",v0.2.1 - Public Beta Enhancements,Kevin Bouwkamp,02/20/2013,"",0,0.2,"",02/20/2013 09:46 pm,02/20/2013 09:46 pm,"While going through a standard ODE development setup, this is printed out at the end of a successful `bundle`:
+
+Removing outdated .gem files from vendor/cache
+  * rails-2.3.11.gem
+  * actionpack-2.3.11.gem
+  * rack-1.1.2.gem
+  * activerecord-2.3.11.gem
+  * actionmailer-2.3.11.gem
+  * actionmailer-2.3.15.gem
+  * activesupport-2.3.15.gem
+  * activeresource-2.3.15.gem
+  * actionpack-2.3.15.gem
+  * rails-2.3.15.gem
+  * activeresource-2.3.11.gem
+  * activesupport-2.3.11.gem
+  * rack-1.1.4.gem
+  * activerecord-2.3.15.gem
+
+This is due to the recent updates to rails and friends. We should remove these files from the repository, just to keep things squeaky clean."
+217,New,Open Design Engine,Milestone,Normal,Migrate ODE source code to match current version of Redmine,Christopher Sigman,"",v0.2.1 - Public Beta Enhancements,J. Simmons,10/31/2013,"",100,"","",10/31/2013 09:42 pm,09/01/2014 04:13 pm,It has been too long since we did this migration.  Be sure to document process in the ODE wiki so we can keep current from now on.
+123,Feedback,Open Design Engine,Bug,Normal,Address inconsistent use of http and https in fundraising plugin,J. Simmons,"",v0.2.1 - Public Beta Enhancements,J. Simmons,03/08/2013,"",0,"","",03/08/2013 10:46 am,06/12/2014 09:33 pm,"Some of the widgets that the fundraising plugin supports try to use dynamic calls to determine if they should use http vs https for the protocol when including content from third party sites on *ODE*.  Other widgets use the string ""https"".  We need to use a consistent (and working) implementation for including content from third party sites."

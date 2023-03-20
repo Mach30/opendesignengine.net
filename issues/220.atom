@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/220.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2014-07-29T18:21:42+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Open Design Engine - Bug #220: For Pay Private Projects</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/220"/>
+    <id>http://opendesignengine.net/issues/220?journal_id=496</id>
+    <updated>2014-07-29T18:21:42+00:00</updated>
+    <author>
+      <name>Christopher Sigman</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; changed from &lt;i&gt;New&lt;/i&gt; to &lt;i&gt;Closed&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Duplicated to &lt;a href="http://opendesignengine.net/issues/260" class="issue status-1 priority-2" title="For Pay Private Projects (New)"&gt;#260&lt;/a&gt; so that it's listed under the proper tracker&lt;/p&gt;    </content>
+  </entry>
+</feed>

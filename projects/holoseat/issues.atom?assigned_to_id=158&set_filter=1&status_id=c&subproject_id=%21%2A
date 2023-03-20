@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Holoseat: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/holoseat/issues.atom?assigned_to_id=158&amp;amp;set_filter=1&amp;amp;status_id=c&amp;amp;subproject_id=%21%2A"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/holoseat/issues?assigned_to_id=158&amp;amp;set_filter=1&amp;amp;status_id=c&amp;amp;subproject_id=%21%2A"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2017-02-06T18:45:04+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #276 (Resolved): Sensors are 5v logic feeding into 3.3v inputs on the controller</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/276"/>
+    <id>http://opendesignengine.net/issues/276</id>
+    <updated>2017-02-06T18:45:04+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;We have somehow managed to get away feeding the 5v logic from the Hall Effect sensors into our 3.3v logic controllers (both the v0.3 controller and the in development v0.4 controller).  We need to step the 5v logic down to 3.3v logic for the final design in v0.4.&lt;/p&gt;    </content>
+  </entry>
+</feed>

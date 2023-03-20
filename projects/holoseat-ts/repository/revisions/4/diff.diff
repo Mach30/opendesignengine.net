@@ -1,0 +1,13 @@
+Index: trunk/firmware/sensor-controller/sensor-controller.ino
+===================================================================
+--- trunk/firmware/sensor-controller/sensor-controller.ino	(revision 3)
++++ trunk/firmware/sensor-controller/sensor-controller.ino	(revision 4)
+@@ -5,7 +5,7 @@
+ const unsigned int SerialBaudRate = 57600;
+ const int CadencePin = 3;                         // pin used to measure cadence
+ const int DirectionPin = 2;                       // pin to read direction
+-const int NumPoles = 12;    
++const int NumPoles = 18;    
+ 
+ // values for cadence calculations
+ float Cadence;                    // pedalling speed

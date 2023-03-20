@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/258.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2014-07-17T21:38:17+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Open Design Engine - Bug #258: Footer link to Terms of Service does not render correctly</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/258"/>
+    <id>http://opendesignengine.net/issues/258?journal_id=484</id>
+    <updated>2014-07-17T21:38:17+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Note, the ToS does render correctly during account creation in all three browsers on OS X.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #258: Footer link to Terms of Service does not render correctly</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/258"/>
+    <id>http://opendesignengine.net/issues/258?journal_id=498</id>
+    <updated>2014-07-29T18:26:04+00:00</updated>
+    <author>
+      <name>Christopher Sigman</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Target version&lt;/strong&gt; set to &lt;i&gt;v0.2.1 - Public Beta Enhancements&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #258: Footer link to Terms of Service does not render correctly</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/258"/>
+    <id>http://opendesignengine.net/issues/258?journal_id=504</id>
+    <updated>2014-07-29T19:20:58+00:00</updated>
+    <author>
+      <name>Christopher Sigman</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; changed from &lt;i&gt;New&lt;/i&gt; to &lt;i&gt;Feedback&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Assignee&lt;/strong&gt; changed from &lt;i&gt;Christopher Sigman&lt;/i&gt; to &lt;i&gt;J. Simmons&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Fixed with &lt;a href="http://opendesignengine.net/projects/ode/repository/revisions/86" class="changeset" title="#258 - fixed link to ToS in footer"&gt;r86&lt;/a&gt; and &lt;a href="http://opendesignengine.net/projects/ode/repository/revisions/87" class="changeset" title="#258 - fixed an issue with the ToS link in the footer that would cause it to go to an invalid loc..."&gt;r87&lt;/a&gt;.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #258: Footer link to Terms of Service does not render correctly</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/258"/>
+    <id>http://opendesignengine.net/issues/258?journal_id=511</id>
+    <updated>2014-09-01T16:09:19+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; changed from &lt;i&gt;Feedback&lt;/i&gt; to &lt;i&gt;Resolved&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Tested in Win7/Chrome.  Works as expected now.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #258: Footer link to Terms of Service does not render correctly</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/258"/>
+    <id>http://opendesignengine.net/issues/258?journal_id=520</id>
+    <updated>2014-09-02T10:26:24+00:00</updated>
+    <author>
+      <name>Christopher Sigman</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Parent task&lt;/strong&gt; set to &lt;i&gt;#217&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;    </content>
+  </entry>
+</feed>

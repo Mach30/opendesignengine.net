@@ -1,0 +1,16 @@
+h1. Holoseat Test Stand User Stories
+
+h2. Introduction
+
+The following "Use Case":https://en.wikipedia.org/wiki/Use_case diagram documents the user stories for the Holoseat Test Stand.  You can read the diagram in the pattern of agile user stories using the following guide:
+
+"As a <<actor name>> I want to <<use case>> so that I can <<rationale>>."
+
+|*Element*|*Description*|
+|<<actor>>|Name under the stick figures|
+|<<use case>>|Text in the ovals|
+|<<rationale>>|Text in the comment blocks labeled <<Rationale>>|
+
+h2. User Stories
+
+!http://opendesignengine.net/dmsf_files/660?download=!

@@ -1,0 +1,101 @@
+h1. Release Testing
+
+{{toc}}
+
+h2. Introduction
+
+The following test plan should be performed on any release candidate prior to scheduling an upgrade of the *ODE* server.  It should again be performed on the live site once the upgrade is in place to ensure the upgrade was successful.
+
+h2. Required Browsers
+
+All tests should be run from the following browser/OS combinations to ensure ODE works for a wide audience.
+
+|*Browser*|*Windows*|*OS X*|*Linux*|
+|Chrome   |    X           |  X     |   X      |
+|Firefox    |    X           |  X     |   X      |
+|Safari      |                 |  X     |           |
+|IE            |    X           |         |           |
+
+To be researched - 
+
+* https://browsershots.org/ - can this site help us test browser compatibility?
+
+h2. Features to Test
+
+*ODE* features come in three categories.  First is features which are built-in to *Redmine* core.  Second is features from community developed plugins such as "DMSF":http://www.redmine.org/plugins/dmsf.  And the third is features which were added using custom plugins from *ODE* development.
+
+h3. Redmine Core (RC)
+
+# Projects
+## Creation (test with several new projects, each with different features turned on and ensure the correct tabs are visible and appear to be functional)
+## Create a subproject with *New subproject" button on *Overview* tab 
+## Attach a project as a subproject of another project from the *Settings* tab
+# Wiki
+## Creating wiki pages
+## Editing wiki pages
+## Reverting changes
+## Adding and referencing attachments on wiki pages
+## Viewing wiki pages
+# Issues
+## Creating issues
+## Updating issues
+## Assigning issues
+## Closing issues
+# News
+## Posting News items
+## Viewing News items from project *Overview* tab and from *ODE* homepage (all projects should feed here, so post news items from multiple projects and make sure they show up on home page and only on correct project page)
+# Forums
+## Creating forums
+## Creating forum posts
+## Replying to forum posts
+## Viewing forum threads
+# Repository
+## TBD (create, list, update, etc)
+# Users
+## User creation
+## User locking (make sure we can disable a user account)
+## Password reset
+
+h3. Redmine Plugins (RP)
+
+# "DMSF":http://www.redmine.org/plugins/dmsf
+## Create directories
+## Upload files to root directory
+## Upload files to sub-directory
+## Upload new version of files
+## Download files
+## Try and upload files without correct project membership (TODO - J needs to confirm the required membership)
+## Delete files?
+# Redmine_SCM / "Redmine Checkout":http://www.redmine.org/boards/3/topics/10093?r=13178 (SVN CRUD)
+## Create a project with SVN support enabled and confirm the repository shows up in the *Repository* tab
+## Run the SVN tests from the bottom of the [[Installation Instructions]]
+## Repeat tests with a user who does not have sufficient privileges to commit and ensure read works and write fails (TODO - J needs to confirm the required membership)
+# "Redmine Hide Emails by Default":http://www.redmine.org/plugins/hide-emails
+## Create new user and then browse to new user from a different account; verify new user's email address is not visible
+# "Redmine Wiki Issue Details":http://www.redmine.org/projects/redmine/wiki/PluginWikiIssueDetails
+## @{ {issue_details(35)} }@ (without spaces) => {{issue_details(35)}}
+
+h3. ODE Plugins (OP)
+
+# Redmine Funding
+## Visit [[Features]] and ensure the following examples render
+### Pledgie
+### Kickstarter
+### Paypal
+# Redmine Video (extends a community plugin)
+## Visit [[Features]] and ensure the following examples render
+### Youtube
+### Vimeo
+# Redmine Legal
+## Create a new user account and ensure you must agree to the terms of service to complete account creation
+## Update the terms of service (there is a settings section under Admin to do this) and then login with an existing account and ensure you must agree to the updated terms of service to continue logging in
+## Ensure the Terms of Service link in the footer works
+## Ensure the Terms of Service page renders correctly for both the static display (when you click the link in the footer) and during account creation/login on updates
+# Redmine Licensing
+## Add new license to license list in Admin section and ensure it shows up on project *Settings* tab
+## Update a license in the license list in the Admin section
+## Ensure new projects must select at least one license
+## Ensure a project's selected licenses render on the *Overview* tab
+# Allow Private Projects
+## Ensure the option to create a private project is not visible for new and existing users
+## Assign private projects allowed privilege (under the users list in Admin) to a user and ensure that user can create a private project

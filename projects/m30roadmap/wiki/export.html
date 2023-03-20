@@ -1,0 +1,777 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Mach 30 Technical Roadmap</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body { font:80% Verdana,Tahoma,Arial,sans-serif; }
+h1, h2, h3, h4 {  font-family: "Trebuchet MS",Georgia,"Times New Roman",serif; }
+ul.toc { padding: 4px; margin-left: 0; }
+ul.toc li { list-style-type:none; }
+ul.toc li.heading2 { margin-left: 1em; }
+ul.toc li.heading3 { margin-left: 2em; }
+a.wiki-anchor { display: none; margin-left: 6px; text-decoration: none; }
+a.wiki-anchor:hover { color: #aaa !important; text-decoration: none; }
+h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor { display: inline; color: #ddd; }
+</style>
+</head>
+<body>
+
+<strong>Index by title</strong>
+<ul>
+
+    <li><a href="export.html#Aerodynamics_Card_Storming">Aerodynamics Card Storming</a></li>
+
+    <li><a href="export.html#Meeting_Minutes">Meeting Minutes</a></li>
+
+    <li><a href="export.html#Propulsion_Card_Storming">Propulsion Card Storming</a></li>
+
+    <li><a href="export.html#Resources">Resources</a></li>
+
+    <li><a href="export.html#Roadmap">Roadmap</a></li>
+
+    <li><a href="export.html#Sidebar">Sidebar</a></li>
+
+    <li><a href="export.html#Structures_and_Mechanisms_Card_Storming">Structures and Mechanisms Card Storming</a></li>
+
+    <li><a href="export.html#Technology_Evaluation">Technology Evaluation</a></li>
+
+    <li><a href="export.html#Wiki">Wiki</a></li>
+
+</ul>
+
+
+<hr />
+<a name="Aerodynamics_Card_Storming" />
+<p>back <a href="export.html#" class="wiki-page">Technology Evaluation</a></p>
+
+
+	<a name="Aerodynamics-Card-Storming"></a>
+<h1 >Aerodynamics Card Storming<a href="export.html#Aerodynamics-Card-Storming" class="wiki-anchor">&para;</a></h1>
+
+
+	<a name="Unsorted-list-of-ideas"></a>
+<h2 >Unsorted list of ideas<a href="export.html#Unsorted-list-of-ideas" class="wiki-anchor">&para;</a></h2>
+
+
+	<ul>
+	<li>Wind Tunnel Projects (a'la the Shepard Test Stand)
+	<ul>
+	<li>The CCL mentions wind tunnels. </li>
+		<li>9B005 is for the controls/instruments "_9B005 On-line (real time) control systems, instrumentation (including sensors) or automated data acquisition and processing equipment, specially designed for use with any of the following wind tunnels or devices (see List of Items Controlled)_" </li>
+		<li>9B105 is for the wind tunnel itself "_9B105 Wind tunnels for speeds of Mach 0.9 or more, usable for "missiles" and their subsystems_" </li>
+		<li><a class="external" href="http://cr.yp.to/export/ear2001/ccl9.pdf">http://cr.yp.to/export/ear2001/ccl9.pdf</a></li>
+		<li><a class="external" href="http://www.sciencebuddies.org/science-fair-projects/wind-tunnel-toc.shtml#introduction">http://www.sciencebuddies.org/science-fair-projects/wind-tunnel-toc.shtml#introduction</a></li>
+	</ul>
+	</li>
+		<li>survey all of the rocket aerodynamics software and rank by utility, ease-of-use, and openness
+	<ul>
+	<li>since it's just a survey of what's already available any export control issues will already be known</li>
+	</ul>
+	</li>
+		<li>port J's masters thesis on fin flutter analysis/optimization to open source tools
+	<ul>
+	<li>since it's already public domain I don't forsee a problem</li>
+	</ul>
+	</li>
+		<li>parametric #CodeCAD models of fins (suitable for 3D printing, milling, and drafting)
+	<ul>
+	<li>the USML Category IV (rockets &#38; launch vehicles) says that any rocket parts are controlled</li>
+		<li>"_(h) All specifically designed or modified components, parts, accessories, attachments, and associated equipment for the articles in this category. (i) Technical data..._" </li>
+		<li><a class="external" href="http://fas.org/spp/starwars/offdocs/itar/p121.htm#C-IV">http://fas.org/spp/starwars/offdocs/itar/p121.htm#C-IV</a></li>
+		<li>but if we just copy things that are already in the public domain, like out of a textbook, it should be fine</li>
+		<li>also, since hobby/high-power rockets are exempt, the parts for those should be fine</li>
+	</ul>
+	</li>
+		<li>Practice/document manufacturing processes for aero structures, hotwire for foam, cutting balsa for fins, 3D printing, etc
+	<ul>
+	<li>** the USML Category IV (rockets &#38; launch vehicles) says that any manufacturing information is also controlled</li>
+		<li>"_(i) ...Technical data directly related to the manufacture or production of any defense articles enumerated elsewhere in this category that are designated as Significant Military Equipment (SME) shall itself be designated SME._" </li>
+		<li><a class="external" href="http://fas.org/spp/starwars/offdocs/itar/p121.htm#C-IV">http://fas.org/spp/starwars/offdocs/itar/p121.htm#C-IV</a></li>
+		<li>since hobby/high-power rockets are exempt, the manufacturing information for those should be fine</li>
+	</ul>
+	</li>
+		<li>Build a computing cluster
+	<ul>
+	<li>I didn't find anything in the CCL or USML, but I might not know what words to search for</li>
+	</ul>
+	</li>
+		<li>Make the computing cluster opt-in (from donated hardware/time)
+	<ul>
+	<li>I did find this thing (.pdf) which says that providers of cloud computing services are not exporters</li>
+		<li><a class="external" href="http://www.bis.doc.gov/index.php/forms-documents/doc_download/533-cloud-computing-and-deemed-exports">http://www.bis.doc.gov/index.php/forms-documents/doc_download/533-cloud-computing-and-deemed-exports</a></li>
+	</ul>
+	</li>
+		<li>Study/research impact of surface finish on aerodynamic surfaces
+	<ul>
+	<li>not sure. this kind of thing could get captured simply because it's a "part" of something controlled</li>
+	</ul>
+	</li>
+		<li>Research/study aerodynamic “fixes” (like trip lines, vortex generators, etc)
+	<ul>
+	<li>I'm not clear on what this is</li>
+	</ul>
+	</li>
+		<li>Visualization tools/processes for aerodynamic phenomenon/flows (smoke, pressure sensitive paint, streamers, Schlieren)
+	<ul>
+	<li>Not clear on this</li>
+		<li>Resource links here - <a class="external" href="http://www.reddit.com/r/videos/comments/2n427p/seeing_the_way_air_moves_an_interesting_optical/">http://www.reddit.com/r/videos/comments/2n427p/seeing_the_way_air_moves_an_interesting_optical/</a></li>
+	</ul>
+	</li>
+		<li>Scaled composites style wind tunnel by “car/truck”
+	<ul>
+	<li>is this the one where we put a funnel on a truck and drive really fast instead of powering a stationary wind tunnel?</li>
+		<li>probably just counts as a windtunnel; see first comment</li>
+	</ul>
+	</li>
+		<li>How fast of a wind tunnel is reasonable to build?
+	<ul>
+	<li>This will have at least two dimensions
+	<ul>
+	<li>what does physics say</li>
+		<li>what does EC law say</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+		<li>Design processes for wind tunnels by target regime
+	<ul>
+	<li>if this is just summarizing stuff out of textbooks it won't be a problem</li>
+	</ul>
+	</li>
+		<li>How to’s for wind tunnel analysis (things like dealing with Reynold’s number etc to properly scale test articles)
+	<ul>
+	<li>we can probably get that out of some textbooks, so no EC problems</li>
+	</ul>
+	</li>
+		<li>Using other “tricks/hacks” to do wind tunnel style tests (UAVs, mounting to model rockets, etc) <- expands the car idea above
+	<ul>
+	<li>probably the same as the other wind tunnels</li>
+		<li>it would be interesting to see if we could get around the mach restrictions on wind tunnels by dropping an unpowered funnel out of the sky. Maybe it's not technically a wind tunnel if it's unpowered.</li>
+	</ul>
+	</li>
+		<li>Software tools for aero stability (not controls or guidance)
+	<ul>
+	<li>hard to figure out the right words to differentiate</li>
+		<li>this kind of software could easily get wrapped up in a catch-all, like if it's "used to operate" </li>
+	</ul>
+	</li>
+		<li>Laboratory measurement software and equipment, especially distributed viewers of a test to remote locations
+	<ul>
+	<li>this is probably okay as long as it doesn't do anything special</li>
+	</ul>
+	</li>
+		<li>Research/study impact and limits on externally mounted features (like antennas, etc) on aerodynamic performance (flow perturbation analysis)
+	<ul>
+	<li>see NACA Aerodynamic DB (subsonic), see NASA for supersonic</li>
+		<li>can document how to use sources like that including doing a flight test with a model rocket</li>
+	</ul>
+	</li>
+		<li>Hydro tunnel projects
+	<ul>
+	<li>I'm not sure if this counts as a wind tunnel; probably does</li>
+	</ul>
+	</li>
+		<li>Cheat sheet/booklet/software for aerodynamic calculations (Cd/Cl build up to go from design to rough estimate of total Cd/Cl)
+	<ul>
+	<li>this would be fine</li>
+		<li>also, it probably already exists</li>
+	</ul>
+	</li>
+		<li>Add ability to include environmental impact (rain, fog, etc) to wind tunnel to test performance under all weather conditions
+	<ul>
+	<li>I haven't seen anything that cares if the wind tunnel can do extreme environments</li>
+		<li>this might be a way to make a low mach number wind tunnel useful</li>
+	</ul>
+	</li>
+		<li>Aerodynamic analysis/design of a stable recovery system for payload module in case of vehicle failure (no thrusters or parachutes, like a seed pod)
+	<ul>
+	<li>it seems like this would be inherently separate from rockets and launch vehicles, since it would be a payload</li>
+		<li>the USML Category VIII (a) covers things that specifically drop military equipment</li>
+		<li>"_(a) Aircraft, including but not limited to helicopters, non-expansive balloons, drones, and lighter-than-air aircraft, which are specifically designed, modified, or equipped for military purposes. This includes but is not limited to the following military purposes:...cargo carrying or dropping, personnel dropping..._" </li>
+		<li>the CCL specifically says that section in the USML applies to parachutes</li>
+		<li>"_9A018...Related Controls: (a) Parachute systems designed for use in dropping military equipment, braking military aircraft, slowing spacecraft descent, or retarding weapons delivery; AND (b)Instrument flight trainers for combat simulation are subject to the export licensing authority of the U.S. Department of State, Office of Defense Trade Controls. (See 22 CFR part 121, Category VIII.) _" </li>
+	</ul>
+	</li>
+		<li>Investigate using OpenVSP for model/high power rocket design/layout
+	<ul>
+	<li>should be fine since it's for exempt rockets</li>
+	</ul>
+	</li>
+		<li>Extend analysis of aero stability and aero characteristics software and calcs to include subsonic, transonic, and supersonic regimes
+	<ul>
+	<li>that will probably be controlled; I've seen several places where various mach numbers are important</li>
+		<li>but there is already a lot of stuff in textbooks, so we could probably gather all of that up</li>
+	</ul>
+	</li>
+		<li>Investigation of aerodynamic mechanisms (glider wings, canard fins, etc)
+	<ul>
+	<li>this doesn't seem specific enough</li>
+	</ul>
+	</li>
+		<li>Simulate/study aero-structural analysis (include aeroelasticity, etc)
+	<ul>
+	<li>I don't know enough about this to say</li>
+	</ul></li>
+	</ul>
+
+<hr />
+<a name="Meeting_Minutes" />
+<a name="Meeting-Minutes"></a>
+<h1 >Meeting Minutes<a href="export.html#Meeting-Minutes" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>Listing of meeting minutes (primarily from #EngineerSpeak Hangouts).  Be sure to include date and topic in link description.</p>
+
+
+	<ul>
+	<li><a href="https://docs.google.com/document/d/1Nn8xW1b0YiX5SteEUGJCcPhAGzy6tF724pcXNqD_j6Q/pub" class="external">Oct 2, 2014 - Kickoff for EC-Free Roadmap Work</a></li>
+		<li><a href="https://docs.google.com/document/d/1ieOQOUCvs0tDbukiYaYpMdUb_6kUZNF4au6EhAFtwe4/pub" class="external">Oct 9, 2014 - Narrowing the List of Sub-Systems</a></li>
+		<li><a href="https://docs.google.com/document/d/1ZuL8Xf4CXFSsw9QFUUISPf_5V9IP6PtK1DMMhmiFtns/pub" title="structures" class="external">Oct 16, 2014 - Working with the Narrowed Field</a></li>
+		<li><a href="https://docs.google.com/document/d/1FVrLLpsPT0YDFmWo7NsgYytXBC4NAgKR073MGDMUljw/pub" title="aerodynamics" class="external">Oct 23, 2014 - Working with the Narrowed Field</a></li>
+		<li><a href="https://docs.google.com/document/d/1coAG-mmHIDXcHeNNvRrT_twvplM5IOdrwxbmCUpP_2Y/pub" title="propulsion" class="external">Oct 30, 2014 - Working with the Narrowed Field</a></li>
+		<li>... &lt;missing entries?&gt;</li>
+		<li><a href="https://docs.google.com/document/d/1w-dACX6VB-cSCrRej1O6Wcr9ldzoyHAJCudGFZSSxcc/pub" title="being ruthless, scratching our own itch, and dealing with EC" class="external">Dec 04, 2014 - Next Steps</a></li>
+	</ul>
+
+<hr />
+<a name="Propulsion_Card_Storming" />
+<p>back <a href="export.html#" class="wiki-page">Technology_Evaluation</a></p>
+
+
+	<a name="Propulsion-Card-Storming"></a>
+<h1 >Propulsion Card Storming<a href="export.html#Propulsion-Card-Storming" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>Covers fuel &#38; oxidizer storage, injector, combustion chamber, nozzle, and anything necessary to keep those items “stable”</p>
+
+
+	<a name="Unsorted-list-of-ideas"></a>
+<h2 >Unsorted list of ideas<a href="export.html#Unsorted-list-of-ideas" class="wiki-anchor">&para;</a></h2>
+
+
+	<ul>
+	<li>Indoor test stand for testing a compressed air <a href="http://en.wikipedia.org/wiki/Cold_gas_thruster" class="external">cold gas thruster</a>
+	<ul>
+	<li>test stands don't seem to be mentioned anywhere specifically</li>
+		<li>probably fine just cuz it's so low power anyway</li>
+	</ul>
+	</li>
+		<li>3D printed cold gas thruster for use on an indoor test stand
+	<ul>
+	<li>hard to picture how this is anything other than a pneumatic valve</li>
+		<li>maybe pneumatic valves are controlled if they have a certain capacity</li>
+	</ul>
+	</li>
+		<li>staging hobby and high-powered rocket motors
+	<ul>
+	<li>the federal stuff doesn't cover this size rockets</li>
+		<li>I haven't seen the relevant regs yet</li>
+	</ul>
+	</li>
+		<li>develop a series of larger test stands scaled around the classes of model and high powered rocketry certifications
+	<ul>
+	<li>see first test stand comment above</li>
+	</ul>
+	</li>
+		<li>recreate Greg's undergrad sugar hybrid motor
+	<ul>
+	<li>probably fine since it's probably equivalent to a class project</li>
+	</ul>
+	</li>
+		<li>upgrade Mach 30 test stand DAQ to include high speed video
+	<ul>
+	<li>I doubt anyone cares about high speed video</li>
+	</ul>
+	</li>
+		<li>develop Arduino (or similar) model rocket launch controller board (including physical safety lock)
+	<ul>
+	<li>model rockets are okay</li>
+	</ul>
+	</li>
+		<li>upgrade Mach 30 test stand DAQ to work over ethernet to extend operational range between operators and test stand
+	<ul>
+	<li>fine. actually probably encouraged for safety reasons</li>
+	</ul>
+	</li>
+		<li>series of courses/kits to take users through high powered rocketry certs (<a href="http://www.apogeerockets.com/Rocket_Motors/Cesaroni_Propellant_Kits/Cesaroni_Certification_Special/38mm_Certification_Propellants/Cesaroni_P38-4G_Classic_I285?zenid=vsrisevkgniqf6afnkdrnmu2k1" class="external">required to purchase high powered motors</a>)
+	<ul>
+	<li>fine, and also probably encouraged</li>
+	</ul>
+	</li>
+		<li>Learn about and be comfortable using Reloadable rocket motors
+	<ul>
+	<li>should be fine as long as it's model/high-powered</li>
+	</ul>
+	</li>
+		<li>Distributed laboratory software
+	<ul>
+	<li>too vague</li>
+	</ul>
+	</li>
+		<li>Re-lightable motors, turn off and back on (means hybrid, or liquid engine, but not solid)
+	<ul>
+	<li>certain fuels are controlled</li>
+		<li>The MTCR Item 3 Cat II covers hybrid rocket motors, but the MTCR covers f**king everything associated with rockets anyway</li>
+	</ul>
+	</li>
+		<li>Ramp up test stand prototypes by increments of High-power certification levels
+	<ul>
+	<li>each one would be considered individually</li>
+	</ul>
+	</li>
+		<li>Storage and handling of cryogenic liquids?
+	<ul>
+	<li>I don't see that anywhere, but I could have missed it</li>
+		<li>the CCL seems to list cryogenic parts if they are used to refine uranium, so there's that</li>
+	</ul>
+	</li>
+		<li>Simulation, analysis, design and testing of cooling systems (for combustion chamber, nozzle, and throat)
+	<ul>
+	<li>not sure if it's controlled on its own, but since it's inseparable from the motors it's probably wrapped up there</li>
+	</ul>
+	</li>
+		<li>Variable nozzle designs
+	<ul>
+	<li>who's idea was this? Oh, right, mine. Just ignore this one :)</li>
+	</ul>
+	</li>
+		<li>Flow visualization
+	<ul>
+	<li>anything that already exists will have the export control question answered</li>
+		<li>something new might run into the controls</li>
+		<li>CCL 9B005 mentions things that simulate flows above certain mach and reynolds numbers, but they say "devices" </li>
+		<li>CCL 9D004 calls out simulation of engine flow </li>
+		<li>CCL 9E003 captures stuff that simulates flows in commercial aircraft engines</li>
+	</ul>
+	</li>
+		<li>Nozzle comparison (Aerospike to traditional designs)
+	<ul>
+	<li>anything already published is fine</li>
+		<li>I'm curious whether or not an aerospike type of approach would count as an "active control" on a rocket. It seems like a rocket has to have an engine at a minimum, and more than one engine doesn't fundamentally change that, and neither does throttling the engine. Arranging the engines so that you can point the rocket by adjusting the throttle of one or more engines seems like it shouldn't be considered a special "active" control system. </li>
+		<li>even the MTCR in Item 2 Cat 2 only covers movable engine nozzles, or movable engines, or movable fins.</li>
+	</ul>
+	</li>
+		<li>Injector design (fuel and/or oxidizer) to maximize combustion efficiency
+	<ul>
+	<li>I can't find anything on that specifically</li>
+		<li>it's hard to imagine that high performance rocket fuel nozzles wouldn't be captured somewhere</li>
+	</ul>
+	</li>
+		<li>Research Test stand configurations (vertical in addition to horizontal)
+	<ul>
+	<li>probably fine, especially if it's for hobby/high-powered rocket engines</li>
+	</ul>
+	</li>
+		<li>Survey the existing instructions and informational materials for building engines and motors.
+	<ul>
+	<li>fine since the stuff already exists</li>
+	</ul>
+	</li>
+		<li>Move from testing commercial off-the-shelf items (motors and engines) to building and testing custom built items.
+	<ul>
+	<li>too vague; each step would be evaluated independently</li>
+	</ul>
+	</li>
+		<li>Address Instrumentation: how to collect data on motor tests.
+	<ul>
+	<li>that should be fine</li>
+	</ul>
+	</li>
+		<li>Material and manufacturing techniques for nozzles (3-D printed)
+	<ul>
+	<li>MTCR Item 3 Cat II lists rocket nozzles</li>
+		<li>The CCL specifically says that rocket nozzles belong to the department of state</li>
+	</ul>
+	</li>
+		<li>Open source software altitude and flight profiles - Performance calculations
+	<ul>
+	<li>if it already exists it shouldn't be a problem</li>
+	</ul>
+	</li>
+		<li>Study fuel grain design (parameters) to optimize burn profile 
+	<ul>
+	<li>not enough expertise to search properly, but it seems like rocket fuel research is probably captured somewhere</li>
+	</ul>
+	</li>
+		<li>Logistics, procedures, and infrastructure for Pay-for-testing, using Mach 30 equipment (income generation)
+	<ul>
+	<li>totally fine. capitalism is encouraged</li>
+	</ul>
+	</li>
+		<li>3-D printed fuel grains
+	<ul>
+	<li>same as last fuel grains comment</li>
+	</ul>
+	</li>
+		<li>Research additional income streams RE: Propulsion (educational kits, grants, etc) - We can add this to all subsystems?
+	<ul>
+	<li>totally fine</li>
+	</ul>
+	</li>
+		<li>Linear aerospike studies
+	<ul>
+	<li>not sure what this is</li>
+	</ul>
+	</li>
+		<li>Combustion chemistry, develop open source software tools (NOTE: See NASA CEA)
+	<ul>
+	<li>I can't do a good search on this</li>
+	</ul>
+	</li>
+		<li>Environmental simulation and testing (expanding flight envelope)
+	<ul>
+	<li>I can't do a good search on this either</li>
+	</ul>
+	</li>
+		<li>High operations tempo, flight rate motors.  
+	<ul>
+	<li>I haven't seen high ops tempo used as a discriminator on the USML or CCL</li>
+	</ul>
+	</li>
+		<li>Non-chemical propulsion (however this is low TRL/maturity)</li>
+		<li>Developing refueling ground equipment “on the tarmac”
+	<ul>
+	<li>I'm pretty sure ground support equipment is captured in MTCR Item 12 Cat II, but that could mean rocket launchers specifically, not just any generic ground support</li>
+	</ul>
+	</li>
+		<li>Focus on maintainability, ease of operations.
+	<ul>
+	<li>fine</li>
+	</ul>
+	</li>
+		<li>Procedures and equipment for “mode 2 operations” for simulation and testing
+	<ul>
+	<li>not sure what mode 2 means</li>
+	</ul>
+	</li>
+		<li>Focus on safety procedures (not just during tests).
+	<ul>
+	<li>fine, probably encouraged</li>
+	</ul>
+	</li>
+		<li>Operational Countdown Checklist as it relates to the propulsion engine test checklist procedures.
+	<ul>
+	<li>fine</li>
+	</ul>
+	</li>
+		<li>Develop a cultural delineation between “Operations or Test staff” and “Design staff” -- Maybe eventually specialize into 3 groups
+	<ul>
+	<li>fine</li>
+	</ul>
+	</li>
+		<li>Handbook for stakeholder collaboration (state, local, federal agencies and regulations)
+	<ul>
+	<li>fine, probably encouraged</li>
+	</ul>
+	</li>
+		<li>Rules of thumb for Launch/test site size space, in handbook form.
+	<ul>
+	<li>fine, probably exists already, also probably encouraged</li>
+	</ul>
+	</li>
+		<li>Develop relationships with potential test sites
+	<ul>
+	<li>fine</li>
+	</ul>
+	</li>
+		<li>Acoustic, Vibration, Acceleration simulation and testing. 
+	<ul>
+	<li>I can't do a good search on this subject </li>
+	</ul>
+	</li>
+		<li>Procedures to optimize, advertize, public viewing and interaction SAFELY.
+	<ul>
+	<li>fine, probably encouraged</li>
+	</ul>
+	</li>
+		<li>Remote viewing (Cameras for online streaming video streaming) to maximize audience.
+	<ul>
+	<li>fine</li>
+	</ul>
+	</li>
+		<li>Rocket exhaust plume studies (morse code??)
+	<ul>
+	<li>fine</li>
+	</ul>
+	</li>
+		<li>Ground operations communications equip and procedures.
+	<ul>
+	<li>fine</li>
+	</ul>
+	</li>
+		<li>Disaster recovery plan for catastrophic mishap.
+	<ul>
+	<li>fine</li>
+	</ul>
+	</li>
+		<li>Procurement/development of transportation and handling equipment for stands and motors (flatbed trailers, etc)
+	<ul>
+	<li>fine</li>
+	</ul></li>
+	</ul>
+
+<hr />
+<a name="Resources" />
+<a name="Resources"></a>
+<h1 >Resources<a href="export.html#Resources" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>Listing of links, books, and other important reference resources used in the development of the roadmap.</p>
+
+
+	<ul>
+	<li><a href="https://learn.adafruit.com/multi-tasking-the-arduino-part-1" class="external">Adafruit tutorial on managing multiple tasks at the same time in Arduino</a> - may be helpful for sensor based projects</li>
+		<li><a href="http://inspire.logicsupply.com/" class="external">Beagle Bone Black resources</a> - lots of good material on using BBB in engineering and science applications</li>
+	</ul>
+
+<hr />
+<a name="Roadmap" />
+<a name="Roadmap"></a>
+<h1 >Roadmap<a href="export.html#Roadmap" class="wiki-anchor">&para;</a></h1>
+
+
+	<p><em>Once the roadmap starts to come together, post image and project list (links/status) on this page.</em></p>
+
+<hr />
+<a name="Sidebar" />
+<a name="Navigation"></a>
+<h3 ><a href="export.html#Navigation" class="wiki-page">Navigation</a><a href="export.html#Navigation" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="Mach-30-Technical-Roadmap"></a>
+<h3 >Mach 30 Technical Roadmap<a href="export.html#Mach-30-Technical-Roadmap" class="wiki-anchor">&para;</a></h3>
+
+
+	<ul>
+	<li><a href="export.html#Home" class="wiki-page">Home</a></li>
+		<li><a href="export.html#" class="wiki-page new">Versions</a></li>
+	</ul>
+
+
+	<a name="Documentation"></a>
+<h4 >Documentation<a href="export.html#Documentation" class="wiki-anchor">&para;</a></h4>
+
+
+	<ul>
+	<li><a href="export.html#" class="wiki-page">Roadmap</a></li>
+		<li><a href="export.html#" class="wiki-page">Technology Evaluation</a> 
+	<ul>
+	<li><a href="export.html#" class="wiki-page">Structures and Mechanisms Card Storming</a></li>
+		<li><a href="export.html#" class="wiki-page">Aerodynamics Card Storming</a></li>
+		<li><a href="export.html#" class="wiki-page">Propulsion Card Storming</a></li>
+	</ul>
+	</li>
+		<li><a href="export.html#" class="wiki-page">Meeting Minutes</a></li>
+		<li><a href="export.html#" class="wiki-page">Resources</a></li>
+	</ul>
+
+<hr />
+<a name="Structures_and_Mechanisms_Card_Storming" />
+<p>back <a href="export.html#" class="wiki-page">Technology_Evaluation</a></p>
+
+
+	<a name="Structures-and-Mechanisms-Card-Storming"></a>
+<h1 >Structures and Mechanisms Card Storming<a href="export.html#Structures-and-Mechanisms-Card-Storming" class="wiki-anchor">&para;</a></h1>
+
+
+	<a name="Unsorted-list-of-ideas"></a>
+<h2 >Unsorted list of ideas<a href="export.html#Unsorted-list-of-ideas" class="wiki-anchor">&para;</a></h2>
+
+
+	<ul>
+	<li>DIGITAL FABRICATION OF COMPONENTS AND MECHANISMS
+	<ul>
+	<li>could be a problem if it's used to make something that is itself controlled</li>
+	</ul>
+	</li>
+		<li>AN OPEN PLATFORM OF STANDARDS (Like LEGOS)
+	<ul>
+	<li>vague, but shouldn't be a problem</li>
+	</ul>
+	</li>
+		<li>PAYLOAD MOUNT FOR ARDUINOS
+	<ul>
+	<li>I have a hard time seeing how this would be a problem; nobody's using an arduino on an actual launch vehicle</li>
+	</ul>
+	</li>
+		<li>UPGRADED ELECTRONICS PAYLOAD STRUCTURES - LIKE FOR FIN-FACING CAMERAS
+	<ul>
+	<li>payload adapters for launch vehicles are controlled</li>
+		<li>"...including the articles identified in section 1516 of Public Law 105–261: satellite fuel, ground support equipment, test equipment, payload adapter or interface hardware..." </li>
+	</ul>
+	</li>
+		<li>FABRICATION IN MAKERSPACES WITH LOCAL TOOLS
+	<ul>
+	<li>fine as long as nothing needs to be controlled</li>
+		<li>or we invent a new way to build an ad-hoc network of people who obey export controls</li>
+	</ul>
+	</li>
+		<li>EXPERIMENT WITH DIFFERENT MATERIALS AND MANUFACTURING TECHNIQUES
+	<ul>
+	<li>The rules do specify that model/HP rockets need to have a minimum of metal components</li>
+		<li>any advanced materials or techniques will inevitably run into USML or CCL rules</li>
+	</ul>
+	</li>
+		<li>SOFTWARE TOOLS - CODECAD AND OPENSOURCECAD (CADQUERY)
+	<ul>
+	<li>already open source tools will be fine</li>
+		<li>we might run into trouble if we create new software for modeling actual launch vehicles</li>
+	</ul>
+	</li>
+		<li>COLLAPSIBLE AND EXPANDABLE MECHANISMS (“ORAGAMI ROCKET”)
+	<ul>
+	<li>fine as long as it's model/HP sized</li>
+	</ul>
+	</li>
+		<li>THE “BLACK BOX” FOR MODEL ROCKET (CHEAP, DURABLE, RECOVERABLE, LIKE <a class="external" href="http://www.carbonorigins.com">www.carbonorigins.com</a>)
+	<ul>
+	<li>shouldn't be a problem; no intention of going to space; no active controls; model/HP sized</li>
+	</ul>
+	</li>
+		<li>HARDWARE TOOLS AND JIGS
+	<ul>
+	<li>fine</li>
+	</ul>
+	</li>
+		<li>SCALABLE PARTS, AND THE ASSOCIATED STANDARDS FOR USING THEM
+	<ul>
+	<li>too vague</li>
+	</ul>
+	</li>
+		<li>SOFTWARE - STRUCTURAL ANALYSIS TOOLS (LIKE FEA, NASTRAN, etc.)
+	<ul>
+	<li>I couldn't find a mention, but I feel like something is probably on the CCL</li>
+		<li><a class="external" href="http://www.avantinternational.com/searchableccl/2011-02-10_The_Searchable_CCL.pdf">http://www.avantinternational.com/searchableccl/2011-02-10_The_Searchable_CCL.pdf</a></li>
+	</ul>
+	</li>
+		<li>(linked to propulsion as well) PROPULSION TEST STAND STRUCTURE
+	<ul>
+	<li>fine if it's model/HP sized</li>
+	</ul>
+	</li>
+		<li>(stretching outside the box a bit) SCALE MODEL OF A SIMULATED LAUNCH COMPLEX.  FULL GROUND OPS SIMULATION
+	<ul>
+	<li>fine</li>
+	</ul>
+	</li>
+		<li>(linked in to aerodynamics as well) FIN DESIGN BASED ON J’S MASTERS THESIS (OPTIMIZING SUPERSONIC STRUCTURES TO PREVENT FLUTTER)
+	<ul>
+	<li>this information is probably fine if it's already gone public domain due to being academic</li>
+		<li>But anything going supersonic will probably be not-fine</li>
+	</ul>
+	</li>
+		<li>STRUCTURAL TESTING (DESTRUCTIVE OR OTHERWISE)
+	<ul>
+	<li>probably fine, unless it's like for advanced composite structures</li>
+	</ul>
+	</li>
+		<li>STRUCTURAL DESIGN BEST PRACTICES FOR MANUFACTURING, AND OPERATIONS, (AKA LIFECYCLE CONSIDERATION)
+	<ul>
+	<li>fine</li>
+	</ul>
+	</li>
+		<li>STRUCTURAL INTERACTIONS WITH THE GROUND SUPPORT EQUIPMENT
+	<ul>
+	<li>vague, but probably fine</li>
+	</ul>
+	</li>
+		<li>MATERIALS TESTING FORM AN ENVIRONMENTAL PERSPECTIVE (UV, THERMAL, (eventually) VACUUM
+	<ul>
+	<li>this probably crosses the line somewhere, but I'm not sure what to search for specifically</li>
+	</ul>
+	</li>
+		<li>STRUCTURAL INCORPORATION OF A “MISSION OBJECTIVE” (like rube goldburg, or scientific experiment)
+	<ul>
+	<li>fine</li>
+	</ul>
+	</li>
+		<li>(linked to electrical/power)  HOW TO INCORPORATE POWER STORAGE INTO STRUCTURAL COMPONENTS
+	<ul>
+	<li>probably fine unless one or more of the specific technologies is too advanced; not sure what to search for</li>
+	</ul>
+	</li>
+		<li>ADDRESSING REUSABILITY CONCERNS WITH RESPECT TO STRUCTURAL COMPONENTS
+	<ul>
+	<li>fine</li>
+	</ul>
+	</li>
+		<li>HIGH-RELIABILITY RECOVERY SYSTEM (MECHANISMS)
+	<ul>
+	<li>too vague</li>
+	</ul>
+	</li>
+		<li>(building on Legos idea) Modular model rocket kit (1 kit, several rockets; maybe based around <a href="http://www.nar.org/model-rocket-info/nartek-skills-program/" class="external">NARTREK</a> missions)
+	<ul>
+	<li>fine since it's model/HP sized</li>
+	</ul>
+	</li>
+		<li>Structural Analysis software for both dynamic and static analysis
+	<ul>
+	<li>probably crosses a line when it gets advanced; not sure what to search for</li>
+	</ul>
+	</li>
+		<li>Launch Pad design/structures
+	<ul>
+	<li>the MTCR lists this stuff as controlled, but I think it's only for rockets that can go 300km</li>
+	</ul>
+	</li>
+		<li>Go extermely small size (Just how small can I get it?)
+	<ul>
+	<li>fine since it's too small to sell or use in the military</li>
+		<li>sharing files, etc</li>
+		<li>educational/entertainment</li>
+		<li>very open source</li>
+	</ul>
+	</li>
+		<li>Evaluation/research of tools and machines required to build rockets at scale we are looking at -> Toolset analysis
+	<ul>
+	<li>might actually be fine as long as it's not actually used to build a launch vehicle</li>
+	</ul>
+	</li>
+		<li>Make sure the materials research covers non-obvious choices (to us at least) like composites, etc</li>
+		<li>Unconventional rockets, like rocket/jet-powered rotors
+	<ul>
+	<li>might skirt the regulations</li>
+		<li>would probably be caught under a more general categorization no matter what</li>
+	</ul></li>
+	</ul>
+
+<hr />
+<a name="Technology_Evaluation" />
+<a name="Technology-Evaluation"></a>
+<h1 >Technology Evaluation<a href="export.html#Technology-Evaluation" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>This page links to forum discussions and meeting minutes involving the evaluation of technology areas and potential projects for the roadmap.</p>
+
+
+	<ol>
+	<li>Selecting a technology branch 
+	<ol>
+	<li>Discussing on forums - <a href="../../../boards/45/topics/815.html" class="message">Choosing the technology branch for the v 1.0 roadmap</a></li>
+		<li><a href="export.html#" class="wiki-page">Meeting Minutes</a></li>
+	</ol>
+	</li>
+		<li>Developing the roadmap
+	<ol>
+	<li>Modified Card Storming Exercise (see details at <a href="http://www.connectccp.org/file_download/4d6c1fe5-47d0-4eb8-93fc-92f23905dc02" class="external">Center for Collaborative Planning</a> and <a href="http://learningwilds.net/learnd/?q=node/15;" class="external">The Learning Wilds</a> we will try this by making lists first in meetings and on wiki pages, then group and identify elements in meetings)
+	<ol>
+	<li><a href="export.html#" class="wiki-page">Aerodynamics Card Storming</a></li>
+		<li><a href="export.html#" class="wiki-page">Propulsion Card Storming</a></li>
+		<li><a href="export.html#" class="wiki-page">Structures and Mechanisms Card Storming</a></li>
+	</ol></li>
+	</ol></li>
+	</ol>
+
+<hr />
+<a name="Wiki" />
+<a name="Mach-30-Technical-Roadmap-Wiki"></a>
+<h1 >Mach 30 Technical Roadmap Wiki<a href="export.html#Mach-30-Technical-Roadmap-Wiki" class="wiki-anchor">&para;</a></h1>
+
+
+	<p><em>insert start here material as it is created</em></p>
+
+
+</body>
+</html>

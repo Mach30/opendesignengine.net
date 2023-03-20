@@ -1,0 +1,64 @@
+h1. Ground Sphere Preliminary Design v0.1 (OUTDATED)
+
+{{toc}}
+
+h3. Introduction
+
+This document covers the preliminary design decisions for the *Ground Sphere* ground station.  The document includes three sections: technical background on *SkyCube's* radio, hardware design of *Ground Sphere*, and software design of *Ground Sphere*.  The design is structured in parallel with the [[Requirements Document]] to ensure all requirements are satisfied.
+
+h3. SkyCube Radio Details
+
+*SkyCube* uses a Colony 2 (CII) radio from "AstroDev":http://www.astrodev.com/public_html2/.  The specific radio is the Boeing variation as documented in the following PDF ("CII_Specification_08042010.pdf":http://www.astrodev.com/public_html2/downloads/datasheet/CIIUserManual.pdf).
+
+The *SkyCube* radio operates at 915 MHz with a transmit power of 2 W.  It has an omni-directional antenna which adds negligible gain.  
+
+
+h3. Hardware Design of Ground Sphere
+
+* TR 1.1 Enable users to receive "space tweets"
+** TR 1.1.2 Receive radio signals on 915 MHz ("link budget":https://opendesignengine.net/news/50)
+*** "Antenna":http://on6wg.pagesperso-orange.fr/Page%201.html
+**** Dimensions ("source":https://opendesignengine.net/news/46)
+***** Phasing line: 2.7745" of RG-62 90 ohm coax cable
+***** Ground plane: 6.3" diameter disk of conductive rip stop fabric
+***** Ground plane radial arms: 2.3925" of rigid material (need not be conductive)
+***** Aerial length (circumference): 13.7075" of 12ga copper wire or better
+***** Distance between bottom of aerials and ground plane: 1.6475"
+*** "Preamp":http://www.g0mrf.com/432LNA.htm
+*** "RTL2832U SDR":http://www.realtek.com.tw/products/productsView.aspx?Langid=1&PFid=35&Level=4&Conn=3&ProdID=257
+* TR 1.2 Be easy to assemble from kit components
+** TR 1.2.1 Time to assemble
+*** Ground station will be shipped as a kit
+** TR 1.2.2 Tools for assembly
+*** Preamp will ship already assembled, ground station structure will include all drill holes and all other component fabrications steps 
+* TR 1.3 Have low shipping costs for the packaged kit
+** <insert max dimensions here?>
+* TR 1.4 Operate using a modern Windows PC
+** TR 1.4.3 Hardware must connect to PC using standard port(s)
+*** The SDR connects to host computer through USB 2.0
+* TR 1.5 Hardware must be robust
+** All connectors will be designed to ensure long life (internally mounted, have adequate strain relief, etc)
+* PR 2.1 Budget
+** PR 2.1.1 Unit cost
+*** <insert current materials cost here from BoM>
+
+h3. Software Design of Ground Sphere
+
+* TR 1.1 Enable users to receive "space tweets"
+** TR 1.1.1 Predict SkyCube flyover opportunities
+*** Using "GPredict":http://gpredict.oz9aec.net for flyover prediction
+** TR 1.1.2 Receive radio signals on 915 MHz
+*** SeeDeR software (provided by Southern Stars) can tune SDR to 915 MHz
+** TR 1.1.3 Decode "space tweet" message from SkyCube
+*** SeeDeR software (provided by Southern Stars) can decode the BPSK-modulated, unencrypted AX.25 data packets sent at 9600 baud "space tweets" sent out by *SkyCube*
+** TR 1.1.4 Account for Doppler shift
+*** SeeDeR software (provided by Southern Stars) will be updated to account for Doppler shift
+* TR 1.4 Operate using a modern Windows PC
+** TR 1.4.1 Software must run on Windows
+*** GPredict runs on Windows 7
+*** SDR drivers <get link from Aaron> run on Windows 7
+*** SeeDeR runs on Windows 7
+** TR 1.4.2 Software must be easy to install
+*** GPredict includes a Windows installer
+*** SDR drivers include a Windows installer
+*** Southern Stars will provide a Windows installer for SeeDeR

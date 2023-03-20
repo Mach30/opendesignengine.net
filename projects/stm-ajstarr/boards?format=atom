@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Scanning Tunnelling Microscope: General meet-and-greet</title>
+  <link href="http://opendesignengine.net/projects/stm-ajstarr/boards?format=atom" rel="self"/>
+  <link href="http://opendesignengine.net/projects/stm-ajstarr/boards" rel="alternate"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2014-03-13T21:54:07+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>General meet-and-greet: RE: Background to me and this STM project</title>
+    <link href="http://opendesignengine.net/boards/11/topics/226?r=772#message-772" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/11/topics/226?r=772#message-772</id>
+    <updated>2014-03-13T21:54:07+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Hi Andrew. I just wanted to check on the state of this project. It looks fairly complete from the photos and schematics.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General meet-and-greet: RE: Background to me and this STM project</title>
+    <link href="http://opendesignengine.net/boards/11/topics/226?r=259#message-259" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/11/topics/226?r=259#message-259</id>
+    <updated>2012-09-23T23:16:12+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Glad to hear that ODE has what you need. I don't blame you for just wanting to work on your project. ODE is all about providing the needed tools so that open hardware developers can do what they do best - develop awesome hardware.&lt;/p&gt;
+
+
+	&lt;p&gt;I'll keep you posted on what we find with FreeCAD. I've only used commercial tools for mechanical design before, so it should be interesting to see if we can make FreeCAD work. No matter what though, we're committed to the use of open source tools.&lt;/p&gt;
+
+
+	&lt;p&gt;Version 1.x of the Shepard Test Stand does use an Arduino for data logging. We're currently using a Force Sensing Resistor for the thrust load sensing because it's so inexpensive, but there are just too many problems to make it practical. We're already working on low cost alternatives. Future (more expensive versions) of the stand will use NIST calibrated load cells, but this version is what we call a "level 1 kite", which is a $200 project just to get people's feet wet with the technology.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General meet-and-greet: RE: Background to me and this STM project</title>
+    <link href="http://opendesignengine.net/boards/11/topics/226?r=258#message-258" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/11/topics/226?r=258#message-258</id>
+    <updated>2012-09-23T03:49:39+00:00</updated>
+    <author>
+      <name>Andrew Starr</name>
+      <email>ajstarr@gmail.com</email>
+    </author>
+    <content type="html">
+&lt;p&gt;Hi Jeremy,&lt;/p&gt;
+
+
+	&lt;p&gt;Good to hear from you! I went through 'evaluating' a bunch of cad tools also. I put 'evaluating' in quotes because my evaluation consisted of whether I could quickly start working with the software and generating something useful without reading too much of the manual or documentation. LibreCAD fit the bill, FreeCAD didn't - that's just down to my impatience and laziness, no reflection on the tools themselves. I'll be interested to hear what you think of FreeCAD. KiCAD was also a pretty easy decision, as gEDA takes the UNIX philosophy to an extreme - lots of individual 'tools' - and I was wanting something a bit more integrated.&lt;/p&gt;
+
+
+	&lt;p&gt;ODE has been great - it's a perfect integration of blog, file archive, wiki and forums. When I began this project I knew I wanted to put it online, but couldn't see how to do it, without an untidy mishmash of a blog, Flickr gallery, etc, etc. I considered 'rolling my own' website, but I don't need that headache - I want to work on my project! So thanks to all you guys involved in ODE.&lt;/p&gt;
+
+
+	&lt;p&gt;Good luck with the test stand. I take it you're using an arduino to log peak thrust etc. with a load cell, something like that?&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General meet-and-greet: RE: Background to me and this STM project</title>
+    <link href="http://opendesignengine.net/boards/11/topics/226?r=257#message-257" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/11/topics/226?r=257#message-257</id>
+    <updated>2012-09-22T12:14:08+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Hi Andrew.&lt;/p&gt;
+
+
+	&lt;p&gt;We (Mach 30) are using KiCAD on the &lt;a href="https://opendesignengine.net/projects/shepard-ts" class="external"&gt;Shepard Test Stand&lt;/a&gt; too, and we're evaluating &lt;a href="http://sourceforge.net/apps/mediawiki/free-cad/index.php?title=Main_Page" class="external"&gt;FreeCAD&lt;/a&gt; since we want to do 3D models and assemblies. We've also had &lt;a href="http://www.123dapp.com/" class="external"&gt;Autodesk 123D&lt;/a&gt; recommended to us, but my understanding is that it's only free (as in cost), not open source.&lt;/p&gt;
+
+
+	&lt;p&gt;We're glad that you've chosen ODE for your project. Keep the good documentation coming.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General meet-and-greet: Background to me and this STM project</title>
+    <link href="http://opendesignengine.net/boards/11/topics/226" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/11/topics/226</id>
+    <updated>2012-09-07T01:20:36+00:00</updated>
+    <author>
+      <name>Andrew Starr</name>
+      <email>ajstarr@gmail.com</email>
+    </author>
+    <content type="html">
+&lt;p&gt;Me:&lt;/p&gt;
+
+
+	&lt;p&gt;I'm an electronics engineer with around 20 years experience. I have a keen amateur interest in science and technology, and live in Christchurch, New Zealand. I've been interested in molecular nanotechnology since I got hold of a copy of K. Eric Drexler's "Engines of Creation" around 1986 or so. The Scanning Tunnelling Microscope, which can be used to image at the atomic scale as well as perform atomic-level manipulation, came to my attention when its inventors were awarded the Nobel prize that same year. This device really captured my imagination and for years I mulled over the possibility of making one myself.&lt;/p&gt;
+
+
+	&lt;p&gt;The project:&lt;/p&gt;
+
+
+	&lt;p&gt;Finally I've stopped mulling and started doing! I'm using all open source tools (e.g. LibreCad for mechanical design, Kicad for the electronics) as my philosophy is that I want someone to be able to build and modify the design without worrying about software costs, licences etc. All design information, source code etc will be made available. I'd like to see a community of amateur STM experimenters, similar in spirit to the 'biohacking' movement that is currently underway.&lt;/p&gt;
+
+
+	&lt;p&gt;So stop by and say hi, introduce yourself and share any ideas and ask and questions you may have!&lt;/p&gt;
+
+
+	&lt;p&gt;Oh and one more thing: thanks heaps to J. Simmons and the folks at Mach30 for building a great site. The ODE is perfect for managing a project like this!&lt;/p&gt;    </content>
+  </entry>
+</feed>

@@ -1,0 +1,34 @@
+h1. Power/Temp Monitor and Control System (EPS/ECLSS) Budget
+
+h3. Preliminary Budget
+
+|_.Schematic|_.Description|_.Prototype Cost|_.Production Cost |
+| C1|68uF Capacitor|$.49|$1.15 |
+| C2|120uF Capacitor|$0.62|$0.62 |
+| Cf1|1uF capacitor|$0.14|$1.15 |
+| Cf2|1uF capacitor|$0.14|$1.15 |
+| D1|1N5817 Schottky diode|$0.27|$0.19 |
+| L1|100uH Inductor|$0.18|$0.09 |
+| Ra1|47k Ohm .25W Resistor|$0.37|$0.03 |
+| Rb1|47k Ohm .25W Resistor|$0.37|$0.03 |
+| Rb2|47k Ohm .25W Resistor|$0.37|$0.03 |
+| Rf1|4.7 Ohm .25W resistor|$0.37|$0.03 |
+| Rf2|4.7 Ohm .25W resistor|$0.37|$0.03 |
+| Rf3|4.7 Ohm .25W resistor|$0.37|$0.03 |
+| Rf4|4.7 Ohm .25W resistor|$0.37|$0.03 |
+| RL1|180 Ohm .5W resistor|$0.37|$0.03 |
+| RL2|180 Ohm .5W resistor|$0.37|$0.03 |
+| Rs1|.068 Ohm 10W resistor|$2.14|$2.14 |
+| Rs2|.068 Ohm 10W resistor|$2.14|$2.14 |
+| U1|LM2594M-3.3/NOPB Voltage regulator|$2.70|$2.70 |
+| U2|TMP102 Temp sensor (I2C)|$5.95|$1.69 |
+| U3|INA226 Current and voltage sensor|$6.33|$3.38 |
+| U4|INA226 Current and voltage sensor|$6.33|$3.38 |
+| |3 position jumper block|$.22|$.13 |
+| |5mm barrel jack, 2.1mm center pole|$4.95|$1.12 |
+| |8 position screw terminals|$2.45|$2.45 |
+| |Populated Ethernet Booster Pack (MSP430 MCU)|$25.00|$25.00 |
+| |EPS PC board (in qty. 10)|$0.00|$12.00 |
+| |Subtotal|$58.21|$60.75 |
+| |Labor|$1362.50|$135.52 |
+| |*TOTAL*|*$1420.71*|*$196.27* |

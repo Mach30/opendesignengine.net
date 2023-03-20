@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Groundstation v.2.0: Detailed Design</title>
+  <link rel="self" href="http://opendesignengine.net/projects/gs-002/boards/28.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/gs-002/boards/28"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-07-21T23:17:38+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Detailed Design: Budget</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/28/topics/551"/>
+    <id>http://opendesignengine.net/boards/28/topics/551</id>
+    <updated>2013-07-21T23:17:38+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;A proper budget will be uploaded here soon, but it is fairly simple.  Overall budget was set at $500.00 and was funded at $300.00.&lt;/p&gt;
+
+
+	&lt;p&gt;The Az-El mount was to be a level 1 kite ($200.00 build cost).  Since the parts for the ground station ended up costing $210.93, I am over budget for the Az-El mount level one kite, but not grossly so.  The bill of materials (BOM) has a few items (marked in red) where we can cut the cost below the $200.00 mark.&lt;/p&gt;
+
+
+	&lt;p&gt;the antenna was to be a level one kite with enough free funds to purchase an inexpensive Chinese radio, cables and other equipment.  The radio I purchased (a Baofeng UV-5R) cost $54.00 including shipping, the adapter to connect this radio to the antenna cost around $3.00, and the RG-58 cables to go to the roof mount will run about $40.00.  This leaves $103.00 for the antennas.&lt;/p&gt;
+
+
+	&lt;p&gt;The project is well below the $500.00 project budget even with the overage.  I expect the antennas to cost between $80.00 to $120.00 for the pair.  Adding this to the cost of parts and adding 20% we are still far below budget at around $396.00, or less than 75% of projected budget.  The additional funds necessary to complete the project (if any) will come out of my personal funds.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Detailed Design: BOM (probably incomplete)</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/28/topics/550"/>
+    <id>http://opendesignengine.net/boards/28/topics/550</id>
+    <updated>2013-07-21T22:50:32+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Qty    PN    Desc.    Source    Price    ST&lt;br /&gt;2    31425s    HiTec Servo    ServoCity    $12.99    $25.98&lt;br /&gt;2    575124    Servo Mount    ServoCity    $6.99    $13.98&lt;br /&gt;2    535138    Pillow Block    ServoCity    $7.49    $14.98&lt;br /&gt;2    525122    HiTec Servo Shaft Hub    ServoCity    $9.99    $19.98&lt;br /&gt;1    585466    24&#8221; Al Channel    ServoCity    $15.99    $15.99&lt;br /&gt;1    RZ12-1000-3RPM    3 RPM 12V Gearmotor    ServoCity    $24.99    $24.99&lt;br /&gt;1    555128    Motor Mount    ServoCity    $4.99    $4.99&lt;br /&gt;1    625106    6mm to &#188;&#8221; coupler    ServoCity    $4.99    $4.99&lt;br /&gt;1    9753K65    Motor End Cap    ServoCity    $0.89    $0.89&lt;br /&gt;1    H250-770    &#188;&#8221; Set Screw Hub    ServoCity    $4.99    $4.99&lt;br /&gt;1    634078    &#188;&#8221; D-shaft 3&#8221;    ServoCity    $1.99    $1.99&lt;br /&gt;1    6031K16    3&#8221; Turntable    ServoCity    $4.95    $4.95&lt;br /&gt;1    NA    Shipping costs    ServoCity    $6.99    $6.99&lt;/p&gt;
+
+
+	&lt;p&gt;Qty    PN    Desc.    Source    Price    ST&lt;br /&gt;1    DEV-11575    Redboard (Arduino)    Sparkfun    $24.95    $24.95&lt;br /&gt;1    ROB-09457    1A Motor Driver    Sparkfun    $8.95    $8.95&lt;br /&gt;1    SEN-10530    Magnetometer    Sparkfun    $14.95    $14.95&lt;br /&gt;1    SEN-10955    Accelerometer    Sparkfun    $9.95    $9.95&lt;br /&gt;1    NA    Shipping costs    Sparkfun    $6.44    $6.44&lt;/p&gt;    </content>
+  </entry>
+</feed>

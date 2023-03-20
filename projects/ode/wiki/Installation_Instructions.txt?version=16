@@ -1,0 +1,174 @@
+h1. Installation Instructions
+
+Open Design Engine (ODE) is based on "Redmine":http://redmine.org.  The official installation method is to install the "Bitnami Redmine Stack":http://bitnami.org/stack/redmine, apply some custom configuration to the stack, and then upgrade the installed Redmine instance to the ODE source code.  Support for other stacks (or bootstrapped installations) will come with future releases.  With luck, one or more of the stack providers will add ODE to their list of supported stacks.  
+
+Note, these instructions assume you are running the Ubuntu VM image of the Bitnami Redmine Stack and are *running all commands under* @sudo@.  They were tested with "version 1.1.3":http://bitnami.org/files/stacks/redmine/1.1.3-0/bitnami-redmine-1.1.3-0-ubuntu-10.10.zip in "VMWare Player":http://www.vmware.com/products/player/. 
+
+Useful Paths
+* @(bitnami_base) = /opt/bitnami@ in VM images
+
+Steps to install ODE
+* Import the Bitnami Redmine Stack into VMWare (the free VMWare Player is supported)
+* Configure Redmine to run at http://hostname/ instead of http://hostname/redmine
+** Edit @(bitnami_base)/apache2/conf/httpd.conf@ and comment out the line:
+<pre>
+DocumentRoot "/opt/bitnami/apache2/htdocs"
+</pre>
+** Edit @(bitnami_base)/apps/redmine/conf/redmine.conf@ to match the following (the key areas are the addition of the virtual host section and changing all references of @/redmine@ to @/@):
+<pre>
+<VirtualHost *:80>
+  ServerAdmin haha.huhu.com
+  ServerName server.our.lan
+  ServerAlias server
+  ErrorLog "logs/error.log" 
+  CustomLog "logs/access.log" combined
+ # this not only blocks access to .svn directories, but makes it                
+ # appear as though they aren't even there, not just that they are              
+ # forbidden                                                                    
+ <DirectoryMatch "^/.*/\.svn/">
+    ErrorDocument 403 /404.html
+    Order allow,deny
+    Deny from all
+    Satisfy All
+  </DirectoryMatch>
+  # This passes through remote_user to mongrel                                  
+  RewriteEngine On
+  # Redirect non-static requests to cluster                                     
+  RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_FILENAME} !-f
+  RewriteRule ^/(.*)$ balancer://redminecluster%{REQUEST_URI} [P,QSA,L]
+</VirtualHost>
+
+#ProxyPass / balancer://redminecluster
+#ProxyPassReverse / balancer://redminecluster
+
+<Proxy balancer://redminecluster>
+  BalancerMember http://127.0.0.1:3001
+  BalancerMember http://127.0.0.1:3002
+  # The number of balancer members depends on the number of mongrels running
+  # We use only one mongrel on port 3001 by default for the BitNami Cloud Hosting
+  # Please remove the others like 3002 above in such a case.
+</Proxy>
+</pre>
+** Edit @(bitnami_base)/apps/redmine/config/mongrel_cluster.yml@ and change references to @prefix: /redmine@ to @prefix: @
+** Restart Redmine by running:
+<pre>
+(bitnami_base)/ctlscript stop
+(bitnami_base)/ctlscript start
+</pre>
+* Configure apache to host svn repositories using Redmine for user authentication
+** Install dependencies
+<pre>
+apt-get update
+apt-get install build-essential
+apt-get install zlib1g-dev
+(bitnami_base)/perl/bin/cpan  # accept defaults and choose CPAN servers
+cpan> install Test::Simple
+cpan> install DBI
+cpan> install DBD::mysql
+cpan> quit
+apt-get install libapache2-svn libapache-dbi-perl libapache2-mod-perl2 libdbd-mysql-perl libdigest-sha1-perl libauthen-simple-ldap-perl
+</pre>
+** Enable newly installed apache modules by editing @(bitnami_base)/apache/conf/httpd.conf@
+*** Uncomment approximately line 108:
+<pre>
+LoadModule dav_svn_module modules/mod_dav_svn.so
+</pre>
+*** Add a line at the end of the load modules list for mod_perl:
+<pre>
+LoadModule perl_module modules/mod_perl.so
+</pre>
+** Copy Redmine.pm into the perl library
+<pre>
+cp (bitnami_base)/apps/redmine/extra/svn/Redmine.pm (bitnami_base)/perl/lib/site_perl/5.8.8/i686-linux/Apache/
+</pre> 
+** Create the directory structure for the svn repositories (_Note, ODE is setup to store all project related content in the @(bitnami_base)@ directory, so it uses a non-traditional location to store the svn repositories._)
+<pre>
+cd (bitnami_base)
+mkdir repos
+chown root:daemon repos
+chmod 0755 repos
+cd repos
+mkdir svn
+chown root:daemon svn
+chmod 0750 svn
+</pre>
+** Document the following production values in @(bitnami_base)/apps/redmine/config/database.yml@:
+*** username
+*** password
+*** socket
+*** database
+*** host
+** Edit @(bitnami_base)/apps/redmine/conf/redmine.conf@ to configure apache to host the svn repositories
+*** Add the following line between @RewriteEngine On@ and the first @RewriteCond@ to prevent calls to svn from being forwarded to Redmine:
+<pre>
+RewriteCond %{REQUEST_URI} !/svn(/|$)
+</pre>
+*** Add the following line above the first @ProxyPass@ directive:
+<pre>
+ProxyPass /svn !
+</pre>
+*** Add the following directives to the end of @redmine.conf@ to enable svn over http (note the various fields that need to be updated with values for your installation, including the values you noted earlier from @database.yml@):
+<pre>
+# /svn location for users
+PerlLoadModule Apache::Redmine
+<Location /svn>
+  DAV svn
+  SVNParentPath "(bitnami_base)/repos/svn"
+  Order deny,allow
+  Deny from all
+  Satisfy any
+
+  PerlAccessHandler Apache::Authn::Redmine::access_handler
+  PerlAuthenHandler Apache::Authn::Redmine::authen_handler
+  AuthType Basic
+  AuthName "Redmine SVN Repository"
+
+  #read-only access   
+  <Limit GET PROPFIND OPTIONS REPORT>
+     Require valid-user
+     Allow from localhost
+     # Allow from another-ip
+     Satisfy any
+  </Limit>
+  # write access
+  <LimitExcept GET PROPFIND OPTIONS REPORT>
+    Require valid-user
+  </LimitExcept>
+
+  ## for mysql
+  RedmineDSN "DBI:mysql:database=(database);host=(host);mysql_socket=(socket)"
+
+  RedmineDbUser "(username)"
+  RedmineDbPass "(password)"
+</Location>
+</pre>
+** Restart Redmine by running:
+<pre>
+(bitnami_base)/ctlscript stop
+(bitnami_base)/ctlscript start
+</pre>
+* Configure Redmine to automatically create svn repositories
+** Activate SVN in Redmine
+*** Login to Redmine with an administrator account
+*** Goto Admin/Settings and select the Repositories tab
+*** Check "*Enable WS for repository management*"
+*** Click the "Generate a key" link and note the new API key for use below
+*** Make sure SVN is the only enabled SCM
+** Add the following to cron by calling @crontab -e@
+<pre>
+*/2 * * * * (bitnami_base)/ruby/bin/ruby (bitnami_base)/apps/redmine/extra/svn/reposman.rb --redmine localhost --svn-dir (bitnami_base)/repos/svn --owner root --group daemon --command="(bitnami_base)/subversion/bin/svnadmin create --pre-1.6-compatible --fs-type fsfs" --url http://(server_public_fqdn)/svn --key=(API_Key) --verbose >> /var/log/reposman.log 
+</pre>
+* Test SVN Functionality
+** Create a new Redmine project, making sure to select the *Repository* module, then wait for 2 minutes to give the cron job a chance to create the svn repository
+** Refresh the project page, and then browse to the new project's *Repository* tab.  You should see an empty repository display without any error messages
+** Confirm you can browse the new repository using svn by running the following command.  It should return without errors.
+<pre>
+svn ls http://(server_public_fqdn)/svn/(project_name)
+</pre>
+** Confirm you can add content to the svn repository through svn. 
+*** Add a user to the newly created project in Redmine (go to the *Settings* tab and then the *Members* sub-tab to add a user)
+*** Run the following command (note, you will be prompted for the Redmine user's password during this step):
+<pre>
+svn --username (user) -m "testing mkdir" mkdir http://(server_public_fqdn)/svn/(project_name)/testdir
+</pre>
+***  Refresh the project's *Repository* tab in Redmine and confirm the @testdir@ is present in the repository

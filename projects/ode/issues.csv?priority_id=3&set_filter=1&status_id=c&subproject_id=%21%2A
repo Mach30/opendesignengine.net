@@ -1,0 +1,4 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+259,Closed,Open Design Engine,Bug,Low,Editing As The Same User In Multiple Browser Gives An Error,"","",v0.2.1 - Public Beta Enhancements,Jeremy Wright,07/17/2014,"",0,"","",07/17/2014 10:04 pm,07/29/2014 07:22 pm,"I'm not positive if this is really an error, but if I edit the same issue from both Firefox and Chrome I get an error, even if I'm logged in as the same user on each browser. I'm logging this more just to make sure. Feel free to reject.
+
+!ODE_Simultaneous_Edits.png!"

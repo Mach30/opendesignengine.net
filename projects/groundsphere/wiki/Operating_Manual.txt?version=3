@@ -1,0 +1,41 @@
+h1. Operating Manual
+
+{{toc}}
+
+h2. Setup
+
+Instructions on connecting the antenna, software defined radio dongle, and computer together to operate the ground station go here.  Note, be sure to talk about if the antenna should be mounted outside and if so, how.
+
+h2. Software
+
+There are two pieces of software needed to operate the ground station.  The satellite tracking software, GPredict, and the AX.25 decoder, SeeDeR.
+
+h3. GPredict Operating Instructions
+
+Insert basic instructions for using GPredict here and then link to main user manual.
+
+h3. SeeDeR Operating Instructions
+
+* Ensure you have an RTL-SDR device installed correctly (instructions forthcoming)
+* Ensure you have the MSVC 2012 runtime library installed (binaries available in repository)
+* Unzip all SeeDeR files and launch
+* If the RTL-SDR device is detected, you should see a moving waterfall display
+* You may wish to tune to an FM station to check basic performance:
+** Type a typical FM frequency (say, 100,100,000) into the "Center" box.  
+** Click in the waterfall display to hit the exact center of a station (or type the frequency into the "Frequency" box). 
+** Select "WFM" under "Demodulation", and you should hear FM audio, and possibly see RDS data.
+* To pick up AX.25 data:
+** Select "AX.25" under "Demodulation"
+** Select the proper baud rate and modulation under "AX.25 Settings"
+** Settings for SkyCube:
+*** Uplink: 450 MHz, 9600 baud, 2FSK modulation
+*** Downlink: 915 MHz, 57600 baud, BPSK modulation
+*** Tweets: 915 MHz, 9600 baud, BPSK modulation
+
+Extra notes:
+* The sample rate under "Device Settings" can be left at the default 2.048 MS/s.  Higher settings do not increase performance, and have worse frequency response.
+* If you have a high performance computer, select "Very High" for visualization quality.  
+* You may have to play with the ACG and gain settings for proper reception, especially for local transmissions (at high power levels, the input data gets clipped unless the gain is lowered).
+* Try clicking the edges of the waterfall window, as well as clicking and dragging.
+* Bookmarks allow you to save most of the settings and quickly swap to them
+* SeeDeR should work fine with more than one RTL-SDR device.  Settings are associated with a device, so you can see uplink and downlink data simultaneously.

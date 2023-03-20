@@ -1,0 +1,48 @@
+Index: trunk/docs/Link Budget Documentation.ipynb
+===================================================================
+--- trunk/docs/Link Budget Documentation.ipynb	(revision 9)
++++ trunk/docs/Link Budget Documentation.ipynb	(revision 10)
+@@ -232,6 +232,43 @@
+    ]
+   },
+   {
++   "attachments": {},
++   "cell_type": "markdown",
++   "metadata": {
++    "collapsed": true
++   },
++   "source": [
++    "## Test Cases\n",
++    "\n",
++    "|Test Case One|\n",
++    "|---|---|---|\n",
++    "|Parameter|\tValue|\tUnit|\n",
++    "|Downlink Frequency|137.5|MHz|\n",
++    "|Downlink Wavelength|2.180309|m|\n",
++    "|Target Eb/No|20.00|dB|\n",
++    "|Implementation Loss|1.00|dB|\n",
++    "|Required Eb/No|21.00|dB|\n",
++    "|Transmit Power|5.0|W|\n",
++    "|Transmit Power|37.0|dBm|\n",
++    "|Transmit Losses|-1.0|dB|\n",
++    "|Transmit Antenna Gain|4.00|dB|\n",
++    "|TX Pointing Losses|-3.0|dB|\n",
++    "|Transmit EIRP|37.0|dBm|\n",
++    "|Link Distance|1677.2|km|\n",
++    "|Downlink Path Loss|-139.7|dB|\n",
++    "|Polarization Loss|0.0|dB|\n",
++    "|Atmosphere Losses|-1.1|dB|\n",
++    "|Receive Antenna Gain|5.4|dB|\n",
++    "|RX Pointing Losses|-3.0|dB|\n",
++    "|Received Power|-101.4|dBm|\n",
++    "|System Noise Figure|5.0|dB|\n",
++    "|Noise Bandwidth|34.0|kHz|\n",
++    "|MDS|-123.7|dBm|\n",
++    "|Eb/No|22.3|dB|\n",
++    "|Link Margin|1.3|dB|"
++   ]
++  },
++  {
+    "cell_type": "code",
+    "execution_count": null,
+    "metadata": {

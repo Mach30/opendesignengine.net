@@ -1,0 +1,12 @@
+Index: package.json
+===================================================================
+--- package.json	(revision 5)
++++ package.json	(revision 6)
+@@ -23,6 +23,6 @@
+   "dependencies": {
+     "electron-mocha": "^6.0.2",
+     "mocha": "^5.1.1",
+-    "serialport": "^4.0.7"
++    "serialport": "^6.2.0"
+   }
+ }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/124.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-05-28T09:23:01+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Open Design Engine - Bug #124: Enhanced wiki formatting</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/124"/>
+    <id>http://opendesignengine.net/issues/124?journal_id=191</id>
+    <updated>2013-05-28T09:23:01+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Source code highlighting (within the pre tag) would be nice too. If it was a system that allowed users to create highlight templates and contribute them, such as is done with many of the code editors out there, it would help a lot. We could maybe just add the ability to parse highlight templates from a popular open source editor as well.&lt;/p&gt;
+
+
+	&lt;p&gt;I would also like to see this enhanced wiki formatting carry over to everything (News feeds included), the same way the standard wiki formatting seems to now.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #124: Enhanced wiki formatting</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/124"/>
+    <id>http://opendesignengine.net/issues/124?journal_id=376</id>
+    <updated>2013-11-07T15:09:28+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;Notes from discussion with Chris
+	&lt;ul&gt;
+	&lt;li&gt;Chris would like to add a WYSIWIG editor (for example CKEditor), but would prefer the editor supported wiki syntax instead of html&lt;/li&gt;
+		&lt;li&gt;CKEditor (while unfortunately working in html) would address this issue and then some&lt;/li&gt;
+		&lt;li&gt;J - ditto to wiki syntax editor&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;Conclusion - need to do some research and testing before we can really estimate this work; the bigger question is do we just want to add a couple of mark up tags or really address the UI and general usability of text editing in ODE&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;J - until there is a clear editor that will work the way we want (that is with wiki syntax), it is hard to say what we should do here&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+</feed>

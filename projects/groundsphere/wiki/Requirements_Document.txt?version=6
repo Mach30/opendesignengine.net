@@ -1,0 +1,75 @@
+h1. Ground Sphere Requirements v0.2
+
+{{toc}}
+
+h2. Technical Requirements
+
+h3. TR 1.1 Enable users to receive "space tweets"
+
+h4. TR 1.1.1 Predict SkyCube flyover opportunities
+
+The *Ground Sphere* will include software which predicts when the SkyCube satellite will flyover the ground station and be within signal reception range
+
+h4. TR 1.1.2 Receive radio signals on 915 MHz
+
+The *Ground Sphere* will receive radio signals on 915 MHz with sufficient gain to enable decoder software to decode the "space tweet" text message
+
+h4. TR 1.1.3 Decode "space tweet" message from SkyCube
+
+Decode BPSK-modulated, unencrypted AX.25 data packets sent at 9600 baud
+
+h4. TR 1.1.4 Account for Doppler shift
+
+The *Ground Sphere* needs to account for Doppler shift during satellite flyovers
+
+h3. TR 1.2 Be easy to assemble from kit components
+
+h4. TR 1.2.1 Time to assemble
+
+The *Ground Sphere* will take no longer than 60 minutes (threshold)/30 minutes (objective) to assemble by an average maker
+
+h4. TR 1.2.2 Tools for assembly
+
+The *Ground Sphere* will only require simple tools (screw drivers, pliers, wrenches, etc) for assembly
+
+h3. TR 1.3 Have low shipping costs for the packaged kit
+
+The *Ground Sphere* kit will cost no more than $15 (threshold)/$7.50 (objective) to ship by ground across the USA.
+
+h3. TR 1.4 Operate using a modern Windows PC
+
+h4. TR 1.4.1 Software must run on Windows
+
+The *Ground Sphere* software must run on Windows 7 or Windows 8 (32bit or 64bit)
+
+h4. TR 1.4.2 Software must be easy to install
+
+The *Ground Sphere* software must ship in a Windows installer
+
+h4. TR 1.4.3 Hardware must connect to PC using standard port(s)
+
+The ground station radio must connect to the ground station computer through a commonly available port (for example: USB)
+
+h3. TR 1.5 Hardware must be robust
+
+The *Ground Sphere* hardware should minimize the opportunity for mechanical failures (from things such as broken connectors or a lack of strain relief)
+
+h2. Project Requirements
+
+h3. PR 1.1  Number to produce
+
+The *Ground Sphere* design must enable the production  of at least 30 +/- 5 v1.0 kits by volunteers in one or more makerspaces
+
+h3. PR 2.1 Budget
+
+h4. PR 2.1.1 Unit cost
+
+The materials cost must be under $100 per kit.
+
+h4. PR 2.1.2 Development cost
+
+The project budget (covering three prototypes) must be no more than $500 (threshold)/$400 (objective)
+
+h3. PR 3.1 Timeline
+
+Version 1.0 of the *Ground Sphere* will be ready for kit production no later than Feb 14, 2014.

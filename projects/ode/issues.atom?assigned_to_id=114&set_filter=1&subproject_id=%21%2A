@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/ode/issues.atom?assigned_to_id=114&amp;amp;set_filter=1&amp;amp;subproject_id=%21%2A"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/ode/issues?assigned_to_id=114&amp;amp;set_filter=1&amp;amp;subproject_id=%21%2A"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-02-20T21:46:25+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #122 (New): Remove unused and outdated .gem files from vendor/cache</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/122"/>
+    <id>http://opendesignengine.net/issues/122</id>
+    <updated>2013-02-20T21:46:25+00:00</updated>
+    <author>
+      <name>Kevin Bouwkamp</name>
+    </author>
+    <content type="html">
+&lt;p&gt;While going through a standard ODE development setup, this is printed out at the end of a successful `bundle`:&lt;/p&gt;
+
+
+	&lt;p&gt;Removing outdated .gem files from vendor/cache
+  * rails-2.3.11.gem
+  * actionpack-2.3.11.gem
+  * rack-1.1.2.gem
+  * activerecord-2.3.11.gem
+  * actionmailer-2.3.11.gem
+  * actionmailer-2.3.15.gem
+  * activesupport-2.3.15.gem
+  * activeresource-2.3.15.gem
+  * actionpack-2.3.15.gem
+  * rails-2.3.15.gem
+  * activeresource-2.3.11.gem
+  * activesupport-2.3.11.gem
+  * rack-1.1.4.gem
+  * activerecord-2.3.15.gem&lt;/p&gt;
+
+
+	&lt;p&gt;This is due to the recent updates to rails and friends. We should remove these files from the repository, just to keep things squeaky clean.&lt;/p&gt;    </content>
+  </entry>
+</feed>

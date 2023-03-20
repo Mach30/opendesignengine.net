@@ -1,0 +1,359 @@
+Index: trunk/docs/Design_Iteration_1.ipynb
+===================================================================
+--- trunk/docs/Design_Iteration_1.ipynb	(revision 0)
++++ trunk/docs/Design_Iteration_1.ipynb	(revision 92)
+@@ -0,0 +1,354 @@
++{
++ "cells": [
++  {
++   "cell_type": "code",
++   "execution_count": 1,
++   "metadata": {},
++   "outputs": [
++    {
++     "ename": "ModuleNotFoundError",
++     "evalue": "No module named 'ephem'",
++     "output_type": "error",
++     "traceback": [
++      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
++      "\u001b[1;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
++      "\u001b[1;32m<ipython-input-1-748191f026be>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m()\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mpint\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      2\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mos\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0msys\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 3\u001b[1;33m \u001b[1;32mfrom\u001b[0m \u001b[0mutils\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[1;33m*\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      4\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      5\u001b[0m \u001b[0mlib_path\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mget_project_root\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
++      "\u001b[1;32m~\\Documents\\NOAA\\trunk\\docs\\utils.py\u001b[0m in \u001b[0;36m<module>\u001b[1;34m()\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      2\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mos\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 3\u001b[1;33m \u001b[1;32mimport\u001b[0m \u001b[0mephem\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m      4\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mdatetime\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      5\u001b[0m \u001b[1;32mimport\u001b[0m \u001b[0mmath\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
++      "\u001b[1;31mModuleNotFoundError\u001b[0m: No module named 'ephem'"
++     ]
++    }
++   ],
++   "source": [
++    "import pint\n",
++    "import os, sys\n",
++    "from utils import *\n",
++    "\n",
++    "lib_path = get_project_root()\n",
++    "sys.path.insert(0, lib_path)\n",
++    "\n",
++    "from lib.calculator import LinkBudgetCalculator"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {
++    "collapsed": true
++   },
++   "outputs": [],
++   "source": [
++    "ureg = pint.UnitRegistry()\n",
++    "\n",
++    "# create the linkBudgetCalculator object\n",
++    "lb_calc = LinkBudgetCalculator(ureg)"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "## Analysis of Design Iteration 1"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "### Description\n",
++    "\n",
++    "First design iteration of Mach 30 Groundsphere used to capture and demodulate NOAA satellite imagery broadcasted in an APT (Automatic Picture Transmission) format. This is the simplest possible iteration, cosisting of an eggbeater antenna and a software defined radio. The eggbeater antenna will provide preferable directivyty torwards zenith, while rejecting signals orginating near the horizon. The flexibility of software defined radios allows us to ideally include the RF front end within the demodulator, but practical considerations related to performance may require external amplifiers or filters in future design iterations. Performance of this system is explored using the python link budget library designed for this project and pyephem for satellite trajectory passover calculations.  \n",
++    "\n",
++    "![alt text](block_diagram_template.png \"Block Diagram\")\n",
++    "*<p style=\"text-align: center;\">Block Diagram</p>*\n"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "### Setup of Ground Station Values\n",
++    "\n",
++    "Ground station will have a custom-designed eggbeater antenna, followed by a short, low-loss RF coaxial cable, and an RTL-SDR (Software Defined Radio). The eggbeater antenna is to be designed to have a center frequency of 137.5 MHz. A \n",
++    "\n",
++    "Values for specific ground station are below:"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {
++    "collapsed": true
++   },
++   "outputs": [],
++   "source": [
++    "lb_calc.altitude_ground_station   =  400 * ureg.meter\n",
++    "lb_calc.implementation_loss       = -1.0   # dB\n",
++    "lb_calc.polarization_losses       =  0.0   # dB\n",
++    "lb_calc.receive_antenna_gain      =  5.4   # dB\n",
++    "lb_calc.system_noise_figure       =  5.0   # dB"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "### Setup of Satellite Values\n",
++    "\n",
++    "Values stated for a certain NOAA satellite. These values are covered in the documentation."
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {
++    "collapsed": true
++   },
++   "outputs": [],
++   "source": [
++    "lb_calc.altitude_satellite        =  860 * ureg.kilometer\n",
++    "lb_calc.transmit_power            =  5.0 * ureg.watt\n",
++    "lb_calc.transmit_losses           = -1.0   # dB\n",
++    "lb_calc.transmit_antenna_gain     =  4.0   # dBi"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "### Setup of Additional Values"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "Create functions for the changing elevation angle and atmospheric loss values. Emperical loss table for antenna pointing loss with respect to elevation angle provided below."
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {
++    "collapsed": true
++   },
++   "outputs": [],
++   "source": [
++    "# receive pointing loss for given elevation (at our frequency)\n",
++    "# these values are different for each antenna system, so the values are defined here for clarity\n",
++    "# see referenced antenna specifications for more information\n",
++    "def rx_pointing_loss_at_elev(elev):\n",
++    "    return -10.0 if elev < 5  * ureg.degrees else \\\n",
++    "           -6.0  if elev < 20 * ureg.degrees else \\\n",
++    "           -3.0  if elev < 35 * ureg.degrees else \\\n",
++    "           -1.0  if elev < 50 * ureg.degrees else 0.0"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "Set paramaters for the analysis here"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "Additional values are needed for the channel characteristics. A few of these values will change during an orbital pass!"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {
++    "collapsed": true
++   },
++   "outputs": [],
++   "source": [
++    "lb_calc.orbit_elevation_angle     =  0.001          * ureg.degrees\n",
++    "lb_calc.downlink_frequency        =  137.5          * ureg.megahertz\n",
++    "lb_calc.target_energy_noise_ratio =  20.0             # dB\n",
++    "lb_calc.noise_bandwidth           =  34.0           * ureg.kilohertz\n",
++    "lb_calc.transmit_pointing_loss    = -3.0              # dB\n",
++    "lb_calc.atmospheric_loss          =  atmloss_at_elev(ureg, lb_calc.orbit_elevation_angle)\n",
++    "lb_calc.receiving_pointing_loss   =  rx_pointing_loss_at_elev(lb_calc.orbit_elevation_angle)"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "### Analysis"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {
++    "collapsed": true
++   },
++   "source": [
++    "Data for NOAA satellite TLEs obtained from public libraries such as Pyephem used in link budget calculations."
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "Increment through an entire orbital pass."
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {
++    "collapsed": true
++   },
++   "outputs": [],
++   "source": [
++    "# get the elevation angles of different pass types using a TLE\n",
++    "# use an old TLE (line0, line1, line2)\n",
++    "tle_old = ('NOAA 19 [+]', '1 33591U 09005A   18092.90091581  .00000055  00000-0  55075-4 0  9994',\n",
++    "       '2 33591  99.1353  69.4619 0014005 174.2137 185.9198 14.12266303471284')\n",
++    "results = []\n",
++    "# poor pass\n",
++    "results.append(compute_angles(tle=tle_old, date='2018/04/03 02:00.00'))\n",
++    "# average pass\n",
++    "results.append(compute_angles(tle=tle_old, date='2018/04/03 10:00.00'))\n",
++    "# excellent pass\n",
++    "results.append(compute_angles(tle=tle_old, date='2018/04/01 06:00.00'))\n",
++    "\n",
++    "outputs = []\n",
++    "outputs.append([])\n",
++    "outputs.append([])\n",
++    "outputs.append([])\n",
++    "\n",
++    "for n, res in enumerate(results):\n",
++    "    for i, angle in enumerate(res[1]):\n",
++    "        # compute the budget\n",
++    "        lb_calc.run()\n",
++    "\n",
++    "        # ensure the computation was valid\n",
++    "        if not lb_calc.is_valid:\n",
++    "            raise Exception('Run at elevation angle ', lb_calc.orbit_elevation_angle, ' was not valid')\n",
++    "\n",
++    "        # save output as a tuple to output list\n",
++    "        outputs[n].append( (lb_calc.link_distance, \\\n",
++    "                         lb_calc.downlink_path_loss, \\\n",
++    "                         lb_calc.received_power, \\\n",
++    "                         lb_calc.energy_noise_ratio, \\\n",
++    "                         lb_calc.link_margin) )\n",
++    "\n",
++    "        # increment the elevation angle\n",
++    "        lb_calc.orbit_elevation_angle     = angle * ureg.degrees\n",
++    "        lb_calc.atmospheric_loss          = atmloss_at_elev(ureg, lb_calc.orbit_elevation_angle)\n",
++    "        lb_calc.receiving_pointing_loss   = rx_pointing_loss_at_elev(lb_calc.orbit_elevation_angle)\n",
++    "\n",
++    "# DEBUG\n",
++    "print('Max poor elevation angle: {}'.format(max(results[0][1])))\n",
++    "print('Duration of poor pass: {}'.format(results[0][2][-1] - results[0][2][0]))\n",
++    "print('Max average elevation angle: {}'.format(max(results[1][1])))\n",
++    "print('Duration of average pass: {}'.format(results[1][2][-1] - results[1][2][0]))\n",
++    "print('Max good elevation angle: {}'.format(max(results[2][1])))\n",
++    "print('Duration of good pass: {}'.format(results[2][2][-1] - results[2][2][0]))"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "Once analysis has run, examine the results."
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {
++    "collapsed": true
++   },
++   "outputs": [],
++   "source": [
++    "%matplotlib inline\n",
++    "import matplotlib.pyplot as plt\n",
++    "\n",
++    "# extract lists of the variables\n",
++    "distances = []\n",
++    "loss = []\n",
++    "rx_pow = []\n",
++    "eb_no = []\n",
++    "margins = []\n",
++    "for j in range(0, 3):\n",
++    "    distances.append([ i[0].magnitude for i in outputs[j] ])\n",
++    "    loss.append(     [ i[1] for i in outputs[j] ])\n",
++    "    rx_pow.append(   [ i[2] for i in outputs[j] ])\n",
++    "    eb_no.append(    [ i[3] for i in outputs[j] ])\n",
++    "    margins.append(  [ i[4] for i in outputs[j] ])"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {
++    "collapsed": true
++   },
++   "outputs": [],
++   "source": [
++    "fig = []\n",
++    "types = ['Poor', 'Average', 'Good']\n",
++    "\n",
++    "for i in range(0, len(outputs)):\n",
++    "    fig.append(plt.figure())\n",
++    "    p = fig[i].add_subplot(111)\n",
++    "    p.plot(range(0, len(margins[i])), margins[i], 'b', range(0, len(margins[i])), [0] * len(margins[i]), 'r--')\n",
++    "    plt.title('Link Margins for Example {} Pass'.format(types[i]))\n",
++    "    plt.xlabel('Time (s)')\n",
++    "    plt.ylabel('Margin (dB)')\n",
++    "\n",
++    "    total_s = 0\n",
++    "    for m in margins[i]:\n",
++    "        if m > 0:\n",
++    "            total_s += 1\n",
++    "\n",
++    "    print('Duration for {} pass above margin: {} seconds ({:.3} minutes)'.format(types[i], total_s, total_s/60))"
++   ]
++  },
++  {
++   "cell_type": "markdown",
++   "metadata": {},
++   "source": [
++    "### Conclusions\n",
++    "\n",
++    "Analysis of this design iteration has yielded the following results. Given the antenna gain values, system losses, and receiver amplifier gain, this system is capable of demodulating NOAA APT signals for good and average passes. The plots generated above display how link margin over the duration of a satellite passover. Increasing the gain or reducing the noise in the system may improve the performance of the system.\n"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {
++    "collapsed": true
++   },
++   "outputs": [],
++   "source": []
++  }
++ ],
++ "metadata": {
++  "kernelspec": {
++   "display_name": "Python 3",
++   "language": "python",
++   "name": "python3"
++  },
++  "language_info": {
++   "codemirror_mode": {
++    "name": "ipython",
++    "version": 3
++   },
++   "file_extension": ".py",
++   "mimetype": "text/x-python",
++   "name": "python",
++   "nbconvert_exporter": "python",
++   "pygments_lexer": "ipython3",
++   "version": "3.6.2"
++  }
++ },
++ "nbformat": 4,
++ "nbformat_minor": 2
++}

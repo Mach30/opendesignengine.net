@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Space Chiles v1.0 - Payload Design - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../favicon.ico%3F1359925685.html' />
+<link href="../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+  <link href="../../../stylesheets/scm.css%3F1359925542.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-wiki action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../index.html" class="home">Home</a></li>
+<li><a href="../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="../../../search/index/spacechiles.html" method="get">
+        <input name="wiki_pages" type="hidden" value="1" />
+        <a href="../../../search/index/spacechiles.html" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Space Chiles v1.0</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../spacechiles.html" class="overview">Overview</a></li>
+<li><a href="../activity.html" class="activity">Activity</a></li>
+<li><a href="../issues.html" class="issues">Issues</a></li>
+<li><a href="../news.html" class="news">News</a></li>
+<li><a href="../documents.html" class="documents">Documents</a></li>
+<li><a href="../wiki.html" class="wiki selected">Wiki</a></li>
+<li><a href="../boards.html" class="boards">Forums</a></li>
+<li><a href="../files.html" class="files">Files</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="" id="main">
+    <div id="sidebar">
+        
+  
+<h3>Wiki</h3>
+
+<a href="../wiki.html">Start page</a><br />
+<a href="index.html">Index by title</a><br />
+<a href="date_index.html">Index by date</a><br />
+
+
+        
+    </div>
+
+    <div id="content">
+				
+        <div class="contextual">
+
+
+<span class="wiki_page-166-watcher"></span>
+
+
+
+
+
+
+<a href="Payload_Design/history.html" class="icon icon-history">History</a>
+</div>
+
+
+
+
+
+<div class="wiki">
+  <a name="Payload-Design"></a>
+<h1 >Payload Design<a href="Payload_Design%3Fversion=3.html#Payload-Design" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>FAA regulations limit the mass of any non-separable balloon component to 2.72kg (6lb). This means that we should limit our functional payload mass to 2kg, possibly up to 2.2kg. Any components requiring a thermally stable environment (e.g. batteries, some electronics) should live within a polystyrene insulating box (beer cooler). Dissipated power should warm the inside of the box to reasonable working temperatures.</p>
+
+
+	<a name="Chile-Seed-Packets"></a>
+<h2 >Chile Seed Packets<a href="Payload_Design%3Fversion=3.html#Chile-Seed-Packets" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Balloon launches will carry a packet of New Mexico green chile seeds.</p>
+
+
+	<a name="GPS"></a>
+<h2 >GPS<a href="Payload_Design%3Fversion=3.html#GPS" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Any GPS module must be rated to altitudes beyond 60,000 feet. Certain older models cease function above this altitude due to now-deprecated government regulations.</p>
+
+
+	<a name="Radio-TrackingTelemetry"></a>
+<h2 >Radio Tracking/Telemetry<a href="Payload_Design%3Fversion=3.html#Radio-TrackingTelemetry" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Tracking and telemetry should be broadcast using a 144.39MHz APRS amateur radio transmitter. The APRS protocol is designed to provide generalized two-way packetized communications, including location and arbitrary telemetry. APRS packets are routed to the internet and location is broadly supported, meaning that ground teams would be able to track the balloon using only a smartphone. More info at <a class="external" href="http://www.aprs.org/">http://www.aprs.org/</a><br />Whoever is responsible for the transmitter will need to have an amateur radio license of Technician class or better.</p>
+
+
+	<a name="Environmental-Data"></a>
+<h2 >Environmental Data<a href="Payload_Design%3Fversion=3.html#Environmental-Data" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Eternal and internal temperature: possible temperature range from 30C to -70C<br />Pressure: 100kPa (sea level) to 500Pa (30km).</p>
+
+
+	<a name="Camera"></a>
+<h2 >Camera<a href="Payload_Design%3Fversion=3.html#Camera" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>GoPro camera?</p>
+
+
+	<a name="Data-LoggingComputer"></a>
+<h2 >Data Logging/Computer<a href="Payload_Design%3Fversion=3.html#Data-LoggingComputer" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Arduino?</p>
+
+
+	<a name="Power-Supply"></a>
+<h2 >Power Supply<a href="Payload_Design%3Fversion=3.html#Power-Supply" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Li-Ion, LiPo, or Lithium Primary batteries. Some components (e.g camera) may have their own power supplies.</p>
+</div>
+
+
+
+
+
+
+<p class="other-formats">Also available in:
+	<span><a href="Payload_Design.html%3Fversion=3.html" class="html" rel="nofollow">HTML</a></span>
+	<span><a href="Payload_Design.txt%3Fversion=3" class="txt" rel="nofollow">TXT</a></span>
+</p>
+
+
+
+
+
+
+
+        
+				<div style="clear:both;"></div>
+    </div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+	
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://www.redmine.org/">Redmine</a> &copy; 2006-2011 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25732509-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> <div id="footer">
+  <div class="bgl"><div class="bgr">
+    <a href="../../../terms_of_services/Payload_Design.html">Terms Of Service</a>
+  </div></div>
+</div>
+<div id="footer">
+</div>
+</body>
+</html>

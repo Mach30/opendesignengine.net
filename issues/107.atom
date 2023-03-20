@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/107.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-01-16T19:16:49+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Open Design Engine - Feature #107: Add Rails and Ruby versions to output on admin/info page</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/107"/>
+    <id>http://opendesignengine.net/issues/107?journal_id=161</id>
+    <updated>2013-01-16T19:16:49+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Just need to add the output strings mentioned in &lt;a href="http://www.ruby-forum.com/topic/101365#220726" class="external"&gt;this post&lt;/a&gt; to the table of info on the admin/info page.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #107: Add Rails and Ruby versions to output on admin/info page</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/107"/>
+    <id>http://opendesignengine.net/issues/107?journal_id=162</id>
+    <updated>2013-01-16T19:34:11+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Assignee&lt;/strong&gt; set to &lt;i&gt;Kevin Bouwkamp&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #107: Add Rails and Ruby versions to output on admin/info page</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/107"/>
+    <id>http://opendesignengine.net/issues/107?journal_id=173</id>
+    <updated>2013-02-03T15:10:48+00:00</updated>
+    <author>
+      <name>Kevin Bouwkamp</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; changed from &lt;i&gt;New&lt;/i&gt; to &lt;i&gt;Closed&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;% Done&lt;/strong&gt; changed from &lt;i&gt;0&lt;/i&gt; to &lt;i&gt;100&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;    </content>
+  </entry>
+</feed>

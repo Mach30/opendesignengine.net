@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>AttenuatorX - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../../../favicon.ico%3F1359925685.html' />
+<link href="../../../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+</head>
+<body class="controller-wiki action-diff">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../../../index.html" class="home">Home</a></li>
+<li><a href="../../../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="../../../../../search/index/attenuatorx.html" method="get">
+        <input name="wiki_pages" type="hidden" value="1" />
+        <a href="../../../../../search/index/attenuatorx.html" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>AttenuatorX</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../../attenuatorx.html" class="overview">Overview</a></li>
+<li><a href="../../../activity.html" class="activity">Activity</a></li>
+<li><a href="../../../issues.1.html" class="issues">Issues</a></li>
+<li><a href="../../../issues/gantt.html" class="gantt">Gantt</a></li>
+<li><a href="../../../news.html" class="news">News</a></li>
+<li><a href="../../../../../dmsf/attenuatorx.html" class="dmsf">DMSF</a></li>
+<li><a href="../../../wiki.html" class="wiki selected">Wiki</a></li>
+<li><a href="../../../boards.html" class="boards">Forums</a></li>
+<li><a href="../../../repository.html" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <div class="contextual">
+<a href="../history.html" class="icon icon-history">History</a>
+</div>
+
+
+
+<h2>Wiki</h2>
+
+<p>
+Version <a href="../../Wiki%3Fversion=6.html">6</a>
+<em>(Jack Linke, 05/11/2013 08:41 pm)</em>
+&#8594;
+Version <a href="../../Wiki%3Fversion=7.html">7</a>/9
+<em>(Jack Linke, 05/12/2013 03:49 am)</em>
+</p>
+
+<div class="text-diff">
+h1. AttenuatorX Wiki <br /><br /> h2. Project background <br /><br /> This project grew out of dissatisfaction for adjustable attenuator products currently on the market. These devices are often used to protect the inputs to test equipment and other sensitive RF devices. As part of my job as a Radar Technician, I needed an attenuator that could handle up to around 40 dBm, provide a variety of attenuation levels, and operate over a large frequency spectrum. The only devices I found that met these needs cost over $2000, and are adjusted over 1 dB increments by physically flipping switches or turning dials. I thought I could do better, so I started working on doing just that. <br /><br /> I have experience as a Radar Technician, and as a licensed amateur radio technician (KI6NVY), but while I&#x27;ve worked extensively with RF, this is my first time engineering with RF. I welcome any recommendations, corrections, and other correspondence. <br /><br /> h2. Milestones <br /><br /> This project encompasses several smaller projects. We will start by designing two test boards to progressively test the components used in the final boards. The primary devices will also include details on the selected enclosure, Bill of Materials (BOM), firmware, and other information for building you own device. <br /><br /> *[[XTest1]]* is a very basic test board with two attenuation paths, an RF switch, chip attenuators, a digital attenuator, and an AVR ATMega48 microcontroller to handle switching. <br /><br /> <span class="diff_in">*[[AttenuatorX]]*</span> <span class="diff_out"> *[[AttenuatorXLE]]*</span> is a <span class="diff_in">relatively Low-cost Wide-Band, Wide Attenuation, High Power,</span> <span class="diff_out"> low-cost</span> Digitally adjustable <span class="diff_in">RF</span> attenuator which will <span class="diff_out"> be the first of the two primary devices developed. It will</span> offer the following <span class="diff_in">features:</span> <span class="diff_out"> preliminary specifications:</span> 
+<br />     <span class="diff_in">0 to 3 GHz Operation 
+<br />     Up to 34 dBm (2.5W) Input Power with</span> 10 to <span class="diff_in">85.5</span> <span class="diff_out"> 41</span> dB Attenuation in 0.5 dB Steps 
+<br />     <span class="diff_out"> 50 MHz to 3 GHz Operation 
+<br />    </span> Up to <span class="diff_in">50</span> <span class="diff_out"> 36</span> dBm <span class="diff_in">(100W)</span> Input Power <span class="diff_in">with 30</span> <span class="diff_out"> <br /><br /> *[[AttenuatorX]]* is a low-cost Digitally adjustable attenuator which will be the second of the two primary devices developed. It will offer the following preliminary specifications: 
+<br />     10</span> to <span class="diff_in">105.5</span> <span class="diff_out"> 95</span> dB Attenuation in 0.5 dB Steps 
+<br />     <span class="diff_in">Atmel ATMega164PA/324PA/644PA Microcontroller</span> <span class="diff_out"> 50 MHz to 3 GHz Operation</span> 
+<br />     <span class="diff_in">8k-bit EEPROM 
+<br />     LCD Display 
+<br />     Programming via LCD Display, or via SPI or Parallel inputs 
+<br />    </span> <span class="diff_out"> Up to 45 dBm</span> Input Power <span class="diff_in">Sensing <br /><br /></span> <span class="diff_out"> 
+<br /></span>
+</div>
+
+        
+				<div style="clear:both;"></div>
+    </div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+	
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://www.redmine.org/">Redmine</a> &copy; 2006-2011 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25732509-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> <div id="footer">
+  <div class="bgl"><div class="bgr">
+    <a href="https://opendesignengine.net/terms_of_services/Wiki">Terms Of Service</a>
+  </div></div>
+</div>
+<div id="footer">
+</div>
+</body>
+</html>

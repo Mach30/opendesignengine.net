@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Far Horizons Project: Design Discussions</title>
+  <link rel="self" href="http://opendesignengine.net/projects/far-horizons-project/boards/9.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/far-horizons-project/boards/9"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2012-08-30T19:55:21+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Design Discussions: RE: Resources</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/9/topics/172?r=216#message-216"/>
+    <id>http://opendesignengine.net/boards/9/topics/172?r=216#message-216</id>
+    <updated>2012-08-30T19:55:21+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;
+	&lt;li&gt;&lt;a class="external" href="http://smallblimps.lefora.com/2009/12/17/hydrogen-is-ok-lift-gas-in-usa-hooray/"&gt;http://smallblimps.lefora.com/2009/12/17/hydrogen-is-ok-lift-gas-in-usa-hooray/&lt;/a&gt; - Report on legality of using Gaseous Hydrogen (GH2) for balloons&lt;/li&gt;
+		&lt;li&gt;&lt;a class="external" href="http://www.eoss.org/pubs/faqloon.htm"&gt;http://www.eoss.org/pubs/faqloon.htm&lt;/a&gt; - more info on GH2 as lifting gas&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Design Discussions: RE: Resources</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/9/topics/172?r=179#message-179"/>
+    <id>http://opendesignengine.net/boards/9/topics/172?r=179#message-179</id>
+    <updated>2012-06-22T02:39:11+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;
+	&lt;li&gt;&lt;a class="external" href="https://256.makerslocal.org/wiki/HSIS"&gt;https://256.makerslocal.org/wiki/HSIS&lt;/a&gt; - Makers Local 256 &lt;a href="http://workshop88.com/space/" class="external"&gt;Hacker Spaces in Space&lt;/a&gt; entry&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Design Discussions: RE: Resources</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/9/topics/172?r=176#message-176"/>
+    <id>http://opendesignengine.net/boards/9/topics/172?r=176#message-176</id>
+    <updated>2012-06-17T18:40:43+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Here are some links from Ken Walczak from Adler Planetarium.&lt;/p&gt;
+
+
+	&lt;p&gt;1. &lt;a href="http://www.parallax.com/tabid/567/Default.aspx" class="external"&gt;Paul Verhage HAB Book&lt;/a&gt;&lt;br /&gt;2. FAA HAB Regulations: See attachments.&lt;br /&gt;3. &lt;a href="http://www.youtube.com/watch?v=jtfJuTvaHxo" title="Video" class="external"&gt;Amateur Super Pressure Balloon Lecture&lt;/a&gt;&lt;br /&gt;4. Informative Lessons in Open Field Launches:&lt;br /&gt;     4.a. &lt;a class="external" href="http://www.youtube.com/watch?v=wmJTLfaI3yk&amp;#38;feature=related"&gt;http://www.youtube.com/watch?v=wmJTLfaI3yk&amp;#38;feature=related&lt;/a&gt;&lt;br /&gt;     4.b. &lt;a class="external" href="http://www.youtube.com/watch?v=sL-Pbsyn1Y0&amp;#38;feature=related"&gt;http://www.youtube.com/watch?v=sL-Pbsyn1Y0&amp;#38;feature=related&lt;/a&gt;&lt;br /&gt;     4.c. &lt;a class="external" href="http://youtu.be/lDsgPXKuu5A"&gt;http://youtu.be/lDsgPXKuu5A&lt;/a&gt;&lt;br /&gt;5. &lt;a href="http://www.the-rocketman.com/recovery.html" class="external"&gt;Parachute Supplier&lt;/a&gt;&lt;br /&gt;6. &lt;a href="http://skyvector.com/" class="external"&gt;Sky Vector Maps&lt;/a&gt;&lt;br /&gt;7. Tools Used for Generating Predictive Tracks:&lt;br /&gt;     7.a. &lt;a class="external" href="http://habhub.org/predict/"&gt;http://habhub.org/predict/&lt;/a&gt;&lt;br /&gt;     7.b. &lt;a class="external" href="http://nearspaceventures.com/w3Baltrak/readyget.pl"&gt;http://nearspaceventures.com/w3Baltrak/readyget.pl&lt;/a&gt;&lt;br /&gt;8. &lt;a href="http://www.bigredbee.com/blgps_2mhp.htm" class="external"&gt;GPS tracking units that transmit a 5W signal on the 2-meter (144MHz) HAM radio band&lt;/a&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Design Discussions: RE: Resources</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/9/topics/172?r=174#message-174"/>
+    <id>http://opendesignengine.net/boards/9/topics/172?r=174#message-174</id>
+    <updated>2012-06-11T17:51:37+00:00</updated>
+    <author>
+      <name>Greg Moran</name>
+    </author>
+    <content type="html">
+&lt;p&gt;AMSAT group has already compiled a list of other High-altitude balloon projects on the web:&lt;br /&gt;Here's a link: &lt;a class="external" href="http://www.amsat.org/amsat/balloons/balloon.htm"&gt;http://www.amsat.org/amsat/balloons/balloon.htm&lt;/a&gt;&lt;/p&gt;
+
+
+Here are more links to other Amateur High-Altitude Balloon projects (top n hits from a simple google search):
+	&lt;ul&gt;
+	&lt;li&gt;&lt;a class="external" href="http://www.natrium42.com/halo/flight2/"&gt;http://www.natrium42.com/halo/flight2/&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class="external" href="http://www.hobbyspace.com/NearSpace/index.html"&gt;http://www.hobbyspace.com/NearSpace/index.html&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class="external" href="http://www.ihabproject.com/"&gt;http://www.ihabproject.com/&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class="external" href="http://balloons.space.edu/habp/"&gt;http://balloons.space.edu/habp/&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class="external" href="http://n1vg.net/balloon/"&gt;http://n1vg.net/balloon/&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Design Discussions: RE: Resources</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/9/topics/172?r=173#message-173"/>
+    <id>http://opendesignengine.net/boards/9/topics/172?r=173#message-173</id>
+    <updated>2012-06-11T04:40:43+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="http://farhorizonsproject.com/blog/" class="external"&gt;Far Horizons Blog&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://cstart.org/forum/project-proposals/balloon-based-projects/?value=cloudlab&amp;#38;type=1&amp;#38;include=1&amp;#38;search=1&amp;#38;ret=all" class="external"&gt;CSTART Research&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Design Discussions: Resources</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/9/topics/172"/>
+    <id>http://opendesignengine.net/boards/9/topics/172</id>
+    <updated>2012-06-11T04:39:40+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;List of useful sites and materials concerning high altitude balloons.&lt;/p&gt;    </content>
+  </entry>
+</feed>

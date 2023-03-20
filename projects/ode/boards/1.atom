@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Support</title>
+  <link href="http://opendesignengine.net/projects/ode/boards/1.atom" rel="self"/>
+  <link href="http://opendesignengine.net/projects/ode/boards/1" rel="alternate"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-01-18T10:32:30+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Support: RE: Session Timeout Issue</title>
+    <link href="http://opendesignengine.net/boards/1/topics/370?r=375#message-375" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/1/topics/370?r=375#message-375</id>
+    <updated>2013-01-18T10:32:30+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I did NOT have the same problem this morning at about 11:30AM. Is there a process that runs on ODE at about midnight to 1:30AM (backup?), or should I dig deeper into this being a possible browser glitch? Until the issue repeats there's not much for me to do to test it though.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Support: RE: Session Timeout Issue</title>
+    <link href="http://opendesignengine.net/boards/1/topics/370?r=371#message-371" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/1/topics/370?r=371#message-371</id>
+    <updated>2013-01-18T00:14:47+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;...and I just lost a large new forum post because of this issue. Redmine doesn't give you any warning that you're logged out when you hit the create button, and after it drops you to the login screen you can't go back to get your text. If you're replying you can sometimes log back in and hit reply to get your text back, but not if you're creating a new topic.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Support: Session Timeout Issue</title>
+    <link href="http://opendesignengine.net/boards/1/topics/370" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/1/topics/370</id>
+    <updated>2013-01-17T23:53:49+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;My sessions on ODE seem to be automatically timing out every 10 to 15 minutes. I've never had that happen before, and it kicks me from the document I'm reading or working on out to the login page when I submit or refresh. Has something changed in the session timeouts?&lt;/p&gt;
+
+
+	&lt;p&gt;Browser: Google Chrome, Version 24.0.1312.52&lt;br /&gt;OS: Ubuntu 12.10 64-bit&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Support: RE: Problem with DMSF Upload</title>
+    <link href="http://opendesignengine.net/boards/1/topics/163?r=164#message-164" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/1/topics/163?r=164#message-164</id>
+    <updated>2012-06-01T13:05:28+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Right after I posted I found this bug report that I missed before.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a class="external" href="http://code.google.com/p/redmine-dmsf/issues/detail?id=157"&gt;http://code.google.com/p/redmine-dmsf/issues/detail?id=157&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;According to that the problem is with the Javascript in the DMSF plugin.&lt;/p&gt;
+
+
+	&lt;p&gt;I was able to upload the file using Luakit in Linux.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Support: Problem with DMSF Upload</title>
+    <link href="http://opendesignengine.net/boards/1/topics/163" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/1/topics/163</id>
+    <updated>2012-06-01T12:52:03+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;When trying to upload an updated version of a file using DMSF, the upload never starts and the filename is 'undefined'. I've attached a screenshot.&lt;/p&gt;
+
+
+	&lt;p&gt;I tried it in the latest update of Chrome on both Linux and Windows, and version 12.0 of Firefox on Linux.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="http://opendesignengine.net/attachments/download/70" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Support: RE: How can I delete a project ...</title>
+    <link href="http://opendesignengine.net/boards/1/topics/149?r=160#message-160" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/1/topics/149?r=160#message-160</id>
+    <updated>2012-05-30T23:11:30+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;It's my pleasure.  I will go delete that project right now.  In terms of using the site, it should be plenty stable, we are just holding off on the public release until we get on our long term server to minimize downtime after the public release.  In fact, Mach 30 is running one &lt;a href="https://opendesignengine.net/projects/shepard-ts" class="external"&gt;project&lt;/a&gt; on ODE right now, and will be starting another one in a week or two.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Support: RE: How can I delete a project ...</title>
+    <link href="http://opendesignengine.net/boards/1/topics/149?r=157#message-157" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/1/topics/149?r=157#message-157</id>
+    <updated>2012-05-29T13:58:11+00:00</updated>
+    <author>
+      <name>Philippe Chretien</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Hi,&lt;br /&gt;Thanks for the quick reply! Yes, please, delete it from my profile ... next step will be to create a "real" project. :) &lt;br /&gt;By the way, is it safe to create a project now? Is it beter to wait for the official release of the site?&lt;br /&gt;Thanks for your support,&lt;br /&gt;P.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Support: RE: How can I delete a project ...</title>
+    <link href="http://opendesignengine.net/boards/1/topics/149?r=150#message-150" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/1/topics/149?r=150#message-150</id>
+    <updated>2012-05-29T00:26:29+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Philippe,&lt;/p&gt;
+
+
+	&lt;p&gt;Thanks for posting to the support forums.  It turns out, deleting projects in Redmine (the core software ODE is based on) is an admin level function.  After doing some research into other project hosting sites, I believe having project removal require admin intervention may be a "good thing".  &lt;a href="http://sourceforge.net/apps/trac/sourceforge/wiki/Removing%20a%20project" class="external"&gt;SourceForge's policy&lt;/a&gt; makes a good case for keeping projects around except in extenuating circumstances, so I don't think we will want to implement user controlled project deletion as a new feature.&lt;/p&gt;
+
+
+	&lt;p&gt;That being said, I appreciate wanting to kick the tires on the site by setting up a test project.  So, I would be happy to remove that project for you.  Is the basbrun1 project the one you want to have deleted?&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Support: How can I delete a project ...</title>
+    <link href="http://opendesignengine.net/boards/1/topics/149" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/1/topics/149</id>
+    <updated>2012-05-28T20:39:11+00:00</updated>
+    <author>
+      <name>Philippe Chretien</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Hi,&lt;br /&gt;I created a project for testing purposes and I want to delete it. How can I do that?&lt;br /&gt;Thanks,&lt;br /&gt;P.&lt;/p&gt;    </content>
+  </entry>
+</feed>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/21.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-09-18T16:14:07+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Open Design Engine - Feature #21: Project assistance Bounty System</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/21"/>
+    <id>http://opendesignengine.net/issues/21?journal_id=284</id>
+    <updated>2013-09-18T16:14:07+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;See &lt;a class="external" href="http://fiverr.com/"&gt;http://fiverr.com/&lt;/a&gt; for ideas about how this can work.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #21: Project assistance Bounty System</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/21"/>
+    <id>http://opendesignengine.net/issues/21?journal_id=296</id>
+    <updated>2013-09-18T16:26:04+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;#OSHWDocJam&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #21: Project assistance Bounty System</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/21"/>
+    <id>http://opendesignengine.net/issues/21?journal_id=379</id>
+    <updated>2013-11-07T15:21:04+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;Comments
+	&lt;ul&gt;
+	&lt;li&gt;Chris - sees this as also a little like stack overflow&lt;/li&gt;
+		&lt;li&gt;J - two pieces: ability to mark anything on the site as needing help (wiki page needs writing, 3D part needs to be printed, analysis needs to be run) and have these items show up in a site wide and project level list and then how to negotiate and exchange money or barter for the service&lt;/li&gt;
+		&lt;li&gt;Chris - this really needs more requirements analysis before we can estimate it&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+</feed>

@@ -1,0 +1,21 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+116,Closed,AttenuatorX,Bug,Normal,At some point in the past I accidentally swapped the Slave Select (SS or LE) with the Serial Data (MOSI or SERIN).,"","","",Jack Linke,02/11/2013,"",0,"","",02/11/2013 08:26 pm,05/11/2013 08:20 pm,"I'll have to make a quick fix on the prototype PCB to correct this. I’ll pillar the associated serial resistors upright, and use fine wire to jumper across to the correct pads.
+
+This issue has already been corrected on the schematic, but needs correction on the PCB."
+99,Closed,AttenuatorX,Milestone,Normal,Complete schematic for XTest1,Jack Linke,"","",Jack Linke,12/22/2012,12/23/2012,100,4.0,"",12/21/2012 09:54 pm,12/24/2012 01:12 am,"Design the schematic for XTest1. The following parts will be required, at a minimum:
+- BNC Jacks (PC Edge Mount)
+- Chip attenuator
+- Digital attenuator chip
+- AVR ATTiny microcontroller
+- Associated resistors, caps, etc
+
+"
+100,Closed,AttenuatorX,Milestone,Normal,Design PCB for XTest1,Jack Linke,"","",Jack Linke,12/26/2012,12/30/2012,100,18.0,"",12/21/2012 09:56 pm,12/30/2012 10:32 pm,"Design the PCB for XTest1, ensuring correct layout procedures are followed for RF designs up to 3GHz."
+119,New,AttenuatorX,Bug,High,No strain relief was provided for the battery connection.,"","","",Jack Linke,02/11/2013,"",0,"","",02/11/2013 08:27 pm,02/11/2013 08:27 pm,Identify and implement a good way of providing relief.
+101,Closed,AttenuatorX,Milestone,Normal,Order XTest1 PCB,Jack Linke,"","",Jack Linke,12/30/2012,12/31/2012,100,1.0,"",12/21/2012 09:57 pm,12/31/2012 07:12 pm,"Place the board on order, so firmware development and device testing can be planned."
+121,Closed,AttenuatorX,Bug,High,"R20, R21, and R22, which are the SPI series resistors, should be 33 ohms vice 1kohm","","","",Jack Linke,02/12/2013,"",0,"","",02/12/2013 09:14 pm,05/11/2013 08:20 pm,Change the values for these resistors in the schematics and add qty: (3) 33 ohm resistors to the BOM
+120,New,AttenuatorX,Bug,Normal,Something in my design seems to cause failures on pin PC1 when the Brown-out detection is enabled on the AVR microcontroller.,"","","",Jack Linke,02/11/2013,"",0,"","",02/11/2013 08:29 pm,02/11/2013 08:29 pm,Identify whether this is specific to my design or to the ATMega48PA. I experienced this with two different ATMega48PA microcontrollers on two separate XTest1 boards.
+114,Closed,AttenuatorX,Bug,Low,"The 0.1uF capacitors were 0508, but the pads I placed are 0805","","","",Jack Linke,02/11/2013,"",0,"","",02/11/2013 08:25 pm,05/11/2013 08:21 pm,"For now I’m using some 0805 caps I had on hand, but If I re-build and re-order this board, I’ll need to change the pads. The circuit is designed to use 0508, since they slightly shorten the path to ground for decoupling."
+115,New,AttenuatorX,Bug,Normal,"The header should be SMT (as I already determined in the BOM), not through-hole (as I designed the board), and it should be on the bottom of the board.","","","",Jack Linke,02/11/2013,"",0,"","",02/11/2013 08:25 pm,02/11/2013 08:25 pm,For now I’m just making do with through-hole headers.
+118,New,AttenuatorX,Bug,High,"The LEDs displaying attenuation level are in opposite order. MSB should be on the left, like the silkscreen, but it’s on the right.","","","",Jack Linke,02/11/2013,"",0,"","",02/11/2013 08:27 pm,02/11/2013 08:27 pm,Reverse the LED order.
+117,New,AttenuatorX,Bug,Normal,"The pad I designed for the on-off switch isn’t wide enough. With enough solder, it works, but it’s not right.","","","",Jack Linke,02/11/2013,"",0,"","",02/11/2013 08:26 pm,02/11/2013 08:26 pm,Correct this in a future version

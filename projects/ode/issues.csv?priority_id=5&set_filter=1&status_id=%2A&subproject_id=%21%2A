@@ -1,0 +1,10 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+265,New,Open Design Engine,Bug,High,SCM URL in project settings is incorrect,J. Simmons,"","",Christopher Sigman,09/03/2014,"",0,"","",09/03/2014 07:12 pm,09/03/2014 07:12 pm,"The URL shows the URL to the file system, instead of the URL users access the repository at."
+177,New,Open Design Engine,Feature,High,Add svn style tagging to ODE projects,"","",Under consideration,J. Simmons,09/18/2013,"",0,"","",09/18/2013 03:42 pm,09/18/2013 04:24 pm,"ODE projects are more than just their source code.  They are their wiki pages, their files in DMSF, their forum posts, and all the content which describes the design, manufacture, and operation of a hardware project.  As such, repository level ""tagging"":http://svnbook.red-bean.com/en/1.1/ch04s06.html is not sufficient to capture the state of a project.  All project assets should be captured by a project level svn style tag.  This is a precursor to supporting branching, forking, and merging at the project level.
+
+Note, while this is critical, it is also a non-trivial change.  Listing as ""under consideration"" until development can really get going again and we can assign it a real target version."
+76,Resolved,Open Design Engine,Bug,High,Cannot Download Files From DMSF,"","","",Jeremy Wright,09/17/2012,"",100,"","",09/17/2012 09:54 pm,01/29/2013 10:35 am,"When trying to download files from DMSF on the Far Horizons HAB project, I get the attached error.
+
+https://opendesignengine.net/dmsf/far-horizons-project?folder_id=8
+
+This error happens on both Chrome 21.0.1180.81 and Firefox 14.0.1 both running on Linux."

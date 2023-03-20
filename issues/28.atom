@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/28.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-06-06T21:36:32+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Open Design Engine - Feature #28: Add real-time wiki editing</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/28"/>
+    <id>http://opendesignengine.net/issues/28?journal_id=192</id>
+    <updated>2013-06-06T21:36:32+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;This applies to not just the wiki, but also areas like the News module as well. There is also an &lt;a href="http://www.redmine.org/plugins/redmine_etherpad" class="external"&gt;Etherpad plugin&lt;/a&gt; for Redmine.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #28: Add real-time wiki editing</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/28"/>
+    <id>http://opendesignengine.net/issues/28?journal_id=303</id>
+    <updated>2013-09-19T17:02:14+00:00</updated>
+    <author>
+      <name>Christopher Sigman</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Might look at creating a plugin similar to the Redmine CKEditor plugin but using WikiCloth: &lt;a class="external" href="https://github.com/nricciar/wikicloth/"&gt;https://github.com/nricciar/wikicloth/&lt;/a&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #28: Add real-time wiki editing</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/28"/>
+    <id>http://opendesignengine.net/issues/28?journal_id=384</id>
+    <updated>2013-11-07T15:34:32+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Big project, might get most of the way using Etherpad, but lots of research and testing to do first.&lt;/p&gt;    </content>
+  </entry>
+</feed>

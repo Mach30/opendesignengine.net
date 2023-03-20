@@ -1,0 +1,74 @@
+Index: trunk/docs/Link Budget Documentation.ipynb
+===================================================================
+--- trunk/docs/Link Budget Documentation.ipynb	(revision 35)
++++ trunk/docs/Link Budget Documentation.ipynb	(revision 36)
+@@ -185,7 +185,7 @@
+     "## Channel Impairments\n",
+     "#### Free Space Path Loss\n",
+     " \n",
+-    "The Link Distance was solved for in the section above. Downlink Path Loss (dB) =  -10log((4PI*distance*1000/wavelength)^2). Polarization Loss is zero in this example because both of the antennas are right hand circularly polarized (RHCP). As a counterexample, if one of the antennas is circularly polarized and the other antennas is linearly polarized, the polarization loss would be around 3 [dB].\n",
++    "The Link Distance was solved for in the section above. Downlink Path Loss (dB) =  -10log((4PI*distance*1000/wavelength)^2). Polarization Loss is zero in this example because both antennas are right hand circularly polarized (RHCP). As a counterexample, if one of the antennas is circularly polarized and the other antennas is linearly polarized, the polarization loss would be around 3 [dB].\n",
+     "\n",
+     "$$L_{Path} = -10log_{10}((\\frac{4{\\pi}*D*1000}{\\lambda})^2)$$\n",
+     "\n",
+@@ -193,7 +193,7 @@
+     "Losses due to atmospheric gases (Nitrogen, Oxygen, Carbon Dioxide, Hydrogen, etc.) are nearly independent of atmospheric temperature, mean density and relative humidity at frequencies below 2 GHz.  Atmospheric absorption depends strongly upon the total number of molecules distributed along the path between the spacecraft and the ground station.  This, in turn, means that the losses from or to the satellite are elevation angle dependent.\t\t\t\t\t\t\t\t\t\n",
+     "\t\t\t\t\t\t\t\t\t\n",
+     "The data used here  is taken from \"Radiowave Propagation in Satellite Communications\" by\t\t\t\t\t\t\t\t\t\n",
+-    "Louis J. Ippolito, Jr., Van Nostrand-Reinhold, 1986, pp. 33-34, Tables 3-3a-c. If you are using uplink or downlink frequencies above 2 GHz, refer to the referenced text given above to determine the appropriate atmosperic losses.\n",
++    "Louis J. Ippolito, Jr., Van Nostrand-Reinhold, 1986, pp. 33-34, Tables 3-3a-c. If you are using uplink or downlink frequencies above 2 GHz, refer to the referenced text given above to determine the appropriate atmospheric losses.\n",
+     "\n",
+     "The table below is a look-up table.\n",
+     "\n",
+@@ -227,7 +227,30 @@
+     "\n",
+     "•\tImplement a frequency tracking phased locked loop which locks on to carrier signal and automatically tunes to received signal center frequency\n",
+     "\n",
+-    "•\tUtilize software to detect center frequency offset of received signal and retune the receiver accordingly \n"
++    "•\tUtilize software to detect center frequency offset of received signal and retune the receiver accordingly \n",
++    "\n",
++    "#### Radio Propagation Factors Beyond the Scope of the Design Problem\n",
++    "\n",
++    "##### Multipath Fading\n",
++    "Inherent to all wireless radio communication channels is multipath propagation. When radio waves are transmitted from an antenna, different portions of the wave-front travelling away will usually interact with different obstacles. The sum of a fraction of these waves will reach the receiver, along with the direct line-of-sight component if it exists. These interactions are primarily reflection, refraction, diffraction, and scattering. In land based communication systems, radio wave can interact with objects of all sizes including terrain, buildings, cars, and people. How detrimental multipath propagation is to a receiver is location dependent. Amazingly, the atmosphere can refract and scatter radio waves as they travel from space to Earth’s surface. This can be attributed to changing refractive indices associated with different air pressures and temperatures at different altitudes as well as clouds between the satellite and ground station. The “richness” for a multipath propagation channel is related to the inter-symbol interference experienced by the desired receiver. Inter-symbol interference occurs when a previously transmitted symbol interferes with the consecutive transmitted symbol due to delayed components of the previous signal. This type of interference can severely affect receiver performance in high multipath environments. \n",
++    "\n",
++    "###### Multipath Propagation Compensation\n",
++    "•\tSlower data rate\n",
++    "\n",
++    "•\tDelay lines\n",
++    "\n",
++    "•\tDigital signal processing\n",
++    "\n",
++    "•\tCyclical Prefix\n",
++    "\n",
++    "•\tDirectional antennas\n",
++    "\n",
++    "##### Realistic Free Space Path Loss Exponent\n",
++    "The free space path loss of a signal is usually expressed as an equation directly dependent on the distance between receiver and transmitter antenna squared. This usually refers to the power of an isotropic antenna radiating in all directions from a point source equally. In reality, the free space path loss exponent is usually a value between 2 and 4. The realistic free space path loss can be affected by atmospheric conditions, multipath, fading, and many other factors. In satellite communications, the physical conditions of the atmosphere change drastically with respect to temperature, density, transparency, and composition. The ionosphere, which has varying levels of ionization depending on altitude and time of day effect long-wavelength radio signals the most. Radio waves can be reflected or absorbed by the ionosphere. To derive the true free space path loss, multiple calculations with respect to the varying parameters must be considered. Many sophisticated models such as the Irregular Terrain Model (ITM) have been created to describe realistic path losses using empirical data and statistical models. \n",
++    "\n",
++    "##### Fading\n",
++    "Fading is the time-dependent variation of received signal strength which may be due to multiple conditions or events. Fading can be described as fast or slow depending on the variation of signal power over a symbol time. As described above, multipath is a major source of fading in signal strength due to constructive and destructive interference. However, other factors include scattering and diffraction of electromagnetic waves. A moving receiver and or transmitter will also induce fading due to signal strength changing significantly every quarter wavelength.\n",
++    "\n"
+    ]
+   },
+   {
+@@ -368,9 +391,7 @@
+   },
+   {
+    "cell_type": "markdown",
+-   "metadata": {
+-    "collapsed": true
+-   },
++   "metadata": {},
+    "source": [
+     "## Test Cases\n",
+     "\n",
+@@ -576,7 +597,7 @@
+    "name": "python",
+    "nbconvert_exporter": "python",
+    "pygments_lexer": "ipython3",
+-   "version": "3.6.1"
++   "version": "3.6.2"
+   }
+  },
+  "nbformat": 4,

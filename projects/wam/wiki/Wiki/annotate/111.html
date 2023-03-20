@@ -1,0 +1,997 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Wave Articulation Matrix - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../../../favicon.ico%3F1359925685.html' />
+<link href="../../../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+<link href="../../../../../stylesheets/scm.css%3F1359925542.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-wiki action-annotate">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../../../index.html" class="home">Home</a></li>
+<li><a href="../../../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="../../../../../search/index/wam.html" method="get">
+        <input name="wiki_pages" type="hidden" value="1" />
+        <a href="../../../../../search/index/wam.html" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Wave Articulation Matrix</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../../wam.html" class="overview">Overview</a></li>
+<li><a href="../../../activity.html" class="activity">Activity</a></li>
+<li><a href="../../../issues.html" class="issues">Issues</a></li>
+<li><a href="../../../news.html" class="news">News</a></li>
+<li><a href="../../../documents.html" class="documents">Documents</a></li>
+<li><a href="../../../wiki.html" class="wiki selected">Wiki</a></li>
+<li><a href="../../../boards.html" class="boards">Forums</a></li>
+<li><a href="../../../files.html" class="files">Files</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <div class="contextual">
+<a href="https://opendesignengine.net/projects/wam/wiki/Wiki/edit" class="icon icon-edit">Edit</a>
+<a href="../history.html" class="icon icon-history">History</a>
+</div>
+
+
+
+<h2>Wiki</h2>
+
+<p>
+Version <a href="https://opendesignengine.net/wiki/show/Wiki?version=111">111</a>
+<em>(Sean Logan, 08/15/2014 02:37 pm)</em>
+</p>
+
+
+
+<table class="filecontent annotate">
+<tbody>
+
+<tr class="bloc-0">
+    <th class="line-num">1</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=74.html">74</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>!https://opendesignengine.net/attachments/download/499/fountains-23.jpg!</pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">2</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=41">41</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">3</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=41">41</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">4</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-3">
+    <th class="line-num">5</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=111.html">111</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>*Fabrication and experimentation with Wave Articulation Matrices is encouraged.*</pre></td>
+</tr>
+
+<tr class="bloc-4">
+    <th class="line-num">6</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=82.html">82</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-4">
+    <th class="line-num">7</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=82.html">82</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">8</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=2">2</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>h1. Wave Articulation Matrix</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">9</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-6">
+    <th class="line-num">10</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=70.html">70</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>The Wave Articulation Matrix is composed of concentric steel cylinders.  The simplest design uses four cylinders.  More sophisticated devices may have 6, 8, or any even number of cylinders.</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">11</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">12</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=71.html">71</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 1.1:  &quot;Wave Articulation Matrix, 8-Element&quot;:https://opendesignengine.net/attachments/download/446/6frw2.jpg</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">13</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=71.html">71</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">14</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=71.html">71</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>All the cylinders have the same mass, and the same surface area.</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">15</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=71.html">71</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-8">
+    <th class="line-num">16</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=100.html">100</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Counting outwards from the innermost cylinder, the next cylinder&#x27;s length is equal to the length of the previous cylinder, divided by alpha.  Alpha is the constant of proportionality.  Here, it is 1.618034, the Golden Ratio.  See Fig. 1.2.</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">17</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">18</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=99.html">99</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>The cylinder circumferences follow a similar pattern.  Counting outwards from the innermost cylinder, the circumference of each cylinder is equal to that of the one immediately within it, multiplied by alpha.</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">19</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=99.html">99</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">20</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=99.html">99</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>This kind of proportionality is commonly referred to in antenna design as &quot;Log Periodic&quot;.  As in, a &quot;Log Periodic Dipole Array&quot;.</pre></td>
+</tr>
+
+<tr class="bloc-10">
+    <th class="line-num">21</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=92.html">92</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">22</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>The length of the innermost cylinder is equal to the circumference of the outermost cylinder.  The length of the outermost cylinder is equal to the circumference of the innermost.</pre></td>
+</tr>
+
+<tr class="bloc-10">
+    <th class="line-num">23</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=92.html">92</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-10">
+    <th class="line-num">24</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=92.html">92</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 1.2:  &quot;Physical Dimensions -- Side View -- 8-Element WAM&quot;:https://opendesignengine.net/attachments/download/439/side_dimensions.jpg</pre></td>
+</tr>
+
+<tr class="bloc-10">
+    <th class="line-num">25</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=92.html">92</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 1.3:  &quot;Physical Dimensions -- Top View -- 8-Element WAM&quot;:https://opendesignengine.net/attachments/download/455/top-view.gif</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">26</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=5">5</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 1.4:  &quot;Perspective Views -- 8-Element WAM&quot;:https://opendesignengine.net/attachments/download/451/primary-axis2.jpg</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">27</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">28</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=98.html">98</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>The WAM can be thought of as a Nested Waveguide.</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">29</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-8">
+    <th class="line-num">30</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=100.html">100</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>The volumes of space between the metal cylinders can be thought of as Resonant Cavities, or as sections of Cylindrical Coaxial Waveguide.  It is these cavities of space which are excited by the charging and discharging of the central cylinder.  RF forms in these cavities when the E field associated with the central cylinder collapses.</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">31</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">32</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 1.5:  &quot;The Fountain is a Log Periodic Nested Waveguide&quot;:https://opendesignengine.net/attachments/download/477/log-periodic2.jpg</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">33</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">34</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>If we want to build a 4-element Fountain around a 0.75 inch diameter acetel rod, using 0.002 inch thick steel shim stock, then Lambda = 10.008 inch.</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">35</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">36</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">37</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">38</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=105.html">105</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">39</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 1.6:  &quot;Example Dimensions -- 4-Element Fountain&quot;:https://opendesignengine.net/attachments/download/453/4wam.jpg</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">40</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 1.7:  &quot;Photo of a 4 Element Fountain&quot;:https://opendesignengine.net/attachments/download/498/4-wam-proto.jpg</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">41</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">42</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">43</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=105.html">105</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>*Method of Operation*</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">44</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Let&#x27;s call the innermost cylinder the Anode.</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">45</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">46</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>The anode is repeatedly charged and discharged.  Each time it is discharged, RF waves form in the cavities of space between the metal cylinders.  This RF can be picked up with Magnetic Loop Antennas inserted into the cavities and soldered to the wall.  See the section, Wiring Diagrams, below.  </pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">47</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=105.html">105</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">48</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=105.html">105</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">49</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=105.html">105</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">50</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=105.html">105</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>*Note   23 April 2014:*</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">51</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=105.html">105</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Iron-Nickel alloys  (Permalloy) exist which have much higher Magnetic Permeability than steel.  It might be interesting to construct a WAM out of Permalloy instead of steel.</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">52</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=105.html">105</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">53</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">54</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>h1.  Calculation of the Volumes of the Resonant Cavities</pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">55</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">56</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>&quot;Page 1&quot;:https://opendesignengine.net/attachments/download/517/lab-1.jpg</pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">57</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>&quot;Page 2&quot;:https://opendesignengine.net/attachments/download/518/lab-2.jpg</pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">58</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>&quot;Page 3&quot;:https://opendesignengine.net/attachments/download/519/lab-3.jpg</pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">59</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>&quot;Page 4&quot;:https://opendesignengine.net/attachments/download/520/lab-4.jpg</pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">60</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>&quot;Page 5&quot;:https://opendesignengine.net/attachments/download/521/lab-5.jpg</pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">61</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>&quot;Page 6&quot;:https://opendesignengine.net/attachments/download/522/lab-7.jpg</pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">62</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-3">
+    <th class="line-num">63</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=108.html">108</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>The next step is to find the cutoff frequency for each cavity.  Then, find which Modes are resonant within each one.  It may be wise to do this first algebraically (that is, with variables, instead of actual numbers).</pre></td>
+</tr>
+
+<tr class="bloc-3">
+    <th class="line-num">64</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=108.html">108</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-3">
+    <th class="line-num">65</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=108.html">108</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>We are also going to try doing a Method of Moments simulation to see what the standing waves look like within the cavities.</pre></td>
+</tr>
+
+<tr class="bloc-3">
+    <th class="line-num">66</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=108.html">108</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-4">
+    <th class="line-num">67</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=109.html">109</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Learn about Modes of Vibration</pre></td>
+</tr>
+
+<tr class="bloc-4">
+    <th class="line-num">68</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=109.html">109</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>&quot;Modes of Vibration&quot;:http://en.wikipedia.org/wiki/Mode_of_vibration</pre></td>
+</tr>
+
+<tr class="bloc-3">
+    <th class="line-num">69</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=108.html">108</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">70</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">71</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=110.html">110</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">72</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=110.html">110</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>h1.  It&#x27;s like Music, Played with Light</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">73</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=110.html">110</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">74</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=110.html">110</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Think of the resonant cavities as bells.  The larger ones ring at a lower frequency; the smaller ones ring at a higher frequency.  When you strike the bells, they ring.  All the bells ring together.</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">75</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=110.html">110</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">76</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=110.html">110</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>How do you strike the bells?</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">77</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=110.html">110</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">78</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=110.html">110</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>The Pulse Forming Network is charge up.  The innermost metal cylinder is connected to the high side of the PFN.  Thus there is an electric field surrounding the central cylinder.  When the PFN discharges through the top of this cylinder, this electric field collapses.  The collapse of the E field induces a magnetic field, which spins CCW around the cylinders, when viewed from above.  Where the E and B fields cross, we take the vector cross product to find the photon flux.</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">79</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=110.html">110</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">80</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=110.html">110</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Discharging the PFN is analogous to striking a bell.</pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">81</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=110.html">110</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">82</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=110.html">110</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-5">
+    <th class="line-num">83</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=110.html">110</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">84</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>h1.  Correct Orientation of the Magnetic Loop Antenna within the Cavity</pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">85</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">86</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>&quot;Correct Orientation of the Magnetic Loop Antenna within the Cavity&quot;:https://opendesignengine.net/attachments/download/524/interlink-flux.jpg</pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">87</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">88</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">89</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>h1.  RF Bypass Capacitor on the Output Stage</pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">90</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">91</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>&quot;RF Bypass Cap.&quot;:https://opendesignengine.net/attachments/download/523/rf-cap.jpg</pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">92</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">93</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=97.html">97</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-6">
+    <th class="line-num">94</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=38">38</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-6">
+    <th class="line-num">95</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=38">38</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">96</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=55">55</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-8">
+    <th class="line-num">97</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=58">58</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>h1.  Two Waves, Whose Frequencies are Consecutive Integer Powers of the Golden Ratio, Heterodyne in a Unique Way</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">98</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=55">55</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">99</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=55">55</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 9.1:  &quot;Powers of the Golden Ratio&quot;:https://opendesignengine.net/attachments/download/450/golden-ratio-powers.gif</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">100</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=55">55</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 9.2:  &quot;...Heterodyne to Produce More Terms of the Series&quot;:https://opendesignengine.net/attachments/download/441/heterodyne.gif</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">101</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=55">55</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">102</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=55">55</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">103</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=55">55</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">104</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=55">55</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">105</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=75.html">75</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>h1.  Casting Resonant Cavities in Epoxy</pre></td>
+</tr>
+
+<tr class="bloc-7">
+    <th class="line-num">106</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=55">55</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">107</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=75.html">75</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>In a 4 Element Fountain, there are three resonant cavities.</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">108</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=75.html">75</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">109</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=75.html">75</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 10.0:  &quot;There are three Resonant Cavities in a 4 Element Fountain&quot;:https://opendesignengine.net/attachments/download/500/cavities-resonant.jpg</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">110</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=75.html">75</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">111</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=75.html">75</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Let&#x27;s cast these volumes of space out of epoxy resin.</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">112</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=75.html">75</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-10">
+    <th class="line-num">113</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=79.html">79</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>We will make urethane molds to cast in.  The positives, from which the molds are made, are turned on a lathe from Acetel (Delrin).  Here are the dimensions for the positives for the 4 element fountain with Lambda = 10.008 inches.</pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">114</th>
+    <td class="revision"><a href="https://opendesignengine.net/projects/wam/wiki/Wiki?version=1">1</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">115</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=80.html">80</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 10.1:  &quot;Positive for Mold, Cavity A&quot;:https://opendesignengine.net/attachments/download/504/positive_a.jpg</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">116</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=80.html">80</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 10.2:  &quot;Positive for Mold, Cavity B&quot;:https://opendesignengine.net/attachments/download/505/positive_b.jpg</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">117</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=80.html">80</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 10.3:  &quot;Positive for Mold, Cavity C&quot;:https://opendesignengine.net/attachments/download/506/positive_c.jpg</pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">118</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=80.html">80</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 10.4:  &quot;Acetel Rod for Central Element&quot;:https://opendesignengine.net/attachments/download/507/positive_d.jpg</pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">119</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=78.html">78</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-11">
+    <th class="line-num">120</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=80.html">80</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 10.5:  &quot;Epoxy sections and their dimensions&quot;:https://opendesignengine.net/attachments/download/508/mold.jpg</pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">121</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=78.html">78</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">122</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=78.html">78</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>-Fig. 10.1:  &quot;Positives for Molds pt. 1&quot;:https://opendesignengine.net/attachments/download/502/positives-1.jpg</pre></td>
+</tr>
+
+<tr class="bloc-0">
+    <th class="line-num">123</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=78.html">78</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>Fig. 10.2:  &quot;Positives for Molds pt. 2&quot;:https://opendesignengine.net/attachments/download/503/positives-2.jpg-</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">124</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=75.html">75</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-1">
+    <th class="line-num">125</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=81.html">81</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>The disc is to hold the central shaft centered within the mold while the epoxy cures.  The positives are each about one inch taller than the actual epoxy pieces, so we have some room to work with and the molds don&#x27;t overflow.</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">126</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=75.html">75</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="bloc-2">
+    <th class="line-num">127</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=103.html">103</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre>*This is just one way of doing it.*  We could also make one positive and mould for each resonant cavity, and cast each one as a separate piece, then assemble them.  I think this way would be better, but it will be tricky soldering the magnetic loop antennas onto the previous cylinder.</pre></td>
+</tr>
+
+<tr class="bloc-9">
+    <th class="line-num">128</th>
+    <td class="revision"><a href="../../Wiki%3Fversion=75.html">75</a></td>
+    <td class="author">Sean Logan</td>
+    <td class="line-code"><pre></pre></td>
+</tr>
+
+<tr class="

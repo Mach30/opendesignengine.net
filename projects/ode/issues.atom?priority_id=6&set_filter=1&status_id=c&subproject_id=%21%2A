@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/ode/issues.atom?priority_id=6&amp;amp;set_filter=1&amp;amp;status_id=c&amp;amp;subproject_id=%21%2A"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/ode/issues?priority_id=6&amp;amp;set_filter=1&amp;amp;status_id=c&amp;amp;subproject_id=%21%2A"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2012-11-18T13:38:31+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #90 (Resolved): Self registration page renders ToS as source code instead of formatted text</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/90"/>
+    <id>http://opendesignengine.net/issues/90</id>
+    <updated>2012-11-18T13:38:31+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Like the description says.  This really should be fixed before we announce the public beta.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #43 (Closed): Getting error when browsing repositories</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/43"/>
+    <id>http://opendesignengine.net/issues/43</id>
+    <updated>2011-11-03T00:44:44+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;If you browse to the &lt;strong&gt;Repository&lt;/strong&gt; (such as in the &lt;a href="https://opendesignengine.net/projects/sandbox/repository" class="external"&gt;repo&lt;/a&gt; in the sandbox project) tab in a project you get the following error:&lt;/p&gt;
+
+
+&lt;pre&gt;
+An error occurred when trying to access the repository: Cannot allocate memory - 'svn' list --xml 'https://opendesignengine.net/svn/sandbox/'@HEAD --no-auth-cache - non-interactive
+&lt;/pre&gt; 
+
+	&lt;p&gt;This appears to be related to issues in Redmine.&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;a class="external" href="http://www.redmine.org/issues/7699"&gt;http://www.redmine.org/issues/7699&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class="external" href="http://www.redmine.org/issues/9337"&gt;http://www.redmine.org/issues/9337&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class="external" href="http://www.redmine.org/issues/7528"&gt;http://www.redmine.org/issues/7528&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Support #31 (Closed): Install SSL support to live ODE server</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/31"/>
+    <id>http://opendesignengine.net/issues/31</id>
+    <updated>2011-05-08T06:01:53+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Research, purchase, and configure a signed SSL cert.  Once done, configure http to redirect to https for all paths.  Be sure to test SVN over https.&lt;/p&gt;    </content>
+  </entry>
+</feed>

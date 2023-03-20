@@ -1,0 +1,53 @@
+You need to get a 3D printer, or get direct access to one. There are an increasing number of options for getting past this step. You can create your own design from scratch. You can assemble the parts for a preexisting design. You can buy a kit. You can buy an assembled printer. You can even buy a printer that has been assembled, calibrated, and successfully printed something already. You can also find someone who is themselves pursuing one of those options and make friends with them.
+
+Keep in mind that the more you pay for your printer the more likely it is to try to make your life easy. That means that important controls will be pre-configured. It will probably work just fine at first. But over time things will go wrong, or you will want to do more, and it might be harder to get access to the power-user level of control. The more a printer and/or its software tries to do for you the more likely it is to create complex interactions so that you can't change one thing without unknowningly changing other things (if you can change things at all).
+
+To a lesser extent, you can simply use a printing service. However, you will have so little control over what they actually do that it will be nearly impossible to learn, or apply what you know to affect the outcome. 
+
+If you already have a printer, or access to one, then you need to get the proper tools and materials for it. If you skimp on this part you will only be able to get good results through luck.
+
+The reason this section is first is that what you do here lays the foundation for everything that follows. If you run into some problem or limitation that seems to have no explanation, it probably means there is a problem in these founding choices. Maybe the printer you chose has motor drivers that are not properly tuned to the stepper motors. Maybe the brand of painter's tape you chose was manufactured to low tolerances so it peels up unpredictably. Maybe the filament you chose has air holes inside or changes diameter each meter. It can sometimes be nearly impossible to prove these sorts of things are the root cause.
+
+This guide will refer to:
+* a 3D printer 
+** FFF (Fused Filament Fabrication)
+** cartesian
+** less popular alternatives like stereolithography and delta-style to be added later
+* plastic filament
+** ABS
+** PLA
+** less popular alternatives like nylon to be added later
+* precise measurement
+** vernier caliper
+** micrometer
+** IR thermometer
+* tools
+** pallet knife
+** screwdrivers
+** hex drivers
+** knives
+** files
+** needlenose pliers
+** tweezers
+** sharpies
+* tape
+** kapton
+** painter's tape
+* fluids
+** acetone
+** rubbing alcohol
+** lubricant
+* computer
+** personal computer
+** USB cable
+* software
+** 3D model creation software
+** 3D model manipulation software
+** host software
+** printer firmware
+
+references
+* http://reprap.org/wiki/The_incomplete_reprap_beginner%27s_guide
+* http://reprap.org/wiki/Required_Tools
+* http://reprap.org/wiki/Comparison_of_RepRap_Toolchains
+* http://reprap.org/wiki/Useful_Software_Packages

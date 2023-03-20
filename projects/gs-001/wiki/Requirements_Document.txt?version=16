@@ -1,0 +1,165 @@
+h1. Ground Station Requirements Document v1.0
+
+{{toc}}
+
+h3. Introduction
+
+This requirements document is currently being discussed on the forums "here":https://opendesignengine.net/boards/18/topics/287.  The requirements list matches up to the Initial Questions in step one of the Systems Engineering process as shown below. Each requirement is labeled with GSR (Ground Station Requirement), followed by the number of the "initial question":https://opendesignengine.net/projects/gs-001/wiki/Initial_Questions that the requirement corresponds to, followed by a dot and then the ID number of the requirement.
+
+* *GSR 1.x* - Why are we making this?
+* *GSR 2.x* - Who is this for?
+* *GSR 3.x* - How will this be used?
+* *GSR 4.x* - What features does it need to have (now)?
+* *GSR 5.x* - What features does it need to have (later)?
+* *GSR 6.x* - What are the legacy requirements?
+* *GSR 7.x* - Who's going to build this?
+* *GSR 8.x* - How many do we want to make?
+* *GSR 9.x* - What is the budget?
+* *GSR 10.x* - What is the timeline?
+* *GSR 11.x* - What waste products will be produced by the manufacture and/or operation of this?
+
+
+h3. Technical Requirements
+
+Technical requirements are those requirements which include measurable performance values.  Each technical requirement should be verified through testing to ensure the design meets the requirement.
+
+* *GSR 1.1* The ground station must be able to receive satellite signals within the designated amateur radio bands.
+* *GSR 1.2* The ground station must be able to transmit and be received by satellites in orbit.
+* *GSR 1.3* The ground station must be portable to enable live demonstrations as part of educational and outreach activities including remote field use.
+** *GSR 1.3.1* The portable (Version 1) ground station's total weight shall be less than 20kg and be able to break into components which do not exceed 75cm by 50 cm by 20 cm on any axis to ensure backpack portability.
+** *GSR 1.3.2* The ground station must be transportable by a single person.
+* *GSR 1.4* The external components of the ground station must be weatherproof.
+* *GSR 1.5* The external components of the ground station must be able to be mounted securely to a structure or vehicle.
+
+* *GSR 2.1* The ground station must be designed so that the components may be quickly and easily set up and torn down by minimally qualified personnel.
+* *GSR 2.2* See GSR3.2.1
+* *GSR 2.3* The major assemblies must either be commercially available or “kitified”.
+* *GSR 2.4* Clear and simple instructions on the use of  the ground station's major components as well as instructions on the use of the ground station as a whole must be publicly available.  
+
+* *GSR 3.1* The user constructing the ground station will be expected to provide their own equipment as follows:
+** *GSR 3.1.1* A laptop or other portable computer.
+** *GSR 3.1.2* A dual band (UHF/VHF) amateur band handheld transceiver (HT) with at least 5W output transmit power.
+* *GSR 3.2* The ground station will be used in a manner consistent with relevant laws.
+** *GSR 3.2.1* The design, construction and operation of the ground station and components will comply with "FCC regulation under CFR Title 47 part 97":http://www.ecfr.gov/cgi-bin/text-idx?c=ecfr&SID=273eb7d322bf9d317063be6dc8908e9c&rgn=div5&view=text&node=47:5.0.1.1.6&idno=47
+** *GSR 3.2.2* Users in other countries are expected to comply with regulations specific to their country and region in the construction, operation, and use of the ground station and components.
+* *GSR 3.3* The ground station software will be able to perform the following tasks:
+** *GSR 3.3.1* Predict the time and bearing of satellite acquisition of signal (AOS) and loss of signal (LOS) with respect to receiver location (it may not take into account local obstructions like buildings or mountains).
+** *GSR 3.3.2* Display a record of known satellites, their transponder, and transceiver frequencies. 
+** *GSR 3.3.3* Identify the expected uplink and downlink doppler shift.
+** *GSR 3.3.4* The software must work with Microsoft Windows, Mac OSX, and Linux operating systems.
+* *GSR 3.4* The operator of the ground station will be able to perform the following tasks:
+** *GSR 3.4.1* Contact the satellite for verification of signal an telemetry (not possible with all satellites).
+** *GSR 3.4.2* Contact ground personnel beyond the visual or radio horizon through the satellite (possible only with amateur communication satellites supporting a repeater mode).
+** *GSR 3.4.3* Contact manned spacecraft which are able to transmit and received on amateur frequencies such as ISS. 
+
+* *GSR 4.1* Mobile Ground Station
+** *GSR 4.1.1* See GSR 2.1
+** *GSR 4.1.2* Mobile ground station unpack and set up time should be less than 15 min.
+** *GSR 4.1.3* Mobile ground station break down and pack time should be less than 15 min.
+* *GSR 4.2* Stationary ground station
+** *GSR 4.2.1* The stationary ground station antenna must be easily attached to a structure or vehicle. 
+** *GSR 4.2.2* Stationary ground station should come on line in less than 5 min.
+* *GSR 4.3* Packaging:  The ground station equipment shall be easy to package for shipment.
+** *GSR 4.3.1* The entire mobile ground station system, safety equipment, and required tools (if any) shall fit in a medium to large backpack with laptop sleeve.  See also GSR 1.3.1
+** *GSR 4.3.2* Given that the eggbeater omnidirectional antennas are bulky and crushable, the antenna design shall be made to disassemble or collapse into a flat, crush resistant package.
+* *GSR 4.4* Antenna:  The antenna system must be
+** *GSR 4.4.1* Weatherproof. See GSR 1.4
+** *GSR 4.4.2* Tuned to produce Vertical Standing Wave Ration (VSWR) no greater than 1.5.
+** *GSR 4.4.3* Designed and constructed to allow easy shipping as well as transport. See GSR 4.3.2.
+* *GSR 4.5* Grounding and protection:   
+** *GSR 4.5.1* Stationary ground station installations must be properly grounded to a grounding rod, vehicle frame, or metal water pipe.
+** *GSR 4.5.2* Stationary ground station installations must have lightning protection installed in line with the transmission line(s) between the antenna and radio.
+** *GSR 4.5.2* Mobile ground station antenna systems may be grounded using a temporary ground spike driven into the ground.
+* *GSR 4.6* Radio equipment:  The radio transceiver shall
+** *GSR 4.6.1* tune to the amateur radio VHF band from 144 to 148 MHz.
+** *GSR 4.6.2* tune to the amateur radio UHF band from 430 to 440 MHZ.
+** *GSR 4.6.3* Operate in full duplex, simultaneously transmit on one frequency while receiving on another.
+* *GSR 4.7* Computer and software system.
+** *GSR 4.7.1* The software shall be “OS Agnostic” as indicated in GSR 3.3.4.
+** *GSR 4.7.2* The computer hardware used in the mobile ground station must operate under it's own power for the duration of the satellite encounter.
+
+* *GSR 6.1* Transmitting will require HAM radio licenses (technician level or greater) in the US. Other countries may have other requirements.  See GSR 3.2.1
+* *GSR 6.2* Any software should run on all three major PC platforms (MS Windows, Mac OS X, and Linux).  See GSR 3.3.4.
+* *GSR 6.3* The portable ground station system must use standardized connections to allow for greater flexibility in it's deployment (BNC for RF signals and USB, Ethernet, or similar connections for the computer).
+
+h3. Project Requirements
+
+Project requirements are the remaining requirements which are not tied to specific performance values.
+
+* *GSR 2.1* The ground station must be well documented so as to meet the needs of open source spaceflight designers who will design and build future ground station equipment (at Mach 30 and elsewhere).
+* *GSR 2.2* The ground station documentation and procedures must be complete enough that Mach 30 operators, students and educators who want to bring aerospace communications engineering into the classroom, and anyone else interested in how to communicate with satellites can learn how.
+* *GSR 2.3* The ground station documentation must cover the setting up the mobile ground station, permanent installation, basic software operation, basic operation and protocol, breaking down and stowing the equipment.
+* *GSR 2.4* The ground station operations manual shall include a section on safety to include RF safety and precautions necessary to operate grounded equipment outdoors.
+
+* *GSR 7.1* All design documentation must be open and complete enough so that ANYONE, without necessarily an education in radio engineering, would be able to build the ground station and operate it once the proper licensing requirement has been satisfied.  See GSR 3.2.1.
+
+* *GSR 8.1* The design of the ground station must enable the completion of at least one operational unit.
+* *GSR 8.2* Whenever and wherever possible, considerations should be made so that the design of the ground station components allow them to be used in a kit in the future.  See GSR 2.3
+
+* *GSR 9.1* The cost of the first operational ground station must not exceed $200 excluding "consumables", tools, computer system, and radio transceiver.  See GSR 3.1  It should be noted that this amounts to only the antenna system in this entry level system.
+
+* *GSR 10.1* If possible, the first ground station should be completed within 3 months of formal launch as an exercise in agile design and project management.  It should be noted that this amounts to only the antenna system and software installation on the computer system.  
+
+* *GSR 11.1* Elements from earlier versions will be reused or kept as backups. 
+* *GSR 11.2* Any components that wear out, fail, or are damaged must be disposed up according to all federal, state and local guidelines in the US, or as regulations require in other parts of the world.
+* *GSR 11.3* Attention shall be paid into the durability of the design to keep waste to an absolute minimum.  See GSR 4.3.2.
+* *GSR 11.4* Wherever possible, the ground station's design should make it as easy as possible to replace components which are consumable or relatively easy to damage.
+
+h3. Future V2.0 Requirements
+
+These are for reference only so that future features can be accommodated in the current design where practical.
+
+*Version 2.0:*
+* *GSR 5.1* Direct computer control of receive and transmit frequencies to automatically compensate for doppler shift.  Requires a supported radio as listed "here.":https://opendesignengine.net/attachments/209/Supported_Radios.xls
+* *GSR 5.2* A higher gain directional antenna system (such as X-yagis), an antenna rotator assembly which connects to the computer to automatically control azimuth and elevation.
+
+*Beyond Version 2.0:*
+* *GSR 5.5* Version 3.0 will use a Software Defined Radio (SDR) as a receiver for higher sensitivity, direct recording, data demodulation (digital modes), and visualization of the downlink feed.
+* *GSR 5.6* Version 4.0 will feature the addition of a dish to the tracking assembly as well as an L-band SDR transciever to hit the command and control frequencies.  This will doubtless require more software to send commands and receive telemetry.
+* *GSR 5.7* Version 5.0 will feature real time conversion of data and audio streams into a VPN'd link to a common database and network would allow multiple ground stations to act as one.  This would require time stamping the packets and synchronizing using high precision GPS receivers on each ground station.
+
+h3. Glossary
+
+Azimuth - A coordinate system of relative direction based upon polar direction in degrees parallel to the ground where 0 is true north.
+BNC - A type of quick disconnect radio frequency connector which needs no tools to connect or disconnect from the jack.
+Consumables - Items that are used and then discarded such as nylon zip ties or cleaning wipes.
+Demodulation - The conversion of an analog signal to audio or digital information.  
+Directional - In this context, antennas which function best in one direction.
+Dish - Parabolic dish (short form).  In this context, a highly directional antenna system characterized by a parabolic reflector dish and a feed horn in the focal point.
+Doppler shift - Frequency shift caused by relative motion between the sender and receiver.
+Downlink - The signal from a spacecraft to the ground station(s).
+Duplex - In this context, the capability to send and receive at the same time.
+Elevation - A coordinate system of relative direction ranging from 0 degrees, parallel to the ground, to 90 degrees, straight up or zenith.
+Feed Horn - A radio antenna and in some cases preamplifier (LNA) fixed to the vocal point of a parabolic dish.
+Full Duplex - See Duplex.
+GPS - Global Positioning System.  While primarily used for navigation, the signal contains a precision time base.
+GS - Ground Station (short form).
+Half Duplex - The ability to transmit or receive, but not at the same time.
+Ham - Amateur radio operator.
+HT - Handheld Transceiver
+IAW - In Accordance With (short form).
+Kitified - Designed to be made into a kit.
+L-band - In this context, the Amateur radio frequency range from 1,240 to 1,300 MHz.  Amateur satellite up-links are in the frequency range from 1,260 to 1,270 MHz
+LNA - Low Noise Amplifier.  A high performance antenna and preamplifier combined in a single assembly mounted to the focal point of a parabolic dish. 
+Modulation - Embedding an analog or digital information on an analog signal.
+Omni - See Omnidirectional
+Omnidirectional - In this context, antennas capable of functioning in any direction
+OH - Open Hardware
+OS - Operating System, also Open Source
+Preamp - See Preamplifier
+Preamplifier - An amplifier designed to be mounted between an antenna and radio receiver.
+Repeater - A transciever set up to rebroadcast a signal on a different frequency for extended coverage.
+RF - Radio Frequency
+Rotator - A device to point a dish or directional antenna at the signal source, in this context a satellite.
+SDR - Software Defined Radio. A radio system where its capabilities and tuning are defined in software.
+Sensitivity - The ability of a radio receiver to pick up a faint signal.  Measured in -dB where a higher negative number is more sensitive on a logarithmic scale.
+SWR - Standing Wave Ratio.  A factor of antenna system efficiency based upon matching components.  Measured in a ratio with no units.
+Timebase - In this context, a time measurement system which may be synchronized with others using a central source.
+Transceiver - A transmitter and receiver combined in one physical unit.
+UHF - Ultra High Frequency.  In this context, the amateur radio UHF band from 430 to 440 MHZ.
+Uplink - The signal from the ground station to the satellite.
+USB - Universal Serial Bus.  A physical data transfer standard for computer equipment.
+VHF - Very High Frequency.  In this context, the amateur radio VHF band from 144 to 148 MHz.
+VPN - Virtual Private Network. A private and secure method of transferring data on the public Internet.
+VSWR - See SWR.
+Yagi - A type of directional antenna characterized by multiple straight elements mounted in parallel on a common backbone.

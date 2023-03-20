@@ -1,0 +1,9 @@
+back [[Technology Evaluation]]
+h1. Aerodynamics Card Storming
+
+h2. Unsorted list of ideas
+
+* Wind Tunnel Projects (a'la the Shepard Test Stand)
+* survey all of the rocket aerodynamics software and rank by utility, ease-of-use, and openness
+* port J's masters thesis on fin flutter analysis/optimization to open source tools
+* parametric #CodeCAD models of fins (suitable for 3D printing, milling, and drafting)

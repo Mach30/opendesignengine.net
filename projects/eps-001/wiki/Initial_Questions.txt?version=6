@@ -1,0 +1,75 @@
+h1. Power/Temp Monitor and Control System (EPS/ECLSS) Initial Questions
+
+{{toc}}
+
+h3. Q1. Why are we making this?
+
+This product is being made on request by a local business, a Wireless Internet Service Provider (WISP) who needs to monitor charge rate, currents, voltages, and temperatures in enclosures to estimate battery life and become informed of issues.  These enclosures are at the top of 13-14,000 foot mountains and up radio towers, so durability and remote diagnostic information are the key.
+
+h3. Q2. Who is this for?
+
+Primary client is a WISP, but the system will also work for HAB and satellite payloads with similar needs.
+
+h3. Q3. How will this be used?
+
+The unit will monitor voltages and currents to determine system health and charge/discharge rates.  This data coupled with ambient temperature sensing will accurately indicate battery life as well as provide diagnostic information before driving hundreds of miles, climbing to the top of a radio tower on the top of a snow covered peak only to find that you need a part which you did not bring with you.
+
+h3. Q4. What features does it need to have (now)?
+
+* Low power consumption
+* The ability to measure ambient temperature
+* Measure current flow and voltage on two circuits
+* Measurement data reported via Ethernet.
+
+h3. Q5. What features does it need to have (later)?
+
+* Local serial communications to enable integration in HAB or satellite bus
+* The ability to cut and engage power on local or remote command or by timer
+* Power circuits monitored and controlled using remote boards connected by serial bus such as SPI
+* Programmable sequenced power up, power down, and low power modes
+* Multiple point temperature sensing
+* Heater control circuits
+* Extra GPIO for further sensing and control
+* Simple setup and control by local web page
+
+h3. Q6. What are the legacy requirements?
+
+* System must be able to operate on a lead acid battery at 12 or 24 VDC.  These values represent 15-30 real volts during charging.
+* System must be able to measure output of the solar array, which could go as high as 70 volts during an open circuit event.
+* System must be able to operate at -40C to report issues in the worst conditions
+* System must be able to operate at +80C to report issues in the worst conditions
+
+h3. Q7. Who's going to build this?
+
+The production units for the client will be built in Aaron's lab facility which has a static safe workstation.  As this is an open hardware design, anyone is welcome to build as many as they like. 
+
+h3. Q8. How many do we want to make?
+
+The initial production run is for about 40 units.  As this is an open hardware design, anyone is welcome to build as many as they like. 
+
+h3. Q9. What is the budget?
+
+The price to beat for this system is $2000 per unit.  My design goal is to keep it under $100 cost per unit which will be sold to the client at cost plus labor.
+
+h3. Q10. What is the timeline?
+
+ASAP.  This product was needed by the client before the onset of winter, but he didn't know it this was possible within his budget.  Going to a national WISP conference, he determined that his need was common in the industry.  The development schedule follows:
+
+* Project inception on ODE - 29 JAN @ 1200 *Completed*
+* SEP Step 1: Initial Questions - 29 JAN @ 1400 *Completed*
+* SEP Step 2: Requirements Document - 29 Jan @ 1600 *Completed*
+* SEP Step 3: Block Diagram - 29Jan @ 1900 *Completed*
+* SEP Step 4: Preliminary Design - 30 Jan @ 1700 *Completed*
+* SEP Step 6: Detailed Design - 31 Jan @ 1700 *Completed, PCB layout scheduled for 25 FEB 2013*
+* SEP Step 7a: Design Review (filed) - 01 Feb @ 0800 *Completed*
+* SEP Step 7b: Design Review (returned) - 04 Feb @ 1400
+* SEP Step 8: Parts ordering - 04 Feb 1500
+* SEP Step 9: Assembly - begins 18 Feb @ 0800 or earlier depending on parts availability
+* SEP Step 10: Integration - none necessary.  testing and deployment meet this need.
+* SEP Step 11: Testing - begins immediately after assembly is complete and continues until delivery or deployment.
+* SEP Step 12: Delivery/Deployment - 04 Mar @ 0800
+* SEP Step 13: Disposal - Unknown, TBA
+
+h3. Q11. What waste products will be produced by the manufacture and/or operation of this?
+
+Unknown.  All E-waste must be handled in an environmentally responsible manner in compliance with applicable law.

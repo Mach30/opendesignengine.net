@@ -1,0 +1,112 @@
+// OSHW Make Magazine Hackerspace Workbench
+
+// parameters (all dimensions in inches)
+four = 3.5;
+two = 1.5;
+legHeight = 34;
+tableLength = 48;
+aLength = tableLength;
+bLength = tableLength;
+tableDepth = 30;
+cLength = tableDepth - (2*two + four);
+topThickness = 23/32;  // check receipt
+
+module topSurface() {
+	translate([0,0,topThickness/2])
+		cube([tableLength, tableDepth, topThickness], center=true);
+}
+
+module shelfSurface() {
+	translate([0,0,topThickness/2])
+		cube([tableLength - 2*(four+two), tableDepth-(four), topThickness], center=true);
+}
+
+module leg() {
+	translate([0,0,legHeight/2])
+		cube([four,four,legHeight], center=true);
+}
+
+module partA() {
+	translate([0,0,two/2])
+		cube([aLength,four,two], center=true);
+}
+
+module partB() {
+	translate([0,0,four/2])
+		cube([bLength,two,four], center=true);
+}
+
+module partC() {
+	translate([0,0,four/2])
+		cube([two,cLength,four], center=true);
+}
+
+module top(){
+	translate([0,-(cLength + two)/2,0])
+		partB();
+	translate([-(bLength - two)/2,0,0])
+		partC();
+	translate([-(bLength)/6,0,0])
+		partC();
+	translate([(bLength)/6,0,0])
+		partC();
+	translate([(bLength - two)/2,0,0])
+		partC();
+	translate([0,(cLength + two)/2,0])
+		partB();
+	translate([0,-four/2,four])
+		topSurface();
+	translate([0,-(cLength + four + 2*two)/2,(four-two)])
+		partA();
+}
+
+module partD() { 
+	translate([0,0,four/2])
+		cube([bLength-2*two,two,four], center=true);
+}
+
+module legs() {
+	// actual legs
+	translate([-(bLength - four - 2*two)/2,-(cLength - four)/2,0])
+		leg();
+	translate([-(bLength - four - 2*two)/2,(cLength - four)/2,0])
+		leg();
+	translate([(bLength - four - 2*two)/2,-(cLength - four)/2,0])
+		leg();
+	translate([(bLength - four - 2*two)/2,(cLength - four)/2,0])
+		leg();
+}
+
+module shelf(height) {
+	translate([0,-(cLength + two)/2,height-four])
+		partD();
+	translate([0,(cLength + two)/2,height-four])
+		partD();
+	translate([-(bLength - two)/2 + (four+two),0,height-four])
+		partC();
+	translate([(bLength - two)/2 - (four+two),0,height-four])
+		partC();
+	translate([-(bLength)/6,0,height-four])
+		partC();
+	translate([(bLength)/6,0,height-four])
+		partC();
+	translate([0,0,height])
+		shelfSurface();
+}
+
+module workBench(shelfHeight) {
+	translate([0,0,legHeight - four])
+		top();
+	legs();
+	shelf(shelfHeight);
+}
+
+translate([-24,0,0])
+	workBench(17);
+/*translate([-(24+48),0,0])
+	workBench(17);
+translate([24,0,0])
+	workBench(10);
+translate([24+48,0,0])
+	workBench(10);
+*/

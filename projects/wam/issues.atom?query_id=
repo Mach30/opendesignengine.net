@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Wave Articulation Matrix: Issues</title>
+  <link href="http://opendesignengine.net/projects/wam/issues.atom?query_id=" rel="self"/>
+  <link href="http://opendesignengine.net/projects/wam/issues?query_id=" rel="alternate"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2022-12-05T17:50:07+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+</feed>

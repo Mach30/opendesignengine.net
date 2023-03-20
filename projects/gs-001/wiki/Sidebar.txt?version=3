@@ -1,0 +1,35 @@
+h3. [[Sidebar|Navigation]]
+
+h3. Ground Station
+
+* General Overview
+
+h4. Systems Engineering Process
+
+# [[Initial Questions|Initial Questions]]
+# [[Requirements Document|Requirements Document]]
+# [[Block Diagram|Block Diagram]]
+# Architecture Study
+# Preliminary Design
+# Detailed Design
+# Design Review
+# Procurement/Manufacture
+# Assembly
+# Integration
+# Testing
+# Disposal
+
+h4. Documentation
+
+# Budget
+# Timeline
+# BOM
+# Schematics and PCB Files
+# Software Source Code
+# Assembly Instructions
+# Operating Manual
+# Safety Procedures
+# Software/Firmware Summary
+# Meeting Minutes
+# [[Licensing and Attribution|Licensing and Attribution]]
+# Errata

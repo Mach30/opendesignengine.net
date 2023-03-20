@@ -1,0 +1,10 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+6,Closed,Open Design Engine,Feature,Normal,Add wiki external format plugin as basis for wiki enhancements,"","",v0.4 - Wiki Enhancements,J. Simmons,04/08/2011,"",0,"","",04/08/2011 02:51 am,04/30/2014 12:55 pm,"Evaluate this ""plugin"":http://www.redmine.org/boards/3/topics/10649 for use in wiki.  Possible features it would support include:
+
+* LaTeX style equations
+* UML diagrams
+* Embedded graphs
+* Videos(?) - see comments
+
+Need to look at how the underlying programs relate to the ODE distro and what will need to be placed in SVN to distribute this feature."
+9,Closed,Open Design Engine,Feature,Normal,Improve Wiki PDF export,"","",v0.4 - Wiki Enhancements,J. Simmons,04/08/2011,"",0,"","",04/08/2011 02:57 am,04/30/2014 12:54 pm,"Install this ""plugin"":http://www.redmine.org/plugins/redmine_doc_pu.  Remember to store in svn for inclusion in the distribution.  Be sure to consider the need for supporting software and how this impacts the distribution of ODE."

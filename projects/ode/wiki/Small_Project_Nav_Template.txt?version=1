@@ -1,0 +1,28 @@
+h3. [[Sidebar|Navigation]]
+
+h3. <Project Name>
+
+* [[Wiki|Home]]
+* [[Versions]]
+* [[Backers]]
+
+h4. Documentation
+
+# [[BoM|Bill of Materials]]
+# [[Assembly Instructions]]
+# [[Operating Manual]]
+# [[Schematics and PCB Files]]
+# [[Software Source Code]]
+# [[Software/Firmware Summary]]
+# [[Errata]]
+
+h4. Design Process
+
+# [[Initial Questions]]
+# [[Block Diagram]]
+# [[Detailed Design]]
+# [[Manufacture]]
+# [[Integration]]
+# [[Testing]]
+# [[Meeting Minutes|Meeting Minutes/Notes]]
+# [[Resources|Resources/Links]]

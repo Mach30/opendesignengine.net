@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/ode/issues.atom?priority_id=5&amp;amp;set_filter=1&amp;amp;status_id=c&amp;amp;subproject_id=%21%2A"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/ode/issues?priority_id=5&amp;amp;set_filter=1&amp;amp;status_id=c&amp;amp;subproject_id=%21%2A"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2012-09-17T21:54:04+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #76 (Resolved): Cannot Download Files From DMSF</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/76"/>
+    <id>http://opendesignengine.net/issues/76</id>
+    <updated>2012-09-17T21:54:04+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;When trying to download files from DMSF on the Far Horizons HAB project, I get the attached error.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a class="external" href="https://opendesignengine.net/dmsf/far-horizons-project?folder_id=8"&gt;https://opendesignengine.net/dmsf/far-horizons-project?folder_id=8&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;This error happens on both Chrome 21.0.1180.81 and Firefox 14.0.1 both running on Linux.&lt;/p&gt;    </content>
+  </entry>
+</feed>

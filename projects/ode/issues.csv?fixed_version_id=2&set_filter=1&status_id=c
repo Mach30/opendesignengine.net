@@ -1,0 +1,30 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+12,Closed,Open Design Engine,Feature,Normal,Require all projects to have Open Source licenses,"","",v0.2 - Public Beta,J. Simmons,04/08/2011,"",100,"","",04/08/2011 03:14 am,07/16/2019 06:02 am,"Write plugin to require projects list an approve license (OSI for software, OSHW for hardware)."
+71,Resolved,Open Design Engine,Bug,Normal,DMSF upload panel lists filenames as undefined,"","",v0.2 - Public Beta,J. Simmons,08/28/2012,"",100,"","",08/28/2012 09:11 pm,11/18/2012 01:24 pm,This is an issue with DMSF (see http://code.google.com/p/redmine-dmsf/issues/detail?id=157 for details).  We just need to update our source code to the latest version of DMSF to correct the issue.  Fix tested by implementing manual patch listed at the bottom of the DMSF ticket on the live server.
+46,Resolved,Open Design Engine,Bug,Normal,Disable ability to make projects private,Kevin Bouwkamp,"",v0.2 - Public Beta,J. Simmons,02/10/2012,"",100,10.0,"",02/10/2012 05:08 am,11/18/2012 01:24 pm,"During project creation or editing, users can un-check the ""Public"" field and hide their projects.  This needs to be removed before the beta release so all projects are public."
+66,Resolved,Open Design Engine,Bug,Normal,Getting https error when embedding YouTube videos,J. Simmons,"",v0.2 - Public Beta,J. Simmons,06/14/2012,"",100,"","",06/14/2012 03:22 pm,11/04/2012 07:00 pm,"Visit the ""Far Horizons Project Wiki Page"":https://opendesignengine.net/projects/far-horizons-project/wiki to see the error.  Error confirmed in Chrome and IE 9.  Error message is ""This page has insecure content"".  
+
+It looks like there is a new option with embedding YouTube videos for HTTPS sites.  See ""Enabling HTTPS mode"" on this ""page"":http://support.google.com/youtube/bin/answer.py?hl=en&answer=171780.  We should update the Youtube/Vimeo plugin to work with this feature (and check Vimeo videos for similar problem)."
+50,Resolved,Open Design Engine,Support,Normal,Upgrade hosting server,"","",v0.2 - Public Beta,J. Simmons,02/13/2012,"",100,"","",02/13/2012 03:56 pm,11/04/2012 06:45 pm,Current server is a devel class box.  We want to upgrade the box to something able to handle some actual traffic before the public beta starts.
+43,Closed,Open Design Engine,Bug,Urgent,Getting error when browsing repositories,"","",v0.2 - Public Beta,J. Simmons,11/03/2011,"",0,"","",11/03/2011 12:44 am,03/27/2012 03:32 pm,"If you browse to the *Repository* (such as in the ""repo"":https://opendesignengine.net/projects/sandbox/repository in the sandbox project) tab in a project you get the following error:
+
+<pre>
+An error occurred when trying to access the repository: Cannot allocate memory - 'svn' list --xml 'https://opendesignengine.net/svn/sandbox/'@HEAD --no-auth-cache - non-interactive
+</pre> 
+
+This appears to be related to issues in Redmine.
+
+* http://www.redmine.org/issues/7699
+* http://www.redmine.org/issues/9337
+* http://www.redmine.org/issues/7528"
+11,Resolved,Open Design Engine,Feature,Normal,Add Terms of Service and Privacy Policy to account creation,"","",v0.2 - Public Beta,J. Simmons,04/08/2011,"",100,"","",04/08/2011 03:13 am,03/27/2012 03:29 pm,"Need to write a new plugin for this.  Should work like ""Drupal Legal Plugin"":http://drupal.org/project/legal."
+44,Resolved,Open Design Engine,Bug,Normal,The Legal plugin is blocking admins from creating new accounts,Matthew Sears,"",v0.2 - Public Beta,Admin Administrator,12/18/2011,"",0,"","",12/18/2011 10:51 pm,12/21/2011 03:44 pm,"I went to add a new user tonight (while logged in as Admin) and received the following error:
+
+""You must accept the terms of service to continue""
+
+I would expect this message if I was someone registering their own account through the sign up page, but not as the Admin user creating an account for someone else.  In this case, I think the system should create the user and make them agree to the ToS at their first login.  Oh, and the administrative page for creating users does not appear to have a way of accepting the ToS so we currently cannot create new users."
+8,Resolved,Open Design Engine,Feature,Normal,Add support for enhanced document management,"","",v0.2 - Public Beta,J. Simmons,04/08/2011,"",100,"","",04/08/2011 02:56 am,09/24/2011 03:46 am,"The idea is to allow users to have an easy and familiar way to control non-source code files.  It should be versioned when needed and work similar to file management.  Meta-data is a plus.
+
+First implementation concept is using webdav module for easier sharing of engineering documents.  Look at this ""plugin"":http://www.redmine.org/projects/redmine/wiki/PluginWebDav.  Need to research what can be done to add version control support to this feature.  Also look at integrating svn access through this connection.
+
+Should also evaluate moving live ODE site from http to https before implementing this feature."

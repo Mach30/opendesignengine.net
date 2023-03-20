@@ -1,0 +1,5 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+171,New,Laboratory EKG Pre-Amplifier,Milestone,Normal,Find a Workable Drill Templating Solution,Amanda Wozniak,"","",Amanda Wozniak,09/16/2013,"",0,6.0,"",09/03/2013 12:22 pm,09/04/2013 02:03 pm,"Find a work-around for the hand-drill alignment issue (#169).
+
+_*This milestone can be closed once the fabrication method has been confirmed to work well. Minimum required test quantity = 2 units.*_"
+172,New,Laboratory EKG Pre-Amplifier,Milestone,Normal,Machine 15 Enclosure Lids/Bodies,Amanda Wozniak,"","",Amanda Wozniak,09/16/2013,"",0,6.0,171,09/04/2013 02:03 pm,09/04/2013 02:03 pm,Once a suitable drill template solution is found and proven to work - it will be time to machine the last 15 enclosures. 

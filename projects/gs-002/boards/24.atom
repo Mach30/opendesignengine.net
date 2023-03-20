@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Groundstation v.2.0: Requirements Document</title>
+  <link rel="self" href="http://opendesignengine.net/projects/gs-002/boards/24.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/gs-002/boards/24"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-07-23T22:37:42+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Requirements Document: RE: Initial Ground Station 2.0 requirements document</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/24/topics/523?r=554#message-554"/>
+    <id>http://opendesignengine.net/boards/24/topics/523?r=554#message-554</id>
+    <updated>2013-07-23T22:37:42+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Yep.  See &lt;a class="external" href="https://opendesignengine.net/boards/25/topics/546"&gt;https://opendesignengine.net/boards/25/topics/546&lt;/a&gt;.  The design is specifically created to track satellites, but with a couple simple mods, the same design can track HABs, rockets, even subsonic UAVs.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Requirements Document: RE: Initial Ground Station 2.0 requirements document</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/24/topics/523?r=539#message-539"/>
+    <id>http://opendesignengine.net/boards/24/topics/523?r=539#message-539</id>
+    <updated>2013-07-15T15:11:24+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;GS2R 4.2.1:&lt;/p&gt;
+
+
+	&lt;p&gt;How about "hard mounted" vs "soft mounted"? Or "permanent" vs "temporary"? I would think you'd want to reserve the term "mobile" for a ground station that's part of a vehicle or a backpack. This could be used to track HABs, correct?&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Requirements Document: RE: Initial Ground Station 2.0 requirements document</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/24/topics/523?r=538#message-538"/>
+    <id>http://opendesignengine.net/boards/24/topics/523?r=538#message-538</id>
+    <updated>2013-07-15T14:56:26+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Hi Jeremy,&lt;/p&gt;
+
+
+	&lt;p&gt;Again, thanks for the edits!&lt;/p&gt;
+
+
+	&lt;p&gt;GS2R 3.1.3:  Fixed in the wiki. &lt;br /&gt;GS2R 3.4.1:  Fixed in the wiki.&lt;br /&gt;GS2R 3.4.3:  Fixed in the wiki.&lt;br /&gt;GS2R 4.4.2:  Fixed in the wiki.&lt;br /&gt;GS2R 2.4:  Fixed in the wiki.&lt;br /&gt;GS2R 11.4:  Fixed in the wiki.&lt;/p&gt;
+
+
+	&lt;p&gt;ISS has been added to the glossary in the wiki.&lt;/p&gt;
+
+
+	&lt;p&gt;GS2R 4.2.1:  I see your point, but the way antennas work is that an antenna solid mounted to a vehicle or building are considered "stationary" in that they are not easily moved (or removed) from their mount.  An antenna mounted to a tripod os similar quick setup and tear down are considered mobile in this case.  We really need to find a better, more descriptive name.  Perhaps stationary, mobile, and temporary?&lt;/p&gt;
+
+
+	&lt;p&gt;GS2R 4.5.1:  Lightning strikes are bad news, but not so much for the car.  The rubber tires insulate the vehicle fairly well.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Requirements Document: RE: Initial Ground Station 2.0 requirements document</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/24/topics/523?r=526#message-526"/>
+    <id>http://opendesignengine.net/boards/24/topics/523?r=526#message-526</id>
+    <updated>2013-07-08T09:20:50+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;GS2R 3.1.3&lt;/strong&gt;: Did you mean for "additional" to be lower case?&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;GS2R 3.4.1&lt;/strong&gt;: "signal an telemetry" should be "signal and telemetry" I think.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;GS2R 3.4.3&lt;/strong&gt;: "transmit and received" should probably be "transmit and receive".&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;GS2R 4.2.1&lt;/strong&gt;: If you attach an antenna to a vehicle it's no longer "stationary" is it?&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;GS2R 4.4.2&lt;/strong&gt;: I think "Vertical Standing Wave Ration" should be "Vertical Standing Wave Ratio".&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;GS2R 4.5.1&lt;/strong&gt;: A lightning strike on the antenna when it's grounded to a car would be bad news wouldn't it. A car's electrical system isn't designed to dissipate that kind of charge.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;GS2R 2.4&lt;/strong&gt;: Might want to say "shall include but is not limited to" or something similar.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;GS2R 11.4&lt;/strong&gt;: I think the sentence would work better with the "as" removed.&lt;/p&gt;
+
+
+	&lt;p&gt;You might want to add "ISS" to the glossary.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Requirements Document: Initial Ground Station 2.0 requirements document</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/24/topics/523"/>
+    <id>http://opendesignengine.net/boards/24/topics/523</id>
+    <updated>2013-07-02T23:24:12+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;a name="Requirements-Document-for-Ground-Station-v20"&gt;&lt;/a&gt;
+&lt;h1 &gt;Requirements Document for Ground Station v2.0&lt;a href="#Requirements-Document-for-Ground-Station-v20" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+
+
+	&lt;ul class="toc"&gt;&lt;li&gt;&lt;a href="#Requirements-Document-for-Ground-Station-v20"&gt;Requirements Document for Ground Station v2.0&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="#Introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Technical-Requirements"&gt;Technical Requirements&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Project-Requirements"&gt;Project Requirements&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Future-Requirements"&gt;Future Requirements&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Glossary"&gt;Glossary&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+
+
+	&lt;a name="Introduction"&gt;&lt;/a&gt;
+&lt;h3 &gt;Introduction&lt;a href="#Introduction" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;The requirements list matches up to the Initial Questions in step one of the Systems Engineering process as shown below. Each requirement is labeled with GS2R (Ground Station 2.0 Requirement), followed by the number of the &lt;a href="https://opendesignengine.net/projects/gs-002/wiki/Initial_Questions" class="external"&gt;initial question&lt;/a&gt; that the requirement corresponds to, followed by a dot and then the ID number of the requirement.&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 1.x&lt;/strong&gt; - Why are we making this?&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 2.x&lt;/strong&gt; - Who is this for?&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 3.x&lt;/strong&gt; - How will this be used?&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.x&lt;/strong&gt; - What features does it need to have (now)?&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 5.x&lt;/strong&gt; - What features does it need to have (later)?&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 6.x&lt;/strong&gt; - What are the legacy requirements?&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 7.x&lt;/strong&gt; - Who's going to build this?&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 8.x&lt;/strong&gt; - How many do we want to make?&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 9.x&lt;/strong&gt; - What is the budget?&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 10.x&lt;/strong&gt; - What is the timeline?&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 11.x&lt;/strong&gt; - What waste products will be produced by the manufacture and/or operation of this?&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;a name="Technical-Requirements"&gt;&lt;/a&gt;
+&lt;h3 &gt;Technical Requirements&lt;a href="#Technical-Requirements" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;Technical requirements are those requirements which include measurable performance values.  Each technical requirement should be verified through testing to ensure the design meets the requirement.&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 1.1&lt;/strong&gt; The ground station must be able to receive satellite signals within the designated amateur radio bands.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 1.2&lt;/strong&gt; The ground station must be able to transmit and be received by satellites in orbit.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 1.3&lt;/strong&gt; The ground station must be portable to enable live demonstrations as part of educational and outreach activities including remote field use.
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 1.3.1&lt;/strong&gt; The total weight of Ground Station 2.0 shall be less than 35kg and be able to break down into components which do not exceed 150cm on any axis to ensure portability.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 1.3.2&lt;/strong&gt; The ground station must be transportable by a single person in a compact car.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 1.4&lt;/strong&gt; The external components of the ground station must be able to handle rain, dust, winds up to 80km/h, as well as cold (-20C) and hot (60C) temperatures.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 1.5&lt;/strong&gt; The external components of the ground station must be able to be mounted securely to a structure or vehicle.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 2.1&lt;/strong&gt; The ground station must be designed so that the components may be quickly and easily set up and torn down by minimally qualified personnel and with common tools.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 2.3&lt;/strong&gt; All components must either be commercially available or available in &#8220;kitified&#8221; form.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 2.4&lt;/strong&gt; Clear and simple instructions on the use of the ground station's major components as well as instructions on the use of the ground station as a whole must be publicly available.  &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 2.5&lt;/strong&gt; A safety guide must be included with the kit, the above instruction manual, and be made publicly available on the internet.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 3.1&lt;/strong&gt; The user constructing the ground station will be expected to provide their own equipment as follows:
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 3.1.1&lt;/strong&gt; A laptop or other portable computer.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 3.1.2&lt;/strong&gt; A dual band (UHF/VHF) amateur band handheld transceiver (HT) with at least 5W output transmit power.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 3.1.3&lt;/strong&gt; additional modules or equipment necessary for meeting additional user requirements.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 3.2&lt;/strong&gt; The ground station will be used in a manner consistent with relevant laws.
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 3.2.1&lt;/strong&gt; The design, construction and operation of the ground station and components will comply with &lt;a href="http://www.ecfr.gov/cgi-bin/text-idx?c=ecfr&amp;#38;SID=273eb7d322bf9d317063be6dc8908e9c&amp;#38;rgn=div5&amp;#38;view=text&amp;#38;node=47:5.0.1.1.6&amp;#38;idno=47" class="external"&gt;FCC regulation under CFR Title 47 part 97&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 3.2.2&lt;/strong&gt; Users in other countries are expected to comply with regulations specific to their country and region in the construction, operation, and use of the ground station and components.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 3.3&lt;/strong&gt; The ground station software will be able to perform the following tasks:
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 3.3.1&lt;/strong&gt; Predict the time and bearing of satellite acquisition of signal (AOS) and loss of signal (LOS) with respect to receiver location (it may not take into account local obstructions like buildings or mountains).&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 3.3.2&lt;/strong&gt; Display a record of known satellites, their transponder, and transceiver frequencies. &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 3.3.3&lt;/strong&gt; Identify the expected uplink and downlink doppler shift.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 3.3.4&lt;/strong&gt; The software must work with Microsoft Windows, Mac OSX, and Linux operating systems.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 3.4&lt;/strong&gt; The operator of the ground station will be able to perform the following tasks:
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 3.4.1&lt;/strong&gt; Contact the satellite for verification of signal an telemetry (not possible with all satellites).&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 3.4.2&lt;/strong&gt; Contact ground personnel beyond the visual or radio horizon through the satellite (possible only with amateur communication satellites supporting a repeater mode).&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 3.4.3&lt;/strong&gt; Contact manned spacecraft which are able to transmit and received on amateur frequencies such as ISS.&lt;/li&gt;
+	&lt;/ul&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 4.1&lt;/strong&gt; Mobile Ground Station operations
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 4.1.1&lt;/strong&gt; See GS2R 2.1&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.1.2&lt;/strong&gt; Mobile ground station build out and set up time should be less than 1 hr.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.1.3&lt;/strong&gt; Mobile ground station break down and pack time should be less than 1 hr.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.2&lt;/strong&gt; Stationary ground station
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 4.2.1&lt;/strong&gt; The stationary ground station antenna must be able to be securely attached to a structure or vehicle. &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.2.2&lt;/strong&gt; Stationary ground station should come on line in less than 10 min (warm start).&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.3&lt;/strong&gt; Packaging:  The ground station equipment shall be easy to package for shipment.
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 4.3.1&lt;/strong&gt; The entire mobile ground station system, safety equipment, and required tools (if any) shall fit in common carrier compliant shipping package.  See also GS2R 1.3.1&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.3.2&lt;/strong&gt; Given that the antenna elements may be bulky and crushable, the antenna design shall be made to disassemble, collapse into a flat package, of be constructed to be crush resistant.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.4&lt;/strong&gt; Antenna:  The antenna system must be
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 4.4.1&lt;/strong&gt; Weatherproof. See GS2R 1.4&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.4.2&lt;/strong&gt; Tuned to produce Vertical Standing Wave Ration (VSWR) no greater than 1.5 on all bands.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.4.3&lt;/strong&gt; Designed and constructed to allow easy shipping as well as transport. See GS2R 4.3.2.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.5&lt;/strong&gt; Grounding and protection:   
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 4.5.1&lt;/strong&gt; Stationary ground station installations must be properly grounded to a grounding rod, vehicle frame, or metal water pipe.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.5.2&lt;/strong&gt; Stationary ground station installations must have lightning protection installed in line with the transmission line(s) between the antenna and radio.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.5.2&lt;/strong&gt; Mobile ground station antenna systems may be grounded using a temporary ground spike driven into the ground.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.6&lt;/strong&gt; Radio equipment:  The radio transceiver shall:
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 4.6.1&lt;/strong&gt; Tune to the amateur radio VHF band from 144 to 148 MHz.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.6.2&lt;/strong&gt; Tune to the amateur radio UHF band from 430 to 440 MHZ.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.6.3&lt;/strong&gt; Operate in full duplex; simultaneously transmit on one frequency while receiving on another.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 4.7&lt;/strong&gt; Computer and software system.  The software shall be &#8220;OS Agnostic&#8221; as indicated in GS2R 3.3.4.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 6.1&lt;/strong&gt; Transmitting will require HAM radio licenses (technician level or greater) in the US. Other countries may have other requirements.  See GS2R 3.2.1&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 6.2&lt;/strong&gt; Any software should run on all three major PC platforms (MS Windows, Mac OS X, and Linux).  See GS2R 3.3.4.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 6.3&lt;/strong&gt; The portable ground station system must use standardized connections to allow for greater flexibility in it's deployment (BNC for RF signals and Serial, USB, Ethernet, or similar connections for the computer).&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;a name="Project-Requirements"&gt;&lt;/a&gt;
+&lt;h3 &gt;Project Requirements&lt;a href="#Project-Requirements" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;Project requirements are the remaining requirements which are not tied to specific performance values.&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 2.1&lt;/strong&gt; The ground station must be well documented so as to meet the needs of open source spaceflight designers who will design and build future ground station equipment at Mach 30 and elsewhere (allow derivative works).&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 2.2&lt;/strong&gt; The ground station documentation and procedures must be thorough so that Mach 30 operators, students, and educators who want to bring aerospace communications engineering into the classroom, and anyone else interested in how to communicate with satellites may use this equipment as learning a tool.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 2.3&lt;/strong&gt; The ground station documentation must cover safety, setting up the ground station, permanent installation, software operation, station operation and protocol, breaking down and stowing the equipment.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 2.4&lt;/strong&gt; The ground station operations manual safety section shall include pinch hazards, overhead power line awareness, RF safety, and precautions necessary to operate grounded equipment outdoors.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 7.1&lt;/strong&gt; All design documentation must be open and complete so that ANYONE would be able to build the equipment and operate it once the proper licensing requirement has been satisfied.  See GS2R 3.2.1.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 8.1&lt;/strong&gt; The design of the ground station must enable the completion of at least one operational unit.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 8.2&lt;/strong&gt; Whenever and wherever possible, considerations should be made so that the design of the ground station components allow them to be used in a kit in the future.  See GS2R 2.3&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 9.1&lt;/strong&gt; The cost of the first operational ground station must not exceed $1000 excluding "consumables", tools, computer system, and radio transceiver.  See GS2R 3.1&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 10.1&lt;/strong&gt; If possible, the first ground station should be completed within 8 weeks of formal launch as an exercise in agile design and project management.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 11.1&lt;/strong&gt; Elements from earlier versions will be reused or kept as backups. &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 11.2&lt;/strong&gt; Any components that wear out, fail, or are damaged must be disposed up according to all federal, state and local guidelines in the US, or as regulations require in other parts of the world.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 11.3&lt;/strong&gt; Attention shall be paid into the durability of the design to keep waste to a minimum.  See GS2R 4.3.2.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 11.4&lt;/strong&gt; Wherever possible, the design should make it as easy to replace components which are consumable or relatively easy to damage.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;a name="Future-Requirements"&gt;&lt;/a&gt;
+&lt;h3 &gt;Future Requirements&lt;a href="#Future-Requirements" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;These are for reference only so that future features can be accommodated in the current design where practical.&lt;/p&gt;
+
+
+&lt;strong&gt;Version 2.1:&lt;/strong&gt;
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 5.1&lt;/strong&gt; Direct computer control of receive and transmit frequencies to automatically compensate for doppler shift.  Requires a supported radio as listed &lt;a href="https://opendesignengine.net/attachments/209/Supported_Radios.xls" class="external"&gt;here.&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 5.2&lt;/strong&gt; GPS time synchronization for the host PC&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 5.3&lt;/strong&gt; Automatic determination of GPS position and magnetic north with computation to derive true north (rotational axis).&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 5.4&lt;/strong&gt; Automatic determination of zenith by using a MEMS accelerometer to determine gravitational vector allowing automatic power on self calibration.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 5.5&lt;/strong&gt; Automatic stabilization for ship or other vehicle use.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+&lt;strong&gt;Beyond Version 2.1:&lt;/strong&gt;
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;GS2R 5.5&lt;/strong&gt; Version 3.0 will use a Software Defined Radio (SDR), such as the Ettus Research USRP series, as a receiver for higher sensitivity, recording, data demodulation (digital modes), and waterfall displays.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 5.6&lt;/strong&gt; Version 4.0 will feature the addition of a dish to the tracking assembly as well as an L-band SDR transceiver to work with common satellite command and control frequencies.  &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;GS2R 5.7&lt;/strong&gt; Version 5.0 will feature real time conversion of data and audio streams into a VPN'd link to a common server database, allowing multiple ground stations across the planet to act as one.  This development will be export controlled under ITAR/MTCR.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;a name="Glossary"&gt;&lt;/a&gt;
+&lt;h3 &gt;Glossary&lt;a href="#Glossary" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;Azimuth - A coordinate system of relative direction based upon polar direction in degrees parallel to the ground where 0 is true north, 90 is due east, etc.&lt;br /&gt;BNC - A type of quick disconnect radio frequency connector which needs no tools to connect or disconnect from the jack.&lt;br /&gt;Consumables - Items that are used and then discarded such as nylon zip ties or cleaning wipes.&lt;br /&gt;Demodulation - The conversion of an analog signal to audio or digital information.  &lt;br /&gt;Directional - In this context, antennas which function best in one direction.&lt;br /&gt;Dish - Parabolic dish (short form).  In this context, a highly directional antenna system characterized by a parabolic reflector dish and a feed horn in the focal point.&lt;br /&gt;Doppler shift - Frequency shift caused by relative motion between the sender and receiver.&lt;br /&gt;Downlink - The signal from a spacecraft to the ground station(s).&lt;br /&gt;Duplex - In this context, the capability to send and receive at the same time.&lt;br /&gt;Elevation - A coordinate system of relative direction ranging from 0 degrees, parallel to the ground, to 90 degrees, straight up or zenith.&lt;br /&gt;Feed Horn - A radio antenna and in some cases preamplifier (LNA) fixed to the vocal point of a parabolic dish.&lt;br /&gt;Full Duplex - See Duplex.&lt;br /&gt;GPS - Global Positioning System.  While primarily used for navigation, the signal contains a precision time base.&lt;br /&gt;GS - Ground Station (short form).&lt;br /&gt;Half Duplex - The ability to transmit or receive, but not at the same time.&lt;br /&gt;Ham - Amateur radio operator.&lt;br /&gt;HT - Handheld Transceiver&lt;br /&gt;IAW - In Accordance With (short form).&lt;br /&gt;Kitified - Designed to be made into a kit.&lt;br /&gt;L-band - In this context, the Amateur radio frequency range from 1,240 to 1,300 MHz.  Amateur satellite up-links are in the frequency range from 1,260 to 1,270 MHz&lt;br /&gt;LNA - Low Noise Amplifier.  A high performance antenna and preamplifier combined in a single assembly mounted to the focal point of a parabolic dish. &lt;br /&gt;Modulation - Embedding an analog or digital information on an analog signal.&lt;br /&gt;Omni - See Omnidirectional&lt;br /&gt;Omnidirectional - In this context, antennas capable of functioning in any direction&lt;br /&gt;OH - Open Hardware&lt;br /&gt;OS - Operating System, also Open Source&lt;br /&gt;Preamp - See Preamplifier&lt;br /&gt;Preamplifier - An amplifier designed to be mounted between an antenna and radio receiver.&lt;br /&gt;Repeater - A transciever set up to rebroadcast a signal on a different frequency for extended coverage.&lt;br /&gt;RF - Radio Frequency&lt;br /&gt;Rotator - A device to point a dish or directional antenna at the signal source, in this context a satellite.&lt;br /&gt;SDR - Software Defined Radio. A radio system where its capabilities and tuning are defined in software.&lt;br /&gt;Sensitivity - The ability of a radio receiver to pick up a faint signal.  Measured in -dB where a higher negative number is more sensitive on a logarithmic scale.&lt;br /&gt;SWR - Standing Wave Ratio.  A factor of antenna system efficiency based upon matching components.  Measured in a ratio with no units.&lt;br /&gt;Timebase - In this context, a time measurement system which may be synchronized with others using a central source.&lt;br /&gt;Transceiver - A transmitter and receiver combined in one physical unit.&lt;br /&gt;UHF - Ultra High Frequency.  In this context, the amateur radio UHF band from 430 to 440 MHZ.&lt;br /&gt;Uplink - The signal from the ground station to the satellite.&lt;br /&gt;USB - Universal Serial Bus.  A physical data transfer standard for computer equipment.&lt;br /&gt;VHF - Very High Frequency.  In this context, the amateur radio VHF band from 144 to 148 MHz.&lt;br /&gt;VPN - Virtual Private Network. A private and secure method of transferring data on the public Internet.&lt;br /&gt;VSWR - See SWR.&lt;br /&gt;Yagi - A type of directional antenna characterized by multiple straight elements mounted in parallel on a common backbone.&lt;/p&gt;    </content>
+  </entry>
+</feed>

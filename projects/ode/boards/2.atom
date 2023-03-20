@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Development</title>
+  <link href="http://opendesignengine.net/projects/ode/boards/2.atom" rel="self"/>
+  <link href="http://opendesignengine.net/projects/ode/boards/2" rel="alternate"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2015-11-12T19:39:15+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Development: 404 errors with browsing repositories</title>
+    <link href="http://opendesignengine.net/boards/2/topics/1093" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/1093</id>
+    <updated>2015-11-12T19:39:15+00:00</updated>
+    <author>
+      <name>Christopher Sigman</name>
+    </author>
+    <content type="html">
+&lt;p&gt;We've been experiencing an issue with older repositories where they are accessible via Subversion, but when viewing them from the Repository tab, a 404 (no content) error is returned. Note that newer repositories did not have an issue. Looking at the server logs, a message like the below was being logged:&lt;br /&gt;&lt;pre&gt;
+...
+No close tag for /lists/list
+Line:
+Position:
+Last 80 unconsumed characters:
+
+Output was:
+ &amp;lt;?xml version="1.0" encoding="UTF-8"?&amp;gt;
+&amp;lt;lists&amp;gt;
+&amp;lt;list
+   path="https://opendesignengine.net/svn/ode"&amp;gt;
+
+Rendering template within layouts/base
+Rendering common/error (404)
+&lt;/pre&gt;&lt;br /&gt;A Google search turned up a number of other people seeing this error as well, but in their cases it was new repositories, not old ones. In addition to the error message we were seeing, all of them were also stating issues with SSL (either via HTTPS or SSH). This thread on the Redmine forums in particular was of help: &lt;a class="external" href="http://www.redmine.org/boards/2/topics/11896"&gt;http://www.redmine.org/boards/2/topics/11896&lt;/a&gt;, which led me to running&lt;br /&gt;&lt;pre&gt;
+svn list --xml "https://opendesignengine.net/svn/ode"@HEAD
+&lt;/pre&gt;&lt;br /&gt;This prompted me to accept the server's certificate because it was failing to be validated by the local SVN client, just as others were reporting. Once I had permanently accepted it, everything started working again. I'm still a little perplexed as to why newer repositories had no issues, but I suspect it had something to do with a partial update when the server's certificate was updated last.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: RE: feedback from a new user perspective</title>
+    <link href="http://opendesignengine.net/boards/2/topics/812?r=813#message-813" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/812?r=813#message-813</id>
+    <updated>2014-08-17T16:31:33+00:00</updated>
+    <author>
+      <name>Christopher Sigman</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Hi Matt, thanks for the feedback. Most all of these issues I think are ones we've already been aware of, and are a result of using stock Redmine. I'm working right now on a graphical redesign, which should help with some of these issues, but not all of them (like help being a redirect to redmine.org). I plan on placing each of these as feature requests for ODE so we can be sure to not drop any of them, and that my rephrasing of them still seems to you like it explains the issue. When I'm done, I'll reply back to this post with links to the tickets if you don't mind reviewing. Thanks!&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: feedback from a new user perspective</title>
+    <link href="http://opendesignengine.net/boards/2/topics/812" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/812</id>
+    <updated>2014-08-17T12:23:00+00:00</updated>
+    <author>
+      <name>Matt Maier</name>
+    </author>
+    <content type="html">
+&lt;p&gt;So, I decided to try using ODE for a little project I'm working on. Here are some thoughts:&lt;br /&gt;- I see that I'm logged in, but I have absolutely no idea how to start a new project. As far as I can tell I've clicked on every link. The only instructions I could find said that I had to be an admin.&lt;br /&gt;- Also, the page design is exactly the same as &lt;a class="external" href="http://www.redmine.org"&gt;www.redmine.org&lt;/a&gt; so when I followed a link to instructions it took me to an entirely different domain and I didn't realize it until I clicked "home" and it took me to Redmine's homepage, not ODE's homepage.&lt;/p&gt;
+
+
+	&lt;p&gt;Oh, okay, I found how to make a new project. That is well hidden. It's in plain sight but way off to the right sandwiched between a lot of different things.&lt;/p&gt;
+
+
+	&lt;p&gt;I need to be able to get to some sort of instructions from the new project page. Some of it is intuitive, like project title and description. Some of the form elements have links, like the licenses. But what's the difference between "documents" and "files?" If I don't include a project tool now can I add it later? If I include something I end up not needing can I erase it from the project later?&lt;/p&gt;
+
+
+	&lt;p&gt;Does "create" make the project and exit the editor while "create and continue" makes the project and refreshes the editor? That's not intuitive.&lt;/p&gt;
+
+
+	&lt;p&gt;Anywho, I'm into just building the project now. I'll let you know if there's anything else that creates a barrier to entry.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: RE: Saving some links for possible inclusion as advanced features...</title>
+    <link href="http://opendesignengine.net/boards/2/topics/426?r=602#message-602" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/426?r=602#message-602</id>
+    <updated>2013-09-11T18:16:54+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;There's also SparkleShare.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a class="external" href="http://sparkleshare.org"&gt;http://sparkleshare.org&lt;/a&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: RE: Saving some links for possible inclusion as advanced features...</title>
+    <link href="http://opendesignengine.net/boards/2/topics/426?r=601#message-601" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/426?r=601#message-601</id>
+    <updated>2013-09-11T16:55:26+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Open Source Drop Box clone which could be interesting to look at as a potential feature/replacement for DMSF - &lt;a class="external" href="http://owncloud.org/features/"&gt;http://owncloud.org/features/&lt;/a&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: RE: Distributed project hosting</title>
+    <link href="http://opendesignengine.net/boards/2/topics/24?r=519#message-519" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/24?r=519#message-519</id>
+    <updated>2013-06-27T20:41:14+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Balazs - Thanks for the information. J is really swamped right now, but I'm sure he'll be interested in talking with you about this and your revenue generation idea when he gets caught up.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: RE: Distributed project hosting</title>
+    <link href="http://opendesignengine.net/boards/2/topics/24?r=516#message-516" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/24?r=516#message-516</id>
+    <updated>2013-06-26T08:51:41+00:00</updated>
+    <author>
+      <name>Balazs Imri</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Hi, J.&lt;/p&gt;
+
+
+	&lt;p&gt;I think my enquery would fit here well.&lt;/p&gt;
+
+
+	&lt;p&gt;I have recently got in contact with a local makerspace that is just in the process of being made. They are building their web platform, and when documenting projects came up I suggested ODE to them.&lt;/p&gt;
+
+
+	&lt;p&gt;I was wondering what the process would be for them to potentially host a copy of ODE on a server here in Melbourne, Australia. I thought it would be pretty straightforward but I offered to ask because I already have been in contact with you.&lt;/p&gt;
+
+
+	&lt;p&gt;There are several web developers and IT person in the group, so it seems if they managed to get involved with ODE as a user, they might also become contributors to the development of ODE. What are your thoughts?&lt;/p&gt;
+
+
+	&lt;p&gt;Should I just forward your email address to them and let you guys sort this out?&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: RE: Saving some links for possible inclusion as advanced features...</title>
+    <link href="http://opendesignengine.net/boards/2/topics/426?r=446#message-446" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/426?r=446#message-446</id>
+    <updated>2013-04-30T14:23:22+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;And another interesting link&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;a href="http://thingtracker.net/" class="external"&gt;Thing Tracker Network&lt;/a&gt; - proposal for how to implement a distributed/federated "thing" search system.  Might be helpful for global project search idea (where users can search from &lt;strong&gt;ODE&lt;/strong&gt; and find projects/components regardless of what site is hosting the projects/components&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: RE: Material from the OSHW Documentation Jam</title>
+    <link href="http://opendesignengine.net/boards/2/topics/444?r=445#message-445" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/444?r=445#message-445</id>
+    <updated>2013-04-30T14:15:41+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Also useful, a &lt;a href="http://www.wareium.com/home/resources" class="external"&gt;list of OSHW resources&lt;/a&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: Material from the OSHW Documentation Jam</title>
+    <link href="http://opendesignengine.net/boards/2/topics/444" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/444</id>
+    <updated>2013-04-30T14:13:13+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;This &lt;a href="https://drive.google.com/?usp=folder&amp;#38;authuser=0#folders/0BwJSOhVDu4bQSU1hZkhUc0cyMms" class="external"&gt;Google Drive directory&lt;/a&gt; has all of the materials from the various sessions of the Jam.  Ones of particular interest to &lt;strong&gt;ODE&lt;/strong&gt; include&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;Taxonomy Session&lt;/li&gt;
+		&lt;li&gt;Sites Interoperability&lt;/li&gt;
+		&lt;li&gt;How to document a project&lt;/li&gt;
+		&lt;li&gt;Remixing, Derivatives, Versions, Components&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: Saving some links for possible inclusion as advanced features...</title>
+    <link href="http://opendesignengine.net/boards/2/topics/426" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/426</id>
+    <updated>2013-02-16T08:49:48+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Here are a couple of projects/sites that I think may lend themselves nicely to inclusion as features in later versions of &lt;strong&gt;ODE&lt;/strong&gt;.  I am placing them here instead of the issue tracker because I want to us to discuss them a little before we document them to see what we would want to do with them.&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;a href="http://www.discourse.org/" class="external"&gt;Discourse&lt;/a&gt; - a very interesting new open source forum system which runs on Ruby on Rails.  It is much more focused on discussions than on threads, and has all sorts of modern UI and behaviors.  It might make an interesting alternative to traditional forums in projects&lt;/li&gt;
+		&lt;li&gt;&lt;a href="https://www.writelatex.com/about" class="external"&gt;writeLaTeX&lt;/a&gt; - This looks a lot like Google Docs for &lt;a href="http://en.wikipedia.org/wiki/LaTeX" class="external"&gt;LaTeX&lt;/a&gt;, and while not open source itself, it is built on several open source projects.  Interesting features from this project which could be helpful in &lt;strong&gt;ODE&lt;/strong&gt; include live preview (wouldn't that be nice for the wiki) and it looks like (need to text this) other users' edits are shown in real (or almost real) time (again, how great would that be for the wiki).  Plus, it would be great to be able to support a rich document type on &lt;strong&gt;ODE&lt;/strong&gt; for collaborative work on manuals, presentations, papers, etc.&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: RE: Browser support and testing</title>
+    <link href="http://opendesignengine.net/boards/2/topics/284?r=286#message-286" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/284?r=286#message-286</id>
+    <updated>2013-01-05T16:40:50+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;That is an interesting service.  I had not heard of it before.  I imagine that it requires access to a live public site, so we might need to look at setting up a QA copy of &lt;strong&gt;ODE&lt;/strong&gt; for compatibility testing before releases.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: RE: Browser support and testing</title>
+    <link href="http://opendesignengine.net/boards/2/topics/284?r=285#message-285" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/284?r=285#message-285</id>
+    <updated>2013-01-05T16:18:50+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;What about testing ODE with a browser compatibility service that we decide we can trust, and then using that as a baseline? We know we need to support current main-stream browsers, but beyond that a compatibility test will show us which older (and fringe) browsers would be easy to support with simple changes, and what ones are just too much trouble to support. For now we can just let the difficulty level of supporting a browser guide us.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a class="external" href="http://crossbrowsertesting.com"&gt;http://crossbrowsertesting.com&lt;/a&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: Browser support and testing</title>
+    <link href="http://opendesignengine.net/boards/2/topics/284" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/284</id>
+    <updated>2013-01-05T15:07:05+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;An interesting (and somewhat tardy) question came up the other day during a demo of &lt;strong&gt;ODE&lt;/strong&gt;, namely "What browsers should the site officially support (and by extension what browsers must &lt;strong&gt;ODE&lt;/strong&gt; tests be run in before a version can be accepted as ready for production use)?"  By extension, this also brings up the question of how we should be testing (currently features are manually tested, but the test plan is not rigorously documented).  Clearly these are questions we should have already addressed, but in the run up to just get features working, they got overlooked.  So here we are answering them now.&lt;/p&gt;
+
+
+	&lt;p&gt;To answer the question, we need to determine the combination of browsers, versions, and platforms we will test the site against at each release (and discuss the level of testing required to publish a release).  Obviously, a larger list of supported browsers means greater access for users, but also means more complicated and longer testing.  So, let's hash things out in this thread and see what we come up with (note, there is no mobile skin on the current version of ODE, so for now, we may want to skip testing on mobile devices).&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Development: RE: Distributed project hosting</title>
+    <link href="http://opendesignengine.net/boards/2/topics/24?r=204#message-204" rel="alternate"/>
+    <id>http://opendesignengine.net/boards/2/topics/24?r=204#message-204</id>
+    <updated>2012-08-10T07:58:56+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Welcome to the site.  Feel free to post any questions you might have as you are exploring, and be sure to let us know when you feel ready to help out.&lt;/p&gt;    </content>
+  </entry>
+</feed>

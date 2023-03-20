@@ -1,0 +1,60 @@
+[[statement of intent]]
+[[assumptions]]
+[[introduction]]
+[[acquisition]]
+[[construction]]
+[[calibration]]
+[[troubleshooting]]
+
+Hokay, so. I'm going to start by collecting a bunch of the links I've been keeping track of.
+
+In no particular order (at the moment)
+* reprap.org (wiki)
+** "calibration":http://reprap.org/wiki/Calibration
+** "triffid hunter's calibration guide":http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide
+** "print troubleshooting pictorial guide":http://reprap.org/wiki/Print_Troubleshooting_Pictorial_Guide
+** "leveling the bed":http://reprap.org/wiki/Leveling_the_Print_Bed
+** "troubleshooting":http://reprap.org/wiki/Troubleshooting
+* reprap.org (forum)
+** "non round holes":http://forums.reprap.org/read.php?151,71788
+** "blobs":http://forums.reprap.org/read.php?151,79837
+* the3dprinter.blogspot.com
+** "firmware calibration":http://the3dprinter.blogspot.com/2012/02/durbie-prusa-mendel-calibration.html
+** "skeinforge settings":http://the3dprinter.blogspot.com/2012/03/skeinforge-setting.html
+** "print calibration":http://the3dprinter.blogspot.com/2012/03/calibration-with-prints.html
+** "filament tips":http://the3dprinter.blogspot.com/2012/02/pla-and-abs-filament.html
+** "tools":http://the3dprinter.blogspot.com/2012/02/3d-printer-tools.html
+** "troubleshooting":http://the3dprinter.blogspot.com/2012/03/troubleshooting.html
+* fabmetheus.crsndoo.com
+** "skeinforge manual":http://fabmetheus.crsndoo.com/wiki/index.php/Skeinforge
+* thingiverse
+** "calibrate parts to fit":http://www.thingiverse.com/thing:52946
+** "calibrate for part fitting":http://www.thingiverse.com/thing:342198
+** "bed leveling calibration":http://www.thingiverse.com/thing:13053
+** "calibration set":http://www.thingiverse.com/thing:5573
+** "print temperature calibration":http://www.thingiverse.com/thing:35088/#instructions
+* "slic3r manual":http://manual.slic3r.org/
+* building a 3d printer
+** "extruder calibration":http://my3dprinterbuild.wordpress.com/2013/01/18/extruder-calibration/
+* richrap.blogspot.com
+** "slic3r is nicer part 1":http://richrap.blogspot.com/2012/01/slic3r-is-nicer-part-1-settings-and.html
+** "slic3r is nicer part 2":http://richrap.blogspot.com/2012/01/slic3r-is-nicer-part-2-filament-and.html
+** "slic3r is nicer part 3":http://richrap.blogspot.com/2012/01/slic3r-is-nicer-part-3-how-low-can-you.html
+* solidoodletips
+** "setting the flow rate":http://solidoodletips.wordpress.com/2012/08/16/setting-the-flow-rate/
+* just print 3d
+** "prelude to calibration":http://www.justprint3d.com/3d-printer-calibration-prelude-things-to-set-before-your-first-printcalibration/
+** "calibration basic 1":http://www.justprint3d.com/3d-printer-calibration-basic-1-stepsmm-values/
+** "calibration basic 2":http://www.justprint3d.com/3d-printer-calibration-basic-2-extrusion-widthlayer-height-value/
+* ultimaker
+** "troubleshooting":https://www.ultimaker.com/pages/support/faq/ultimaker-original-troubleshooting
+** "visual ultimaker troubleshooting":http://support.3dverkstan.se/article/23-a-visual-ultimaker-troubleshooting-guide
+* minow
+** "calibrating a delta printer":http://minow.blogspot.co.at/index.html#4918805519571907051
+* hydraraptor (nophead
+** "hole size":http://hydraraptor.blogspot.com/2011/02/polyholes.html
+* miscellaneous
+** "printing problems":http://www.hauntedfrog.com/gallery/main.php?g2_itemId=7832
+** "diagram of print cross section":http://www.printrbottalk.com/forum/viewtopic.php?p=29541#p29541
+** "calibrating reprap":https://sites.google.com/site/repraplogphase/calibration-of-your-reprap
+** "10 rules for top notch prints":http://3.dmake.me/blog/2014/10-rules-top-notch-prints-printrbot-simple/

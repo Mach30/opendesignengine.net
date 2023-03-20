@@ -1,0 +1,25 @@
+h1. Start Up Resources
+
+{{>toc}}
+
+h2. *FROM PROJECT TO KIT*
+
+Hackaday on "turning an electronic project into a marketable kit"
+
+* "SO YOU WANT TO SELL ELECTRONIC KITS":http://hackaday.com/2016/07/29/from-project-to-kit-so-you-want-to-sell-electronic-kits/
+* "GETTING THE HARDWARE RIGHT":http://hackaday.com/2016/08/05/from-project-to-kit-getting-the-hardware-right/
+* "INSTRUCTIONS ARE EVERYTHING":http://hackaday.com/2016/08/12/from-project-to-kit-instructions-are-everything/
+* "BRINGING IT ALL TOGETHER":http://hackaday.com/2016/08/19/from-project-to-kit-bringing-it-all-together/
+* "AFTER THE SALE":http://hackaday.com/2016/09/02/from-project-to-kit-after-the-sale/
+
+h2. Production & Design Work
+* "Connectors Tutorial":https://learn.sparkfun.com/tutorials/connector-basics
+* "Monday Experiment: Bootloading an ATmega32u4 with Arduino":http://jeffmurchison.com/blog/monday-experiment-bootloading-an-atmega32u4-with-arduino/ - minimum electronics necessary to create a Leonardo clone, important documentation for building completely custom PCB/"Shrinkifying":http://makezine.com/2011/10/10/how-to-shrinkify-your-arduino-projects/ the *Holoseat*
+* "PCB Routing Service":http://dirtycircuits.com/about.php - Team at "Dangerous Prototypes":http://dangerousprototypes.com/ provides PCB routing/layout service for OSHW projects at $35/hour (3 hour min)
+* "Bulk programmer for Arduino":http://makezine.com/2014/12/11/a-raspberry-pi-powered-bulk-arduino-programmer/
+* "OSH Park":https://oshpark.com/ - community PCB order site ("great review on G+":https://plus.google.com/u/0/+SameerAnsariSam/posts/NturKML6TGZ)
+
+h2. Start Up Case Studies
+
+* "Reddit AMA about a couple who started an online business together":https://www.reddit.com/r/IAmA/comments/56ne8w/my_boyfriend_and_i_started_a_business_out_of_his/
+* "Bootstrapping Side Projects into Profitable Startups":https://levels.io/bootstrapping/

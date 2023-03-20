@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>High Altitude Rocket Project (HARP): General Discussion on Goals</title>
+  <link rel="self" href="http://opendesignengine.net/projects/harp/boards/46.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/harp/boards/46"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2014-10-22T14:50:44+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>General Discussion on Goals: Design thoughts, more on materials and some requirements</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/46/topics/912"/>
+    <id>http://opendesignengine.net/boards/46/topics/912</id>
+    <updated>2014-10-22T14:50:44+00:00</updated>
+    <author>
+      <name>Samer Najia</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I recently read an article published by Apogee in their Ezine about someone who is trying to reach an altitude of 100km using a 2 stage rocket.  In the same 'Zine is a discussion of the nose cone shapes that work for the sort of mission HARP is to accomplish.  The  outcome of the discussion is that drag varies not just with altitude (less air friction, of course) but also with Mach number.  That is we can expect our rocket to go supersonic for this sort of mission, but it would travel at Mach 1.5 for half of the powered flight envelope.  The nose cone suggested is one known as 'hypersonic optimum' which is a 'pointy' type of cone, that is less rounded and far narrower in profile than, say the sort of nose you see on an anti-aircraft or anti-ship missile.  The nose cone is effectively a 'blunted' cone, aka 3/4 power.  It's side elevation makes it less of a pure triangle, but not much further so.  There is no gradual transition from square to angled sides.  It's just angled.  Interestingly, this shape is the one I use most when I use TinkerCAD to design nose cones, not because I think I am doing it 'right' but because it happens to be a convenient default shape in TinkerCAD.  Oh happy co-incidence.&lt;/p&gt;
+
+
+	&lt;p&gt;I've also been putting more thought as I built HARP 4.  Yes there are design issues, and documentation and planning and so on.  But to get to that point some experimentation in practical construction techniques is necessary (I felt):&lt;/p&gt;
+
+
+	&lt;p&gt;Since we are talking requirements, I'd like to introduce 5 new requirements:&lt;/p&gt;
+
+
+	&lt;p&gt;The rocket must be built out of readily available materials&lt;br /&gt;The rocket must fly on readily available motors or propellants (no backyard fiddling with stuff that goes BOOM!)&lt;br /&gt;The rocket must be subject to the safety rules of the NAR to the maximum extent possible&lt;br /&gt;The rocket must launch from a tower (no launch lugs) to limit parasite drag&lt;br /&gt;The rocket must have a minimum of protrusions (like pods) to limit parasite drag&lt;/p&gt;
+
+
+	&lt;p&gt;If we are to build a HARP, we are really looking at metal (Aluminum) or Fiberglass.  Since our rocket will experience some serious skin friction, we know paper rocket tubes are just not going to survive unless we cover them in something like fiberglass, which still keeps the rocket within the NAR requirements that the rocket crumple if it goes ballistic and crashes.  It is likely better to use thin walled fiberglass tubes, however, as those are commercially available and so adheres to the first of our requirements.  If we were to use Aluminum, we would again use commercially available tubing, but that may bump up against the self destruct requirement the NAR has.&lt;/p&gt;
+
+
+	&lt;p&gt;It is very likely that at the next High Power launch at Great Meadows next Spring (2015) we will be flying a Fiberglass tubed rocket.  I also am wondering if our glider should be folded inside the main tube and pop out at Apogee, open its wings (perhaps scissor wing style) and come down that way.  That would again meet the requirement to limit protrusions and limit parasite drag.  I will spend a good part of the winter looking at design concepts.  HARP 4 however is meant to test engines and payloads more than the airframe, even though on November 1 I will be launching a 5 foot tall rocket with a quad engine cluster as the potential carrier for the HARP glider.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General Discussion on Goals: HARP 4 calculated to reach 3000 feet</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/46/topics/908"/>
+    <id>http://opendesignengine.net/boards/46/topics/908</id>
+    <updated>2014-10-12T09:56:37+00:00</updated>
+    <author>
+      <name>Samer Najia</name>
+    </author>
+    <content type="html">
+&lt;p&gt;The next edition of HARP, using F grade ESTES motors running on 2 stages (boost and main) is calculated to reach 2600' based on very rough numbers, so long as the rocket remains at a 500 gram initial launch weight.  The 2 planned engines at an F15-0 in the boost stage and an F15-6 in the main stage.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General Discussion on Goals: RE: A new kind of drone, a new kind of private rocket</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/46/topics/872?r=900#message-900"/>
+    <id>http://opendesignengine.net/boards/46/topics/872?r=900#message-900</id>
+    <updated>2014-10-08T13:07:15+00:00</updated>
+    <author>
+      <name>Samer Najia</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I think we should define a few requirements related to reach component.  For example, if we want R/C capability, with servos, and autonomous operation, we will have to define the requirements of the subsystems.  So how about we begin like this:&lt;/p&gt;
+
+
+	&lt;p&gt;Electronics package requirements (all components must be able to operate in vacuum and withstand 20Gs and all transmissions must support the full flight profile):&lt;br /&gt;- MicroController (Arduino, BeagleBone)&lt;br /&gt;- Onboard APM (Ardu Pilot)&lt;br /&gt;- R/C receiver, max receive range 5000' (just short of 1 mile) in the open&lt;br /&gt;- 2 Servos (left and right elevon)&lt;br /&gt;- GPS module&lt;br /&gt;- Altimeter/Pressure sensor able to sense full range of flight envelope&lt;br /&gt;- Power supply/Battery to supply all components as well as secondary/boost stage ignition power&lt;br /&gt;- 3 axis gyro&lt;br /&gt;- Accelerometer&lt;br /&gt;- Data Logger&lt;br /&gt;- Warbler (sound beacon in case retrieval requires some travel)&lt;br /&gt;- Onboard strobe (for recovery)&lt;br /&gt;- FPV Camera and OSD system (forward facing)&lt;br /&gt;- FPV Camera (rearward camera)&lt;br /&gt;- Telemetry transmitter (separate from OSD)&lt;br /&gt;- Payload bay sled able to fit in a tube of xx diameter and be yy long&lt;br /&gt;- Entire payload package should not weight more than gg grams&lt;br /&gt;- Emergency eject of the payload package should be possible?  Based on what?  Autonomous emergency decision?&lt;/p&gt;
+
+
+	&lt;p&gt;Ground Station:&lt;br /&gt;- OSD Receiver (need to define range)&lt;br /&gt;- Telemetry Receiver (need to define range)&lt;br /&gt;- R/C Controller (typically more than 400 feet is pointless)&lt;br /&gt;- Video display/video receiver (need to define range, but ostensibly the full flight profile)&lt;/p&gt;
+
+
+	&lt;p&gt;Anyone?  Anyone?&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General Discussion on Goals: Materials Requirements</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/46/topics/899"/>
+    <id>http://opendesignengine.net/boards/46/topics/899</id>
+    <updated>2014-10-08T12:54:31+00:00</updated>
+    <author>
+      <name>Samer Najia</name>
+    </author>
+    <content type="html">
+&lt;p&gt;While we establish goals, perhaps the goals themselves may be constrained by what this thing should be made of.  Obviously the overall weight goal is 'as light as possible', but knowing what the general loads are on systems such as HARP, what are reasonable materials to consider?  For example, should we have a goal to use traditional materials (paper, balsa, plastic) or are these unlikely to survive the air friction and acceleration that HARP will experience?  Has any work been done in launching a fairly large rocket made of paper tube, balsa and plastic to Mach 3? Requirements are constraints, so are materials a constraint?  If they are not, then materials may be constrained by what the engine type will be.  For example, if I were to use clustered F series engines, which I can buy off the shelf, can I reasonably get something flying towards the goal, relying on paper body tubes and ply or birch wings?  So an additional constraint is this: use prepackaged engines, or do we pack our own?  Is it even possible to use prepackaged engines for an endeavor such as this?  I saw a post of someone who got a rocket to a pretty good altitude on 5 daisy chained COTS engines, by packing them all in series in a tube that protruded out the back of the rocket.  Each engine's ejection charge simple ejected itself overboard along with an expendable coupler.  The weight and balance dynamics would be interesting but not much different from a classic multi-stage rocket.  Anyway, food for thought.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General Discussion on Goals: RE: Is it time to test  the water with a serious  campaign?</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/46/topics/880?r=885#message-885"/>
+    <id>http://opendesignengine.net/boards/46/topics/880?r=885#message-885</id>
+    <updated>2014-10-04T21:57:49+00:00</updated>
+    <author>
+      <name>Samer Najia</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Ok, sure, volunteers.  Of course when we do have design concepts, drawings and analysis we obviously have something to put into a campaign.  I already have 2 design concepts, one has flown as a test bed and another will be in the air on November 1.  I should also have concept &lt;a href="http://opendesignengine.net/issues/3" class="issue status-3 priority-2 closed" title="Configure ODE to hide emails by default (Resolved)"&gt;#3&lt;/a&gt; and &lt;a href="http://opendesignengine.net/issues/4" class="issue status-3 priority-2 closed" title="Display SVN checkout or export link on repository page (Resolved)"&gt;#4&lt;/a&gt; (a plain booster) in flight that day too.  Granted, no real analysis other than the seat of the pants variety and no drawings other than the STLs I used to print them (one rocket is actually a hybrid).  I have ordered parts to build a F-engine class booster to sit underneath one of the HARP 4's, since I am feeling adventurous.&lt;/p&gt;
+
+
+	&lt;p&gt;As for the fund raising campaign, if by the proximity to Nova Labs 2 you mean time spent between the various volunteers, I couldn't agree more.  On the other hand, NL2 is local, and HARP should not be.  So I disagree there.  Nonetheless, I am not involved in the NL 2.0 campaign directly, but by the same token I am nowhere near ready to start a campaign either.  I just wanted to plant the seed and prep that as part of our effort from the get-go.  This is a system with a lot of moving parts and we should inventory all those parts.  A campaign is one of them.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General Discussion on Goals: RE: Is it time to test  the water with a serious  campaign?</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/46/topics/880?r=884#message-884"/>
+    <id>http://opendesignengine.net/boards/46/topics/880?r=884#message-884</id>
+    <updated>2014-10-04T19:54:14+00:00</updated>
+    <author>
+      <name>Greg Moran</name>
+    </author>
+    <content type="html">
+&lt;p&gt;@Samer, we can actually get started without the money because having volunteers conducting the design process is FREE!  Once we have some specific design concepts, drawings, and analysis, it should be much easier to get some funding.&lt;/p&gt;
+
+
+	&lt;p&gt;Also, I'm not ready to do another fund raising campaign with the NoVA Labs 2.0 Campaign releasing soon.  I'd prefer to avoid the overlapping campaigns.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General Discussion on Goals: Is it time to test  the water with a serious  campaign?</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/46/topics/880"/>
+    <id>http://opendesignengine.net/boards/46/topics/880</id>
+    <updated>2014-10-04T15:10:59+00:00</updated>
+    <author>
+      <name>Samer Najia</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I am not one for sitting still so it occurs to me that if we can do some things like:&lt;br /&gt;Design a logo&lt;br /&gt;Finalize our goals&lt;br /&gt;Mock up some drawings&lt;/p&gt;
+
+
+	&lt;p&gt;Then maybe we can hold an Indiegogo campaign to raise, say, $20k.  We can offer shirts and hats and video and pictures...whatever.  If we can raise the funding maybe we can really get an incentivized start.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General Discussion on Goals: RE: A new kind of drone, a new kind of private rocket</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/46/topics/872?r=877#message-877"/>
+    <id>http://opendesignengine.net/boards/46/topics/872?r=877#message-877</id>
+    <updated>2014-10-04T14:34:25+00:00</updated>
+    <author>
+      <name>Samer Najia</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Comments:&lt;/p&gt;
+
+
+	&lt;p&gt;If we want HARP to go far, how about 10K to 100K ft for Requirement &lt;a href="http://opendesignengine.net/issues/1" class="issue status-5 priority-2 closed" title="Automatically create SVN Repositories when Repository module is turned on (Closed)"&gt;#1&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Ok, how about this:&lt;/p&gt;
+
+
+	&lt;p&gt;1. Launch an amateur rocket to upper atmosphere (10-110k ft - may be further refined based on launch site parameters and FAA waiver)&lt;br /&gt;2. Rocket must be capable of returning to the launch site (or specific GPS coordinates) during the recovery phase&lt;br /&gt;3. Rocket must return autonomously to the vicinity of the launch site (or a specified GPS coordinate)&lt;br /&gt;4. Rocket must stream video throughout the entire flight profile. -- HD video preferred depending on storage capabilities&lt;br /&gt;5. Rocket must be able to transition from autonomous to human guided flight during the recovery phase. Or if no input is detected, then proceed autonomously.&lt;br /&gt;6. Rocket must be able to collect altitude (air pressure), speed, acceleration, temperature and position information from before launch and throughout the flight profile&lt;br /&gt;7. Rocket must be able to store flight data and potentially transmit telemetry to an ground station for OSD purposes&lt;/p&gt;
+
+
+	&lt;p&gt;In response to the remaining questions, some can be requirements.  For example:&lt;/p&gt;
+
+
+	&lt;p&gt;- Maximum development cost must be no more than $10,000 per final prototype, to include scale models, test systems and all components&lt;br /&gt;- System must not be sponsored by a government entity, but may be presented to a government entity post successful flight as a proof of concept&lt;br /&gt;- The timeframe for development shall not exceed one calendar year from the beginning of actual design&lt;br /&gt;- The system may enlist limited, minority sponsorship from charitable or other non-profit organizations, or corporate entities for the sole purpose of marketing for those entities.  The marketing may include logos on the launch vehicle and/or display of same on the project site and in credits for any generated media.&lt;/p&gt;
+
+
+	&lt;p&gt;Of course this says nothing about reality, but I figured if we are defining requirements, let's get this matrix in and see if we can meet it and flesh it out, soup to nuts.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General Discussion on Goals: RE: A new kind of drone, a new kind of private rocket</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/46/topics/872?r=874#message-874"/>
+    <id>http://opendesignengine.net/boards/46/topics/872?r=874#message-874</id>
+    <updated>2014-10-04T09:40:49+00:00</updated>
+    <author>
+      <name>Greg Moran</name>
+    </author>
+    <content type="html">
+&lt;p&gt;This is a great start!  This really gets into the meat of the project.  From your description i am extracting the following items as Technical System requirements.&lt;/p&gt;
+
+
+	&lt;p&gt;1. Launch an amateur rocket to upper atmosphere (10-20k ft - may be further refined based on launch site parameters and FAA waiver)&lt;br /&gt;2. Rocket must be capable of returning to the launch site (or specific GPS coordinates) during the recovery phase&lt;br /&gt;3. Rocket must return autonomously to the vicinity of the launch site (or a specified GPS coordinate)&lt;br /&gt;4. Rocket must stream video throughout the entire flight profile.  -- Are there any requirements about the quality of the video?&lt;br /&gt;5. Rocket must be able to transition from autonomous to human guided flight during the recovery phase. Or if no input is detected, then proceed autonomously.&lt;/p&gt;
+
+
+	&lt;p&gt;The last sentence... the "do something" requirement... is the most vague, and yet, the most critical part of the design process.  Until you know what you want the system to DO, there's no point in going any farther with the design.  If instead you just want to "test the waters" and see what is possible given a typical system, then that is a completely different design process.&lt;/p&gt;
+
+
+	&lt;p&gt;The other set of requirements are Project requirements.  These differ from the Technical requirements because they are about project management as opposed to the technical design of the system. These things would include:&lt;br /&gt;1. Anticipated total cost of the project?&lt;br /&gt;2. Any particular constraints on the time frame of the project?&lt;br /&gt;3. Particular stakeholders to keep in mind?&lt;br /&gt;4. Are there marketing/advertizing considerations?&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>General Discussion on Goals: A new kind of drone, a new kind of private rocket</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/46/topics/872"/>
+    <id>http://opendesignengine.net/boards/46/topics/872</id>
+    <updated>2014-10-03T23:45:18+00:00</updated>
+    <author>
+      <name>Samer Najia</name>
+    </author>
+    <content type="html">
+&lt;p&gt;The goal behind HARP, at least at its inception, was more than just to reach the upper atmosphere and come back down.  It had to come back down where it launched from, or more correctly to a specific set of GPS co-ordinates.  The payload has to come back autonomously, streaming video all the way up and down.  Finally, the recovery system should allow remote control when within range for final landing guidance.  However that requires human intervention and if there is none the payload should proceed to auto-land.&lt;/p&gt;
+
+
+	&lt;p&gt;Ultimately HARP is a new kind of drone.  The sort that can get up to altitude quickly, deliver a payload (for example, low earth orbit injection, or a long range drone) quickly and allow it to return to its destination at its leisure.  For example, if I wanted to surveil a area several miles away because, say, there is a flood and it is not safe to go there, I don't have to get anywhere close to the area and I don't have to wait for my drone to get up to altitude and waste time.  Instead, it could be up at 5000-100000' in seconds or a few short minutes.  The higher it is, the more it can see and the further it can go.&lt;/p&gt;
+
+
+	&lt;p&gt;An alternative is to launch and recover in the traditional sense, but the payload does not self guide, it just broadcasts its location.  I just think that HARP should fly for more than just the notion of flight....but to do something.&lt;/p&gt;    </content>
+  </entry>
+</feed>

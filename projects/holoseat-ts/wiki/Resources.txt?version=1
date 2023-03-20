@@ -1,0 +1,6 @@
+h1. Resources
+
+* "Adafruit Motor Shield v2 for Arduino: Using Stepper Motors":https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/using-stepper-motors
+* "Arduino Forum: Two Arduinos on one PC?":http://forum.arduino.cc/index.php?topic=407.0
+* "Is it possible to connect many arduino uno in one pc?":https://arduino.stackexchange.com/questions/9181/is-it-possible-to-connect-many-arduino-uno-in-one-pc
+* "Arduino: attachInterrupt()":https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/ 

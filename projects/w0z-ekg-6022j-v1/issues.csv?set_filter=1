@@ -1,0 +1,18 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+169,New,Laboratory EKG Pre-Amplifier,Bug,Normal,Enclosure Marking/Machining Accuracy Issue,Amanda Wozniak,"","",Amanda Wozniak,09/03/2013,"",0,"","",09/03/2013 12:08 pm,09/03/2013 12:08 pm,"I exported a DXF of the mechanical layers of the top assembly, and used that to laser-mark the enclosure lids for pilot drills. _*But aligning the drill press by hand when you care about alignment tolerances is a poor choice.*_
+
+In the first five units, I wasn't able to machine the enclosure lids or bodies to any reasonable tolerance, so my fits were poor. I had to compensate by using stepped drill bits to add a lot of slop to all the holes. 
+
+I need to fabricate a registration guide/jig that I can clamp to my work-piece which allows me to more precisely align my drills. 
+
+_*PROPOSED SOLUTION:*_ 
+
+# dimension/draw enclosure lid perimter with mounting holes
+# Use DXF to laser-cut a jig for the pilot holes - include perimeter with mounting holes for registration
+# figure out a way to clamp/fixture the workpiece on my drill press
+# test-drill using jig
+# if that works - repeat process for enclosure body"
+172,New,Laboratory EKG Pre-Amplifier,Milestone,Normal,Machine 15 Enclosure Lids/Bodies,Amanda Wozniak,"","",Amanda Wozniak,09/16/2013,"",0,6.0,171,09/04/2013 02:03 pm,09/04/2013 02:03 pm,Once a suitable drill template solution is found and proven to work - it will be time to machine the last 15 enclosures. 
+171,New,Laboratory EKG Pre-Amplifier,Milestone,Normal,Find a Workable Drill Templating Solution,Amanda Wozniak,"","",Amanda Wozniak,09/16/2013,"",0,6.0,"",09/03/2013 12:22 pm,09/04/2013 02:03 pm,"Find a work-around for the hand-drill alignment issue (#169).
+
+_*This milestone can be closed once the fabrication method has been confirmed to work well. Minimum required test quantity = 2 units.*_"

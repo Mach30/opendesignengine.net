@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/ode/issues.atom?assigned_to_id=102&amp;amp;set_filter=1&amp;amp;status_id=%2A&amp;amp;subproject_id=%21%2A"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/ode/issues?assigned_to_id=102&amp;amp;set_filter=1&amp;amp;status_id=%2A&amp;amp;subproject_id=%21%2A"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2014-07-10T21:51:21+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #251 (Closed): Not selecting a license results in a 500 error</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/251"/>
+    <id>http://opendesignengine.net/issues/251</id>
+    <updated>2014-07-10T21:51:21+00:00</updated>
+    <author>
+      <name>Christopher Sigman</name>
+    </author>
+    <content type="html">
+&lt;p&gt;When creating a new project, if you don't select a license the response from ODE is an HTTP 500 error. The error in the logs is &lt;br /&gt;&lt;pre&gt;
+NoMethodError (undefined method `add_to_base' for #&amp;lt;ActiveModel::Errors:0xb5bcda94&amp;gt;):
+  app/controllers/projects_controller.rb:83:in `create'
+&lt;/pre&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #249 (Closed): Receive 403 Error After Creating New Project</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/249"/>
+    <id>http://opendesignengine.net/issues/249</id>
+    <updated>2014-07-09T13:30:10+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;OS: Linux (Ubuntu 14.04)&lt;br /&gt;Browser: Chrome 35.0.1916.153&lt;/p&gt;
+
+
+	&lt;p&gt;After clicking the "Create" button on a new project, I see a 403 (not authorized) message (see attached image).&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="http://opendesignengine.net/attachments/download/512" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+</feed>

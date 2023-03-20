@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Source Linking Construction Set: News</title>
+  <link href="http://opendesignengine.net/projects/oslinks/news.atom" rel="self"/>
+  <link href="http://opendesignengine.net/projects/oslinks/news" rel="alternate"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-06-26T23:15:10+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Project Opening</title>
+    <link href="http://opendesignengine.net/news/41" rel="alternate"/>
+    <id>http://opendesignengine.net/news/41</id>
+    <updated>2013-06-26T23:15:10+00:00</updated>
+    <author>
+      <name>Carl Atnip</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Hello Everyone !!&lt;/p&gt;
+
+
+	&lt;p&gt;My name is Carl Atnip, and I am the creator of this project! I want to extend to you my warmest welcome. I am an American who came to Taiwan with my wife to teach English to children in remote villages in Taiwan. I have been teaching here for 2 /12 years now. The students are wonderful, but there doesn't seem to be anything for them to learn about electronics or robotics. My students come to my desk quite often because I like to take thinks apart and have a lot of spare parts laying around. The students really enjoy playing with the little DC motors and gears. I thought to myself how can I help to enable this passion of mine and make it educational for the students here.&lt;/p&gt;
+
+
+	&lt;p&gt;I have been looking around the internet for robotic toys that were relatively cheap. The real limitation of these kits that are sold is that they offer limited materials, and/or require you to purchase parts only from them. This frustration that I had while looking for a suitable alternative has led me to create my own electronics/robotics construction kit. I thought that it would be cool to have other people help me to produce parts for this kit. Then one day, some of my friends had another idea. The main idea was to make this project an open source project so that anyone can contribute to.&lt;/p&gt;
+
+
+	&lt;p&gt;My knowledge about starting an open source project is very limited, however I have a lot of time to read about the open source community. I am positive that by working together with you we can truly make a big difference for children and adults everywhere. That goal is the core of this effort, and I am exited to hear your input.&lt;/p&gt;
+
+
+	&lt;p&gt;Thank you for your time.&lt;br /&gt;Carl&lt;/p&gt;    </content>
+  </entry>
+</feed>

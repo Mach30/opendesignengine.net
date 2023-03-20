@@ -1,0 +1,79 @@
+h1. Installation Instructions
+
+Open Design Engine (ODE) is based on "Redmine":http://redmine.org.  The official installation method is to install the "Bitnami Redmine Stack":http://bitnami.org/stack/redmine, apply some custom configuration to the stack, and then upgrade the installed Redmine instance to the ODE source code.  Support for other stacks (or bootstrapped installations) will come with future releases.  With luck, one or more of the stack providers will add ODE to their list of supported stacks.  
+
+Note, these instructions assume you are running the Ubuntu VM image of the Bitnami Redmine Stack and are *running all commands under* @sudo@.  They were tested with "version 1.1.3":http://bitnami.org/files/stacks/redmine/1.1.3-0/bitnami-redmine-1.1.3-0-ubuntu-10.10.zip in "VMWare Player":http://www.vmware.com/products/player/. 
+
+Useful Paths
+* @(bitnami_base) = /opt/bitnami@ in VM images
+
+Steps to install ODE
+* Import the Bitnami Redmine Stack into VMWare (the free VMWare Player is supported)
+* Configure Redmine to run at http://hostname/ instead of http://hostname/redmine
+** Edit @(bitnami_base)/apache2/conf/httpd.conf@ and comment out the line:
+<pre>
+DocumentRoot "/opt/bitnami/apache2/htdocs"
+</pre>
+** Edit @(bitnami_base)/apps/redmine/conf/redmine.conf@ to match the following (the key areas are the addition of the virtual host section and changing all references of @/redmine@ to @/@):
+<pre>
+<VirtualHost *:80>
+  ServerAdmin haha.huhu.com
+  ServerName server.our.lan
+  ServerAlias server
+  ErrorLog "logs/error.log" 
+  CustomLog "logs/access.log" combined
+ # this not only blocks access to .svn directories, but makes it                
+ # appear as though they aren't even there, not just that they are              
+ # forbidden                                                                    
+ <DirectoryMatch "^/.*/\.svn/">
+    ErrorDocument 403 /404.html
+    Order allow,deny
+    Deny from all
+    Satisfy All
+  </DirectoryMatch>
+  # This passes through remote_user to mongrel                                  
+  RewriteEngine On
+  # Redirect non-static requests to cluster                                     
+  RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_FILENAME} !-f
+  RewriteRule ^/(.*)$ balancer://redminecluster%{REQUEST_URI} [P,QSA,L]
+</VirtualHost>
+
+#ProxyPass / balancer://redminecluster
+#ProxyPassReverse / balancer://redminecluster
+
+<Proxy balancer://redminecluster>
+  BalancerMember http://127.0.0.1:3001
+  BalancerMember http://127.0.0.1:3002
+  # The number of balancer members depends on the number of mongrels running
+  # We use only one mongrel on port 3001 by default for the BitNami Cloud Hosting
+  # Please remove the others like 3002 above in such a case.
+</Proxy>
+</pre>
+** Edit @(bitnami_base)/apps/redmine/config/mongrel_cluster.yml@ and change references to @prefix: /redmine@ to @prefix: @
+** Restart Redmine by running:
+<pre>
+(bitnami_base)/ctlscript stop
+(bitnami_base)/ctlscript start
+</pre>
+* Configure SVN in Redmine
+** Install dependencies
+<pre>
+apt-get update
+apt-get install build-essential
+apt-get install zlib1g-dev
+(bitnami_base)/perl/bin/cpan  # accept defaults and choose CPAN servers
+cpan> install Test::Simple
+cpan> install DBI
+cpan> install DBD::mysql
+cpan> quit
+apt-get install libapache2-svn libapache-dbi-perl libapache2-mod-perl2 libdbd-mysql-perl libdigest-sha1-perl libauthen-simple-ldap-perl
+</pre>
+** Enable newly installed apache modules by editing @(bitnami_base)/apache/conf/httpd.conf@
+*** Uncomment approximately line 108:
+<pre>
+LoadModule dav_svn_module modules/mod_dav_svn.so
+</pre>
+*** Add a line at the end of the load modules list for mod_perl:
+<pre>
+LoadModule perl_module modules/mod_perl.so
+</pre>

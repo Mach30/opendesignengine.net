@@ -1,0 +1,29 @@
+h1. Power/Temp Monitor and Control System (EPS/ECLSS) Bill Of Materials 
+
+|_.Schematic|_.Description|_.Package |
+| C1|68uF Capacitor|SMD |
+| C2|120uF Capacitor|Axial |
+| Cf1|1uF capacitor|SMD |
+| Cf2|1uF capacitor|SMD |
+| D1|1N5817 Schottky diode|SMD |
+| L1|100uH Inductor|SMD |
+| Ra1|47k Ohm .25W Resistor|SMD |
+| Rb1|47k Ohm .25W Resistor|SMD |
+| Rb2|47k Ohm .25W Resistor|SMD |
+| Rf1|4.7 Ohm .25W resistor|SMD |
+| Rf2|4.7 Ohm .25W resistor|SMD |
+| Rf3|4.7 Ohm .25W resistor|SMD |
+| Rf4|4.7 Ohm .25W resistor|SMD |
+| RL1|180 Ohm .5W resistor|SMD |
+| RL2|180 Ohm .5W resistor|SMD |
+| Rs1|.068 Ohm 10W resistor|Axial |
+| Rs2|.068 Ohm 10W resistor|Axial |
+| U1|LM2594M-3.3/NOPB Voltage regulator|SSOP-8 |
+| U2|TMP102 Temp sensor (I2C)|SSOP-6 |
+| U3|INA226 Current and voltage sensor|SSOP-10 |
+| U4|INA226 Current and voltage sensor|SSOP-10 |
+| |3 position jumper block|Std |
+| |5mm barrel jack, 2.1mm center pole|Std |
+| |8 position screw terminals|Std |
+| |Populated Ethernet Booster Pack (MSP430 MCU)|Board |
+| |EPS PC board|Board |

@@ -1,0 +1,25 @@
+h1. Payload Design
+FAA regulations limit the mass of any non-separable balloon component to 2.72kg (6lb). This means that we should limit our functional payload mass to 2kg, possibly up to 2.2kg. Any components requiring a thermally stable environment (e.g. batteries, some electronics) should live within a polystyrene insulating box (beer cooler). Dissipated power should warm the inside of the box to reasonable working temperatures.
+
+h2. Chile Seed Packets
+Balloon launches will carry a packet of New Mexico green chile seeds.
+
+h2. GPS 
+Any GPS module must be rated to altitudes beyond 60,000 feet. Certain older models cease function above this altitude due to now-deprecated government regulations. 
+
+h2. Radio Tracking/Telemetry
+Tracking and telemetry should be broadcast using a 144.39MHz APRS amateur radio transmitter. The APRS protocol is designed to provide generalized two-way packetized communications, including location and arbitrary telemetry. APRS packets are routed to the internet and location is broadly supported, meaning that ground teams would be able to track the balloon using only a smartphone. More info at http://www.aprs.org/
+Whoever is responsible for the transmitter will need to have an amateur radio license of Technician class or better. 
+
+h2. Environmental Data
+Eternal and internal temperature --- possible temperature range from 30C to -70C
+Pressure -- 100kPa (sea level) to 500Pa (30km). 
+
+h2. Camera
+GoPro camera?
+
+h2. Data Logging/Computer
+Arduino?
+
+h2. Power Supply
+Li-Ion, LiPo, or Lithium Primary batteries. Some components (e.g camera) may have their own power supplies. 

@@ -1,0 +1,39 @@
+h1. Upgrading ODE
+
+h2. General Upgrade Notes
+
+In general, there are 3 steps to upgrading to a new version of ODE.
+# Back up the database
+# Back up the folder ODE resides in
+# Check your version of your web stack, and upgrade if necessary / desired.  You may be required to upgrade due to a need for a newer version of one of the dependencies, such as Ruby or Rails.  Instructions for upgrading Bitnami are found "here":http://wiki.bitnami.com/Native_Installers_Quick_Start_Guide#How_to_upgrade_the_full_Stack_migrating_the_data.3f
+# Download the latest copy of ODE, and place it in the desired location. This should be in another location than the existing installation to avoid issues caused by files that should no longer exist.
+# Copy over configuration files config/database.yml and config/configuration.yml into the new location's config directory.
+# Copy over the files directory from the old copy to the new location.
+# Execute migration scripts.  The details of this step may vary, but usually at least will include 
+<pre>
+rake db:migrate RAILS_ENV=production
+rake redmine:plugins:migrate RAILS_ENV=production
+</pre>
+
+h2. Upgrading from Redmine 1.X to 2.2
+
+The following documentation is for the upgrade of the first release of ODE to a more modern version of Redmine.  At the time the work was undertaken, the latest version of Redmine was 2.2, therefor these upgrade notes are focused on upgrading from the 1.x series of Redmine to 2.2.  Many of these steps are similar to other upgrades, but since this is a major version upgrade, there will be additional items.  The "RedmineUpgrade":http://www.redmine.org/projects/redmine/wiki/RedmineUpgrade article on the Redmine wiki goes through most of these steps, and is a good reference.  Any occurrences of <ODE_ROOT> refer to the root directory of where the ODE codebase is located.
+
+# Back up the database, running something like this:  <pre>/usr/bin/mysqldump -u <username> -p<password> <ode_database> | gzip > /path/to/backup/db/ode_`date +%y_%m_%d`.sql.gz</pre>
+# Back up the ODE installation directory: <pre>tar -czf /path/to/backup.tar.gz <ODE_ROOT></pre>
+# Perform stack upgrades.  It is unlikely that this will not be required, due to version changes in Ruby and Rails.  See #3 from the General Upgrade Notes.
+# Download the latest copy of ODE into a new folder.
+# Copy over configuration files config/database.yml and config/configuration.yml into the new location's config directory.  If there are any changes from the default that were made to other files, such as config/settings.yml, these will have to be done by hand in the new config/settings.yml.
+# Copy the files folder from the old <ODE_ROOT> to the new <ODE_ROOT>, or create a symlink.
+# Execute the migration scripts.  Since this is from the 1 to 2 series of Redmine, there's some extra steps that wouldn't need to be observed during other upgrades.  The last two commands also clear the cache, as a just-in-case measure.
+<pre>
+rake generate_secret_token
+rake db:migrate RAILS_ENV=production
+rake redmine:plugins:migrate RAILS_ENV=production
+rake tmp:cache:clear
+rake tmp:sessions:clear
+</pre>
+
+*NOTE:* If trying to view a file in DMSF return an error, you should run <pre>rake redmine:dmsf_migrate_documents RAILS_ENV="production"</pre>  It seems sometimes the part of the database migration scripts for DMSF do not always run.  Executing this script solves this issue.
+
+You may see some error messages.  While there are none that have been encountered thus far, the Redmine wiki on upgrading states some common ones, so check there first.

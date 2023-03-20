@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/200.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-11-02T20:12:24+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Ground Sphere CubeSat Ground Station - Milestone #200: Fabricate preamp</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/200"/>
+    <id>http://opendesignengine.net/issues/200?journal_id=369</id>
+    <updated>2013-11-02T20:12:24+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;% Done&lt;/strong&gt; changed from &lt;i&gt;0&lt;/i&gt; to &lt;i&gt;40&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Ramsey UHF preamp showed too much noise at 915 MHz to be usable.  It was actually worse than nothing.  The preamp from David Bowman G0MRF arrived on 02NOV13.  It will be complete by 12:00 03NOV13, and integrated into the design by the end of the day.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Ground Sphere CubeSat Ground Station - Milestone #200: Fabricate preamp</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/200"/>
+    <id>http://opendesignengine.net/issues/200?journal_id=373</id>
+    <updated>2013-11-03T16:32:15+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;% Done&lt;/strong&gt; changed from &lt;i&gt;40&lt;/i&gt; to &lt;i&gt;70&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Due to equipment malfunction, we are holding at this level until a replacement soldering iron and capacitor comes in.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Ground Sphere CubeSat Ground Station - Milestone #200: Fabricate preamp</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/200"/>
+    <id>http://opendesignengine.net/issues/200?journal_id=403</id>
+    <updated>2013-12-07T11:31:58+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;% Done&lt;/strong&gt; changed from &lt;i&gt;70&lt;/i&gt; to &lt;i&gt;100&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Preamp construction is complete.  DC tests indicate a functional unit.  Lab and field tests to follow when prototype is completed and RF test equipment has been procured.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Ground Sphere CubeSat Ground Station - Milestone #200: Fabricate preamp</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/200"/>
+    <id>http://opendesignengine.net/issues/200?journal_id=408</id>
+    <updated>2013-12-07T15:54:04+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; changed from &lt;i&gt;New&lt;/i&gt; to &lt;i&gt;Resolved&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;    </content>
+  </entry>
+</feed>

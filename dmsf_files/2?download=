@@ -1,0 +1,86 @@
+// OSHW Make Magazine Hackerspace Workbench
+
+// parameters (all dimensions in inches)
+four = 3.5;
+two = 1.5;
+cHeight = 34;
+tableLength = 48;
+aLength = tableLength;
+bLength = aLength - 2*(four+two);
+dThickness = 23/32;
+
+module partD() {
+	translate([0,0,dThickness/2])
+		cube([tableLength, tableLength, dThickness], center=true);
+}
+
+module partC() {
+	translate([0,0,cHeight/2])
+		cube([four,four,cHeight], center=true);
+}
+
+module partA1() {
+	translate([0,0,two/2])
+		cube([aLength,four,two], center=true);
+}
+
+module partA2() {
+	translate([0,0,four/2])
+		cube([aLength,two,four], center=true);
+}
+
+module partB() {
+	translate([0,0,four/2])
+		cube([two,bLength,four], center=true);
+}
+
+module top(){
+	translate([0,-(bLength + two)/2,0])
+		partA2();
+	translate([-(aLength - two)/2,0,0])
+		partB();
+	translate([-(aLength)/6,0,0])
+		partB();
+	translate([(aLength)/6,0,0])
+		partB();
+	translate([(aLength - two)/2,0,0])
+		partB();
+	translate([0,(bLength + two)/2,0])
+		partA2();
+	translate([0,0,four])
+		partD();
+	translate([0,-(bLength + four + 2*two)/2,(four-two)])
+		partA1();
+	translate([0,(bLength + four + 2*two)/2,(four-two)])
+		partA1();
+}
+
+module legs() {
+	// actual legs
+	translate([-(aLength - four - 2*two)/2,-(bLength - four)/2,0])
+		partC();
+	translate([-(aLength - four - 2*two)/2,(bLength - four)/2,0])
+		partC();
+	translate([(aLength - four - 2*two)/2,-(bLength - four)/2,0])
+		partC();
+	translate([(aLength - four - 2*two)/2,(bLength - four)/2,0])
+		partC();
+
+	// supports
+	translate([0,-(bLength + two)/2,10-four])
+		partA2();
+	translate([0,(bLength + two)/2,10-four])
+		partA2();
+	translate([-(aLength - two)/2,0,10-four])
+		partB();
+	translate([(aLength - two)/2,0,10-four])
+		partB();
+}
+
+module workBench() {
+	translate([0,0,cHeight - four])
+		top();
+	legs();
+}
+
+workBench();

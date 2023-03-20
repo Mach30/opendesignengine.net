@@ -1,0 +1,27 @@
+h1. Ground Sphere Test Transmitter Operating Manual v0.1
+
+{{toc}}
+
+h2. Hardware/Software
+
+The [[BoM|Bill of Materials]] outlines the components needed to build a functional unit. For lab testing purposes the TI Launchpad can be connected directly to a laptop and not powered by the battery.
+
+h3. User provided laptop, minimum system requirements
+
+* Windows 7 operating system
+* 1GHz single core CPU
+* 1GB RAM
+* Open USB port
+
+The "Quick Start Guide":http://www.ti.com/lit/ml/swru312b/swru312b.pdf for the Air Boosterpack outlines the instructions to connect a MSP430 based Launchpad evaluation unit and the boosterpack. These instructions will also help the user bring the unit up to a point where it is running the example software used for testing. Please note that the testing procedure in the guide requires two sets of launchpads and boosterpacks, but this procedure uses one set with a "Ground Sphere Ground Station":https://opendesignengine.net/projects/groundsphere/wiki.
+
+h2. Power Level Setting
+
+The quick start guide instructs the user to install the "Install ATC-Booster Stack Lite GUI". Once this is installed and the Launchpad/Boosterpack combo is plugged into a USB port, follow the steps below.
+
+# Set the proper *Logical Radio* for your region (FCC for the United States).
+# Choose a *Configuration* that matches your application. If in doubt, choose configuration *0*.
+# Set the channel to *915.05 MHz, 7 dBm Max* since that is the frequency that Ground Sphere is designed for.
+# Set the *RF Power* level. Your options for the 915 MHz channel will be -60 dBm to 7 dBm. You can set this to the desired level depending on the operational conditions you are simulating and testing Ground Sphere with.
+
+!http://opendesignengine.net/dmsf_files/441?download=!

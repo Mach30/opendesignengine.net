@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Scanning Tunnelling Microscope - Design and Construction - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../favicon.ico%3F1359925685' />
+<link href="http://opendesignengine.net/stylesheets/application.css?1359925542" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../javascripts/prototype.js%3F1359925542" type="text/javascript"></script>
+<script src="../../../javascripts/effects.js%3F1359925542" type="text/javascript"></script>
+<script src="../../../javascripts/dragdrop.js%3F1359925542" type="text/javascript"></script>
+<script src="../../../javascripts/controls.js%3F1359925542" type="text/javascript"></script>
+<script src="../../../javascripts/application.js%3F1359925542" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="http://opendesignengine.net/plugin_assets/redmine_legal/stylesheets/terms-of-service.css?1359925705" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+  <link href="http://opendesignengine.net/stylesheets/scm.css?1359925542" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-wiki action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="http://opendesignengine.net/login" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../account/register.html" class="home">Home</a></li>
+<li><a href="../../../projects.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="http://opendesignengine.net/search/index/stm-ajstarr" method="get">
+        <input name="wiki_pages" type="hidden" value="1" />
+        <a href="http://opendesignengine.net/search/index/stm-ajstarr" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Scanning Tunnelling Microscope</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="http://opendesignengine.net/projects/stm-ajstarr" class="overview">Overview</a></li>
+<li><a href="http://opendesignengine.net/projects/stm-ajstarr/activity" class="activity">Activity</a></li>
+<li><a href="http://opendesignengine.net/projects/stm-ajstarr/issues" class="issues">Issues</a></li>
+<li><a href="http://opendesignengine.net/projects/stm-ajstarr/news" class="news">News</a></li>
+<li><a href="http://opendesignengine.net/dmsf/stm-ajstarr" class="dmsf">DMSF</a></li>
+<li><a href="../wiki.html" class="wiki selected">Wiki</a></li>
+<li><a href="http://opendesignengine.net/projects/stm-ajstarr/boards" class="boards">Forums</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="" id="main">
+    <div id="sidebar">
+        
+    <a name="Sidebar"></a>
+<h1 >Sidebar<a href="Design_and_Construction%3Fversion=24.html#Sidebar" class="wiki-anchor">&para;</a></h1>
+
+
+	<p><a href="../wiki.html" class="wiki-page">Design and Construction</a></p>
+
+
+	<p><a href="Lab_Journal.html" class="wiki-page">Lab Journal</a></p>
+
+
+	<p><a href="Design_file_PDFs.html" class="wiki-page">Design file PDFs</a></p>
+
+<h3>Wiki</h3>
+
+<a href="../wiki.html">Start page</a><br />
+<a href="index.html">Index by title</a><br />
+<a href="date_index.html">Index by date</a><br />
+
+
+        
+    </div>
+
+    <div id="content">
+				
+        <div class="contextual">
+
+
+<span class="wiki_page-66-watcher"></span>
+
+
+
+
+
+
+<a href="Design_and_Construction/history.html" class="icon icon-history">History</a>
+</div>
+
+
+
+
+    <p>
+    <a href="Design_and_Construction%3Fversion=23.html">« Previous</a> - 
+    Version 24/50
+    (<a href="http://opendesignengine.net/projects/stm-ajstarr/wiki/Design_and_Construction/diff/24">diff</a>) - 
+    <a href="Design_and_Construction%3Fversion=25.html">Next »</a> - 
+    <a href="../wiki.html">Current version</a>
+    <br />
+    <em><a href="http://opendesignengine.net/users/113" class="icon icon-contributor-license">Andrew Starr</a>, 09/07/2012 08:38 pm </em><br />
+    
+    </p>
+    <hr />
+
+
+<div class="wiki">
+  <a name="Guiding-principles-of-this-STM-design"></a>
+<h1 >Guiding principles of this STM design<a href="Design_and_Construction%3Fversion=24.html#Guiding-principles-of-this-STM-design" class="wiki-anchor">&para;</a></h1>
+
+
+	<ul>
+	<li>Minimise the effects of external vibrations by minimising size and mass</li>
+		<li>Minimise the effects of temperature variation by matching material coefficients of expansion as closely as possible</li>
+		<li>Minimise the effects of electronic noise by locating the sensitive circuitry as close as possible to the signal source</li>
+		<li>Maximise instrument flexibility and ease of use by doing as much of the signal processing and control as possible in the digital domain</li>
+	</ul>
+
+
+	<p>Also</p>
+
+
+	<ul>
+	<li>Use open source tools for all development</li>
+		<li>Source all specialised materials and components from readily-available online sources</li>
+	</ul>
+
+
+	<a name="Main-building-blocks-of-the-STM"></a>
+<h1 >Main building blocks of the STM<a href="Design_and_Construction%3Fversion=24.html#Main-building-blocks-of-the-STM" class="wiki-anchor">&para;</a></h1>
+
+
+	<a name="High-frequency-vibration-isolator"></a>
+<h2 >High frequency vibration isolator<a href="Design_and_Construction%3Fversion=24.html#High-frequency-vibration-isolator" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>The STM relies on the precise control of the probe-sample gap. Any external vibration has the potential to disrupt this, so efforts must be made to isolate the instrument. Low-frequency vibration isolation is generally done with large pneumatic or elastomer damping systems. I'm hoping to be able to avoid these by making the instrument as compact and stiff as possible, thereby maximising its resonance frequency (and therefore its response to low frequency vibrations). To isolate from high frequencies, I have chosen the 'stacked plate' approach, as described and characterised in <strong>"Low- and high-frequency vibration isolation for scanning probe microscopy" (A I Oliva, M Aguilar and Victor Sosa in <em>Measurement Science and Technology</em>, 9 (1998) 383-390)</strong></p>
+
+
+	<p>The drawings for the isolator stack plates can be found <a href="http://opendesignengine.net/dmsf/stm-ajstarr?folder_id=15">here.</a> The plates are each separated with 3 pieces of 5mm long, 5mm diameter pieces of viton rubber as described in the paper. I used an off-the-shelf viton o-ring from a local supplier and cut pieces off, securing with cyanoacrylate glue:</p>
+
+
+	<p><img src="../../../attachments/download/121" alt="" /></p>
+
+
+	<p>The assembled stack:</p>
+
+
+	<p><img src="../../../attachments/download/122" alt="" /></p>
+
+
+	<p>I haven't yet characterised the attenuation of the isolator stack - more on this after I've done some testing.</p>
+
+
+	<a name="Piezotube-and-sample-mount"></a>
+<h2 >Piezotube and sample mount<a href="Design_and_Construction%3Fversion=24.html#Piezotube-and-sample-mount" class="wiki-anchor">&para;</a></h2>
+
+
+	<a name="Coarse-positioner-mechanism-and-probe-holder"></a>
+<h2 >Coarse positioner mechanism and probe holder<a href="Design_and_Construction%3Fversion=24.html#Coarse-positioner-mechanism-and-probe-holder" class="wiki-anchor">&para;</a></h2>
+
+
+	<a name="Piezotube-and-coarse-positioner-support"></a>
+<h2 >Piezotube and coarse positioner support<a href="Design_and_Construction%3Fversion=24.html#Piezotube-and-coarse-positioner-support" class="wiki-anchor">&para;</a></h2>
+
+
+	<a name="Bias-voltage-module"></a>
+<h2 >Bias voltage module<a href="Design_and_Construction%3Fversion=24.html#Bias-voltage-module" class="wiki-anchor">&para;</a></h2>
+
+
+	<a name="Tunnelling-current-amplifier"></a>
+<h2 >Tunnelling current amplifier<a href="Design_and_Construction%3Fversion=24.html#Tunnelling-current-amplifier" class="wiki-anchor">&para;</a></h2>
+
+
+	<a name="Control-module"></a>
+<h2 >Control module<a href="Design_and_Construction%3Fversion=24.html#Control-module" class="wiki-anchor">&para;</a></h2>
+</div>
+
+
+<div class="attachments">
+
+<p><a href="http://opendesignengine.net/attachments/120/HF_vibration_isolator_discs_ODE.jpg" class="icon icon-attachment">HF_vibration_isolator_discs_ODE.jpg</a>
+  <span class="size">(261 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 09/06/2012 03:47 am</span>
+  
+  </p>
+
+<p><a href="http://opendesignengine.net/attachments/121/Base_disc_with_viton_spacers_ODE.jpg" class="icon icon-attachment">Base_disc_with_viton_spacers_ODE.jpg</a>
+  <span class="size">(93.1 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 09/06/2012 03:47 am</span>
+  
+  </p>
+
+<p><a href="http://opendesignengine.net/attachments/122/Assembled_HF_vibration_isolator_ODE.jpg" class="icon icon-attachment">Assembled_HF_vibration_isolator_ODE.jpg</a>
+  <span class="size">(79.5 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 09/06/2012 03:47 am</span>
+  
+  </p>
+
+<p><a href="http://opendesignengine.net/attachments/123/Partial_assembly_to_check_ceramic_mount_ODE.jpg" class="icon icon-attachment">Partial_assembly_to_check_ceramic_mount_ODE.jpg</a>
+  <span class="size">(119.3 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 09/06/2012 03:47 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/125/Piezotube_diagram.jpg" class="icon icon-attachment">Piezotube_diagram.jpg</a>
+  <span class="size">(45.3 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 09/07/2012 08:52 pm</span>
+  
+  </p>
+
+<p><a href="http://opendesignengine.net/attachments/126/Piezotube_with_wires_attached.jpg" class="icon icon-attachment">Piezotube_with_wires_attached.jpg</a>
+  <span class="size">(107.8 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 09/08/2012 12:41 am</span>
+  
+  </p>
+
+<p><a href="http://opendesignengine.net/attachments/142/Ceramic_holder_1.jpg" class="icon icon-attachment">Ceramic_holder_1.jpg</a>
+  <span class="size">(92.8 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 09/17/2012 03:27 am</span>
+  
+  </p>
+
+<p><a href="http://opendesignengine.net/attachments/143/Ceramic_holder_2.jpg" class="icon icon-attachment">Ceramic_holder_2.jpg</a>
+  <span class="size">(121 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 09/17/2012 03:27 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/153/desk.jpg" class="icon icon-attachment">desk.jpg</a>
+  <span class="size">(496 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 09/23/2012 03:58 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/159/STM_-_Base_plate.jpg" class="icon icon-attachment">STM_-_Base_plate.jpg</a>
+  <span class="size">(38 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 09/26/2012 03:26 am</span>
+  
+  </p>
+
+<p><a href="http://opendesignengine.net/attachments/163/base_plate.jpg" class="icon icon-attachment">base_plate.jpg</a>
+  <span class="size">(99.6 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 10/05/2012 11:25 pm</span>
+  
+  </p>
+
+<p><a href="../../../attachments/164/desk2.jpg" class="icon icon-attachment">desk2.jpg</a>
+  <span class="size">(131.6 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 10/05/2012 11:26 pm</span>
+  
+  </p>
+
+<p><a href="http://opendesignengine.net/attachments/170/stm-bpca-bvc.jpg" class="icon icon-attachment">stm-bpca-bvc.jpg</a>
+  <span class="size">(256.9 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 10/15/2012 02:04 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/179/tca.jpg" class="icon icon-attachment">tca.jpg</a>
+  <span class="size">(194.5 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 10/28/2012 12:52 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/180/tca2.jpg" class="icon icon-attachment">tca2.jpg</a>
+  <span class="size">(26.8 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 10/28/2012 12:52 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/181/bpca_x_3.jpg" class="icon icon-attachment">bpca_x_3.jpg</a>
+  <span class="size">(212 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 10/30/2012 04:15 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/182/BPCA_detail.jpg" class="icon icon-attachment">BPCA_detail.jpg</a>
+  <span class="size">(109.8 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 11/16/2012 12:45 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/183/STM_15112012.jpg" class="icon icon-attachment">STM_15112012.jpg</a>
+  <span class="size">(133.1 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 11/16/2012 12:45 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/186/bvc.jpg" class="icon icon-attachment">bvc.jpg</a>
+  <span class="size">(404.5 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 11/20/2012 03:59 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/187/tca_schematic.jpg" class="icon icon-attachment">tca_schematic.jpg</a>
+  <span class="size">(388.8 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 11/20/2012 04:04 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/188/ceramic_mount.jpg" class="icon icon-attachment">ceramic_mount.jpg</a>
+  <span class="size">(68.2 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 11/21/2012 03:01 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/189/stm-bvc-reva.jpg" class="icon icon-attachment">stm-bvc-reva.jpg</a>
+  <span class="size">(249.8 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 12/02/2012 02:15 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/239/tca_schematic_rev_b.jpg" class="icon icon-attachment">tca_schematic_rev_b.jpg</a>
+  <span class="size">(432.8 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 01/21/2013 12:59 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/313/stm-tca-revb.jpg" class="icon icon-attachment">stm-tca-revb.jpg</a>
+  <span class="size">(188.5 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 02/12/2013 01:26 am</span>
+  
+  </p>
+
+<p><a href="../../../attachments/315/stm-bvc-revb.jpg" class="icon icon-attachment">stm-bvc-revb.jpg</a>
+  <span class="size">(150.7 kB)</span>
+  
+  
+    <span class="author">Andrew Starr, 02/28/2013 11:09 pm</span>
+  
+  </p>
+
+</div>
+
+
+
+
+<p class="other-formats">Also available in:
+	<span><a href="http://opendesignengine.net/projects/stm-ajstarr/wiki/Design_and_Construction.html?version=24" class="html" rel="nofollow">HTML</a></span>
+	<span><a href="http://opendesignengine.net/projects/stm-ajstarr/wiki/Design_and_Construction.txt?version=24" class="txt" rel="nofollow">TXT</a></span>
+</p>
+
+
+
+
+
+
+
+        
+				<div style="clear:both;"></div>
+    </div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+	
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://www.redmine.org/">Redmine</a> &copy; 2006-2011 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25732509-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> <div id="footer">
+  <div class="bgl"><div class="bgr">
+    <a href="../../../terms_of_services/Design_and_Construction.html">Terms Of Service</a>
+  </div></div>
+</div>
+<div id="footer">
+</div>
+</body>
+</html>

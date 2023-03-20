@@ -1,0 +1,11 @@
+h1. Development Plans
+
+The original discussions about the development of ODE took place in Mach 30 "meetings":http://www.mach30.org/blogs/jrs/2010-05-21-minutes-from-opendesignenginenet-requirements-meeting and on the CSTART "forums":http://cstart.org/forum/software-projects/cstartmach-30-joint-venture-for-web-based-engineering-project-management/ and "wiki":http://cstart.org/wiki/ODE.  This work led to the development of the [[Wiki#Guiding-Values|Guiding Values]], [[Early Key Decisions]], and [[Potential Features]].
+
+h1. Roadmap Documentation
+
+The following pages detail the goals and requirements for the software releases of ODE.
+
+* [[v0.1 - Private Alpha]]
+* [[v0.2 - Public Beta]]
+* [[v0.3 - UI Facelift]]

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Groundstation v.2.0: Preliminary design</title>
+  <link rel="self" href="http://opendesignengine.net/projects/gs-002/boards/27.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/gs-002/boards/27"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-07-21T22:33:28+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Preliminary design: Preliminary design notes</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/27/topics/547"/>
+    <id>http://opendesignengine.net/boards/27/topics/547</id>
+    <updated>2013-07-21T22:33:28+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;A 3 rpm gear motor is mounted inverted and mounted to the middle of a 24" aluminum beam.  To take the load, the 24" aluminum beam sits on a ball bearing turntable rated for several hundred pounds.  Ordinary hobby servos are mounted on either side of the aluminum channel using an aluminum mount for the servo as well as a pillow block (bearing) to support the weight and torsional loads of the antenna.  The shaft on which the antennas are mounted is an aluminum output shaft extension for the servo which rides in the 1/2" pillow block.  The antenna mounts to this output extension shaft by 6-32 threaded holes in the output hub.  A cap is installed on the tail shaft of the azimuth gear motor to help weatherproofing.  The servos mounted on the ends of the aluminum beam will be protected from the elements by the pillow block and a small plastic shroud.&lt;/p&gt;
+
+
+	&lt;p&gt;Azimuth position is determined by a digital compass module which will be mounted on a plastic extension arm which will keep the elements out of it and hold the sensor away from both the motor's magnetic field and the diamagnetic properties of the aluminum components.  To determine the true heading of the array, The magnetic heading will have an offset applied (magvar) which for this location comes to 9 degrees east.  Future revisions of this design will contain a GPS module and mathematically extract magvar from a lookup table based upon the GPS position so that the ground station may be used anywhere in the world without calibration.&lt;/p&gt;
+
+
+	&lt;p&gt;Elevation for each antenna is accomplished using a hobby servo, and while it is possible to determine elevation from the servo's position, the elevation axis receives positional feedback from an accelerometer. This device will determine zenith from the vector of the gravitational pull, and determine true elevation from there independent of the mount's installation.  The mount may be placed on an uneven surface or vehicle with no loss of accuracy.  The system is designed to self-calibrate.  The accuracy of the selected sensors is higher than the selectivity of the antenna's pattern, so while the sensors may give noisy data, this can be sanity checked and mathematically smoothed to yield a stream of good data in a noisy environment.&lt;/p&gt;
+
+
+	&lt;p&gt;The controller will ramp up the speed according to a programmed rate of acceleration (soft start) and slow it down based upon a mathematical process called PID. PID stands for proportional-integral-derivative, which simply means that the speed at which the motion occurs is proportional to the distance it must travel to hit the set point. As it approaches the set point, the motion slows reducing wear on the components and enhancing accuracy. These systems should make the mount have a long productive life chasing satellites.  It may not be possible to apply either a soft start or PID to the elevation axis since the servos have similar systems built into their controllers.  This will likely be a factor which must be experimented with.&lt;/p&gt;    </content>
+  </entry>
+</feed>

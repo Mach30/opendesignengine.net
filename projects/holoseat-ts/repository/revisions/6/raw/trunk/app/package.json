@@ -1,0 +1,28 @@
+{
+  "name": "holoseat-ts",
+  "version": "1.0.0",
+  "description": "Test Stand Control App for Holoseat Components",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "install": "electron-rebuild"
+  },
+  "repository": {
+    "type": "svn",
+    "url": "https://opendesignengine.net/svn/holoseat-ts"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "Model B, LLC",
+  "license": "GPLv3",
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-rebuild": "^1.4.0"
+  },
+  "dependencies": {
+    "electron-mocha": "^6.0.2",
+    "mocha": "^5.1.1",
+    "serialport": "^6.2.0"
+  }
+}

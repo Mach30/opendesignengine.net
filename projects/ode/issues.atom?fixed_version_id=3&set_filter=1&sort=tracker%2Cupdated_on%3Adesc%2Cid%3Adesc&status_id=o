@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/ode/issues.atom?fixed_version_id=3&amp;amp;set_filter=1&amp;amp;sort=tracker%2Cupdated_on%3Adesc%2Cid%3Adesc&amp;amp;status_id=o"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/ode/issues?fixed_version_id=3&amp;amp;set_filter=1&amp;amp;sort=tracker%2Cupdated_on%3Adesc%2Cid%3Adesc&amp;amp;status_id=o"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-09-18T16:07:06+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Feature #184 (New): Add STL part editor using OpenJsCad</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/184"/>
+    <id>http://opendesignengine.net/issues/184</id>
+    <updated>2013-09-18T16:07:06+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Provides a Google Docs like functionality for editing 3D parts direct on ODE.  See &lt;a href="http://joostn.github.io/OpenJsCad/" class="external"&gt;OpenJsCad&lt;/a&gt;.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #183 (New): Include the ability to embed references to other OSHW projects in BoM module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/183"/>
+    <id>http://opendesignengine.net/issues/183</id>
+    <updated>2013-09-18T16:05:05+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;As OSHW projects grow in scale and complexity, some projects will become components of other projects (Thingiverse objects come to mind as an example).  Bill of Materials components should be able to easily point at OSHW projects as components and take advantage of metadata from the source sites.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #181 (New): Slideshare wiki macro</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/181"/>
+    <id>http://opendesignengine.net/issues/181</id>
+    <updated>2013-09-18T15:54:40+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Add a &lt;a href="http://www.slideshare.net/" class="external"&gt;Slideshare&lt;/a&gt; wiki macro (or see if one exists as a Redmine plugin) to render embedded slideshows in wiki pages.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #180 (New): Add 3D rendering support to wiki syntax and DMSF file details</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/180"/>
+    <id>http://opendesignengine.net/issues/180</id>
+    <updated>2013-09-18T15:53:07+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Use &lt;a href="http://n0r.org/thingiview.js/examples/index.html" class="external"&gt;Thingiview.js&lt;/a&gt; to add a wiki macro which can render 3D objects (STL for now) inline on wiki pages.  Take look at &lt;a href="http://n0r.org/thingiview.js/examples/pre_parsed_json_inline.html" class="external"&gt;this example&lt;/a&gt; to see how useful this could be.&lt;/p&gt;
+
+
+	&lt;p&gt;Also look at embedding this directly into DMSF file detail pages so user can preview the file from DMSF file details.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #179 (New): Dozuki Integration</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/179"/>
+    <id>http://opendesignengine.net/issues/179</id>
+    <updated>2013-09-18T15:47:52+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://www.dozuki.com/" class="external"&gt;Dozuki&lt;/a&gt; is a technical manual wiki tool (used by a growing list of OSHW projects). One very interesting possibility for integration is ODE plugin for Dozuki. Managers would give ODE a Dozuki url and then ODE would show the Dozuki manual under a &#8220;manuals&#8221; tab in the project.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #152 (New): Add "Create new page" button to wiki system</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/152"/>
+    <id>http://opendesignengine.net/issues/152</id>
+    <updated>2013-07-24T12:41:11+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;From a user:  "I just realized (as I was writing this email) that I can create a new wiki page by simply entering /wiki/newpage into the URL and vioala it pops up.  I save and can then link to it.  While that's great, it took me a while to figure that out.  It may be good to add a "add new page" button somewhere, so it's a little more obvious."&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #150 (New): Install and begin usage of Redmine CMS Plugin</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/150"/>
+    <id>http://opendesignengine.net/issues/150</id>
+    <updated>2013-07-20T14:15:19+00:00</updated>
+    <author>
+      <name>Christopher Sigman</name>
+    </author>
+    <content type="html">
+&lt;p&gt;The plugin (&lt;a class="external" href="http://www.redmine.org/plugins/cms"&gt;http://www.redmine.org/plugins/cms&lt;/a&gt;) may be very useful for adding additional information that would require writing a custom plugin at the moment in a much easier manner.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #129 (New): Add support for formal PLM process</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/129"/>
+    <id>http://opendesignengine.net/issues/129</id>
+    <updated>2013-04-30T14:24:28+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;See &lt;a href="http://openplm.org/trac" class="external"&gt;OpenPLM&lt;/a&gt; for possible source material&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #128 (New): Add oEmbed wiki macro</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/128"/>
+    <id>http://opendesignengine.net/issues/128</id>
+    <updated>2013-04-30T14:18:38+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://www.oembed.com/" class="external"&gt;oEmbed&lt;/a&gt; is an open API which sites can use to support providing embeddable content.  We may want to add a wiki macro to support embedding any oEmbed content.  Further, there is an extension called &lt;a href="http://noembed.com/" class="external"&gt;Noembed&lt;/a&gt; which allows users to embed content from sites which don't export oEmbed content as oEmbed content (ok that was a little obtuse).&lt;/p&gt;
+
+
+	&lt;p&gt;TL;DR - this looks useful, we should check it out for the wiki system.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #124 (New): Enhanced wiki formatting</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/124"/>
+    <id>http://opendesignengine.net/issues/124</id>
+    <updated>2013-03-22T14:39:30+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Would like to be able to change font foreground and background colors (for highliting, etc).&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #113 (New): Repository Zip Download</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/113"/>
+    <id>http://opendesignengine.net/issues/113</id>
+    <updated>2013-01-29T08:10:08+00:00</updated>
+    <author>
+      <name>Jack Linke</name>
+    </author>
+    <content type="html">
+&lt;p&gt;One of the most convenient features on GitHub is the ability to download an entire repository snapshot in a zip file with the click of a button. This is very handy for showing the entire project to clients or other interested parties without having to install a git client (or svn client in this case), or download each file individually.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #49 (New): Save filter settings on Activity tab</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/49"/>
+    <id>http://opendesignengine.net/issues/49</id>
+    <updated>2012-02-12T04:47:34+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;There is no way that I've found to save the filter selection on the &#8220;Activity&#8221; tab for a project. If these are the same filters used for the "Latest News" section of the "My page" page it might explain why no news shows up for me. &lt;img src="http://innovationsts.com/downloads/mach30/Activity_Tab_Filters.png" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #45 (New): Add license usage stats to a public page </title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/45"/>
+    <id>http://opendesignengine.net/issues/45</id>
+    <updated>2012-01-09T22:27:13+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;During a public discussion on the set of licenses currently available on ODE, we received the following comment.&lt;/p&gt;
+
+
+	&lt;p&gt;"This would be great.  Are you going to publish stats on which licenses are the most popular?  That would really help get a better sense of which licenses are working for (or at least appealing to) people."&lt;/p&gt;
+
+
+	&lt;p&gt;Since we are already storing license selections, it should be pretty easy to generate a real time (or nearly real time) report.  I think it should be included on some sort of about page on the site which is publicly available.  Maybe also include other cool stats:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;total number of projects&lt;/li&gt;
+		&lt;li&gt;date/time of last created project&lt;/li&gt;
+		&lt;li&gt;license stats&lt;/li&gt;
+		&lt;li&gt;number of projects broken down by category/tag once we have categories or tags&lt;/li&gt;
+		&lt;li&gt;total number of users&lt;/li&gt;
+		&lt;li&gt;date/time of last active user&lt;/li&gt;
+		&lt;li&gt;over all sales stats of kits/projects once we have a shopping cart system&lt;/li&gt;
+		&lt;li&gt;etc&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #37 (New): Visual diffs for graphical file formats</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/37"/>
+    <id>http://opendesignengine.net/issues/37</id>
+    <updated>2011-09-24T21:56:29+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;"The one &lt;strong&gt;killer&lt;/strong&gt; feature that OSHW needs for project management sites is visual diffs between revisions. It's totally possible, for any file format that lends itself to conversion to graphical formats (e.g., schematic diagrams, physical layout, gerber files). Is this on the menu?" - from Google+ conversation with Windell Oskay&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #26 (New): Native support for Bills of Materials</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/26"/>
+    <id>http://opendesignengine.net/issues/26</id>
+    <updated>2011-04-09T16:17:17+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;The Bill of Materials (BOM) module should include a BOM tree to visualize the structure. Also, a method to see where a part is used in other assemblies.&lt;/p&gt;    </content>
+  </entry>
+</feed>

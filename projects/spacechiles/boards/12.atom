@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Space Chiles v1.0: Build Discussions</title>
+  <link rel="self" href="http://opendesignengine.net/projects/spacechiles/boards/12.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/spacechiles/boards/12"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-01-12T23:15:15+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Build Discussions: RE: Current build status, 2012-07-03</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/12/topics/250?r=338#message-338"/>
+    <id>http://opendesignengine.net/boards/12/topics/250?r=338#message-338</id>
+    <updated>2013-01-12T23:15:15+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;That's true, I didn't think about that. The Far Horizons team gets their balloon ready in a large hangar to shield them from the wind, but most teams won't have that luxury.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Build Discussions: RE: Current build status, 2012-07-03</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/12/topics/250?r=337#message-337"/>
+    <id>http://opendesignengine.net/boards/12/topics/250?r=337#message-337</id>
+    <updated>2013-01-12T23:12:48+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;My only concern is that the generator would only fill at a certain speed, and that initial point where there is enough air and H2 in the balloon to go boom would be much longer than if you gassed up with a cylinder.  The second issue is wind... the longer in an unready condition, the more risk.  The rest is certainly possible.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Build Discussions: RE: Current build status, 2012-07-03</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/12/topics/250?r=336#message-336"/>
+    <id>http://opendesignengine.net/boards/12/topics/250?r=336#message-336</id>
+    <updated>2013-01-12T23:06:36+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Does anyone think it would be possible to use electrolysis onsite to fill a balloon for flight? I've heard of hydrogen "generators" that I think basically electrolyze water into hydrogen and oxygen, but I don't know if the water could be converted fast enough to fill a balloon in a practical amount of time. If you could do it that way you would only have to transport water to fill the HAB. No idea on the practicality of this, it's just an idea that's been rattling around in my head for awhile and Aaron's comment reminded me of it.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Build Discussions: RE: Current build status, 2012-07-03</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/12/topics/250?r=332#message-332"/>
+    <id>http://opendesignengine.net/boards/12/topics/250?r=332#message-332</id>
+    <updated>2013-01-12T20:19:03+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;There are several issued when it comes to the helium scarcity.  The first is production.  Helium comes from natural gas production, but it must be reclaimed using a cryogenic process.  This adds cost to not only the helium, but also the natural gas.  As natural gas production decreases, so does the percentage which is reclaimed from it.  The second issue is consumption.  Helium is used extensively as the cryo cooling for MRI magnets and other superconductive projects.  It's a slow down of supply and an increase in demand.&lt;/p&gt;
+
+
+	&lt;p&gt;While helium is in short supply, hydrogen is not.  Another advantage to hydrogen besides availability is it's lifting capacity.  The same volume of industrial hydrogen will have 1.364 times the lift capacity of commercially available helium, which may translate to a higher flight or heavier payload. It is also legal to use hydrogen as a lift gas in the US, even for manned balloons: &lt;a class="external" href="http://smallblimps.lefora.com/2009/12/17/hydrogen-is-ok-lift-gas-in-usa-hooray/"&gt;http://smallblimps.lefora.com/2009/12/17/hydrogen-is-ok-lift-gas-in-usa-hooray/&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Of course we all remember the Hindenburg, but if proper precautions are takes to remove ignition sources and control static discharge, the use of hydrogen in a one time use unmanned balloon might be performed safely.  It should be pointed out that accidents filling airships with hydrogen were fairly rare.  Hydrogen itself cannot ignite unless introduced to a volume of oxygen resulting in a combustible atmosphere.  While this course of action may seem foolhardy, with the proper precautions, it is my belief that hydrogen may be the lift gas needed for HAB projects such as this.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Build Discussions: RE: Quelab Space Balloon design discussion</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/12/topics/251?r=252#message-252"/>
+    <id>http://opendesignengine.net/boards/12/topics/251?r=252#message-252</id>
+    <updated>2012-09-17T21:35:31+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Originally posted by Greg Moran on 06-24-12 on the Far Horizons v1.0 project.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Project Themes:&lt;/strong&gt;&lt;br /&gt; - Quelab logo flight - capture a pic of the Quelab logo with the curvature of the Earth in the background&lt;br /&gt; - Space Green Chilis - launch seeds of the New Mexican (Hatch?) Green chilis into space... makes it a truely New Mexican project.  May get sponsorships from local companies.  QUESTION:  What to do with the seeds afterwards?  (Grow them, sell them, study them?)&lt;br /&gt; - Bulk paper airplane launch, from altitude&lt;br /&gt; - In-flight video&lt;br /&gt; - Launch a Team photo&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Build Discussions: Quelab Space Balloon design discussion</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/12/topics/251"/>
+    <id>http://opendesignengine.net/boards/12/topics/251</id>
+    <updated>2012-09-17T21:34:08+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Originally posted by Greg Moran on 06-24-12 on the Far Horizons v1.0 project.&lt;/p&gt;
+
+
+	&lt;p&gt;Here's a first post with some intro pics of the Quelab space balloon, based on the Adler Far Horizon's balloon project.  Subjects:&lt;/p&gt;
+
+
+	&lt;p&gt;- Team Photo&lt;br /&gt;- Project "theme" brainstorming&lt;br /&gt;- initial discussion of the differences between the Quelab Space Balloon and the Adler Far Horizon Balloon&lt;br /&gt;- First build project: Yagi antenna for tracking beacon&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Build Discussions: Current build status, 2012-07-03</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/12/topics/250"/>
+    <id>http://opendesignengine.net/boards/12/topics/250</id>
+    <updated>2012-09-17T21:24:22+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Originally posted by Greg Moran on the Far Horizons v1.0 project.&lt;/p&gt;
+
+
+	&lt;p&gt;Sourcing materials and components from Lowe's, Home Depot, and scrounging from friends.&lt;/p&gt;
+
+
+	&lt;p&gt;The component that has given us the most trouble is the RF Beacon Transmitter.  The supplier that was specified had the part on backorder.  We have most everything else now.  &lt;br /&gt;Nylon material for covering the styrofoam payload case: &lt;img src="https://lh4.googleusercontent.com/-UZb4w-fmHE4/T_O97GEHdnI/AAAAAAAABrM/QmEQIi6K9uM/s711/12+-+2" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Recovery Parachute: &lt;img src="https://lh5.googleusercontent.com/-4Eqr9SZNwJ8/T_PRBBwIvhI/AAAAAAAABrg/zyrqxnyYwQs/s711/2012-07-01+20.18.17.jpg" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Styrofoam Payload Case: &lt;img src="https://lh4.googleusercontent.com/-dM1RI_Stcts/T_PRAy5M94I/AAAAAAAABrc/1Ipr-zbO6os/s711/2012-07-01+20.18.00.jpg" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;some of the payload components (New Mexico Green Chili Seeds, and Sonic Beacon): &lt;img src="https://lh3.googleusercontent.com/-Ct_LHsbprFI/T_PS5LsbMhI/AAAAAAAABsA/Oc9IjNtbbj4/s721/2012-07-03+23.20.25.jpg" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Tracking receivers: &lt;img src="https://lh5.googleusercontent.com/-ymVCoVfExTg/T-E-cldc-FI/AAAAAAAABgQ/1UUNAH-CgdY/s711/12+-+1" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The weather balloon is enroute.  Delivery is scheduled for Friday.&lt;/p&gt;    </content>
+  </entry>
+</feed>

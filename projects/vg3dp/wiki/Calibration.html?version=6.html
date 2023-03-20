@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Calibration</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body { font:80% Verdana,Tahoma,Arial,sans-serif; }
+h1, h2, h3, h4 {  font-family: "Trebuchet MS",Georgia,"Times New Roman",serif; }
+ul.toc { padding: 4px; margin-left: 0; }
+ul.toc li { list-style-type:none; }
+ul.toc li.heading2 { margin-left: 1em; }
+ul.toc li.heading3 { margin-left: 2em; }
+a.wiki-anchor { display: none; margin-left: 6px; text-decoration: none; }
+a.wiki-anchor:hover { color: #aaa !important; text-decoration: none; }
+h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor { display: inline; color: #ddd; }
+</style>
+</head>
+<body>
+<p>should already be done<br />XYZ steps/mm set to calculated values <a href="http://prusaprinters.org/calculator/" class="external">calculator</a><br />if that doesn't work <a href="http://reprap.org/wiki/Builders/Config/Config_Axes" class="external">config axes</a><br />and <a class="external" href="http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#Prerequisites">http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#Prerequisites</a></p>
+
+
+	<p>things to keep in mind<br />plastic shrinks as it cools down. this should be compensated for by the model, not by the printer<br />belts and fasteners loosen over time. make sure they're tight and check again if backlash appears later<br />stepper motors can miss steps if they are commanded to move faster than the power supplied to them allows. when you start printing at faster speeds watch out for missed steps<br />the shape of the infill can show through on thin perimeters. just increase the number of perimeters to hide it<br />changing temperatures affects results. watch out for breezes in the area your printer sits</p>
+
+
+	<p>before printing</p>
+
+
+	<p>motor current (correct stepper motor current)<br />axes (all axes parallel/perpendicular)<br />bed surface (ensure proper plastic adhesion)<br />bed level (extruder the same height at all points on bed)<br />Z home <a class="external" href="http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#Z_height">http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#Z_height</a><br />gross extruder temperature<br />gross E steps/mm <a href="http://reprap.org/wiki/Commissioning" class="external">commissioning</a> <a class="external" href="http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#E_steps">http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#E_steps</a></p>
+
+
+	<p>now you can print</p>
+
+
+	<p>? 3 known values of height/width ?<br />layer height (adjust by .01 till beautiful)<br />extrusion width <br />precise extruder temperature <a class="external" href="http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#Nozzle_Temperature">http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#Nozzle_Temperature</a><br />precise bed temperature <a class="external" href="http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#Bed_Temperature">http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#Bed_Temperature</a><br />precise E steps/mm <a class="external" href="http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#E_Steps_Fine_Tuning">http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide#E_Steps_Fine_Tuning</a><br />infill (1.0 solid cube)<br />perimeter width (nesting blocks)<br />ooze control<br />bridging<br />overhang</p>
+
+
+references
+	<ul>
+	<li><a class="external" href="http://reprap.org/wiki/Calibration">http://reprap.org/wiki/Calibration</a></li>
+	</ul>
+</body>
+</html>

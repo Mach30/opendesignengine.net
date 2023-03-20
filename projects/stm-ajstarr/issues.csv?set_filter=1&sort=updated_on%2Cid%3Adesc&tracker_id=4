@@ -1,0 +1,9 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+85,New,Scanning Tunnelling Microscope,Milestone,Normal,Test performance of high frequency isolator,"","","",Andrew Starr,10/17/2012,"",0,"","",10/17/2012 04:08 am,10/17/2012 04:08 am,""
+86,New,Scanning Tunnelling Microscope,Milestone,Normal,Test performance of Tunnelling Current Amplifier,"","","",Andrew Starr,10/17/2012,"",0,"","",10/17/2012 04:12 am,10/17/2012 04:12 am,""
+88,New,Scanning Tunnelling Microscope,Milestone,Normal,Assembly of bias voltage controller,"","","",Andrew Starr,11/17/2012,"",0,"","",11/17/2012 04:21 pm,11/17/2012 04:21 pm,""
+89,New,Scanning Tunnelling Microscope,Milestone,Normal,Test performance of bias voltage controller,"","","",Andrew Starr,11/17/2012,"",0,"","",11/17/2012 04:26 pm,11/17/2012 04:26 pm,""
+84,In Progress,Scanning Tunnelling Microscope,Milestone,Normal,Parts list for Bias Voltage Controller,"","","",Andrew Starr,10/17/2012,"",0,"","",10/17/2012 04:08 am,12/02/2012 02:46 am,""
+96,New,Scanning Tunnelling Microscope,Milestone,Normal,Main controller PCB,"","","",Andrew Starr,12/02/2012,"",0,"","",12/02/2012 02:54 am,12/02/2012 02:54 am,""
+97,New,Scanning Tunnelling Microscope,Milestone,Normal,Test performance of main controller,"","","",Andrew Starr,12/02/2012,"",0,"","",12/02/2012 02:54 am,12/02/2012 02:54 am,""
+98,New,Scanning Tunnelling Microscope,Milestone,Normal,Main controller schematic,"","","",Andrew Starr,12/02/2012,"",0,"","",12/02/2012 02:55 am,12/02/2012 02:55 am,""

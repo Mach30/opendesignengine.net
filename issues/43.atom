@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/43.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2011-11-03T15:44:55+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Open Design Engine - Bug #43: Getting error when browsing repositories</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/43"/>
+    <id>http://opendesignengine.net/issues/43?journal_id=46</id>
+    <updated>2011-11-03T15:44:55+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;It looks like this is a pure use of memory issue.  After further investigation I found the system was running at 99% memory usage.  I tried to restart the ODE services using the bitnami control script, but the script did not kill the mongrel process.  Did some more digging and I found the mongrel process and its startup commands in the Capistrano deployment script.  Restarting mongrel using the commands from the deployment script restored repository access.&lt;/p&gt;
+
+
+	&lt;p&gt;Next steps:&lt;/p&gt;
+
+
+	&lt;ol&gt;
+	&lt;li&gt;Address process management processes in the wiki so it is more clear how to start/stop/restart the ODE services&lt;/li&gt;
+		&lt;li&gt;Find out how much memory we expect to be using and determine if this is a bug or a configuration issue&lt;/li&gt;
+		&lt;li&gt;Take appropriate corrective action based on research&lt;/li&gt;
+	&lt;/ol&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #43: Getting error when browsing repositories</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/43"/>
+    <id>http://opendesignengine.net/issues/43?journal_id=61</id>
+    <updated>2012-02-14T02:19:57+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Not sure if this is related, but we just had what appears to be a mongrel crash.  The work around was to remove the mongrel pid file under apps/ode/tmp/.....  and then restart the ODE daemons using the bitnami control script.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #43: Getting error when browsing repositories</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/43"/>
+    <id>http://opendesignengine.net/issues/43?journal_id=74</id>
+    <updated>2012-03-18T03:19:51+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; changed from &lt;i&gt;New&lt;/i&gt; to &lt;i&gt;In Progress&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #43: Getting error when browsing repositories</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/43"/>
+    <id>http://opendesignengine.net/issues/43?journal_id=78</id>
+    <updated>2012-03-27T15:32:14+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; changed from &lt;i&gt;In Progress&lt;/i&gt; to &lt;i&gt;Closed&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;We have not seen this issue in months.  Closing until we can reproduce it.&lt;/p&gt;    </content>
+  </entry>
+</feed>

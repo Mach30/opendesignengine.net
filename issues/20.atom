@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/20.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2011-04-09T16:11:15+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Open Design Engine - Feature #20: Add support for shared "engineering" workflows</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/20"/>
+    <id>http://opendesignengine.net/issues/20?journal_id=3</id>
+    <updated>2011-04-09T16:11:15+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;One possible engineering workflow (project features should support following all or part of the workflow as needed by the projects):
+	&lt;ul&gt;
+	&lt;li&gt;get/make requirements (to understand what you are going to build)&lt;/li&gt;
+		&lt;li&gt;setup 1 or more teams/sub-projects (small scale still just 5-10 people all one team, big scale several sub-project teams)&lt;/li&gt;
+		&lt;li&gt;create tasks that link to derived requirements to establish traceability, in multi-team scenarios, tasks should be associated with the appropriate teams/sub-projects; in single team scenario, all tasks should get associated to the main team/project when there are multiple teams, usually need a PCT (team of teams)&lt;/li&gt;
+		&lt;li&gt;loop through below, each iteration move into more detail (lofi analysis, hifi analysis, cad parts, prototype, build, fly)&lt;/li&gt;
+		&lt;li&gt;do work (each iteration = more detail: lo-fi analysis, hi-fi analysis, produce cad parts, prototype, build, fly/test) &amp;lt;&#8211;if we're generalizing&lt;/li&gt;
+		&lt;li&gt;document (examples: procedures, BoM, drawings, parts, analyses docs, graphs, reports, meeting minutes, presentations, Requirements docs, etc)&lt;/li&gt;
+		&lt;li&gt;review/test&lt;/li&gt;
+		&lt;li&gt;update design&lt;/li&gt;
+		&lt;li&gt;approve &#8211; triggers next iteration&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #20: Add support for shared "engineering" workflows</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/20"/>
+    <id>http://opendesignengine.net/issues/20?journal_id=378</id>
+    <updated>2013-11-07T15:14:08+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Comments from Chris - not sure this is a considerable investment of time/energy (can't even begin to estimate it without breaking it into sub-features) and not sure people would really want to use it.&lt;/p&gt;    </content>
+  </entry>
+</feed>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Holoseat - Setting up CHIP environment easily and repeatedly - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../favicon.ico%3F1359925685' />
+<link href="http://opendesignengine.net/stylesheets/application.css?1359925542" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../javascripts/prototype.js%3F1359925542" type="text/javascript"></script>
+<script src="../../../javascripts/effects.js%3F1359925542" type="text/javascript"></script>
+<script src="../../../javascripts/dragdrop.js%3F1359925542" type="text/javascript"></script>
+<script src="../../../javascripts/controls.js%3F1359925542" type="text/javascript"></script>
+<script src="../../../javascripts/application.js%3F1359925542" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="http://opendesignengine.net/plugin_assets/redmine_legal/stylesheets/terms-of-service.css?1359925705" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+  <link href="http://opendesignengine.net/stylesheets/scm.css?1359925542" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-messages action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="http://opendesignengine.net/login" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../account/register.html" class="home">Home</a></li>
+<li><a href="../../../projects.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="http://opendesignengine.net/search/index/holoseat" method="get">
+        <input name="messages" type="hidden" value="1" />
+        <a href="http://opendesignengine.net/search/index/holoseat" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Holoseat</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../projects/holoseat%3Fjump=overview.html" class="overview">Overview</a></li>
+<li><a href="../../../projects/holoseat%3Fjump=activity.html" class="activity">Activity</a></li>
+<li><a href="../../../projects/holoseat%3Fjump=issues.html" class="issues">Issues</a></li>
+<li><a href="http://opendesignengine.net/projects/holoseat/news" class="news">News</a></li>
+<li><a href="../../../projects/holoseat%3Fjump=dmsf.html" class="dmsf">DMSF</a></li>
+<li><a href="../../../projects/holoseat%3Fjump=wiki.html" class="wiki">Wiki</a></li>
+<li><a href="../../../projects/holoseat/boards.html" class="boards selected">Forums</a></li>
+<li><a href="../../../projects/holoseat%3Fjump=repository.html" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <p class="breadcrumb"><a href="../../../projects/holoseat/boards.html">Forums</a> » <a href="../../../projects/holoseat/boards/36.html">Design Discussions</a> » </p>
+
+<div class="contextual">
+    <span class="message-1263-watcher"></span>
+    
+    
+    
+</div>
+
+<h2>Setting up CHIP environment easily and repeatedly</h2>
+
+<div class="message">
+<p><span class="author">Added by <a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a> <a href="../../../projects/holoseat/activity%3Ffrom=2017-03-26.html" title="03/26/2017 11:48 am">over 5 years</a> ago</span></p>
+<div class="wiki">
+<a name="Introduction"></a>
+<h2 >Introduction<a href="1263%3Fr=1275.html#Introduction" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Holoseat needs an easy and repeatable process for setting up the dev/runtime environments on CHIPs and CHIP Pros.  We need this process to support several initiatives.</p>
+
+
+	<ul>
+	<li>Ensure consistent development environments across physically distributed team</li>
+		<li>Simplify setup steps for volunteers (and staff)</li>
+		<li>Simplify setup steps for production units</li>
+	</ul>
+
+
+	<p>One view of these needs is to say we are looking for a Holoseat platform for the CHIP systems we are using.  Now that <a href="https://blog.hypriot.com/post/docker-supported-on-chip-computer/" class="external">Docker has been run on CHIPs</a> we can look at using Docker to create a Platform as a Service (Paas) methodology to address these needs. As an added bonus, we can publish our Docker images to the larger CHIP and Docker communities to build credibility as NodeBots on CHIP authorities since these are core technologies for Holoseat.</p>
+
+
+	<a name="Implementation-Plans"></a>
+<h2 >Implementation Plans<a href="1263%3Fr=1275.html#Implementation-Plans" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Based on <a href="https://www.packtpub.com/virtualization-and-cloud/build-your-own-paas-docker" class="external">Building Your Own Paas with Docker</a>, we will need at least two containers: a data volume container and a NodeBots container.  Additionally, we may need a database container assuming we can find something lightweight enough to run on the CHIP (e.g. <a href="https://github.com/Level/levelup" class="external">LevelUp/LevelDB</a>).  Note, I am leaning to storing this info in files on disk, but I don't want to rule things out.</p>
+
+
+	<p>There is also the question of if the containers can connect to the CHIP IO pins. Based on a blog post about <a href="https://blog.hypriot.com/post/lets-get-physical/" class="external">Docker and Raspberry Pi</a> and this <a href="http://stackoverflow.com/questions/30059784/docker-access-to-raspberry-pi-gpio-pins" class="external">stack overflow thread</a> it looks like pin access in a container is just a matter of passing the correct devices to the container on startup.</p>
+
+
+	<p>We will also want to consider how we can separate general community needs (e.g. Node.js, Node.js + Johnny-Five) from Holoseat needs (developers need svn and a checkout of the firmware code from Holoseat repo, production units need the firmware without the overhead of svn).  All of this also begs the question how much of this has already been done in the Docker community and how much can we reuse.</p>
+
+
+	<p>The following is a draft outline of steps to take towards implementation:</p>
+
+
+	<ol>
+	<li>Get Docker installed on a CHIP &lt;find link(s)&gt;</li>
+		<li>Test out some base images to determine what we can reuse from the CHIP and Docker communities (e.g look for supported Node.js, and investigate running BusyBox)</li>
+		<li>Test IO pin access from containers, test HID interaction from containers, and test lightweight databases</li>
+		<li>As needed, build up required base Docker images we can share (based on CHIP research, which still needs some documentation work)
+	<ol>
+	<li>Node.js</li>
+		<li>Johnny-Five plus chip-io (on top of Node.js, installed globally so the build steps are done?)</li>
+	</ol>
+	</li>
+		<li><acronym title="?">SSHD</acronym>
+	<ol>
+	<li>...?</li>
+	</ol>
+	</li>
+		<li>Create Holoseat dev image by adding (in layers?)
+	<ol>
+	<li>Data volume</li>
+		<li>SVN</li>
+		<li>Dev directory structure </li>
+		<li>Samba</li>
+		<li>SVN checkout of firmware from trunk</li>
+		<li>... any missin

@@ -1,0 +1,36 @@
+h3. [[Sidebar|Navigation]]
+
+h3. Power/Temp Monitor and Control System (EPS/ECLSS)
+
+* [[General Overview|General Overview]]
+
+h4. Systems Engineering Process
+
+# [[Initial Questions|Initial Questions]]
+# [[Requirements Document|Requirements Document]]
+# [[Block Diagram|Block Diagram]]
+# [[Preliminary Design|Preliminary Design]]
+# [[Detailed Design|Detailed Design]]
+# [[Design Review|Design Review]]
+# [[Procurement_Manufacture|Procurement/Manufacture]]
+# [[Assembly|Assembly]]
+# [[Integration|Integration]]
+# [[Testing|Testing]]
+# [[Delivery_Deployment|Delivery/Deployment]]
+# [[Disposal|Disposal]]
+
+h4. Documentation
+
+# [[Budget|Budget]]
+# [[Timeline|Timeline]]
+# [[BOM|BOM]]
+# [[Schematics and PCB Files|Schematics and PCB Files]]
+# [[Software Source Code|Software Source Code]]
+# [[Assembly Instructions_v1_0|Assembly Instructions]]
+# [[Operating Manual|Operating Manual]]
+# [[Safety Procedures|Safety Procedures]]
+# [[Software/Firmware Summary|Software/Firmware Summary]]
+# [[Meeting Minutes|Meeting Minutes]]
+# [[Licensing and Attribution|Licensing and Attribution]]
+# [[Errata|Errata]]
+# [[Versions|Versions]]

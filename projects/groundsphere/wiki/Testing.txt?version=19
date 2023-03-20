@@ -1,0 +1,64 @@
+h1. Ground Sphere Testing v0.2
+
+This document contains Test and Evaluation Master Plan (TEMP) for both the prototype and production QA.  The prototype plan is designed to ensure the design meets with the specified [[Requirements Document|requirements]].  The QA plan is designed to ensure kits meet quality requirements before being shipped to a customer.
+
+{{toc}}
+
+h2. Prototype TEMP
+
+Prototype test and evaluation cover the full range of ground station functions.  This includes satellite tracking, signal acquisition, "space tweet" decoding.  Additionally, the assembly process will be tested in later prototypes.  Note, test numbers correspond to the requirement the test verifies (for example, Test 1.1.2 verifies requirement TR 1.1.2).  TEMP was developed at the "#EngineerSpeak Hangout on Dec 5, 2013":https://docs.google.com/document/d/1FUgkR5x6Q_Ntf4Is3PuO9rHZiuVqsDXi9DWzXj2cbBs/pub.
+
+|_.Requirement |_.Requirement Title                                                   |_.Verification Method |_.Version |_.Status  |_.Notes                       |
+|TR 1.1.1          |Predict SkyCube flyover opportunities                       |Demonstration           |v0.1         |"Pass [2013.12.05]":https://docs.google.com/document/d/1FUgkR5x6Q_Ntf4Is3PuO9rHZiuVqsDXi9DWzXj2cbBs/pub  |Using 3rd party tool, "GPredict":http://gpredict.oz9aec.net/ which meets requirement assuming ground station location and SkyCube "TLE":http://en.wikipedia.org/wiki/Two-line_element_set are known|
+|TR 1.1.2          |Receive radio signals on 915 MHz                             |Test                           |v0.1         |TBD                        |[[Test 1.1.2 Instructions]] |
+|TR 1.1.3          |Decode "space tweet" message from SkyCube           |Test                           |v0.2         |TBD                        |Lab tests at Southern Stars using v0.1 Ground Sphere and backup SkyCube to confirm correct reception and decoding of "space tweets" |
+|TR 1.1.4          |Account for Doppler shift                                          |Demonstration           |v0.2         |TBD                        |Prereq: Test 1.1.2; show ground station software tunes SDR for doppler shift and that this provides longer signal reception than without feature turned on when observing NPS cubesat |
+|TR 1.2.1          |Time to assemble                                                      |Demonstration           |v0.2         |TBD                        |Juli & Greg will assemble a v0.2 kit at Quelab and time the assembly process |
+|TR 1.2.2          |Tools for assembly                                                    |Inspection                  |v0.2         |TBD                        |Inspect kit assembly instructions to verify the list of tools required meets the spec|
+|TR 1.3             |Have low shipping costs for the packaged kit            |Test                           |v0.2         |TBD                        |Collect components and measure required volume, compare to published shipping rates|
+|TR 1.4.1          |Software must run on Windows                                 |Demonstration           |v0.2         |TBD                        |Install and run software on Win7 and Win8 x86 and 64bit versions |
+|TR 1.4.2          |Software must be easy to install                                |Demonstration           |v0.2         |TBD                        |Show there is an installer and run it to verify the software installs correctly|
+|TR 1.4.3          |Hardware must connect to PC using standard port(s)|Inspection                  |v0.1         |"Pass [2013.12.05]":https://docs.google.com/document/d/1FUgkR5x6Q_Ntf4Is3PuO9rHZiuVqsDXi9DWzXj2cbBs/pub   |Design documentation specifies use of USB SDR module -> connection to ground station computer is a USB connection |
+|TR 1.5             |Hardware must be robust                                          |Analysis                     |v0.1         |TBD                        |During the design phase from v0.1 to v0.2 look at each component and determine potential failure modes and whether they need mitigation|
+
+
+
+h2. Quality Assurance TEMP
+
+This set of instructions will be used to verify that each of the Groundsphere kits will be delivered in a working condition.  
+
+h3. Hardware Assembly
+
+* Verify the parts fit together properly and kit assembly instructions have been followed
+> # Purple primer should not be visible on the outside of the antenna body.
+> # The holes in the coupling section (ANT02) should be 90 degrees apart and in the center of the part.
+> # The RF conductors on the phasing loop and antenna line should not be broken (open) or shorted.  This may be inspected through removal of the top end cap.
+> # Ensure the bolts retaining the aerial lugs are tight.
+> # Inspect the heat shrink tubing covering the ends of the power jack wires for good coverage and mechanical connection.
+> # Ensure all holes in the lower enclosure have a plug, power, or USB cable in them.
+> # Ensure all labels have been afixed to the lower assembly.
+> # Inspect the sealant around the USB connection.  Make sure it has adequate coverage, extending through the hole, with no excessive amount or drips.  It should conform to the ends of the hole and cable smoothly, and never enter the connector.
+> # The SDR should be fully seated in the end of the USB connector.
+> # The preamp circuit board should be firmly attached to the SDR with enough room the thread the antenna line on to the input jack of the preamp.
+> # Rubber feet should be attached to the bottom of the base.
+> # Aerial loops should be smoothly circular with stripped ends bent at 90 degrees.
+
+* Verify electrical connectivity and proper function
+> # The ground plane should be smooth and conductive, measuring between 0 and 500 ohms from the pigtail of conductive thread and the outer rim of the conductive fabric.
+> # When plugged into the test power supply, the preamp should not draw more than 50mA at 12VDC.
+> # When the USB cable is plugged into the test PC, the PC should recognize the SDR.  It should not attempt to install a different driver or not show up in Zadig at all.
+> # The device under test should see the simulated satellite signal strongly at a strength of 0dB at a range of 2-3 meters.
+
+* Upon passing all QA inspections, the inspector shall write their initials and the serial number on the inside of the upper assembly, indicating acceptance.
+
+* Verify the completeness of the kit
+> The kit must include the following:
+> # Base assembly, 1 ea.
+> # Aerial loops, 2 ea.
+> # Upper assembly, 1 ea.
+> # Screws to attach the upper and lower assemblies, 2 ea.
+> # Rubber gasket which sandwiches between the upper and lower assembly, 1 ea.
+> # Ground plane assembly, 1 ea.
+> # 12vdc AC adapter, 1 ea.
+> # A software CD, 1 ea.
+> # An instruction booklet, 1 ea.

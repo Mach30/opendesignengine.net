@@ -1,0 +1,23 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+13,Resolved,Open Design Engine,Feature,Normal,Create a donation drive module,"","",v0.2.1 - Public Beta Enhancements,J. Simmons,04/08/2011,"",100,"","",04/08/2011 03:17 am,06/05/2020 08:20 am,"This should be a plugin and work similar to ""Pledgie"":http://pledgie.com/ or similar offerings.  May just create it as a Pledgie plugin."
+87,Closed,Open Design Engine,Bug,Normal,Chipin Widget does not render at all,J. Simmons,"",v0.2.1 - Public Beta Enhancements,J. Simmons,11/04/2012,"",100,"","",11/04/2012 07:01 pm,08/07/2019 09:54 am,"Not sure if this is really a bug or just a sign that Chipin is dead.  But when you try to insert Chipin widgets into pages, they show up blank."
+258,Resolved,Open Design Engine,Bug,Normal,Footer link to Terms of Service does not render correctly,J. Simmons,"",v0.2.1 - Public Beta Enhancements,J. Simmons,07/17/2014,"",0,"",217,07/17/2014 09:35 pm,09/02/2014 10:26 am,"When logged in to ODE, clicking on the ToS link in the footer generates a 404 (you are not authorized) error.  When not logged in, clicking on the ToS link in the footer takes you to the login page.
+
+In both cases, it should render the ToS."
+257,Resolved,Open Design Engine,Bug,Normal,Remove Chipin from fundraising plugin,J. Simmons,"",v0.2.1 - Public Beta Enhancements,J. Simmons,07/17/2014,"",0,"",217,07/17/2014 09:21 pm,09/02/2014 10:26 am,"Per ""Chipin website"":http://www.chipin.com/, the service has been discontinued.  We should remove the feature supporting Chipin badges and remove the test from our test suite."
+251,Closed,Open Design Engine,Bug,Normal,Not selecting a license results in a 500 error,Jeremy Wright,"",v0.2.1 - Public Beta Enhancements,Christopher Sigman,07/10/2014,"",0,"",217,07/10/2014 09:51 pm,09/02/2014 10:25 am,"When creating a new project, if you don't select a license the response from ODE is an HTTP 500 error. The error in the logs is 
+<pre>
+NoMethodError (undefined method `add_to_base' for #<ActiveModel::Errors:0xb5bcda94>):
+  app/controllers/projects_controller.rb:83:in `create'
+</pre>"
+249,Closed,Open Design Engine,Bug,Normal,Receive 403 Error After Creating New Project,Jeremy Wright,"",v0.2.1 - Public Beta Enhancements,Jeremy Wright,07/09/2014,"",0,"",217,07/09/2014 01:30 pm,09/02/2014 10:25 am,"OS: Linux (Ubuntu 14.04)
+Browser: Chrome 35.0.1916.153
+
+After clicking the ""Create"" button on a new project, I see a 403 (not authorized) message (see attached image).
+
+!RC_1_1_403_Error_Linux_Chrome.png!"
+218,Resolved,Open Design Engine,Bug,Normal,Footer is not styled correctly,J. Simmons,"",v0.2.1 - Public Beta Enhancements,J. Simmons,10/31/2013,"",0,"",217,10/31/2013 09:43 pm,09/01/2014 04:13 pm,"HR between ""Powered by Redmine"" and the TOS link is missing, TOS link is left justified instead of centered, and TOS link looks like it is a larger sized font on test server than on live server."
+259,Closed,Open Design Engine,Bug,Low,Editing As The Same User In Multiple Browser Gives An Error,"","",v0.2.1 - Public Beta Enhancements,Jeremy Wright,07/17/2014,"",0,"","",07/17/2014 10:04 pm,07/29/2014 07:22 pm,"I'm not positive if this is really an error, but if I edit the same issue from both Firefox and Chrome I get an error, even if I'm logged in as the same user on each browser. I'm logging this more just to make sure. Feel free to reject.
+
+!ODE_Simultaneous_Edits.png!"
+90,Resolved,Open Design Engine,Bug,Urgent,Self registration page renders ToS as source code instead of formatted text,"","",v0.2.1 - Public Beta Enhancements,J. Simmons,11/18/2012,"",100,"","",11/18/2012 01:38 pm,11/18/2012 06:37 pm,Like the description says.  This really should be fixed before we announce the public beta.

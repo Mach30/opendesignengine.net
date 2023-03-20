@@ -1,0 +1,7 @@
+h1. Wiki
+
+Welcome to the *Power/Temp Monitor and Control System (EPS/ECLSS)* project Wiki. This wiki contains documentation covering the design, development, fabrication, and use of the Power/Temp Monitor and Control System (EPS/ECLSS), a board designed to monitor power consumption and ambient temperature within an electronics enclosure and report it via Ethernet. The forums would be a good place to start if you have questions about the thought process behind an item. In most cases, links to the appropriate forum discussions will be included in the wiki pages.
+
+The idea behind the *Power/Temp Monitor and Control System (EPS/ECLSS)* project is to start small and simple while meeting the existing need, and then build on what is learned when moving to more capable and complex systems later on. This is in line with Mach 30's philosophy of starting (literally) from the ground up to build the infrastructure required to facilitate safe, routine, reliable, and sustained access to space. 
+
+If you're interested in getting involved a good place to start would be the "Initial Questions":https://opendesignengine.net/projects/eps-001/wiki/Initial_Questions page. There you will find the foundational questions that will guide the rest of the *Power/Temp Monitor and Control System (EPS/ECLSS)* design process. There is also the navigation bar at the right to help you find a specific section of the documentation quickly.

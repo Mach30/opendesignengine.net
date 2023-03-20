@@ -1,0 +1,31 @@
+Index: Link Budget Documentation.ipynb
+===================================================================
+--- Link Budget Documentation.ipynb	(revision 55)
++++ Link Budget Documentation.ipynb	(revision 56)
+@@ -93,7 +93,7 @@
+     "\n",
+     "$$ P_{TrC} [dBm] = 10log_{10}(P_{Tr}[W]*1000) $$\n",
+     "\n",
+-    "$$ EIRP[dB] = P_{TrC}[dB] + L_{Tr}[dB] + G_{Tr}[dB] + L_{TrP}[dB] $$"
++    "$$ EIRP[dB] = P_{TrC}[dBm] + L_{Tr}[dB] + G_{Tr}[dB] + L_{TrP}[dB] $$"
+    ]
+   },
+   {
+@@ -212,7 +212,7 @@
+     "#### Radio Propagation Factors Beyond the Scope of the Design Problem\n",
+     "\n",
+     "##### Multipath Fading\n",
+-    "Inherent to all wireless radio communication channels is multipath propagation. When radio waves are transmitted from an antenna, different portions of the wave-front travelling away will usually interact with different obstacles. The sum of a fraction of these waves will reach the receiver, along with the direct line-of-sight component if it exists. These interactions are primarily reflection, refraction, diffraction, and scattering. In land based communication systems, radio wave can interact with objects of all sizes including terrain, buildings, cars, and people. How detrimental multipath propagation is to a receiver is location dependent. Amazingly, the atmosphere can refract and scatter radio waves as they travel from space to Earth’s surface. This can be attributed to changing refractive indices associated with different air pressures and temperatures at different altitudes as well as clouds between the satellite and ground station. The “richness” for a multipath propagation channel is related to the inter-symbol interference experienced by the desired receiver. Inter-symbol interference occurs when a previously transmitted symbol interferes with the consecutive transmitted symbol due to delayed components of the previous signal. This type of interference can severely affect receiver performance in high multipath environments. \n",
++    "Inherent to all wireless radio communication channels is multipath propagation. When radio waves are transmitted from an antenna, different portions of the wave-front travelling away will usually interact with different obstacles. The sum of a fraction of these waves will reach the receiver, along with the direct line-of-sight component if it exists. These interactions are primarily reflection, refraction, diffraction, and scattering. In land based communication systems, radio wave can interact with objects of all sizes including terrain, buildings, cars, and people. How detrimental multipath propagation is to a receiver is location dependent. Amazingly, the atmosphere can refract and scatter radio waves as they travel from space to Earth’s surface. This can be attributed to changing refractive indices associated with different air pressures and temperatures at different altitudes as well as clouds between the satellite and ground station. The total electron content (TEC) is a common metric used to determine propagation delay due to the ionosphere. The “richness” for a multipath propagation channel is related to the inter-symbol interference experienced by the desired receiver. Inter-symbol interference occurs when a previously transmitted symbol interferes with the consecutive transmitted symbol due to delayed components of the previous signal. This type of interference can severely affect receiver performance in high multipath environments. \n",
+     "\n",
+     "###### Multipath Propagation Compensation\n",
+     "•\tSlower data rate\n",
+@@ -718,7 +718,7 @@
+    "name": "python",
+    "nbconvert_exporter": "python",
+    "pygments_lexer": "ipython3",
+-   "version": "3.6.1"
++   "version": "3.6.2"
+   }
+  },
+  "nbformat": 4,

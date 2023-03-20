@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/ode/issues.atom?assigned_to_id=3&amp;amp;set_filter=1&amp;amp;status_id=c&amp;amp;subproject_id=%21%2A"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/ode/issues?assigned_to_id=3&amp;amp;set_filter=1&amp;amp;status_id=c&amp;amp;subproject_id=%21%2A"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2014-07-17T21:35:08+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #258 (Resolved): Footer link to Terms of Service does not render correctly</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/258"/>
+    <id>http://opendesignengine.net/issues/258</id>
+    <updated>2014-07-17T21:35:08+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;When logged in to ODE, clicking on the ToS link in the footer generates a 404 (you are not authorized) error.  When not logged in, clicking on the ToS link in the footer takes you to the login page.&lt;/p&gt;
+
+
+	&lt;p&gt;In both cases, it should render the ToS.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #257 (Resolved): Remove Chipin from fundraising plugin</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/257"/>
+    <id>http://opendesignengine.net/issues/257</id>
+    <updated>2014-07-17T21:21:10+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Per &lt;a href="http://www.chipin.com/" class="external"&gt;Chipin website&lt;/a&gt;, the service has been discontinued.  We should remove the feature supporting Chipin badges and remove the test from our test suite.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #218 (Resolved): Footer is not styled correctly</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/218"/>
+    <id>http://opendesignengine.net/issues/218</id>
+    <updated>2013-10-31T21:43:55+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;HR between "Powered by Redmine" and the TOS link is missing, TOS link is left justified instead of centered, and TOS link looks like it is a larger sized font on test server than on live server.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #87 (Closed): Chipin Widget does not render at all</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/87"/>
+    <id>http://opendesignengine.net/issues/87</id>
+    <updated>2012-11-04T19:01:35+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Not sure if this is really a bug or just a sign that Chipin is dead.  But when you try to insert Chipin widgets into pages, they show up blank.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #66 (Resolved): Getting https error when embedding YouTube videos</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/66"/>
+    <id>http://opendesignengine.net/issues/66</id>
+    <updated>2012-06-14T15:22:43+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Visit the &lt;a href="https://opendesignengine.net/projects/far-horizons-project/wiki" class="external"&gt;Far Horizons Project Wiki Page&lt;/a&gt; to see the error.  Error confirmed in Chrome and IE 9.  Error message is "This page has insecure content".&lt;/p&gt;
+
+
+	&lt;p&gt;It looks like there is a new option with embedding YouTube videos for HTTPS sites.  See "Enabling HTTPS mode" on this &lt;a href="http://support.google.com/youtube/bin/answer.py?hl=en&amp;#38;answer=171780" class="external"&gt;page&lt;/a&gt;.  We should update the Youtube/Vimeo plugin to work with this feature (and check Vimeo videos for similar problem).&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #1 (Closed): Automatically create SVN Repositories when Repository module is turned on</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/1"/>
+    <id>http://opendesignengine.net/issues/1</id>
+    <updated>2011-04-08T02:37:47+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;See &lt;a class="external" href="http://www.redmine.org/projects/redmine/wiki/HowTo_Automate_repository_creation"&gt;http://www.redmine.org/projects/redmine/wiki/HowTo_Automate_repository_creation&lt;/a&gt; for instructions.  It would be best if the configuration could be packaged with the distribution (at least for installation in Bitnami hosts).&lt;/p&gt;    </content>
+  </entry>
+</feed>

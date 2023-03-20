@@ -1,0 +1,29 @@
+Index: tone-ring-controller.ino
+===================================================================
+--- tone-ring-controller.ino	(revision 5)
++++ tone-ring-controller.ino	(revision 6)
+@@ -17,8 +17,8 @@
+ 
+ void setup() {
+   // put your setup code here, to run once:
++  Serial.begin(SerialBaudRate);   // init serial line
+   AFMS.begin();  // create with the default frequency 1.6KHz
+-  Serial.begin(SerialBaudRate);   // init serial line
+ }
+ 
+ void SerialReturnError(char* messageId, char* errorMessage) {
+@@ -61,7 +61,7 @@
+ 
+ // based on testing and a curve fit
+ int adjustCadence(int x) {
+-  int newCadence = round(49 - 2.95*x + 0.095*x*x);
++  int newCadence = round(41.7 - 2.47*x + 0.0925*x*x);
+   return newCadence;
+ }
+ 
+@@ -102,4 +102,5 @@
+ 
+ 
+ 
++
+ 

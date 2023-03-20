@@ -1,0 +1,80 @@
+back [[Technology_Evaluation]]
+
+h1. Propulsion Card Storming
+
+Covers fuel & oxidizer storage, injector, combustion chamber, nozzle, and anything necessary to keep those items “stable”
+
+h2. Unsorted list of ideas
+
+* Indoor test stand for testing a compressed air "cold gas thruster":http://en.wikipedia.org/wiki/Cold_gas_thruster
+** test stands don't seem to be mentioned anywhere specifically
+** probably fine just cuz it's so low power anyway
+* 3D printed cold gas thruster for use on an indoor test stand
+** hard to picture how this is anything other than a pneumatic valve
+** maybe pneumatic valves are controlled if they have a certain capacity
+* staging hobby and high-powered rocket motors
+** the federal stuff doesn't cover this size rockets
+** I haven't seen the relevant regs yet
+* develop a series of larger test stands scaled around the classes of model and high powered rocketry certifications
+** see first test stand comment above
+* recreate Greg's undergrad sugar hybrid motor
+** probably fine since it's probably equivalent to a class project
+* upgrade Mach 30 test stand DAQ to include high speed video
+** I doubt anyone cares about high speed video
+* develop Arduino (or similar) model rocket launch controller board (including physical safety lock)
+** model rockets are okay
+* upgrade Mach 30 test stand DAQ to work over ethernet to extend operational range between operators and test stand
+** fine. actually probably encouraged for safety reasons
+* series of courses/kits to take users through high powered rocketry certs ("required to purchase high powered motors":http://www.apogeerockets.com/Rocket_Motors/Cesaroni_Propellant_Kits/Cesaroni_Certification_Special/38mm_Certification_Propellants/Cesaroni_P38-4G_Classic_I285?zenid=vsrisevkgniqf6afnkdrnmu2k1)
+** fine, and also probably encouraged
+* Learn about and be comfortable using Reloadable rocket motors
+** should be fine as long as it's model/high-powered
+* Distributed laboratory software
+** too vague
+* Re-lightable motors, turn off and back on (means hybrid, or liquid engine, but not solid)
+** certain fuels are controlled
+** The MTCR Item 3 Cat II covers hybrid rocket motors, but the MTCR covers f**king everything associated with rockets anyway
+* Ramp up test stand prototypes by increments of High-power certification levels
+** each one would be considered individually
+* Storage and handling of cryogenic liquids?
+** I don't see that anywhere, but I could have missed it
+** the CCL seems to list cryogenic parts if they are used to refine uranium, so there's that
+* Simulation, analysis, design and testing of cooling systems (for combustion chamber, nozzle, and throat)
+** not sure if it's controlled on its own, but since it's inseparable from the motors it's probably wrapped up there
+* Variable nozzle designs
+** who's idea was this? Oh, right, mine. Just ignore this one :)
+* Flow visualization
+* Nozzle comparison (Aerospike to traditional designs)
+* Injector design (fuel and/or oxidizer) to maximize combustion efficiency
+* Research Test stand configurations (vertical in addition to horizontal)
+* Survey the existing instructions and informational materials for building engines and motors.
+* Move from testing commercial off-the-shelf items (motors and engines) to building and testing custom built items.
+* Address Instrumentation: how to collect data on motor tests.
+* Material and manufacturing techniques for nozzles (3-D printed)
+* Open source software altitude and flight profiles - Performance calculations
+* Study fuel grain design (parameters) to optimize burn profile 
+* Logistics, procedures, and infrastructure for Pay-for-testing, using Mach 30 equipment (income generation)
+* 3-D printed fuel grains
+* Research additional income streams RE: Propulsion (educational kits, grants, etc) - We can add this to all subsystems?
+* Linear aerospike studies
+* Combustion chemistry, develop open source software tools (NOTE: See NASA CEA)
+* Environmental simulation and testing (expanding flight envelope)
+* High operations tempo, flight rate motors.  
+* Non-chemical propulsion (however this is low TRL/maturity)
+* Developing refueling ground equipment “on the tarmac”
+* Focus on maintainability, ease of operations.
+* Procedures and equipment for “mode 2 operations” for simulation and testing
+* Focus on safety procedures (not just during tests).
+* Operational Countdown Checklist as it relates to the propulsion engine test checklist procedures.
+* Develop a cultural delineation between “Operations or Test staff” and “Design staff” -- Maybe eventually specialize into 3 groups
+* Handbook for stakeholder collaboration (state, local, federal agencies and regulations)
+* Rules of thumb for Launch/test site size space, in handbook form.
+* Develop relationships with potential test sites
+* Acoustic, Vibration, Acceleration simulation and testing.  
+* Procedures to optimize, advertize, public viewing and interaction SAFELY.
+* Remote viewing (Cameras for online streaming video streaming) to maximize audience.
+* Rocket exhaust plume studies (morse code??)
+* Ground operations communications equip and procedures.
+* Disaster recovery plan for catastrophic mishap.
+* Procurement/development of transportation and handling equipment for stands and motors (flatbed trailers, etc)
+

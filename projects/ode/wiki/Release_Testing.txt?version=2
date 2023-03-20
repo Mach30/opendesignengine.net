@@ -1,0 +1,30 @@
+h1. Release Testing
+
+{{toc}}
+
+h2. Introduction
+
+
+h2. Required Browsers
+
+All tests should be run from the following browser/OS combinations to ensure ODE works for a wide audience.
+
+|*Browser*|*Windows*|*OS X*|*Linux*|
+|Chrome   |    X           |  X     |   X      |
+|Firefox    |    X           |  X     |   X      |
+|Safari      |                 |  X     |           |
+|IE            |    X           |         |           |
+
+h2. Features to Test
+
+h3. Built-In Features
+
+...
+
+h3. Community Plugins
+
+...
+
+h3. Custom Plugins
+
+....

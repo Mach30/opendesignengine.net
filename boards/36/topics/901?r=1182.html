@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Holoseat - Walk Sensor Test Rig Development Log - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../favicon.ico%3F1359925685' />
+<link href="http://opendesignengine.net/stylesheets/application.css?1359925542" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../javascripts/prototype.js%3F1359925542" type="text/javascript"></script>
+<script src="../../../javascripts/effects.js%3F1359925542" type="text/javascript"></script>
+<script src="../../../javascripts/dragdrop.js%3F1359925542" type="text/javascript"></script>
+<script src="../../../javascripts/controls.js%3F1359925542" type="text/javascript"></script>
+<script src="../../../javascripts/application.js%3F1359925542" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="http://opendesignengine.net/plugin_assets/redmine_legal/stylesheets/terms-of-service.css?1359925705" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+  <link href="http://opendesignengine.net/stylesheets/scm.css?1359925542" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-messages action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="http://opendesignengine.net/login" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../account/register.html" class="home">Home</a></li>
+<li><a href="../../../projects.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="http://opendesignengine.net/search/index/holoseat" method="get">
+        <input name="messages" type="hidden" value="1" />
+        <a href="http://opendesignengine.net/search/index/holoseat" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Holoseat</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../projects/holoseat%3Fjump=overview.html" class="overview">Overview</a></li>
+<li><a href="../../../projects/holoseat%3Fjump=activity.html" class="activity">Activity</a></li>
+<li><a href="../../../projects/holoseat%3Fjump=issues.html" class="issues">Issues</a></li>
+<li><a href="http://opendesignengine.net/projects/holoseat/news" class="news">News</a></li>
+<li><a href="../../../projects/holoseat%3Fjump=dmsf.html" class="dmsf">DMSF</a></li>
+<li><a href="../../../projects/holoseat%3Fjump=wiki.html" class="wiki">Wiki</a></li>
+<li><a href="../../../projects/holoseat/boards.html" class="boards selected">Forums</a></li>
+<li><a href="../../../projects/holoseat%3Fjump=repository.html" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <p class="breadcrumb"><a href="../../../projects/holoseat/boards.html">Forums</a> » <a href="../../../projects/holoseat/boards/36.html">Design Discussions</a> » </p>
+
+<div class="contextual">
+    <span class="message-901-watcher"></span>
+    
+    
+    
+</div>
+
+<h2>Walk Sensor Test Rig Development Log</h2>
+
+<div class="message">
+<p><span class="author">Added by <a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a> <a href="../../../projects/holoseat/activity%3Ffrom=2014-10-08.html" title="10/08/2014 06:06 pm">about 8 years</a> ago</span></p>
+<div class="wiki">
+<p>As part of the development of v0.3 of the Holoseat, we want to improve the sensitivity of the "walk sensor(s)".  See <a href="829.html" class="message">Testing Hall Effect Sensors</a> for more details.</p>
+
+
+	<p>I am planning to build a sensor test rig to simplify the testing procedure and eliminate variation in test results. This thread will serve as a live "lab notebook" documenting the design and development of the test rig.  The actual test process (including selection of sensors and magnets to test) will be captured in <a href="829.html" class="message">Testing Hall Effect Sensors</a>.</p>
+
+
+	<p>Below is the block diagram for the test rig.  It will use a stand alone Arduino to control a rotation source (planning to use a re-purposed stepper motor as that source) to run a small wheel over a range of speeds and then plot the values calculated with the sensor/magnet under test to the driven speeds (in RPMs).  Note, a bike computer with cadence measurement (not shown) will be used to verify the stepper motor is driving the wheel to the correct speed.</p>
+
+
+	<p><a href="https://drive.google.com/file/d/0BzOPMhBGrtSXejVwWWpBeU1tdFU/view?usp=sharing"><img src="../../../attachments/download/537" alt="" /></a></p>
+</div>
+<div class="attachments">
+
+<p><a href="../../../attachments/537/sensor_test_rig_block_diagram.png" class="icon icon-attachment">sensor_test_rig_block_diagram.png</a>
+  <span class="size">(120.5 kB)</span>
+  
+  
+  </p>
+
+</div>
+
+</div>
+<br />
+
+
+<h3 class="comments">Replies (28)</h3>
+
+  <div class="message reply" id="message-902">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="901%3Fr=902.html#message-902">RE: Walk Sensor Test Rig Development Log</a>
+    -
+    Added by <a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a> <a href="../../../projects/holoseat/activity%3Ffrom=2014-10-08.html" title="10/08/2014 06:41 pm">about 8 years</a> ago
+  </h4>
+  <div class="wiki"><p>Bill of Materials</p>
+
+
+	<table>
+		<tr>
+			<th>Part # </th>
+			<th style="text-align:left;">Description</th>
+			<th style="text-align:left;">Vendor (linked)</th>
+			<th style="text-align:right;">Unit Cost ($)</th>
+			<th style="text-align:right;">Qty</th>
+			<th style="text-align:right;">Total Cost ($)</th>
+		</tr>
+		<tr>
+			<td>TR 01    </td>
+			<td>Bike Computer w/Cadence   </td>
+			<td><a href="http://www.amazon.com/CatEye-Cadence-Bicycle-Computer-CC-RD200/dp/B000R6QR2C" class="external">Amazon</a></td>
+			<td style="text-align:right;">36.34</td>
+			<td style="text-align:right;"> 1</td>
+			<td style="text-align:right;">36.34</td>
+		</tr>
+		<tr>
+			<td>TR 02    </td>
+			<td>Arduino                   </td>
+			<td>re-purposed Duemilanove (owned)                                                      </td>
+			<td style="text-align:right;">0.00</td>
+			<td style="text-align:right;"> 1</td>
+			<td style="text-align:right;"> 0.0</td>
+		</tr>
+		<tr>
+			<td>TR 03    </td>
+			<td>Stepper Motor             </td>
+			<td>re-purposed from Dayton Diode de-milled materials (owned)                            </td>
+			<td style="text-align:right;">0.00</td>
+			<td style="text-align:right;"> 1</td>
+			<td style="text-align:right;"> 0.0</td>
+		</tr>
+		<tr>
+			<td>TR 04    </td>
+			<td>Frame                     </td>
+			<td>re-purposed pine 2x2s and 2x4s, wood screws, and sheet metal found at Dayton Diode   </td>
+			<td style="text-align:right;">0.00</td>
+			<td style="text-align:right;"> ?</td>
+			<td style="text-align:right;"> 0.0</td>
+		</tr>
+		<tr>
+			<td>TR 05    </td>
+			<td>Spinning Plate (aka Wheel)</td>
+			<td>re-purposed pine plywood found at Dayton Diode                                       </td>
+			<td style="text-align:right;">0.00</td>
+			<td style="text-align:right;"> 1</td>
+			<td style="text-align:right;"> 0.0</td>
+		</tr>
+		<tr>
+			<td>TR 06    </td>
+			<td>Metal Plate (part of set) </td>
+			<td><a href="http://www.amazon.com/Standard-Shutter-Magnet-Catch-SHIPPING/dp/B00JBKFG1S/" class="external">Amazon</a> </td>
+			<td style="text-align:right;">5.77</td>
+			<td style="text-align:right;"> 2</td>
+			<td style="text-align:right;">11.54</td>
+		</tr>
+		<tr>
+			<td>TR 07    </td>
+			<td>Helping Hands             </td>
+			<td><a href="http://www.amazon.com/SE-MZ101B-Helping-Hands-Magnifying/dp/B000RB38X8/" class="external">Amazon</a>     </td>
+			<td style="text-align:right;">6.29</td>
+			<td style="text-align:right;"> 1</td>
+			<td style="text-align:right;">6.29</td>
+		</tr>
+		<tr>
+			<td>--       </td>
+			<td>Misc Hardware             </td>
+			<td>--                                                                                   </td>
+			<td style="text-align:right;">15.00</td>
+			<td style="text-align:right;"> 1</td>
+			<td style="text-align:right;">15.00</td>
+		</tr>
+		<tr>
+			<td><strong>Total</strong>  </td>
+			<td>                          </td>
+			<td>                                                                                     </td>
+			<td style="text-align:right;">    </td>
+			<td style="text-align:right;">  </td>
+			<td style="text-align:right;"><strong>69.17</strong></td>
+		</tr>
+	</table></div>
+  
+  </div>
+
+  <div class="message reply" id="message-903">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="901%3Fr=903.html#message-903">RE: Walk Sensor Test Rig Development Log</a>
+    -
+    Added by <a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a> <a href="../../../projects/holoseat/activity%3Ffrom=2014-10-08.html" title="10/08/2014 06:43 pm">about 8 years</a> ago
+  </h4>
+  <div class="wiki"><p>Some design notes...</p>
+
+
+	<ul>
+	<li>Need to test stepper motors before purchasing hardware
+	<ul>
+	<li><del>Need to de-mil v0.1 holoseat for Arduino</del></li>
+		<li>Need to test stepper motor library with Arduino</li>
+	</ul>
+	</li>
+		<li><del>Need to confirm Dayton Diode free parts supplies have all of the found items not already acquired</del></li>
+		<li>Need to test plotting tools</li>
+	</ul></div>
+  
+  </div>
+
+  <div class="message reply" id="message-915">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="901%3Fr=915.html#message-915">RE: Walk Sensor Test Rig Development Log</a>
+    -
+    Added by <a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a> <a href="../../../projects/holoseat/activity%3Ffrom=2014-10-25.html" title="10/25/2014 06:12 pm">about 8 years</a> ago
+  </h4>
+  <div class="wiki"><a name="Testing-Stepper-Motors-with-Arduino"></a>
+<h2 >Testing Stepper Motors with Arduino<a href="901%3Fr=1182.html#Testing-Stepper-Motors-with-Arduino" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>I found two stepper motors at Dayton Diode.</p>
+
+
+	<p>1. A four-wire stepper motor with SHP_35D1020 and 14970G. stamped on the side.<br /><a href="https://www.flickr.com/photos/jedibfa/15006186994/in/set-72157648971298195"><img src="https://farm4.staticflickr.com/3934/15006186994_2dc1bb76f2.jpg" alt="" /></a></p>
+
+
+	<p>2. A five-wire stepper motor, labeled by hand as "48 steps".  The wiring is broken in several places and will need to be resoldered if it is going to be used.<br /><a href="https://www.flickr.com/photos/jedibfa/15006228014/in/set-72157648971298195"><img src="https://farm6.staticflickr.com/5613/15006228014_3d45558a59.jpg" alt="" /></a> ><a href="https://www.flickr.com/photos/jedibfa/15440419639/in/set-72157648971298195"><img src="https://farm4.staticflickr.com/3950/15440419639_1c99664353.jpg" alt="" /></a></p>
+
+
+	<p>After getting the motors photographed and documented, I googled for more detailed instructions on how to setup stepper motors with an Arduino.  I found the following resources:</p>
+
+
+	<ul>
+	<li><a href="https://learn.a

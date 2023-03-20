@@ -1,0 +1,38 @@
+h1. V0.3 Documentation
+
+h4. Agile Process Docs
+
+** 2016: "User Stories":https://docs.google.com/document/d/e/2PACX-1vSVLmaORZab4QV0ZSy5OUl6lSPx2lNc3gud5nB6WSxNrrxkMu7Kz5zObKeKnP8pw7eghYJY3h_xs99L/pub | "Sprints":https://docs.google.com/spreadsheets/d/e/2PACX-1vTnBFoFpZA4rAainOlzv4E7-PW3-BwjTg9SP0iXHz1XZUCjVF_4WYIWttJyHtO5EhO24pYazn8sL7Jh/pubhtml
+
+h4. Software
+
+* +Released Code+
+** "Firmware source code":http://opendesignengine.net/dmsf_files/624?download=
+** "Desktop configuration app executable":http://opendesignengine.net/dmsf_files/623?download=
+* v0.3 Source Code Tag in SVN: "Web UI":https://opendesignengine.net/projects/holoseat/repository/show/tags/version-0.3 | "SVN":https://opendesignengine.net/svn/holoseat/tags/version-0.3
+
+h4. Instructions
+
+* [[Operating Manual|Operating Manual]]
+* +Assembly Information+
+** [[BOM|Bill of Materials]]
+** [[Assembly Instructions|Assembly Instructions]]
+** [[Software Set Up|Software Set Up]]
+
+h4. Design Data
+
+* [[Block Diagram|Block Diagram]]
+* [[Schematics and PCB Files|Schematics and PCB Files]]
+* [[Software Source Code|Project Software]]
+
+h4. Research
+
+* [[Resources|General Resources]]
+* +Technical Resources+
+** [[Bluetooth]]
+** [[NodeBots Resources]]
+** [[Raspbery Pi Resources]]
+** [[C.H.I.P. Resources]]
+* +Biz Resources+
+** [[Marketing Resources]]
+** [[Start Up Resources]]

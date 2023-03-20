@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/ode/issues.atom?page=3&amp;amp;sort=tracker%2Cupdated_on%3Adesc%2Cid%3Adesc"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/ode/issues?page=3&amp;amp;sort=tracker%2Cupdated_on%3Adesc%2Cid%3Adesc"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-09-21T10:16:20+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Feature #191 (New): Allow Voting For Features</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/191"/>
+    <id>http://opendesignengine.net/issues/191</id>
+    <updated>2013-09-21T10:16:20+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I'm constantly wanting to +1 some feature requests, and I think this would also be a good first step towards community-based prioritization of feature requests.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #189 (New): Implement a "karma" system</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/189"/>
+    <id>http://opendesignengine.net/issues/189</id>
+    <updated>2013-09-18T16:18:53+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Several popular sites (slashdot, reddit, etc) have a "karma" system to encourage high quality submissions from users (it is a kind of light weight game-ification).  Interestingly, DARPA's &lt;a href="http://vehicleforge.org/" class="external"&gt;VehicleForge&lt;/a&gt; apparently has a karma system.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #188 (New): Create project "Contact us" pages</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/188"/>
+    <id>http://opendesignengine.net/issues/188</id>
+    <updated>2013-09-18T16:15:14+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;User configurable tab which let's project visitors fill out a form to send a message to one or more email addresses of project members/managers.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #187 (New): Automatic site submissions to Google for projects and their pages</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/187"/>
+    <id>http://opendesignengine.net/issues/187</id>
+    <updated>2013-09-18T16:12:39+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Wordpress does this for blogs so Google search knows about their content.  ODE should do the same thing for projects.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #185 (New): Add video conferencing support</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/185"/>
+    <id>http://opendesignengine.net/issues/185</id>
+    <updated>2013-09-18T16:09:28+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;This is another communication channel users currently have to go outside of ODE for.  From Mach 30's experience with Google+ Hangouts, team meetings over video conferencing can really help distributed teams coordinate their activities.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #33 (New): Allow users to request membership in projects</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/33"/>
+    <id>http://opendesignengine.net/issues/33</id>
+    <updated>2011-05-16T23:03:42+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;See this &lt;a href="https://github.com/edavis10/redmine_join_project" class="external"&gt;plugin&lt;/a&gt; for possible implementation.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #29 (New): Add embedded project IRC support</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/29"/>
+    <id>http://opendesignengine.net/issues/29</id>
+    <updated>2011-04-09T16:21:00+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Add web based IRC client with server for hosted projects and have IRC sessions auto-logged to the project space&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #28 (New): Add real-time wiki editing</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/28"/>
+    <id>http://opendesignengine.net/issues/28</id>
+    <updated>2011-04-09T16:20:13+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;For example, like &lt;a href="http://etherpad.org/" class="external"&gt;Etherpad&lt;/a&gt; or google docs.  See &lt;a href="http://en.wikipedia.org/wiki/Collaborative_real-time_editor#Browser-based" class="external"&gt;list&lt;/a&gt; of existing tools&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #25 (New): Add tagging support to projects and their modules</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/25"/>
+    <id>http://opendesignengine.net/issues/25</id>
+    <updated>2011-04-09T16:16:18+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Tagging for issues should be tied to Feature &lt;a href="http://opendesignengine.net/issues/21" class="issue status-1 priority-2" title="Project assistance Bounty System (New)"&gt;#21&lt;/a&gt;. Project tags should be inherited by children and parent projects (this project + parent project tags).  Wiki pages should also be taggable.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #24 (New): Social networking sites support</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/24"/>
+    <id>http://opendesignengine.net/issues/24</id>
+    <updated>2011-04-09T16:13:49+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Auto-share buttons for social network sites from project pages (to share on reddit, twitter, etc).  Are there other related features?&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #23 (New): Add a "fans" page to projects</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/23"/>
+    <id>http://opendesignengine.net/issues/23</id>
+    <updated>2011-04-09T16:12:54+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Have a fans page so supporters can show their interest&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #21 (New): Project assistance Bounty System</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/21"/>
+    <id>http://opendesignengine.net/issues/21</id>
+    <updated>2011-04-09T16:11:58+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;mash up of craigslist, sourceforge, rent-a-coder, and a solution archive. The ideas is to have a website where "customers" can post discrete analysis, report writing, peer review, hardware build, component design requests, etc. &#8211; see &lt;a class="external" href="http://mach30.org/blogs/jrs/2009-10-22-ispcs-2009-day-1-mission-and-methods"&gt;http://mach30.org/blogs/jrs/2009-10-22-ispcs-2009-day-1-mission-and-methods&lt;/a&gt; for details. This is an attempt to discretize hardware development like wiki has discretized encyclopedia writing, enabling users to hop into a project to answer a specific need.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #20 (New): Add support for shared "engineering" workflows</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/20"/>
+    <id>http://opendesignengine.net/issues/20</id>
+    <updated>2011-04-09T16:10:35+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Workflow system should be extensible and allow users to share there workflows with other projects (this way we are not expected to deliver the end-all-be-all workflow, and instead, the community can discover what workflows work best in the tool); system should ship with some basic workflow(s) in this case so it has something even at release&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #18 (New): Configure installer to use ODE.net&amp;#x27;s settings for defaults</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/18"/>
+    <id>http://opendesignengine.net/issues/18</id>
+    <updated>2011-04-08T19:02:00+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;While setting up &lt;a class="external" href="http://opendesignengine.net"&gt;http://opendesignengine.net&lt;/a&gt;, a number of default settings were changed.  It would be nice it the shipping code for ODE installed with these new defaults.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #10 (New): Modernize ODE theme</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/10"/>
+    <id>http://opendesignengine.net/issues/10</id>
+    <updated>2011-04-08T03:10:05+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;The available &lt;a href="http://www.redmine.org/projects/redmine/wiki/Theme_List" class="external"&gt;themes for Redmine&lt;/a&gt; are basically variations on the default theme.  It is time to update the look to a more modern feel and layout.  Here are some examples to look at or base research on:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;a href="http://www.thingiverse.com/" class="external"&gt;Thingiverse&lt;/a&gt; - A kind of ODE for projects or parts developed by single users&lt;/li&gt;
+		&lt;li&gt;&lt;a href="https://projects.littlestreamsoftware.com/" class="external"&gt;Little Stream Software&lt;/a&gt; - A custom install of Redmine with an updated and clean theme&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://www.redmine.org/boards/1/topics/4402" class="external"&gt;Experimental Theme&lt;/a&gt; - Source code is available, but is not under active development and requires modifications to the Redmine core.  Might be an interesting place to start.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;See attached file for some more ideas about the layout and flow that should be included in the new theme.&lt;/p&gt;    </content>
+  </entry>
+</feed>

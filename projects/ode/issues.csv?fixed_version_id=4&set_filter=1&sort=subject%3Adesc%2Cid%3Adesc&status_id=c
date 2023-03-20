@@ -1,0 +1,8 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+17,Closed,Open Design Engine,Feature,Normal,Need a logo for ODE,"","",v0.3 - Sustainability Enhancements,J. Simmons,04/08/2011,"",0,"","",04/08/2011 06:44 pm,02/10/2012 05:20 am,"I'd like to develop a logo for ODE to include as part of Issue #10.  It would be cool if we could incorporate the new OSHW logo, see below (note we should be sure to check with them about copyright issues).
+
+!http://www.openhardwaresummit.org/forum/download/file.php?mode=view&id=17!"
+220,Closed,Open Design Engine,Bug,Normal,For Pay Private Projects,"","",v0.3 - Sustainability Enhancements,Christopher Sigman,10/31/2013,"",0,"","",10/31/2013 10:38 pm,07/29/2014 06:21 pm,"* Integration with payment processing (as another feature)
+* Turning private projects into a “sellable feature” (aka restrict number of users in private projects, tiers of private projects, etc)
+* Test that the projects are well and truly private
+* Preferably have all of this automated in terms of selling the feature (user clicks buy, server turns collects money, server turns on feature, feature gets turned off if money stops coming in, user can cancel, etc)"

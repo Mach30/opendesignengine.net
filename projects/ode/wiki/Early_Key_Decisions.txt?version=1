@@ -1,0 +1,9 @@
+h1. Early Key Decisions
+
+The following are the key decisions to made during the conceptual design of ODE, and the [[Wiki#Guiding-Values|values]] that had to be balanced to make them.
+
+* *Should we extend an existing system, or develop something from scratch* - Extending an existing system may mean getting something useful much sooner, but it means accepting many decisions that are already made (language, license, architecture, etc). Values to balance include: 1, 2, 4, 5, 6, 7.  +Result: Extend "Redmine":http://redmine.org+
+* *Development Roadmap* - Emphasis should currently be on selecting feature sets for early versions that get the system off the ground and let users start seeing benefits sooner rather than later. Values to balance include: 1, 2, 3, 4.  +Result: Early releases favor existing plugins and function over form+
+* *License* - The license of a project can evoke a strong reaction from the community, so the choice of license should be made to support the shared values of sharing source code of both CSTART and Mach 30. If ODE is based on an existing system, this decision will be made by default. Values to balance include: 7 (and likely one or more uncaptured values). +Result: Per license requirements of Redmine, ODE is licensed under the "GNU General Public License v2":http://www.gnu.org/licenses/old-licenses/gpl-2.0.html (GPL)+
+* *Programming language* - Language choice affects developer availability, barrier to hosting, and more. If ODE is based on an existing system, this decision will be made by default. Values to balance include: 6, 7. +Result: Ruby on Rails, in no small part due to its use in Redmine+
+* *The code repository for hosting the ODE source code* - ... +Result: ODE is hosted on http://opendesignengine.net and is stored in SVN due to its high level of built in support in Redmine+ 

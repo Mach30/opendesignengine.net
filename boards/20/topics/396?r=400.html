@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Power/Temp Monitor and Control System (EPS/ECLSS) - SEP Step 2: Requirements Document - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../favicon.ico%3F1359925685.html' />
+<link href="../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+  <link href="../../../stylesheets/scm.css%3F1359925542.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-messages action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../index.html" class="home">Home</a></li>
+<li><a href="../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="../../../search/index/eps-001.html" method="get">
+        <input name="messages" type="hidden" value="1" />
+        <a href="../../../search/index/eps-001.html" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Power/Temp Monitor and Control System (EPS/ECLSS)</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../projects/eps-001.html" class="overview">Overview</a></li>
+<li><a href="../../../projects/eps-001/activity.html" class="activity">Activity</a></li>
+<li><a href="../../../projects/eps-001/issues.1.html" class="issues">Issues</a></li>
+<li><a href="../../../projects/eps-001/issues/gantt.html" class="gantt">Gantt</a></li>
+<li><a href="../../../projects/eps-001/issues/calendar.html" class="calendar">Calendar</a></li>
+<li><a href="../../../projects/eps-001/news.html" class="news">News</a></li>
+<li><a href="../../../dmsf/eps-001.html" class="dmsf">DMSF</a></li>
+<li><a href="../../../projects/eps-001/documents.html" class="documents">Documents</a></li>
+<li><a href="../../../projects/eps-001/wiki.html" class="wiki">Wiki</a></li>
+<li><a href="../../../projects/eps-001/boards.html" class="boards selected">Forums</a></li>
+<li><a href="../../../projects/eps-001/files.html" class="files">Files</a></li>
+<li><a href="../../../projects/eps-001/repository.html" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <p class="breadcrumb"><a href="../../../projects/eps-001/boards.html">Forums</a> » <a href="../../../projects/eps-001/boards/20.html">General</a> » </p>
+
+<div class="contextual">
+    <span class="message-396-watcher"></span>
+    
+    
+    
+</div>
+
+<h2>SEP Step 2: Requirements Document</h2>
+
+<div class="message">
+<p><span class="author">Added by <a href="../../../users/125.html" class="icon icon-contributor-license">Aaron Harper</a> <a href="../../../projects/eps-001/activity%3Ffrom=2013-01-29.html" title="01/29/2013 06:45 pm">almost 10 years</a> ago</span></p>
+<div class="wiki">
+<a name="PowerTemp-Monitor-and-Control-System-EPSECLSS-Requirements-Document-v10"></a>
+<h1 >Power/Temp Monitor and Control System (EPS/ECLSS) Requirements Document v1.0<a href="396%3Fr=400.html#PowerTemp-Monitor-and-Control-System-EPSECLSS-Requirements-Document-v10" class="wiki-anchor">&para;</a></h1>
+
+
+	<ul class="toc"><li><a href="396%3Fr=400.html#PowerTemp-Monitor-and-Control-System-EPSECLSS-Requirements-Document-v10">Power/Temp Monitor and Control System (EPS/ECLSS) Requirements Document v1.0</a><ul><li><ul><li><a href="396%3Fr=400.html#Introduction">Introduction</a></li><li><a href="396%3Fr=400.html#Technical-Requirements">Technical Requirements</a></li><li><a href="396%3Fr=400.html#Project-Requirements">Project Requirements</a></li><li><a href="396%3Fr=400.html#Future-V20-Requirements">Future V2.0 Requirements</a></li><li><a href="396%3Fr=400.html#Glossary">Glossary</a></li></ul></li></ul></li></ul>
+
+
+	<a name="Introduction"></a>
+<h3 >Introduction<a href="396%3Fr=400.html#Introduction" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>This requirements document is currently being discussed on the forums <a href="../../18/topics/287.html" class="external">here</a>.  The requirements list matches up to the Initial Questions in step one of the Systems Engineering process as shown below. Each requirement is labeled with GSR (Ground Station Requirement), followed by the number of the <a href="../../../projects/eps-001/wiki/Initial_Questions.html" class="external">initial question</a> that the requirement corresponds to, followed by a dot and then the ID number of the requirement.</p>
+
+
+	<ul>
+	<li><strong>EPSR 1.x</strong> - Why are we making this?</li>
+		<li><strong>EPSR 2.x</strong> - Who is this for?</li>
+		<li><strong>EPSR 3.x</strong> - How will this be used?</li>
+		<li><strong>EPSR 4.x</strong> - What features does it need to have (now)?</li>
+		<li><strong>EPSR 5.x</strong> - What features does it need to have (later)?</li>
+		<li><strong>EPSR 6.x</strong> - What are the legacy requirements?</li>
+		<li><strong>EPSR 7.x</strong> - Who's going to build this?</li>
+		<li><strong>EPSR 8.x</strong> - How many do we want to make?</li>
+		<li><strong>EPSR 9.x</strong> - What is the budget?</li>
+		<li><strong>EPSR 10.x</strong> - What is the timeline?</li>
+		<li><strong>EPSR 11.x</strong> - What waste products will be produced by the manufacture and/or operation of this?</li>
+	</ul>
+
+
+	<a name="Technical-Requirements"></a>
+<h3 >Technical Requirements<a href="396%3Fr=400.html#Technical-Requirements" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>Technical requirements are those requirements which include measurable performance values.  Each technical requirement should be verified through testing to ensure the design meets the requirement.</p>
+
+
+	<ul>
+	<li><strong>EPSR 1.1</strong> The EPS board shall measure parameters and store them for transmission to a server.</li>
+		<li><strong>EPSR 1.2</strong> the EPS board must be capable of operating in the environment at the client's site.
+	<ul>
+	<li><strong>EPSR 1.2.1</strong> The EPS board shall be able to operate at -40C to +80C temperatures.</li>
+		<li><strong>EPSR 1.2.2</strong> The EPS board shall be able to operate at 5000M altitude.</li>
+		<li><strong>EPSR 1.2.3</strong> The EPS board shall perform all functions without direct intervention by an operator.</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSR 2.2</strong> The EPS board shall be designed to be mounted securely within an enclosure.</li>
+		<li><strong>EPSR 2.3</strong> The EPS board shall be designed to operate on battery supplies from 12 through 30VDC.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSR 3.1</strong> The EPS board shall measure predefined parameters.
+	<ul>
+	<li><strong>EPSR 3.1.1</strong> The EPS board shall measure the ambient temperature in the enclosure using a sensor on the board.</li>
+		<li><strong>EPSR 3.1.2</strong> The EPS board shall measure voltages of two separate circuits  which must be scaled and buffered using an op-amp.</li>
+		<li><strong>EPSR 3.1.3</strong> The EPS board shall limit the input voltage to the op-amp to safe levels.</li>
+		<li><strong>EPSR 3.1.4</strong> The EPS board shall measure the current of two separate circuits using a sensor with isolation between the sensed circuit and data line.</li>
+	</ul>
+	</li>
+		<li><strong>EPSR 3.2</strong> The EPS board shall transmit measurement data or fault conditions to the server.
+	<ul>
+	<li><strong>EPSR 3.2.1</strong> The EPS board shall transmit measurement data on demand (web page request).</li>
+		<li><strong>EPSR 3.2.2</strong> The EPS board shall be capable of transmitting measurement data on a schedule (FTP or email).</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSR 4.1</strong> The EPS board shall consume minimal power. Design maximum is 250mW.</li>
+		<li><strong>EPSR 4.2</strong> The EPS board shall derive it's power from one of the monitored circuits.</li>
+		<li><strong>EPSR 4.3</strong> The EPS board shall measure voltage from two separate circuits within the following parameters:
+	<ul>
+	<li><strong>EPSR 4.3.1</strong> From 0-30VDC directly.</li>
+		<li><strong>EPSR 4.3.2</strong> From 0-60VDC scaled.</li>
+		<li><strong>EPSR 4.3.3</strong> Handle up to 120VDC clipped.</li>
+		<li><strong>EPSR 4.3.4</strong> Have a minimum of 10 bit accuracy (0.03VDC at 30VDC full scale input).</li>
+	</ul>
+	</li>
+		<li><strong>EPSR 4.4</strong> The EPS board shall measure temperature within the following parameters:
+	<ul>
+	<li><strong>EPSR 4.4.1</strong> From -20 to 85C.</li>
+		<li><strong>EPSR 4.4.2</strong> Have a minimum of 10 bit accuracy (0.1C within the full temperature range).</li>
+	</ul>
+	</li>
+		<li><strong>EPSR 4.5</strong> The EPS board shall measure current from two separate circuits within the following parameters:
+	<ul>
+	<li><strong>EPSR 4.5.1</strong> From 0-20 Amps directly.</li>
+		<li><strong>EPSR 4.5.2</strong> Response time within 5us.</li>
+		<li><strong>EPSR 4.5.3</strong> Less than or equal to a 1.5% output error at 25 degrees C.</li>
+		<li><strong>EPSR 4.5.4</strong> Less than a 5mOhm internal sensor resistance.</li>
+		<li><strong>EPSR 4.5.5</strong> Have greater than a 1kV isolation.</li>
+		<li><strong>EPSR 4.5.6</strong> Have a minimum of 10 bit accuracy (.5mA at 5A full scale input).</li>
+	</ul>
+	</li>
+		<li><strong>EPSR 4.6</strong> The EPS board shall have an Ethernet networking capability.
+	<ul>
+	<li><strong>EPSR 4.6.1</strong> The EPS board shall have an RJ45 jack with full magnetics on the board.</li>
+		<li><strong>EPSR 4.6.2</strong> The EPS board shall have a MAC controller IC with a fully functional TCP/IP stack.</li>
+		<li><strong>EPSR 4.6.3</strong> The EPS board shall display a page for at least one requester displaying measurement data.</li>
+		<li><strong>EPSR 4.6.4</strong> The EPS board shall be capable of periodic transmission, sending measurement data via FTP or email.</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSR 6.1</strong> Any software to communicate, manage, or display data from the EPS board should run on all three major PC platforms (MS Windows, Mac OS X, and Linux).</li>
+		<li><strong>EPSR 6.2</strong> The EPS board must use standardized connections to allow for greater flexibility in it's deployment (Screw terminals, USB, Ethernet, or similar connections).</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSR 7.1</strong> The production units for the client will be built in a static safe facility.</li>
+		<li><strong>EPSR 7.2</strong> The production units will be tested to comply with customer needs and burned in for a minimum of 24 hours using simulated or real loads.</li>
+	</ul>
+
+
+	<a name="Project-Requirements"></a>
+<h3 >Project Requirements<a href="396%3Fr=400.html#Project-Requirements" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>Project requirements are the remaining requirements which are not tied to specific performance values.</p>
+
+
+	<ul>
+	<li><strong>EPSR 2.1</strong> The EPS board shall be designed in such a way that it may be installed by any person with solar power or electrical wiring experience.</li>
+		<li><strong>EPSR 2.4</strong> The EPS board must be well documented so as to meet the needs of WISPs and open source spaceflight designers who will design and build future equipment requiring power and thermal management (at Mach 30 and elsewhere).</li>
+		<li><strong>EPSR 2.5</strong> The EPS board documentation and procedures must be complete enough that Mach 30 operators, students and educators who want to bring electronics, power control, or aerospace engineering into the classroom, and anyone else interested in how to manage power can learn how.</li>
+		<li><strong>EPSR 2.6</strong> The EPS board documentation must cover the installing the EPS board, basic operation, communications, and protocols.</li>
+		<li><strong>EPSR 2.7</strong> The EPS board installation manual shall include a section on safety to include electrical safety and precautions necessary to install the unit safely.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSR 8.1</strong> The initial production will be up to the client, but is anticipated at about 20 units. </li>
+		<li><strong>EPSR 8.2</strong> Whenever and wherever possible, considerations should be made so that the design of the EPS board and it's components allow it to be used in a kit in the future.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSR 9.1</strong> The initial development of the design shall not cost over $2000.00.</li>
+		<li><strong>EPSR 9.2</strong> The production units shall not cost over $100.00 in parts.</li>
+		<li><strong>EPSR 9.3</strong> The production units shall be sold to the client at cost plus labor, not to exceed $150.00 per unit delivered.</li>
+		<li><strong>EPSR 9.4</strong> Installation at remote sites will be available at a negotiated rate.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSR 10.1</strong> This project is a quick development project with immediate need.  Once orders or prerequisites are filled, the project immediately will move to the next stage.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSR 11.1</strong> Where an EPS board fails the test, a repair will be attempted and the board retested to limit E-waste.</li>
+		<li><strong>EPSR 11.2</strong> All E-waste must be handled in an environmentally responsible manner in compliance with applicable law.</li>
+		<li><strong>EPSR 11.3</strong> Any components that wear out, fail, or are damaged must be disposed up according to all federal, state and local guidelines in the US, or as regulations require in other parts of the world.</li>
+		<li><strong>EPSR 11.4</strong> Attention shall be paid into the durability of the design to keep waste to an absolute minimum.</li>
+	</ul>
+
+
+	<a name="Future-V20-Requirements"></a>
+<h3 >Future V2.0 Requirements<a href="396%3Fr=400.html#Future-V20-Requirements" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>These specifications are for reference only so that future features can be accommodated in the current design where practical.</p>
+
+
+	<p><strong>Version 2.0:</strong></p>
+
+
+	<ul>
+	<li><strong>EPSR 5.1</strong> Future EPS boards may have local serial communications to enable integration in HAB or satellite bus.</li>
+		<li><strong>EPSR 5.2</strong> Future EPS boards may have the ability to cut and engage power on local or remote command or by timer.</li>
+		<li><strong>EPSR 5.3</strong> Future EPS boards may have power circuits monitored and controlled using remote boards connected by serial bus such as SPI.</li>
+		<li><strong>EPSR 5.4</strong> Future EPS boards may have programmable sequenced power up, power down, and low power modes.</li>
+		<li><strong>EPSR 5.5</strong> Future EPS boards may have multiple point temperature sensing.</li>
+		<li><strong>EPSR 5.6</strong> Future EPS boards may have heater control circuits.</li>
+	</ul>
+
+
+<strong>Beyond Version 2.0:</strong>
+	<ul>
+	<li><strong>EPSR 5.7</strong> Future EPS boards may have extra GPIO for further sensing and control.</li>
+		<li><strong>EPSR 5.8</strong> Future EPS boards may have simple setup and control by local web page.</li>
+		<li><strong>EPSR 5.9</strong> Future EPS boards may have multiple power modes based upon mission profiles.</li>
+		<li><strong>EPSR 5.10</strong> Future EPS boards may support IPv6.</li>
+	</ul>
+
+
+	<a name="Glossary"></a>
+<h3 >Glossary<a href="396%3Fr=400.html#Glossary" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>ADC - Analog to digital converter.<br />Buffered - Indirect connection which allows input which would potentially be destructive to the unit to be handled safely.<br />Burn-in - A practice to test all production units under load for a proscribed time, causing and failures to occur during testing instead of after deployment.<br />Clipped - In this instance, preventing input which would be damaging to components from exceeding a certain level. <br />ECLSS - Environmental Control and Life Support Subsystem, a component block of a spacecraft or HAB payload.<br />EPS - Electrical Power Subsystem, a component block of a spacecraft or HAB payload.<br />GPIO - General Purpose Input and Output, a way of connecting a sensor to a computer or microcontroller.<br />HAB - High Altitude Balloon<br />Hall effect - The production of voltage transverse to an electric current in the conductor and a magnetic field perpendicular to the current.<br />Hall effect sensor - A sensor which uses the hall effect to detect a magnetic field or electric current.<br />Isolation - In this instance, the ability of a sensor to prevent high voltage from a sensed circuit from crossing over to the sensor's data connection.<br />MAC controller - A chip which contains all the electrical and logic circuits to connect to Ethernet connections.<br />Magnetics - The passive components on an Ethernet jack which prevent noise and cross talk from impacting the flow of high speed data.<br />Microcontroller - A small single purpose computer generally used for instrumentation and control applications.<br />Op-amp - An electronic component which can be used to change signal levels up or down to match the recipient component's abilities.<br />Resolution - In this instance, the number of bits used in the ADC divided by the full scale value.  This yields the value per binary step.<br />Scaled - In this instance, the practice of using an op-amp to reduce a signal by a set percentage or ratio.<br />WISP - Wireless Internet Service Provider.</p>
+</div>
+
+</div>
+<br />
+
+
+<h3 class="comments">Replies (4)</h3>
+
+  <div class="message reply" id="message-398">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="396%3Fr=398.html#message-398">RE: SEP Step 2: Requirements Document</a>
+    -
+    Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/eps-001/activity%3Ffrom=2013-01-29.html" title="01/29/2013 10:51 pm">almost 10 years</a> ago
+  </h4>
+  <div class="wiki"><p>Good stuff. Here are a few thoughts.</p>
+
+
+	<p>Technical Requirements<br /><strong>EPSR 1.2.1</strong> - The initial questions had this range as -40C to +80C. Is there a reasons it's -20C on these requirements?</p>
+
+
+	<p><strong>EPSR 4.1</strong> - Do you have a goal power consumption for this?</p>
+
+
+	<p><strong>EPSR 4.4.1</strong> - The end * to close the bold out is missing. How was this measurement range selected? It seems slightly counter-intuitive to me. Is this just the range for which the customer has data?</p>
+
+
+	<p><strong>EPSR 4.4.2</strong> - Sorry if this is a stupid question, but if you're using an ADC to measure temperature, that would assume that you're measuring the temp as a voltage, right? Won't your resolution depend on your amplifier (in the case of a thermocouple) voltage range and how many degrees C per millivolt you can read? It won't be necessarily a 1-to-1 breakdown for degrees C to the 1024 values of the ADC will it?</p>
+
+
+	<p>Project Requirements<br /><strong>EPSR 2.1</strong> - Should this read "...with solar power or electrical wiring experience"?</p>
+
+
+	<p><strong>EPSR 9.4</strong> - Should it read "...will be available at a negotiated rate"?</p>
+
+
+	<p>Any thoughts on whether or not you'll need to accommodate IPv6 addresses/MACs in this design? This may be a non-issue when piggybacking on the wireless hardware.</p>
+
+
+	<p>Nitpicky things:</p>
+
+
+	<ol>
+	<li>Some of the requirements have periods at the end, and some don't. Is that intentional?</li>
+		<li>Some of the sub-requirements start with capital letters, some don't.</li>
+	</ol></div>
+  
+  </div>
+
+  <div class="message reply" id="message-400">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="396%3Fr=400.html#message-400">RE: SEP Step 2: Requirements Document</a>
+    -
+    Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/eps-001/activity%3Ffrom=2013-01-29.html" title="01/29/2013 11:06 pm">almost 10 years</a> ago
+  </h4>
+  <div class="wiki"><p>Nevermind about the question on <strong>EPSR 4.4.2</strong>. I saw in the block diagram that the type of temperature sensor you're using should give you what you've called out here.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-401">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="396%3Fr=401.html#message-401">RE: SEP Step 2: Requirements Document</a>
+    -
+    Added by <a href="../../../users/125.html" class="icon icon-contributor-license">Aaron Harper</a> <a href="../../../projects/eps-001/activity%3Ffrom=2013-01-29.html" title="01/29/2013 11:11 pm">almost 10 years</a> ago
+  </h4>
+  <div class="wiki"><p><strong>EPSR 1.2.1</strong> Yep... was looking at two different pieces of documentation.  Good catch!</p>
+
+
+	<p><strong>EPSR 4.1</strong> Not really, though below 10mW is possible with the parts selected.  I'm going to arbitrarily set it at 250mW.</p>
+
+
+	<p><strong>EPSR 4.4.1</strong> Will fix the bold...  The measurement range was selected based upon where the worst case range and the standard parts ranges intersect.</p>
+
+
+	<p><strong>EPSR 4.4.2</strong> The part that is selected has an ADC built in, precalibrated with a direct read digital output.  Saves a lot of work.</p>
+
+
+	<p><strong>EPSR 2.1</strong> Yep, thanks for the translation! :)</p>
+
+
+	<p><strong>EPSR 9.4</strong> Yep... considering that the rate for an install has yet to be negotiated, and I would bet this will vary depending on the location.</p>
+
+
+	<p>Good thought on IPv6... this is dependent on the MAC controller, and the one I selected does not support it.  I will look around a bit, but I think IPv4 will be with us for a while on internal networks.  His internal network is built on IPv4, and nearly all equipment is backward compatible... so this may be a non-issue for the anticipated life span of the EPS board.  I will add IPv6 support to future versions</p>
+
+
+	<p>Notpicky things:  Not intentional, just moving (too) fast.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-406">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="396%3Fr=406.html#message-406">RE: SEP Step 2: Requirements Document</a>
+    -
+    Added by <a href="../../../users/125.html" class="icon icon-contributor-license">Aaron Harper</a> <a href="../../../projects/eps-001/activity%3Ffrom=2013-01-30.html" title="01/30/2013 01:34 pm">almost 10 years</a> ago
+  </h4>
+  <div class="wiki"><p>Removed the requirement for a hall effect current sensor after I found a shunt type sensor, <a href="http://www.ti.com/product/ina226" class="external">TI INA226</a> which is better in every way for an eighth of the cost.</p></div>
+  
+  </div>
+
+<p class="pagination"> (1-4/4)</p>
+
+
+
+
+
+
+
+
+        
+				<div style="clear:both;"></div>
+    </div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+	
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://www.redmine.org/">Redmine</a> &copy; 2006-2011 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25732509-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> <div id="footer">
+  <div class="bgl"><div class="bgr">
+    <a href="../../../terms_of_services/396.html">Terms Of Service</a>
+  </div></div>
+</div>
+<div id="footer">
+</div>
+</body>
+</html>

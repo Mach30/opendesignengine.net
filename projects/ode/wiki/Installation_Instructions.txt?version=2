@@ -1,0 +1,5 @@
+h1. Installation Instructions
+
+Open Design Engine (ODE) is based on "Redmine":http://redmine.org.  The official installation method is to install the "Bitnami Redmine Stack":http://bitnami.org/stack/redmine, apply some custom configuration to the stack, and then upgrade the installed Redmine instance to the ODE source code.  Support for other stacks (or bootstrapped installations) will come with future releases.  With luck, one or more of the stack providers will add ODE to their list of supported stacks.  
+
+Note, these instructions assume you are running the Ubuntu VM image of the Bitnami Redmine Stack.  They were tested with "version 1.1.3":http://bitnami.org/files/stacks/redmine/1.1.3-0/bitnami-redmine-1.1.3-0-ubuntu-10.10.zip. 

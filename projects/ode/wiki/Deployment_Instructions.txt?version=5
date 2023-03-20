@@ -1,0 +1,54 @@
+h1. Deployment Instructions
+
+Open Design Engine (ODE) uses "Capistrano":http://capistranorb.com for code deployment. Capistrano is a developer tool for deploying web applications. It is typically installed on a workstation, and used to deploy code from your source code management (SCM) to one, or more servers.
+
+h1. Getting started
+
+In order to deploy code to production servers, you must first have authorization to access the server.  The simplest way to achieve access is to use SSH public/private key pairs so that you don't have to type the password each time. Because SSH is the transport for other services such as SCP (secure copy), SFTP (secure file transfer), and other services (SVN, etc), this can be very convenient and save you a lot of typing.
+
+If your local username is different from your remote username, add @-s user=<remote_user>@ to the beginning of the Capistrano commands.
+
+h1. Quick Deploy
+
+To deploy, simply run:
+
+<pre>
+cap production deploy
+</pre>
+
+This command executes the following steps:
+
+* Pulls in the latest code from the repository
+* Copies any configuration data needed by the application.
+* Runs the any new database migrations (including plugins).
+* Performs a database backup if the database schema changed since the last deploy.
+* Restarts the application server.
+
+h1. Rolling Back
+
+If something goes wrong with the deployment, we can rollback to the previous release:
+
+<pre>
+cap production deploy:rollback
+</pre>
+
+The deployment script will keep the last 5 releases as apart of it's deployment process.
+
+h1. Database Backup
+
+We can perform a database backup at anytime:
+
+<pre>
+cap produciton db:dump 
+</pre>
+
+h1. Archiving
+
+We can archive by tarring the current release directory with the archive command:
+
+<pre>
+cap production archive name=0.1.0
+</pre>
+
+This process with tar the current release directory and copy the tar file to the shared directory.  In addition, it will download the tar file to your local tmp/ directory.
+

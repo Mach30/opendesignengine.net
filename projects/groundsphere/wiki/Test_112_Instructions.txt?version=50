@@ -1,0 +1,255 @@
+h1. Test 1.1.2 Instructions
+
+{{toc}}
+
+h2. Test Hardware
+
+* "Ground Sphere Test Rig":https://opendesignengine.net/projects/groundsphere-test-rig
+* Computer, min system reqs: Windows 7, 1GHz, 1GB RAM
+
+h2. Test 1: Lab Test
+
+Lab test using low power transmitter at 915 MHz to confirm signal reception and system gain (not an AX.25 signal, but close enough).  These instructions assume that the receiver is already assembled and most recent software is installed.  If not, accomplish the next 2 steps.
+# Follow the instruction for "GroundSphere Kit assembly"
+# Follow the instructions for Operations Manual - "Getting Started and Set up"
+
+
+*Test Date:* 
+04JUN14@2057-2146MST   Test Location: MSL / Issyroo Lab, Walsenburg, CO
+
+*Record Test Conditions:* 
+23C ambient, indoor test, metal fixtures to hold test gear, moderately noisy RF environment, Cell phones off and batteries removed.
+
+*Additional Tools Needed:*
+Tape Measure
+
+*Safety concerns:*
+Standard lab safety; standard procedures reviewed. 
+
+*Outcome:*
+* Partial verification of technical requirement 1.1.2, 
+* Confirmation of Ground Sphere performance in best case laboratory conditions
+* Confirmation of Ground Sphere performance in simulated orbital conditions
+
+*Instructions:*
+# [X] Turn on computer
+# [X] Turn on the transmitter
+# [X] Plug the GroundSphere USB data connector into an open USB port
+# [X] Plug the GroundSphere power cord into a standard 120v power outlet
+# [X] Measure and record the distance between transmitter and receiver: 1 meter *Used standard tape measure at 36 inches*
+# [X] Launch the SeeDeR version 0.1 software *Used SDR# for the ability to freeze the display*
+# [X] Tune the SeeDeR version 0.1 software to receive 915 MHz
+# [X] Position the cursor (red vertical bar) at 915 MHz on the horizontal axis
+# [X] Record the noise floor signal level: *-53.89 dBm*
+# [X] Tune the transmitter to 915 MHz.  "Instructions":https://opendesignengine.net/projects/groundsphere-test-rig/wiki/Operating_Manual
+# [X] Set transmitter power to -20dBm. "Instructions":https://opendesignengine.net/projects/groundsphere-test-rig/wiki/Operating_Manual _NOTE: (This is a reasonably strong terrestrial signal, and is an unrealistically high power to expect from SkyCube.  See Lab Test Link Budget figures "here":https://docs.google.com/spreadsheet/ccc?key=0Aptu2_0_mvfAdDBzUHBkaTBKOWMzYVVhT0pxSTlhNEE&usp=sharing)_
+# [X] Observe and capture/record the transmitted signal received by GroundSphere.  *Set to -18dBm as closest equivalent*
+# [X] Position the cursor (red vertical bar) at the center peak of the displayed radio signal on the horizontal axis
+# [X] The signal should be plainly obvious as a strong peak above the noise floor.  If this is not the case, abort the test and troubleshoot. Signal was measured at -11.91dBm, 41.98dBm above the noise floor
+# [X] Measure and move the transmitter 3 meters from the GroundSphere antenna ensuring a clear line of sight.
+# [X] Set the transmitter power level to -60dBm.  _NOTE: (at this power level, the intent is to get as close as possible to the signal strength that we expect to receive form SkyCube as it flies directly overhead of the antenna, given its orbital parameters.  See the "link budget":https://docs.google.com/spreadsheet/ccc?key=0Aptu2_0_mvfAdHhfU2JMSFdhamYtVTRHcmRpTXEzRmc&usp=sharing  )_
+# [X] Observe the transmitted signal received by GroundSphere
+# [X] Position the cursor (red vertical bar) at the center peak of the displayed radio signal on the horizontal axis
+# [X] Record the radio signal level: *-33.88 dBm*
+# [X] Subtract the noise floor figure recorded earlier from the radio signal level recorded in the step above.
+# [X] Record the difference between the signals: *20.01 dB*
+# [X] The difference between the signal and noise floor should be at least 17dBm.  If this is not the case, abort the test and troubleshoot.   
+
+NOTE:  All tests have been completed 3 times with result variances below 0.01%.  Screenshots and pictures are included below, and the raw I and Q dataset is available on the shared project Google Drive Folder.  Warning: it is over 220MB in size and only works with an SDR program like GNU Radio, SDR#, or SeeDeR.  The audio file is linked below as well. 
+
+!http://opendesignengine.net/dmsf_files/459?download=!
+
+*One meter test setup (Step 5)*
+
+!http://opendesignengine.net/dmsf_files/470?download=!
+
+*Noise floor measurement (Step 9)*
+
+!http://opendesignengine.net/dmsf_files/472?download=!
+
+*Satellite Simulator Settings (Step 11)*
+
+!http://opendesignengine.net/dmsf_files/473?download=!
+
+*Strong signal test (Step 12)*
+
+!http://opendesignengine.net/dmsf_files/461?download=!
+
+*Three meter test setup (Step 15)*
+
+!http://opendesignengine.net/dmsf_files/458?download=!
+
+*Satellite simulator settings (Step 16)*
+
+!http://opendesignengine.net/dmsf_files/457?download=!
+
+*Final lab test (Step 17)*
+
+"Audio output of final lab test":http://opendesignengine.net/dmsf_files/442?download=
+
+"Raw baseline (I/Q) data of final lab test":https://drive.google.com/file/d/0B5tu2_0_mvfAXzhzb3JLM2dVR1E/edit?usp=sharing
+ 
+*LAB TEST PROCEDURE COMPLETE*
+
+---
+
+h2. Test 2: Field Test
+
+Long range field test using low power transmitter at 915 MHz to verify the predicted link budget (which comes from <insert link to spreadsheet> analysis) and confirm signal reception.  It is recommended to conduct this test with at least 2 individuals.  These instructions assume that the receiver is already assembled and most recent software is installed.  If not, accomplish the next 2 steps.
+# Follow the instruction for "GroundSphere Kit assembly"
+# Follow the instructions for Operations Manual - "Getting Started and Set up"
+
+
+*Test Date:*
+20JUN2014@2115-2145MST  Test Location: MSL / Issyroo RF test range at 37°43'04.8"N 104°47'16.9"W, 10 miles North of Walsenburg, CO
+
+*Record Test Conditions:*
+26C ambient, outdoor test with full horizon to horizon window, ground station mounted to truck roof, fairly clean RF environment, though some RF energy may come from activities at a small airport located at 37°41'49.2"N 104°47'34.8"W.  No planes were observed to be in operation. Cell phones were turned off and batteries removed.  
+
+*NOTE:* This series of tests were run at 0 degrees elevation, which means that the performance is higher in the cone shaped reception pattern beginning at 30 degrees elevation.  Computer simulation places the tested area at -5dB compared to the peak lobe with a small amount of interference from the close proximity to the ground (ground effect).  This means that actual performance will be higher for any satellite within reception range.  The reason for performing these tests in this manner was that in the low light conditions, it was against the use agreement for the facility to climb the tower.
+
+*Additional Tools Needed:*
+Laptop computer meeting or exceeding the minimum system requirements.
+Portable table or truck bed (on which to set up receiver equip and computer)
+Access to 120V a/c power for preamp (generator or car inverter) or DC adapter (vehicle power jack to 2.1mm preamp power jack).
+Tape measure or distance finding equipment (GPS?)
+
+*Safety concerns:*
+Weather caution
+Traffic caution
+Portable power for equipment(?)
+
+*Outcome*
+* Partial verification of technical requirement 1.1.2, 
+* Confirmation of Ground Sphere performance in optimal fielded conditions
+* Confirmation of Ground Sphere performance at a far distance to simulate orbital conditions
+
+*Instructions:*
+> Mission Control Set Up
+# [X] Set up receiver and computer on portable table or in a vehicle with the antenna outside.
+# [X] Turn on computer
+# [X] Plug the GroundSphere USB data connector into an open USB port
+# [X] Plug the GroundShpere power cord into a standard 120v power outlet *Used automotive DC power jack, vehicle supply measured 13.9VDC*
+# [X] Launch the SeeDeR version 0.1 software *Used SDR# for the ability to freeze the display*
+# [X] Tune the SeeDeR version 0.1 software to receive 915 MHz 
+# [X] Position the cursor (red vertical bar) at 915 MHz on the horizontal axis
+# [X] Record the noise floor signal level: *-42.6 dBm* Seems to be fairly noisy even though the location is away from most sources.  Grounding issue?
+# [X] Move to a distance 2650 meters away from the receiver set up with a clear line of sight, then set up the transmitter
+# [X] If not exactly the above distance, record the distance between transmitter and receiver (in m): *N/A* 
+> Remote transmit site Set Up
+# [X] Power on and tune the transmitter to 915 MHz. "Instructions":https://opendesignengine.net/projects/groundsphere-test-rig/wiki/Operating_Manual
+# [X] Set transmitter power to 0dBm _NOTE: (This is a reasonably strong terrestrial signal, and is an unrealistically high power to expect from SkyCube)_
+# [X] Tune the SeeDeR software to receive 915 MHz
+# [X] Observe and capture/record the transmitted signal received by GroundSphere from the test transmitter
+# [X] Position the cursor (red vertical bar) at the center peak of the displayed radio signal on the horizontal axis
+# [X] The signal should be plainly obvious as a strong peak above the noise floor.  If this is not the case, abort the test and troubleshoot. 
+# [X] Set the transmitter power level to -20dBm.  _NOTE: (at this power level, we are simulating the signal that we expect to receive form SkyCube as it flies directly overhead of the antenna, given its orbital parameters.  See the Outdoor Test Link Budget "here":https://docs.google.com/spreadsheet/ccc?key=0Aptu2_0_mvfAdEZLRWNaQ2lmWHBzSzJiTkFYZHhKZ1E&usp=sharing)_
+> Testing
+# [X] Observe and capture/record the transmitted signal received by GroundSphere from the test transmitter
+# [X] Position the cursor (red vertical bar) at the center peak of the displayed radio signal on the horizontal axis
+# [X] Record the radio signal level: *-22.3 dBm*
+# [X] Subtract the noise floor figure recorded earlier from the radio signal level recorded in the step above.
+# [X] Record the difference between the signals: *20.3 dBm*
+# [X] The difference between the signal and noise floor should be at least 17dBm.  If this is not the case, abort the test and troubleshoot.  
+
+!http://opendesignengine.net/dmsf_files/465?download=!
+
+*Setting up SDR# for the field test*
+
+<insert image of transmitter setup> Camera battery failed after taking above picture.
+
+<insert screenshot image of computer screen showing high power 915 MHz signal> None taken during the procedure listed above.  Signal showed around -9dBm.
+
+!http://opendesignengine.net/dmsf_files/463?download=!
+
+*Low power test showing peaks. (Testing step 1)*
+
+!http://opendesignengine.net/dmsf_files/464?download=!
+
+*Low power test East to West.  Peaks shown in waterfall display.*
+
+!http://opendesignengine.net/dmsf_files/462?download=!
+
+*Low power test West to East.  Peaks shown in waterfall display.*
+
+*FIELD TEST PROCEDURE COMPLETE*
+
+---
+
+h2. Test 3: From Orbit Test
+
+Acquire signal from orbiting cubesat operating on 915 MHz (NPS just launched two cubesats which use the same radio and configuration as SkyCube).  Orbital prediction software will need to be used to calculate the appropriate timing for this test.  It is only possible to conduct the steps below in anticipation of a 915 MHz signal source flying overhead.  These instructions assume that the receiver is already assembled and most recent software is installed.  If not, accomplish the next 2 steps.
+# Follow the instruction for "GroundSphere Kit assembly"
+# Follow the instructions for Operations Manual - "Getting Started and Set up"
+
+
+*Test Date:*
+20JUN2014@2055-2110MST  Test Location: MSL / Issyroo RF test range at 37°43'04.8"N 104°47'16.9"W, 10 miles North of Walsenburg, CO
+
+*Record Test Conditions:*
+28C ambient, outdoor test with full horizon to horizon window, ground station mounted to truck roof, fairly clean RF environment, though some RF energy may come from activities at a small airport located at 37°41'49.2"N 104°47'34.8"W.  No planes were observed to be in operation. Cell phones were turned off and batteries removed.  
+
+*Tools Needed:*
+Ground Sphere test rig
+Computer meeting min system reqs
+Skycube satellite pass within range of receiving station.
+
+
+*Safety concerns:*
+Weather caution
+Traffic caution
+
+*Outcome:*
+Verification and completion of Technical requirement 1.1.2
+
+*Instructions:*
+# [X] Set up receiver and computer on portable table or in a vehicle with the antenna outside
+# [X] Turn on computer
+# [X] Plug the GroundSphere USB data connector into an open USB port
+# [X] Plug the GroundShpere power cord into a standard 120v power outlet
+# [X] Launch the SeeDeR version 0.1 software
+# [X] Tune the SeeDeR software to receive 915 MHz
+# [X] Position the cursor (red vertical bar) at 915 MHz on the horizontal axis
+# [X] Record the noise floor signal level: *-42.4 dBm* Seems to be fairly noisy even though the location is away from most sources.  Grounding issue?
+# [X] Await Skycube satellite pass as predicted by gpredict or other prediction software
+# [X] Observe and capture/record the transmitted signal received by GroundSphere
+# [X] Record the closest approach as shown by the polar plot (sky view) on GPredict: *86.00 degrees elevation at 21:03:29*
+# [X] Position the cursor (red vertical bar) at the center peak of the displayed radio signal on the horizontal axis
+# [X] Record the radio signal level: N/A No signal received.  *Not even a twitch or blush on the screen which would have occurred even if the signal was too weak to be decoded*.
+# [X] Subtract the noise floor figure recorded earlier from the radio signal level recorded in the step above
+# [X] Record the difference between the signals: *N/A No signal received.*
+# [X] If the difference between the signal received from Sky Cube and noise floor is 17dBm or greater, the AX-25 packet should be decoded by the SeeDeR software.  Save a screenshot of this event.
+# [X] Find the anticipated signal strength in the "link budget":https://docs.google.com/spreadsheet/ccc?key=0Aptu2_0_mvfAdHhfU2JMSFdhamYtVTRHcmRpTXEzRmc&usp=sharing given the elevation of the closest approach and compare this figure to the received signal.  
+# [X] Record any substantial difference: *N/A No signal received.  Should have received a signal of +24.19dBm at highest elevation.* 
+
+<insert screenshot image of computer screen showing signal received from satellite> *N/A No signal received.*
+
+!http://opendesignengine.net/dmsf_files/471?download=!
+
+*Setting up SeeDeR v0.1 for anticipated satellite pass*
+
+h2. Second From Orbit test
+
+There was another pass at 24JUN14@1231-1240 with a max elevation of 78.93 degrees.  I drove ENE to maximize the elevation of the pass and repeated the test.  The results are posted below.
+
+*Test Date:*
+24JUN14@1231-1240MST  Test Location: 37°55'14.2"N 104°02'28.4"W, 44 miles East of Walsenburg, CO
+
+*Record Test Conditions for  event:*
+34C ambient, outdoor test with full horizon to horizon window, ground station mounted to truck roof, clean RF environment. Cell phones were turned off and batteries removed.  
+
+!http://opendesignengine.net/dmsf_files/474?download=!
+
+*On Orbit Test Setup*
+
+*Noise floor:*
+-53.2dBm
+
+*Signal strength at peak elevation:*
+N/A, No signal received.
+
+h2. Future Attempts
+
+I plan to find another satellite in frequency range for a field test.  Should no satellite be available, the Soyuz TMA-M ISS personnel ferry and Progress M-M ISS supply craft both transmit a carrier on 922.763MHz, which is well within the range of the receiver. 
+
+*FROM ORBIT TEST PROCEDURE COMPLETE*

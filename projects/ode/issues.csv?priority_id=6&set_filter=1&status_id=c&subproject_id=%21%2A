@@ -1,0 +1,14 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+90,Resolved,Open Design Engine,Bug,Urgent,Self registration page renders ToS as source code instead of formatted text,"","",v0.2.1 - Public Beta Enhancements,J. Simmons,11/18/2012,"",100,"","",11/18/2012 01:38 pm,11/18/2012 06:37 pm,Like the description says.  This really should be fixed before we announce the public beta.
+43,Closed,Open Design Engine,Bug,Urgent,Getting error when browsing repositories,"","",v0.2 - Public Beta,J. Simmons,11/03/2011,"",0,"","",11/03/2011 12:44 am,03/27/2012 03:32 pm,"If you browse to the *Repository* (such as in the ""repo"":https://opendesignengine.net/projects/sandbox/repository in the sandbox project) tab in a project you get the following error:
+
+<pre>
+An error occurred when trying to access the repository: Cannot allocate memory - 'svn' list --xml 'https://opendesignengine.net/svn/sandbox/'@HEAD --no-auth-cache - non-interactive
+</pre> 
+
+This appears to be related to issues in Redmine.
+
+* http://www.redmine.org/issues/7699
+* http://www.redmine.org/issues/9337
+* http://www.redmine.org/issues/7528"
+31,Closed,Open Design Engine,Support,Urgent,Install SSL support to live ODE server,"","",v0.1 - Private Alpha,J. Simmons,05/08/2011,"",100,"","",05/08/2011 06:01 am,05/25/2011 10:48 pm,"Research, purchase, and configure a signed SSL cert.  Once done, configure http to redirect to https for all paths.  Be sure to test SVN over https."

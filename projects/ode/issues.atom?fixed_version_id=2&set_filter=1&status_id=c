@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/ode/issues.atom?fixed_version_id=2&amp;amp;set_filter=1&amp;amp;status_id=c"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/ode/issues?fixed_version_id=2&amp;amp;set_filter=1&amp;amp;status_id=c"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2012-08-28T21:11:23+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #71 (Resolved): DMSF upload panel lists filenames as undefined</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/71"/>
+    <id>http://opendesignengine.net/issues/71</id>
+    <updated>2012-08-28T21:11:23+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;This is an issue with DMSF (see &lt;a class="external" href="http://code.google.com/p/redmine-dmsf/issues/detail?id=157"&gt;http://code.google.com/p/redmine-dmsf/issues/detail?id=157&lt;/a&gt; for details).  We just need to update our source code to the latest version of DMSF to correct the issue.  Fix tested by implementing manual patch listed at the bottom of the DMSF ticket on the live server.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #66 (Resolved): Getting https error when embedding YouTube videos</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/66"/>
+    <id>http://opendesignengine.net/issues/66</id>
+    <updated>2012-06-14T15:22:43+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Visit the &lt;a href="https://opendesignengine.net/projects/far-horizons-project/wiki" class="external"&gt;Far Horizons Project Wiki Page&lt;/a&gt; to see the error.  Error confirmed in Chrome and IE 9.  Error message is "This page has insecure content".&lt;/p&gt;
+
+
+	&lt;p&gt;It looks like there is a new option with embedding YouTube videos for HTTPS sites.  See "Enabling HTTPS mode" on this &lt;a href="http://support.google.com/youtube/bin/answer.py?hl=en&amp;#38;answer=171780" class="external"&gt;page&lt;/a&gt;.  We should update the Youtube/Vimeo plugin to work with this feature (and check Vimeo videos for similar problem).&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Support #50 (Resolved): Upgrade hosting server</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/50"/>
+    <id>http://opendesignengine.net/issues/50</id>
+    <updated>2012-02-13T15:56:46+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Current server is a devel class box.  We want to upgrade the box to something able to handle some actual traffic before the public beta starts.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #46 (Resolved): Disable ability to make projects private</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/46"/>
+    <id>http://opendesignengine.net/issues/46</id>
+    <updated>2012-02-10T05:08:16+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;During project creation or editing, users can un-check the "Public" field and hide their projects.  This needs to be removed before the beta release so all projects are public.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #44 (Resolved): The Legal plugin is blocking admins from creating new accounts</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/44"/>
+    <id>http://opendesignengine.net/issues/44</id>
+    <updated>2011-12-18T22:51:38+00:00</updated>
+    <author>
+      <name>Admin Administrator</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I went to add a new user tonight (while logged in as Admin) and received the following error:&lt;/p&gt;
+
+
+	&lt;p&gt;"You must accept the terms of service to continue"&lt;/p&gt;
+
+
+	&lt;p&gt;I would expect this message if I was someone registering their own account through the sign up page, but not as the Admin user creating an account for someone else.  In this case, I think the system should create the user and make them agree to the ToS at their first login.  Oh, and the administrative page for creating users does not appear to have a way of accepting the ToS so we currently cannot create new users.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #43 (Closed): Getting error when browsing repositories</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/43"/>
+    <id>http://opendesignengine.net/issues/43</id>
+    <updated>2011-11-03T00:44:44+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;If you browse to the &lt;strong&gt;Repository&lt;/strong&gt; (such as in the &lt;a href="https://opendesignengine.net/projects/sandbox/repository" class="external"&gt;repo&lt;/a&gt; in the sandbox project) tab in a project you get the following error:&lt;/p&gt;
+
+
+&lt;pre&gt;
+An error occurred when trying to access the repository: Cannot allocate memory - 'svn' list --xml 'https://opendesignengine.net/svn/sandbox/'@HEAD --no-auth-cache - non-interactive
+&lt;/pre&gt; 
+
+	&lt;p&gt;This appears to be related to issues in Redmine.&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;a class="external" href="http://www.redmine.org/issues/7699"&gt;http://www.redmine.org/issues/7699&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class="external" href="http://www.redmine.org/issues/9337"&gt;http://www.redmine.org/issues/9337&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class="external" href="http://www.redmine.org/issues/7528"&gt;http://www.redmine.org/issues/7528&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #12 (Closed): Require all projects to have Open Source licenses</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/12"/>
+    <id>http://opendesignengine.net/issues/12</id>
+    <updated>2011-04-08T03:14:19+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Write plugin to require projects list an approve license (OSI for software, OSHW for hardware).&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #11 (Resolved): Add Terms of Service and Privacy Policy to account creation</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/11"/>
+    <id>http://opendesignengine.net/issues/11</id>
+    <updated>2011-04-08T03:13:18+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Need to write a new plugin for this.  Should work like &lt;a href="http://drupal.org/project/legal" class="external"&gt;Drupal Legal Plugin&lt;/a&gt;.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #8 (Resolved): Add support for enhanced document management</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/8"/>
+    <id>http://opendesignengine.net/issues/8</id>
+    <updated>2011-04-08T02:56:18+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;The idea is to allow users to have an easy and familiar way to control non-source code files.  It should be versioned when needed and work similar to file management.  Meta-data is a plus.&lt;/p&gt;
+
+
+	&lt;p&gt;First implementation concept is using webdav module for easier sharing of engineering documents.  Look at this &lt;a href="http://www.redmine.org/projects/redmine/wiki/PluginWebDav" class="external"&gt;plugin&lt;/a&gt;.  Need to research what can be done to add version control support to this feature.  Also look at integrating svn access through this connection.&lt;/p&gt;
+
+
+	&lt;p&gt;Should also evaluate moving live ODE site from http to https before implementing this feature.&lt;/p&gt;    </content>
+  </entry>
+</feed>

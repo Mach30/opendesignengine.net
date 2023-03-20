@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/ode/issues.atom?fixed_version_id=3&amp;amp;per_page=50&amp;amp;set_filter=1&amp;amp;sort=status%2Cid%3Adesc&amp;amp;status_id=c"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/ode/issues?fixed_version_id=3&amp;amp;per_page=50&amp;amp;set_filter=1&amp;amp;sort=status%2Cid%3Adesc&amp;amp;status_id=c"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-01-16T19:07:56+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Feature #107 (Closed): Add Rails and Ruby versions to output on admin/info page</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/107"/>
+    <id>http://opendesignengine.net/issues/107</id>
+    <updated>2013-01-16T19:07:56+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;It would be very helpful to have an easy way to tell what version of ruby and rails the site is running on.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #47 (Closed): Add ability to request to join a project</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/47"/>
+    <id>http://opendesignengine.net/issues/47</id>
+    <updated>2012-02-10T05:14:52+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;There is a plugin for this - &lt;a class="external" href="https://github.com/splendeo/redmine_simple_join_project"&gt;https://github.com/splendeo/redmine_simple_join_project&lt;/a&gt;&lt;/p&gt;    </content>
+  </entry>
+</feed>

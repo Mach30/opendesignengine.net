@@ -1,0 +1,36 @@
+If you're building a printer you designed yourself, awesome.
+
+If you're building a printer someone else designed, good luck ;)
+
+If you're building a kit you purchased, don't be shy about bothering the manufacturer.
+
+If your printer is already fully assembled and ready to go it's still a good idea to skim through here as an educational thing.
+
+General construction
+* Read the instructions all the way through before starting
+* Keep good notes
+* Measure twice, cut once
+* Don't take risks with your eyes and hands
+* Respect the danger of things that get hot, power tools, and fumes in confined spaces
+
+General printers
+* The linear motion elements must be rigid (no flex), consistent (same dimension everywhere), and tough (high wear resistance)
+* all moving parts must be properly lubricated
+* all fasteners must be properly tightened
+* all wires must be secured so that they do not catch on moving parts, rub on edges, or bend too sharply
+* anything that heats up must be isolated (distance, active cooling or insulation)
+* anything that heats up must be allowed to expand and contract
+
+Thermoplastic printers
+* anything that comes in contact with molten plastic will wear out sooner or later
+
+Cartesian printers
+* The X, Y and Z axis must be perfectly aligned
+** If there are two linear controls for one axis they must be parallel
+** Each axis must be perpendicular
+
+references
+* http://reprap.org/wiki/Build_instructions
+* http://reprap.org/wiki/General_FAQ
+* http://reprap.org/wiki/Category:Tutorials
+* http://reprap.org/wiki/User_Manual:_Firmware

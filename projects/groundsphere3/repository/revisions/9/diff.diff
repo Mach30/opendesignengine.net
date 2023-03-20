@@ -1,0 +1,113 @@
+Index: trunk/docs/Link Budget Documentation.ipynb
+===================================================================
+--- trunk/docs/Link Budget Documentation.ipynb	(revision 8)
++++ trunk/docs/Link Budget Documentation.ipynb	(revision 9)
+@@ -58,29 +58,38 @@
+     "\n",
+     "*<p style=\"text-align: center;\"><b>Equations Listed in the Order Mentioned</b></p>*\n",
+     "\n",
+-    "$$Link_{Mar} = {{Eb/No}_F} - {{Eb/No}_R}$$\n",
++    "$$Link_{Mar} [dB] = {{Eb/No}_F} [dB] - {{Eb/No}_R} [dB]$$\n",
+     "\n",
+-    "$$ {Eb/No}_F = {P_{Re}} -{MDS}$$\n",
++    "$$ {Eb/No}_F [dB] = {P_{Re}}[dBm] -{MDS}[dBm]$$\n",
+     "\n",
+-    "$${Eb/No}_R = {Eb/No}_T + {L_{TrImp}}$$\n",
++    "$${Eb/No}_R [dB] = {Eb/No}_T[dB] + {L_{TrImp}} [dB]$$\n",
+     "\n",
+-    "$$P_{Re} = {EIRP} + L_{Path} + L_{Pol} + L_{At} + G_{Re} + L_{ReP}$$\n",
++    "$$P_{Re} [dBm] = {EIRP}[dB] + L_{Path}[dB] + L_{Pol} [dB]+ L_{At} [dB]+ G_{Re}[dB] + L_{ReP}[dB]$$\n",
+     "\n",
+-    "$$MDS = -174 + 10log_{10}(BW*100) + N_{Sys}$$"
++    "$$MDS[dB] = -174 + 10log_{10}(BW[kHz]*1000) + N_{Sys}[dB]$$"
+    ]
+   },
+   {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {
++    "collapsed": true
++   },
++   "outputs": [],
++   "source": []
++  },
++  {
+    "cell_type": "markdown",
+    "metadata": {},
+    "source": [
+     "## Downlink\n",
+     "\n",
+-    "The Downlink Wavelength = The Speed of Light / Downlink Frequency. The Target Eb/No and Implementation Loss, as well as the Required Eb/No are found through research based on your particular transmission and educated assumptions. The Target Eb/No Is typically around 20 - 25 dB, however it varies depending on the type of communication being attempted. The Implementation Loss is loss due to connections and other hardware parts. This typically will be around 1 dB.\n",
++    "The Downlink Wavelength = The Speed of Light / Downlink Frequency. The Target Eb/No and Implementation Loss, as well as the Required Eb/No are found through research based on your particular transmission and educated assumptions. The Target Eb/No for NOAA Automatic Picture Transmission (APT) reception is typically around 20 - 25 dB, however it varies based on communication scheme (e.g. modulation, forward error correction, coding schemes, etc.). The Implementation Loss is loss due deviation of a real system from theoretically perfect system in math. This typically assumed to be around 1 dB.\n",
+     "\n",
+     "\n",
+-    "$$ \\lambda = c / f$$\n",
++    "$$ \\lambda [m] = c/f$$\n",
+     "\n",
+-    "$$ Eb/No_R = L_{Imp} + Eb/No_T $$\n"
++    "$$ Eb/No_R [dB]= L_{Imp}[dB] + Eb/No_T[dB] $$\n"
+    ]
+   },
+   {
+@@ -99,9 +108,9 @@
+     "\n",
+     "Find the power of the transmitter and convert it to dBm. To convert from watts to dBm, the conversion is power_in_dBm = 10log(power_in_watts*1000). The transmit losses, pointing losses, and antenna gain will be decided based on research, as mentioned above. The Transmit EIRP = Transmit Power + Transmit Losses + Transmit Antenna Gain + Pointing Losses.\n",
+     "\n",
+-    "$$ P_{TrC} = 10log_{10}(P_{Tr}*1000) $$\n",
++    "$$ P_{TrC} [dBm] = 10log_{10}(P_{Tr}[W]*1000) $$\n",
+     "\n",
+-    "$$ EIRP = P_{TrC} + L_{Tr} + G_{Tr} + L_{TrP} $$"
++    "$$ EIRP[dB] = P_{TrC}[dB] + L_{Tr}[dB] + G_{Tr}[dB] + L_{TrP}[dB] $$"
+    ]
+   },
+   {
+@@ -167,7 +176,7 @@
+    "source": [
+     "## Path and Atmospheric Losses\n",
+     "\n",
+-    "The Link Distance was solved for in the section above. Downlink Path Loss (dB) =  -1*10log((4PI*distance*1000/wavelength)^2). Polarization Loss does not apply to our non-polarized antennas, so it will always be zero. \n",
++    "The Link Distance was solved for in the section above. Downlink Path Loss (dB) =  -1*10log((4PI*distance*1000/wavelength)^2). Polarization Loss is zero in this example because both of the antennas are right hand circularly polarized (RHCP). As a counterexample, if one of the antennas is circularly polarized and the other antennas is linearly polarized, the polarization loss would be around 3 [dB].\n",
+     "\n",
+     "$$L_{Path} = (-1)*10log_{10}((\\frac{4{\\pi}*D*1000}{\\lambda})^2)$$\n",
+     "\n",
+@@ -187,7 +196,9 @@
+     "|10$^{\\circ}$|1.1|dB|\n",
+     "|30$^{\\circ}$|.4|dB|\n",
+     "|45$^{\\circ}$|.3|dB|\n",
+-    "|90$^{\\circ}$|0.0|dB|\n"
++    "|90$^{\\circ}$|0.0|dB|\n",
++    "\n",
++    "This information was taken from the AmSat-IARU Link Model.\n"
+    ]
+   },
+   {
+@@ -198,7 +209,7 @@
+     "\n",
+     "The Receiver Antenna Gain will be based on the shape of the antenna and the Pointing Offset is affected by the angle it is receiving the transmission from. The Received Power = Transmit EIRP + Downlink Path Loss + Polarization Loss + Atmospheric Losses + Receiver Antenna Gain + Receiver Pointing Losses.\n",
+     "\n",
+-    "$$P_{Re} = EIRP + L_{Path} + L_{Pol} + L_{At} + G_{Re} + L_{ReP} $$"
++    "$$P_{Re}[dBm] = EIRP[dB] + L_{Path} [dB]+ L_{Pol}[dB] + L_{At} [dB]+ G_{Re}[dB] + L_{ReP}[dB] $$"
+    ]
+   },
+   {
+@@ -209,15 +220,15 @@
+     "\n",
+     "Now that all the bits and pieces have been solved for, plug them back into the equations listed at the beginning of the document to solve for the Link Margin.\n",
+     "\n",
+-    "$$MDS = -174 + 10log_{10}(BW*100) + N_{Sys}$$\n",
++    "$$MDS[dB] = -174 + 10log_{10}(BW[kHz]*1000) + N_{Sys}[dB]$$\n",
+     "\n",
+-    "$$P_{Re} = {EIRP} + L_{Path} + L_{Pol} + L_{At} + G_{Re} + L_{ReP}$$\n",
++    "$$P_{Re}[dB] = {EIRP}[dB] + L_{Path}[dB] + L_{Pol}[dB] + L_{At}[dB] + G_{Re}[dB] + L_{ReP}[dB]$$\n",
+     "\n",
+-    "$$ {Eb/No}_F = {P_{Re}} -{MDS}$$\n",
++    "$$ {Eb/No}_F[dB] = {P_{Re}}[dB] -{MDS}[dB]$$\n",
+     "\n",
+-    "$${Eb/No}_R = {Eb/No}_T + {L_{TrImp}}$$\n",
++    "$${Eb/No}_R[dB] = {Eb/No}_T[dB] + {L_{TrImp}}[dB]$$\n",
+     "\n",
+-    "$$Link_{Mar} = {{Eb/No}_F} - {{Eb/No}_R}$$"
++    "$$Link_{Mar}[dB] = {{Eb/No}_F}[dB] - {{Eb/No}_R}[dB]$$"
+    ]
+   },
+   {

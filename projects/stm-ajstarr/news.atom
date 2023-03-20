@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Scanning Tunnelling Microscope: News</title>
+  <link href="http://opendesignengine.net/projects/stm-ajstarr/news.atom" rel="self"/>
+  <link href="http://opendesignengine.net/projects/stm-ajstarr/news" rel="alternate"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-02-28T23:12:27+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Rev B design of bias voltage amplifier complete</title>
+    <link href="http://opendesignengine.net/news/31" rel="alternate"/>
+    <id>http://opendesignengine.net/news/31</id>
+    <updated>2013-02-28T23:12:27+00:00</updated>
+    <author>
+      <name>Andrew Starr</name>
+      <email>ajstarr@gmail.com</email>
+    </author>
+    <content type="html">
+&lt;p&gt;The new bias voltage amplifier design (redone as a simple differential input amplifier) is complete. PCB fabrication is underway and design files are in repository.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="https://opendesignengine.net/attachments/315/stm-bvc-revb.jpg" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Tunnelling current amplifier PCB layout complete</title>
+    <link href="http://opendesignengine.net/news/30" rel="alternate"/>
+    <id>http://opendesignengine.net/news/30</id>
+    <updated>2013-02-12T01:33:21+00:00</updated>
+    <author>
+      <name>Andrew Starr</name>
+      <email>ajstarr@gmail.com</email>
+    </author>
+    <content type="html">
+&lt;p&gt;The new differential output amplifier layout is done, and the team at OSH Park are fabricating the board. The design files, including parts list, have been uploaded to the repository.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="https://opendesignengine.net/attachments/313/stm-tca-revb.jpg" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;While I'm waiting for the PCB to arrive, I will proceed with the redesign of the bias amplifier to use a differential input.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Tunnelling current amplifier redesign</title>
+    <link href="http://opendesignengine.net/news/29" rel="alternate"/>
+    <id>http://opendesignengine.net/news/29</id>
+    <updated>2013-01-21T01:14:45+00:00</updated>
+    <author>
+      <name>Andrew Starr</name>
+      <email>ajstarr@gmail.com</email>
+    </author>
+    <content type="html">
+&lt;p&gt;After discovering the LT6350 single-ended to differential voltage converter IC, I decided to convert the tunnelling current amplifier to differential output. This should improve noise immunity, which is crucial since I intend using an 18-bit A/D converter to digitise this signal at the main controller. I have further decided to omit the high-frequency signal recovery section of the amplifier and implement this functionality in firmware (assuming adequate performance from the A/D). This simplifies the amplifier and reduces the amount of 'hand tweaking' of the amplifier response.&lt;/p&gt;
+
+
+	&lt;p&gt;I may also convert the bias voltage controller to differential (differential output from the main controller, converted to single-ended at the STM). This should reduce the susceptibility of the bias voltage to external noise pickup, and by moving the D/A converter to the main controller, reduce by 3 the number of wires going to the STM.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="https://opendesignengine.net/attachments/239/tca_schematic_rev_b.jpg" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bias voltage controller PCB layout complete</title>
+    <link href="http://opendesignengine.net/news/26" rel="alternate"/>
+    <id>http://opendesignengine.net/news/26</id>
+    <updated>2012-12-02T02:44:18+00:00</updated>
+    <author>
+      <name>Andrew Starr</name>
+      <email>ajstarr@gmail.com</email>
+    </author>
+    <content type="html">
+&lt;p&gt;I've routed the bias voltage controller PCB and submitted it to OSH Park for fabrication. The PCB file is in the repository, a Parts List will follow in a couple of days.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="https://opendesignengine.net/attachments/189/stm-bvc-reva.jpg" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bias voltage controller schematic complete</title>
+    <link href="http://opendesignengine.net/news/25" rel="alternate"/>
+    <id>http://opendesignengine.net/news/25</id>
+    <updated>2012-11-19T04:03:37+00:00</updated>
+    <author>
+      <name>Andrew Starr</name>
+      <email>ajstarr@gmail.com</email>
+    </author>
+    <content type="html">
+&lt;p&gt;The bias voltage controller will generate the bias voltage between the probe tip and the sample. It will mount underneath the piezotube, using the same four screws that secure the ceramic holder to the top of the isolator stack.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="https://opendesignengine.net/attachments/186/bvc.jpg" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Base plate adapter boards installed</title>
+    <link href="http://opendesignengine.net/news/24" rel="alternate"/>
+    <id>http://opendesignengine.net/news/24</id>
+    <updated>2012-11-16T00:50:02+00:00</updated>
+    <author>
+      <name>Andrew Starr</name>
+      <email>ajstarr@gmail.com</email>
+    </author>
+    <content type="html">
+&lt;p&gt;I also attached some rubber feet to the base&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="https://opendesignengine.net/attachments/182/BPCA_detail.jpg" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Base plate adapter boards back from the fab</title>
+    <link href="http://opendesignengine.net/news/23" rel="alternate"/>
+    <id>http://opendesignengine.net/news/23</id>
+    <updated>2012-10-30T04:15:57+00:00</updated>
+    <author>
+      <name>Andrew Starr</name>
+      <email>ajstarr@gmail.com</email>
+    </author>
+    <content type="html">
+&lt;p&gt;It looks like the guys at OSH Park spotted the inverted drill file, because the boards are fine!&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="https://opendesignengine.net/attachments/181/bpca_x_3.jpg" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Tunnelling current amplifier PCB layout complete</title>
+    <link href="http://opendesignengine.net/news/22" rel="alternate"/>
+    <id>http://opendesignengine.net/news/22</id>
+    <updated>2012-10-28T00:54:30+00:00</updated>
+    <author>
+      <name>Andrew Starr</name>
+      <email>ajstarr@gmail.com</email>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;img src="https://opendesignengine.net/attachments/179/tca.jpg" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="https://opendesignengine.net/attachments/180/tca2.jpg" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Oops - Kicad and drill files</title>
+    <link href="http://opendesignengine.net/news/21" rel="alternate"/>
+    <id>http://opendesignengine.net/news/21</id>
+    <updated>2012-10-27T18:15:38+00:00</updated>
+    <author>
+      <name>Andrew Starr</name>
+      <email>ajstarr@gmail.com</email>
+    </author>
+    <content type="html">
+&lt;p&gt;I discovered yesterday that the current version of Kicad has 'mirror Y axis' enabled by default when generating Gerber drill files...which means my base plate cable adapter PCBs will very likely be unusable when they arrive in the mail! So the lesson of the story is, if you are generating a Gerber drill file from Kicad, make sure the 'mirror Y axis' box is UNCHECKED. Otherwise all your holes will be in the wrong places...&lt;/p&gt;
+
+
+	&lt;p&gt;I've just spent the morning re-doing all my drill files and checking the Gerber output. So I suppose the other lesson of the story is, check your Gerbers properly before you send them to the PCB fab!&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Lab Journal: Tunnelling Current Amplifier simulation</title>
+    <link href="http://opendesignengine.net/news/20" rel="alternate"/>
+    <id>http://opendesignengine.net/news/20</id>
+    <updated>2012-10-21T08:31:09+00:00</updated>
+    <author>
+      <name>Andrew Starr</name>
+      <email>ajstarr@gmail.com</email>
+    </author>
+    <content type="html">
+&lt;p&gt;For my first lab journal wiki entry, I've detailed the results of some simulation work done to verify the tunnelling current amplifier design. This work has allowed me finalise the performance parameters and to tune the component values (updated schematic to follow), and has given me some confidence that the amplifier will actually work when it is built. Next goal is to translate the schematic into a PCB...&lt;/p&gt;    </content>
+  </entry>
+</feed>

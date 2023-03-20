@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/46.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2012-02-12T17:32:38+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Open Design Engine - Bug #46: Disable ability to make projects private</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/46"/>
+    <id>http://opendesignengine.net/issues/46?journal_id=58</id>
+    <updated>2012-02-12T17:32:38+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;I have asked the Redmine support forums about this - &lt;a class="external" href="http://www.redmine.org/boards/2/topics/28938"&gt;http://www.redmine.org/boards/2/topics/28938&lt;/a&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #46: Disable ability to make projects private</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/46"/>
+    <id>http://opendesignengine.net/issues/46?journal_id=89</id>
+    <updated>2012-06-14T15:24:41+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Assignee&lt;/strong&gt; set to &lt;i&gt;Matthew Sears&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #46: Disable ability to make projects private</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/46"/>
+    <id>http://opendesignengine.net/issues/46?journal_id=106</id>
+    <updated>2012-09-28T09:10:11+00:00</updated>
+    <author>
+      <name>Kevin Bouwkamp</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; changed from &lt;i&gt;New&lt;/i&gt; to &lt;i&gt;In Progress&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Assignee&lt;/strong&gt; changed from &lt;i&gt;Matthew Sears&lt;/i&gt; to &lt;i&gt;Kevin Bouwkamp&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;% Done&lt;/strong&gt; changed from &lt;i&gt;0&lt;/i&gt; to &lt;i&gt;100&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Estimated time&lt;/strong&gt; set to &lt;i&gt;10.00&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Finished implementing this bugfix with revisions 51 &amp;#38; 52. Will wait until tested on production before marking as complete.&lt;/p&gt;
+
+
+	&lt;p&gt;FYI - You must migrate the database after pulling this new code&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Bug #46: Disable ability to make projects private</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/46"/>
+    <id>http://opendesignengine.net/issues/46?journal_id=126</id>
+    <updated>2012-11-18T13:24:02+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; changed from &lt;i&gt;In Progress&lt;/i&gt; to &lt;i&gt;Resolved&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Patch is live on production server, works as required.  All users are now prevented from creating private projects.&lt;/p&gt;    </content>
+  </entry>
+</feed>

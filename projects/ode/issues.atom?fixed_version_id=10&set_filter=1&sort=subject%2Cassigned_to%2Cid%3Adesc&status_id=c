@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/ode/issues.atom?fixed_version_id=10&amp;amp;set_filter=1&amp;amp;sort=subject%2Cassigned_to%2Cid%3Adesc&amp;amp;status_id=c"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/ode/issues?fixed_version_id=10&amp;amp;set_filter=1&amp;amp;sort=subject%2Cassigned_to%2Cid%3Adesc&amp;amp;status_id=c"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2014-07-17T22:04:28+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #259 (Closed): Editing As The Same User In Multiple Browser Gives An Error</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/259"/>
+    <id>http://opendesignengine.net/issues/259</id>
+    <updated>2014-07-17T22:04:28+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I'm not positive if this is really an error, but if I edit the same issue from both Firefox and Chrome I get an error, even if I'm logged in as the same user on each browser. I'm logging this more just to make sure. Feel free to reject.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="http://opendesignengine.net/attachments/download/515" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #258 (Resolved): Footer link to Terms of Service does not render correctly</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/258"/>
+    <id>http://opendesignengine.net/issues/258</id>
+    <updated>2014-07-17T21:35:08+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;When logged in to ODE, clicking on the ToS link in the footer generates a 404 (you are not authorized) error.  When not logged in, clicking on the ToS link in the footer takes you to the login page.&lt;/p&gt;
+
+
+	&lt;p&gt;In both cases, it should render the ToS.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #257 (Resolved): Remove Chipin from fundraising plugin</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/257"/>
+    <id>http://opendesignengine.net/issues/257</id>
+    <updated>2014-07-17T21:21:10+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Per &lt;a href="http://www.chipin.com/" class="external"&gt;Chipin website&lt;/a&gt;, the service has been discontinued.  We should remove the feature supporting Chipin badges and remove the test from our test suite.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #251 (Closed): Not selecting a license results in a 500 error</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/251"/>
+    <id>http://opendesignengine.net/issues/251</id>
+    <updated>2014-07-10T21:51:21+00:00</updated>
+    <author>
+      <name>Christopher Sigman</name>
+    </author>
+    <content type="html">
+&lt;p&gt;When creating a new project, if you don't select a license the response from ODE is an HTTP 500 error. The error in the logs is &lt;br /&gt;&lt;pre&gt;
+NoMethodError (undefined method `add_to_base' for #&amp;lt;ActiveModel::Errors:0xb5bcda94&amp;gt;):
+  app/controllers/projects_controller.rb:83:in `create'
+&lt;/pre&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #249 (Closed): Receive 403 Error After Creating New Project</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/249"/>
+    <id>http://opendesignengine.net/issues/249</id>
+    <updated>2014-07-09T13:30:10+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;OS: Linux (Ubuntu 14.04)&lt;br /&gt;Browser: Chrome 35.0.1916.153&lt;/p&gt;
+
+
+	&lt;p&gt;After clicking the "Create" button on a new project, I see a 403 (not authorized) message (see attached image).&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="http://opendesignengine.net/attachments/download/512" alt="" /&gt;&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #218 (Resolved): Footer is not styled correctly</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/218"/>
+    <id>http://opendesignengine.net/issues/218</id>
+    <updated>2013-10-31T21:43:55+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;HR between "Powered by Redmine" and the TOS link is missing, TOS link is left justified instead of centered, and TOS link looks like it is a larger sized font on test server than on live server.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #90 (Resolved): Self registration page renders ToS as source code instead of formatted text</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/90"/>
+    <id>http://opendesignengine.net/issues/90</id>
+    <updated>2012-11-18T13:38:31+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Like the description says.  This really should be fixed before we announce the public beta.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Bug #87 (Closed): Chipin Widget does not render at all</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/87"/>
+    <id>http://opendesignengine.net/issues/87</id>
+    <updated>2012-11-04T19:01:35+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Not sure if this is really a bug or just a sign that Chipin is dead.  But when you try to insert Chipin widgets into pages, they show up blank.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #13 (Resolved): Create a donation drive module</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/13"/>
+    <id>http://opendesignengine.net/issues/13</id>
+    <updated>2011-04-08T03:17:59+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;This should be a plugin and work similar to &lt;a href="http://pledgie.com/" class="external"&gt;Pledgie&lt;/a&gt; or similar offerings.  May just create it as a Pledgie plugin.&lt;/p&gt;    </content>
+  </entry>
+</feed>

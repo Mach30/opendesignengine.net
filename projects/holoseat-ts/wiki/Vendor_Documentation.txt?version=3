@@ -1,0 +1,20 @@
+h1. Vendor Documentation
+
+h2. Arduino USB PIDs
+
+The Holoseat Test Stand uses Arduino boards to interface with the motor and sensor.  The USB VID and PID are required by the Holoseat serial library used to connect to these boards to ensure it only queries the appropriate devices for the presence of the test stand firmware.  The following list covers the VIDs and PIDs for all boards Model B has access to for purposes of building test stands.
+
+* Uno
+** VID: 0x2341
+** PID: 0x0001
+* Leonardo
+** VID: 0x2341
+** PID: 0x0036
+
+h2. Adafruit Components
+
+* "Adafruit Motor/Stepper/Servo Shield for Arduino v2 Kit - v2.3":https://www.adafruit.com/product/1438
+** "Learning Center Overview":https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino
+** "Stepper Motors @ Learning Center":https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/using-stepper-motors
+* "Stepper motor - NEMA-17 size - 200 steps/rev, 12V 350mA":https://www.adafruit.com/product/324
+

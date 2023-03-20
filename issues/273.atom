@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/273.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2017-01-13T21:35:56+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Holoseat - Bug #273: walk forward character being typed when Holoseat is off</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/273"/>
+    <id>http://opendesignengine.net/issues/273?journal_id=534</id>
+    <updated>2017-01-13T21:35:56+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Just a note that I finally saw this behavior the other day.  No idea what is causing it.  My guess is it could be board related, so going to leave it open until we switch boards and see how the new board behaves.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Holoseat - Bug #273: walk forward character being typed when Holoseat is off</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/273"/>
+    <id>http://opendesignengine.net/issues/273?journal_id=542</id>
+    <updated>2017-08-31T23:35:53+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; changed from &lt;i&gt;New&lt;/i&gt; to &lt;i&gt;Closed&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Haven't seen this in the latest firmware.  Marking closed for now.&lt;/p&gt;    </content>
+  </entry>
+</feed>

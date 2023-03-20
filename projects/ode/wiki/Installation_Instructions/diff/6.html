@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Open Design Engine - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../../../favicon.ico%3F1359925685.html' />
+<link href="../../../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+</head>
+<body class="controller-wiki action-diff">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../../../index.html" class="home">Home</a></li>
+<li><a href="../../../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="https://opendesignengine.net/search/index/ode" method="get">
+        <input name="wiki_pages" type="hidden" value="1" />
+        <a href="https://opendesignengine.net/search/index/ode" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Open Design Engine</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../../ode.1.html" class="overview">Overview</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/activity" class="activity">Activity</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/roadmap" class="roadmap">Roadmap</a></li>
+<li><a href="../../../issues.html" class="issues">Issues</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/issues/gantt" class="gantt">Gantt</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/news" class="news">News</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/wiki" class="wiki selected">Wiki</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/boards" class="boards">Forums</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/files" class="files">Files</a></li>
+<li><a href="https://opendesignengine.net/projects/ode/repository" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <div class="contextual">
+<a href="https://opendesignengine.net/projects/ode/wiki/Installation_Instructions/history" class="icon icon-history">History</a>
+</div>
+
+
+
+<h2>Installation Instructions</h2>
+
+<p>
+Version <a href="../../Installation_Instructions%3Fversion=5.html">5</a>
+<em>(J. Simmons, 05/08/2011 06:50 am)</em>
+&#8594;
+Version <a href="../../Installation_Instructions%3Fversion=6.html">6</a>/20
+<em>(J. Simmons, 05/08/2011 06:52 am)</em>
+</p>
+
+<div class="text-diff">
+h1. Installation Instructions <br /><br /> Open Design Engine (ODE) is based on &quot;Redmine&quot;:http://redmine.org.    The official installation method is to install the &quot;Bitnami Redmine Stack&quot;:http://bitnami.org/stack/redmine, apply some custom configuration to the stack, and then upgrade the installed Redmine instance to the ODE source code.    Support for other stacks (or bootstrapped installations) will come with future releases.    With luck, one or more of the stack providers will add ODE to their list of supported stacks.   <br /><br /> Note, these instructions assume you are running the Ubuntu VM image of the Bitnami Redmine Stack and are running all commands under @sudo@.    They were tested with &quot;version 1.1.3&quot;:http://bitnami.org/files/stacks/redmine/1.1.3-0/bitnami-redmine-1.1.3-0-ubuntu-10.10.zip in &quot;VMWare Player&quot;:http://www.vmware.com/products/player/.  <br /><br /> Useful Paths 
+<br /> * @(bitnami_base) = /opt/bitnami@ in VM images <br /><br /> Steps to install ODE 
+<br /> * Import the Bitnami Redmine Stack into VMWare (the free VMWare Player is supported) 
+<br /> * Configure Redmine to run at http://hostname/ instead of http://hostname/redmine 
+<br /> ** Edit @(bitnami_base)/apache2/conf/httpd.conf@ and comment out the line: 
+<br /> &lt;pre&gt; 
+<br /> DocumentRoot &quot;/opt/bitnami/apache2/htdocs&quot; 
+<br /> &lt;/pre&gt; 
+<br /> ** Edit @(bitnami_base)/apps/redmine/conf/redmine.conf@ to match the following (the key areas are the addition of the virtual host section and changing all references of @/redmine@ to @/@): 
+<br /> &lt;pre&gt; 
+<br /> &lt;VirtualHost *:80&gt; 
+<br />   ServerAdmin haha.huhu.com 
+<br />   ServerName server.our.lan 
+<br />   ServerAlias server 
+<br />   ErrorLog &quot;logs/error.log&quot;  
+<br />   CustomLog &quot;logs/access.log&quot; combined 
+<br />  # this not only blocks access to .svn directories, but makes it                 
+<br />  # appear as though they aren&#x27;t even there, not just that they are               
+<br />  # forbidden                                                                     
+<br />  &lt;DirectoryMatch &quot;^/.*/\.svn/&quot;&gt; 
+<br />     ErrorDocument 403 /404.html 
+<br />     Order allow,deny 
+<br />     Deny from all 
+<br />     Satisfy All 
+<br />   &lt;/DirectoryMatch&gt; 
+<br />   # This passes through remote_user to mongrel                                   
+<br />   RewriteEngine On 
+<br />   # Redirect non-static requests to cluster                                      
+<br />   RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_FILENAME} !-f 
+<br />   RewriteRule ^/(.*)$ balancer://redminecluster%{REQUEST_URI} [P,QSA,L] 
+<br /> &lt;/VirtualHost&gt; <br /><br /> #ProxyPass / balancer://redminecluster 
+<br /> #ProxyPassReverse / balancer://redminecluster <br /><br /> &lt;Proxy balancer://redminecluster&gt; 
+<br />   BalancerMember http://127.0.0.1:3001 
+<br />   BalancerMember http://127.0.0.1:3002 
+<br />   # The number of balancer members depends on the number of mongrels running 
+<br />   # We use only one mongrel on port 3001 by default for the BitNami Cloud Hosting 
+<br />   # Please remove the others like 3002 above in such a case. 
+<br /> &lt;/Proxy&gt; 
+<br /> &lt;/pre&gt; 
+<br /> ** Edit @(bitnami_base)/apps/redmine/config/mongrel_cluster.yml@ and change references to @prefix: /redmine@ to @prefix: <span class="diff_in">@</span> <span class="diff_out"> /@</span> 
+<br /> ** Restart Redmine by running: 
+<br /> &lt;pre&gt; 
+<br /> (bitnami_base)/ctlscript stop 
+<br /> (bitnami_base)/ctlscript start 
+<br /> &lt;/pre&gt;
+</div>
+
+        
+				<div style="clear:both;"></div>
+    </div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+	
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://www.redmine.org/">Redmine</a> &copy; 2006-2011 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25732509-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> <div id="footer">
+  <div class="bgl"><div class="bgr">
+    <a href="https://opendesignengine.net/terms_of_services/Installation_Instructions">Terms Of Service</a>
+  </div></div>
+</div>
+<div id="footer">
+</div>
+</body>
+</html>

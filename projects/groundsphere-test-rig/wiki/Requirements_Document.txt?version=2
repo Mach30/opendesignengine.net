@@ -1,0 +1,67 @@
+h1. Ground Sphere Test Transmitter Requirements v0.1
+
+{{toc}}
+
+h2. Technical Requirements
+
+h4. TR 1.1 Transmit radio signals on 915 MHz
+
+The _Ground Sphere Test Transmitter_ will transmit radio signals on 915 MHz
+
+h4. TR 1.2 Test Transmitter Mobility
+
+Be mobile so that the terrestrial tests can be done by adding distance between the transmitter and Ground Sphere receiver
+
+h4. TR 1.3 Be easy to assemble from kit components
+
+h4. TR 1.4 Be easy to assemble from kit components
+
+h4. TR 1.4.1 Tools for assembly
+
+The _Ground Sphere Test Transmitter_ will only require simple tools (screw drivers, pliers, wrenches, etc) for assembly
+
+h4. TR 1.4.2 Time to assemble
+
+The _Ground Sphere Test Transmitter_ will take no longer than 60 minutes (threshold)/30 minutes (objective) to assemble by an average maker
+
+h3. TR 1.5 Have low shipping costs for the packaged kit
+
+The _Ground Sphere Test Transmitter_ kit will cost no more than $15 (threshold)/$7.50 (objective) to ship by ground across the USA.
+
+h3. TR 1.6 Operate using a modern Windows PC
+
+h4. TR 1.6.1 Software must run on Windows
+
+The _Ground Sphere Test Transmitter_ software must run on Windows 7 or Windows 8 (32bit or 64bit)
+
+h4. TR 1.6.2 Software must be easy to install
+
+The _Ground Sphere Test Transmitter_ software must ship in a Windows installer
+
+h4. TR 1.7 Hardware must connect to PC using standard port(s)
+
+The _Ground Sphere Test Transmitter_ radio must connect to the ground station computer through a commonly available port (for example: USB)
+
+h3. TR 1.8 Hardware must be robust
+
+The _Ground Sphere Test Transmitter_ hardware should minimize the opportunity for mechanical failures (from things such as broken connectors or a lack of strain relief)
+
+h2. Project Requirements
+
+h3. PR 1.1  Number to produce
+
+The _Ground Sphere Test Transmitter_ design must enable the production  of at least 30 +/- 5 v1.0 kits by volunteers in one or more makerspaces
+
+h3. PR 2.1 Budget
+
+h4. PR 2.1.1 Unit cost
+
+The materials cost must be under $75 per kit.
+
+h4. PR 2.1.2 Development cost
+
+The project budget (covering three prototypes) must be no more than $200 (threshold)/$100 (objective)
+
+h3. PR 3.1 Timeline
+
+Version 1.0 of the _Ground Sphere Test Transmitter_ will be ready for kit production no later than Feb 14, 2014.

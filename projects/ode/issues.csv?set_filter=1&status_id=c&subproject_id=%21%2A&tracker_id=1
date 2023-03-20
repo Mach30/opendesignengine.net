@@ -1,0 +1,55 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+87,Closed,Open Design Engine,Bug,Normal,Chipin Widget does not render at all,J. Simmons,"",v0.2.1 - Public Beta Enhancements,J. Simmons,11/04/2012,"",100,"","",11/04/2012 07:01 pm,08/07/2019 09:54 am,"Not sure if this is really a bug or just a sign that Chipin is dead.  But when you try to insert Chipin widgets into pages, they show up blank."
+258,Resolved,Open Design Engine,Bug,Normal,Footer link to Terms of Service does not render correctly,J. Simmons,"",v0.2.1 - Public Beta Enhancements,J. Simmons,07/17/2014,"",0,"",217,07/17/2014 09:35 pm,09/02/2014 10:26 am,"When logged in to ODE, clicking on the ToS link in the footer generates a 404 (you are not authorized) error.  When not logged in, clicking on the ToS link in the footer takes you to the login page.
+
+In both cases, it should render the ToS."
+257,Resolved,Open Design Engine,Bug,Normal,Remove Chipin from fundraising plugin,J. Simmons,"",v0.2.1 - Public Beta Enhancements,J. Simmons,07/17/2014,"",0,"",217,07/17/2014 09:21 pm,09/02/2014 10:26 am,"Per ""Chipin website"":http://www.chipin.com/, the service has been discontinued.  We should remove the feature supporting Chipin badges and remove the test from our test suite."
+256,Closed,Open Design Engine,Bug,Normal,Unchecking All Boxes While Creating A Project Results In NoMethodError,"","","",Jeremy Wright,07/14/2014,"",0,"",217,07/14/2014 08:06 am,09/02/2014 10:26 am,It seems like ODE should handle this gracefully even though nobody should ever do it. This has been replicated in Firefox 30.0 and Chrome 35.0.1916.153 on Ubuntu 14.04.
+251,Closed,Open Design Engine,Bug,Normal,Not selecting a license results in a 500 error,Jeremy Wright,"",v0.2.1 - Public Beta Enhancements,Christopher Sigman,07/10/2014,"",0,"",217,07/10/2014 09:51 pm,09/02/2014 10:25 am,"When creating a new project, if you don't select a license the response from ODE is an HTTP 500 error. The error in the logs is 
+<pre>
+NoMethodError (undefined method `add_to_base' for #<ActiveModel::Errors:0xb5bcda94>):
+  app/controllers/projects_controller.rb:83:in `create'
+</pre>"
+249,Closed,Open Design Engine,Bug,Normal,Receive 403 Error After Creating New Project,Jeremy Wright,"",v0.2.1 - Public Beta Enhancements,Jeremy Wright,07/09/2014,"",0,"",217,07/09/2014 01:30 pm,09/02/2014 10:25 am,"OS: Linux (Ubuntu 14.04)
+Browser: Chrome 35.0.1916.153
+
+After clicking the ""Create"" button on a new project, I see a 403 (not authorized) message (see attached image).
+
+!RC_1_1_403_Error_Linux_Chrome.png!"
+218,Resolved,Open Design Engine,Bug,Normal,Footer is not styled correctly,J. Simmons,"",v0.2.1 - Public Beta Enhancements,J. Simmons,10/31/2013,"",0,"",217,10/31/2013 09:43 pm,09/01/2014 04:13 pm,"HR between ""Powered by Redmine"" and the TOS link is missing, TOS link is left justified instead of centered, and TOS link looks like it is a larger sized font on test server than on live server."
+259,Closed,Open Design Engine,Bug,Low,Editing As The Same User In Multiple Browser Gives An Error,"","",v0.2.1 - Public Beta Enhancements,Jeremy Wright,07/17/2014,"",0,"","",07/17/2014 10:04 pm,07/29/2014 07:22 pm,"I'm not positive if this is really an error, but if I edit the same issue from both Firefox and Chrome I get an error, even if I'm logged in as the same user on each browser. I'm logging this more just to make sure. Feel free to reject.
+
+!ODE_Simultaneous_Edits.png!"
+220,Closed,Open Design Engine,Bug,Normal,For Pay Private Projects,"","",v0.3 - Sustainability Enhancements,Christopher Sigman,10/31/2013,"",0,"","",10/31/2013 10:38 pm,07/29/2014 06:21 pm,"* Integration with payment processing (as another feature)
+* Turning private projects into a “sellable feature” (aka restrict number of users in private projects, tiers of private projects, etc)
+* Test that the projects are well and truly private
+* Preferably have all of this automated in terms of selling the feature (user clicks buy, server turns collects money, server turns on feature, feature gets turned off if money stops coming in, user can cancel, etc)"
+219,Resolved,Open Design Engine,Bug,Normal,YouTube plugin renders as plain-text instead of HTML,"","","",Christopher Sigman,10/31/2013,"",0,"",217,10/31/2013 09:56 pm,10/31/2013 10:57 pm,"The content rendered by the YouTube plugin is currently displayed as text in the page because Rails is making the content HTML safe, replacing reserved characters like '<' as &gt;  "
+76,Resolved,Open Design Engine,Bug,High,Cannot Download Files From DMSF,"","","",Jeremy Wright,09/17/2012,"",100,"","",09/17/2012 09:54 pm,01/29/2013 10:35 am,"When trying to download files from DMSF on the Far Horizons HAB project, I get the attached error.
+
+https://opendesignengine.net/dmsf/far-horizons-project?folder_id=8
+
+This error happens on both Chrome 21.0.1180.81 and Firefox 14.0.1 both running on Linux."
+90,Resolved,Open Design Engine,Bug,Urgent,Self registration page renders ToS as source code instead of formatted text,"","",v0.2.1 - Public Beta Enhancements,J. Simmons,11/18/2012,"",100,"","",11/18/2012 01:38 pm,11/18/2012 06:37 pm,Like the description says.  This really should be fixed before we announce the public beta.
+71,Resolved,Open Design Engine,Bug,Normal,DMSF upload panel lists filenames as undefined,"","",v0.2 - Public Beta,J. Simmons,08/28/2012,"",100,"","",08/28/2012 09:11 pm,11/18/2012 01:24 pm,This is an issue with DMSF (see http://code.google.com/p/redmine-dmsf/issues/detail?id=157 for details).  We just need to update our source code to the latest version of DMSF to correct the issue.  Fix tested by implementing manual patch listed at the bottom of the DMSF ticket on the live server.
+46,Resolved,Open Design Engine,Bug,Normal,Disable ability to make projects private,Kevin Bouwkamp,"",v0.2 - Public Beta,J. Simmons,02/10/2012,"",100,10.0,"",02/10/2012 05:08 am,11/18/2012 01:24 pm,"During project creation or editing, users can un-check the ""Public"" field and hide their projects.  This needs to be removed before the beta release so all projects are public."
+66,Resolved,Open Design Engine,Bug,Normal,Getting https error when embedding YouTube videos,J. Simmons,"",v0.2 - Public Beta,J. Simmons,06/14/2012,"",100,"","",06/14/2012 03:22 pm,11/04/2012 07:00 pm,"Visit the ""Far Horizons Project Wiki Page"":https://opendesignengine.net/projects/far-horizons-project/wiki to see the error.  Error confirmed in Chrome and IE 9.  Error message is ""This page has insecure content"".  
+
+It looks like there is a new option with embedding YouTube videos for HTTPS sites.  See ""Enabling HTTPS mode"" on this ""page"":http://support.google.com/youtube/bin/answer.py?hl=en&answer=171780.  We should update the Youtube/Vimeo plugin to work with this feature (and check Vimeo videos for similar problem)."
+43,Closed,Open Design Engine,Bug,Urgent,Getting error when browsing repositories,"","",v0.2 - Public Beta,J. Simmons,11/03/2011,"",0,"","",11/03/2011 12:44 am,03/27/2012 03:32 pm,"If you browse to the *Repository* (such as in the ""repo"":https://opendesignengine.net/projects/sandbox/repository in the sandbox project) tab in a project you get the following error:
+
+<pre>
+An error occurred when trying to access the repository: Cannot allocate memory - 'svn' list --xml 'https://opendesignengine.net/svn/sandbox/'@HEAD --no-auth-cache - non-interactive
+</pre> 
+
+This appears to be related to issues in Redmine.
+
+* http://www.redmine.org/issues/7699
+* http://www.redmine.org/issues/9337
+* http://www.redmine.org/issues/7528"
+44,Resolved,Open Design Engine,Bug,Normal,The Legal plugin is blocking admins from creating new accounts,Matthew Sears,"",v0.2 - Public Beta,Admin Administrator,12/18/2011,"",0,"","",12/18/2011 10:51 pm,12/21/2011 03:44 pm,"I went to add a new user tonight (while logged in as Admin) and received the following error:
+
+""You must accept the terms of service to continue""
+
+I would expect this message if I was someone registering their own account through the sign up page, but not as the Admin user creating an account for someone else.  In this case, I think the system should create the user and make them agree to the ToS at their first login.  Oh, and the administrative page for creating users does not appear to have a way of accepting the ToS so we currently cannot create new users."
+34,Resolved,Open Design Engine,Bug,Normal,Running install of ODE seems to be having problems sending status updates,"","",v0.1 - Private Alpha,J. Simmons,08/11/2011,"",0,"","",08/11/2011 07:00 pm,08/19/2011 02:11 pm,"I have noticed I am not getting emails when projects I am in have various updates (forum posts, wiki edits, etc), even when my email setting is: ""For any event in all of my projects"".  Note, I do have the check box ""I don't want to be notified of changes that I make myself"" checked, but I would still expect to see something when other people post.  I wonder if there is a cron job that should be running but is not."

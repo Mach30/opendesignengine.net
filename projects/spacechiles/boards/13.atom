@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Space Chiles v1.0: Design Discussions</title>
+  <link rel="self" href="http://opendesignengine.net/projects/spacechiles/boards/13.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/spacechiles/boards/13"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2012-09-17T21:40:55+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Design Discussions: RE: Resources</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/13/topics/253?r=254#message-254"/>
+    <id>http://opendesignengine.net/boards/13/topics/253?r=254#message-254</id>
+    <updated>2012-09-17T21:40:55+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;This project shares many of the same resource items as the &lt;a href="https://opendesignengine.net/boards/9/topics/172" class="external"&gt;Far Horizons HAB project&lt;/a&gt; .&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Design Discussions: Resources</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/13/topics/253"/>
+    <id>http://opendesignengine.net/boards/13/topics/253</id>
+    <updated>2012-09-17T21:38:36+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;List of useful sites and materials concerning high altitude balloons.&lt;/p&gt;    </content>
+  </entry>
+</feed>

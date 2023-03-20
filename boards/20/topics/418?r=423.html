@@ -1,0 +1,1296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Power/Temp Monitor and Control System (EPS/ECLSS) - SEP Step 5: Detailed Design - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../favicon.ico%3F1359925685.html' />
+<link href="../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+  <link href="../../../stylesheets/scm.css%3F1359925542.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-messages action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../index.html" class="home">Home</a></li>
+<li><a href="../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="../../../search/index/eps-001.html" method="get">
+        <input name="messages" type="hidden" value="1" />
+        <a href="../../../search/index/eps-001.html" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Power/Temp Monitor and Control System (EPS/ECLSS)</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../projects/eps-001.html" class="overview">Overview</a></li>
+<li><a href="../../../projects/eps-001/activity.html" class="activity">Activity</a></li>
+<li><a href="../../../projects/eps-001/issues.1.html" class="issues">Issues</a></li>
+<li><a href="../../../projects/eps-001/issues/gantt.html" class="gantt">Gantt</a></li>
+<li><a href="../../../projects/eps-001/issues/calendar.html" class="calendar">Calendar</a></li>
+<li><a href="../../../projects/eps-001/news.html" class="news">News</a></li>
+<li><a href="../../../dmsf/eps-001.html" class="dmsf">DMSF</a></li>
+<li><a href="../../../projects/eps-001/documents.html" class="documents">Documents</a></li>
+<li><a href="../../../projects/eps-001/wiki.html" class="wiki">Wiki</a></li>
+<li><a href="../../../projects/eps-001/boards.html" class="boards selected">Forums</a></li>
+<li><a href="../../../projects/eps-001/files.html" class="files">Files</a></li>
+<li><a href="../../../projects/eps-001/repository.html" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <p class="breadcrumb"><a href="../../../projects/eps-001/boards.html">Forums</a> » <a href="../../../projects/eps-001/boards/20.html">General</a> » </p>
+
+<div class="contextual">
+    <span class="message-418-watcher"></span>
+    
+    
+    
+</div>
+
+<h2>SEP Step 5: Detailed Design</h2>
+
+<div class="message">
+<p><span class="author">Added by <a href="../../../users/125.html" class="icon icon-contributor-license">Aaron Harper</a> <a href="../../../projects/eps-001/activity%3Ffrom=2013-02-02.html" title="02/02/2013 10:38 pm">almost 10 years</a> ago</span></p>
+<div class="wiki">
+<a name="EPS-Detailed-Design"></a>
+<h1 >EPS Detailed Design<a href="418%3Fr=423.html#EPS-Detailed-Design" class="wiki-anchor">&para;</a></h1>
+
+
+	<ul class="toc"><li><a href="418%3Fr=423.html#EPS-Detailed-Design">EPS Detailed Design</a><ul><li><ul><li><a href="418%3Fr=423.html#Introduction">Introduction</a></li><li><a href="418%3Fr=423.html#Design-Criteria-Review">Design Criteria Review</a></li><li><a href="418%3Fr=423.html#Block-Diagram">Block Diagram</a></li><li><a href="418%3Fr=423.html#Schematic">Schematic</a></li><li><a href="418%3Fr=423.html#Bill-Of-Materials">Bill Of Materials</a></li><li><a href="418%3Fr=423.html#Budget">Budget</a></li></ul></li></ul></li></ul>
+
+
+	<a name="Introduction"></a>
+<h3 >Introduction<a href="418%3Fr=423.html#Introduction" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>While the preliminary design is nearly a complete detailed design, the PCB design needs to be completed before assembly can begin.  This will be completed while parts are on order, as some have a 2-3 week lead time in the quantities required.</p>
+
+
+	<a name="Design-Criteria-Review"></a>
+<h3 >Design Criteria Review<a href="418%3Fr=423.html#Design-Criteria-Review" class="wiki-anchor">&para;</a></h3>
+
+
+	<ul>
+	<li><strong>EPSRR 1.1</strong> The EPS board uses a Texas Instruments MSP430 microcontroller to measure and store the sensor data </li>
+		<li><strong>EPSRR 1.2</strong> the EPS board is made from components which are rated beyond the specification as listed, and the system will operate without direct intervention by an operator.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSRR 2.1</strong> The EPS board is designed in such a way that it may be installed by any person with solar power or electrical wiring experience.</li>
+		<li><strong>EPSRR 2.2</strong> The EPS board will have screw holes to mount the board using <a href="https://opendesignengine.net/issues/10" class="issue status-1 priority-2 parent" title="Modernize ODE theme (New)">#10</a> screws.  Alternatively, a DIN rail clip may be used.</li>
+		<li><strong>EPSRR 2.3</strong> The EPS board can draw it's power from either monitored load or from another 6-30VDC source.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSRR 3.1</strong> The EPS board shall measure predefined parameters.
+	<ul>
+	<li><strong>EPSRR 3.1.1</strong> The EPS board measures the ambient temperature in the enclosure using a sensor on the board.</li>
+		<li><strong>EPSRR 3.1.2</strong> The EPS board measures voltages of two separate circuits directly with a chip that has built in isolation.</li>
+		<li><strong>EPSRR 3.1.3</strong> The EPS board limits the input voltage to the sensor to safe levels using a zener and current limiter.</li>
+		<li><strong>EPSRR 3.1.4</strong> The EPS board measures the current of two separate circuits using a directly with a chip that has built in isolation.</li>
+	</ul>
+	</li>
+		<li><strong>EPSRR 3.2</strong> The EPS board transmits measurement data or fault conditions to the server using a MAC chip with full TCP/IP stack.
+	<ul>
+	<li><strong>EPSRR 3.2.1</strong> The EPS board will transmit measurement data on demand (web page request).</li>
+		<li><strong>EPSRR 3.2.2</strong> The EPS board will be capable of transmitting measurement data on a schedule (FTP or email).</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSRR 4.1</strong> The EPS board consumes minimal power. Design maximum is 24mW.</li>
+		<li><strong>EPSRR 4.2</strong> See <strong>EPSRR 2.3</strong>.</li>
+		<li><strong>EPSRR 4.3</strong> The EPS board meets all criteria in this area, having a tolerance for massive overvoltage and 12 bit accuracy.</li>
+		<li><strong>EPSRR 4.4</strong> The EPS board measures temperature within from -20 to 85C with 12 bit accuracy.</li>
+		<li><strong>EPSRR 4.5</strong> The EPS board meets all criteria in this area, having a tolerance for massive overcurrent and 12 bit accuracy.</li>
+		<li><strong>EPSRR 4.6</strong> The EPS board meets all criteria in this area, having a MAC controller IC with a fully functional TCP/IP stack and Ethernet Jack with Magnetics.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSRR 6.1</strong> The EPS board is read using standard web protocols which are standardized across all platforms.</li>
+		<li><strong>EPSRR 6.2</strong> The EPS board uses standardized connections including Screw terminals and Ethernet.</li>
+		<li><strong>EPSRR 8.1</strong> The EPS board is optimized for ease of production. </li>
+		<li><strong>EPSRR 8.2</strong> See ESPRR 8.1.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSRR 9.2</strong> The production units appear to cost around $60.00 in parts.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSRR 11.4</strong> Attention has been paid into the durability of the design to keep waste to an absolute minimum.</li>
+	</ul>
+
+
+	<a name="Block-Diagram"></a>
+<h3 >Block Diagram<a href="418%3Fr=423.html#Block-Diagram" class="wiki-anchor">&para;</a></h3>
+
+
+	<p><img src="../../../attachments/download/281" alt="" /></p>
+
+
+	<a name="Schematic"></a>
+<h3 >Schematic<a href="418%3Fr=423.html#Schematic" class="wiki-anchor">&para;</a></h3>
+
+
+	<p><img src="../../../attachments/download/280" alt="" /></p>
+
+
+	<a name="Bill-Of-Materials"></a>
+<h3 >Bill Of Materials<a href="418%3Fr=423.html#Bill-Of-Materials" class="wiki-anchor">&para;</a></h3>
+
+
+	<table>
+		<tr>
+			<th>Schematic</th>
+			<th>Description</th>
+			<th>Package </th>
+		</tr>
+		<tr>
+			<td> C1</td>
+			<td>68uF Capacitor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> C2</td>
+			<td>120uF Capacitor</td>
+			<td>Axial </td>
+		</tr>
+		<tr>
+			<td> Cf1</td>
+			<td>1uF capacitor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Cf2</td>
+			<td>1uF capacitor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> D1</td>
+			<td>1N5817 Schottky diode</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> L1</td>
+			<td>100uH Inductor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Ra1</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Rb1</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Rb2</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Rf1</td>
+			<td>4.7 Ohm .25W resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Rf2</td>
+			<td>4.7 Ohm .25W resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Rf3</td>
+			<td>4.7 Ohm .25W resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Rf4</td>
+			<td>4.7 Ohm .25W resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> RL1</td>
+			<td>180 Ohm .5W resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> RL2</td>
+			<td>180 Ohm .5W resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Rs1</td>
+			<td>068 Ohm 10W resistor</td>
+			<td>Axial </td>
+		</tr>
+		<tr>
+			<td> Rs2</td>
+			<td>068 Ohm 10W resistor</td>
+			<td>Axial </td>
+		</tr>
+		<tr>
+			<td> U1</td>
+			<td>LM2594M-3.3/NOPB Voltage regulator</td>
+			<td>SSOP-8 </td>
+		</tr>
+		<tr>
+			<td> U2</td>
+			<td>TMP102 Temp sensor (I2C)</td>
+			<td>SSOP-6 </td>
+		</tr>
+		<tr>
+			<td> U3</td>
+			<td>INA226 Current and voltage sensor</td>
+			<td>SSOP-10 </td>
+		</tr>
+		<tr>
+			<td> U4</td>
+			<td>INA226 Current and voltage sensor</td>
+			<td>SSOP-10 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>3 position jumper block</td>
+			<td>Std </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>5mm barrel jack, 2.1mm center pole</td>
+			<td>Std </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>8 position screw terminals</td>
+			<td>Std </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Populated Ethernet Booster Pack (MSP430 MCU)</td>
+			<td>Board </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>EPS PC board</td>
+			<td>Board </td>
+		</tr>
+	</table>
+
+
+
+
+	<a name="Budget"></a>
+<h3 >Budget<a href="418%3Fr=423.html#Budget" class="wiki-anchor">&para;</a></h3>
+
+
+	<table>
+		<tr>
+			<th>Schematic</th>
+			<th>Description</th>
+			<th>Prototype Cost</th>
+			<th>Production Cost </th>
+		</tr>
+		<tr>
+			<td> C1</td>
+			<td>68uF Capacitor</td>
+			<td>$.49</td>
+			<td>$1.15 </td>
+		</tr>
+		<tr>
+			<td> C2</td>
+			<td>120uF Capacitor</td>
+			<td>$0.62</td>
+			<td>$0.62 </td>
+		</tr>
+		<tr>
+			<td> Cf1</td>
+			<td>1uF capacitor</td>
+			<td>$0.14</td>
+			<td>$1.15 </td>
+		</tr>
+		<tr>
+			<td> Cf2</td>
+			<td>1uF capacitor</td>
+			<td>$0.14</td>
+			<td>$1.15 </td>
+		</tr>
+		<tr>
+			<td> D1</td>
+			<td>1N5817 Schottky diode</td>
+			<td>$0.27</td>
+			<td>$0.19 </td>
+		</tr>
+		<tr>
+			<td> L1</td>
+			<td>100uH Inductor</td>
+			<td>$0.18</td>
+			<td>$0.09 </td>
+		</tr>
+		<tr>
+			<td> Ra1</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> Rb1</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> Rb2</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> Rf1</td>
+			<td>4.7 Ohm .25W resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> Rf2</td>
+			<td>4.7 Ohm .25W resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> Rf3</td>
+			<td>4.7 Ohm .25W resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> Rf4</td>
+			<td>4.7 Ohm .25W resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> RL1</td>
+			<td>180 Ohm .5W resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> RL2</td>
+			<td>180 Ohm .5W resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> Rs1</td>
+			<td>068 Ohm 10W resistor</td>
+			<td>$2.14</td>
+			<td>$2.14 </td>
+		</tr>
+		<tr>
+			<td> Rs2</td>
+			<td>068 Ohm 10W resistor</td>
+			<td>$2.14</td>
+			<td>$2.14 </td>
+		</tr>
+		<tr>
+			<td> U1</td>
+			<td>LM2594M-3.3/NOPB Voltage regulator</td>
+			<td>$2.70</td>
+			<td>$2.70 </td>
+		</tr>
+		<tr>
+			<td> U2</td>
+			<td>TMP102 Temp sensor (I2C)</td>
+			<td>$5.95</td>
+			<td>$1.69 </td>
+		</tr>
+		<tr>
+			<td> U3</td>
+			<td>INA226 Current and voltage sensor</td>
+			<td>$6.33</td>
+			<td>$3.38 </td>
+		</tr>
+		<tr>
+			<td> U4</td>
+			<td>INA226 Current and voltage sensor</td>
+			<td>$6.33</td>
+			<td>$3.38 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>3 position jumper block</td>
+			<td>$.22</td>
+			<td>$.13 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>5mm barrel jack, 2.1mm center pole</td>
+			<td>$4.95</td>
+			<td>$1.12 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>8 position screw terminals</td>
+			<td>$2.45</td>
+			<td>$2.45 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Populated Ethernet Booster Pack (MSP430 MCU)</td>
+			<td>$25.00</td>
+			<td>$25.00 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>EPS PC board (in qty. 10)</td>
+			<td>$0.00</td>
+			<td>$12.00 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Subtotal</td>
+			<td>$58.21</td>
+			<td>$60.75 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Labor</td>
+			<td>$1762.50</td>
+			<td>$135.52 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td><strong>TOTAL</strong></td>
+			<td><strong>$1820.71</strong></td>
+			<td><strong>$196.27</strong> </td>
+		</tr>
+	</table>
+
+
+
+
+	<p><strong>Note:</strong> this budget reflects 8 hours of PCB layout which will be complete by 25 FEB 2013</p>
+</div>
+<div class="attachments">
+
+<p><a href="../../../attachments/280/Schematic_1.png" class="icon icon-attachment">Schematic_1.png</a>
+  <span class="size">(57.8 kB)</span>
+  
+  
+  </p>
+
+<p><a href="../../../attachments/281/Block_Diagram.png" class="icon icon-attachment">Block_Diagram.png</a>
+  <span class="size">(23.2 kB)</span>
+  
+  
+  </p>
+
+</div>
+
+</div>
+<br />
+
+
+<h3 class="comments">Replies (3)</h3>
+
+  <div class="message reply" id="message-420">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="418%3Fr=420.html#message-420">RE: SEP Step 5: Detailed Design</a>
+    -
+    Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/eps-001/activity%3Ffrom=2013-02-02.html" title="02/02/2013 11:34 pm">almost 10 years</a> ago
+  </h4>
+  <div class="wiki"><p>You've done this differently than we did on Shepard, and I think it's something that we should talk about during the next Shepard documentation meeting.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-421">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="418%3Fr=421.html#message-421">RE: SEP Step 5: Detailed Design</a>
+    -
+    Added by <a href="../../../users/125.html" class="icon icon-contributor-license">Aaron Harper</a> <a href="../../../projects/eps-001/activity%3Ffrom=2013-02-03.html" title="02/03/2013 12:07 am">almost 10 years</a> ago
+  </h4>
+  <div class="wiki"><p>I did... but that's because of the specific situation.  As you may have guessed, I skipped a lot of the prelim work, moving straight into production for the most part.  Also, the mechanicals of the design are also much simpler than Shepard, since the project is purely electronic.  At this point I need go/no go from the client to proceed to ordering and assembly, so this is as good as a point to do it as any.</p>
+
+
+	<p>This abbreviated process probably shouldn't be followed in a large multi-discipline project.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-423">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="418%3Fr=423.html#message-423">RE: SEP Step 5: Detailed Design - Engineering Change</a>
+    -
+    Added by <a href="../../../users/125.html" class="icon icon-contributor-license">Aaron Harper</a> <a href="../../../projects/eps-001/activity%3Ffrom=2013-02-08.html" title="02/08/2013 07:07 pm">almost 10 years</a> ago
+  </h4>
+  <div class="wiki"><a name="PowerTemp-Monitor-and-Control-System-EPSECLSS-Detailed-Design"></a>
+<h1 >Power/Temp Monitor and Control System (EPS/ECLSS) Detailed Design<a href="418%3Fr=423.html#PowerTemp-Monitor-and-Control-System-EPSECLSS-Detailed-Design" class="wiki-anchor">&para;</a></h1>
+
+
+	<ul class="toc"><li><a href="418%3Fr=423.html#PowerTemp-Monitor-and-Control-System-EPSECLSS-Detailed-Design">Power/Temp Monitor and Control System (EPS/ECLSS) Detailed Design</a><ul><li><ul><li><a href="418%3Fr=423.html#Introduction">Introduction</a></li><li><a href="418%3Fr=423.html#Design-Criteria-Review">Design Criteria Review</a></li><li><a href="418%3Fr=423.html#Block-Diagram">Block Diagram</a></li><li><a href="418%3Fr=423.html#Schematic">Schematic</a></li><li><a href="418%3Fr=423.html#Bill-Of-Materials">Bill Of Materials</a></li><li><a href="418%3Fr=423.html#Preliminary-Budget">Preliminary Budget</a></li></ul></li></ul></li></ul>
+
+
+	<a name="Introduction"></a>
+<h3 >Introduction<a href="418%3Fr=423.html#Introduction" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>This is a temperature and power monitoring system for the radio/battery cabinets on wireless internet service providers (WISP) repeaters. Other uses of this project are satellite and HAB payloads. Attention will be paid to make the project multi-role, but not at the expense of the primary stakeholders (WISPs).  The PCB design needs to be completed before assembly can begin.  This will be completed while parts are on order, as some have a 2-3 week lead time in the quantities required.</p>
+
+
+	<a name="Design-Criteria-Review"></a>
+<h3 >Design Criteria Review<a href="418%3Fr=423.html#Design-Criteria-Review" class="wiki-anchor">&para;</a></h3>
+
+
+	<ul>
+	<li><strong>EPSRR 1.1</strong> The EPS board uses a Texas Instruments MSP430 microcontroller to measure and store the sensor data </li>
+		<li><strong>EPSRR 1.2</strong> the EPS board is made from components which are rated beyond the specification as listed, and the system will operate without direct intervention by an operator.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSRR 2.1</strong> The EPS board is designed in such a way that it may be installed by any person with solar power or electrical wiring experience.</li>
+		<li><strong>EPSRR 2.2</strong> The EPS board will have screw holes to mount the board using <a href="https://opendesignengine.net/issues/10" class="issue status-1 priority-2 parent" title="Modernize ODE theme (New)">#10</a> screws.  Alternatively, a DIN rail clip may be used.</li>
+		<li><strong>EPSRR 2.3</strong> The EPS board can draw it's power from any 6-30VDC source.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSRR 3.1</strong> The EPS board shall measure predefined parameters.
+	<ul>
+	<li><strong>EPSRR 3.1.1</strong> The EPS board measures the ambient temperature in the enclosure using a sensor on the board.</li>
+		<li><strong>EPSRR 3.1.2</strong> The EPS board measures voltages of two separate circuits directly with a chip that has built in isolation.</li>
+		<li><strong>EPSRR 3.1.3</strong> The EPS board limits the input voltage to the sensor to safe levels using a zener and current limiter.</li>
+		<li><strong>EPSRR 3.1.4</strong> The EPS board measures the current of two separate circuits using a directly with a chip that has built in isolation.</li>
+	</ul>
+	</li>
+		<li><strong>EPSRR 3.2</strong> The EPS board transmits measurement data or fault conditions to the server using a MAC chip with full TCP/IP stack.
+	<ul>
+	<li><strong>EPSRR 3.2.1</strong> The EPS board will transmit measurement data on demand (web page request).</li>
+		<li><strong>EPSRR 3.2.2</strong> The EPS board will be capable of transmitting measurement data on a schedule (FTP or email).</li>
+	</ul></li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSRR 4.1</strong> The EPS board consumes minimal power. Design maximum is 24mW.</li>
+		<li><strong>EPSRR 4.2</strong> See <strong>EPSRR 2.3</strong>.</li>
+		<li><strong>EPSRR 4.3</strong> The EPS board meets all criteria in this area, having a tolerance for massive overvoltage and 12 bit accuracy.</li>
+		<li><strong>EPSRR 4.4</strong> The EPS board measures temperature within from -20 to 85C with 12 bit accuracy.</li>
+		<li><strong>EPSRR 4.5</strong> The EPS board meets all criteria in this area, having a tolerance for massive overcurrent and 12 bit accuracy.</li>
+		<li><strong>EPSRR 4.6</strong> The EPS board meets all criteria in this area, having a MAC controller IC with a fully functional TCP/IP stack and Ethernet Jack with Magnetics.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSRR 6.1</strong> The EPS board is read using standard web protocols which are standardized across all platforms.</li>
+		<li><strong>EPSRR 6.2</strong> The EPS board uses standardized connections including Screw terminals and Ethernet.</li>
+		<li><strong>EPSRR 8.1</strong> The EPS board is optimized for ease of production. </li>
+		<li><strong>EPSRR 8.2</strong> See ESPRR 8.1.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSRR 9.2</strong> The production units appear to cost around $85.00 in parts.</li>
+	</ul>
+
+
+	<ul>
+	<li><strong>EPSRR 11.4</strong> Attention has been paid into the durability of the design to keep waste to an absolute minimum.</li>
+	</ul>
+
+
+	<a name="Block-Diagram"></a>
+<h3 >Block Diagram<a href="418%3Fr=423.html#Block-Diagram" class="wiki-anchor">&para;</a></h3>
+
+
+	<p><img src="../../../attachments/download/311" alt="" /></p>
+
+
+	<a name="Schematic"></a>
+<h3 >Schematic<a href="418%3Fr=423.html#Schematic" class="wiki-anchor">&para;</a></h3>
+
+
+	<p><img src="../../../attachments/download/312" alt="" /></p>
+
+
+	<a name="Bill-Of-Materials"></a>
+<h3 >Bill Of Materials<a href="418%3Fr=423.html#Bill-Of-Materials" class="wiki-anchor">&para;</a></h3>
+
+
+<strong>Control Board</strong>
+	<table>
+		<tr>
+			<th>Schematic</th>
+			<th>Description</th>
+			<th>Package </th>
+		</tr>
+		<tr>
+			<td> C1</td>
+			<td>68uF Capacitor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> C2</td>
+			<td>120uF Capacitor</td>
+			<td>Axial </td>
+		</tr>
+		<tr>
+			<td> D1</td>
+			<td>1N5817 Schottky diode</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> L1</td>
+			<td>100uH Inductor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Rb1</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Rb2</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> U1</td>
+			<td>LM2594M-3.3/NOPB Voltage regulator</td>
+			<td>SSOP-8 </td>
+		</tr>
+		<tr>
+			<td> CN1</td>
+			<td>Molex70555-0038 Locking connector</td>
+			<td>thru hole </td>
+		</tr>
+		<tr>
+			<td> CN2</td>
+			<td>Molex70555-0038 Locking connector</td>
+			<td>thru hole </td>
+		</tr>
+		<tr>
+			<td> CN3</td>
+			<td>Molex70555-0038 Locking connector</td>
+			<td>thru hole </td>
+		</tr>
+		<tr>
+			<td> CN4</td>
+			<td>Molex70555-0038 Locking connector</td>
+			<td>thru hole </td>
+		</tr>
+		<tr>
+			<td> CN5</td>
+			<td>Molex70555-0038 Locking connector</td>
+			<td>thru hole </td>
+		</tr>
+		<tr>
+			<td> J1</td>
+			<td>5mm barrel jack, 2.1mm center pole</td>
+			<td>Std </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>EPS Board (MSP430 MCU and MAC IC)</td>
+			<td>Board </td>
+		</tr>
+	</table>
+
+
+
+
+<strong>Current Sensor Board</strong>
+	<table>
+		<tr>
+			<th>Schematic</th>
+			<th>Description</th>
+			<th>Package </th>
+		</tr>
+		<tr>
+			<td> CN1</td>
+			<td>Molex70555-0038 Locking connector</td>
+			<td>Thru hole </td>
+		</tr>
+		<tr>
+			<td> Cf1</td>
+			<td>1uF capacitor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>2 position screw terminals</td>
+			<td>Std </td>
+		</tr>
+		<tr>
+			<td> Rf1</td>
+			<td>4.7 Ohm .25W resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Rf2</td>
+			<td>4.7 Ohm .25W resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> RL1</td>
+			<td>220 Ohm .5W resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Rs</td>
+			<td>3.9 mOhm 5W resistor</td>
+			<td>Axial </td>
+		</tr>
+		<tr>
+			<td> Ra1</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> Ra2</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>SMD </td>
+		</tr>
+		<tr>
+			<td> S1,2</td>
+			<td>2 pos DIP switch </td>
+			<td>Thru hole </td>
+		</tr>
+		<tr>
+			<td> U3</td>
+			<td>INA226 Current and voltage sensor</td>
+			<td>SSOP-10 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Current Sensor PC Board </td>
+			<td>Board </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Molex 50-57-9404 (mating connector for cable)</td>
+			<td>Cable </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Molex 50-57-9404 (mating connector for cable)</td>
+			<td>Cable </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Alpha Wire 1174c SL005 4cond 22ga</td>
+			<td>Cable </td>
+		</tr>
+	</table>
+
+
+
+
+<strong>Temperature Sensor Board</strong>
+	<table>
+		<tr>
+			<th>Schematic</th>
+			<th>Description</th>
+			<th>Package </th>
+		</tr>
+		<tr>
+			<td> CN1</td>
+			<td>Molex70555-0038 Locking connector</td>
+			<td>Thru hole </td>
+		</tr>
+		<tr>
+			<td> U2</td>
+			<td>TMP102 Temp sensor (I2C)</td>
+			<td>SSOP-6 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Temperature Sensor PC Board </td>
+			<td>Board </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Molex 50-57-9404 (mating connector for cable)</td>
+			<td>Cable </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Molex 50-57-9404 (mating connector for cable)</td>
+			<td>Cable </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Alpha Wire 1174c SL005 4cond 22ga</td>
+			<td>Cable </td>
+		</tr>
+	</table>
+
+
+
+
+	<a name="Preliminary-Budget"></a>
+<h3 >Preliminary Budget<a href="418%3Fr=423.html#Preliminary-Budget" class="wiki-anchor">&para;</a></h3>
+
+
+<strong>Control Board</strong>                
+	<table>
+		<tr>
+			<th>Schematic </th>
+			<th>Description </th>
+			<th>Prototype Cost </th>
+			<th>Production Cost </th>
+		</tr>
+		<tr>
+			<td> C1</td>
+			<td>68uF Capacitor</td>
+			<td>$0.49</td>
+			<td>$1.15 </td>
+		</tr>
+		<tr>
+			<td> C2</td>
+			<td>120uF Capacitor</td>
+			<td>$0.62</td>
+			<td>$0.62 </td>
+		</tr>
+		<tr>
+			<td> D1</td>
+			<td>1N5817 Schottky diode</td>
+			<td>$0.27</td>
+			<td>$0.19 </td>
+		</tr>
+		<tr>
+			<td> L1</td>
+			<td>100uH Inductor</td>
+			<td>$0.18</td>
+			<td>$0.09 </td>
+		</tr>
+		<tr>
+			<td> Rb1</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> Rb2</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> U1</td>
+			<td>LM2594M-3.3/NOPB Voltage regulator</td>
+			<td>$2.70</td>
+			<td>$2.70 </td>
+		</tr>
+		<tr>
+			<td> CN1</td>
+			<td>Molex70555-0038 Locking connector</td>
+			<td>0.97</td>
+			<td>$0.96 </td>
+		</tr>
+		<tr>
+			<td> CN2</td>
+			<td>Molex70555-0038 Locking connector</td>
+			<td>$0.97</td>
+			<td>$0.96 </td>
+		</tr>
+		<tr>
+			<td> CN3</td>
+			<td>Molex70555-0038 Locking connector</td>
+			<td>$0.97</td>
+			<td>$0.96 </td>
+		</tr>
+		<tr>
+			<td> CN4</td>
+			<td>Molex70555-0038 Locking connector</td>
+			<td>$0.97</td>
+			<td>$0.96 </td>
+		</tr>
+		<tr>
+			<td> CN5</td>
+			<td>Molex70555-0038 Locking connector</td>
+			<td>$0.97</td>
+			<td>$0.96 </td>
+		</tr>
+		<tr>
+			<td> J1</td>
+			<td>5mm barrel jack, 2.1mm center pole</td>
+			<td>$4.95</td>
+			<td>$1.12 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>EPS Board (MSP430 MCU and MAC IC)</td>
+			<td>$0.00</td>
+			<td>$12.00 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Populated Ethernet Booster Pack (MSP430 MCU)</td>
+			<td>$25.00</td>
+			<td>$25.00 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Labor</td>
+			<td>$1,362.50</td>
+			<td>$120.12 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td><strong>SUBTOTAL</strong></td>
+			<td><strong>$1,402.30</strong></td>
+			<td><strong>$167.85</strong> </td>
+		</tr>
+	</table>
+
+
+
+
+<strong>Current Sensor Board</strong>                
+	<table>
+		<tr>
+			<th>Schematic</th>
+			<th>Description</th>
+			<th>Prototype Cost</th>
+			<th>Production Cost </th>
+		</tr>
+		<tr>
+			<td> CN1</td>
+			<td>    Molex70555-0038 Locking connector</td>
+			<td>$0.97</td>
+			<td>$0.96 </td>
+		</tr>
+		<tr>
+			<td> Cf1</td>
+			<td>    1uF capacitor</td>
+			<td>$0.14</td>
+			<td>$1.15 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> Phoenix Contact 1714971 two position screw terminals</td>
+			<td>$1.34</td>
+			<td>$1.31 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Phoenix Contact 1714971 two position screw terminals</td>
+			<td>$1.34</td>
+			<td>$1.31 </td>
+		</tr>
+		<tr>
+			<td> Rf1</td>
+			<td>4.7 Ohm .25W resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> Rf2</td>
+			<td>4.7 Ohm .25W resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> RL1</td>
+			<td>220 Ohm .5W resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> Rs</td>
+			<td>4 mOhm 4W resistor Ohmite 14AFR004E</td>
+			<td>$1.98</td>
+			<td>$1.23 </td>
+		</tr>
+		<tr>
+			<td> Ra1</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> Ra2</td>
+			<td>47k Ohm .25W Resistor</td>
+			<td>$0.37</td>
+			<td>$0.03 </td>
+		</tr>
+		<tr>
+			<td> S1,2</td>
+			<td>2 pos DIP switch</td>
+			<td>$0.53</td>
+			<td>$0.49 </td>
+		</tr>
+		<tr>
+			<td> U3</td>
+			<td>INA226 Current and voltage sensor</td>
+			<td>$6.33</td>
+			<td>$3.38 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Current Sensor PC Board</td>
+			<td>$0.00</td>
+			<td>$4.00 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Molex 50-57-9404 (mating connector for cable)</td>
+			<td>$0.68</td>
+			<td>$0.37 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Molex 50-57-9404 (mating connector for cable)</td>
+			<td>$0.68</td>
+			<td>$0.37 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Alpha Wire 1174c SL005 4cond 22ga</td>
+			<td>$1.00</td>
+			<td>$1.00 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Labor</td>
+			<td>$225.00</td>
+			<td>$62.09 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td><strong>SUBTOTAL</strong></td>
+			<td><strong>$241.84</strong></td>
+			<td><strong>$77.81</strong> </td>
+		</tr>
+	</table>
+
+
+
+
+<strong>Temperature Sensor Board</strong>                
+	<table>
+		<tr>
+			<th>Schematic</th>
+			<th>Description</th>
+			<th>Prototype Cost</th>
+			<th>Production Cost </th>
+		</tr>
+		<tr>
+			<td> CN1</td>
+			<td>Molex70555-0038 Locking connector</td>
+			<td>$0.97</td>
+			<td>$0.96 </td>
+		</tr>
+		<tr>
+			<td> U2</td>
+			<td>TMP102 Temp sensor (I2C)</td>
+			<td>$5.95 </td>
+			<td>$1.69 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Temperature Sensor PC Board</td>
+			<td>$0.00</td>
+			<td>$2.00 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Molex 50-57-9404 (mating connector for cable)</td>
+			<td>$0.68</td>
+			<td>$0.37 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Molex 50-57-9404 (mating connector for cable)</td>
+			<td>$0.68</td>
+			<td>$0.37 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Alpha Wire 1174c SL005 4cond 22ga</td>
+			<td>$1.00</td>
+			<td>$1.00 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td>Labor</td>
+			<td>$75.00</td>
+			<td>$29.21 </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td><strong>SUBTOTAL</strong></td>
+			<td><strong>$84.28</strong></td>
+			<td><strong>$35.60</strong> </td>
+		</tr>
+	</table>
+
+
+
+
+<strong>Completed Assembly as Specified</strong>
+	<table>
+		<tr>
+			<th>Board</th>
+			<th>Prototype Cost</th>
+			<th>Production Cost </th>
+		</tr>
+		<tr>
+			<td> Control Board</td>
+			<td>$1,402.30</td>
+			<td>$167.85 </td>
+		</tr>
+		<tr>
+			<td> Current Sensor Board</td>
+			<td>$241.84</td>
+			<td>$77.81 </td>
+		</tr>
+		<tr>
+			<td> Current Sensor Board</td>
+			<td>$241.84</td>
+			<td>$77.81 </td>
+		</tr>
+		<tr>
+			<td> Temperature Sensor Board</td>
+			<td> $84.28</td>
+			<td>$35.60 </td>
+		</tr>
+		<tr>
+			<td> <strong>TOTAL COST</strong></td>
+			<td> $1969.96</td>
+			<td> $359.07 </td>
+		</tr>
+	</table></div>
+  <div class="attachments">
+
+<p><a href="../../../attachments/311/Block_Diagram.png" class="icon icon-attachment">Block_Diagram.png</a>
+  <span class="size">(23.2 kB)</span>
+  
+  
+  </p>
+
+<p><a href="../../../attachments/312/Schematic_1.png" class="icon icon-attachment">Schematic_1.png</a>
+  <span class="size">(59.1 kB)</span>
+  
+  
+  </p>
+
+</div>
+
+  </div>
+
+<p class="pagination"> (1-3/3)</p>
+
+
+
+
+
+
+
+
+        
+				<div style="clear:both;"></div>
+    </div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+	
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="http://www.redmine.org/">Redmine</a> &copy; 2006-2011 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25732509-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> <div id="footer">
+  <div class="bgl"><div class="bgr">
+    <a href="../../../terms_of_services/418.html">Terms Of Service</a>
+  </div></div>
+</div>
+<div id="footer">
+</div>
+</body>
+</html>

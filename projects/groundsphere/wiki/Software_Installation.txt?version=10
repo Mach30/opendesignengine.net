@@ -1,0 +1,39 @@
+h1. Ground Sphere Software Installation v0.2
+
+{{toc}}
+
+h3. Install SDR Dongle Drivers (Zadig)
+
+# Plug the SDR dongle into a USB port on your Windows PC
+# Download the dongle driver installer from *"Zadig":http://zadig.akeo.ie/*.
+# Run the installer and select *Options > List All Devices*
+!http://opendesignengine.net/dmsf_files/412?download=!
+# Pull down the interfaces drop-down and select *Bulk-In, Interface (Interface 0)*
+!http://opendesignengine.net/dmsf_files/413?download=!
+# Click the *Install Driver* or *Replace Driver* button (which one you see will depend on previous driver installations)
+!http://opendesignengine.net/dmsf_files/415?download=!
+
+Note, if after installation you are unable to detect the SDR Dongle in SeeDeR (see this "forum post": for an example), then you should try uninstalling the drivers and starting over following these steps.
+
+# Open the *Device Manager* in Windows (Click the *Start* button and type in "device manager" and hit enter)
+# Find the SDR dongle in the *Device Manager* (it will be listed either under "Sound, video and game controllers" as REALTEK 2832U or under "Universal Serial Bus devices" as Bulk-in, Interface (Interface 0)
+!http://opendesignengine.net/dmsf_files/416?download=!
+# Right-click on the SDR device in *Device Manager* and select Uninstall
+!http://opendesignengine.net/dmsf_files/417?download=!
+# The *Uninstall Device* dialog will open, be sure to select the *Delete driver software* check box then click *OK* 
+!http://opendesignengine.net/dmsf_files/418?download=!
+# When the driver finishes uninstalling, remove the USB Dongle, then start the installation process over again, making sure to use the same USB port as before
+
+h3. Install SDR Controller Software (SeeDeR)
+
+Note, you will need "7-zip":http://www.7-zip.org/ installed to unzip the SeeDeR executable.
+
+# Download the *"SeeDeR zip file":https://opendesignengine.net/dmsf_files/269?download=311* and the *"MSVC 2012 runtime library":https://opendesignengine.net/dmsf_files/270?download=312*
+# Run the MSVC 2012 installer (vcredist_x86_vs2012.exe)
+# Use 7-zip to unzip all SeeDeR files into a directory you can access when you want to use the ground station
+
+h3. Install Orbital Tracking/Prediction Software (GPredict)
+
+# Download GPredict from http://sourceforge.net/projects/gpredict/files/Gpredict/1.3/gpredict-win32-1.3-3.zip/download.
+# Unzip the downloaded zip file into a folder 
+# Follow the directions in the README.txt document in the unzipped file. 

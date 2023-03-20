@@ -1,0 +1,136 @@
+h1. Power/Temp Monitor and Control System (EPS/ECLSS) Requirements Document
+
+{{toc}}
+
+h3. Introduction
+
+This requirements document is currently being discussed on the forums "here":https://opendesignengine.net/boards/18/topics/287.  The requirements list matches up to the Initial Questions in step one of the Systems Engineering process as shown below. Each requirement is labeled with GSR (Ground Station Requirement), followed by the number of the "initial question":https://opendesignengine.net/projects/eps-001/wiki/Initial_Questions that the requirement corresponds to, followed by a dot and then the ID number of the requirement.
+
+* *EPSR 1.x* - Why are we making this?
+* *EPSR 2.x* - Who is this for?
+* *EPSR 3.x* - How will this be used?
+* *EPSR 4.x* - What features does it need to have (now)?
+* *EPSR 5.x* - What features does it need to have (later)?
+* *EPSR 6.x* - What are the legacy requirements?
+* *EPSR 7.x* - Who's going to build this?
+* *EPSR 8.x* - How many do we want to make?
+* *EPSR 9.x* - What is the budget?
+* *EPSR 10.x* - What is the timeline?
+* *EPSR 11.x* - What waste products will be produced by the manufacture and/or operation of this?
+
+
+h3. Technical Requirements
+
+Technical requirements are those requirements which include measurable performance values.  Each technical requirement should be verified through testing to ensure the design meets the requirement.
+
+* *EPSR 1.1* The EPS board shall measure parameters and store them for transmission to a server.
+* *EPSR 1.2* the EPS board must be capable of operating in the environment at the client's site.
+** *EPSR 1.2.1* The EPS board shall be able to operate at -40C to +80C temperatures.
+** *EPSR 1.2.2* The EPS board shall be able to operate at 5000M altitude.
+** *EPSR 1.2.3* The EPS board shall perform all functions without direct intervention by an operator.
+
+* *EPSR 2.2* The EPS board shall be designed to be mounted securely within an enclosure.
+* *EPSR 2.3* The EPS board shall be designed to operate on battery supplies from 12 through 30VDC.
+
+* *EPSR 3.1* The EPS board shall measure predefined parameters.
+** *EPSR 3.1.1* The EPS board shall measure the ambient temperature in the enclosure using a sensor on the board.
+** *EPSR 3.1.2* The EPS board shall measure voltages of two separate circuits  which must be scaled and buffered using an op-amp.
+** *EPSR 3.1.3* The EPS board shall limit the input voltage to the op-amp to safe levels.
+** *EPSR 3.1.4* The EPS board shall measure the current of two separate circuits using a sensor with isolation between the sensed circuit and data line.
+* *EPSR 3.2* The EPS board shall transmit measurement data or fault conditions to the server.
+** *EPSR 3.2.1* The EPS board shall transmit measurement data on demand (web page request).
+** *EPSR 3.2.2* The EPS board shall be capable of transmitting measurement data on a schedule (FTP or email).
+
+* *EPSR 4.1* The EPS board shall consume minimal power. Design maximum is 250mW.
+* *EPSR 4.2* The EPS board shall derive it's power from one of the monitored circuits.
+* *EPSR 4.3* The EPS board shall measure voltage from two separate circuits within the following parameters:
+** *EPSR 4.3.1* From 0-30VDC directly.
+** *EPSR 4.3.2* From 0-60VDC scaled.
+** *EPSR 4.3.3* Handle up to 120VDC clipped.
+** *EPSR 4.3.4* Have a minimum of 10 bit accuracy (0.03VDC at 30VDC full scale input).
+* *EPSR 4.4* The EPS board shall measure temperature within the following parameters:
+** *EPSR 4.4.1* From -20 to 85C.
+** *EPSR 4.4.2* Have a minimum of 10 bit accuracy (0.1C within the full temperature range).
+* *EPSR 4.5* The EPS board shall measure current from two separate circuits within the following parameters:
+** *EPSR 4.5.1* From 0-20 Amps directly.
+** *EPSR 4.5.2* Response time within 5us.
+** *EPSR 4.5.3* Less than or equal to a 1.5% output error at 25 degrees C.
+** *EPSR 4.5.4* Less than a 5mOhm internal sensor resistance.
+** *EPSR 4.5.5* Have greater than a 1kV isolation.
+** *EPSR 4.5.6* Have a minimum of 10 bit accuracy (.5mA at 5A full scale input).
+* *EPSR 4.6* The EPS board shall have an Ethernet networking capability.
+** *EPSR 4.6.1* The EPS board shall have an RJ45 jack with full magnetics on the board.
+** *EPSR 4.6.2* The EPS board shall have a MAC controller IC with a fully functional TCP/IP stack.
+** *EPSR 4.6.3* The EPS board shall display a page for at least one requester displaying measurement data.
+** *EPSR 4.6.4* The EPS board shall be capable of periodic transmission, sending measurement data via FTP or email.
+
+* *EPSR 6.1* Any software to communicate, manage, or display data from the EPS board should run on all three major PC platforms (MS Windows, Mac OS X, and Linux).
+* *EPSR 6.2* The EPS board must use standardized connections to allow for greater flexibility in it's deployment (Screw terminals, USB, Ethernet, or similar connections).
+
+* *EPSR 7.1* The production units for the client will be built in a static safe facility.
+* *EPSR 7.2* The production units will be tested to comply with customer needs and burned in for a minimum of 24 hours using simulated or real loads.
+
+h3. Project Requirements
+
+Project requirements are the remaining requirements which are not tied to specific performance values.
+
+* *EPSR 2.1* The EPS board shall be designed in such a way that it may be installed by any person with solar power or electrical wiring experience.
+* *EPSR 2.4* The EPS board must be well documented so as to meet the needs of WISPs and open source spaceflight designers who will design and build future equipment requiring power and thermal management (at Mach 30 and elsewhere).
+* *EPSR 2.5* The EPS board documentation and procedures must be complete enough that Mach 30 operators, students and educators who want to bring electronics, power control, or aerospace engineering into the classroom, and anyone else interested in how to manage power can learn how.
+* *EPSR 2.6* The EPS board documentation must cover the installing the EPS board, basic operation, communications, and protocols.
+* *EPSR 2.7* The EPS board installation manual shall include a section on safety to include electrical safety and precautions necessary to install the unit safely.
+
+* *EPSR 8.1* The initial production will be up to the client, but is anticipated at about 20 units. 
+* *EPSR 8.2* Whenever and wherever possible, considerations should be made so that the design of the EPS board and it's components allow it to be used in a kit in the future.  
+
+* *EPSR 9.1* The initial development of the design shall not cost over $2000.00.
+* *EPSR 9.2* The production units shall not cost over $100.00 in parts.
+* *EPSR 9.3* The production units shall be sold to the client at cost plus labor, not to exceed $150.00 per unit delivered.
+* *EPSR 9.4* Installation at remote sites will be available at a negotiated rate. 
+
+* *EPSR 10.1* This project is a quick development project with immediate need.  Once orders or prerequisites are filled, the project immediately will move to the next stage.
+
+* *EPSR 11.1* Where an EPS board fails the test, a repair will be attempted and the board retested to limit E-waste.
+* *EPSR 11.2* All E-waste must be handled in an environmentally responsible manner in compliance with applicable law.
+* *EPSR 11.3* Any components that wear out, fail, or are damaged must be disposed up according to all federal, state and local guidelines in the US, or as regulations require in other parts of the world.
+* *EPSR 11.4* Attention shall be paid into the durability of the design to keep waste to an absolute minimum.
+
+h3. Future V2.0 Requirements
+
+These specifications are for reference only so that future features can be accommodated in the current design where practical.
+
+*Version 2.0:*
+
+* *EPSR 5.1* Future EPS boards may have local serial communications to enable integration in HAB or satellite bus.
+* *EPSR 5.2* Future EPS boards may have the ability to cut and engage power on local or remote command or by timer.
+* *EPSR 5.3* Future EPS boards may have power circuits monitored and controlled using remote boards connected by serial bus such as SPI.
+* *EPSR 5.4* Future EPS boards may have programmable sequenced power up, power down, and low power modes.
+* *EPSR 5.5* Future EPS boards may have multiple point temperature sensing.
+* *EPSR 5.6* Future EPS boards may have heater control circuits.
+
+*Beyond Version 2.0:*
+* *EPSR 5.7* Future EPS boards may have extra GPIO for further sensing and control.
+* *EPSR 5.8* Future EPS boards may have simple setup and control by local web page.
+* *EPSR 5.9* Future EPS boards may have multiple power modes based upon mission profiles.
+* *EPSR 5.10* Future EPS boards may support IPv6.
+
+h3. Glossary
+
+ADC - Analog to digital converter.
+Buffered - Indirect connection which allows input which would potentially be destructive to the unit to be handled safely.
+Burn-in - A practice to test all production units under load for a proscribed time, causing and failures to occur during testing instead of after deployment.
+Clipped - In this instance, preventing input which would be damaging to components from exceeding a certain level. 
+ECLSS - Environmental Control and Life Support Subsystem, a component block of a spacecraft or HAB payload.
+EPS - Electrical Power Subsystem, a component block of a spacecraft or HAB payload.
+GPIO - General Purpose Input and Output, a way of connecting a sensor to a computer or microcontroller.
+HAB - High Altitude Balloon
+Hall effect - The production of voltage transverse to an electric current in the conductor and a magnetic field perpendicular to the current.
+Hall effect sensor - A sensor which uses the hall effect to detect a magnetic field or electric current.
+Isolation - In this instance, the ability of a sensor to prevent high voltage from a sensed circuit from crossing over to the sensor's data connection.
+MAC controller - A chip which contains all the electrical and logic circuits to connect to Ethernet connections.
+Magnetics - The passive components on an Ethernet jack which prevent noise and cross talk from impacting the flow of high speed data.
+Microcontroller - A small single purpose computer generally used for instrumentation and control applications.
+Op-amp - An electronic component which can be used to change signal levels up or down to match the recipient component's abilities.
+Resolution - In this instance, the number of bits used in the ADC divided by the full scale value.  This yields the value per binary step.
+Scaled - In this instance, the practice of using an op-amp to reduce a signal by a set percentage or ratio.
+WISP - Wireless Internet Service Provider.

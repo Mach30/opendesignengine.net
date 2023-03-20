@@ -1,0 +1,26 @@
+h1. Wiki
+
+Chipin Test
+{{chipin(629674dab8396747)}}
+
+
+Pledgie Test
+
+{{pledgie(9822)}}
+
+
+YouTube Test
+
+{{youtube(fciwFk0IfF8)}}
+
+
+Vimeo Test
+
+{{vimeo(33510073)}}
+
+
+h2. Demo of ODE wiki extensions
+
+# "Issue Details Wiki Macro":http://www.redmine.org/projects/redmine/wiki/PluginWikiIssueDetails - @{ {issue_details(35} }@ (without the spaces) => {{issue_details(35)}}
+# "YouTube Video Macro":http://projects.plural.cc/projects/redmine-youtube - @{ {youtube(fciwFk0IfF8)} }@ (without the spaces) =>
+

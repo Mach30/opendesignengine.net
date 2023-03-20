@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Design Engine: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/ode/issues.atom?fixed_version_id=1&amp;amp;set_filter=1&amp;amp;status_id=c"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/ode/issues?fixed_version_id=1&amp;amp;set_filter=1&amp;amp;status_id=c"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2011-08-11T19:00:23+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #34 (Resolved): Running install of ODE seems to be having problems sending status updates</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/34"/>
+    <id>http://opendesignengine.net/issues/34</id>
+    <updated>2011-08-11T19:00:23+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I have noticed I am not getting emails when projects I am in have various updates (forum posts, wiki edits, etc), even when my email setting is: "For any event in all of my projects".  Note, I do have the check box "I don't want to be notified of changes that I make myself" checked, but I would still expect to see something when other people post.  I wonder if there is a cron job that should be running but is not.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Support #31 (Closed): Install SSL support to live ODE server</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/31"/>
+    <id>http://opendesignengine.net/issues/31</id>
+    <updated>2011-05-08T06:01:53+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Research, purchase, and configure a signed SSL cert.  Once done, configure http to redirect to https for all paths.  Be sure to test SVN over https.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #7 (Resolved): Add Wiki macro to link to issues</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/7"/>
+    <id>http://opendesignengine.net/issues/7</id>
+    <updated>2011-04-08T02:52:41+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Install this &lt;a href="http://www.redmine.org/projects/redmine/wiki/PluginWikiIssueDetails" class="external"&gt;plugin&lt;/a&gt;.  Remember to store in svn for inclusion in the distribution.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #5 (Resolved): Add Google Analytics to ODE</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/5"/>
+    <id>http://opendesignengine.net/issues/5</id>
+    <updated>2011-04-08T02:46:10+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Steps:&lt;/p&gt;
+
+
+	&lt;ol&gt;
+	&lt;li&gt;Create Analytics account and get key&lt;/li&gt;
+		&lt;li&gt;Install (and on live ODE site, configure) this &lt;a href="http://www.redmine.org/projects/redmine/wiki/PluginGoogleAnalytics" class="external"&gt;plugin&lt;/a&gt;&lt;/li&gt;
+	&lt;/ol&gt;
+
+
+	&lt;p&gt;Remember to store in svn for inclusion in the distribution.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #4 (Resolved): Display SVN checkout or export link on repository page</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/4"/>
+    <id>http://opendesignengine.net/issues/4</id>
+    <updated>2011-04-08T02:43:33+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Install this &lt;a href="http://dev.holgerjust.de/projects/redmine-checkout/wiki" class="external"&gt;plugin&lt;/a&gt; (note need to decide if default behavior is checkout or export).  Remember to store in svn for inclusion in the distribution.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #3 (Resolved): Configure ODE to hide emails by default</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/3"/>
+    <id>http://opendesignengine.net/issues/3</id>
+    <updated>2011-04-08T02:40:19+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Install this &lt;a href="https://github.com/splendeo/redmine_hide_emails_by_default/" class="external"&gt;plugin&lt;/a&gt;.  Remember to store in svn for inclusion in the distribution.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #2 (Resolved): Install available Bot filters</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/2"/>
+    <id>http://opendesignengine.net/issues/2</id>
+    <updated>2011-04-08T02:39:18+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Use this &lt;a href="http://www.redmine.org/projects/redmine/wiki/PluginBotsFilter" class="external"&gt;plugin&lt;/a&gt;.  Remember to store in svn for inclusion in the distribution.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #1 (Closed): Automatically create SVN Repositories when Repository module is turned on</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/1"/>
+    <id>http://opendesignengine.net/issues/1</id>
+    <updated>2011-04-08T02:37:47+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;p&gt;See &lt;a class="external" href="http://www.redmine.org/projects/redmine/wiki/HowTo_Automate_repository_creation"&gt;http://www.redmine.org/projects/redmine/wiki/HowTo_Automate_repository_creation&lt;/a&gt; for instructions.  It would be best if the configuration could be packaged with the distribution (at least for installation in Bitnami hosts).&lt;/p&gt;    </content>
+  </entry>
+</feed>

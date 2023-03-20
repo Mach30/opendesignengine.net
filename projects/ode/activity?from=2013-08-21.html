@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Open Design Engine - Activity - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../favicon.ico%3F1359925685' />
+<link href="http://opendesignengine.net/stylesheets/application.css?1359925542" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../javascripts/prototype.js%3F1359925542" type="text/javascript"></script>
+<script src="../../javascripts/effects.js%3F1359925542" type="text/javascript"></script>
+<script src="../../javascripts/dragdrop.js%3F1359925542" type="text/javascript"></script>
+<script src="../../javascripts/controls.js%3F1359925542" type="text/javascript"></script>
+<script src="../../javascripts/application.js%3F1359925542" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="http://opendesignengine.net/plugin_assets/redmine_legal/stylesheets/terms-of-service.css?1359925705" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+<link href="http://opendesignengine.net/projects/ode/activity.atom" rel="alternate" title="ATOM" type="application/atom+xml" />
+</head>
+<body class="controller-activities action-index">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="http://opendesignengine.net/login" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../account/register.html" class="home">Home</a></li>
+<li><a href="../../projects.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="../../search/index/ode.html" method="get">
+        
+        <a href="../../search/index/ode.html" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Open Design Engine</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../ode%3Fjump=overview.html" class="overview">Overview</a></li>
+<li><a href="../ode%3Fjump=activity.html" class="activity selected">Activity</a></li>
+<li><a href="roadmap.html" class="roadmap">Roadmap</a></li>
+<li><a href="../ode%3Fjump=issues.html" class="issues">Issues</a></li>
+<li><a href="issues/gantt.html" class="gantt">Gantt</a></li>
+<li><a href="../ode%3Fjump=news.html" class="news">News</a></li>
+<li><a href="wiki.1.html" class="wiki">Wiki</a></li>
+<li><a href="boards.html" class="boards">Forums</a></li>
+<li><a href="../ode%3Fjump=files.html" class="files">Files</a></li>
+<li><a href="http://opendesignengine.net/projects/ode/repository" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="" id="main">
+    <div id="sidebar">
+        
+<form action="../ode%3Fjump=activity.html" method="get">
+<h3>Activity</h3>
+<p>
+<input checked="checked" id="show_issues" name="show_issues" type="checkbox" value="1" />
+<a href="activity%3Fshow_issues=1.html">Issues</a>
+<br />
+
+<input checked="checked" id="show_changesets" name="show_changesets" type="checkbox" value="1" />
+<a href="activity%3Fshow_changesets=1.html">Changesets</a>
+<br />
+
+<input checked="checked" id="show_news" name="show_news" type="checkbox" value="1" />
+<a href="activity%3Fshow_news=1.html">News</a>
+<br />
+
+<input checked="checked" id="show_files" name="show_files" type="checkbox" value="1" />
+<a href="activity%3Fshow_files=1.html">Files</a>
+<br />
+
+<input id="show_wiki_edits" name="show_wiki_edits" type="checkbox" value="1" />
+<a href="activity%3Fshow_wiki_edits=1.html">Wiki edits</a>
+<br />
+
+<input id="show_messages" name="show_messages" type="checkbox" value="1" />
+<a href="activity%3Fshow_messages=1.html">Messages</a>
+<br />
+</p>
+
+	  <input id="with_subprojects" name="with_subprojects" type="hidden" value="0" />
+    <p><label><input checked="checked" id="with_subprojects" name="with_subprojects" type="checkbox" value="1" /> Subprojects</label></p>
+
+
+<p><input class="button-small" type="submit" value="Apply" /></p>
+</form>
+
+        
+    </div>
+
+    <div id="content">
+				
+        <h2>Activity</h2>
+<p class="subtitle">From 07/23/2013 to 08/21/2013</p>
+
+<div id="activity">
+
+<h3>08/08/2013</h3>
+<dl>
+  <dt class="issue-note  ">
+	
+  <span class="time">03:33 pm</span>
+  
+  <a href="../../issues/156.html#change-228">Feature #156: Change &quot;Issues&quot; to &quot;Tickets&quot;</a></dt>
+  <dd><span class="description">No. Since we&#x27;ll only be changing the labels (which are specific to the languages like English or Italian), the code i...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/130" class="icon icon-contributor-license">Christopher Sigman</a></span></dd>
+</dl>
+
+<h3>08/03/2013</h3>
+<dl>
+  <dt class="issue-note  ">
+	
+  <span class="time">05:07 pm</span>
+  
+  <a href="../../issues/156.html#change-227">Feature #156: Change &quot;Issues&quot; to &quot;Tickets&quot;</a></dt>
+  <dd><span class="description">Will this cause any issues with plugins that expect to see an &quot;Issues&quot; module?</span>
+  <span class="author"><a href="http://opendesignengine.net/users/102" class="icon icon-contributor-license">Jeremy Wright</a></span></dd>
+  <dt class="issue  ">
+	
+  <span class="time">01:48 pm</span>
+  
+  <a href="../../issues/156.html">Feature #156 (New): Change &quot;Issues&quot; to &quot;Tickets&quot;</a></dt>
+  <dd><span class="description">It seems incorrect for the &quot;Issues&quot; tab to be called issues, and much more correct to call it &quot;Tickets&quot;.  One of the ...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/130" class="icon icon-contributor-license">Christopher Sigman</a></span></dd>
+</dl>
+
+<h3>07/24/2013</h3>
+<dl>
+  <dt class="issue-note  ">
+	
+  <span class="time">06:27 pm</span>
+  
+  <a href="../../issues/37.html#change-221">Feature #37: Visual diffs for graphical file formats</a></dt>
+  <dd><span class="description">Yep, that&#x27;s correct.  Doing diffs of a 3D object that isn&#x27;t at the same view and orientation, etc, would be a bit mor...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/130" class="icon icon-contributor-license">Christopher Sigman</a></span></dd>
+  <dt class="issue-note  ">
+	
+  <span class="time">06:21 pm</span>
+  
+  <a href="../../issues/152.html#change-220">Feature #152: Add &quot;Create new page&quot; button to wiki system</a></dt>
+  <dd><span class="description">I believe the reason it&#x27;s done this way is to try and reduce orphan pages, i.e. pages that aren&#x27;t linked to by anothe...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/130" class="icon icon-contributor-license">Christopher Sigman</a></span></dd>
+  <dt class="issue  ">
+	
+  <span class="time">12:41 pm</span>
+  
+  <a href="../../issues/152.html">Feature #152 (New): Add &quot;Create new page&quot; button to wiki system</a></dt>
+  <dd><span class="description">From a user:  &quot;I just realized (as I was writing this email) that I can create a new wiki page by simply entering /wi...</span>
+  <span class="author"><a href="http://opendesignengine.net/users/3" class="icon icon-contributor-license">J. Simmons</a></span></dd>
+</dl>
+</div>
+
+
+
+<div style="float:left;">
+<a href="activity%3Ffrom=2013-07-22.html" title="From 06/23/2013

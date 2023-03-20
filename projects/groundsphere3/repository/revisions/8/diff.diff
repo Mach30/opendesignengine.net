@@ -1,0 +1,166 @@
+Index: trunk/docs/Link Budget Documentation.ipynb
+===================================================================
+--- trunk/docs/Link Budget Documentation.ipynb	(revision 7)
++++ trunk/docs/Link Budget Documentation.ipynb	(revision 8)
+@@ -25,26 +25,48 @@
+     "\n",
+     "This particular link analysis uses 13 inputs to calculate the Link Margin. These inputs are described in the table below. Please take note that for the equations to work, losses will be negative numbers, while gains are positive numbers.\n",
+     "\n",
+-    "| Input | Units | Description | Symbol|\n",
+-    "|---|---|--|--:|\n",
+-    "|Downlink Frequency| MHz | |\n",
+-    "|Target Energy per Bit to Noise Power Ratio | dB |Also known as Eb/No|\n",
+-    "|Implementation Loss of Transmitter | dB | |\n",
+-    "|Transmit Power | W | |\n",
+-    "|Transmit Losses | dB | |\n",
+-    "|Transmit Antenna Gain | dB | | \n",
+-    "|Transmit Pointing Loss | dB | |\n",
+-    "|Link Distance | km | |\n",
+-    "|Polarization Losses | dB | |\n",
+-    "|Atmospheric Loss | dB | |\n",
+-    "|Receiver Antenna Gain | dB | |\n",
+-    "|Receiver Pointing Loss | dB | |\n",
+-    "|System Noise Figure | dB | |\n",
+-    "|Minimum Detectable Signal | dBm |Also know as MDS|\n",
+-    "|Final Eb/No| dB | |\n",
+-    "|Link Margin | dB | |\n",
++    "| Input | Units |Symbols|\n",
++    "|---|---|-----:|\n",
++    "|Downlink Frequency| MHz |$${f}$$ | \n",
++    "|Target Energy per Bit to Noise Power Ratio | dB |$${Eb}/{No_T}$$ |\n",
++    "|Implementation Loss of Transmitter | dB | $${L_{TrImp}}$$| \n",
++    "|Transmit Power | W |$${P_{Tr}}$$ | \n",
++    "|Transmit Losses | dB |$${L_{Tr}}$$| \n",
++    "|Transmit Antenna Gain | dB |$${G_{Tr}}$$ |  \n",
++    "|Transmit Pointing Loss | dB |$${L_{TrP}}$$ |\n",
++    "|Link Distance | km |$${D}$$ | \n",
++    "|Polarization Losses | dB | $${L_{Pol}}$$| \n",
++    "|Atmospheric Loss | dB |$${L_{At}}$$ |\n",
++    "|Receiver Antenna Gain | dB |$${G_{Re}}$$ | \n",
++    "|Receiver Pointing Loss | dB |$${L_{ReP}}$$ | \n",
++    "|System Noise Figure | dB |$${N_{Sys}}$$ | \n",
++    "|Noise Bandwidth | kHz|$$BW$$|\n",
+     "\n",
+-    "The equation used will be Link Margin = Required Eb/No - Actual Eb/No, where Required Eb/No = Target Eb/No + Implementation Losses and Actual Eb/No = Received Power - MDS. The target Eb/No and the Implementation Losses are usually assumed based on previous experience and research. The Received Power = Transmit EIRP + Downlink Path Loss + Polarization Loss + Atmosphere Loss + Receive Antenna Gain + Receiver Pointing Losses, and the MDS = -174 + 10log(Noise Bandwidth * 1000) + System Noise Figure. Some of these numbers are inputs while others are derived from the inputs. How to derive these numbers is explained below. \n"
++    "|Other Variables |Units|Symbols| \n",
++    "|---|---|--:|\n",
++    "|Wavelength| m |$${\\lambda}$$ |\n",
++    "|Required Eb/No|dB |$${{Eb/No}_R}$$ |\n",
++    "|Converted Transmit Power| dBm |$${P_{TrC}}$$ |\n",
++    "|Transmit EIRP| dB |$${EIRP}$$ |\n",
++    "|Downlink Path Loss| dB |$${L_{Path}}$$ |\n",
++    "|Received Power|dBm|$${P_{Re}}$$|\n",
++    "|Minimum Detectable Signal | dBm | $${MDS}$$| \n",
++    "|Final Eb/No| dB | $${Eb/No}_{F}$$| \n",
++    "|Link Margin | dB | $${Link_{Mar}}$$| \n",
++    "\n",
++    "The equation used will be Link Margin = Actual Eb/No - Required Eb/No, where Required Eb/No = Target Eb/No + Implementation Losses and Actual Eb/No = Received Power - MDS. The target Eb/No and the Implementation Losses are usually assumed based on previous experience and research. The Received Power = Transmit EIRP + Downlink Path Loss + Polarization Loss + Atmosphere Loss + Receive Antenna Gain + Receiver Pointing Losses, and the MDS = -174 + 10log(Noise Bandwidth * 1000) + System Noise Figure. Some of these numbers are inputs while others are derived from the inputs. How to derive these values is explained below. \n",
++    "\n",
++    "*<p style=\"text-align: center;\"><b>Equations Listed in the Order Mentioned</b></p>*\n",
++    "\n",
++    "$$Link_{Mar} = {{Eb/No}_F} - {{Eb/No}_R}$$\n",
++    "\n",
++    "$$ {Eb/No}_F = {P_{Re}} -{MDS}$$\n",
++    "\n",
++    "$${Eb/No}_R = {Eb/No}_T + {L_{TrImp}}$$\n",
++    "\n",
++    "$$P_{Re} = {EIRP} + L_{Path} + L_{Pol} + L_{At} + G_{Re} + L_{ReP}$$\n",
++    "\n",
++    "$$MDS = -174 + 10log_{10}(BW*100) + N_{Sys}$$"
+    ]
+   },
+   {
+@@ -53,7 +75,12 @@
+    "source": [
+     "## Downlink\n",
+     "\n",
+-    "The Downlink Wavelength = The Speed of Light / Downlink Frequency. The Target Eb/No and Implementation Loss, as well as the Required Eb/No are found through research based on your particular transmission and educated assumptions. \n"
++    "The Downlink Wavelength = The Speed of Light / Downlink Frequency. The Target Eb/No and Implementation Loss, as well as the Required Eb/No are found through research based on your particular transmission and educated assumptions. The Target Eb/No Is typically around 20 - 25 dB, however it varies depending on the type of communication being attempted. The Implementation Loss is loss due to connections and other hardware parts. This typically will be around 1 dB.\n",
++    "\n",
++    "\n",
++    "$$ \\lambda = c / f$$\n",
++    "\n",
++    "$$ Eb/No_R = L_{Imp} + Eb/No_T $$\n"
+    ]
+   },
+   {
+@@ -70,7 +97,11 @@
+     "\n",
+     "If you cannot access this information, you may have to make some estimates based upon known equipment of the transmitter, or simply make a guess for the purposes of calculating your link budget. If you're attempting to calculate an estimate, knowing what the gain of the antenna, radio, and amplifier are is helpful, where you may then be able to use a conservative estimate for the loss of other components in the system. This estimate may be 1.0db to 1.5db of loss in the 100MHz range (or higher for longer lengths of transmission line). This will decrease in higher frequencies due to the need for components of the transmission system such as filters or waveguides to be tightly matched to the transmission frequency.\n",
+     "\n",
+-    "Find the power of the transmitter and convert it to dBm. To convert from watts to dBm, the conversion is power_in_dBm = 10log(power_in_watts*1000). The transmit losses, pointing losses, and antenna gain will be decided based on research. The transmit losses and pointing losses will be negative numbers for this calculation. The Transmit EIRP = Transmit Power + Transmit Losses + Transmit Antenna Gain + Pointing Losses.\n"
++    "Find the power of the transmitter and convert it to dBm. To convert from watts to dBm, the conversion is power_in_dBm = 10log(power_in_watts*1000). The transmit losses, pointing losses, and antenna gain will be decided based on research, as mentioned above. The Transmit EIRP = Transmit Power + Transmit Losses + Transmit Antenna Gain + Pointing Losses.\n",
++    "\n",
++    "$$ P_{TrC} = 10log_{10}(P_{Tr}*1000) $$\n",
++    "\n",
++    "$$ EIRP = P_{TrC} + L_{Tr} + G_{Tr} + L_{TrP} $$"
+    ]
+   },
+   {
+@@ -113,10 +144,8 @@
+     "\n",
+     "With this equation, when two of the angles are known, the third can be calculated using subtraction. This equation is subsequently used to calculate ***θ***. With ***θ*** known, law of sines again can be used to calculate ***c***.\n",
+     "\n",
+-    "We can now represent all of the information we have, as well as the equations to solve for the as yet unknowns. Table 1 below lists all this information.\n",
++    "We can now represent all of the information we have, as well as the equations to solve for the as yet unknowns. The table below lists all this information.\n",
+     "\n",
+-    "*<p style=\"text-align: center;\">Table 1</p>*\n",
+-    "\n",
+     "| Variable | Description | Equation to Solve for Variable |\n",
+     "|---|---|---|---|\n",
+     "| ***A*** | Transmitter / Satellite |   |\n",
+@@ -140,6 +169,8 @@
+     "\n",
+     "The Link Distance was solved for in the section above. Downlink Path Loss (dB) =  -1*10log((4PI*distance*1000/wavelength)^2). Polarization Loss does not apply to our non-polarized antennas, so it will always be zero. \n",
+     "\n",
++    "$$L_{Path} = (-1)*10log_{10}((\\frac{4{\\pi}*D*1000}{\\lambda})^2)$$\n",
++    "\n",
+     "Losses due to atmospheric gases (Nitrogen, Oxygen, Carbon Dioxide, Hydrogen, etc.) are nearly independent of atmospheric temperature, mean density and relative humidity at frequencies below 2 GHz.  Atmospheric absorption depends strongly upon the total number of molecules distributed along the path between the spacecraft and the ground station.  This, in turn, means that the losses from or to the satellite are elevation angle dependent.\t\t\t\t\t\t\t\t\t\n",
+     "\t\t\t\t\t\t\t\t\t\n",
+     "The data used here  is taken from \"Radiowave Propagation in Satellite Communications\" by\t\t\t\t\t\t\t\t\t\n",
+@@ -165,7 +196,9 @@
+    "source": [
+     "## Receiver\n",
+     "\n",
+-    "The Receiver Antenna Gain will be based on the shape of the antenna and the Pointing Offset is affected by the angle it is receiving the transmission from. The Received Power = Transmit EIRP + Downlink Path Loss + Polarization Loss + Atmospheric Losses + Receiver Antenna Gain + Receiver Pointing Losses.\n"
++    "The Receiver Antenna Gain will be based on the shape of the antenna and the Pointing Offset is affected by the angle it is receiving the transmission from. The Received Power = Transmit EIRP + Downlink Path Loss + Polarization Loss + Atmospheric Losses + Receiver Antenna Gain + Receiver Pointing Losses.\n",
++    "\n",
++    "$$P_{Re} = EIRP + L_{Path} + L_{Pol} + L_{At} + G_{Re} + L_{ReP} $$"
+    ]
+   },
+   {
+@@ -174,7 +207,17 @@
+    "source": [
+     "## Solve for Link Margin\n",
+     "\n",
+-    "Now that all the bits and pieces have been solved for, plug them back into the original equation to solve for the Link Margin.\n"
++    "Now that all the bits and pieces have been solved for, plug them back into the equations listed at the beginning of the document to solve for the Link Margin.\n",
++    "\n",
++    "$$MDS = -174 + 10log_{10}(BW*100) + N_{Sys}$$\n",
++    "\n",
++    "$$P_{Re} = {EIRP} + L_{Path} + L_{Pol} + L_{At} + G_{Re} + L_{ReP}$$\n",
++    "\n",
++    "$$ {Eb/No}_F = {P_{Re}} -{MDS}$$\n",
++    "\n",
++    "$${Eb/No}_R = {Eb/No}_T + {L_{TrImp}}$$\n",
++    "\n",
++    "$$Link_{Mar} = {{Eb/No}_F} - {{Eb/No}_R}$$"
+    ]
+   },
+   {
+@@ -185,6 +228,15 @@
+    },
+    "outputs": [],
+    "source": []
++  },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {
++    "collapsed": true
++   },
++   "outputs": [],
++   "source": []
+   }
+  ],
+  "metadata": {

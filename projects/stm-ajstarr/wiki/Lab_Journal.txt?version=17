@@ -1,0 +1,56 @@
+h1. Lab Journal
+
+h2. 20 Oct, 2012 - Tunnelling Current Amplifier simulation
+
+The tunnelling current amplifier is an example of a _transimpedance_ amplifier: it converts a current input into a voltage output. This amplifier is a critical circuit in the microscope, so I have taken advantage of available electronic simulation software (TINA-TI version 9, free to download from Texas Instruments) to test and tune the design before committing to a PCB. I have a choice between a simple, 'classic' transimpedance amplifier and a more complex - but possibly better performing - 'composite' amplifier.
+
+h3. Bandwidth vs noise
+
+In a transimpedance amplifier there is an unavoidable tradeoff between the bandwidth of the amplifier response and its output noise.  The higher the bandwidth of the amplifier, the faster the response, but also the higher the output noise will be. These two parameters have the following effects on the microscope performance:
+
+# Bandwidth affects response time of the amplifier to a change in tunnelling current, and therefore affects the rate at which the sample can be scanned.
+# Noise affects the vertical resolution of the tunnelling current, and therefore limits the vertical resolution of the sample data. If the noise is bad enough it may also cause problems in maintaining the tip-sample tunnelling  distance.
+
+The design of the tunnelling current amplifier is guided by the following questions:
+
+* *What is the highest acceptable level of output noise?*
+* *What is the maximum bandwidth from each design that satisfies the output noise requirement?*
+* *Does the composite amplifier offer a bandwidth advantage that justifies its greater complexity for this application?* 
+
+h3. Output noise
+
+The fullscale output signal will be +/-10V, corresponding to +/-10nA (1G resistor). Assuming a 16-bit ADC, this means 1 LSB will be 20V / 65535 = *305uV*. Ideally the noise floor of the amplifier would be below this level.
+
+h3. Simple vs composite amplifier
+
+The 'classic' transimpedance amplifier design for small currents such as photodiodes etc is an op-amp with negative feedback via a single large value resistor, with a compensation capacitor to prevent oscillation due to noise gain:
+
+!https://opendesignengine.net/attachments/173/Simple_transimpedance_amp.jpg!
+
+R1 is the feedback resistor, C2 is the compensation capacitance (including the parasitic capacitance of the resistor itself). C1 represents the parasitic capacitance of the current source IG1. The output of the circuit is nominally is 1V/nA.
+
+Assuming 10pF capacitance for the tunnelling signal input, and using only the parasitic capacitance of the feedback resistor for compensation (around 0.3pF for a leaded resistor), the 3dB bandwidth is about *520 Hz* - not great, but possibly usable:
+
+!https://opendesignengine.net/attachments/175/tca-simple-response.jpg!
+
+The output noise looks to be around *200uVrms*, which comfortably meets the noise requirement:
+
+!https://opendesignengine.net/attachments/176/tca-simple-noise.jpg!
+
+An alternative, 'composite' amplifier is described in *A low-noise and wide-band ac boosting current-to-voltage amplifier for scanning tunneling microscopy (Dae-Jeong Kim and Ja-Yong Koo, _Review of Scientific Instruments_, 76, 023703 (2005))*. This amplifier has a 'classic' front end, followed by an 'ac-boosting' section to recover the high-frequency part of the signal:
+
+!https://opendesignengine.net/attachments/174/Composite_transimpedance_amp.jpg!
+
+This circuit needs careful tuning of the values of C9 and R5 for a flat response of the desired bandwidth. I have found that setting C9 = 1nF and R5 = 23kOhms gives a 3dB bandwidth of 5kHz, which is more than adequate:
+
+!https://opendesignengine.net/attachments/177/tca-composite-response.jpg!
+
+The rms noise out to 5kHz is 300uV, which meets the noise requirement. Out to 100kHz or so it rises to 1000uV or so, but this that be mitigated with filtering:
+
+!https://opendesignengine.net/attachments/178/tca-composite-noise.jpg!
+
+The noise floor of the amplifier should practically be 1-2 LSB. Of course, this doesn't include the downstream conversion noise etc.
+
+h3. Conclusions
+
+The composite amplifier yields a bandwidth an order of magnitude greater than the simple amplifier, for a moderate increase in noise. There is scope to make the bandwidth of the composite amplifier greater still (by tweaking C9 and R5) for applications that require faster scan times, and have less stringent noise requirements.

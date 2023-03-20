@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link href="http://opendesignengine.net/issues/12.atom" rel="self"/>
+  <link href="http://opendesignengine.net/" rel="alternate"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2011-12-12T17:38:17+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Open Design Engine - Feature #12: Require all projects to have Open Source licenses</title>
+    <link href="http://opendesignengine.net/issues/12" rel="alternate"/>
+    <id>http://opendesignengine.net/issues/12?journal_id=47</id>
+    <updated>2011-12-12T17:38:17+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;File&lt;/strong&gt; &lt;a href="/attachments/45/launchpad_project_licensing.png"&gt;launchpad_project_licensing.png&lt;/a&gt; added&lt;/li&gt;&lt;li&gt;&lt;strong&gt;File&lt;/strong&gt; &lt;a href="/attachments/46/ode_project_list.png"&gt;ode_project_list.png&lt;/a&gt; added&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Getting more specific on the requirements.&lt;/strong&gt;&lt;br /&gt;I see three major elements of this plugin.&lt;/p&gt;
+
+
+	&lt;ol&gt;
+	&lt;li&gt;An admin interface to add, edit, disable licenses - Site administrators should be able to control the list of licenses to choose from in an admin panel.  They should be able to:
+	&lt;ol&gt;
+	&lt;li&gt;add new licenses (which have a a full name {Gnu Public License 2.0}, a short name {GPL 2.0}, and a link to their text on the internet {&lt;a class="external" href="http://opensource.org/licenses/GPL-2.0}"&gt;http://opensource.org/licenses/GPL-2.0}&lt;/a&gt;) &lt;/li&gt;
+		&lt;li&gt;edit licenses (to correct the names or link)&lt;/li&gt;
+		&lt;li&gt;disable licenses so they can no longer be selected (but not delete them in case there are projects using them - perhaps those projects should show the license as deprecated in the project UI as a way to inform the project owner they should consider using a new license)&lt;/li&gt;
+	&lt;/ol&gt;
+	&lt;/li&gt;
+		&lt;li&gt;An additional required field(s) in the project creation UI - during project creation, there should be a required field that is licensing (user must select at least one of the licenses in the list to continue).   Licenses should be grouped into three categories: Hardware, software, documentation, with lists of licenses in each category (as configured in the admin panel above).  See the &lt;a href="http://launchpad.net" class="external"&gt;LaunchPad&lt;/a&gt; example below for the kind of ordering and wording.  There may also need to be a text field field for who to attribute the project to.&lt;br /&gt;&lt;img src="http://opendesignengine.net/attachments/download/45" alt="" /&gt;&lt;/li&gt;
+		&lt;li&gt;Summary display of project licensing in project list and project home page - The project list page should have a list of the license short names included with each project (perhaps in parentheses next to the project name and separated by pipes '|').  Similarly, there should be a more verbose list of the licenses (with long names and links) on the main project page for each project in a "block" like the news feed (See &lt;a class="external" href="https://opendesignengine.net/projects/dante"&gt;https://opendesignengine.net/projects/dante&lt;/a&gt; for a general idea).&lt;br /&gt;&lt;img src="http://opendesignengine.net/attachments/download/46" alt="" /&gt;&lt;/li&gt;
+	&lt;/ol&gt;
+
+
+	&lt;p&gt;I will post these ideas on Google+ and the OSHW mailing list to solicit feedback and leave additional comments based on the feedback.  Work on the plugin should stay on hold until this process is complete.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #12: Require all projects to have Open Source licenses</title>
+    <link href="http://opendesignengine.net/issues/12" rel="alternate"/>
+    <id>http://opendesignengine.net/issues/12?journal_id=50</id>
+    <updated>2012-01-06T01:50:50+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;% Done&lt;/strong&gt; changed from &lt;i&gt;0&lt;/i&gt; to &lt;i&gt;70&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Plugin is written and installed (by Littlelines).  I am in the process of creating the list of licenses users will choose from and getting feedback on that list.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #12: Require all projects to have Open Source licenses</title>
+    <link href="http://opendesignengine.net/issues/12" rel="alternate"/>
+    <id>http://opendesignengine.net/issues/12?journal_id=55</id>
+    <updated>2012-02-10T05:18:19+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;% Done&lt;/strong&gt; changed from &lt;i&gt;70&lt;/i&gt; to &lt;i&gt;100&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;List of licenses for Beta launch added to ODE.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #12: Require all projects to have Open Source licenses</title>
+    <link href="http://opendesignengine.net/issues/12" rel="alternate"/>
+    <id>http://opendesignengine.net/issues/12?journal_id=56</id>
+    <updated>2012-02-10T05:18:40+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; changed from &lt;i&gt;New&lt;/i&gt; to &lt;i&gt;Closed&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #12: Require all projects to have Open Source licenses</title>
+    <link href="http://opendesignengine.net/issues/12" rel="alternate"/>
+    <id>http://opendesignengine.net/issues/12?journal_id=65</id>
+    <updated>2012-02-29T19:51:55+00:00</updated>
+    <author>
+      <name>Philippe Chretien</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;J. Simmons wrote:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+
+	&lt;p&gt;List of licenses for Beta launch added to ODE.&lt;/p&gt;
+
+
+&lt;/blockquote&gt;
+
+	&lt;p&gt;Hi,&lt;/p&gt;
+
+
+	&lt;p&gt;i know I am late on that topi but I can't see any of the CC licenses in the list when I go on the new project page? Is there an official discussion on that somewhere? Any chance we see these licenses in the future?&lt;/p&gt;
+
+
+	&lt;p&gt;Thanks,&lt;/p&gt;
+
+
+	&lt;p&gt;Philippe&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #12: Require all projects to have Open Source licenses</title>
+    <link href="http://opendesignengine.net/issues/12" rel="alternate"/>
+    <id>http://opendesignengine.net/issues/12?journal_id=66</id>
+    <updated>2012-03-10T22:52:49+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Phillipe,&lt;/p&gt;
+
+
+	&lt;p&gt;Thanks for the note (and sorry it has taken me so long to reply - I was pretty sick the last week or so and I am still digging through my inbox).  To answer your question, you should see some CC licenses under the "Documentation Licenses" heading on the project settings page (CC BY and CC BY-SA).  They are listed under documentation because they are really copyright licenses, not hardware licenses.  You are however, welcome to only apply a single license from any of the categories, so you could use just a CC license with your project.  We choose not to include the NC options because those violate the open source hardware definition (take a look at this &lt;a href="http://forums.adafruit.com/viewtopic.php?f=26&amp;#38;p=102597#p102625" class="external"&gt;discussion&lt;/a&gt; for more info).&lt;/p&gt;
+
+
+	&lt;p&gt;Please let me know if you have any further questions or comments.  And thanks again for posting!&lt;/p&gt;
+
+
+	&lt;pre&gt;&lt;code&gt;-J&lt;/code&gt;&lt;/pre&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #12: Require all projects to have Open Source licenses</title>
+    <link href="http://opendesignengine.net/issues/12" rel="alternate"/>
+    <id>http://opendesignengine.net/issues/12?journal_id=543</id>
+    <updated>2019-07-09T12:06:23+00:00</updated>
+    <author>
+      <name>Alyssa Patterson</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Thank you for sharing information about Open Source licenses. This is really helpful information for all. Hope many people will read this post and share with others. Alyssa, Providing &lt;br /&gt;&lt;a href="http://www.secureassignmenthelp.com/" class="external"&gt;assignment help Sydney&lt;/a&gt; &#8216;s colleges students with on time delivery at best nominal price.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #12: Require all projects to have Open Source licenses</title>
+    <link href="http://opendesignengine.net/issues/12" rel="alternate"/>
+    <id>http://opendesignengine.net/issues/12?journal_id=544</id>
+    <updated>2019-07-12T12:15:56+00:00</updated>
+    <author>
+      <name>Ida wallace</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;J. Simmons wrote:&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+
+	&lt;p&gt;Write plugin to require projects list an approve license (OSI for software, OSHW for hardware).&lt;/p&gt;
+
+
+&lt;/blockquote&gt;
+
+	&lt;p&gt;Thanks for letting us know about the Open Source licenses requirement for certain projects and sharing require projects list an approve license.&lt;br /&gt;Ida,&lt;br /&gt;Get best writing assistance from the &lt;a href="http://www.assignmenthelpfolks.com/" class="external"&gt;Australian assignment writers&lt;/a&gt; at Assignment Help Folks.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #12: Require all projects to have Open Source licenses</title>
+    <link href="http://opendesignengine.net/issues/12" rel="alternate"/>
+    <id>http://opendesignengine.net/issues/12?journal_id=545</id>
+    <updated>2019-07-16T06:02:32+00:00</updated>
+    <author>
+      <name>Caroline Webb</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Appreciate you for sharing update information. My students searching for all projects to have open source licenses. So I will happily forward it with them. Thank you.&lt;/p&gt;
+
+
+	&lt;p&gt;Caroline,&lt;br /&gt;With a team of &lt;a href="http://www.personalstatementfolks.co.uk/" class="external"&gt;personal statement writers&lt;/a&gt; design result-driven personal statement at Personal Statement Folks in UK.&lt;/p&gt;    </content>
+  </entry>
+</feed>

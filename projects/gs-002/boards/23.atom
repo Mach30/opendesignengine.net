@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Groundstation v.2.0: Initial Questions</title>
+  <link rel="self" href="http://opendesignengine.net/projects/gs-002/boards/23.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/gs-002/boards/23"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-07-15T14:50:50+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Initial Questions: RE: Preliminary version of initial questions and answers</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/23/topics/522?r=537#message-537"/>
+    <id>http://opendesignengine.net/boards/23/topics/522?r=537#message-537</id>
+    <updated>2013-07-15T14:50:50+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;Q6&lt;/strong&gt; - That is correct. When I think of legacy requirements, I think of backward compatibility with previous hardware and software. The Ham license to transmit is a requirement of the user, not the project.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Initial Questions: RE: Preliminary version of initial questions and answers</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/23/topics/522?r=535#message-535"/>
+    <id>http://opendesignengine.net/boards/23/topics/522?r=535#message-535</id>
+    <updated>2013-07-15T14:47:24+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Hi Jeremy,&lt;/p&gt;
+
+
+	&lt;p&gt;You brought up some good points, and as always, your input is greatly appreciated.  I am just sorry it took me so long to get back to this to fix these issues.&lt;/p&gt;
+
+
+	&lt;p&gt;Q1: I plan to add the lessons learned to the GS 1.0 errata in the form of a paper.  This should happen this week.&lt;/p&gt;
+
+
+	&lt;p&gt;Q6: I would call a Ham license a legacy requirement because the license requirement predates the design, and it is required for full use.  I think I see where you are going with Q3, in that the Ham license is a requirement for transmit use.  Is this correct?&lt;/p&gt;
+
+
+	&lt;p&gt;Q11:  Good catch.  This is fixed in the Wiki page.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Initial Questions: RE: Preliminary version of initial questions and answers</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/23/topics/522?r=525#message-525"/>
+    <id>http://opendesignengine.net/boards/23/topics/522?r=525#message-525</id>
+    <updated>2013-07-08T08:57:37+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;Q1&lt;/strong&gt;: You mention version 1.0 and the things you learned from that. I wonder if that would go better in the errata or lessons learned sections of the 1.0 documentation.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Q6&lt;/strong&gt;: Is the Ham license really a legacy requirement, or should that go under something like &lt;strong&gt;Q3&lt;/strong&gt;?&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Q11&lt;/strong&gt;: I think "disposed up according" was probably meant to be "disposed of according".&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Initial Questions: Preliminary version of initial questions and answers</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/23/topics/522"/>
+    <id>http://opendesignengine.net/boards/23/topics/522</id>
+    <updated>2013-07-02T23:07:20+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;a name="Initial-Questions"&gt;&lt;/a&gt;
+&lt;h1 &gt;Initial Questions&lt;a href="#Initial-Questions" class="wiki-anchor"&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+
+
+	&lt;p&gt;The discussion that led to this set of initial questions can be found &lt;a href="https://opendesignengine.net/boards/18/topics/287" class="external"&gt;here&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Q1. Why are we making this?&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Tracking, communication, and command &amp;#38; control of spacecraft are essential capabilities for a spacefaring civilization. Ground stations are the principle links between the spacecraft and Earth used to facilitate these capabilities. The series of ground station related projects will develop the necessary open source hardware to perform these functions.  Version 1.0 was a good (good enough) proof of concept, but identified several weaknesses in the basic design which, while it was functional, it became clear that two versions were required: one low cost and simple to build for those just curious, and one powerful enough for limited professional use and extensible by changing modular components.  The latter design is the 2.0 design of the ground station.  It should be noted that this version will coexist with the 1.1 version, not supplant it.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Q2. Who is this for?&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Mach 30 volunteers, Makerspaces and their members, Amateur (Ham) radio operators, CubeSat designers and operators (including universities). With some minor modifications, most of them software, radio astronomers could be added to the list of users as well.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Q3. How will this be used?&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Early ground stations will be used to facilitate voice communications with orbiting satellites (including the ISS, HAM satellites, and CubeSats).  Note, not all satellites will support voice communications, in which case the early ground stations will simply provide a means of listening to the satellites' other radio signals. Data capabilities can be added easily to the system, either by demodulating the audio stream (as in a computer modem), or by using an Software Defined Receiver (SDR) such as the AMSAT Funcube Dongle or USRP and running the demodulation through a software module (GNU radio) using a PC or Laptop.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Q4. What features does it need to have (now)?&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Ability to predict opportunities for contact, aim an antenna array, and send and receive voice traffic.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Q5. What features does it need to have (later)?&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;a. In the future, our ground stations should be able to support sending and receiving command and control data from orbiting spacecraft. &lt;br /&gt;b. Lock to precision timebase such as GPS or other external source.&lt;br /&gt;c. Multiple ground stations should be able to be linked together to provide larger, contiguous coverage area. &lt;br /&gt;d. A central server architecture would allow access to the global network from multiple clients (commercialization opportunity?).&lt;br /&gt;d. Tracking of signals of unknown origin (subject to ITAR XIIa, XIII, and MTCR 121.16 item 12d2 and 12d3 restrictions).&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Q6. What are the legacy requirements?&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Transmitting will require HAM radio licenses (technician level or greater) in the US. Other countries may have other requirements.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Q7. Who's going to build this?&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Since the current 2013 Mach 30 Annual Plan does not yet have hardware expenses budgeted for this project, but it will be part of an academic endeavor of a Mach 30 volunteer, the volunteer will construct this project with privately acquired funding.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Q8. How many do we want to make?&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;One for the academic credit, but some effort will be made to enable kits to be built from the mechanical and electronic modules.  This kitification represents another commercial opportunity to purchase in bulk and ship complete kits for modest markup and postage to individuals, makerspaces, universities, etc.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Q9. What is the budget?&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The build budget for the PC controlled Azimuth - Elevation mount and the antenna is $500.00.  A dual band (VHF/UHF) ham radio transceiver and computer are all that are required to complete the ground station and should be acquired by the user.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Q10. What is the timeline?&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;To meet the academic credit requirements, this project must be complete by August 25th, 8 weeks after the start of the independent study class on July the 1st.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Q11. What waste products will be produced by the manufacture and/or operation of this?&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;It is likely that the first ground station will be used until a larger one is built, where the original will be kept as a backup. Any components that wear out, fail, or are damaged must be disposed up according to all federal, state and local guidelines in the US, or as regulations require in other parts of the world.  Once no longer needed, the original ground station will be archived.  It is also possible the university may wish to have the original for their display and/or use.  Kits and copies will be made out of parts which allow the reuse of the materials for other projects, keeping them from being improperly disposed of.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Initial Questions: Link to Amanda Wozniack's talk on which the initial questins and SEP is based.</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/23/topics/521"/>
+    <id>http://opendesignengine.net/boards/23/topics/521</id>
+    <updated>2013-07-02T23:05:13+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a class="external" href="http://www.adafruit.com/blog/2011/09/17/amanda-w0z-wozniak-open-sourcing-the-engineering-process-ohsummit/"&gt;http://www.adafruit.com/blog/2011/09/17/amanda-w0z-wozniak-open-sourcing-the-engineering-process-ohsummit/&lt;/a&gt;&lt;/p&gt;    </content>
+  </entry>
+</feed>

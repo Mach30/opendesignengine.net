@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Laboratory EKG Pre-Amplifier: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/w0z-ekg-6022j-v1/issues.atom?per_page=50&amp;amp;set_filter=1&amp;amp;tracker_id=1"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/w0z-ekg-6022j-v1/issues?per_page=50&amp;amp;set_filter=1&amp;amp;tracker_id=1"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-09-03T12:08:33+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Bug #169 (New): Enclosure Marking/Machining Accuracy Issue</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/169"/>
+    <id>http://opendesignengine.net/issues/169</id>
+    <updated>2013-09-03T12:08:33+00:00</updated>
+    <author>
+      <name>Amanda Wozniak</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I exported a DXF of the mechanical layers of the top assembly, and used that to laser-mark the enclosure lids for pilot drills. &lt;em&gt;&lt;strong&gt;But aligning the drill press by hand when you care about alignment tolerances is a poor choice.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;In the first five units, I wasn't able to machine the enclosure lids or bodies to any reasonable tolerance, so my fits were poor. I had to compensate by using stepped drill bits to add a lot of slop to all the holes.&lt;/p&gt;
+
+
+	&lt;p&gt;I need to fabricate a registration guide/jig that I can clamp to my work-piece which allows me to more precisely align my drills.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;em&gt;&lt;strong&gt;PROPOSED SOLUTION:&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+	&lt;ol&gt;
+	&lt;li&gt;dimension/draw enclosure lid perimter with mounting holes&lt;/li&gt;
+		&lt;li&gt;Use DXF to laser-cut a jig for the pilot holes - include perimeter with mounting holes for registration&lt;/li&gt;
+		&lt;li&gt;figure out a way to clamp/fixture the workpiece on my drill press&lt;/li&gt;
+		&lt;li&gt;test-drill using jig&lt;/li&gt;
+		&lt;li&gt;if that works - repeat process for enclosure body&lt;/li&gt;
+	&lt;/ol&gt;    </content>
+  </entry>
+</feed>

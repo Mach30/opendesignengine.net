@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  <link rel="self" href="http://opendesignengine.net/issues/184.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-09-18T16:25:23+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <entry>
+    <title>Open Design Engine - Feature #184: Add STL part editor using OpenJsCad</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/184"/>
+    <id>http://opendesignengine.net/issues/184?journal_id=292</id>
+    <updated>2013-09-18T16:25:23+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;#OSHWDocJam&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #184: Add STL part editor using OpenJsCad</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/184"/>
+    <id>http://opendesignengine.net/issues/184?journal_id=300</id>
+    <updated>2013-09-18T22:05:00+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Could this grow into something like real-time collaborative editing of assemblies?&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #184: Add STL part editor using OpenJsCad</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/184"/>
+    <id>http://opendesignengine.net/issues/184?journal_id=306</id>
+    <updated>2013-09-20T09:17:51+00:00</updated>
+    <author>
+      <name>J. Simmons</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Boy wouldn't that be something.  I can't imagine we could really replace CAD tools, but maybe for conceptual design and rapid prototyping (at least for smaller projects) we could look at that.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Open Design Engine - Feature #184: Add STL part editor using OpenJsCad</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/184"/>
+    <id>http://opendesignengine.net/issues/184?journal_id=546</id>
+    <updated>2019-07-24T06:30:54+00:00</updated>
+    <author>
+      <name>Ida wallace</name>
+    </author>
+    <content type="html">
+&lt;ul&gt;&lt;/ul&gt;&lt;p&gt;Very helpful information here on how to Google Docs like functionality work for editing 3D parts direct on ODE. I like to pass this information to my students who searching for details on it whom I am also serving marketing assignment help - &lt;a href="http://www.assignmenthelpfolks.com/marketing/" class="external"&gt;http://www.assignmenthelpfolks.com/marketing/&lt;/a&gt; maintain standard quality of work and plagiarism free work at Assignment Help Folks in Australia.&lt;/p&gt;    </content>
+  </entry>
+</feed>

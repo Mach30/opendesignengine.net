@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Development Setup</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body { font:80% Verdana,Tahoma,Arial,sans-serif; }
+h1, h2, h3, h4 {  font-family: "Trebuchet MS",Georgia,"Times New Roman",serif; }
+ul.toc { padding: 4px; margin-left: 0; }
+ul.toc li { list-style-type:none; }
+ul.toc li.heading2 { margin-left: 1em; }
+ul.toc li.heading3 { margin-left: 2em; }
+a.wiki-anchor { display: none; margin-left: 6px; text-decoration: none; }
+a.wiki-anchor:hover { color: #aaa !important; text-decoration: none; }
+h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor { display: inline; color: #ddd; }
+</style>
+</head>
+<body>
+<a name="Development-Setup"></a>
+<h1 >Development Setup<a href="Development_Setup.html%3Fversion=1.html#Development-Setup" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>The following instructions are meant to help get the ODE application up and running on your local workstation.</p>
+
+
+	<a name="Code-checkout"></a>
+<h1 > Code checkout<a href="Development_Setup.html%3Fversion=1.html#Code-checkout" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>To get started, create a local repository with svn checkout:</p>
+
+
+<pre>
+svn checkout https://opendesignengine.net/svn/ode/trunk
+</pre>
+
+	<a name="Create-Development-Database"></a>
+<h1 >Create Development Database<a href="Development_Setup.html%3Fversion=1.html#Create-Development-Database" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>You will need to setup a local development MySQL database and call 'ode_development'.  Next we need to create a new database.yml so the application knows how to connect to the database.  To accomplish this, simple copy the database.yml.exampe file:</p>
+
+
+<pre>
+cp config/database.yml.example confit/database.yml
+</pre>
+
+	<p>Under the production: section of the the config fill, fill in the database name, username, and password.</p>
+
+
+	<a name="Bundler"></a>
+<h1 >Bundler<a href="Development_Setup.html%3Fversion=1.html#Bundler" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>To install the required third-party gems to run the ODE application, we run the following Bundler command:</p>
+
+
+<pre>
+bundle install
+</pre>
+
+	<p>Note: you will need to install Bundler first (gem install bundler)</p>
+
+
+	<a name="Database-Preparation"></a>
+<h1 >Database Preparation<a href="Development_Setup.html%3Fversion=1.html#Database-Preparation" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>To prepare the database, we first need to run migrations:</p>
+
+
+<pre>
+RAILS_ENV=production rake db:migrate
+</pre>
+
+	<p>We now need some seed data to get started:</p>
+
+
+<pre>
+RAILS_ENV=production rake db:seed
+</pre>
+
+	<a name="Running-the-Application"></a>
+<h1 >Running the Application<a href="Development_Setup.html%3Fversion=1.html#Running-the-Application" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>Now we should be ready to run the application locally:</p>
+
+
+<pre>
+RAILS_ENV=production script/server
+</pre>
+
+	<p>If all goes well, you should be able to open the application at <a class="external" href="http://localhost:3000">http://localhost:3000</a></p>
+</body>
+</html>

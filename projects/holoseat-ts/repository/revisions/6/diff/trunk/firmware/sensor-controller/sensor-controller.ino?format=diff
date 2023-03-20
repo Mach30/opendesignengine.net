@@ -1,0 +1,51 @@
+Index: sensor-controller.ino
+===================================================================
+--- sensor-controller.ino	(revision 5)
++++ sensor-controller.ino	(revision 6)
+@@ -17,6 +17,8 @@
+ // testing values
+ volatile unsigned long PoleCount;
+ int MaxCadence;
++float AverageCadence;
++int NumberOfCadences;
+ int Direction;
+ 
+ // common function to attach/detach interrupts
+@@ -81,13 +83,14 @@
+ }
+ 
+ void StatsGet(char* messageId) {
+-  const size_t bufferSize = JSON_OBJECT_SIZE(4);
++  const size_t bufferSize = JSON_OBJECT_SIZE(5);
+   DynamicJsonBuffer jsonBuffer(bufferSize);
+   JsonObject& root = jsonBuffer.createObject();
+ 
+   root["messageId"] = messageId;  
+   root["poles"] = PoleCount;
+   root["maxCadence"] = MaxCadence;
++  root["averageCadence"] = round(AverageCadence/NumberOfCadences);
+   root["direction"] = Direction;
+   root.printTo(Serial);
+   Serial.println();
+@@ -99,9 +102,11 @@
+   WalkingForward = true;
+   SensedDeltaT = 5000;            // initialize sensed deltaT (and the value used to compute it, LastStepTime) to 5 seconds in the past
+   LastStepTime = millis() - 5000; // as above
++  NumberOfCadences = 0;
+   
+   PoleCount = 0;
+   MaxCadence = 0;
++  AverageCadence = 0;
+   Direction = 0;
+ 
+   StatsGet(messageId);
+@@ -131,6 +136,9 @@
+     float localDeltaT = (currentTime - LastStepTime);  
+     float deltaT = max(SensedDeltaT, localDeltaT)/1000; // in seconds
+     Cadence = round(60.0/deltaT/NumPoles);  // in RPM
++
++    NumberOfCadences++;
++    AverageCadence += Cadence;
+   
+     // check for new max cadence
+     if (Cadence > MaxCadence)

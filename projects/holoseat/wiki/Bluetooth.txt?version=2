@@ -1,0 +1,25 @@
+h1. Bluetooth
+
+{{>toc}}
+
+h2. Background
+
+This page covers research into creating a Bluetooth HID connection from the Holoseat controller to the gaming system (PC or console).  The Holoseat controller will need to be able to present itself as either a keyboard & mouse combination or a joypad.  Much of the following research was found by following the links from a Hackaday post - "Convert Any USB Keyboard to Bluetooth":http://hackaday.com/2016/09/04/convert-any-usb-keyboard-to-bluetooth/.
+
+h2. High Level Example
+
+{{youtube(L7lEDS6xj5w)}}
+
+{{youtube(5qXv7TJI324)}}
+
+{{youtube(qyRJgtwX0cY)}}
+
+h2. Bluetooth Device Details
+
+The video below is a summary of this project - "Bluetooth HID gamepad using HC-05 module":https://mitxela.com/projects/bluetooth_hid_gamepad
+
+{{youtube(fWXJDNcbZAA)}}
+
+h2. ESP32 Wifi Bluetooth Module
+
+"ESP32 Wifi Bluetooth Module":http://www.cnx-software.com/2016/09/05/you-can-now-buy-esp3212-esp32-wifi-bluetooth-module-for-6-95, another Bluetooth module that has people talking.  Need to do more research.

@@ -1,0 +1,47 @@
+h1. Initial Questions
+
+The discussion that led to this set of initial questions can be found "here":https://opendesignengine.net/boards/18/topics/287
+
+*Q1. Why are we making this?*
+
+Tracking, communication, and command & control of spacecraft are essential capabilities for a spacefaring civilization. Ground stations are the principle links between the spacecraft and Earth used to facilitate these capabilities. The series of ground station related projects will develop the necessary open source hardware to perform these functions.
+
+*Q2. Who is this for?*
+
+Mach 30 volunteers, Makerspaces and their members, CubeSat designers and operators (including universities). With some minor modifications, most of them software, radio astronomers could be added to the list of users as well.
+
+*Q3. How will this be used?*
+
+Early ground stations will be used to facilitate voice communications with orbiting satellites (including the ISS, HAM satellites, and CubeSats).  Note, not all satellites will support voice communications, in which case the early ground stations will simply provide a means of listening to the satellites' other radio signals. Data capabilities can be added easily to the system, either by demodulating the audio stream (as in a computer modem), or by using an Software Defined Receiver (SDR) such as the AMSAT Funcube Dongle or USRP and running the demodulation through a software module (GNU radio) using a PC or Laptop.
+
+*Q4. What features does it need to have (now)?*
+
+Ability to predict opportunities for contact, and the ability to receive and send voice traffic.
+
+*Q5. What features does it need to have (later)?*
+
+In the future, our ground stations should be able to support sending and receiving command and control data from orbiting spacecraft. For command and control a tracking system would be required since those channels tend to be in a higher frequency range and thus will need a dish. This means that directional antennas and antenna rotator will be required. Additionally, it would be interesting to investigate the possibility of linking multiple ground stations together to provide larger coverage area (imagine if makerspaces across the country, or world, had ground stations linked over the internet so smaller satellite operators could have greater coverage and contact to their satellites). Linking would require standardized equipment with the audio stream being synched by a precision GPS timebase. This will probably be necessary for radio science and video applications as well. For something similar in many ways, have a look at http://www.irlp.net/
+
+*Q6. What are the legacy requirements?*
+
+Transmitting will require HAM radio licenses (technician level or greater) in the US. Other countries may have other requirements.
+
+*Q7. Who's going to build this?*
+
+This is a point of discussion, since the current 2013 Mach 30 Annual Plan does not yet have hardware expenses budgeted for this project. This project may be built entirely through volunteer work and funding under the Mach 30 banner though.
+
+*Q8. How many do we want to make?*
+
+This is a great opportunity to develop a kit which individuals, makerspaces, universities, etc could build and set up. We can kitify the omni antenna, for the starter level project and the Yagi antennas and rotator from later versions.
+
+*Q9. What is the budget?*
+
+Individual level 1 kites have a budget of approximately $200.  However, this project will clearly have multiple kites, so the over all budget will go much higher.  Current estimates are about 5 kites or about $1000. This budget leaves out the expense of radio(s) and additional equipment to keep the entry level version at a level 1 kite tier.
+
+*Q10. What is the timeline?*
+
+TBD - again the current 2013 Mach 30 Annual Plan did not budget for this to go into production so quickly (we did not anticipate increased levels of participation coming so quickly). The volunteer timeline for the first prototype unit is intended for use within 2013.
+
+*Q11. What waste products will be produced by the manufacture and/or operation of this?*
+
+TBD - It is most likely that elements from earlier version will be reused or kept as backups. Any components that wear out, fail, or are damaged must be disposed up according to all federal, state and local guidelines in the US, or as regulations require in other parts of the world.

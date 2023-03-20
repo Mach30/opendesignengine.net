@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Epoxy Granite CNC Mill: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/egmill/issues.atom?set_filter=1&amp;amp;sort=status%2Cupdated_on%3Adesc%2Cid%3Adesc&amp;amp;tracker_id=4"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/egmill/issues?set_filter=1&amp;amp;sort=status%2Cupdated_on%3Adesc%2Cid%3Adesc&amp;amp;tracker_id=4"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2012-07-13T20:51:13+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Milestone #70 (New): Pour Base</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/70"/>
+    <id>http://opendesignengine.net/issues/70</id>
+    <updated>2012-07-13T20:51:13+00:00</updated>
+    <author>
+      <name>Brandin Watson</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Get everything together; finished mold, rebar, inserts, attachment bolts, vacuuming system, vibrating table, EG components, and pour the mold for the base.&lt;/p&gt;    </content>
+  </entry>
+</feed>

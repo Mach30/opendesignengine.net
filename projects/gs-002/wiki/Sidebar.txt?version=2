@@ -1,0 +1,32 @@
+h3. [[Sidebar|Navigation]]
+
+h3. Ground Station v.2.0
+
+* General Overview
+
+h4. Systems Engineering Process
+
+# [[Initial Questions|Initial Questions]]
+# [[Requirements Document|Requirements Document]]
+# [[Block Diagram|Block Diagram]]
+# [[Architecture Study|Architecture Study]]
+# [[Preliminary Design|Preliminary Design]]
+# [[Detailed Design|Detailed Design]]
+# [[Design Review|Design Review]]
+# [[Procurement/Manufacture|Procurement/Manufacture]]
+# [[Assembly|Assembly]]
+# [[Integration|Integration]]
+# [[Testing|Testing]]
+
+h4. Documentation
+
+# [[Budget|Budget]]
+# [[Timeline|Timeline]]
+# [[BOM|BOM]]
+# [[Plans|Plans]]
+# [[Source Code|Source Code]]
+# [[Assembly Instructions|Assembly Instructions]]
+# [[Operating Manual|Operating Manual]]
+# [[Safety|Safety]]
+# [[Licensing and Attribution|Licensing and Attribution]]
+# [[Errata|Errata]]

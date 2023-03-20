@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Requirements Document</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body { font:80% Verdana,Tahoma,Arial,sans-serif; }
+h1, h2, h3, h4 {  font-family: "Trebuchet MS",Georgia,"Times New Roman",serif; }
+ul.toc { padding: 4px; margin-left: 0; }
+ul.toc li { list-style-type:none; }
+ul.toc li.heading2 { margin-left: 1em; }
+ul.toc li.heading3 { margin-left: 2em; }
+a.wiki-anchor { display: none; margin-left: 6px; text-decoration: none; }
+a.wiki-anchor:hover { color: #aaa !important; text-decoration: none; }
+h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor { display: inline; color: #ddd; }
+</style>
+</head>
+<body>
+<a name="Ground-Sphere-Requirements-v02"></a>
+<h1 >Ground Sphere Requirements v0.2<a href="Requirements_Document.html%3Fversion=6.html#Ground-Sphere-Requirements-v02" class="wiki-anchor">&para;</a></h1>
+
+
+	<ul class="toc"><li><a href="Requirements_Document.html%3Fversion=6.html#Ground-Sphere-Requirements-v02">Ground Sphere Requirements v0.2</a><ul><li><a href="Requirements_Document.html%3Fversion=6.html#Technical-Requirements">Technical Requirements</a><ul><li><a href="Requirements_Document.html%3Fversion=6.html#TR-11-Enable-users-to-receive-space-tweets">TR 1.1 Enable users to receive "space tweets"</a><ul><li><a href="Requirements_Document.html%3Fversion=6.html#TR-111-Predict-SkyCube-flyover-opportunities">TR 1.1.1 Predict SkyCube flyover opportunities</a></li><li><a href="Requirements_Document.html%3Fversion=6.html#TR-112-Receive-radio-signals-on-915-MHz">TR 1.1.2 Receive radio signals on 915 MHz</a></li><li><a href="Requirements_Document.html%3Fversion=6.html#TR-113-Decode-space-tweet-message-from-SkyCube">TR 1.1.3 Decode "space tweet" message from SkyCube</a></li><li><a href="Requirements_Document.html%3Fversion=6.html#TR-114-Account-for-Doppler-shift">TR 1.1.4 Account for Doppler shift</a></li></ul>
+</li><li><a href="Requirements_Document.html%3Fversion=6.html#TR-12-Be-easy-to-assemble-from-kit-components">TR 1.2 Be easy to assemble from kit components</a><ul><li><a href="Requirements_Document.html%3Fversion=6.html#TR-121-Time-to-assemble">TR 1.2.1 Time to assemble</a></li><li><a href="Requirements_Document.html%3Fversion=6.html#TR-122-Tools-for-assembly">TR 1.2.2 Tools for assembly</a></li></ul>
+</li><li><a href="Requirements_Document.html%3Fversion=6.html#TR-13-Have-low-shipping-costs-for-the-packaged-kit">TR 1.3 Have low shipping costs for the packaged kit</a></li><li><a href="Requirements_Document.html%3Fversion=6.html#TR-14-Operate-using-a-modern-Windows-PC">TR 1.4 Operate using a modern Windows PC</a><ul><li><a href="Requirements_Document.html%3Fversion=6.html#TR-141-Software-must-run-on-Windows">TR 1.4.1 Software must run on Windows</a></li><li><a href="Requirements_Document.html%3Fversion=6.html#TR-142-Software-must-be-easy-to-install">TR 1.4.2 Software must be easy to install</a></li><li><a href="Requirements_Document.html%3Fversion=6.html#TR-143-Hardware-must-connect-to-PC-using-standard-ports">TR 1.4.3 Hardware must connect to PC using standard port(s)</a></li></ul>
+</li><li><a href="Requirements_Document.html%3Fversion=6.html#TR-15-Hardware-must-be-robust">TR 1.5 Hardware must be robust</a></li></ul>
+</li><li><a href="Requirements_Document.html%3Fversion=6.html#Project-Requirements">Project Requirements</a><ul><li><a href="Requirements_Document.html%3Fversion=6.html#PR-11-Number-to-produce">PR 1.1  Number to produce</a></li><li><a href="Requirements_Document.html%3Fversion=6.html#PR-21-Budget">PR 2.1 Budget</a><ul><li><a href="Requirements_Document.html%3Fversion=6.html#PR-211-Unit-cost">PR 2.1.1 Unit cost</a></li><li><a href="Requirements_Document.html%3Fversion=6.html#PR-212-Development-cost">PR 2.1.2 Development cost</a></li></ul>
+</li><li><a href="Requirements_Document.html%3Fversion=6.html#PR-31-Timeline">PR 3.1 Timeline</a></li></ul></li></ul></li></ul>
+
+
+	<a name="Technical-Requirements"></a>
+<h2 >Technical Requirements<a href="Requirements_Document.html%3Fversion=6.html#Technical-Requirements" class="wiki-anchor">&para;</a></h2>
+
+
+	<a name="TR-11-Enable-users-to-receive-space-tweets"></a>
+<h3 >TR 1.1 Enable users to receive "space tweets"<a href="Requirements_Document.html%3Fversion=6.html#TR-11-Enable-users-to-receive-space-tweets" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="TR-111-Predict-SkyCube-flyover-opportunities"></a>
+<h4 >TR 1.1.1 Predict SkyCube flyover opportunities<a href="Requirements_Document.html%3Fversion=6.html#TR-111-Predict-SkyCube-flyover-opportunities" class="wiki-anchor">&para;</a></h4>
+
+
+	<p>The <strong>Ground Sphere</strong> will include software which predicts when the SkyCube satellite will flyover the ground station and be within signal reception range</p>
+
+
+	<a name="TR-112-Receive-radio-signals-on-915-MHz"></a>
+<h4 >TR 1.1.2 Receive radio signals on 915 MHz<a href="Requirements_Document.html%3Fversion=6.html#TR-112-Receive-radio-signals-on-915-MHz" class="wiki-anchor">&para;</a></h4>
+
+
+	<p>The <strong>Ground Sphere</strong> will receive radio signals on 915 MHz with sufficient gain to enable decoder software to decode the "space tweet" text message</p>
+
+
+	<a name="TR-113-Decode-space-tweet-message-from-SkyCube"></a>
+<h4 >TR 1.1.3 Decode "space tweet" message from SkyCube<a href="Requirements_Document.html%3Fversion=6.html#TR-113-Decode-space-tweet-message-from-SkyCube" class="wiki-anchor">&para;</a></h4>
+
+
+	<p>Decode BPSK-modulated, unencrypted AX.25 data packets sent at 9600 baud</p>
+
+
+	<a name="TR-114-Account-for-Doppler-shift"></a>
+<h4 >TR 1.1.4 Account for Doppler shift<a href="Requirements_Document.html%3Fversion=6.html#TR-114-Account-for-Doppler-shift" class="wiki-anchor">&para;</a></h4>
+
+
+	<p>The <strong>Ground Sphere</strong> needs to account for Doppler shift during satellite flyovers</p>
+
+
+	<a name="TR-12-Be-easy-to-assemble-from-kit-components"></a>
+<h3 >TR 1.2 Be easy to assemble from kit components<a href="Requirements_Document.html%3Fversion=6.html#TR-12-Be-easy-to-assemble-from-kit-components" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="TR-121-Time-to-assemble"></a>
+<h4 >TR 1.2.1 Time to assemble<a href="Requirements_Document.html%3Fversion=6.html#TR-121-Time-to-assemble" class="wiki-anchor">&para;</a></h4>
+
+
+	<p>The <strong>Ground Sphere</strong> will take no longer than 60 minutes (threshold)/30 minutes (objective) to assemble by an average maker</p>
+
+
+	<a name="TR-122-Tools-for-assembly"></a>
+<h4 >TR 1.2.2 Tools for assembly<a href="Requirements_Document.html%3Fversion=6.html#TR-122-Tools-for-assembly" class="wiki-anchor">&para;</a></h4>
+
+
+	<p>The <strong>Ground Sphere</strong> will only require simple tools (screw drivers, pliers, wrenches, etc) for assembly</p>
+
+
+	<a name="TR-13-Have-low-shipping-costs-for-the-packaged-kit"></a>
+<h3 >TR 1.3 Have low shipping costs for the packaged kit<a href="Requirements_Document.html%3Fversion=6.html#TR-13-Have-low-shipping-costs-for-the-packaged-kit" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>The <strong>Ground Sphere</strong> kit will cost no more than $15 (threshold)/$7.50 (objective) to ship by ground across the USA.</p>
+
+
+	<a name="TR-14-Operate-using-a-modern-Windows-PC"></a>
+<h3 >TR 1.4 Operate using a modern Windows PC<a href="Requirements_Document.html%3Fversion=6.html#TR-14-Operate-using-a-modern-Windows-PC" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="TR-141-Software-must-run-on-Windows"></a>
+<h4 >TR 1.4.1 Software must run on Windows<a href="Requirements_Document.html%3Fversion=6.html#TR-141-Software-must-run-on-Windows" class="wiki-anchor">&para;</a></h4>
+
+
+	<p>The <strong>Ground Sphere</strong> software must run on Windows 7 or Windows 8 (32bit or 64bit)</p>
+
+
+	<a name="TR-142-Software-must-be-easy-to-install"></a>
+<h4 >TR 1.4.2 Software must be easy to install<a href="Requirements_Document.html%3Fversion=6.html#TR-142-Software-must-be-easy-to-install" class="wiki-anchor">&para;</a></h4>
+
+
+	<p>The <strong>Ground Sphere</strong> software must ship in a Windows installer</p>
+
+
+	<a name="TR-143-Hardware-must-connect-to-PC-using-standard-ports"></a>
+<h4 >TR 1.4.3 Hardware must connect to PC using standard port(s)<a href="Requirements_Document.html%3Fversion=6.html#TR-143-Hardware-must-connect-to-PC-using-standard-ports" class="wiki-anchor">&para;</a></h4>
+
+
+	<p>The ground station radio must connect to the ground station computer through a commonly available port (for example: USB)</p>
+
+
+	<a name="TR-15-Hardware-must-be-robust"></a>
+<h3 >TR 1.5 Hardware must be robust<a href="Requirements_Document.html%3Fversion=6.html#TR-15-Hardware-must-be-robust" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>The <strong>Ground Sphere</strong> hardware should minimize the opportunity for mechanical failures (from things such as broken connectors or a lack of strain relief)</p>
+
+
+	<a name="Project-Requirements"></a>
+<h2 >Project Requirements<a href="Requirements_Document.html%3Fversion=6.html#Project-Requirements" class="wiki-anchor">&para;</a></h2>
+
+
+	<a name="PR-11-Number-to-produce"></a>
+<h3 >PR 1.1  Number to produce<a href="Requirements_Document.html%3Fversion=6.html#PR-11-Number-to-produce" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>The <strong>Ground Sphere</strong> design must enable the production  of at least 30 +/- 5 v1.0 kits by volunteers in one or more makerspaces</p>
+
+
+	<a name="PR-21-Budget"></a>
+<h3 >PR 2.1 Budget<a href="Requirements_Document.html%3Fversion=6.html#PR-21-Budget" class="wiki-anchor">&para;</a></h3>
+
+
+	<a name="PR-211-Unit-cost"></a>
+<h4 >PR 2.1.1 Unit cost<a href="Requirements_Document.html%3Fversion=6.html#PR-211-Unit-cost" class="wiki-anchor">&para;</a></h4>
+
+
+	<p>The materials cost must be under $100 per kit.</p>
+
+
+	<a name="PR-212-Development-cost"></a>
+<h4 >PR 2.1.2 Development cost<a href="Requirements_Document.html%3Fversion=6.html#PR-212-Development-cost" class="wiki-anchor">&para;</a></h4>
+
+
+	<p>The project budget (covering three prototypes) must be no more than $500 (threshold)/$400 (objective)</p>
+
+
+	<a name="PR-31-Timeline"></a>
+<h3 >PR 3.1 Timeline<a href="Requirements_Document.html%3Fversion=6.html#PR-31-Timeline" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>Version 1.0 of the <strong>Ground Sphere</strong> will be ready for kit production no later than Feb 14, 2014.</p>
+</body>
+</html>

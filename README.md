@@ -1,0 +1,1 @@
+This is a static checkout of opendesignengine.net, a web portal that was developed by [Mach 30](http://mach30.org) to make it so that open source hardware projects could post not just the plans, but the entire design process of their hardware projects.

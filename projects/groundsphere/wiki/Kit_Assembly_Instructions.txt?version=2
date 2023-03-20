@@ -1,0 +1,45 @@
+h1. Ground Sphere Kit Assembly Instructions v0.2
+
+{{toc}}
+
+h3. Introduction
+
+These instructions are designed to help you assemble a Ground Sphere ground station kit once it has arrived.
+
+h3. Tools
+
+* Common screwdriver
+* Optional: 8mm combination wrench
+* Optional: toothpick or dental pick
+
+h3. Materials
+
+* 1 ea Upper Assembly, Ground plane, and ¾”PVC to ½ NPT adapter (previously assembled)
+* 1 ea Lower Assembly (previously assembled)
+* 2 ea Aerial Loops
+
+h3. Safety issues
+
+Care must be taken when working with hand tools.
+
+h3. Product or Outcome
+
+A complete Ground Sphere Mk2 Ground Station.
+
+h3. Procedure
+
+# Remove all parts from the box and protective coverings.
+# Using a common screwdriver, unscrew the outlet cover mounting screws and remove the outlet cover (ANT04).
+# Insert the antenna line (ANT13) SMA connector through the hole in the outlet cover (ANT04).
+# Thread the outlet cover (ANT04) on to the upper assembly threads, twisting until moderately tight.
+# Connect the antenna line (ANT13) SMA connector to the input connector of the preamp (RAD02).  
+## Finger tight should be fine, but if the clearance is too tight to get access, use an 8mm combination wrench to turn the connector.  
+## Do not tighten beyond lightly snug, or the SMA connector may snap off the preamp (RAD02).
+# Using a common screwdriver, reattach the outlet cover (ANT04) to the base.
+# Place the ground plane assembly over the purple coupling section.
+# Insert the purple coupling section into the upper assembly and press until snug.
+# Loosen all four aerial retention screws on the aerial terminals (ANT07).
+# Using a toothpick to push it through from the bottom, thread the conductive thread tail into the marked aerial terminal.
+# Insert the aerial ends into opposing aerial terminals, taking care not to drop the ground lead from the ground plane.
+# Tighten the aerial retention screws on the aerial terminals (ANT07).
+# View the assembled unit from the top and adjust the loops to be vertical and perpendicular to each other.

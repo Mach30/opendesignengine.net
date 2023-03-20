@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>HSP</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body { font:80% Verdana,Tahoma,Arial,sans-serif; }
+h1, h2, h3, h4 {  font-family: "Trebuchet MS",Georgia,"Times New Roman",serif; }
+ul.toc { padding: 4px; margin-left: 0; }
+ul.toc li { list-style-type:none; }
+ul.toc li.heading2 { margin-left: 1em; }
+ul.toc li.heading3 { margin-left: 2em; }
+a.wiki-anchor { display: none; margin-left: 6px; text-decoration: none; }
+a.wiki-anchor:hover { color: #aaa !important; text-decoration: none; }
+h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor { display: inline; color: #ddd; }
+</style>
+</head>
+<body>
+<a name="Holoseat-Serial-Protocol"></a>
+<h1 >Holoseat Serial Protocol<a href="HSP.html%3Fversion=25.html#Holoseat-Serial-Protocol" class="wiki-anchor">&para;</a></h1>
+
+
+	<ul class="toc right"><li><a href="HSP.html%3Fversion=25.html#Holoseat-Serial-Protocol">Holoseat Serial Protocol</a><ul><li><a href="HSP.html%3Fversion=25.html#Introduction">Introduction</a></li><li><a href="HSP.html%3Fversion=25.html#Serial-Port-Configuration">Serial Port Configuration</a></li><li><a href="HSP.html%3Fversion=25.html#Command-Structure">Command Structure</a></li><li><a href="HSP.html%3Fversion=25.html#Low-Level-Commands">Low Level Commands</a></li><li><a href="HSP.html%3Fversion=25.html#Public-Commands">Public Commands</a></li></ul></li></ul>
+
+
+	<a name="Introduction"></a>
+<h2 >Introduction<a href="HSP.html%3Fversion=25.html#Introduction" class="wiki-anchor">&para;</a></h2>
+
+
+	<p><em><strong>Note</strong>: Beginning with version 0.4.0, this document supersedes the material covered in <a href="https://opendesignengine.net/projects/holoseat/wiki/Project&#32;Software.html" class="wiki-page">Project Software</a>.<br /></em><br />The HoloSeat firmware has a serial protocol, the Holoseat Serial Protocol (HSP), to enable the desktop configuration app to modify all key parameters and to determine the current configuration of the Holoseat at runtime.  It is laid out to mirror the REST API presented to Holoseat clients by the desktop application.</p>
+
+
+	<a name="Serial-Port-Configuration"></a>
+<h2 >Serial Port Configuration<a href="HSP.html%3Fversion=25.html#Serial-Port-Configuration" class="wiki-anchor">&para;</a></h2>
+
+
+	<table>
+		<tr>
+			<td><strong>Field</strong></td>
+			<td><strong>Value</strong></td>
+		</tr>
+		<tr>
+			<td>Baud Rate</td>
+			<td>115200</td>
+		</tr>
+		<tr>
+			<td>Data Bits</td>
+			<td>8</td>
+		</tr>
+		<tr>
+			<td>Parity</td>
+			<td>None</td>
+		</tr>
+		<tr>
+			<td>Stop Bit</td>
+			<td>1</td>
+		</tr>
+	</table>
+
+
+
+
+	<a name="Command-Structure"></a>
+<h2 >Command Structure<a href="HSP.html%3Fversion=25.html#Command-Structure" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Commands are sent as JSON strings with a message ID (may be an empty string, but must be present), a URI, an HTTP verb, and possibly arguments.</p>
+
+
+	<p>Note, the Holoseat Python serial library will insert a message ID if none is included.  But users interacting directly with the serial port must include at least an empty message ID.  This means that the message ID is optional from the app serial monitor and from the app libraries, but not the Arduino serial monitor.</p>
+
+
+	<p><strong>TODO</strong> (fill this in more)</p>
+
+
+	<a name="Low-Level-Commands"></a>
+<h2 >Low Level Commands<a href="HSP.html%3Fversion=25.html#Low-Level-Commands" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>The low level commands are intended development use.  These commands will not be reproduced in the Holoseat REST API.</p>
+
+
+	<table>
+		<tr>
+			<td><strong>Command Name</strong></td>
+			<td><strong>URI</strong></td>
+			<td><strong>Verb</strong></td>
+		</tr>
+	</table>
+
+
+
+
+	<a name="Public-Commands"></a>
+<h2 >Public Commands<a href="HSP.html%3Fversion=25.html#Public-Commands" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>The following commands mirror the REST API to implement the features of the REST API.</p>
+
+
+	<table>
+		<tr>
+			<td><strong>Command Name</strong></td>
+			<td><strong>URI</strong></td>
+			<td><strong>Verb</strong></td>
+		</tr>
+		<tr>
+			<td>Get Device Name</td>
+			<td>/main/devicename</td>
+			<td>GET</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="2"><code>{"messageId":"ee764e45b0de469d9c949dc1c43beb1a","uri":"/main/devicename","verb":"GET"}</code></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="2"><code>{messageId":"ee764e45b0de469d9c949dc1c43beb1a","deviceName":"Holoseat Alpha"}</code></td>
+		</tr>
+		<tr>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td>Get Version</td>
+			<td>/main/version</td>
+			<td>GET</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="2"><code>{"messageId":"ee764e45b0de469d9c949dc1c43beb1a","uri":"/main/version","verb":"GET"}</code></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="2"><code>{"messageId":"ee764e45b0de469d9c949dc1c43beb1a","hwVer":"v0.4","fwVer":"v0.4.0","hspVer":"v0.4.0"}</code></td>
+		</tr>
+		<tr>
+			<td>Get Enabled State</td>
+			<td>/main/enabled</td>
+			<td>GET</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="2"><code>{"messageId":"ee764e45b0de469d9c949dc1c43beb1a","uri":"/main/enabled","verb":"GET"}</code></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="2"><code>{messageId":"ee764e45b0de469d9c949dc1c43beb1a","enabled":1}</code></td>
+		</tr>
+		<tr>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td>Set Enabled State</td>
+			<td>/main/enabled</td>
+			<td>PUT</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="2"><code>{"messageId":"ee764e45b0de469d9c949dc1c43beb1a","uri":"/main/enabled","verb":"PUT", "args":{"enabled":0}}</code></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="2"><code>{messageId":"ee764e45b0de469d9c949dc1c43beb1a","enabled":0}</code></td>
+		</tr>
+		<tr>
+			<td colspan="3"></td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,9 @@
+h1. Ground Sphere Software Source Code v0.2
+
+In order to download the latest source code for the SeeDeR SDR/Packet Decoding software, you will need a subversion client.
+
+Once you have used the client to check the code out, the top level directory will be @groundsphere@ and the most current production version will be in the @trunk@ directory.
+
+There will also be milestone versions available for download from "DMSF":https://opendesignengine.net/dmsf/groundsphere?folder_id=38 . These versions will not necessarily be the most up-to-date though.
+
+For instructions on how to use the software, please see the [[Operating Manual]]

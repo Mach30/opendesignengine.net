@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Epoxy Granite CNC Mill: Issues</title>
+  <link rel="self" href="http://opendesignengine.net/projects/egmill/issues.atom?per_page=25&amp;amp;set_filter=1&amp;amp;tracker_id=2"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/egmill/issues?per_page=25&amp;amp;set_filter=1&amp;amp;tracker_id=2"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2012-07-13T20:48:43+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Feature #69 (New): Make Mold</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/69"/>
+    <id>http://opendesignengine.net/issues/69</id>
+    <updated>2012-07-13T20:48:43+00:00</updated>
+    <author>
+      <name>Brandin Watson</name>
+    </author>
+    <content type="html">
+&lt;p&gt;We have the design files for the mold. Now we need to find some melamine and at time that we can get together with Tux-Lab to get the components routed out.&lt;/p&gt;
+
+
+	&lt;p&gt;Need to design and attach a super-structure and internal support system.&lt;/p&gt;
+
+
+	&lt;p&gt;I also need to get Tux-Lab measurements for the files.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #68 (New): Finish v1 design of mill</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/68"/>
+    <id>http://opendesignengine.net/issues/68</id>
+    <updated>2012-07-13T20:43:50+00:00</updated>
+    <author>
+      <name>Brandin Watson</name>
+    </author>
+    <content type="html">
+&lt;p&gt;We have designed the base, now we need to do at least a preliminary design of the gantry system.&lt;/p&gt;
+
+
+	&lt;p&gt;We also need to determine the best system to use as rails for the gantry to move on.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Feature #67 (New): Vacuum</title>
+    <link rel="alternate" href="http://opendesignengine.net/issues/67"/>
+    <id>http://opendesignengine.net/issues/67</id>
+    <updated>2012-07-13T20:40:05+00:00</updated>
+    <author>
+      <name>Brandin Watson</name>
+    </author>
+    <content type="html">
+&lt;p&gt;We need to create a vacuuming system to mitigate air bubbles in the epoxy granite. It needs to be able to fit around the assembled mold.&lt;/p&gt;
+
+
+	&lt;p&gt;The cured EG may work perfectly for our purposes even with some bubbles but it is better safe than sorry.&lt;/p&gt;    </content>
+  </entry>
+</feed>

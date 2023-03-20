@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Ground Sphere CubeSat Ground Station - Refining Ground Sphere testing schedule - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../favicon.ico%3F1359925685.html' />
+<link href="../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+  <link href="../../../stylesheets/scm.css%3F1359925542.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-messages action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../index.html" class="home">Home</a></li>
+<li><a href="../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="../../../search/index/groundsphere.html" method="get">
+        <input name="messages" type="hidden" value="1" />
+        <a href="../../../search/index/groundsphere.html" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Ground Sphere CubeSat Ground Station</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../projects/groundsphere.html" class="overview">Overview</a></li>
+<li><a href="../../../projects/groundsphere/activity.html" class="activity">Activity</a></li>
+<li><a href="../../../projects/groundsphere/roadmap.html" class="roadmap">Roadmap</a></li>
+<li><a href="../../../projects/groundsphere/issues.1.html" class="issues">Issues</a></li>
+<li><a href="../../../projects/groundsphere/issues/gantt.html" class="gantt">Gantt</a></li>
+<li><a href="../../../projects/groundsphere/news.html" class="news">News</a></li>
+<li><a href="../../../dmsf/groundsphere.html" class="dmsf">DMSF</a></li>
+<li><a href="../../../projects/groundsphere/wiki.html" class="wiki">Wiki</a></li>
+<li><a href="../../../projects/groundsphere/boards.html" class="boards selected">Forums</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <p class="breadcrumb"><a href="../../../projects/groundsphere/boards.html">Forums</a> » <a href="../../../projects/groundsphere/boards/39.html">Design Discussions</a> » </p>
+
+<div class="contextual">
+    <span class="message-671-watcher"></span>
+    
+    
+    
+</div>
+
+<h2>Refining Ground Sphere testing schedule</h2>
+
+<div class="message">
+<p><span class="author">Added by <a href="../../../users/3.html" class="icon icon-contributor-license">J. Simmons</a> <a href="../../../projects/groundsphere/activity%3Ffrom=2013-10-19.html" title="10/19/2013 12:18 pm">about 9 years</a> ago</span></p>
+<div class="wiki">
+<p>Greetings everyone,</p>
+
+
+	<p>Greg and I have been talking about how to go about getting the Ground Sphere tested in light of the general lack of operational satellites broadcasting on 915 MHz.  I think we worked out a pretty good plan and I wanted to share it with you.  It is based around using the one operational satellite we are aware of, which only broadcasts when it is over its control station in LA.  It turns out, I have a good friend from work who lives in LA and I think would be willing (and is certainly able) to test the Ground Sphere. Of course, that would require shipping the ground station to him for testing, so we need to adjust the build schedule some, as you will see below.</p>
+
+
+	<ul>
+	<li>J finds out on Monday if his friend is available to help with the testing and looks at when the satellite will actually be flying over LA during the testing window</li>
+		<li>Move up the completion date of Prototype 1 to 10/23 (this mostly affects Aaron)</li>
+		<li>Ship Prototype 1 to LA on 10/23</li>
+		<li>J's friend in LA conducts operational tests of the Ground Sphere from 10/26 to 11/1</li>
+		<li>J's friend ships Prototype 1 to Tim for space tweet testing (can Prototype 1 demonstrate reception and decoding of tweets sent from the SkyCube engineering model?) on 11/1</li>
+		<li>Tim tests space tweet capabilities with Prototype 1 (in lab and with some separation between satellite model and Prototype 1) 11/1 - 11/8</li>
+	</ul>
+
+
+	<p>At this point, we basically return to our current schedule, with the note that by the time Prototype 2 is ready for testing, we are assuming the two new NPS cubesats are on orbit and broadcasting so Aaron can conduct additional operational tests using Prototype 2 and the NPS satellites</p>
+</div>
+
+</div>
+<br />
+
+
+<h3 class="comments">Replies (4)</h3>
+
+  <div class="message reply" id="message-673">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="671%3Fr=673.html#message-673">RE: Refining Ground Sphere testing schedule</a>
+    -
+    Added by <a href="../../../users/125.html" class="icon icon-contributor-license">Aaron Harper</a> <a href="../../../projects/groundsphere/activity%3Ffrom=2013-10-27.html" title="10/27/2013 05:35 pm">about 9 years</a> ago
+  </h4>
+  <div class="wiki"><p>This time scale is a little too aggressive, but I like the basic concept.  I expect to have the parts to build the preamp on Mon or Tues (28th or 29th of October) and should have prototype 1 done by the end of the week.  To expedite prototype 2, I will order another preamp and build a second prototype immediately upon receipt of parts to merge back to our regular schedule.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-674">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="671%3Fr=674.html#message-674">RE: Refining Ground Sphere testing schedule</a>
+    -
+    Added by <a href="../../../users/3.html" class="icon icon-contributor-license">J. Simmons</a> <a href="../../../projects/groundsphere/activity%3Ffrom=2013-10-27.html" title="10/27/2013 06:58 pm">about 9 years</a> ago
+  </h4>
+  <div class="wiki"><p>Yeah, the schedule was set before I knew about the delay in getting the preamp for Prototype 1.  Is there an alternate preamp we can use in testing for Prototype 1, so you can use the one that is already on order for Prototype 2?  Preferably something more local so we won't have any shipping problems?</p>
+
+
+	<p>I also want to check about something you mentioned to me about testing at 22 Km?  Tim and I have discussed our shared concern that we not proceed with development until we get several go

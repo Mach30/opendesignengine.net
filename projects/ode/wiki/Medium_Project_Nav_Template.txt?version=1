@@ -1,0 +1,36 @@
+h3. [[Sidebar|Navigation]]
+
+h3. <Project Name>
+
+* [[Wiki|Start Here]]
+* [[Versions]]
+
+h4. Documentation
+
+# [[BoM|Bill of Materials]]
+# [[Schematics and PCB Files]]
+# [[Software Source Code]]
+# [[Assembly Instructions]]
+# [[Operating Manual]]
+# [[Safety Procedures]]
+# [[Software/Firmware Summary]]
+# [[Errata]]
+
+h4. Systems Engineering Process
+
+# [[Initial Questions]]
+# [[Requirements Document]]
+# [[Block Diagram]]
+# [[Budget]]
+# [[Timeline]]
+# [[Preliminary Design]]
+# [[Detailed Design]]
+# [[Design Review]]
+# [[Procurement]]
+# [[Manufacture]]
+# [[Integration]]
+# [[Testing]]
+# [[Disposal]]
+# [[Development Logs]]
+# [[Meeting Minutes|Meeting Minutes/Notes]]
+# [[Resources|Resources/Links]]

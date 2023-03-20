@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Shepard Test Stand - Future Design Discussion - v2.0 - Open Design Engine</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="NjgP5iGjq1kQHoOPwGBj4R06SgEjxPO+2RUT00inxNc="/>
+<link rel='shortcut icon' href='../../../favicon.ico%3F1359925685.html' />
+<link href="../../../stylesheets/application.css%3F1359925542.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="../../../javascripts/prototype.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/effects.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/dragdrop.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/controls.js%3F1359925542.html" type="text/javascript"></script>
+<script src="../../../javascripts/application.js%3F1359925542.html" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Event.observe(window, 'load', function(){ new WarnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<!--[if IE 6]>
+    <style type="text/css">
+      * html body{ width: expression( document.documentElement.clientWidth < 900 ? '900px' : '100%' ); }
+      body {behavior: url(/stylesheets/csshover.htc?1359925542);}
+    </style>
+<![endif]-->
+<link href="../../../plugin_assets/redmine_legal/stylesheets/terms-of-service.css%3F1359925705.css" media="screen" rel="stylesheet" type="text/css" /> 
+<!-- page specific tags -->
+
+  <link href="../../../stylesheets/scm.css%3F1359925542.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="controller-messages action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="../../../login.html" class="login">Sign in</a></li></ul>    </div>
+    
+    <ul><li><a href="../../../index.html" class="home">Home</a></li>
+<li><a href="../../../projects.1.html" class="projects">Projects</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Help</a></li></ul></div>
+
+<div id="header">
+    
+    <div id="quick-search">
+        <form action="../../../search/index/shepard-ts.html" method="get">
+        <input name="messages" type="hidden" value="1" />
+        <a href="../../../search/index/shepard-ts.html" accesskey="4">Search</a>:
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+        </form>
+        
+    </div>
+    
+
+    <h1>Shepard Test Stand</h1>
+
+    
+    <div id="main-menu">
+        <ul><li><a href="../../../projects/shepard-ts.html" class="overview">Overview</a></li>
+<li><a href="../../../projects/shepard-ts/activity.html" class="activity">Activity</a></li>
+<li><a href="../../../projects/shepard-ts/roadmap.html" class="roadmap">Roadmap</a></li>
+<li><a href="../../../projects/shepard-ts/issues.1.html" class="issues">Issues</a></li>
+<li><a href="../../../projects/shepard-ts/issues/gantt.html" class="gantt">Gantt</a></li>
+<li><a href="../../../projects/shepard-ts/news.html" class="news">News</a></li>
+<li><a href="../../../dmsf/shepard-ts.html" class="dmsf">DMSF</a></li>
+<li><a href="../../../projects/shepard-ts/wiki.html" class="wiki">Wiki</a></li>
+<li><a href="../../../projects/shepard-ts/boards.html" class="boards selected">Forums</a></li>
+<li><a href="https://opendesignengine.net/projects/shepard-ts/repository" class="repository">Repository</a></li></ul>
+    </div>
+    
+</div>
+
+<div class="nosidebar" id="main">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+				
+        <p class="breadcrumb"><a href="../../../projects/shepard-ts/boards.html">Forums</a> » <a href="https://opendesignengine.net/projects/shepard-ts/boards/4">Discussion</a> » </p>
+
+<div class="contextual">
+    <span class="message-428-watcher"></span>
+    
+    
+    
+</div>
+
+<h2>Future Design Discussion - v2.0</h2>
+
+<div class="message">
+<p><span class="author">Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2013-04-01.html" title="04/01/2013 03:07 pm">over 9 years</a> ago</span></p>
+<div class="wiki">
+<p>This has been copied from an email conversation about Shepard requirements.</p>
+
+
+	<p>Aaron Harper wrote:</p>
+
+
+	<p>I think the NAR measurement was concerned about burn-thru, otherwise there is no reason to measure temperature at those two points.  I didn't see anything about sensor specs, lag and slew rates, measurement resolution, or time resolution, and I get the feeling that these may have been outside the skill set of the NAR spec writers.  This means we will probably have to write our own.</p>
+
+
+	<p>Some possible specs to yield a usable dataset:</p>
+
+
+	<p>1. The temperature sensor must be used in accordance with it's design.  A contact sensor such as a thermocouple must be put in contact with the motor casing, while a non-contact (IR) sensor may need to be placed a minimum distance away from the casing to form a valid thermal image.</p>
+
+
+	<p>2. The temperature sensor must be able to read 50% or more of the temperature which would destroy the motor casing, ie. if the casing will ignite at 500F, the sensor must be able to measure to 250F as a minimum.  This refers to the sensor's specification, not the calibration of the measurement circuit's full scale.</p>
+
+
+	<p>3. The temperature sensor must be read as an analog value with a minimum of 8 bit precision.  This will allow a very small change to be spotted even if it were to occur in a destructive event since the system could register a change as small as 0.004 degrees in the above example.</p>
+
+
+	<p>4. The temperature measurement system must read the temperature at least 32 times during the engine thrust cycle.  In a 1/2A3-2T, the system must measure the temperature at least 32 times during the 3 second propellant burn.  This is a measurment every 93mS or a frequency of 10.67Hz.</p>
+
+
+	<p>5. The sensor must be able to yield valid data at least 1/8 of the way through the test.  This means that in the example above, the sensor may not lag more than 375mS.</p>
+
+
+	<p>Thoughts?</p>
+</div>
+
+</div>
+<br />
+
+
+<h3 class="comments">Replies (30)</h3>
+
+  <div class="message reply" id="message-429">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="428%3Fr=429.html#message-429">RE: Future Design Discussion - v2.0</a>
+    -
+    Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2013-04-01.html" title="04/01/2013 03:12 pm">over 9 years</a> ago
+  </h4>
+  <div class="wiki"><p>With the exception of the IR sensor, this seems like a good requirements discussion for Shepard 2.0.</p>
+
+
+	<p>Here's the IR setup that Aaron had in mind: <a class="external" href="http://www.ti.com/product/tmp006">http://www.ti.com/product/tmp006</a></p>
+
+
+	<p>In reference to <a href="../../../issues/4.html" class="issue status-3 priority-2 closed" title="Display SVN checkout or export link on repository page (Resolved)">#4</a>, what do we do if we sample at 800 or 1000 samples per second? Do we throw away the in-between samples where the response of the thermocouple is still catching up? How do we even figure that out? Do we just go by the published response time of the thermocouple?</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-430">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="428%3Fr=430.html#message-430">RE: Future Design Discussion - v2.0</a>
+    -
+    Added by <a href="../../../users/125.html" class="icon icon-contributor-license">Aaron Harper</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2013-04-01.html" title="04/01/2013 03:48 pm">over 9 years</a> ago
+  </h4>
+  <div class="wiki"><p>The figures were to define the minimum resolution.  If you can pull 1000 samples per second at 16 bit resolution, that would be even better!</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-431">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="428%3Fr=431.html#message-431">RE: Future Design Discussion - v2.0</a>
+    -
+    Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2013-04-02.html" title="04/02/2013 09:52 am">over 9 years</a> ago
+  </h4>
+  <div class="wiki"><p>Thanks Aaron. I didn't realize you were referring to the minimum resolution.</p>
+
+
+	<p>Switching gears:</p>
+
+
+	<p>An idea that's been rattling around in my head for awhile is that it might be cool to have some sort of client-server model in the software for this version. What I'm thinking is that the software would run as it does now, with the charts, and control buttons, etc, but that the program would also act as a server. What I thought would be really cool would be for people to be able to connect with their smartphones, tablets, and laptops, and pull up a read-only web interface where they could watch the test run. Then maybe they'd have a button that would allow them to download the last run's test results. This would give students a great tool to watch and analyze test results in almost real time, and would be very cool when the test stand is being demo'd at events like OHS (Open Hardware Summit). If there wasn't a WIFI connection available at the event center, we could have an open wireless AP set up connected to the laptop running the software, and people could hop on it with their mobile devices and watch as we touch the sensors.</p>
+
+
+	<p>Are there any thoughts on that? I can't guarantee that it would be done in time for OHS, but I think it would be a cool addition to a kit that's being built primarily as an educational tool.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-432">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="428%3Fr=432.html#message-432">RE: Future Design Discussion - v2.0</a>
+    -
+    Added by <a href="../../../users/125.html" class="icon icon-contributor-license">Aaron Harper</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2013-04-02.html" title="04/02/2013 12:29 pm">over 9 years</a> ago
+  </h4>
+  <div class="wiki"><p>Yaknow, I had a similar thought, though I was not thinking about Shepard... It makes sense though, as this would give us the ability to do a much richer presentation.  To accomplish this, you will need something with a lot more horsepower than an Arduino or MSP430.  For not much more money we could use a RaspberryPi which not only has a full fledged ARM processor and TCP/IP stack, it also runs Linux allowing the server implementation to be easy and powerful.  The down side to the Pi is their perennial supply issues (though these are clearing up) and the fact that their Ethernet implementation runs off the USB bus.  Another possibility is using a Beaglebone for this task.  While they originally ran $89.00, the new version will have more memory, run faster, have built in HDMI, and be cheaper, though by how much is currently a well guarded secret.</p>
+
+
+	<p>Both of these solutions have I/O headers with I2C and SPI capabilities, so it wouldn't represent any major redesign of the sensor suite.  The gotcha is the voltage levels... and I don't remember off the top of my head what they are for the Pi and Bone.  I2C signaling defines the protocol, not necessarily the levels, and I have seen them range from 1.8 to 12V, though 3.3 and 5V are the most common for our purposes.  My recommendation goes with the Bone, primarily because I already have one.  When you get ready to play with this, let me know and I'll send it to ya unless it's in another project by then.  I doubt it will be since it is overkill for most things that I do; the MSP430s I have been playing with do fine.</p>
+
+
+	<p>Programming both the Pi and Bone are considerably easier than dealing with the oddities of the arduino or sometimes stubbornness of the MSP430 (C was never a strong point with me).  Since it is a Linux system, programming can be accomplished by anything from C++ to shell scripting.  The bone's I/O can be operated directly form the OS file system, and this really makes things easy... plus it has it's own built in web based IDE.  Have a look at these videos:  <a class="external" href="http://youtu.be/Y0uqRVxismQ">http://youtu.be/Y0uqRVxismQ</a> and <a class="external" href="http://youtu.be/z6b4zlh0IrE">http://youtu.be/z6b4zlh0IrE</a>.  The challenge will be making an extensible set of gauges, buttons, strip charts, and other widgets so that the interface we build can be plugged into any other project we come up with, cutting dev time considerably.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-433">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="428%3Fr=433.html#message-433">RE: Future Design Discussion - v2.0</a>
+    -
+    Added by <a href="../../../users/102.html" class="icon icon-contributor-license">Jeremy Wright</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2013-04-02.html" title="04/02/2013 01:57 pm">over 9 years</a> ago
+  </h4>
+  <div class="wiki"><p>I was actually thinking that the laptop that's receiving the data from the Arduino would be the server, but combining everything into one unit is an interesting idea.</p>
+
+
+	<p>I would agree that the supply issues with the Pi is a downside. In my mind it's a deal killer, and I dropped the Pi on one of my business projects for that reason. I do like the Beaglebone idea though. I haven't used one yet, but I've read quite a bit about it. There's some additional cost over the Arduino with the Bone, but one of the thrust sensors we're looking at using for version 2.0 is only $5, which would free up some of the budget.</p>
+
+
+	<p>My thought is that we not get too wrapped up in this (by not building a test setup) until version 1.1 is out of the way, but I would like to continue the conversation. I think there are some interesting things we can do here. J has brought up the idea before of people paying a few dollars at events to press the ignition button and get the data from "their" test run. We could do some really cool things with crowd participation with this kind of model.</p>
+
+
+	<p>If we used a Bone with a hardware control panel (safety switch, ignition button, recording enabled switch, etc) we could divorce the test stand from a directly connected laptop completely if we wanted.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-434">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="428%3Fr=434.html#message-434">RE: Future Design Discussion - v2.0</a>
+    -
+    Added by <a href="../../../users/5.html" class="icon icon-contributor-license">Ben Barnett</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2013-04-02.html" title="04/02/2013 03:00 pm">over 9 years</a> ago
+  </h4>
+  <div class="wiki"><p>Quote:<br />"2. The temperature sensor must be able to read 50% or more of the temperature which would destroy the motor casing, ie. if the casing will ignite at 500F, the sensor must be able to measure to 250F as a minimum.  This refers to the sensor's specification, not the calibration of the measurement circuit's full scale."</p>
+
+
+	<p>Thoughts:</p>
+
+
+	<p>How does <a href="https://opendesignengine.net/issues/2" class="issue status-3 priority-2 closed" title="Install available Bot filters (Resolved)">#2</a> make any sense?  Temperature scales are arbitrary, except the "Thermodynamic Kelvin Scale", where "50% or more of the temperature..." makes even less sense.</p>
+
+
+	<p>It seems to me that a case temperature sensor should be able to read case temperature up to, and including the temperature at which the case could be reasonably expected to fail.  Philosophically, in any test setup where the D-U-T might fail destructively, all sensors should remain functional a far as practical through the failure process.  After all, the whole idea of testing is to analyze potential and actual failure modes in addition to characterizing performance.</p>
+
+
+	<p>My $.02,<br />Ben</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-435">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="428%3Fr=435.html#message-435">RE: Future Design Discussion - v2.0</a>
+    -
+    Added by <a href="../../../users/125.html" class="icon icon-contributor-license">Aaron Harper</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2013-04-02.html" title="04/02/2013 03:26 pm">over 9 years</a> ago
+  </h4>
+  <div class="wiki"><p>Divorcing the control system from the Laptop is probably the biggest advantage to this topology.  The trouble is that a web interface on the arduino or MSP430 is simply not capable of serving the page(s) to multiple users.  One or two may be okay, but beyond that things slow to a crawl.  It's also a colossal PITA to code the TCP/IP stack or implement someone else's.  What I would like to see is a web server and framework in which pages can be configured for open access, multiple login, or single login.  Example: a public access page with the real time run data (non-interactive) and an administrative page where only one person can be logged in, but is capable of running calibration routines, moving/purging data, and initiating the test.</p>
+
+
+	<p>Kinda figured that this would be a V2.0 discussion, but the advantage is that any development done on such a system would pay off with web based control for any other projects, spooling them up with a polished interface within days or weeks instead of months or years.  I lean hard toward the Bone, but I didn't want my prejudice on the subject to flavor this discussion.  Even aside from the supply issues, the Pi has 1 I2C bus, 2SPI, a UART and 8 GPIO pins as opposed to the Bone with 2 I2C, 5 UART (which can be configured as I2C, SPI, CAN or serial), 7 ADC channels, and 66 3.3V GPIO.  While I recommend the Pi for middle and high school education, the Bone is kind of a no-brainer for serious applications as far as I am concerned.</p>
+
+
+	<p>The other thing I was thinking about for version 2.0 is moving toward a much smaller 3D printed frame using linear bearings on short shafts for the test carriage.  With a 3D printed solution we could put all the sensors on the carriage; the temp sensors on a small PC board mount below the motor mount and the FSR mounts to the nose where the motor drives the carriage into the end stop.  Communication between the sensor board and the Bone could be as simple as IRDA on as UART channel.  This design would be tiny... overall length only a couple of inches longer than the engine under test, 4" tall, and 6" wide to accommodate the bone with some protection.  A minimalist design like this would solve a few issues, but would require a different method to secure the test stand to the ground.</p></div>
+  
+  </div>
+
+  <div class="message reply" id="message-436">
+    <div class="contextual">
+      
+      
+      
+    </div>
+  <h4>
+  	
+    <a href="428%3Fr=436.html#message-436">RE: Future Design Discussion - v2.0</a>
+    -
+    Added by <a href="../../../users/125.html" class="icon icon-contributor-license">Aaron Harper</a> <a href="../../../projects/shepard-ts/activity%3Ffrom=2013-04-02.html" title="04/02/2013 03:34 pm">over 9 years</a> ago
+  </h4>
+  <div class="wiki"><p>Hi Ben,</p>
+
+
+	<p>While I would see the wisdom of going the whole range to destructive, the trouble is that sensors which can withstand both the forces and temperatures of the event would be massive and thus have a slow slew rate.  The other issue is that during a burn through event, due to the pressures and temperatures involved, the event would happen incredibly fast.  I figure it is more important to get the data leading up to the destructive event at the highest possible resolution rather than record the whole thing.  Anything designed with a safety margin like what I would ex

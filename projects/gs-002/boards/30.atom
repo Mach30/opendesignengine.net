@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Groundstation v.2.0: Procurement and manufacture</title>
+  <link rel="self" href="http://opendesignengine.net/projects/gs-002/boards/30.atom"/>
+  <link rel="alternate" href="http://opendesignengine.net/projects/gs-002/boards/30"/>
+  <id>http://opendesignengine.net/</id>
+  <updated>2013-08-27T22:48:59+00:00</updated>
+  <author>
+    <name>Open Design Engine</name>
+  </author>
+  <generator uri="http://www.redmine.org/">
+Redmine  </generator>
+  <entry>
+    <title>Procurement and manufacture: RE: Parts Ordered</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/30/topics/549?r=587#message-587"/>
+    <id>http://opendesignengine.net/boards/30/topics/549?r=587#message-587</id>
+    <updated>2013-08-27T22:48:59+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;I get no answers from Gulf (my contact stonewalls), and the other vendors say they have shifted focus to HF (below VHF, not satellite comms), avoid the issue entirely, or forward me to a voicemail, which has not been returned in 2 weeks despite numerous contacts. Given the conversation I had with that procurement officer (my two hours of attempting to explain open hardware to a brick wall), I suspect designs got bought and production lines shut down.&lt;/p&gt;
+
+
+	&lt;p&gt;While this would indeed represent an production opportunity, I am concerned about other implications of this "shortage".  You can't use space unless you can communicate, and this would allow some level of control.  That said, one would think that others would rise to the occasion to design and build them.  I suspect that what we are seeing is the result of a strong interest by DoD in tactical field communications, and the resulting purchases.  I have some supporting evidence for this suspicion I cannot discuss, but it is far from a sure thing.&lt;/p&gt;
+
+
+	&lt;p&gt;For the 2.0 GS, I will be fabricating my own antennas taking care to make the designs easy to manufacture.  Over the next few months since my income has jumped, I will be spending a good bit on upgrading the shop capabilities, so the manufacture of antennas of all types will be no great challenge, though the issue will be time.  Given the nature of the way this whole thing seems to have come about, We'll talk more about this later.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Procurement and manufacture: RE: Parts Ordered</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/30/topics/549?r=586#message-586"/>
+    <id>http://opendesignengine.net/boards/30/topics/549?r=586#message-586</id>
+    <updated>2013-08-27T20:43:01+00:00</updated>
+    <author>
+      <name>Jeremy Wright</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Do you know why your preferred vendor dropped circular polarized antennas? Is there a gap in the market now that might be worth exploring for revenue generation?&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Procurement and manufacture: RE: Parts Ordered</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/30/topics/549?r=579#message-579"/>
+    <id>http://opendesignengine.net/boards/30/topics/549?r=579#message-579</id>
+    <updated>2013-08-25T11:28:11+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;Antennas are backordered through next year, and my preferred vendor has made a business decision to no longer manufacture circular polarized antennas.  This will have a minor effect upon the budget, but shoots the schedule right into the trash can.  As I work up the build for the antennas, I will post details here and in other areas of ODE.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Procurement and manufacture: Antennas</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/30/topics/578"/>
+    <id>http://opendesignengine.net/boards/30/topics/578</id>
+    <updated>2013-08-25T11:24:46+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;My original intent was to purchase UHF and VHF yagi antennas to mount on the Az-El mount in order to save time, but it would seem that this is not possible.  One of the best manufacturers of ham band antennas no longer makes circular polarized antennas, and other vendors are backordered into next year.  There are manufacturers which are not, but these either have an inferior product or are asking more money than I have budgeted on this product.&lt;/p&gt;
+
+
+	&lt;p&gt;The solution in the great tradition of makers everywhere will be to build the antennas, but this puts the project completion way outside of the original schedule.  I will be writing the documentation to date and future activities to submit as a final deliverable for my class, but the final product of a functional ground station should not be expected before the end of October.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Procurement and manufacture: Parts Ordered</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/30/topics/549"/>
+    <id>http://opendesignengine.net/boards/30/topics/549</id>
+    <updated>2013-07-21T22:46:42+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;The following parts have been ordered for the azimuth elevation mount:&lt;/p&gt;
+
+
+	&lt;p&gt;Source: Sparkfun (&lt;a class="external" href="http://www.sparkfun.com/"&gt;www.sparkfun.com/&lt;/a&gt;)&lt;/p&gt;
+
+
+	&lt;p&gt;1    DEV-11575    Redboard (Arduino)    Sparkfun    $24.95    $24.95&lt;br /&gt;1    ROB-09457    1A Motor Driver            Sparkfun    $8.95    $8.95&lt;br /&gt;1    SEN-10530    Magnetometer            Sparkfun    $14.95    $14.95&lt;br /&gt;1    SEN-10955    Accelerometer            Sparkfun    $9.95    $9.95&lt;br /&gt;1    NA            Shipping costs            Sparkfun    $6.44    $6.44&lt;/p&gt;
+
+
+	&lt;p&gt;Source: Servocity (&lt;a class="external" href="http://www.servocity.com/"&gt;http://www.servocity.com/&lt;/a&gt;)&lt;/p&gt;
+
+
+	&lt;p&gt;2    31425s            HiTec Servo            ServoCity    $12.99    $25.98&lt;br /&gt;2    575124            Servo Mount            ServoCity    $6.99    $13.98&lt;br /&gt;2    535138            Pillow Block            ServoCity    $7.49    $14.98&lt;br /&gt;2    525122            HiTec Servo Shaft Hub    ServoCity    $9.99    $19.98&lt;br /&gt;1    585466            24&#8221; Aluminum Channel    ServoCity    $15.99    $15.99&lt;br /&gt;1    RZ12-1000-3RPM    3 RPM 12V Gearmotor    ServoCity    $24.99    $24.99&lt;br /&gt;1    555128            Motor Mount            ServoCity    $4.99    $4.99&lt;br /&gt;1    625106            6mm to &#188;&#8221; coupler    ServoCity    $4.99    $4.99&lt;br /&gt;1    9753K65            Motor End Cap            ServoCity    $0.89    $0.89&lt;br /&gt;1    H250-770    &#188;&#8221; Set Screw Hub    ServoCity    $4.99    $4.99&lt;br /&gt;1    634078            &#188;&#8221; D-shaft 3&#8221;            ServoCity    $1.99    $1.99&lt;br /&gt;1    6031K16            3&#8221; Turntable bearing    ServoCity    $4.95    $4.95&lt;br /&gt;1    NA            Shipping costs            ServoCity    $6.99    $6.99&lt;/p&gt;
+
+
+	&lt;p&gt;These parts come to a total of $210.93 including shipping, but include a couple of items not part of a production Az-El mount.  A turret housing will need to be fabricated from 4-8" PVC to protect the electronics from the elements.&lt;/p&gt;    </content>
+  </entry>
+  <entry>
+    <title>Procurement and manufacture: Funding</title>
+    <link rel="alternate" href="http://opendesignengine.net/boards/30/topics/548"/>
+    <id>http://opendesignengine.net/boards/30/topics/548</id>
+    <updated>2013-07-21T22:36:27+00:00</updated>
+    <author>
+      <name>Aaron Harper</name>
+    </author>
+    <content type="html">
+&lt;p&gt;While funding has been received, the final amount was somewhat less than the amount budgeted for the project.  The difference will be made up out of personal funds and this issue has been reported for informational purposes only.  It represents no delay in the project's development.&lt;/p&gt;    </content>
+  </entry>
+</feed>

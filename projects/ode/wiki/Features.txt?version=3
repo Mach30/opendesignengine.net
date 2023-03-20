@@ -1,0 +1,18 @@
+h1. Features
+
+* *"First class sub-projects":http://www.redmine.org/projects/redmine/wiki/RedmineProjectOverview:* Projects in ODE may be organized into sub-projects which have all of the features and customization of top-level projects.  Use sub-projects to organize your development team along functional lines (software, electronics, mechanical design, etc) so individual teams can internally communicate while still being visible to the entire project.
+* *Full set of per-project features:* Projects (and sub-projects) have all the key features you expect in a project management tool
+** *"Issue tracking":http://www.redmine.org/projects/redmine/wiki/RedmineIssues:* Track bugs, support issues, etc using the built in issue tracker
+** *"Time tracking":http://www.redmine.org/projects/redmine/wiki/RedmineTimeTracking:* Add time spent to issues and then use the Activity tab to report on the time spent
+** *"News":http://www.redmine.org/projects/redmine/wiki/RedmineNews:* Update your community using a blog-like news feed
+** *"Files":http://www.redmine.org/projects/redmine/wiki/RedmineFiles:* Distribute release builds of your documentation and software
+** *"Wiki":http://www.redmine.org/projects/redmine/wiki/RedmineWikis:* Collaboratively develop project documentation
+** *"Repository":http://www.redmine.org/projects/redmine/wiki/RedmineRepository:* Store source code and other version controlled files in "SVN":http://subversion.apache.org/
+** *"DMSF":http://www.redmine.org/plugins/dmsf:* Document management system for project files beyond source code, includes versioning and drag-and-drop interface
+** *"Forums":http://www.redmine.org/projects/redmine/wiki/RedmineForums:* Hold public discussions on your project on topics such as design and support
+** *"Roadmap":http://www.redmine.org/projects/redmine/wiki/RedmineRoadmap:* Publish version based release schedule with list of version related issues
+** *"Calendar":http://www.redmine.org/projects/redmine/wiki/RedmineCalendar:* View due dates for issues and releases on a monthly calendar
+** *"Gantt Chart":http://www.redmine.org/projects/redmine/wiki/RedmineGantt:* View issues based in a Gantt chart based on release schedule from the Roadmap
+* *"Consistent Wiki-like syntax":http://www.redmine.org/projects/redmine/wiki/RedmineTextFormatting:* ODE uses its Wiki syntax throughout the site, meaning you can markup issue descriptions, project descriptions, and any other text field in ODE using the same syntax as in ODE Wikis.  ODE also includes some additional markups in its Wiki syntax
+** *"Embed YouTube videos":http://projects.plural.cc/projects/redmine-youtube*
+** *"Embed issue details":http://www.redmine.org/projects/redmine/wiki/PluginWikiIssueDetails*

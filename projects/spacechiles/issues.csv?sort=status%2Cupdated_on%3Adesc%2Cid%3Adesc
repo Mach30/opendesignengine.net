@@ -1,0 +1,4 @@
+#,Status,Project,Tracker,Priority,Subject,Assignee,Category,Target version,Author,Start date,Due date,% Done,Estimated time,Parent task,Created,Updated,Description
+127,New,Space Chiles v1.0,Bug,Normal,Inability to run flight prediction more than 7.5d before launch,"","","",Tenzin Beck,04/28/2013,"",0,"","",04/28/2013 09:05 pm,04/28/2013 09:05 pm,"The most comprehensive flight tracker I've found, http://habhub.org/predict/, is unable to run predictions for launches scheduled more than 180h in the future. In my testing of multiple scenarios, flight path and ground track distance is extremely variable from day to day. 
+
+This means that we won't be able to schedule launches more than a week in advance, which may make coordinating a large team difficult."
